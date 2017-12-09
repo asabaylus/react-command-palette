@@ -12,6 +12,9 @@
     "test": "jest"
   },
   "jest": {
+    "snapshotSerializers": [
+      "./node_modules/enzyme-to-json/serializer"
+    ],
     "collectCoverage": true,
     "coverageDirectory": "src/__coverage__",
     "collectCoverageFrom": [
@@ -20,7 +23,8 @@
       "!src/main.js"
     ],
     "coverageReporters": [
-      "lcovonly"
+      "lcov",
+      "text"
     ]
   },
   "repository": {
@@ -59,6 +63,10 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "codecov": "^3.0.0",
+    "concurrently": "^3.5.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "enzyme-to-json": "^3.2.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-import": "^2.3.0",
@@ -68,6 +76,7 @@
     "eslint-plugin-react": "^7.1.0",
     "jest": "^21.2.1",
     "prettier": "^1.8.2",
+    "react-test-renderer": "^16.1.1",
     "rollup": "^0.52.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.0.2",
@@ -81,10 +90,6 @@
   },
   "dependencies": {
     "autosuggest-highlight": "^3.1.0",
-    "concurrently": "^3.5.0",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.0",
-    "enzyme-to-json": "^3.2.2",
     "eslint": "4.12.0",
     "fuse.js": "^3.0.5",
     "keymaster": "^1.6.2",
@@ -94,7 +99,6 @@
     "react": "^16.1.1",
     "react-autosuggest": "^9.2.0",
     "react-dom": "^16.1.1",
-    "react-modal": "^3.1.4",
-    "react-test-renderer": "^16.1.1"
+    "react-modal": "^3.1.4"
   }
 }
