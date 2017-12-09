@@ -20,9 +20,7 @@
       "!src/main.js"
     ],
     "coverageReporters": [
-      "html",
-      "json",
-      "text"
+      "lcovonly"
     ]
   },
   "repository": {
@@ -60,6 +58,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.5.2",
+    "codecov": "^3.0.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-import": "^2.3.0",
