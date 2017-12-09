@@ -1,0 +1,2306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Command List renders a command 1`] = `
+<div
+  className="item"
+>
+  <span
+    key="F_0"
+    style={
+      Object {
+        "background": "none",
+        "color": "#03A9F4",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    F
+  </span>
+  <span
+    key="oo_1"
+    style={null}
+  >
+    oo
+  </span>
+</div>
+`;
+
+exports[`Opening the palette displays the suggestion list 1`] = `
+<CommandPalette
+  commands={
+    Array [
+      Object {
+        "command": [Function],
+        "name": "Manage Tenants",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Home",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Dashboard",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Monitor System",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Manage Users",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Monitor Import Jobs",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Block Import Jobs",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Integration Stats",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Integration Health Check",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Reports",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Services",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Tools",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Tenant Errors",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Queued Tenant Jobs",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Tenant Locks",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Email",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Logs",
+        "section": "Command",
+      },
+      Object {
+        "command": [Function],
+        "name": "Error Codes",
+        "section": "Command",
+      },
+    ]
+  }
+  hotKeys="command+shift+p"
+>
+  <div>
+    <button
+      className="ui mini black none button"
+      onClick={[Function]}
+    >
+      Command Palette  
+      <kbd
+        className="ui mini horizontal grey label"
+      >
+        <span>
+          Keyboard Shortcut
+        </span>
+        ⇧⌘P
+      </kbd>
+    </button>
+    <Modal
+      ariaHideApp={true}
+      bodyOpenClassName="ReactModal__Body--open"
+      closeTimeoutMS={1}
+      contentLabel="Command Palette"
+      isOpen={true}
+      onRequestClose={[Function]}
+      parentSelector={[Function]}
+      portalClassName="ReactModalPortal"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+      style={
+        Object {
+          "content": Object {
+            "WebkitOverflowScrolling": "touch",
+            "background": "rgb(48, 51, 56)",
+            "border": "0px none",
+            "borderRadius": "4px",
+            "bottom": "auto",
+            "boxShadow": "rgb(0, 0, 0) 0px 2px 4px 0px",
+            "fontFamily": "helvetica, sans-serif",
+            "fontSize": "12px",
+            "left": "50%",
+            "marginRight": "-50%",
+            "minWidth": "600px",
+            "outline": "none",
+            "overflow": "auto",
+            "padding": "10px",
+            "position": "absolute",
+            "right": "auto",
+            "top": "80px",
+            "transform": "translate(-50%, 0)",
+          },
+          "overlay": Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.75)",
+          },
+        }
+      }
+    >
+      <ModalPortal
+        ariaHideApp={true}
+        bodyOpenClassName="ReactModal__Body--open"
+        closeTimeoutMS={1}
+        contentLabel="Command Palette"
+        defaultStyles={
+          Object {
+            "content": Object {
+              "WebkitOverflowScrolling": "touch",
+              "background": "#fff",
+              "border": "1px solid #ccc",
+              "borderRadius": "4px",
+              "bottom": "40px",
+              "left": "40px",
+              "outline": "none",
+              "overflow": "auto",
+              "padding": "20px",
+              "position": "absolute",
+              "right": "40px",
+              "top": "40px",
+            },
+            "overlay": Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.75)",
+              "bottom": 0,
+              "left": 0,
+              "position": "fixed",
+              "right": 0,
+              "top": 0,
+            },
+          }
+        }
+        isOpen={true}
+        onRequestClose={[Function]}
+        parentSelector={[Function]}
+        portalClassName="ReactModalPortal"
+        shouldCloseOnEsc={true}
+        shouldCloseOnOverlayClick={true}
+        shouldFocusAfterRender={true}
+        shouldReturnFocusAfterClose={true}
+        style={
+          Object {
+            "content": Object {
+              "WebkitOverflowScrolling": "touch",
+              "background": "rgb(48, 51, 56)",
+              "border": "0px none",
+              "borderRadius": "4px",
+              "bottom": "auto",
+              "boxShadow": "rgb(0, 0, 0) 0px 2px 4px 0px",
+              "fontFamily": "helvetica, sans-serif",
+              "fontSize": "12px",
+              "left": "50%",
+              "marginRight": "-50%",
+              "minWidth": "600px",
+              "outline": "none",
+              "overflow": "auto",
+              "padding": "10px",
+              "position": "absolute",
+              "right": "auto",
+              "top": "80px",
+              "transform": "translate(-50%, 0)",
+            },
+            "overlay": Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.75)",
+            },
+          }
+        }
+      >
+        <div
+          className="ReactModal__Overlay ReactModal__Overlay--after-open"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          style={
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.75)",
+              "bottom": 0,
+              "left": 0,
+              "position": "fixed",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <div
+            aria-label="Command Palette"
+            className="ReactModal__Content ReactModal__Content--after-open"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "WebkitOverflowScrolling": "touch",
+                "background": "rgb(48, 51, 56)",
+                "border": "0px none",
+                "borderRadius": "4px",
+                "bottom": "auto",
+                "boxShadow": "rgb(0, 0, 0) 0px 2px 4px 0px",
+                "fontFamily": "helvetica, sans-serif",
+                "fontSize": "12px",
+                "left": "50%",
+                "marginRight": "-50%",
+                "minWidth": "600px",
+                "outline": "none",
+                "overflow": "auto",
+                "padding": "10px",
+                "position": "absolute",
+                "right": "auto",
+                "top": "80px",
+                "transform": "translate(-50%, 0)",
+              }
+            }
+            tabIndex="-1"
+          >
+            <Autosuggest
+              alwaysRenderSuggestions={true}
+              focusInputOnSuggestionClick={true}
+              getSuggestionValue={[Function]}
+              highlightFirstSuggestion={true}
+              id="1"
+              inputProps={
+                Object {
+                  "onChange": [Function],
+                  "onKeyDown": undefined,
+                  "placeholder": "Type a command",
+                  "value": "",
+                }
+              }
+              multiSection={false}
+              onSuggestionSelected={[Function]}
+              onSuggestionsFetchRequested={[Function]}
+              renderSuggestion={[Function]}
+              renderSuggestionsContainer={[Function]}
+              shouldRenderSuggestions={[Function]}
+              suggestions={
+                Array [
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Manage Tenants",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Home",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Dashboard",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Monitor System",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Manage Users",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Monitor Import Jobs",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Block Import Jobs",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Integration Stats",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Integration Health Check",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Reports",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Services",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Tools",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Tenant Errors",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Queued Tenant Jobs",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Tenant Locks",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Email",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Logs",
+                      "section": "Command",
+                    },
+                  },
+                  Object {
+                    "item": Object {
+                      "command": [Function],
+                      "id": "",
+                      "name": "Error Codes",
+                      "section": "Command",
+                    },
+                  },
+                ]
+              }
+              theme={
+                Object {
+                  "container": Object {},
+                  "containerOpen": Object {},
+                  "content": Object {
+                    "WebkitOverflowScrolling": "touch",
+                    "background": "rgb(48, 51, 56)",
+                    "border": "0px none",
+                    "borderRadius": "4px",
+                    "bottom": "auto",
+                    "boxShadow": "rgb(0, 0, 0) 0px 2px 4px 0px",
+                    "fontFamily": "helvetica, sans-serif",
+                    "fontSize": "12px",
+                    "left": "50%",
+                    "marginRight": "-50%",
+                    "minWidth": "600px",
+                    "outline": "none",
+                    "overflow": "auto",
+                    "padding": "10px",
+                    "position": "absolute",
+                    "right": "auto",
+                    "top": "80px",
+                    "transform": "translate(-50%, 0)",
+                  },
+                  "highlight": Object {
+                    "backgroundColor": "yellow",
+                  },
+                  "input": Object {
+                    "backgroundColor": "#1f2021",
+                    "border": "2px solid #2196F3",
+                    "borderRadius": "4px",
+                    "caretColor": "#2196F3",
+                    "color": "#ababab",
+                    "fontSize": "14px",
+                    "outline": "none",
+                    "padding": "6px",
+                    "width": "590px",
+                  },
+                  "inputFocused": Object {},
+                  "inputOpen": Object {},
+                  "overlay": Object {
+                    "backgroundColor": "rgba(0, 0, 0, 0.75)",
+                  },
+                  "sectionContainer": Object {},
+                  "sectionContainerFirst": Object {},
+                  "sectionTitle": Object {},
+                  "suggestion": Object {
+                    "backgroundColor": "#2c313a",
+                    "border": "1px solid #111",
+                    "borderTop": "0px none",
+                    "color": "#ababab",
+                    "padding": "14px 12px",
+                  },
+                  "suggestionFirst": Object {
+                    "backgroundColor": "#3a3f4b",
+                    "color": "#ffffff",
+                  },
+                  "suggestionHighlighted": Object {
+                    "backgroundColor": "#3a3f4b",
+                    "color": "#ffffff",
+                  },
+                  "suggestionsContainer": Object {
+                    "borderBottom": "1px solid #111",
+                    "borderTop": "1px solid #111",
+                    "marginTop": "10px",
+                    "maxHeight": "315px",
+                    "overflow": "scroll",
+                  },
+                  "suggestionsContainerOpen": Object {},
+                  "suggestionsList": Object {
+                    "listStyle": "none",
+                    "marginBottom": "0",
+                    "marginTop": "0",
+                    "padding": "0",
+                  },
+                }
+              }
+            >
+              <Autowhatever
+                getSectionItems={[Function]}
+                highlightedItemIndex={null}
+                highlightedSectionIndex={null}
+                id="1"
+                inputProps={
+                  Object {
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "onFocus": [Function],
+                    "onKeyDown": [Function],
+                    "placeholder": "Type a command",
+                    "value": "",
+                  }
+                }
+                itemProps={[Function]}
+                items={
+                  Array [
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Manage Tenants",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Home",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Dashboard",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Monitor System",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Manage Users",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Monitor Import Jobs",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Block Import Jobs",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Integration Stats",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Integration Health Check",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Reports",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Services",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Tools",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Tenant Errors",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Queued Tenant Jobs",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Tenant Locks",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Email",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Logs",
+                        "section": "Command",
+                      },
+                    },
+                    Object {
+                      "item": Object {
+                        "command": [Function],
+                        "id": "",
+                        "name": "Error Codes",
+                        "section": "Command",
+                      },
+                    },
+                  ]
+                }
+                multiSection={false}
+                renderInputComponent={[Function]}
+                renderItem={[Function]}
+                renderItemData={
+                  Object {
+                    "query": "",
+                  }
+                }
+                renderItemsContainer={[Function]}
+                renderSectionTitle={[Function]}
+                theme={
+                  Object {
+                    "container": Object {},
+                    "containerOpen": Object {},
+                    "content": Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "background": "rgb(48, 51, 56)",
+                      "border": "0px none",
+                      "borderRadius": "4px",
+                      "bottom": "auto",
+                      "boxShadow": "rgb(0, 0, 0) 0px 2px 4px 0px",
+                      "fontFamily": "helvetica, sans-serif",
+                      "fontSize": "12px",
+                      "left": "50%",
+                      "marginRight": "-50%",
+                      "minWidth": "600px",
+                      "outline": "none",
+                      "overflow": "auto",
+                      "padding": "10px",
+                      "position": "absolute",
+                      "right": "auto",
+                      "top": "80px",
+                      "transform": "translate(-50%, 0)",
+                    },
+                    "highlight": Object {
+                      "backgroundColor": "yellow",
+                    },
+                    "input": Object {
+                      "backgroundColor": "#1f2021",
+                      "border": "2px solid #2196F3",
+                      "borderRadius": "4px",
+                      "caretColor": "#2196F3",
+                      "color": "#ababab",
+                      "fontSize": "14px",
+                      "outline": "none",
+                      "padding": "6px",
+                      "width": "590px",
+                    },
+                    "inputFocused": Object {},
+                    "inputOpen": Object {},
+                    "item": Object {
+                      "backgroundColor": "#2c313a",
+                      "border": "1px solid #111",
+                      "borderTop": "0px none",
+                      "color": "#ababab",
+                      "padding": "14px 12px",
+                    },
+                    "itemFirst": Object {
+                      "backgroundColor": "#3a3f4b",
+                      "color": "#ffffff",
+                    },
+                    "itemHighlighted": Object {
+                      "backgroundColor": "#3a3f4b",
+                      "color": "#ffffff",
+                    },
+                    "itemsContainer": Object {
+                      "borderBottom": "1px solid #111",
+                      "borderTop": "1px solid #111",
+                      "marginTop": "10px",
+                      "maxHeight": "315px",
+                      "overflow": "scroll",
+                    },
+                    "itemsContainerOpen": Object {},
+                    "itemsList": Object {
+                      "listStyle": "none",
+                      "marginBottom": "0",
+                      "marginTop": "0",
+                      "padding": "0",
+                    },
+                    "overlay": Object {
+                      "backgroundColor": "rgba(0, 0, 0, 0.75)",
+                    },
+                    "sectionContainer": Object {},
+                    "sectionContainerFirst": Object {},
+                    "sectionTitle": Object {},
+                  }
+                }
+              >
+                <div
+                  key="react-autowhatever-1-container"
+                  style={Object {}}
+                >
+                  <input
+                    aria-activedescendant={null}
+                    aria-autocomplete="list"
+                    aria-expanded={true}
+                    aria-haspopup={true}
+                    aria-owns="react-autowhatever-1"
+                    autoComplete="off"
+                    key="react-autowhatever-1-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Type a command"
+                    role="combobox"
+                    style={
+                      Object {
+                        "backgroundColor": "#1f2021",
+                        "border": "2px solid #2196F3",
+                        "borderRadius": "4px",
+                        "caretColor": "#2196F3",
+                        "color": "#ababab",
+                        "fontSize": "14px",
+                        "outline": "none",
+                        "padding": "6px",
+                        "width": "590px",
+                      }
+                    }
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    id="react-autowhatever-1"
+                    key="react-autowhatever-1-items-container"
+                    style={
+                      Object {
+                        "borderBottom": "1px solid #111",
+                        "borderTop": "1px solid #111",
+                        "marginTop": "10px",
+                        "maxHeight": "315px",
+                        "overflow": "scroll",
+                      }
+                    }
+                  >
+                    <ItemsList
+                      getItemId={[Function]}
+                      highlightedItemIndex={null}
+                      itemProps={[Function]}
+                      items={
+                        Array [
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Manage Tenants",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Home",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Dashboard",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Monitor System",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Manage Users",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Monitor Import Jobs",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Block Import Jobs",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Integration Stats",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Integration Health Check",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Reports",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Services",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Tools",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Tenant Errors",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Queued Tenant Jobs",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Tenant Locks",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Email",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Logs",
+                              "section": "Command",
+                            },
+                          },
+                          Object {
+                            "item": Object {
+                              "command": [Function],
+                              "id": "",
+                              "name": "Error Codes",
+                              "section": "Command",
+                            },
+                          },
+                        ]
+                      }
+                      keyPrefix="react-autowhatever-1-"
+                      onHighlightedItemChange={[Function]}
+                      renderItem={[Function]}
+                      renderItemData={
+                        Object {
+                          "query": "",
+                        }
+                      }
+                      sectionIndex={null}
+                      theme={[Function]}
+                    >
+                      <ul
+                        key="react-autowhatever-1-items-list"
+                        role="listbox"
+                        style={
+                          Object {
+                            "listStyle": "none",
+                            "marginBottom": "0",
+                            "marginTop": "0",
+                            "padding": "0",
+                          }
+                        }
+                      >
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={0}
+                          id="react-autowhatever-1--item-0"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Manage Tenants",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={0}
+                          key="react-autowhatever-1-item-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#3a3f4b",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ffffff",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={0}
+                            id="react-autowhatever-1--item-0"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#3a3f4b",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ffffff",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Manage Tenants_0"
+                                style={null}
+                              >
+                                Manage Tenants
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={1}
+                          id="react-autowhatever-1--item-1"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Home",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={1}
+                          key="react-autowhatever-1-item-1"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={1}
+                            id="react-autowhatever-1--item-1"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Home_0"
+                                style={null}
+                              >
+                                Home
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={2}
+                          id="react-autowhatever-1--item-2"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Dashboard",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={2}
+                          key="react-autowhatever-1-item-2"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={2}
+                            id="react-autowhatever-1--item-2"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Dashboard_0"
+                                style={null}
+                              >
+                                Dashboard
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={3}
+                          id="react-autowhatever-1--item-3"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Monitor System",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={3}
+                          key="react-autowhatever-1-item-3"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={3}
+                            id="react-autowhatever-1--item-3"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Monitor System_0"
+                                style={null}
+                              >
+                                Monitor System
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={4}
+                          id="react-autowhatever-1--item-4"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Manage Users",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={4}
+                          key="react-autowhatever-1-item-4"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={4}
+                            id="react-autowhatever-1--item-4"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Manage Users_0"
+                                style={null}
+                              >
+                                Manage Users
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={5}
+                          id="react-autowhatever-1--item-5"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Monitor Import Jobs",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={5}
+                          key="react-autowhatever-1-item-5"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={5}
+                            id="react-autowhatever-1--item-5"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Monitor Import Jobs_0"
+                                style={null}
+                              >
+                                Monitor Import Jobs
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={6}
+                          id="react-autowhatever-1--item-6"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Block Import Jobs",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={6}
+                          key="react-autowhatever-1-item-6"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={6}
+                            id="react-autowhatever-1--item-6"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Block Import Jobs_0"
+                                style={null}
+                              >
+                                Block Import Jobs
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={7}
+                          id="react-autowhatever-1--item-7"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Integration Stats",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={7}
+                          key="react-autowhatever-1-item-7"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={7}
+                            id="react-autowhatever-1--item-7"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Integration Stats_0"
+                                style={null}
+                              >
+                                Integration Stats
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={8}
+                          id="react-autowhatever-1--item-8"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Integration Health Check",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={8}
+                          key="react-autowhatever-1-item-8"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={8}
+                            id="react-autowhatever-1--item-8"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Integration Health Check_0"
+                                style={null}
+                              >
+                                Integration Health Check
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={9}
+                          id="react-autowhatever-1--item-9"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Reports",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={9}
+                          key="react-autowhatever-1-item-9"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={9}
+                            id="react-autowhatever-1--item-9"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Reports_0"
+                                style={null}
+                              >
+                                Reports
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={10}
+                          id="react-autowhatever-1--item-10"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Services",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={10}
+                          key="react-autowhatever-1-item-10"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={10}
+                            id="react-autowhatever-1--item-10"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Services_0"
+                                style={null}
+                              >
+                                Services
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={11}
+                          id="react-autowhatever-1--item-11"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Tools",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={11}
+                          key="react-autowhatever-1-item-11"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={11}
+                            id="react-autowhatever-1--item-11"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Tools_0"
+                                style={null}
+                              >
+                                Tools
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={12}
+                          id="react-autowhatever-1--item-12"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Tenant Errors",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={12}
+                          key="react-autowhatever-1-item-12"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={12}
+                            id="react-autowhatever-1--item-12"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Tenant Errors_0"
+                                style={null}
+                              >
+                                Tenant Errors
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={13}
+                          id="react-autowhatever-1--item-13"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Queued Tenant Jobs",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={13}
+                          key="react-autowhatever-1-item-13"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={13}
+                            id="react-autowhatever-1--item-13"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Queued Tenant Jobs_0"
+                                style={null}
+                              >
+                                Queued Tenant Jobs
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={14}
+                          id="react-autowhatever-1--item-14"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Tenant Locks",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={14}
+                          key="react-autowhatever-1-item-14"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={14}
+                            id="react-autowhatever-1--item-14"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Tenant Locks_0"
+                                style={null}
+                              >
+                                Tenant Locks
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={15}
+                          id="react-autowhatever-1--item-15"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Email",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={15}
+                          key="react-autowhatever-1-item-15"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={15}
+                            id="react-autowhatever-1--item-15"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Email_0"
+                                style={null}
+                              >
+                                Email
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={16}
+                          id="react-autowhatever-1--item-16"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Logs",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={16}
+                          key="react-autowhatever-1-item-16"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={16}
+                            id="react-autowhatever-1--item-16"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Logs_0"
+                                style={null}
+                              >
+                                Logs
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                        <Item
+                          data-section-index={null}
+                          data-suggestion-index={17}
+                          id="react-autowhatever-1--item-17"
+                          isHighlighted={false}
+                          item={
+                            Object {
+                              "item": Object {
+                                "command": [Function],
+                                "id": "",
+                                "name": "Error Codes",
+                                "section": "Command",
+                              },
+                            }
+                          }
+                          itemIndex={17}
+                          key="react-autowhatever-1-item-17"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          style={
+                            Object {
+                              "backgroundColor": "#2c313a",
+                              "border": "1px solid #111",
+                              "borderTop": "0px none",
+                              "color": "#ababab",
+                              "padding": "14px 12px",
+                            }
+                          }
+                        >
+                          <li
+                            data-section-index={null}
+                            data-suggestion-index={17}
+                            id="react-autowhatever-1--item-17"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            onTouchStart={[Function]}
+                            role="option"
+                            style={
+                              Object {
+                                "backgroundColor": "#2c313a",
+                                "border": "1px solid #111",
+                                "borderTop": "0px none",
+                                "color": "#ababab",
+                                "padding": "14px 12px",
+                              }
+                            }
+                          >
+                            <div
+                              className="item"
+                            >
+                              <span
+                                key="Error Codes_0"
+                                style={null}
+                              >
+                                Error Codes
+                              </span>
+                            </div>
+                          </li>
+                        </Item>
+                      </ul>
+                    </ItemsList>
+                  </div>
+                </div>
+              </Autowhatever>
+            </Autosuggest>
+          </div>
+        </div>
+      </ModalPortal>
+    </Modal>
+  </div>
+</CommandPalette>
+`;

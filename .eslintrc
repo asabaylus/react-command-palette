@@ -1,0 +1,45 @@
+{
+  "plugins": [
+    "jest",
+    "prettier"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "prettier",
+    "airbnb",
+    "plugin:jest/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "prettier/prettier": "error",
+    "react/forbid-prop-types": "off",
+    "quotes": [0],
+    "comma-dangle": [2, "only-multiline"],
+    "max-len": [1, {"code": 90}],
+    "no-unused-expressions": [0],
+    "no-continue": [0],
+    "no-plusplus": [0],
+    "func-names": [0],
+    "arrow-parens": [0],
+    "space-before-function-paren": [0],
+    "import/no-extraneous-dependencies": [2, {"devDependencies": true}],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "react/no-find-dom-node": [0],
+    "react/jsx-closing-bracket-location": [0],
+    "react/jsx-filename-extension": ["error", {"extensions": [".js"]}],
+    "react/require-default-props": 0,
+    "class-methods-use-this": [0]
+  }
+}

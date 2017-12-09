@@ -1,0 +1,101 @@
+{
+  "name": "react-command-palette",
+  "version": "0.0.1",
+  "description": "WAI-ARIA compliant React command palette like the one in Atom",
+  "main": "dist/index.js",
+  "module": "src/command-palette.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "dev": "concurrently --raw --kill-others \"rollup -c -w\" \"jest --watch\"",
+    "prettier": "eslint --fix src/",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "src/__coverage__",
+    "collectCoverageFrom": [
+      "**/src/*.{js}",
+      "!**/node_modules/**",
+      "!src/main.js"
+    ],
+    "coverageReporters": [
+      "html",
+      "json",
+      "text"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asabaylus/react-command-palette.git"
+  },
+  "keywords": [
+    "react",
+    "command",
+    "palette",
+    "command palette",
+    "command-palette",
+    "accessibile",
+    "react-component"
+  ],
+  "authors": [
+    "Asa Baylus"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asabaylus/react-command-palette/issues"
+  },
+  "homepage": "https://github.com/asabaylus/react-command-palette#readme",
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jest": "^21.3.2",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^21.2.1",
+    "prettier": "^1.8.2",
+    "rollup": "^0.52.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-hypothetical": "^2.0.0",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.5.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-serve": "^0.4.2",
+    "rollup-watch": "^4.0.0"
+  },
+  "dependencies": {
+    "autosuggest-highlight": "^3.1.0",
+    "concurrently": "^3.5.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "4.12.0",
+    "fuse.js": "^3.0.5",
+    "keymaster": "^1.6.2",
+    "mousetrap": "^1.6.1",
+    "prop-types": "^15.5.10",
+    "raf": "^3.4.0",
+    "react": "^16.1.1",
+    "react-autosuggest": "^9.2.0",
+    "react-dom": "^16.1.1",
+    "react-modal": "^3.1.4",
+    "react-test-renderer": "^16.1.1"
+  }
+}
