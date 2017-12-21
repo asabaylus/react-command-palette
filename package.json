@@ -9,7 +9,8 @@
     "dev": "concurrently --raw --kill-others \"rollup -c -w\" \"jest --watch\"",
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "jest": {
     "snapshotSerializers": [
