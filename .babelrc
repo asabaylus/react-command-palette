@@ -1,17 +1,17 @@
 {
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "stage-0",
+    "react"
+  ],
   "env": {
     "test": {
-      "presets": ["env"],
-      "plugins": ["transform-react-jsx"]
-    },
-    "development": {
       "presets": [
-        ["env", {"modules": false}]
-      ],
-      "plugins": [
-        "transform-react-jsx",
-        "external-helpers"
+        ["env"], "stage-0", "react"
       ]
     }
-  }
+  },
+  "plugins": []
 }

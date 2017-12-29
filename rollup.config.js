@@ -7,6 +7,10 @@ import postcss from "rollup-plugin-postcss";
 import serve from "rollup-plugin-serve";
 import livereload from "rollup-plugin-livereload";
 
+import pkg from "./package.json";
+
+const isProduction = process.env.BUILD === "production";
+
 const plugins = [
   replace({
     "process.env.NODE_ENV": JSON.stringify("development")
@@ -38,28 +42,51 @@ const plugins = [
     }
   }),
   babel({
-    exclude: "node_modules/**"
+    exclude: "node_modules/**",
+    plugins: ['external-helpers']
   })
 ];
 
-if (process.env.BUILD !== "production") {
-  plugins.push(
-    serve({
-      contentBase: ".",
-      open: true,
-      verbose: true
-    })
-  );
-
-  plugins.push(livereload("dist"));
+if (!isProduction) {
+  plugins.push(serve({
+    contentBase: ".",
+    open: true,
+    verbose: true
+  }))
+  
+  plugins.push (livereload("dist"))
+  
 }
 
 export default {
-  input: "src/main.js",
-  output: {
-    file: "dist/index.js",
-    format: "umd"
-  },
-  sourcemap: "inline",
+  input: isProduction ? "src/command-palette.js" : "src/main.js",
+  external: isProduction ? ["react", "react-dom"] : "",
+  output: [
+    {
+      file: pkg.main,
+      format: "umd",
+      globals: {
+        react: "React",
+        "react-dom": "ReactDOM"
+      },
+      sourcemap: "external",
+      name: "CommandPalette",
+      exports: 'named'
+    },
+    {
+      file: pkg.module,
+      format: 'es'
+    }
+  ],
   plugins
 };
+
+
+
+
+
+
+
+
+
+
