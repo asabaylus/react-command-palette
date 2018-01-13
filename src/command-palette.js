@@ -1,5 +1,3 @@
-/** @jsx */
-
 import * as React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";

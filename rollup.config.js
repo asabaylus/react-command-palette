@@ -66,8 +66,7 @@ export default {
       file: pkg.main,
       format: "umd",
       globals: {
-        react: "React",
-        "react-dom": "ReactDOM"
+        react: "React"
       },
       sourcemap: "external",
       name: "CommandPalette",
@@ -75,7 +74,8 @@ export default {
     },
     {
       file: pkg.module,
-      format: 'es'
+      format: 'es',
+      sourcemap: "external"
     }
   ],
   plugins

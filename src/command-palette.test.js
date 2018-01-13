@@ -2,10 +2,8 @@
 /*  eslint
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
   "function-paren-newline":0  */
-/** @jsx */
 
 import * as React from "react";
-import "raf/polyfill";
 import Enzyme, { shallow, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Mousetrap from "mousetrap";
