@@ -6,6 +6,6 @@ import commands from "./__mocks__/commands";
 
 const app = document && document.getElementById("app");
 
-if(app) {
+if (app) {
   ReactDOM.render(<CommandPalette commands={commands} />, app);
 }
