@@ -2,5 +2,8 @@ coverage/
 scripts/
 example/
 test/
+src/
 rollup.config.*
 .*
+CNAME
+index.html
