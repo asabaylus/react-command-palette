@@ -36,86 +36,103 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       },
       Object {
         "command": [Function],
+        "id": 2,
         "name": "Home",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 3,
         "name": "Dashboard",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 4,
         "name": "Monitor System",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 5,
         "name": "Manage Users",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 6,
         "name": "Monitor Import Jobs",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 7,
         "name": "Block Import Jobs",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 8,
         "name": "Integration Stats",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 9,
         "name": "Integration Health Check",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 10,
         "name": "Reports",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 11,
         "name": "Services",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 12,
         "name": "Tools",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 13,
         "name": "Tenant Errors",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 14,
         "name": "Queued Tenant Jobs",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 15,
         "name": "Tenant Locks",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 16,
         "name": "Email",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 17,
         "name": "Logs",
         "section": "Command",
       },
       Object {
         "command": [Function],
+        "id": 18,
         "name": "Error Codes",
         "section": "Command",
       },
@@ -1513,7 +1530,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 2,
                       "name": "Home",
                       "section": "Command",
                     },
@@ -1521,7 +1538,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 3,
                       "name": "Dashboard",
                       "section": "Command",
                     },
@@ -1529,7 +1546,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 4,
                       "name": "Monitor System",
                       "section": "Command",
                     },
@@ -1537,7 +1554,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 5,
                       "name": "Manage Users",
                       "section": "Command",
                     },
@@ -1545,7 +1562,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 6,
                       "name": "Monitor Import Jobs",
                       "section": "Command",
                     },
@@ -1553,7 +1570,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 7,
                       "name": "Block Import Jobs",
                       "section": "Command",
                     },
@@ -1561,7 +1578,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 8,
                       "name": "Integration Stats",
                       "section": "Command",
                     },
@@ -1569,7 +1586,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 9,
                       "name": "Integration Health Check",
                       "section": "Command",
                     },
@@ -1577,7 +1594,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 10,
                       "name": "Reports",
                       "section": "Command",
                     },
@@ -1585,7 +1602,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 11,
                       "name": "Services",
                       "section": "Command",
                     },
@@ -1593,7 +1610,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 12,
                       "name": "Tools",
                       "section": "Command",
                     },
@@ -1601,7 +1618,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 13,
                       "name": "Tenant Errors",
                       "section": "Command",
                     },
@@ -1609,7 +1626,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 14,
                       "name": "Queued Tenant Jobs",
                       "section": "Command",
                     },
@@ -1617,7 +1634,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 15,
                       "name": "Tenant Locks",
                       "section": "Command",
                     },
@@ -1625,7 +1642,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 16,
                       "name": "Email",
                       "section": "Command",
                     },
@@ -1633,7 +1650,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 17,
                       "name": "Logs",
                       "section": "Command",
                     },
@@ -1641,7 +1658,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": 18,
                       "name": "Error Codes",
                       "section": "Command",
                     },
@@ -1755,7 +1772,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 2,
                         "name": "Home",
                         "section": "Command",
                       },
@@ -1763,7 +1780,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 3,
                         "name": "Dashboard",
                         "section": "Command",
                       },
@@ -1771,7 +1788,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 4,
                         "name": "Monitor System",
                         "section": "Command",
                       },
@@ -1779,7 +1796,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 5,
                         "name": "Manage Users",
                         "section": "Command",
                       },
@@ -1787,7 +1804,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 6,
                         "name": "Monitor Import Jobs",
                         "section": "Command",
                       },
@@ -1795,7 +1812,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 7,
                         "name": "Block Import Jobs",
                         "section": "Command",
                       },
@@ -1803,7 +1820,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 8,
                         "name": "Integration Stats",
                         "section": "Command",
                       },
@@ -1811,7 +1828,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 9,
                         "name": "Integration Health Check",
                         "section": "Command",
                       },
@@ -1819,7 +1836,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 10,
                         "name": "Reports",
                         "section": "Command",
                       },
@@ -1827,7 +1844,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 11,
                         "name": "Services",
                         "section": "Command",
                       },
@@ -1835,7 +1852,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 12,
                         "name": "Tools",
                         "section": "Command",
                       },
@@ -1843,7 +1860,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 13,
                         "name": "Tenant Errors",
                         "section": "Command",
                       },
@@ -1851,7 +1868,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 14,
                         "name": "Queued Tenant Jobs",
                         "section": "Command",
                       },
@@ -1859,7 +1876,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 15,
                         "name": "Tenant Locks",
                         "section": "Command",
                       },
@@ -1867,7 +1884,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 16,
                         "name": "Email",
                         "section": "Command",
                       },
@@ -1875,7 +1892,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 17,
                         "name": "Logs",
                         "section": "Command",
                       },
@@ -1883,7 +1900,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": 18,
                         "name": "Error Codes",
                         "section": "Command",
                       },
@@ -2042,7 +2059,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 2,
                               "name": "Home",
                               "section": "Command",
                             },
@@ -2050,7 +2067,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 3,
                               "name": "Dashboard",
                               "section": "Command",
                             },
@@ -2058,7 +2075,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 4,
                               "name": "Monitor System",
                               "section": "Command",
                             },
@@ -2066,7 +2083,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 5,
                               "name": "Manage Users",
                               "section": "Command",
                             },
@@ -2074,7 +2091,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 6,
                               "name": "Monitor Import Jobs",
                               "section": "Command",
                             },
@@ -2082,7 +2099,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 7,
                               "name": "Block Import Jobs",
                               "section": "Command",
                             },
@@ -2090,7 +2107,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 8,
                               "name": "Integration Stats",
                               "section": "Command",
                             },
@@ -2098,7 +2115,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 9,
                               "name": "Integration Health Check",
                               "section": "Command",
                             },
@@ -2106,7 +2123,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 10,
                               "name": "Reports",
                               "section": "Command",
                             },
@@ -2114,7 +2131,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 11,
                               "name": "Services",
                               "section": "Command",
                             },
@@ -2122,7 +2139,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 12,
                               "name": "Tools",
                               "section": "Command",
                             },
@@ -2130,7 +2147,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 13,
                               "name": "Tenant Errors",
                               "section": "Command",
                             },
@@ -2138,7 +2155,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 14,
                               "name": "Queued Tenant Jobs",
                               "section": "Command",
                             },
@@ -2146,7 +2163,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 15,
                               "name": "Tenant Locks",
                               "section": "Command",
                             },
@@ -2154,7 +2171,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 16,
                               "name": "Email",
                               "section": "Command",
                             },
@@ -2162,7 +2179,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 17,
                               "name": "Logs",
                               "section": "Command",
                             },
@@ -2170,7 +2187,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": 18,
                               "name": "Error Codes",
                               "section": "Command",
                             },
@@ -2280,7 +2297,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 2,
                                 "name": "Home",
                                 "section": "Command",
                               },
@@ -2351,7 +2368,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 3,
                                 "name": "Dashboard",
                                 "section": "Command",
                               },
@@ -2422,7 +2439,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 4,
                                 "name": "Monitor System",
                                 "section": "Command",
                               },
@@ -2493,7 +2510,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 5,
                                 "name": "Manage Users",
                                 "section": "Command",
                               },
@@ -2564,7 +2581,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 6,
                                 "name": "Monitor Import Jobs",
                                 "section": "Command",
                               },
@@ -2635,7 +2652,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 7,
                                 "name": "Block Import Jobs",
                                 "section": "Command",
                               },
@@ -2706,7 +2723,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 8,
                                 "name": "Integration Stats",
                                 "section": "Command",
                               },
@@ -2777,7 +2794,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 9,
                                 "name": "Integration Health Check",
                                 "section": "Command",
                               },
@@ -2848,7 +2865,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 10,
                                 "name": "Reports",
                                 "section": "Command",
                               },
@@ -2919,7 +2936,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 11,
                                 "name": "Services",
                                 "section": "Command",
                               },
@@ -2990,7 +3007,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 12,
                                 "name": "Tools",
                                 "section": "Command",
                               },
@@ -3061,7 +3078,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 13,
                                 "name": "Tenant Errors",
                                 "section": "Command",
                               },
@@ -3132,7 +3149,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 14,
                                 "name": "Queued Tenant Jobs",
                                 "section": "Command",
                               },
@@ -3203,7 +3220,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 15,
                                 "name": "Tenant Locks",
                                 "section": "Command",
                               },
@@ -3274,7 +3291,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 16,
                                 "name": "Email",
                                 "section": "Command",
                               },
@@ -3345,7 +3362,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 17,
                                 "name": "Logs",
                                 "section": "Command",
                               },
@@ -3416,7 +3433,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": 18,
                                 "name": "Error Codes",
                                 "section": "Command",
                               },

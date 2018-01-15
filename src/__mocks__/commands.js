@@ -2,132 +2,143 @@ export default [
   {
     name: "Manage Tenants",
     command() {
-      document.location.href = "admin/manageTenants.html";
+      console.log(this, "admin/manageTenants.html");
     },
     section: "Command"
   },
   {
+    id: 2,
     name: "Home",
     command() {
-      document.location.href = "admin/manageTenants.html";
+      console.log(this, "admin/manageTenants.html");
     },
     section: "Command"
   },
   {
+    id: 3,
     name: "Dashboard",
     command() {
-      document.location.href = "admin/manageTenants.html";
+      console.log(this, "admin/manageTenants.html");
     },
     section: "Command"
   },
   {
+    id: 4,
     name: "Monitor System",
     command() {
-      document.location.href = "adminapp/monitorSystem.html";
+      console.log(this, "adminapp/monitorSystem.html");
     },
     section: "Command"
   },
   {
+    id: 5,
     name: "Manage Users",
     command() {
-      document.location.href = "adminapp/manageAppUsers.html";
+      console.log(this, "adminapp/manageAppUsers.html");
     },
     section: "Command"
   },
   {
+    id: 6,
     name: "Monitor Import Jobs",
     command() {
-      document.location.href = "admin/monitorImports.html";
+      console.log(this, "admin/monitorImports.html");
     },
     section: "Command"
   },
   {
+    id: 7,
     name: "Block Import Jobs",
     command() {
-      document.location.href = "admin/blockScheduleImports.html";
+      console.log(this, "admin/blockScheduleImports.html");
     },
     section: "Command"
   },
   {
+    id: 8,
     name: "Integration Stats",
     command() {
-      document.location.href =
-        "admin/selectDataSource.html?inquiryType=integrationStats";
+      console.log(this, "admin/selectDataSource.html?inquiryType=integrationStats");
     },
     section: "Command"
   },
   {
+    id: 9,
     name: "Integration Health Check",
     command() {
-      document.location.href =
-        "admin/selectDataSource.html?inquiryType=integrationHealthCheck";
+      console.log(this, "admin/selectDataSource.html?inquiryType=integrationHealthCheck");
     },
     section: "Command"
   },
   {
+    id: 10,
     name: "Reports",
     command() {
-      document.location.href = "report/list.html";
+      console.log(this, "report/list.html");
     },
     section: "Command"
   },
   {
+    id: 11,
     name: "Services",
     command() {
-      document.location.href =
-        "admin/selectDataSource.html?inquiryType=services";
+      console.log(this, "admin/selectDataSource.html?inquiryType=services");
     },
     section: "Command"
   },
   {
+    id: 12,
     name: "Tools",
     command() {
-      document.location.href = "tools/index.html";
+      console.log(this, "tools/index.html");
     },
     section: "Command"
   },
   {
+    id: 13,
     name: "Tenant Errors",
     command() {
-      document.location.href =
-        "admin/selectDataSource.html?inquiryType=viewRemoteExceptionSummary";
+      console.log(this, "admin/selectDataSource.html?inquiryType=viewRemoteExceptionSummary");
     },
     section: "Command"
   },
   {
+    id: 14,
     name: "Queued Tenant Jobs",
     command() {
-      document.location.href =
-        "admin/selectDataSource.html?inquiryType=viewQueuedTenantJobs";
+      console.log(this, "admin/selectDataSource.html?inquiryType=viewQueuedTenantJobs");
     },
     section: "Command"
   },
   {
+    id: 15,
     name: "Tenant Locks",
     command() {
-      document.location.href =
-        "admin/selectDataSource.html?inquiryType=viewTenantLocks";
+      console.log(this, "admin/selectDataSource.html?inquiryType=viewTenantLocks");
     },
     section: "Command"
   },
   {
+    id: 16,
     name: "Email",
     command() {
-      document.location.href = "admin/selectDataSource.html?inquiryType=email";
+      console.log(this, "admin/selectDataSource.html?inquiryType=email");
     },
     section: "Command"
   },
   {
+    id: 17,
     name: "Logs",
     command() {
-      document.location.href = "log/list.html";
+      console.log(this, "log/list.html");
     },
     section: "Command"
   },
   {
+    id: 18,
     name: "Error Codes",
     command() {
-      document.location.href = "admin/viewErrorCodes.html";
+      console.log(this, "admin/viewErrorCodes.html");
     },
     section: "Command"
   }
