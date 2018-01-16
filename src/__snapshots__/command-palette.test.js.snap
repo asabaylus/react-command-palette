@@ -1522,7 +1522,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Object {
                     "item": Object {
                       "command": [Function],
-                      "id": "",
+                      "id": undefined,
                       "name": "Manage Tenants",
                       "section": "Command",
                     },
@@ -1764,7 +1764,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": "",
+                        "id": undefined,
                         "name": "Manage Tenants",
                         "section": "Command",
                       },
@@ -2051,7 +2051,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Object {
                             "item": Object {
                               "command": [Function],
-                              "id": "",
+                              "id": undefined,
                               "name": "Manage Tenants",
                               "section": "Command",
                             },
@@ -2226,7 +2226,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": "",
+                                "id": undefined,
                                 "name": "Manage Tenants",
                                 "section": "Command",
                               },
