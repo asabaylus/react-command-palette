@@ -6524,10 +6524,11 @@ var CommandPalette = function (_React$Component) {
   }, {
     key: "fetchData",
     value: function fetchData() {
+      console.log(obj);
       this.allCommands = this.props.commands.map(function (obj) {
         return {
           item: {
-            id: obj.id,
+            id: obj.id || "",
             name: obj.name,
             command: obj.command,
             section: obj.section
