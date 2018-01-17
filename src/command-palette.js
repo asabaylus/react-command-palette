@@ -134,7 +134,7 @@ class CommandPalette extends React.Component {
     console.log(obj);
     this.allCommands = this.props.commands.map(obj => ({
       item: {
-        id: obj.id || "",
+        id: obj.id,
         name: obj.name,
         command: obj.command,
         section: obj.section
