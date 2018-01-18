@@ -142,7 +142,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
 >
   <div>
     <button
-      className="ui mini black none button"
+      className="ui button"
       onClick={[Function]}
     >
       Command Palette  

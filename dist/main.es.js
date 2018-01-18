@@ -6589,7 +6589,7 @@ var CommandPalette = function (_React$Component) {
         createElement(
           "button",
           {
-            className: "ui mini black none button",
+            className: "ui button",
             onClick: this.handleOpenModal
           },
           "Command Palette \xA0",

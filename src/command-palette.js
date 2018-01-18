@@ -191,7 +191,7 @@ class CommandPalette extends React.Component {
     return (
       <div>
         <button
-          className="ui mini black none button"
+          className="ui button"
           onClick={this.handleOpenModal}
         >
           Command Palette &nbsp;
