@@ -6500,7 +6500,8 @@ var CommandPalette = function (_React$Component) {
       var filterOptions = {
         shouldSort: true,
         includeMatches: true,
-        threshold: 0.6,
+        tokenize: true,
+        threshold: 0.3,
         location: 10,
         distance: 100,
         maxPatternLength: 32,
