@@ -1,17 +1,35 @@
 {
-  "presets": [
-    ["env", {
-      "modules": false
-    }],
-    "stage-0",
-    "react"
-  ],
   "env": {
+    "development": {
+      "presets": [
+        ["env", {
+          "modules": false
+          }],
+          "stage-0",
+          "react"
+        ],
+        "plugins": [
+          "external-helpers"
+        ]
+    },
+    "production": {
+      "presets": [
+        ["env", {
+          "modules": false
+          }],
+          "stage-0",
+          "react"
+        ],
+        "plugins": [
+          "external-helpers"
+        ]
+    },
     "test": {
       "presets": [
-        ["env"], "stage-0", "react"
+        ["env"],
+        "stage-0", 
+        "react"
       ]
     }
   },
-  "plugins": []
 }

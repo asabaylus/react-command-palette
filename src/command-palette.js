@@ -7,6 +7,23 @@ import parse from "autosuggest-highlight/parse";
 import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
 import theme from "./theme";
+import Spinner from "./spinner";
+
+// Monkey patching for the commands
+// http://me.dt.in.th/page/JavaScript-override/
+function override(object, methodName, callback) {
+  object[methodName] = callback(object[methodName]);
+}
+
+function after(extraBehavior) {
+  return function(original) {
+    return function() {
+      var returnValue = original.apply(this, arguments);
+      extraBehavior.apply(this, arguments);
+      return returnValue;
+    };
+  };
+}
 
 const allSuggestions = [];
 
@@ -60,6 +77,7 @@ class CommandPalette extends React.Component {
     // Suggestions also need to be provided to the Autosuggest,
     // and they are initially empty because the Autosuggest is closed.
     this.state = {
+      isLoading: false,
       showModal: false,
       value: "",
       suggestions: allSuggestions
@@ -67,7 +85,9 @@ class CommandPalette extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     // eslint-disable-next-line prettier/prettier
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
+      this
+    );
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.fetchData = this.fetchData.bind(this);
@@ -92,6 +112,17 @@ class CommandPalette extends React.Component {
 
   onSuggestionSelected(event, { suggestion }) {
     if (typeof suggestion.item.command === "function") {
+      let that = this;
+      // after the command executes display a spinner
+      override(
+        suggestion.item,
+        "command",
+        after(function() {
+          that.setState({ isLoading: true }, () => {
+            console.log("Show Spinner", that.state.isLoading);
+          });
+        })
+      );
       return suggestion.item.command();
     }
     throw new Error("command must be a function");
@@ -151,7 +182,10 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
-    this.setState({ showModal: false });
+    this.setState({
+      isLoading: false,
+      showModal: false
+    });
   }
 
   handleOpenModal() {
@@ -164,6 +198,8 @@ class CommandPalette extends React.Component {
       () => {
         // use callback to set focus, see: https://goo.gl/hUiG4n
         this.focusInput();
+        // FIXME: apply "esc" on the modal instead of input
+        // so that pressing esc on loading spinner works too
         Mousetrap(this.commandPaletteInput.input).bind(
           ["esc", this.props.hotKeys],
           () => {
@@ -190,10 +226,7 @@ class CommandPalette extends React.Component {
     };
     return (
       <div>
-        <button
-          className="ui button"
-          onClick={this.handleOpenModal}
-        >
+        <button className="ui button" onClick={this.handleOpenModal}>
           Command Palette &nbsp;
           <kbd className="ui mini horizontal grey label">
             <span>Keyboard Shortcut</span>⇧⌘P
@@ -211,21 +244,25 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          <Autosuggest
-            ref={input => {
-              this.commandPaletteInput = input;
-            }}
-            suggestions={suggestions}
-            highlightFirstSuggestion
-            onSuggestionSelected={this.onSuggestionSelected}
-            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-            getSuggestionValue={getSuggestionValue}
-            renderSuggestion={RenderSuggestion}
-            inputProps={inputProps}
-            alwaysRenderSuggestions
-            theme={theme}
-          />
+          {this.state.isLoading ? (
+            <Spinner />
+          ) : (
+            <Autosuggest
+              ref={input => {
+                this.commandPaletteInput = input;
+              }}
+              suggestions={suggestions}
+              highlightFirstSuggestion
+              onSuggestionSelected={this.onSuggestionSelected.bind(this)}
+              onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+              onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+              getSuggestionValue={getSuggestionValue}
+              renderSuggestion={RenderSuggestion}
+              inputProps={inputProps}
+              alwaysRenderSuggestions
+              theme={theme}
+            />
+          )}
         </ReactModal>
       </div>
     );

@@ -9,20 +9,13 @@ import livereload from "rollup-plugin-livereload";
 
 import pkg from "./package.json";
 
-const isProduction = process.env.BUILD === "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 const plugins = [
   replace({
     "process.env.NODE_ENV": JSON.stringify("development")
   }),
-  postcss({
-    extensions: [".css"]
-  }),
-  resolve({
-    jsnext: true,
-    main: true,
-    browser: true
-  }),
+  postcss(),
   commonjs({
     include: ["node_modules/**"],
     exclude: ["node_modules/process-es6/**"],
@@ -41,22 +34,23 @@ const plugins = [
       "node_modules/autosuggest-highlight/parse/index.js": ["parse"]
     }
   }),
-  babel({
-    exclude: "node_modules/**",
-    plugins: ['external-helpers']
-  })
+  babel(),
+  resolve({
+    jsnext: true,
+    main: true,
+    browser: true
+  }),
 ];
 
-if (!isProduction) {
+if (process.env.NODE_ENV === 'development') {
   plugins.push(serve({
     contentBase: ".",
     open: true,
     verbose: true
   }))
-  
   plugins.push (livereload("dist"))
-  
 }
+
 
 export default {
   input: isProduction ? "src/command-palette.js" : "src/main.js",
@@ -66,7 +60,8 @@ export default {
       file: pkg.main,
       format: "umd",
       globals: {
-        react: "React"
+        'react': "React",
+        'react-dom': "ReactDOM"
       },
       sourcemap: "external",
       name: "CommandPalette",
