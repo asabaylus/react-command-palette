@@ -6475,38 +6475,31 @@ var theme$2 = {
 var css = ".spinner {\n  color: #FFFFFF;\n}\n.spinner {\n  margin: 60px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 0.4em solid rgba(255, 255, 255, 0.2);\n  border-right: 0.4em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 0.4em solid rgba(255, 255, 255, 0.2);\n  border-left: 0.4em solid #ffffff;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n} \n.spinner,\n.spinner:after {\n  border-radius: 50%;\n  width: 3em;\n  height: 3em;\n}\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n";
 __$$styleInject(css);
 
-var Spinner = function (_React$Component) {
-  inherits(Spinner, _React$Component);
+var Spinner = function Spinner() {
+  return _react.createElement(
+    "div",
+    { className: "spinner" },
+    "Loading..."
+  );
+};
 
-  function Spinner() {
-    classCallCheck(this, Spinner);
-    return possibleConstructorReturn(this, (Spinner.__proto__ || Object.getPrototypeOf(Spinner)).apply(this, arguments));
-  }
-
-  createClass(Spinner, [{
-    key: "render",
-    value: function render() {
-      return _react.createElement(
-        "div",
-        { className: "spinner" },
-        "Loading..."
-      );
-    }
-  }]);
-  return Spinner;
-}(_react.Component);
-
+// Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
 // http://me.dt.in.th/page/JavaScript-override/
 function override(object, methodName, callback) {
-  object[methodName] = callback(object[methodName]);
+  var dupe = object;
+  dupe[methodName] = callback(object[methodName]);
 }
 
 function after(extraBehavior) {
   return function (original) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
     return function () {
-      var returnValue = original.apply(this, arguments);
-      extraBehavior.apply(this, arguments);
+      var returnValue = original.apply(this, args);
+      extraBehavior.apply(this, args);
       return returnValue;
     };
   };
@@ -6579,6 +6572,7 @@ var CommandPalette = function (_React$Component) {
     _this.onChange = _this.onChange.bind(_this);
     // eslint-disable-next-line prettier/prettier
     _this.onSuggestionsFetchRequested = _this.onSuggestionsFetchRequested.bind(_this);
+    _this.onSuggestionSelected = _this.onSuggestionSelected.bind(_this);
     _this.handleOpenModal = _this.handleOpenModal.bind(_this);
     _this.handleCloseModal = _this.handleCloseModal.bind(_this);
     _this.fetchData = _this.fetchData.bind(_this);
@@ -6618,7 +6612,7 @@ var CommandPalette = function (_React$Component) {
         // after the command executes display a spinner
         override(suggestion.item, "command", after(function () {
           that.setState({ isLoading: true }, function () {
-            console.log("Show Spinner", that.state.isLoading);
+            // console.log("Show Spinner", that.state.isLoading);
           });
         }));
         return suggestion.item.command();
@@ -6779,7 +6773,7 @@ var CommandPalette = function (_React$Component) {
             },
             suggestions: suggestions,
             highlightFirstSuggestion: true,
-            onSuggestionSelected: this.onSuggestionSelected.bind(this),
+            onSuggestionSelected: this.onSuggestionSelected,
             onSuggestionsFetchRequested: this.onSuggestionsFetchRequested,
             onSuggestionsClearRequested: this.onSuggestionsClearRequested,
             getSuggestionValue: getSuggestionValue,

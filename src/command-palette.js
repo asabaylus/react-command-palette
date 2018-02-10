@@ -9,17 +9,19 @@ import Mousetrap from "mousetrap";
 import theme from "./theme";
 import Spinner from "./spinner";
 
+// Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
 // http://me.dt.in.th/page/JavaScript-override/
 function override(object, methodName, callback) {
-  object[methodName] = callback(object[methodName]);
+  const dupe = object;
+  dupe[methodName] = callback(object[methodName]);
 }
 
 function after(extraBehavior) {
-  return function(original) {
+  return function(original, ...args) {
     return function() {
-      var returnValue = original.apply(this, arguments);
-      extraBehavior.apply(this, arguments);
+      const returnValue = original.apply(this, args);
+      extraBehavior.apply(this, args);
       return returnValue;
     };
   };
@@ -85,9 +87,8 @@ class CommandPalette extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     // eslint-disable-next-line prettier/prettier
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
-      this
-    );
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.fetchData = this.fetchData.bind(this);
@@ -112,14 +113,14 @@ class CommandPalette extends React.Component {
 
   onSuggestionSelected(event, { suggestion }) {
     if (typeof suggestion.item.command === "function") {
-      let that = this;
+      const that = this;
       // after the command executes display a spinner
       override(
         suggestion.item,
         "command",
-        after(function() {
+        after(() => {
           that.setState({ isLoading: true }, () => {
-            console.log("Show Spinner", that.state.isLoading);
+            // console.log("Show Spinner", that.state.isLoading);
           });
         })
       );
@@ -253,7 +254,7 @@ class CommandPalette extends React.Component {
               }}
               suggestions={suggestions}
               highlightFirstSuggestion
-              onSuggestionSelected={this.onSuggestionSelected.bind(this)}
+              onSuggestionSelected={this.onSuggestionSelected}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
               onSuggestionsClearRequested={this.onSuggestionsClearRequested}
               getSuggestionValue={getSuggestionValue}
