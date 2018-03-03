@@ -6600,13 +6600,14 @@ var CommandPalette = function (_React$Component) {
   }, {
     key: "onSuggestionSelected",
     value: function onSuggestionSelected(event, _ref3) {
+      var _this3 = this;
+
       var suggestion = _ref3.suggestion;
 
       if (typeof suggestion.item.command === "function") {
-        var that = this;
         // after the command executes display a spinner
         override(suggestion.item, "command", after(function () {
-          that.setState({ isLoading: true }, function () {
+          _this3.setState({ isLoading: true }, function () {
             // console.log("Show Spinner", that.state.isLoading);
           });
         }));
@@ -6694,7 +6695,7 @@ var CommandPalette = function (_React$Component) {
   }, {
     key: "handleOpenModal",
     value: function handleOpenModal() {
-      var _this3 = this;
+      var _this4 = this;
 
       this.setState({
         showModal: true,
@@ -6702,11 +6703,11 @@ var CommandPalette = function (_React$Component) {
         suggestions: allSuggestions
       }, function () {
         // use callback to set focus, see: https://goo.gl/hUiG4n
-        _this3.focusInput();
+        _this4.focusInput();
         // FIXME: apply "esc" on the modal instead of input
         // so that pressing esc on loading spinner works too
-        mousetrap(_this3.commandPaletteInput.input).bind(["esc", _this3.props.hotKeys], function () {
-          _this3.handleCloseModal();
+        mousetrap(_this4.commandPaletteInput.input).bind(["esc", _this4.props.hotKeys], function () {
+          _this4.handleCloseModal();
           return false;
         });
       });
@@ -6714,7 +6715,7 @@ var CommandPalette = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this4 = this;
+      var _this5 = this;
 
       var _state = this.state,
           value = _state.value,
@@ -6764,7 +6765,7 @@ var CommandPalette = function (_React$Component) {
           },
           this.state.isLoading ? createElement(Spinner, null) : createElement(dist$5, {
             ref: function ref(input) {
-              _this4.commandPaletteInput = input;
+              _this5.commandPaletteInput = input;
             },
             suggestions: suggestions,
             highlightFirstSuggestion: true,

@@ -113,13 +113,12 @@ class CommandPalette extends React.Component {
 
   onSuggestionSelected(event, { suggestion }) {
     if (typeof suggestion.item.command === "function") {
-      const that = this;
       // after the command executes display a spinner
       override(
         suggestion.item,
         "command",
         after(() => {
-          that.setState({ isLoading: true }, () => {
+          this.setState({ isLoading: true }, () => {
             // console.log("Show Spinner", that.state.isLoading);
           });
         })

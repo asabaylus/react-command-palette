@@ -103,7 +103,7 @@
   },
   "dependencies": {
     "autosuggest-highlight": "^3.1.0",
-    "fuse.js": "^3.0.5",
+    "fuse.js": "^3.2.0",
     "mousetrap": "^1.6.1",
     "react-autosuggest": "^9.2.0",
     "react-modal": "^3.1.4"
