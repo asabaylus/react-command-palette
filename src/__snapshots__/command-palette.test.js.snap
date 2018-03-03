@@ -69,7 +69,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="react-command-palette"
+  >
     <button
       className="ui button"
       onClick={[Function]}

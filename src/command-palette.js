@@ -230,7 +230,7 @@ class CommandPalette extends React.Component {
       overlay: theme.overlay
     };
     return (
-      <div>
+      <div className="react-command-palette">
         <button className="ui button" onClick={this.handleOpenModal}>
           Command Palette &nbsp;
           <kbd className="ui mini horizontal grey label">
