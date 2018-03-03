@@ -17,6 +17,30 @@ Enzyme.configure({ adapter: new Adapter() });
 
 expect.addSnapshotSerializer(serializer);
 
+describe("Search", () => {
+  it("has configureable fusejs options", () => {
+    const searchOptions = {
+      tokenize: true,
+      matchAllTokens: true,
+      findAllMatches: true,
+      threshold: 0.4,
+      location: 0,
+      distance: 100,
+      maxPatternLength: 32,
+      minMatchCharLength: 1,
+      keys: ["name", "section"]
+    };
+
+    const commandPalette = mount(
+      <CommandPalette options={searchOptions} commands={mockCommands} />
+    );
+
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "zz" });
+    expect(commandPalette.state("suggestions")).toHaveLength(2);
+    expect(commandPalette.props().options).toBe(searchOptions);
+  });
+});
+
 describe("Opening the palette", () => {
   it("auto-focuses the input", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
@@ -171,9 +195,9 @@ describe("Filtering the commands and pressing enter", () => {
 describe("Command List", () => {
   it("fetches a list of commands when given a string to match on", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    const suggestions = commandPalette.instance().getSuggestions("Monitor");
-    expect(suggestions[0].item.name).toEqual("Monitor System");
-    expect(suggestions[1].item.name).toEqual("Monitor Import Jobs");
+    const suggestions = commandPalette.instance().getSuggestions("Fizz");
+    expect(suggestions[0].item.name).toEqual("Fizz");
+    expect(suggestions[1].item.name).toEqual("Fizz Buzz");
   });
 
   it("initially returns all commands", () => {
@@ -251,9 +275,7 @@ describe("onSuggestionsFetchRequested", () => {
   const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
 
   it("updates the state with a filtered list of commands", () => {
-    commandPalette
-      .instance()
-      .onSuggestionsFetchRequested({ value: "Manage Users" });
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Foo" });
     expect(commandPalette.state("suggestions")).toHaveLength(1);
   });
 

@@ -61,12 +61,7 @@ export const RenderSuggestion = suggestion => {
       return [];
     }
 
-    return suggestion.matches[0].indices.map(item => {
-      if (item[0] === item[1]) {
-        return [item[0], item[1] + 1];
-      }
-      return [item[0], item[1] + 1];
-    });
+    return suggestion.matches[0].indices.map(item => [item[0], item[1] + 1]);
   })();
 
   const parts = parse(suggestion.item.name, matches);
@@ -157,19 +152,8 @@ class CommandPalette extends React.Component {
 
   // Teach Autosuggest how to calculate suggestions for any given input value.
   getSuggestions(value = "") {
-    const filterOptions = {
-      shouldSort: true,
-      tokenize: true,
-      matchAllTokens: true,
-      findAllMatches: true,
-      includeMatches: true,
-      threshold: 0.3,
-      location: 0,
-      distance: 1,
-      maxPatternLength: 32,
-      minMatchCharLength: 1,
-      keys: ["name", "section"]
-    };
+    // const filterOptions = this.props.options;
+    const filterOptions = this.props.options;
 
     // return all commands when user didnt suggest a specific term
     if (!value) {
@@ -291,12 +275,26 @@ class CommandPalette extends React.Component {
 }
 
 CommandPalette.defaultProps = {
-  hotKeys: "command+shift+p"
+  hotKeys: "command+shift+p",
+  options: {
+    shouldSort: true,
+    tokenize: true,
+    matchAllTokens: true,
+    findAllMatches: true,
+    includeMatches: true,
+    threshold: 0.3,
+    location: 0,
+    distance: 1,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+    keys: ["name", "section"]
+  }
 };
 
 CommandPalette.propTypes = {
   commands: PropTypes.array,
-  hotKeys: PropTypes.string
+  hotKeys: PropTypes.string,
+  options: PropTypes.object
 };
 
 export default CommandPalette;

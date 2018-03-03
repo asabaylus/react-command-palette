@@ -6436,9 +6436,6 @@ var RenderSuggestion = function RenderSuggestion(suggestion) {
     }
 
     return suggestion.matches[0].indices.map(function (item) {
-      if (item[0] === item[1]) {
-        return [item[0], item[1] + 1];
-      }
       return [item[0], item[1] + 1];
     });
   }();
@@ -6552,19 +6549,8 @@ var CommandPalette = function (_React$Component) {
     value: function getSuggestions() {
       var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
 
-      var filterOptions = {
-        shouldSort: true,
-        tokenize: true,
-        matchAllTokens: true,
-        findAllMatches: true,
-        includeMatches: true,
-        threshold: 0.3,
-        location: 0,
-        distance: 1,
-        maxPatternLength: 32,
-        minMatchCharLength: 1,
-        keys: ["name", "section"]
-      };
+      // const filterOptions = this.props.options;
+      var filterOptions = this.props.options;
 
       // return all commands when user didnt suggest a specific term
       if (!value) {
@@ -6704,12 +6690,26 @@ var CommandPalette = function (_React$Component) {
 }(Component);
 
 CommandPalette.defaultProps = {
-  hotKeys: "command+shift+p"
+  hotKeys: "command+shift+p",
+  options: {
+    shouldSort: true,
+    tokenize: true,
+    matchAllTokens: true,
+    findAllMatches: true,
+    includeMatches: true,
+    threshold: 0.3,
+    location: 0,
+    distance: 1,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+    keys: ["name", "section"]
+  }
 };
 
 CommandPalette.propTypes = {
   commands: propTypes.array,
-  hotKeys: propTypes.string
+  hotKeys: propTypes.string,
+  options: propTypes.object
 };
 
 export { RenderSuggestion };
