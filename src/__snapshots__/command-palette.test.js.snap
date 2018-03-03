@@ -5,22 +5,10 @@ exports[`Command List renders a command 1`] = `
   className="item"
 >
   <span
-    key="F_0"
-    style={
-      Object {
-        "background": "none",
-        "color": "#03A9F4",
-        "fontWeight": "bold",
-      }
-    }
-  >
-    F
-  </span>
-  <span
-    key="oo_1"
+    key="Foo_0"
     style={null}
   >
-    oo
+    Foo
   </span>
 </div>
 `;

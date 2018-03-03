@@ -254,7 +254,7 @@ describe("onSuggestionsFetchRequested", () => {
     commandPalette
       .instance()
       .onSuggestionsFetchRequested({ value: "Manage Users" });
-    expect(commandPalette.state("suggestions")).toHaveLength(2);
+    expect(commandPalette.state("suggestions")).toHaveLength(1);
   });
 
   it("updates the state with a list of all commands", () => {

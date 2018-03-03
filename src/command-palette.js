@@ -2,7 +2,6 @@ import * as React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 import Autosuggest from "react-autosuggest";
-import match from "autosuggest-highlight/match";
 import parse from "autosuggest-highlight/parse";
 import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
@@ -49,9 +48,29 @@ const getSuggestionValue = suggestion => suggestion.item.name;
 // value of the input prior to the Up and Down interactions.
 // isHighlighted - Whether or not the suggestion is highlighted.
 
-export const RenderSuggestion = (suggestion, { query }) => {
-  const matches = match(suggestion.item.name, query);
+// export const RenderSuggestion = (suggestion, { query }) => {
+export const RenderSuggestion = suggestion => {
+  // whereas fusejs returns matches "m" in
+  // "match" as [[0,0]] parts expects it as [[0,1]]. So map over the fuse
+  // matches and return the array modified for the format expected by parts
+  const matches = (() => {
+    if (
+      typeof suggestion.matches === "undefined" ||
+      !suggestion.matches.length
+    ) {
+      return [];
+    }
+
+    return suggestion.matches[0].indices.map(item => {
+      if (item[0] === item[1]) {
+        return [item[0], item[1] + 1];
+      }
+      return [item[0], item[1] + 1];
+    });
+  })();
+
   const parts = parse(suggestion.item.name, matches);
+
   return (
     <div className="item">
       {parts.map((part, index) => {
@@ -140,11 +159,13 @@ class CommandPalette extends React.Component {
   getSuggestions(value = "") {
     const filterOptions = {
       shouldSort: true,
-      includeMatches: true,
       tokenize: true,
+      matchAllTokens: true,
+      findAllMatches: true,
+      includeMatches: true,
       threshold: 0.3,
-      location: 10,
-      distance: 100,
+      location: 0,
+      distance: 1,
       maxPatternLength: 32,
       minMatchCharLength: 1,
       keys: ["name", "section"]
