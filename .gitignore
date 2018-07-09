@@ -25,5 +25,8 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-#OSX
+# OSX
 .DS_Store
+
+# SonarQube
+.scannerwork/

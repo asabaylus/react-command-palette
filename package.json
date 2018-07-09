@@ -9,6 +9,7 @@
     "dev": "concurrently --raw --kill-others \"NODE_ENV=development rollup -c -w\" \"jest --watch\"",
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
+    "sonar": "sonar-scanner -Dsonar.login=$SONAR_LOGIN",
     "prepublish": "yarn build",
     "test": "NODE_ENV=test jest"
   },
