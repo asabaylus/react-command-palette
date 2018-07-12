@@ -6,6 +6,11 @@ import commands from "./__mocks__/commands";
 
 const app = document && document.getElementById("app");
 
+
+if ( 1 == '1') {
+  throw new Error('really bad code')
+}
+
 // Thank you codecrap https://codecrap.com/content/10461/
 
 //to get the clicked button and set the values for the function
