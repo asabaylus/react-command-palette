@@ -16,7 +16,6 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-__coverage__
 coverage
 
 # Dependency directories

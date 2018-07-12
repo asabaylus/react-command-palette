@@ -21,7 +21,7 @@
       "./node_modules/enzyme-to-json/serializer"
     ],
     "collectCoverage": true,
-    "coverageDirectory": "src/__coverage__",
+    "coverageDirectory": "coverage",
     "collectCoverageFrom": [
       "**/src/*.{js}",
       "!**/node_modules/**",
