@@ -6,6 +6,7 @@ import commands from "./__mocks__/commands";
 
 const app = document && document.getElementById("app");
 
+// some change
 
 // Worst code ever!
 if ( 1 == '1') {
