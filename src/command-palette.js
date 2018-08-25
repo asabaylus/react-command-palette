@@ -1,6 +1,8 @@
 import * as React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
+
+import take from "lodash.take";
 import Autosuggest from "react-autosuggest";
 import parse from "autosuggest-highlight/parse";
 import Fuse from "fuse.js";
@@ -256,7 +258,7 @@ class CommandPalette extends React.Component {
               ref={input => {
                 this.commandPaletteInput = input;
               }}
-              suggestions={suggestions}
+              suggestions={take(suggestions, 7)}
               highlightFirstSuggestion
               onSuggestionSelected={this.onSuggestionSelected}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
