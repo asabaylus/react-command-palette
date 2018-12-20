@@ -56,13 +56,8 @@ export const RenderSuggestion = suggestion => {
   // "match" as [[0,0]] parts expects it as [[0,1]]. So map over the fuse
   // matches and return the array modified for the format expected by parts
   const matches = (() => {
-    if (
-      typeof suggestion.matches === "undefined" ||
-      !suggestion.matches.length
-    ) {
-      return [];
-    }
-
+    if (!Array.isArray(suggestion.matches)) return [];
+    if (!suggestion.matches.length) return [];
     return suggestion.matches[0].indices.map(item => [item[0], item[1] + 1]);
   })();
 
@@ -105,16 +100,20 @@ class CommandPalette extends React.Component {
     // eslint-disable-next-line prettier/prettier
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.fetchData = this.fetchData.bind(this);
+
+    this.commandPaletteInput = React.createRef();
     this.focusInput = this.focusInput.bind(this);
   }
 
   componentDidMount() {
+    const { hotKeys } = this.props;
     this.fetchData();
     // Use hot key to open command palette
-    Mousetrap.bind(this.props.hotKeys, () => {
+    Mousetrap.bind(hotKeys, () => {
       this.handleOpenModal();
       // prevent default which opens Chrome dev tools command palatte
       return false;
@@ -154,8 +153,7 @@ class CommandPalette extends React.Component {
 
   // Teach Autosuggest how to calculate suggestions for any given input value.
   getSuggestions(value = "") {
-    // const filterOptions = this.props.options;
-    const filterOptions = this.props.options;
+    const { options } = this.props;
 
     // return all commands when user didnt suggest a specific term
     if (!value) {
@@ -164,7 +162,7 @@ class CommandPalette extends React.Component {
 
     // If the user specified an autosuggest term
     const suggestions = this.allCommands.map(suggestion => suggestion.item);
-    const fuse = new Fuse(suggestions, filterOptions);
+    const fuse = new Fuse(suggestions, options);
     const filteredSuggestions = fuse.search(value);
     if (!filteredSuggestions.length) {
       return this.allCommands;
@@ -172,8 +170,13 @@ class CommandPalette extends React.Component {
     return filteredSuggestions;
   }
 
+  afterOpenModal() {
+    this.focusInput();
+  }
+
   fetchData() {
-    this.allCommands = this.props.commands.map(obj => ({
+    const { commands } = this.props;
+    this.allCommands = commands.map(obj => ({
       item: {
         id: obj.id,
         name: obj.name,
@@ -186,36 +189,28 @@ class CommandPalette extends React.Component {
 
   focusInput() {
     this.commandPaletteInput.input.focus();
+    // FIXME: apply "esc" on the modal instead of input
+    // so that pressing esc on loading spinner works too
+    const { hotKeys } = this.props;
+    Mousetrap(this.commandPaletteInput.input).bind(["esc", hotKeys], () => {
+      this.handleCloseModal();
+      return false;
+    });
   }
 
   handleCloseModal() {
     this.setState({
-      isLoading: false,
-      showModal: false
+      showModal: false,
+      isLoading: false
     });
   }
 
   handleOpenModal() {
-    this.setState(
-      {
-        showModal: true,
-        value: "",
-        suggestions: allSuggestions
-      },
-      () => {
-        // use callback to set focus, see: https://goo.gl/hUiG4n
-        this.focusInput();
-        // FIXME: apply "esc" on the modal instead of input
-        // so that pressing esc on loading spinner works too
-        Mousetrap(this.commandPaletteInput.input).bind(
-          ["esc", this.props.hotKeys],
-          () => {
-            this.handleCloseModal();
-            return false;
-          }
-        );
-      }
-    );
+    this.setState({
+      showModal: true,
+      value: "",
+      suggestions: allSuggestions
+    });
   }
 
   render() {
@@ -231,18 +226,25 @@ class CommandPalette extends React.Component {
       content: theme.content,
       overlay: theme.overlay
     };
+    const { showModal, isLoading } = this.state;
     return (
       <div className="react-command-palette">
-        <button className="ui button" onClick={this.handleOpenModal}>
+        <button
+          className="ui button"
+          onClick={this.handleOpenModal}
+          type="button"
+        >
           Command Palette &nbsp;
           <kbd className="ui mini horizontal grey label">
-            <span>Keyboard Shortcut</span>⇧⌘P
+            <span>Keyboard Shortcut</span>
+            ⇧⌘P
           </kbd>
         </button>
         <ReactModal
           appElement={document.body}
           style={modalStyles}
-          isOpen={this.state.showModal}
+          isOpen={showModal}
+          onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
           contentLabel="Command Palette"
           closeTimeoutMS={
@@ -251,7 +253,7 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {this.state.isLoading ? (
+          {isLoading ? (
             <Spinner />
           ) : (
             <Autosuggest

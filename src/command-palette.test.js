@@ -125,7 +125,7 @@ describe("Closing the palette", () => {
     expect(commandPalette.state("showModal")).toEqual(false);
   });
 
-  it("should close the commandPalette when clicked outside", () => {
+  it("should close the wrapper when clicked outside", () => {
     const spyHandleCloseModal = jest.spyOn(
       CommandPalette.prototype,
       "handleCloseModal"
@@ -140,12 +140,14 @@ describe("Closing the palette", () => {
   });
 
   it.skip("pressing hot key(s) again toggles the commandPalette closed", () => {
+    expect.assertions(3);
     const spyHandleCloseModal = jest.spyOn(
       CommandPalette.prototype,
       "handleCloseModal"
     );
 
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
+
     expect(spyHandleCloseModal.mock.calls).toHaveLength(0);
     commandPalette.find("button").simulate("click");
     expect(commandPalette.state("showModal")).toEqual(true);

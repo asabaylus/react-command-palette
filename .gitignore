@@ -3,8 +3,6 @@
 
 # Logs
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Runtime data
 pids
@@ -21,11 +19,5 @@ coverage
 # Dependency directories
 node_modules/
 
-# Yarn Integrity file
-.yarn-integrity
-
 # OSX
 .DS_Store
-
-# SonarQube
-.scannerwork/
