@@ -26,7 +26,8 @@ const plugins = [
         "PropTypes",
         "createElement",
         "isValidElement",
-        "cloneElement"
+        "cloneElement",
+        "createRef"
       ],
       "node_modules/react-dom/index.js": ["render"],
       "node_modules/fuse.js/dist/fuse.js": ["Fuse"],
