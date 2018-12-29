@@ -1,5 +1,4 @@
 module.exports = {
-    "testURL": "http://localhost/",
     "snapshotSerializers": [
         "./node_modules/enzyme-to-json/serializer"
     ],
@@ -7,7 +6,7 @@ module.exports = {
         "\\.(css|less|sass|scss)$": "<rootDir>/src/__mocks__/styleMock.js",
     },
     "collectCoverage": true,
-    "coverageDirectory": "coverage",
+    "coverageDirectory": "<rootDir>/coverage",
     "collectCoverageFrom": [
         "**/src/*.{js}",
         "!**/node_modules/**",

@@ -76,13 +76,3 @@ export default {
   ],
   plugins
 };
-
-
-
-
-
-
-
-
-
-
