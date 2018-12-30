@@ -107,7 +107,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 aria-label="Command Palette"
                 class="ReactModal__Content ReactModal__Content--after-open"
                 role="dialog"
-                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: auto; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
                 tabindex="-1"
               >
                 <div
@@ -128,7 +128,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   <div
                     id="react-autowhatever-1"
                     role="listbox"
-                    style="overflow: scroll; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                    style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
                   >
                     <ul
                       role="listbox"
@@ -226,7 +226,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 aria-label="Command Palette"
                 class="ReactModal__Content ReactModal__Content--after-open"
                 role="dialog"
-                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: auto; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
                 tabindex="-1"
               >
                 <div
@@ -248,7 +248,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   <div
                     id="react-autowhatever-1"
                     role="listbox"
-                    style="overflow: scroll; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                    style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
                   >
                     <ul
                       role="listbox"
@@ -366,7 +366,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             "marginRight": "-50%",
             "minWidth": "600px",
             "outline": "none",
-            "overflow": "auto",
+            "overflow": "hidden",
             "padding": "10px",
             "position": "absolute",
             "right": "auto",
@@ -392,7 +392,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 aria-label="Command Palette"
                 class="ReactModal__Content ReactModal__Content--after-open"
                 role="dialog"
-                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: auto; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
                 tabindex="-1"
               >
                 <div
@@ -414,7 +414,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   <div
                     id="react-autowhatever-1"
                     role="listbox"
-                    style="overflow: scroll; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                    style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
                   >
                     <ul
                       role="listbox"
@@ -523,7 +523,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     aria-label="Command Palette"
                     class="ReactModal__Content ReactModal__Content--after-open"
                     role="dialog"
-                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: auto; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
                     tabindex="-1"
                   >
                     <div
@@ -544,7 +544,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       <div
                         id="react-autowhatever-1"
                         role="listbox"
-                        style="overflow: scroll; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                        style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
                       >
                         <ul
                           role="listbox"
@@ -642,7 +642,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     aria-label="Command Palette"
                     class="ReactModal__Content ReactModal__Content--after-open"
                     role="dialog"
-                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: auto; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
                     tabindex="-1"
                   >
                     <div
@@ -664,7 +664,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       <div
                         id="react-autowhatever-1"
                         role="listbox"
-                        style="overflow: scroll; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                        style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
                       >
                         <ul
                           role="listbox"
@@ -808,7 +808,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 "marginRight": "-50%",
                 "minWidth": "600px",
                 "outline": "none",
-                "overflow": "auto",
+                "overflow": "hidden",
                 "padding": "10px",
                 "position": "absolute",
                 "right": "auto",
@@ -858,7 +858,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   "marginRight": "-50%",
                   "minWidth": "600px",
                   "outline": "none",
-                  "overflow": "auto",
+                  "overflow": "hidden",
                   "padding": "10px",
                   "position": "absolute",
                   "right": "auto",
@@ -949,7 +949,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       "marginRight": "-50%",
                       "minWidth": "600px",
                       "outline": "none",
-                      "overflow": "auto",
+                      "overflow": "hidden",
                       "padding": "10px",
                       "position": "absolute",
                       "right": "auto",
@@ -998,7 +998,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       "borderTop": "1px solid #111",
                       "marginTop": "10px",
                       "maxHeight": "315px",
-                      "overflow": "scroll",
+                      "overflow": "hidden",
                     },
                     "suggestionsContainerOpen": Object {},
                     "suggestionsList": Object {
@@ -1098,7 +1098,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "marginRight": "-50%",
                         "minWidth": "600px",
                         "outline": "none",
-                        "overflow": "auto",
+                        "overflow": "hidden",
                         "padding": "10px",
                         "position": "absolute",
                         "right": "auto",
@@ -1141,7 +1141,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "borderTop": "1px solid #111",
                         "marginTop": "10px",
                         "maxHeight": "315px",
-                        "overflow": "scroll",
+                        "overflow": "hidden",
                       },
                       "itemsContainerOpen": Object {},
                       "itemsList": Object {
@@ -1204,7 +1204,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           "borderTop": "1px solid #111",
                           "marginTop": "10px",
                           "maxHeight": "315px",
-                          "overflow": "scroll",
+                          "overflow": "hidden",
                         }
                       }
                     >

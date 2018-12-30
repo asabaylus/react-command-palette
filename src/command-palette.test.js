@@ -9,7 +9,8 @@ import Adapter from "enzyme-adapter-react-16";
 import Mousetrap from "mousetrap";
 import serializer from "enzyme-to-json/serializer";
 import renderer from "react-test-renderer";
-import CommandPalette, { RenderSuggestion } from "./command-palette";
+import CommandPalette from "./command-palette";
+import RenderSuggestion from "./render-suggestion";
 import mockCommands from "./__mocks__/commands";
 
 // React 16 Enzyme adapter

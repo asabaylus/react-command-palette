@@ -16,7 +16,7 @@ const theme = {
     transform: "translate(-50%, 0)",
     border: "0px none",
     background: "rgb(48, 51, 56)",
-    overflow: "auto",
+    overflow: "hidden",
     WebkitOverflowScrolling: "touch",
     borderRadius: "4px",
     outline: "none",
@@ -41,7 +41,7 @@ const theme = {
   inputOpen: {},
   inputFocused: {},
   suggestionsContainer: {
-    overflow: "scroll",
+    overflow: "hidden",
     borderTop: "1px solid #111",
     borderBottom: "1px solid #111",
     maxHeight: "315px",
