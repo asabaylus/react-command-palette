@@ -4,11 +4,12 @@ import PropTypes from "prop-types";
 
 import take from "lodash.take";
 import Autosuggest from "react-autosuggest";
-import parse from "autosuggest-highlight/parse";
 import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
 import theme from "./theme";
 import Spinner from "./spinner";
+
+import RenderSuggestion from "./render-suggestion";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -49,36 +50,6 @@ const getSuggestionValue = suggestion => suggestion.item.name;
 // highlighted suggestion, but query will remain to be equal to the trimmed
 // value of the input prior to the Up and Down interactions.
 // isHighlighted - Whether or not the suggestion is highlighted.
-
-// export const RenderSuggestion = (suggestion, { query }) => {
-export const RenderSuggestion = suggestion => {
-  // whereas fusejs returns matches "m" in
-  // "match" as [[0,0]] parts expects it as [[0,1]]. So map over the fuse
-  // matches and return the array modified for the format expected by parts
-  const matches = (() => {
-    if (!Array.isArray(suggestion.matches)) return [];
-    if (!suggestion.matches.length) return [];
-    return suggestion.matches[0].indices.map(item => [item[0], item[1] + 1]);
-  })();
-
-  const parts = parse(suggestion.item.name, matches);
-
-  return (
-    <div className="item">
-      {parts.map((part, index) => {
-        const id = `${part.text}_${index}`;
-        const style = part.highlight
-          ? { fontWeight: "bold", background: "none", color: "#03A9F4" }
-          : null;
-        return (
-          <span style={style} key={id}>
-            {part.text}
-          </span>
-        );
-      })}
-    </div>
-  );
-};
 
 class CommandPalette extends React.Component {
   constructor() {

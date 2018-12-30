@@ -4993,48 +4993,6 @@
 
   var dist$3 = Autosuggest_1.default;
 
-  var parse = function parse(text, matches) {
-    var result = [];
-
-    if (matches.length === 0) {
-      result.push({
-        text: text,
-        highlight: false
-      });
-    } else {
-      if (matches[0][0] > 0) {
-        result.push({
-          text: text.slice(0, matches[0][0]),
-          highlight: false
-        });
-      }
-    }
-
-    matches.forEach(function (match, i) {
-      var startIndex = match[0];
-      var endIndex = match[1];
-      result.push({
-        text: text.slice(startIndex, endIndex),
-        highlight: true
-      });
-
-      if (i === matches.length - 1) {
-        if (endIndex < text.length) {
-          result.push({
-            text: text.slice(endIndex, text.length),
-            highlight: false
-          });
-        }
-      } else if (endIndex < matches[i + 1][0]) {
-        result.push({
-          text: text.slice(endIndex, matches[i + 1][0]),
-          highlight: false
-        });
-      }
-    });
-    return result;
-  };
-
   var fuse = createCommonjsModule(function (module, exports) {
     /*!
      * Fuse.js v3.3.0 - Lightweight fuzzy-search (http://fusejs.io)
@@ -7294,7 +7252,7 @@
       transform: "translate(-50%, 0)",
       border: "0px none",
       background: "rgb(48, 51, 56)",
-      overflow: "auto",
+      overflow: "hidden",
       WebkitOverflowScrolling: "touch",
       borderRadius: "4px",
       outline: "none",
@@ -7319,7 +7277,7 @@
     inputOpen: {},
     inputFocused: {},
     suggestionsContainer: {
-      overflow: "scroll",
+      overflow: "hidden",
       borderTop: "1px solid #111",
       borderBottom: "1px solid #111",
       maxHeight: "315px",
@@ -7390,6 +7348,77 @@
     }, "Loading...");
   };
 
+  var parse = function parse(text, matches) {
+    var result = [];
+
+    if (matches.length === 0) {
+      result.push({
+        text: text,
+        highlight: false
+      });
+    } else {
+      if (matches[0][0] > 0) {
+        result.push({
+          text: text.slice(0, matches[0][0]),
+          highlight: false
+        });
+      }
+    }
+
+    matches.forEach(function (match, i) {
+      var startIndex = match[0];
+      var endIndex = match[1];
+      result.push({
+        text: text.slice(startIndex, endIndex),
+        highlight: true
+      });
+
+      if (i === matches.length - 1) {
+        if (endIndex < text.length) {
+          result.push({
+            text: text.slice(endIndex, text.length),
+            highlight: false
+          });
+        }
+      } else if (endIndex < matches[i + 1][0]) {
+        result.push({
+          text: text.slice(endIndex, matches[i + 1][0]),
+          highlight: false
+        });
+      }
+    });
+    return result;
+  };
+
+  var RenderSuggestion = (function (suggestion) {
+    // whereas fusejs returns matches "m" in
+    // "match" as [[0,0]] parts expects it as [[0,1]]. So map over the fuse
+    // matches and return the array modified for the format expected by parts
+    var matches = function () {
+      if (!Array.isArray(suggestion.matches)) return [];
+      if (!suggestion.matches.length) return [];
+      return suggestion.matches[0].indices.map(function (item) {
+        return [item[0], item[1] + 1];
+      });
+    }();
+
+    var parts = parse(suggestion.item.name, matches);
+    return React.createElement("div", {
+      className: "item"
+    }, parts.map(function (part, index) {
+      var id = "".concat(part.text, "_").concat(index);
+      var style = part.highlight ? {
+        fontWeight: "bold",
+        background: "none",
+        color: "#03A9F4"
+      } : null;
+      return React.createElement("span", {
+        style: style,
+        key: id
+      }, part.text);
+    }));
+  });
+
   // Monkey patching for the commands
   // http://me.dt.in.th/page/JavaScript-override/
 
@@ -7432,37 +7461,7 @@
   // highlighted suggestion, but query will remain to be equal to the trimmed
   // value of the input prior to the Up and Down interactions.
   // isHighlighted - Whether or not the suggestion is highlighted.
-  // export const RenderSuggestion = (suggestion, { query }) => {
 
-
-  var RenderSuggestion = function RenderSuggestion(suggestion) {
-    // whereas fusejs returns matches "m" in
-    // "match" as [[0,0]] parts expects it as [[0,1]]. So map over the fuse
-    // matches and return the array modified for the format expected by parts
-    var matches = function () {
-      if (!Array.isArray(suggestion.matches)) return [];
-      if (!suggestion.matches.length) return [];
-      return suggestion.matches[0].indices.map(function (item) {
-        return [item[0], item[1] + 1];
-      });
-    }();
-
-    var parts = parse(suggestion.item.name, matches);
-    return React.createElement("div", {
-      className: "item"
-    }, parts.map(function (part, index) {
-      var id = "".concat(part.text, "_").concat(index);
-      var style = part.highlight ? {
-        fontWeight: "bold",
-        background: "none",
-        color: "#03A9F4"
-      } : null;
-      return React.createElement("span", {
-        style: style,
-        key: id
-      }, part.text);
-    }));
-  };
 
   var CommandPalette =
   /*#__PURE__*/
@@ -7713,7 +7712,6 @@
     options: propTypes.object
   };
 
-  exports.RenderSuggestion = RenderSuggestion;
   exports.default = CommandPalette;
 
   Object.defineProperty(exports, '__esModule', { value: true });
