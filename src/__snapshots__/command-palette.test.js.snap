@@ -72,21 +72,25 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   <div
     className="react-command-palette"
   >
-    <button
-      className="ui button"
+    <PaletteTrigger
       onClick={[Function]}
-      type="button"
     >
-      Command Palette  
-      <kbd
-        className="ui mini horizontal grey label"
+      <button
+        className="ui button"
+        onClick={[Function]}
+        type="button"
       >
-        <span>
-          Keyboard Shortcut
-        </span>
-        ⇧⌘P
-      </kbd>
-    </button>
+        Command Palette  
+        <kbd
+          className="ui mini horizontal grey label"
+        >
+          <span>
+            Keyboard Shortcut
+          </span>
+           ⇧⌘P
+        </kbd>
+      </button>
+    </PaletteTrigger>
     <Modal
       appElement={
         <body

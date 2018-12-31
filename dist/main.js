@@ -7419,6 +7419,37 @@
     }));
   });
 
+  var PaletteTrigger =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(PaletteTrigger, _Component);
+
+    function PaletteTrigger() {
+      _classCallCheck(this, PaletteTrigger);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(PaletteTrigger).apply(this, arguments));
+    }
+
+    _createClass(PaletteTrigger, [{
+      key: "render",
+      value: function render() {
+        var onClick = this.props.onClick;
+        return React__default.createElement("button", {
+          className: "ui button",
+          onClick: onClick,
+          type: "button"
+        }, "Command Palette \xA0", React__default.createElement("kbd", {
+          className: "ui mini horizontal grey label"
+        }, React__default.createElement("span", null, "Keyboard Shortcut"), " \u21E7\u2318P"));
+      }
+    }]);
+
+    return PaletteTrigger;
+  }(React.Component);
+  PaletteTrigger.propTypes = {
+    onClick: propTypes.func.isRequired
+  };
+
   // Monkey patching for the commands
   // http://me.dt.in.th/page/JavaScript-override/
 
@@ -7635,7 +7666,9 @@
 
         var _this$state = this.state,
             value = _this$state.value,
-            suggestions = _this$state.suggestions; // Autosuggest will pass through all these props to the input element.
+            suggestions = _this$state.suggestions,
+            showModal = _this$state.showModal,
+            isLoading = _this$state.isLoading; // Autosuggest will pass through all these props to the input element.
 
         var inputProps = {
           placeholder: "Type a command",
@@ -7647,18 +7680,11 @@
           content: theme$2.content,
           overlay: theme$2.overlay
         };
-        var _this$state2 = this.state,
-            showModal = _this$state2.showModal,
-            isLoading = _this$state2.isLoading;
         return React.createElement("div", {
           className: "react-command-palette"
-        }, React.createElement("button", {
-          className: "ui button",
-          onClick: this.handleOpenModal,
-          type: "button"
-        }, "Command Palette \xA0", React.createElement("kbd", {
-          className: "ui mini horizontal grey label"
-        }, React.createElement("span", null, "Keyboard Shortcut"), "\u21E7\u2318P")), React.createElement(ReactModal, {
+        }, React.createElement(PaletteTrigger, {
+          onClick: this.handleOpenModal
+        }), React.createElement(ReactModal, {
           appElement: document.body,
           style: modalStyles,
           isOpen: showModal,
