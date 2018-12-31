@@ -272,7 +272,10 @@ CommandPalette.defaultProps = {
 };
 
 CommandPalette.propTypes = {
-  /** commands appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key.  */
+  /** commands appears in the command palette. For each command in the array the object
+  must have a _name_ and a _command_. The _name_ is a user friendly string that will
+  be display to the user. The command is a function that will be executed when the
+  user clicks or presses the enter key. */
   commands: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -280,16 +283,23 @@ CommandPalette.propTypes = {
     })
   ).isRequired,
 
-  /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd */
+  /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
+  Defaults to "_cmd */
   hotKeys: PropTypes.string,
 
-  /** options controls how fuzzy search is configured see [fusejs options](http://fusejs.io/) */
+  /** options controls how fuzzy search is configured see [fusejs options]
+  (http://fusejs.io/) */
   options: PropTypes.object,
 
-  /** open a boolean, when set to true it forces the command palette to be displayed. Defaults to "false". */
+  /** open a boolean, when set to true it forces the command palette to be displayed.
+  Defaults to "false". */
   open: PropTypes.bool,
 
-  /** trigger a string or a React.ComponentType the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies. */
+  /** trigger a string or a React.ComponentType the opens the command palette when
+  clicked. If a custom trigger is not set then by default a button will be used. If a
+  custom component or string is provided then it will automatically be wrapped inside
+  an accessible div that will allow it be keyboard accessible, clickable and focusable
+  for assistive technologies. */
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 

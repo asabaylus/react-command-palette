@@ -31,7 +31,10 @@ const plugins = [
       "node_modules/autosuggest-highlight/parse/index.js": ["parse"]
     }
   }),
-  babel(),
+  babel({
+    exclude: "node_modules/**",
+    runtimeHelpers: true
+  }),
   resolve({
     jsnext: true,
     main: true,
