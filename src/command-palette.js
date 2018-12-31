@@ -37,6 +37,11 @@ const allSuggestions = [];
 // input value for every given suggestion.
 const getSuggestionValue = suggestion => suggestion.item.name;
 
+const modalStyles = {
+  content: theme.content,
+  overlay: theme.overlay
+};
+
 // Use your imagination to define how suggestions are rendered.
 //
 // The signature is:
@@ -185,21 +190,38 @@ class CommandPalette extends React.Component {
     });
   }
 
-  render() {
-    const { value, suggestions, showModal, isLoading } = this.state;
-
-    // Autosuggest will pass through all these props to the input element.
-    const inputProps = {
+  // Autosuggest will pass through all these props to the input element.
+  defaultInputProps(value) {
+    return {
       placeholder: "Type a command",
       value,
       onChange: this.onChange,
       onKeyDown: this.onKeyDown
     };
+  }
 
-    const modalStyles = {
-      content: theme.content,
-      overlay: theme.overlay
-    };
+  renderAutoSuggest(suggestions, value) {
+    return (
+      <Autosuggest
+        ref={input => {
+          this.commandPaletteInput = input;
+        }}
+        suggestions={take(suggestions, 7)}
+        highlightFirstSuggestion
+        onSuggestionSelected={this.onSuggestionSelected}
+        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+        getSuggestionValue={getSuggestionValue}
+        renderSuggestion={RenderSuggestion}
+        inputProps={this.defaultInputProps(value)}
+        alwaysRenderSuggestions
+        theme={theme}
+      />
+    );
+  }
+
+  render() {
+    const { value, suggestions, showModal, isLoading } = this.state;
 
     return (
       <div className="react-command-palette">
@@ -217,25 +239,7 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {isLoading ? (
-            <Spinner />
-          ) : (
-            <Autosuggest
-              ref={input => {
-                this.commandPaletteInput = input;
-              }}
-              suggestions={take(suggestions, 7)}
-              highlightFirstSuggestion
-              onSuggestionSelected={this.onSuggestionSelected}
-              onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-              onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-              getSuggestionValue={getSuggestionValue}
-              renderSuggestion={RenderSuggestion}
-              inputProps={inputProps}
-              alwaysRenderSuggestions
-              theme={theme}
-            />
-          )}
+          {isLoading ? <Spinner /> : this.renderAutoSuggest(suggestions, value)}
         </ReactModal>
       </div>
     );
