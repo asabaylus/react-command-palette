@@ -6,11 +6,15 @@
   "module": "dist/main.es.js",
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
-    "dev": "concurrently --raw --kill-others \"NODE_ENV=development rollup -c -w\" \"jest --watch\"",
+    "dev": "npm run prebuild:storybook && concurrently --raw --kill-others \"npm run storybook\" \"jest --watch\"",
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
     "prepublish": "npm run build",
-    "test": "NODE_ENV=test jest"
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
+    "test": "NODE_ENV=test jest",
+    "prebuild:storybook": "npm run test:generate-output",
+    "storybook": "NODE_ENV=development start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -60,9 +64,15 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-a11y": "^4.1.4",
+    "@storybook/addon-jest": "^4.1.4",
+    "@storybook/addon-knobs": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
+    "@storybook/react": "^4.1.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
     "babelrc-rollup": "^3.0.0",
     "codecov": "^3.1.0",
     "concurrently": "^4.1.0",
@@ -90,12 +100,10 @@
     "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-hypothetical": "^2.1.0",
-    "rollup-plugin-livereload": "^0.6.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "1.6.3",
     "rollup-plugin-postcss-modules": "^1.0.10",
     "rollup-plugin-replace": "^2.1.0",
-    "rollup-plugin-serve": "^0.6.1",
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {

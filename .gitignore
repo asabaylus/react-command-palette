@@ -4,6 +4,9 @@
 # Logs
 npm-debug.log*
 
+# Build deps
+.jest-test-results.json
+
 # Runtime data
 pids
 *.pid
