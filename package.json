@@ -14,7 +14,7 @@
     "test": "NODE_ENV=test jest",
     "prebuild:storybook": "npm run test:generate-output",
     "storybook": "NODE_ENV=development start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,7 @@
     "accessibile",
     "react-component"
   ],
-  "authors": [
-    "Asa Baylus"
-  ],
+  "author": "Asa Baylus",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/asabaylus/react-command-palette/issues"
@@ -71,6 +69,7 @@
     "@storybook/addon-options": "^4.1.4",
     "@storybook/addons": "^4.1.4",
     "@storybook/react": "^4.1.4",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
@@ -111,7 +110,6 @@
     "storybook-readme": "^4.0.2"
   },
   "dependencies": {
-    "@sambego/storybook-state": "^1.3.2",
     "autosuggest-highlight": "^3.1.1",
     "fuse.js": "^3.3.0",
     "lodash.take": "^4.1.1",
