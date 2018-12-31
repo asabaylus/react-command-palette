@@ -39,6 +39,8 @@
     "react/no-find-dom-node": [0],
     "react/jsx-closing-bracket-location": [0],
     "react/jsx-filename-extension": ["error", {"extensions": [".js"]}],
+    "react/prefer-stateless-function": [true, { "ignorePureComponents": true }],
+    "object-curly-newline": [0],
     "react/require-default-props": 0,
     "class-methods-use-this": [0]
   }

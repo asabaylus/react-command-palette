@@ -10,6 +10,7 @@ import theme from "./theme";
 import Spinner from "./spinner";
 
 import RenderSuggestion from "./render-suggestion";
+import PaletteTrigger from "./palette-trigger";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -185,7 +186,8 @@ class CommandPalette extends React.Component {
   }
 
   render() {
-    const { value, suggestions } = this.state;
+    const { value, suggestions, showModal, isLoading } = this.state;
+
     // Autosuggest will pass through all these props to the input element.
     const inputProps = {
       placeholder: "Type a command",
@@ -193,24 +195,15 @@ class CommandPalette extends React.Component {
       onChange: this.onChange,
       onKeyDown: this.onKeyDown
     };
+
     const modalStyles = {
       content: theme.content,
       overlay: theme.overlay
     };
-    const { showModal, isLoading } = this.state;
+
     return (
       <div className="react-command-palette">
-        <button
-          className="ui button"
-          onClick={this.handleOpenModal}
-          type="button"
-        >
-          Command Palette &nbsp;
-          <kbd className="ui mini horizontal grey label">
-            <span>Keyboard Shortcut</span>
-            ⇧⌘P
-          </kbd>
-        </button>
+        <PaletteTrigger onClick={this.handleOpenModal} />
         <ReactModal
           appElement={document.body}
           style={modalStyles}
