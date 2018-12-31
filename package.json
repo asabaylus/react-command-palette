@@ -10,7 +10,7 @@
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
     "prepublish": "npm run build",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
+    "test:generate-output": "jest --silent --json --outputFile=.jest-test-results.json || true",
     "test": "NODE_ENV=test jest",
     "prebuild:storybook": "npm run test:generate-output",
     "storybook": "NODE_ENV=development start-storybook -p 6006",
