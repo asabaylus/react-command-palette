@@ -7413,6 +7413,17 @@ var RenderSuggestion = (function (suggestion) {
   }));
 });
 
+/* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+
+var visualyHidden = {
+  position: "absolute !important",
+  height: "1px",
+  width: "1px",
+  overflow: "hidden",
+  clip: "rect(1px, 1px, 1px, 1px)",
+  display: "inline-block"
+};
+
 var PaletteTrigger =
 /*#__PURE__*/
 function (_Component) {
@@ -7434,7 +7445,9 @@ function (_Component) {
         type: "button"
       }, "Command Palette \xA0", React__default.createElement("kbd", {
         className: "ui mini horizontal grey label"
-      }, React__default.createElement("span", null, "Keyboard Shortcut"), " \u21E7\u2318P"));
+      }, React__default.createElement("span", {
+        style: visualyHidden
+      }, " Keyboard Shortcut "), "\u21E7\u2318P"));
     }
   }]);
 
@@ -7747,7 +7760,7 @@ CommandPalette.propTypes = {
   commands: propTypes.array,
   hotKeys: propTypes.string,
   options: propTypes.object,
-  open: propTypes.boolean
+  open: propTypes.bool
 };
 
 export default CommandPalette;

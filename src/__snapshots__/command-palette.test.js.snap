@@ -84,10 +84,21 @@ exports[`Opening the palette displays the suggestion list 1`] = `
         <kbd
           className="ui mini horizontal grey label"
         >
-          <span>
-            Keyboard Shortcut
+          <span
+            style={
+              Object {
+                "clip": "rect(1px, 1px, 1px, 1px)",
+                "display": "inline-block",
+                "height": "1px",
+                "overflow": "hidden",
+                "position": "absolute !important",
+                "width": "1px",
+              }
+            }
+          >
+             Keyboard Shortcut 
           </span>
-           ⇧⌘P
+          ⇧⌘P
         </kbd>
       </button>
     </PaletteTrigger>
