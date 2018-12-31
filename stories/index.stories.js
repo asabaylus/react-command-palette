@@ -1,0 +1,42 @@
+import * as React from "react";
+// eslint-disable-next-line no-unused-vars
+import { storiesOf, addDecorator } from "@storybook/react";
+import "../src/styles.css";
+import { withTests } from "@storybook/addon-jest";
+import { withKnobs, object } from "@storybook/addon-knobs";
+import { checkA11y } from "@storybook/addon-a11y";
+import CommandPalette from "../src/command-palette";
+import commands from "../src/__mocks__/commands";
+import results from "../.jest-test-results.json";
+
+storiesOf("Command Palette", module)
+  .addDecorator(checkA11y)
+  .addDecorator(withKnobs)
+  .addDecorator(withTests({ results }))
+  .addParameters({ jest: ["command-palette.test.js"] })
+  .add("with some commands", () => {
+    // Knobs Addon for Commands object
+    const commandsInput = object("Commands", commands);
+    return <CommandPalette commands={commandsInput} />;
+  })
+  .add("with custom hotkeys", () => (
+    <CommandPalette commands={commands} hotKeys="/" />
+  ))
+  .add("with search options", () => {
+    // Knobs for Search Options Object
+    const opts = {
+      shouldSort: true,
+      tokenize: true,
+      matchAllTokens: true,
+      findAllMatches: true,
+      includeMatches: true,
+      threshold: 0.3,
+      location: 0,
+      distance: 1,
+      maxPatternLength: 32,
+      minMatchCharLength: 3,
+      keys: ["name", "section"]
+    };
+    const searchOptionsInput = object("Search Options", opts);
+    return <CommandPalette commands={commands} options={searchOptionsInput} />;
+  });

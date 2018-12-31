@@ -4,12 +4,8 @@ import resolve from "rollup-plugin-node-resolve";
 import replace from "rollup-plugin-replace";
 import commonjs from "rollup-plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
-import serve from "rollup-plugin-serve";
-import livereload from "rollup-plugin-livereload";
 
 import pkg from "./package.json";
-
-const isProduction = process.env.NODE_ENV === "production";
 
 const plugins = [
   replace({
@@ -40,49 +36,29 @@ const plugins = [
     jsnext: true,
     main: true,
     browser: true
-  }),
+  })
 ];
 
-if (process.env.NODE_ENV === 'development') {
-  plugins.push(serve({
-    contentBase: ".",
-    open: true,
-    verbose: true
-  }))
-  plugins.push (livereload("dist"))
-}
-
-
 export default {
-  input: isProduction ? "src/command-palette.js" : "src/main.js",
-  external: isProduction ? ["react", "react-dom"] : "",
+  input: "src/command-palette.js",
+  external: ["react", "react-dom"],
   output: [
     {
       file: pkg.main,
       format: "umd",
       globals: {
-        'react': "React",
-        'react-dom': "ReactDOM"
+        react: "React",
+        "react-dom": "ReactDOM"
       },
       sourcemap: "external",
       name: "CommandPalette",
-      exports: 'named'
+      exports: "named"
     },
     {
       file: pkg.module,
-      format: 'es',
+      format: "es",
       sourcemap: "external"
     }
   ],
   plugins
 };
-
-
-
-
-
-
-
-
-
-
