@@ -7478,6 +7478,11 @@
 
   var getSuggestionValue = function getSuggestionValue(suggestion) {
     return suggestion.item.name;
+  };
+
+  var modalStyles = {
+    content: theme$2.content,
+    overlay: theme$2.overlay
   }; // Use your imagination to define how suggestions are rendered.
   //
   // The signature is:
@@ -7492,7 +7497,6 @@
   // highlighted suggestion, but query will remain to be equal to the trimmed
   // value of the input prior to the Up and Down interactions.
   // isHighlighted - Whether or not the suggestion is highlighted.
-
 
   var CommandPalette =
   /*#__PURE__*/
@@ -7658,28 +7662,47 @@
           value: "",
           suggestions: allSuggestions
         });
-      }
+      } // Autosuggest will pass through all these props to the input element.
+
     }, {
-      key: "render",
-      value: function render() {
-        var _this5 = this;
-
-        var _this$state = this.state,
-            value = _this$state.value,
-            suggestions = _this$state.suggestions,
-            showModal = _this$state.showModal,
-            isLoading = _this$state.isLoading; // Autosuggest will pass through all these props to the input element.
-
-        var inputProps = {
+      key: "defaultInputProps",
+      value: function defaultInputProps(value) {
+        return {
           placeholder: "Type a command",
           value: value,
           onChange: this.onChange,
           onKeyDown: this.onKeyDown
         };
-        var modalStyles = {
-          content: theme$2.content,
-          overlay: theme$2.overlay
-        };
+      }
+    }, {
+      key: "renderAutoSuggest",
+      value: function renderAutoSuggest(suggestions, value) {
+        var _this5 = this;
+
+        return React.createElement(dist$3, {
+          ref: function ref(input) {
+            _this5.commandPaletteInput = input;
+          },
+          suggestions: lodash_take(suggestions, 7),
+          highlightFirstSuggestion: true,
+          onSuggestionSelected: this.onSuggestionSelected,
+          onSuggestionsFetchRequested: this.onSuggestionsFetchRequested,
+          onSuggestionsClearRequested: this.onSuggestionsClearRequested,
+          getSuggestionValue: getSuggestionValue,
+          renderSuggestion: RenderSuggestion,
+          inputProps: this.defaultInputProps(value),
+          alwaysRenderSuggestions: true,
+          theme: theme$2
+        });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this$state = this.state,
+            value = _this$state.value,
+            suggestions = _this$state.suggestions,
+            showModal = _this$state.showModal,
+            isLoading = _this$state.isLoading;
         return React.createElement("div", {
           className: "react-command-palette"
         }, React.createElement(PaletteTrigger, {
@@ -7695,21 +7718,7 @@
           /* otherwise the modal is not closed when
           suggestion is selected by pressing Enter */
 
-        }, isLoading ? React.createElement(Spinner, null) : React.createElement(dist$3, {
-          ref: function ref(input) {
-            _this5.commandPaletteInput = input;
-          },
-          suggestions: lodash_take(suggestions, 7),
-          highlightFirstSuggestion: true,
-          onSuggestionSelected: this.onSuggestionSelected,
-          onSuggestionsFetchRequested: this.onSuggestionsFetchRequested,
-          onSuggestionsClearRequested: this.onSuggestionsClearRequested,
-          getSuggestionValue: getSuggestionValue,
-          renderSuggestion: RenderSuggestion,
-          inputProps: inputProps,
-          alwaysRenderSuggestions: true,
-          theme: theme$2
-        })));
+        }, isLoading ? React.createElement(Spinner, null) : this.renderAutoSuggest(suggestions, value)));
       }
     }]);
 
