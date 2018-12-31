@@ -14,6 +14,7 @@
     "test": "NODE_ENV=test jest",
     "prebuild:storybook": "npm run test:generate-output",
     "storybook": "NODE_ENV=development start-storybook -p 6006",
+    "deploy-storybook": "storybook-to-ghpages",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -69,6 +70,7 @@
     "@storybook/addon-knobs": "^4.1.4",
     "@storybook/addons": "^4.1.4",
     "@storybook/react": "^4.1.4",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
