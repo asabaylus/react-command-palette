@@ -87,7 +87,7 @@ class CommandPalette extends React.Component {
   }
 
   componentDidMount() {
-    const { hotKeys } = this.props;
+    const { hotKeys, open } = this.props;
     this.fetchData();
     // Use hot key to open command palette
     Mousetrap.bind(hotKeys, () => {
@@ -95,6 +95,12 @@ class CommandPalette extends React.Component {
       // prevent default which opens Chrome dev tools command palatte
       return false;
     });
+
+    if (open) {
+      return this.handleOpenModal();
+    }
+
+    return true;
   }
 
   onChange(event, { newValue }) {
@@ -266,7 +272,8 @@ CommandPalette.defaultProps = {
 CommandPalette.propTypes = {
   commands: PropTypes.array,
   hotKeys: PropTypes.string,
-  options: PropTypes.object
+  options: PropTypes.object,
+  open: PropTypes.bool
 };
 
 export default CommandPalette;

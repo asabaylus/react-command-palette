@@ -7532,7 +7532,9 @@ function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var hotKeys = this.props.hotKeys;
+      var _this$props = this.props,
+          hotKeys = _this$props.hotKeys,
+          open = _this$props.open;
       this.fetchData(); // Use hot key to open command palette
 
       mousetrap.bind(hotKeys, function () {
@@ -7541,6 +7543,12 @@ function (_React$Component) {
 
         return false;
       });
+
+      if (open) {
+        return this.handleOpenModal();
+      }
+
+      return true;
     }
   }, {
     key: "onChange",
@@ -7738,7 +7746,8 @@ CommandPalette.defaultProps = {
 CommandPalette.propTypes = {
   commands: propTypes.array,
   hotKeys: propTypes.string,
-  options: propTypes.object
+  options: propTypes.object,
+  open: propTypes.boolean
 };
 
 export default CommandPalette;
