@@ -14,6 +14,7 @@ storiesOf("Command Palette", module)
   .addDecorator(withKnobs)
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
+  .add("toggled open", () => <CommandPalette commands={commands} open />)
   .add("with some commands", () => {
     // Knobs Addon for Commands object
     const commandsInput = object("Commands", commands);

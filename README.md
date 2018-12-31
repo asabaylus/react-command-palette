@@ -43,9 +43,10 @@ const commands = [{
 
 props
 
+* ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
 * ```options``` controls how fuzzy search is configured see [fusejs options](http://fusejs.io/)
-* ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. 
+* ```commands``` appear in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. 
 
 
 # Developer Setup

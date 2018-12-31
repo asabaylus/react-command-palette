@@ -64,6 +64,13 @@ describe("Opening the palette", () => {
     expect(commands).toHaveLength(mockCommands.length);
   });
 
+  it("should be displayed when open prop is true", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    expect(commandPalette.state("showModal")).toEqual(true);
+  });
+
   it("opens the commandPalette when handleOpenModal is called", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
     expect(commandPalette.state("showModal")).toEqual(false);
