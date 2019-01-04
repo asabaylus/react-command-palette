@@ -1,7 +1,8 @@
 {
   "plugins": [
     "jest",
-    "prettier"
+    "prettier",
+    "xss"
   ],
   "env": {
     "es6": true,
