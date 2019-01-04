@@ -46,8 +46,16 @@ props
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
 * ```options``` controls how fuzzy search is configured see [fusejs options](http://fusejs.io/)
-* ```commands``` appear in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. 
+* ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. 
+* ```trigger``` a _string_ or a React _element_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
 
+Example with a component:
+<div role="button" tabindex="0"><b>Your Component Here</b></div>
+
+Example with a string:
+<div role="button" tabindex="0">Your Text Here</div>
+
+When the trigger is clicked it will open the command palette, no custom handlers or events are required.
 
 # Developer Setup
 ```

@@ -3,7 +3,7 @@ import * as React from "react";
 import { storiesOf, addDecorator } from "@storybook/react";
 import "../src/styles.css";
 import { withTests } from "@storybook/addon-jest";
-import { withKnobs, object } from "@storybook/addon-knobs";
+import { withKnobs, object, text } from "@storybook/addon-knobs";
 import { checkA11y } from "@storybook/addon-a11y";
 import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
@@ -14,12 +14,18 @@ storiesOf("Command Palette", module)
   .addDecorator(withKnobs)
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
-  .add("toggled open", () => <CommandPalette commands={commands} open />)
-  .add("with some commands", () => {
+  .add("is toggled open", () => <CommandPalette commands={commands} open />)
+  .add("with defaults", () => {
     // Knobs Addon for Commands object
     const commandsInput = object("Commands", commands);
     return <CommandPalette commands={commandsInput} />;
   })
+  .add("with a custom trigger", () => (
+    <CommandPalette
+      commands={commands}
+      trigger={text("TiggerComponent", <b>Click Me!</b>)}
+    />
+  ))
   .add("with custom hotkeys", () => (
     <CommandPalette commands={commands} hotKeys="/" />
   ))

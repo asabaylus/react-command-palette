@@ -206,6 +206,7 @@ class CommandPalette extends React.Component {
     };
   }
 
+  // eslint-disable-next-line react/sort-comp
   renderAutoSuggest(suggestions, value) {
     return (
       <Autosuggest
@@ -228,10 +229,11 @@ class CommandPalette extends React.Component {
 
   render() {
     const { value, suggestions, showModal, isLoading } = this.state;
+    const { trigger } = this.props;
 
     return (
       <div className="react-command-palette">
-        <PaletteTrigger onClick={this.handleOpenModal} />
+        <PaletteTrigger onClick={this.handleOpenModal} trigger={trigger} />
         <ReactModal
           appElement={document.body}
           style={modalStyles}
@@ -273,7 +275,8 @@ CommandPalette.propTypes = {
   commands: PropTypes.array,
   hotKeys: PropTypes.string,
   options: PropTypes.object,
-  open: PropTypes.bool
+  open: PropTypes.bool,
+  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 
 export default CommandPalette;
