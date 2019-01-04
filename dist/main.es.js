@@ -1,4 +1,4 @@
-import React__default, { createElement, Component, createRef } from 'react';
+import React__default, { createElement, createRef, Component } from 'react';
 import reactDom from 'react-dom';
 
 function _classCallCheck(instance, Constructor) {
@@ -7413,6 +7413,7 @@ var RenderSuggestion = (function (suggestion) {
   }));
 });
 
+/* eslint-disable react/jsx-one-expression-per-line */
 /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
 
 var visualyHidden = {
@@ -7424,38 +7425,53 @@ var visualyHidden = {
   display: "inline-block"
 };
 
-var PaletteTrigger =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(PaletteTrigger, _Component);
+var DefaultTriggerComponent = function DefaultTriggerComponent(props) {
+  var onClick = props.onClick;
+  return React__default.createElement("button", {
+    className: "ui button",
+    onClick: onClick,
+    type: "button"
+  }, "Command Palette \xA0", React__default.createElement("kbd", {
+    className: "ui mini horizontal grey label"
+  }, React__default.createElement("span", {
+    style: visualyHidden
+  }, " Keyboard Shortcut "), "\u21E7\u2318P"));
+};
 
-  function PaletteTrigger() {
-    _classCallCheck(this, PaletteTrigger);
+var CustomTriggerComponent = function CustomTriggerComponent(props) {
+  var onClick = props.onClick,
+      trigger = props.trigger;
+  return React__default.createElement("div", {
+    onClick: onClick,
+    onKeyPress: onClick,
+    role: "button",
+    tabIndex: 0
+  }, trigger);
+};
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(PaletteTrigger).apply(this, arguments));
+function PaletteTrigger(props) {
+  var onClick = props.onClick,
+      trigger = props.trigger;
+
+  if (trigger) {
+    return React__default.createElement(CustomTriggerComponent, {
+      onClick: onClick,
+      trigger: trigger
+    });
   }
 
-  _createClass(PaletteTrigger, [{
-    key: "render",
-    value: function render() {
-      var onClick = this.props.onClick;
-      return React__default.createElement("button", {
-        className: "ui button",
-        onClick: onClick,
-        type: "button"
-      }, "Command Palette \xA0", React__default.createElement("kbd", {
-        className: "ui mini horizontal grey label"
-      }, React__default.createElement("span", {
-        style: visualyHidden
-      }, " Keyboard Shortcut "), "\u21E7\u2318P"));
-    }
-  }]);
-
-  return PaletteTrigger;
-}(Component);
-PaletteTrigger.propTypes = {
-  onClick: propTypes.func.isRequired
+  return React__default.createElement(DefaultTriggerComponent, {
+    onClick: onClick
+  });
+}
+DefaultTriggerComponent.propTypes = {
+  onClick: propTypes.func
 };
+CustomTriggerComponent.propTypes = {
+  onClick: propTypes.func,
+  trigger: propTypes.oneOfType([propTypes.string, propTypes.element])
+};
+PaletteTrigger.propTypes = CustomTriggerComponent.propTypes;
 
 // Monkey patching for the commands
 // http://me.dt.in.th/page/JavaScript-override/
@@ -7688,7 +7704,8 @@ function (_React$Component) {
         onChange: this.onChange,
         onKeyDown: this.onKeyDown
       };
-    }
+    } // eslint-disable-next-line react/sort-comp
+
   }, {
     key: "renderAutoSuggest",
     value: function renderAutoSuggest(suggestions, value) {
@@ -7718,10 +7735,12 @@ function (_React$Component) {
           suggestions = _this$state.suggestions,
           showModal = _this$state.showModal,
           isLoading = _this$state.isLoading;
+      var trigger = this.props.trigger;
       return createElement("div", {
         className: "react-command-palette"
       }, createElement(PaletteTrigger, {
-        onClick: this.handleOpenModal
+        onClick: this.handleOpenModal,
+        trigger: trigger
       }), createElement(ReactModal, {
         appElement: document.body,
         style: modalStyles,
@@ -7760,7 +7779,8 @@ CommandPalette.propTypes = {
   commands: propTypes.array,
   hotKeys: propTypes.string,
   options: propTypes.object,
-  open: propTypes.bool
+  open: propTypes.bool,
+  trigger: propTypes.oneOfType([propTypes.string, propTypes.element])
 };
 
 export default CommandPalette;

@@ -203,7 +203,7 @@ describe("Filtering the commands and pressing enter", () => {
 });
 
 describe("Command List", () => {
-  it("fetches a list of commands when given a string to match on", () => {
+  it("returns a list of commands when given a string to match on", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
     const suggestions = commandPalette.instance().getSuggestions("Fizz");
     expect(suggestions[0].item.name).toEqual("Fizz");
@@ -281,15 +281,15 @@ describe("Selecting a command", () => {
   });
 });
 
-describe("onSuggestionsFetchRequested", () => {
+describe("Fetching commands", () => {
   const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
 
-  it("updates the state with a filtered list of commands", () => {
+  it("should update the state with a filtered list of commands", () => {
     commandPalette.instance().onSuggestionsFetchRequested({ value: "Foo" });
     expect(commandPalette.state("suggestions")).toHaveLength(1);
   });
 
-  it("updates the state with a list of all commands", () => {
+  it("should update the state with a list of all commands", () => {
     commandPalette.instance().onSuggestionsFetchRequested({ value: null });
     expect(commandPalette.state("suggestions")).toHaveLength(
       mockCommands.length
