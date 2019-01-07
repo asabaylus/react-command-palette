@@ -19,33 +19,23 @@ exports[`Opening the palette displays the suggestion list 1`] = `
     Array [
       Object {
         "command": [Function],
-        "id": 1,
         "name": "Foo",
-        "section": "Command",
       },
       Object {
         "command": [Function],
-        "id": 2,
         "name": "Bar",
-        "section": "Command",
       },
       Object {
         "command": [Function],
-        "id": 3,
         "name": "Baz",
-        "section": "Command",
       },
       Object {
         "command": [Function],
-        "id": 4,
         "name": "Fizz",
-        "section": "Command",
       },
       Object {
         "command": [Function],
-        "id": 5,
         "name": "Fizz Buzz",
-        "section": "Command",
       },
     ]
   }
@@ -912,41 +902,41 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": 1,
+                        "id": undefined,
                         "name": "Foo",
-                        "section": "Command",
+                        "section": undefined,
                       },
                     },
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": 2,
+                        "id": undefined,
                         "name": "Bar",
-                        "section": "Command",
+                        "section": undefined,
                       },
                     },
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": 3,
+                        "id": undefined,
                         "name": "Baz",
-                        "section": "Command",
+                        "section": undefined,
                       },
                     },
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": 4,
+                        "id": undefined,
                         "name": "Fizz",
-                        "section": "Command",
+                        "section": undefined,
                       },
                     },
                     Object {
                       "item": Object {
                         "command": [Function],
-                        "id": 5,
+                        "id": undefined,
                         "name": "Fizz Buzz",
-                        "section": "Command",
+                        "section": undefined,
                       },
                     },
                   ]
@@ -1051,41 +1041,41 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       Object {
                         "item": Object {
                           "command": [Function],
-                          "id": 1,
+                          "id": undefined,
                           "name": "Foo",
-                          "section": "Command",
+                          "section": undefined,
                         },
                       },
                       Object {
                         "item": Object {
                           "command": [Function],
-                          "id": 2,
+                          "id": undefined,
                           "name": "Bar",
-                          "section": "Command",
+                          "section": undefined,
                         },
                       },
                       Object {
                         "item": Object {
                           "command": [Function],
-                          "id": 3,
+                          "id": undefined,
                           "name": "Baz",
-                          "section": "Command",
+                          "section": undefined,
                         },
                       },
                       Object {
                         "item": Object {
                           "command": [Function],
-                          "id": 4,
+                          "id": undefined,
                           "name": "Fizz",
-                          "section": "Command",
+                          "section": undefined,
                         },
                       },
                       Object {
                         "item": Object {
                           "command": [Function],
-                          "id": 5,
+                          "id": undefined,
                           "name": "Fizz Buzz",
-                          "section": "Command",
+                          "section": undefined,
                         },
                       },
                     ]
@@ -1236,41 +1226,41 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": 1,
+                                "id": undefined,
                                 "name": "Foo",
-                                "section": "Command",
+                                "section": undefined,
                               },
                             },
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": 2,
+                                "id": undefined,
                                 "name": "Bar",
-                                "section": "Command",
+                                "section": undefined,
                               },
                             },
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": 3,
+                                "id": undefined,
                                 "name": "Baz",
-                                "section": "Command",
+                                "section": undefined,
                               },
                             },
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": 4,
+                                "id": undefined,
                                 "name": "Fizz",
-                                "section": "Command",
+                                "section": undefined,
                               },
                             },
                             Object {
                               "item": Object {
                                 "command": [Function],
-                                "id": 5,
+                                "id": undefined,
                                 "name": "Fizz Buzz",
-                                "section": "Command",
+                                "section": undefined,
                               },
                             },
                           ]
@@ -1308,9 +1298,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               Object {
                                 "item": Object {
                                   "command": [Function],
-                                  "id": 1,
+                                  "id": undefined,
                                   "name": "Foo",
-                                  "section": "Command",
+                                  "section": undefined,
                                 },
                               }
                             }
@@ -1383,9 +1373,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               Object {
                                 "item": Object {
                                   "command": [Function],
-                                  "id": 2,
+                                  "id": undefined,
                                   "name": "Bar",
-                                  "section": "Command",
+                                  "section": undefined,
                                 },
                               }
                             }
@@ -1458,9 +1448,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               Object {
                                 "item": Object {
                                   "command": [Function],
-                                  "id": 3,
+                                  "id": undefined,
                                   "name": "Baz",
-                                  "section": "Command",
+                                  "section": undefined,
                                 },
                               }
                             }
@@ -1533,9 +1523,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               Object {
                                 "item": Object {
                                   "command": [Function],
-                                  "id": 4,
+                                  "id": undefined,
                                   "name": "Fizz",
-                                  "section": "Command",
+                                  "section": undefined,
                                 },
                               }
                             }
@@ -1608,9 +1598,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               Object {
                                 "item": Object {
                                   "command": [Function],
-                                  "id": 5,
+                                  "id": undefined,
                                   "name": "Fizz Buzz",
-                                  "section": "Command",
+                                  "section": undefined,
                                 },
                               }
                             }

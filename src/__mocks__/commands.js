@@ -1,32 +1,22 @@
 export default [
   {
-    id: 1,
     name: "Foo",
-    command() {},
-    section: "Command"
+    command() {}
   },
   {
-    id: 2,
     name: "Bar",
-    command() {},
-    section: "Command"
+    command() {}
   },
   {
-    id: 3,
     name: "Baz",
-    command() {},
-    section: "Command"
+    command() {}
   },
   {
-    id: 4,
     name: "Fizz",
-    command() {},
-    section: "Command"
+    command() {}
   },
   {
-    id: 5,
     name: "Fizz Buzz",
-    command() {},
-    section: "Command"
+    command() {}
   }
 ];
