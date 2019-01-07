@@ -7,7 +7,7 @@ WAI-ARIA compliant React command palette like the one in Atom and Sublime
 [![Maintainability](https://api.codeclimate.com/v1/badges/761754992fe0cd293c40/maintainability)](https://codeclimate.com/github/asabaylus/react-command-palette/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/761754992fe0cd293c40/test_coverage)](https://codeclimate.com/github/asabaylus/react-command-palette/test_coverage)
 
-[![https://uc5114c61cfbfbd1fd29a9152cba.previews.dropboxusercontent.com/p/orig/AAQCDIR_S7JwenCKG0cB2D2pD_FL2rZTs1hdI2ZydQBtsFciZ6foZ8NSFJPNPmpOzJ_UqK3cUCKsh0N6wiA9DI7RatySY3NgcPKWyqrPmIsq5IWgHI_9Wkpp7SQwhVa5Lko5tewdpjfzYJlVWFk5G7IFd0vQx2RFKdjSM6DaruE4CLCqCDoJcOATkI0jweNKkhE_L6-T2NxR0LDlK2_Hzi1puqRy5gH2COfUq0YyvqwxWFAAhTBayX0kfGTjuvf-M7c/p.gif?size=2048x1536&size_mode=3](https://uc5114c61cfbfbd1fd29a9152cba.previews.dropboxusercontent.com/p/orig/AAQCDIR_S7JwenCKG0cB2D2pD_FL2rZTs1hdI2ZydQBtsFciZ6foZ8NSFJPNPmpOzJ_UqK3cUCKsh0N6wiA9DI7RatySY3NgcPKWyqrPmIsq5IWgHI_9Wkpp7SQwhVa5Lko5tewdpjfzYJlVWFk5G7IFd0vQx2RFKdjSM6DaruE4CLCqCDoJcOATkI0jweNKkhE_L6-T2NxR0LDlK2_Hzi1puqRy5gH2COfUq0YyvqwxWFAAhTBayX0kfGTjuvf-M7c/p.gif?size=2048x1536&size_mode=3)](https://uc5114c61cfbfbd1fd29a9152cba.previews.dropboxusercontent.com/p/orig/AAQCDIR_S7JwenCKG0cB2D2pD_FL2rZTs1hdI2ZydQBtsFciZ6foZ8NSFJPNPmpOzJ_UqK3cUCKsh0N6wiA9DI7RatySY3NgcPKWyqrPmIsq5IWgHI_9Wkpp7SQwhVa5Lko5tewdpjfzYJlVWFk5G7IFd0vQx2RFKdjSM6DaruE4CLCqCDoJcOATkI0jweNKkhE_L6-T2NxR0LDlK2_Hzi1puqRy5gH2COfUq0YyvqwxWFAAhTBayX0kfGTjuvf-M7c/p.gif?size=2048x1536&size_mode=3) 
+[![Screenshot](https://bit.ly/2sfwD1g)](https://bit.ly/2sfwD1g)
 
 # Usage
 
@@ -41,19 +41,36 @@ const commands = [{
   document.getElementById('app'))
 ```
 
-props
+# Props
 
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
+
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
+
 * ```options``` controls how fuzzy search is configured see [fusejs options](http://fusejs.io/)
+
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. 
-* ```trigger``` a _string_ or a React _element_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
+
+* ```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
 
   Example with a component:
-  ```<div role="button" tabindex="0"><b>Your Component Here</b></div>```
+  ```
+  //jsx 
+  <CommandPalette commands={data} trigger={<b>Click Me!</b>}>
+  
+  // html
+  <div role="button" tabindex="0"><b>Click Me!</b></div>
+  ```
 
   Example with a string:
-  ```<div role="button" tabindex="0">Your Text Here</div>```
+  ```
+  //jsx 
+  <CommandPalette commands={data} trigger="Click Me!">
+
+  // html
+  <div role="button" tabindex="0">Click Me!</div>
+  ```
+  
 
   When the trigger is clicked it will open the command palette, no custom handlers or events are required.
 
