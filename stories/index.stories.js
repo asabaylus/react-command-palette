@@ -21,6 +21,17 @@ storiesOf("Command Palette", module)
   .addDecorator(withInfo)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
+  .addDecorator(story => (
+    <div
+      style={{
+        position: "relative",
+        minHeight: "764px",
+        minWidth: "428px"
+      }}
+    >
+      {story()}
+    </div>
+  ))
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
   .addParameters({
