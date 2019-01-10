@@ -27,6 +27,3 @@ node_modules/
 
 # OSX
 .DS_Store
-
-#IDE
-.vscode
