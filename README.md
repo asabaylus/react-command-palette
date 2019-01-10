@@ -9,9 +9,21 @@ WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
 [![Screenshot](https://www.dropbox.com/s/7dogg4v7vfkzvgs/react-command-palette.gif?raw=1)](https://www.dropbox.com/s/7dogg4v7vfkzvgs/react-command-palette.gif?raw=1)
 
-Try the [demo](https://baylus.com/react-command-palette/)
+## Live Playground
 
-# Usage
+For examples of the command palette in action, go to the 
+
+[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://baylus.com/react-command-palette/)
+
+OR
+
+To run that demo on your own computer:
+* Clone this repository
+* `npm install`
+* `npm run storybook`
+* Visit http://localhost:6006/
+
+## Usage
 
 Install it in your project
 
@@ -43,7 +55,7 @@ const commands = [{
   document.getElementById('app'))
 ```
 
-# Props
+## Props
 
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 
@@ -76,7 +88,7 @@ const commands = [{
 
   When the trigger is clicked it will open the command palette, no custom handlers or events are required.
 
-# Developer Setup
+## Developer Setup
 ```
 # install dependencies
 $ npm install
