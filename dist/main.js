@@ -6977,7 +6977,14 @@
     }, {
       key: "fetchData",
       value: function fetchData() {
-        var commands = this.props.commands;
+        var _this$props2 = this.props,
+            commands = _this$props2.commands,
+            maxDisplayed = _this$props2.maxDisplayed;
+
+        if (maxDisplayed > 500) {
+          throw new Error("Display is limited to a maximum of 500 items to prevent performance issues");
+        }
+
         this.allCommands = commands.map(function (obj) {
           return {
             item: {
@@ -7039,11 +7046,12 @@
       value: function renderAutoSuggest(suggestions, value) {
         var _this5 = this;
 
+        var maxDisplayed = this.props.maxDisplayed;
         return React.createElement(dist$3, {
           ref: function ref(input) {
             _this5.commandPaletteInput = input;
           },
-          suggestions: lodash_take(suggestions, 7),
+          suggestions: lodash_take(suggestions, maxDisplayed),
           highlightFirstSuggestion: true,
           onSuggestionSelected: this.onSuggestionSelected,
           onSuggestionsFetchRequested: this.onSuggestionsFetchRequested,
@@ -7089,6 +7097,7 @@
 
   CommandPalette.defaultProps = {
     hotKeys: "command+shift+p",
+    maxDisplayed: 7,
     options: {
       shouldSort: true,
       tokenize: true,
@@ -7112,6 +7121,17 @@
       name: propTypes.string.isRequired,
       command: propTypes.func.isRequired
     })).isRequired,
+
+    /** maxDisplayed a number between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7 */
+    maxDisplayed: function maxDisplayed(props, propName, componentName) {
+      var maxDisplayed = props.maxDisplayed;
+
+      if (maxDisplayed > 500) {
+        return new Error("Invalid prop ".concat(propName, " supplied to ").concat(componentName, " Cannot be greater than 500."));
+      }
+
+      return null;
+    },
 
     /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
     Defaults to "_cmd */

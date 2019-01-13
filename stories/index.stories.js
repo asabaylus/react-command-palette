@@ -5,7 +5,7 @@ import "../src/styles.css";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
-import { withKnobs, object } from "@storybook/addon-knobs";
+import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { checkA11y } from "@storybook/addon-a11y";
 import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
@@ -72,6 +72,20 @@ storiesOf("Command Palette", module)
   .add("with custom hotkeys", () => (
     <CommandPalette commands={commands} hotKeys="/" />
   ))
+  .add("with max displayed", () => {
+    const label = "maxDisplayed";
+    const defaultValue = 3;
+    const options = {
+      range: true,
+      min: 1,
+      max: commands.length,
+      step: 1
+    };
+    const maxDisplayed = number(label, defaultValue, options);
+    return (
+      <CommandPalette commands={commands} maxDisplayed={maxDisplayed} open />
+    );
+  })
   .add("with search options", () => {
     // Knobs for Search Options Object
     const opts = {
