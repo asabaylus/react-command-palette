@@ -239,6 +239,69 @@ describe("Command List", () => {
     const wrapper = shallow(renderSuggestion);
     expect(wrapper).toMatchSnapshot();
   });
+
+  describe("number of commands displayed", () => {
+    it("should not be greater than 500", () => {
+      const tooManyCommands = () => {
+        const arr = new Array(501);
+        return arr.fill({
+          name: "foo",
+          command: Function.prototype
+        });
+      };
+
+      let error;
+      try {
+        shallow(
+          <CommandPalette commands={tooManyCommands()} maxDisplayed={501} />
+        );
+      } catch (e) {
+        error = e;
+      }
+
+      expect(error).toBeInstanceOf(Error);
+      expect(error.message).toBe(
+        "Display is limited to a maximum of 500 items to prevent performance issues"
+      );
+    });
+
+    it("should display the configured number of commands", () => {
+      const maxDisplayed = 3;
+      const commands = () => {
+        const arr = new Array(500);
+        return arr.fill({
+          name: "foo",
+          command: Function.prototype
+        });
+      };
+      const commandPalette = mount(
+        <CommandPalette commands={commands()} maxDisplayed={maxDisplayed} />
+      );
+      commandPalette.find("button").simulate("click");
+      const commandsElements = commandPalette.find("Item");
+      expect(commandsElements).toHaveLength(maxDisplayed);
+    });
+
+    it("should display 7 commands by default", () => {
+      const defaultMaxDisplayed = 7;
+      const commands = () => {
+        const arr = new Array(500);
+        return arr.fill({
+          name: "foo",
+          command: Function.prototype
+        });
+      };
+      const commandPalette = mount(
+        <CommandPalette
+          commands={commands()}
+          maxDisplayed={defaultMaxDisplayed}
+        />
+      );
+      commandPalette.find("button").simulate("click");
+      const commandsElements = commandPalette.find("Item");
+      expect(commandsElements).toHaveLength(defaultMaxDisplayed);
+    });
+  });
 });
 
 describe("Selecting a command", () => {

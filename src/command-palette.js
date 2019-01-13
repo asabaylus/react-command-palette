@@ -158,7 +158,13 @@ class CommandPalette extends React.Component {
   }
 
   fetchData() {
-    const { commands } = this.props;
+    const { commands, maxDisplayed } = this.props;
+    if (maxDisplayed > 500) {
+      throw new Error(
+        "Display is limited to a maximum of 500 items to prevent performance issues"
+      );
+    }
+
     this.allCommands = commands.map(obj => ({
       item: {
         id: obj.id,
@@ -208,12 +214,13 @@ class CommandPalette extends React.Component {
 
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest(suggestions, value) {
+    const { maxDisplayed } = this.props;
     return (
       <Autosuggest
         ref={input => {
           this.commandPaletteInput = input;
         }}
-        suggestions={take(suggestions, 7)}
+        suggestions={take(suggestions, maxDisplayed)}
         highlightFirstSuggestion
         onSuggestionSelected={this.onSuggestionSelected}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
@@ -256,6 +263,7 @@ class CommandPalette extends React.Component {
 
 CommandPalette.defaultProps = {
   hotKeys: "command+shift+p",
+  maxDisplayed: 7,
   options: {
     shouldSort: true,
     tokenize: true,
@@ -282,6 +290,17 @@ CommandPalette.propTypes = {
       command: PropTypes.func.isRequired
     })
   ).isRequired,
+
+  /** maxDisplayed a number between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7 */
+  maxDisplayed(props, propName, componentName) {
+    const { maxDisplayed } = props;
+    if (maxDisplayed > 500) {
+      return new Error(
+        `Invalid prop ${propName} supplied to ${componentName} Cannot be greater than 500.`
+      );
+    }
+    return null;
+  },
 
   /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
   Defaults to "_cmd */

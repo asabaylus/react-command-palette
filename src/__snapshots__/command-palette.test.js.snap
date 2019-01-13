@@ -40,6 +40,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
     ]
   }
   hotKeys="command+shift+p"
+  maxDisplayed={7}
   options={
     Object {
       "distance": 1,
