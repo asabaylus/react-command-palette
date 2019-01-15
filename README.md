@@ -30,7 +30,7 @@ Install it in your project
 Please note, this package isn't ready yet for release on npm.
 
 ```
-$ npm install --save https://github.com/asabaylus/react-command-palette.git
+$ npm i --save react-command-palette
 ```
 
 Import into your react app and pass commands
@@ -40,12 +40,10 @@ import CommandPalette from 'react-command-palette';
 
 const commands = [{
     name: "Foo",
-    command() {},
-    section: "Command" // optional
+    command() {}
   },{
     name: "Bar",
-    command() {},
-    section: "Command"
+    command() {}
   }
   ... 
  ];

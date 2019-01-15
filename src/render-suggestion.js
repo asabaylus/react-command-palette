@@ -1,7 +1,6 @@
 import * as React from "react";
 import parse from "autosuggest-highlight/parse";
 
-// export const RenderSuggestion = (suggestion, { query }) => {
 export default suggestion => {
   // whereas fusejs returns matches "m" in
   // "match" as [[0,0]] parts expects it as [[0,1]]. So map over the fuse
