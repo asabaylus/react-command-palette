@@ -1,0 +1,16 @@
+coverage
+npm-debug.log
+.vscode
+.jest-test-results.json
+CNAME
+dist
+pids
+*.pid
+*.seed
+*.pid.lock
+.DS_Store
+lib-cov
+node_modules
+.git
+.babel-cache
+docs

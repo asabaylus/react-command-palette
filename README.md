@@ -2,6 +2,7 @@
 # React Command Palette
 WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/asabaylus/asabaylus%2Freact-command-palette%2Freact_command_palette?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWMzNjdiYTlhODU5MTAxOWFjOTdkNDEz.qLcoo1kugnvaRfNdM5ujH-bELwuU6KGPe65RB-tdlVk&type=cf-1)]( https://g.codefresh.io/pipelines/react_command_palette/builds?repoOwner=asabaylus&repoName=react-command-palette&serviceName=asabaylus%2Freact-command-palette&filter=trigger:build~Build;branch:master;pipeline:5c3e788ab131c1ebb82e699d~react_command_palette)
 [![Codeship Status for asabaylus/react-command-palette](https://app.codeship.com/projects/f7cc0a30-3533-0135-cd98-56b308955afb/status?branch=master)](https://app.codeship.com/projects/227053)
 [![codecov](https://codecov.io/gh/asabaylus/react-command-palette/branch/master/graph/badge.svg)](https://codecov.io/gh/asabaylus/react-command-palette)
 [![Maintainability](https://api.codeclimate.com/v1/badges/761754992fe0cd293c40/maintainability)](https://codeclimate.com/github/asabaylus/react-command-palette/maintainability)
@@ -108,3 +109,35 @@ $ npm run dev
 # update the docs
 $ npm run build-storybook
 ```
+
+## Building with Docker
+Build and tag the Docker image:
+```
+$ docker build -t  react-command-palette .
+```
+
+Then, spin up the container once the build is done:
+```
+$ docker run -it \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 6006:6006 \
+  npm i && npm run dev
+```
+You only need to run "npm i" the when the container is first created. The devDependencies need to be installed to compile and test the build during development. On subsequent builds run:
+```
+$ docker run -it \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 6006:6006 \
+  npm run dev
+```
+
+Open your browser to http://localhost:6006/ and you should see the app. Try making a change to the command-palette component within your code editor. You should see the app hot-reload. Kill the server once done.
+
+### Package for production with Docker:
+
+CodeFresh.io will autmatically run this build to prepare the package 
+for publication to npm whenever a pull request is merged to master.
+
+
