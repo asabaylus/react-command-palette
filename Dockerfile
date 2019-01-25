@@ -17,7 +17,7 @@ COPY . /app
 RUN apk --no-cache add curl  
 RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > "/usr/bin/cc-test-reporter" && chmod +x "/usr/bin/cc-test-reporter" && cp -p /usr/bin/cc-test-reporter /tmp/cc-test-reporter
 
-FROM node AS runner
+FROM node:10.15.0-alpine AS runner
 
 # Expose Storybook port
 EXPOSE 6006
