@@ -16,33 +16,33 @@ steps:
       UnitTest:
         title: Jest
         image: ${{BuildingDockerImage}}
-        working_dir: ./
+        working_dir: /app
         commands:
           - npm test
       Lint:
         title: ESlint
         image: ${{BuildingDockerImage}}
-        working_dir: ./
+        working_dir: /app
         commands:
           - npm run lint
       VisualRegression:
         title: Chromatic
         image: ${{BuildingDockerImage}}
-        working_dir: ./
+        working_dir: /app
         commands:
           - npm run prebuild:storybook
           - npm run chromatic
       Coverage:
         title: CodeCov & CodeClimate Coverage
         image: ${{BuildingDockerImage}}
-        working_dir: ./
+        working_dir: /app
         commands:
           - ./node_modules/.bin/codecov
           - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
   PublishNPM:
     title: Publish to NPM
     image: ${{BuildingDockerImage}}
-    working_dir: ./
+    working_dir: /app
     build_arguments:
       - NPM_TOKEN=${{NPM_TOKEN}}
     commands:
