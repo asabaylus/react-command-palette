@@ -11,6 +11,5 @@ pids
 .DS_Store
 lib-cov
 node_modules
-.git
 .babel-cache
 docs
