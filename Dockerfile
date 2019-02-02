@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY package.json /app
 
+# Install git required for codecov and chromatic cli's
+RUN apk --no-cache add git
+
 # Create the .npmrc file
 RUN echo ${NPMRC} | base64 -d > .npmrc
 
