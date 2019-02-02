@@ -28,7 +28,9 @@ WORKDIR /app
 
 # Adding production dependencies to image
 COPY --from=builder /tmp/node_modules /app/node_modules
-COPY --from=builder /tmp/cc-test-reporter /usr/bin/cc-test-reporter
+
+# Copy Apps (Git and CodeCov)
+COPY --from=builder /tmp/ /usr/bin/
 
 # Copying application code
 COPY . /app
