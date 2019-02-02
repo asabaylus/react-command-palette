@@ -37,7 +37,7 @@ steps:
         image: ${{BuildingDockerImage}}
         working_directory: /app
         commands:
-          - ./node_modules/.bin/codecov
+          #- ./node_modules/.bin/codecov
           - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
   PublishNPM:
     title: Publish to NPM
