@@ -251,6 +251,7 @@ describe("Command List", () => {
       };
 
       let error;
+      console.error = jest.fn();
       try {
         shallow(
           <CommandPalette commands={tooManyCommands()} maxDisplayed={501} />
@@ -258,11 +259,11 @@ describe("Command List", () => {
       } catch (e) {
         error = e;
       }
-
       expect(error).toBeInstanceOf(Error);
       expect(error.message).toBe(
         "Display is limited to a maximum of 500 items to prevent performance issues"
       );
+      console.error = jest.fn();
     });
 
     it("should display the configured number of commands", () => {
@@ -281,6 +282,24 @@ describe("Command List", () => {
       const commandsElements = commandPalette.find("Item");
       expect(commandsElements).toHaveLength(maxDisplayed);
     });
+
+    it("should load in < 1 second", async () => {
+      expect.assertions(1);
+      const commands = () => {
+        const arr = new Array(9999);
+        return arr.fill({
+          name: "foo",
+          command: Function.prototype
+        });
+      };
+      const commandPalette = mount(<CommandPalette commands={commands()} />);
+      commandPalette.find("button").simulate("click");
+      const commandsElements = await setTimeout(
+        () => commandPalette.find("Item"),
+        1000
+      );
+      expect(commandsElements).toBeDefined();
+    }, 1);
 
     it("should display 7 commands by default", () => {
       const defaultMaxDisplayed = 7;
