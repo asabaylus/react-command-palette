@@ -13,7 +13,7 @@ WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
 For examples of the command palette in action, go to the 
 
-[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://baylus.com/react-command-palette/)
+[![Storybook](https://github.com/storybooks/brand/raw/master/badge/badge-storybook.svg?sanitize=true)](https://baylus.com/react-command-palette/)
 
 OR
 
@@ -26,8 +26,6 @@ To run that demo on your own computer:
 ## Usage
 
 Install it in your project
-
-Please note, this package isn't ready yet for release on npm.
 
 ```
 $ npm i --save react-command-palette
@@ -99,6 +97,9 @@ $ npm run lint
 # beautify code
 $ npm run prettier
 
+# visual regression tests
+$ npm run chromatic
+
 # run unit tests
 $ npm test
 
@@ -108,3 +109,6 @@ $ npm run dev
 # update the docs
 $ npm run build-storybook
 ```
+
+## Sponsors
+Visual Regression Tests by [ChromaticQA](https://www.chromaticqa.com/)
