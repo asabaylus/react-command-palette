@@ -55,6 +55,8 @@ const commands = [{
 
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 
+* ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediateley when the user makes a selection. Defaults to "false".
+
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
 
 * ```options``` controls how fuzzy search is configured see [fusejs options](http://fusejs.io/)
