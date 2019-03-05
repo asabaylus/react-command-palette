@@ -259,7 +259,11 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {isLoading ? <PaletteSpinner spinner={spinner} /> : this.renderAutoSuggest(suggestions, value)}
+          {isLoading ? (
+            <PaletteSpinner spinner={spinner} />
+          ) : (
+            this.renderAutoSuggest(suggestions, value)
+          )}
         </ReactModal>
       </div>
     );
