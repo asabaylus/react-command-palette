@@ -116,9 +116,14 @@ class CommandPalette extends React.Component {
         suggestion.item,
         "command",
         after(() => {
-          this.setState({ isLoading: true }, () => {
-            // console.log("Show Spinner", that.state.isLoading);
-          });
+          // close the command palette if prop is set
+          const { closeOnSelect } = this.props;
+          if (closeOnSelect) {
+            this.handleCloseModal();
+          } else {
+            // otherwise show the loading spinner
+            this.setState({ isLoading: true });
+          }
         })
       );
       return suggestion.item.command();
@@ -276,7 +281,8 @@ CommandPalette.defaultProps = {
     maxPatternLength: 32,
     minMatchCharLength: 1,
     keys: ["name", "section"]
-  }
+  },
+  closeOnSelect: false
 };
 
 CommandPalette.propTypes = {
@@ -319,7 +325,10 @@ CommandPalette.propTypes = {
   custom component or string is provided then it will automatically be wrapped inside
   an accessible div that will allow it be keyboard accessible, clickable and focusable
   for assistive technologies. */
-  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+
+  /** closeOnSelect a boolean, when true selecting an item will immendiately close the command-palette  */
+  closeOnSelect: PropTypes.bool
 };
 
 export default CommandPalette;

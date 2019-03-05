@@ -15,6 +15,7 @@ exports[`Command List renders a command 1`] = `
 
 exports[`Opening the palette displays the suggestion list 1`] = `
 <CommandPalette
+  closeOnSelect={false}
   commands={
     Array [
       Object {

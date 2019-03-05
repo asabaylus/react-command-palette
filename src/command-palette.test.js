@@ -91,6 +91,7 @@ describe("Opening the palette", () => {
     Mousetrap.trigger("command+shift+p");
     expect(commandPalette.state("showModal")).toEqual(true);
   });
+
   describe("Overriding with custom hotKeys", () => {
     it('opens the commandPalette when pressing the "ctrl+shift+p" keys', () => {
       const spyHandleOpenModal = jest.spyOn(
@@ -341,6 +342,17 @@ describe("Selecting a command", () => {
     expect(() => {
       onSuggestionSelected(null, mock);
     }).toThrow(errMsg);
+  });
+
+  it("should close the pallete given that props.closeOnSelect is truthy", () => {
+    const wrapper = mount(
+      <CommandPalette commands={mockCommands} closeOnSelect open />
+    );
+    wrapper
+      .find(".item")
+      .first()
+      .simulate("click");
+    expect(wrapper.state("showModal")).toBeFalsy();
   });
 });
 
