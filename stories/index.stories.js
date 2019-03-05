@@ -75,6 +75,15 @@ storiesOf("Command Palette", module)
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
   ))
+  .add("with a custom spinner", () => (
+    <CommandPalette
+      commands={commands}
+      spinner={
+        <div style={{ color: "white", textAlign: "center" }}>Waiting...</div>
+      }
+      open
+    />
+  ))
   .add("with max displayed", () => {
     const label = "maxDisplayed";
     const defaultValue = 3;
