@@ -3,6 +3,7 @@ import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 
 import take from "lodash.take";
+import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
@@ -101,6 +102,17 @@ class CommandPalette extends React.Component {
     }
 
     return true;
+  }
+
+  componentDidUpdate(prevProps) {
+    const { commands } = this.props;
+    if (!equal(prevProps.commands, commands)) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({
+        value: "",
+        suggestions: this.fetchData()
+      });
+    }
   }
 
   onChange(event, { newValue }) {
