@@ -7,7 +7,7 @@ import Autosuggest from "react-autosuggest";
 import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
 import theme from "./theme";
-import Spinner from "./spinner";
+import PaletteSpinner from "./palette-spinner";
 
 import RenderSuggestion from "./render-suggestion";
 import PaletteTrigger from "./palette-trigger";
@@ -241,7 +241,7 @@ class CommandPalette extends React.Component {
 
   render() {
     const { value, suggestions, showModal, isLoading } = this.state;
-    const { trigger } = this.props;
+    const { trigger, spinner } = this.props;
 
     return (
       <div className="react-command-palette">
@@ -259,7 +259,11 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {isLoading ? <Spinner /> : this.renderAutoSuggest(suggestions, value)}
+          {isLoading ? (
+            <PaletteSpinner spinner={spinner} />
+          ) : (
+            this.renderAutoSuggest(suggestions, value)
+          )}
         </ReactModal>
       </div>
     );
@@ -320,12 +324,15 @@ CommandPalette.propTypes = {
   Defaults to "false". */
   open: PropTypes.bool,
 
-  /** trigger a string or a React.ComponentType the opens the command palette when
-  clicked. If a custom trigger is not set then by default a button will be used. If a
+  /** trigger a string or a React.ComponentType that opens the command palette when
+  clicked. If a custom trigger is not set, then by default a button will be used. If a
   custom component or string is provided then it will automatically be wrapped inside
-  an accessible div that will allow it be keyboard accessible, clickable and focusable
+  an accessible div which will allow it be keyboard accessible, clickable and focusable
   for assistive technologies. */
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+
+  /** spinner a string or a React.ComponentType that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status" attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers. */
+  spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** closeOnSelect a boolean, when true selecting an item will immendiately close the command-palette  */
   closeOnSelect: PropTypes.bool
