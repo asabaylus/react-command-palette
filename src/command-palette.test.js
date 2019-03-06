@@ -404,17 +404,36 @@ describe("Selecting a command", () => {
 });
 
 describe("Fetching commands", () => {
-  const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
-
   it("should update the state with a filtered list of commands", () => {
+    const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
     commandPalette.instance().onSuggestionsFetchRequested({ value: "Foo" });
     expect(commandPalette.state("suggestions")).toHaveLength(1);
   });
 
   it("should update the state with a list of all commands", () => {
+    const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
     commandPalette.instance().onSuggestionsFetchRequested({ value: null });
     expect(commandPalette.state("suggestions")).toHaveLength(
       mockCommands.length
     );
+  });
+
+  it("should update the list of commands when props.commands changes", () => {
+    const wrapper = mount(<CommandPalette commands={mockCommands} open />);
+
+    // first load all the commands then update props.commands
+    expect(wrapper.state("suggestions")).toHaveLength(mockCommands.length);
+    wrapper.setProps({
+      commands: [
+        {
+          name: "Omega",
+          command() {}
+        }
+      ]
+    });
+
+    // check that the state as just the new command
+    expect(wrapper.state("suggestions")).toHaveLength(1);
+    expect(wrapper.state().suggestions[0].item.name).toEqual("Omega");
   });
 });
