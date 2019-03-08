@@ -18,6 +18,54 @@ Enzyme.configure({ adapter: new Adapter() });
 
 expect.addSnapshotSerializer(serializer);
 
+describe("Loading indicator", () => {
+  it("should display the spinner by default", () => {
+    const wrapper = mount(<CommandPalette commands={mockCommands} open />);
+    wrapper
+      .find(".item")
+      .first()
+      .simulate("click");
+    const spinner = wrapper.find(".default-spinner");
+    // the palette should remain open
+    expect(wrapper.state("showModal")).toBeTruthy();
+    // the animated loading spinner should be displayed
+    expect(spinner).toBeDefined();
+    expect(spinner).toMatchSnapshot();
+  });
+
+  it("should display a custom react component when props.spinner is set", () => {
+    const wrapper = mount(
+      <CommandPalette commands={mockCommands} spinner={<b>Waiting</b>} open />
+    );
+    wrapper
+      .find(".item")
+      .first()
+      .simulate("click");
+    const spinner = wrapper.find(".spinner").childAt(1);
+    // the palette should remain open
+    expect(wrapper.state("showModal")).toBeTruthy();
+    // a custom loading spinner should be displayed
+    expect(spinner.containsMatchingElement(<b>Waiting</b>)).toBeTruthy();
+    expect(spinner).toMatchSnapshot();
+  });
+
+  it("should display a custom string when props.spinner is set", () => {
+    const wrapper = mount(
+      <CommandPalette commands={mockCommands} spinner="Waiting" open />
+    );
+    wrapper
+      .find(".item")
+      .first()
+      .simulate("click");
+    const spinner = wrapper.find(".spinner");
+    // the palette should remain open
+    expect(wrapper.state("showModal")).toBeTruthy();
+    // a custom loading spinner should be displayed
+    expect(spinner.text()).toEqual("Waiting");
+    expect(spinner).toMatchSnapshot();
+  });
+});
+
 describe("Search", () => {
   it("has configureable fusejs options", () => {
     const searchOptions = {
@@ -308,7 +356,6 @@ describe("Command List", () => {
 describe("Selecting a command", () => {
   const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
 
-  // commandPalette.onSuggestionSelected = jest.fn();
   it("should execute the commands function", () => {
     const command = jest.fn();
     const mock = {
@@ -357,17 +404,36 @@ describe("Selecting a command", () => {
 });
 
 describe("Fetching commands", () => {
-  const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
-
   it("should update the state with a filtered list of commands", () => {
+    const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
     commandPalette.instance().onSuggestionsFetchRequested({ value: "Foo" });
     expect(commandPalette.state("suggestions")).toHaveLength(1);
   });
 
   it("should update the state with a list of all commands", () => {
+    const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
     commandPalette.instance().onSuggestionsFetchRequested({ value: null });
     expect(commandPalette.state("suggestions")).toHaveLength(
       mockCommands.length
     );
+  });
+
+  it("should update the list of commands when props.commands changes", () => {
+    const wrapper = mount(<CommandPalette commands={mockCommands} open />);
+
+    // first load all the commands then update props.commands
+    expect(wrapper.state("suggestions")).toHaveLength(mockCommands.length);
+    wrapper.setProps({
+      commands: [
+        {
+          name: "Omega",
+          command() {}
+        }
+      ]
+    });
+
+    // check that the state as just the new command
+    expect(wrapper.state("suggestions")).toHaveLength(1);
+    expect(wrapper.state().suggestions[0].item.name).toEqual("Omega");
   });
 });
