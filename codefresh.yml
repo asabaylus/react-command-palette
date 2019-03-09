@@ -11,6 +11,7 @@ steps:
       - CF_BRANCH=${{CF_BRANCH}}
       - NPM_TOKEN=${{NPM_TOKEN}}
   QualityChecks:
+    type: parallel
     steps:
       UnitTest:
         title: Jest
