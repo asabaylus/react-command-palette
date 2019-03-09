@@ -22,19 +22,23 @@ steps:
     working_directory: /app
     commands:
       - npm run lint
-  # VisualRegression:
-  #   title: Chromatic
-  #   image: ${{BuildingDockerImage}}
-  #   working_directory: /app
-  #   commands:
-  #     - npm run prebuild:storybook
-  #     - npm run chromatic
+  VisualRegression:
+    title: Chromatic
+    image: ${{BuildingDockerImage}}
+    working_directory: /app
+    build_arguments:
+      - CHROMATIC_APP_CODE=${{CHROMATIC_APP_CODE}}
+    commands:
+      - npm run prebuild:storybook
+      - npm run chromatic
   Coverage:
     title: CodeCov & CodeClimate Coverage
     image: ${{BuildingDockerImage}}
     working_directory: /app
+    build_arguments:
+      - CC_TEST_REPORTER_ID=${{CC_TEST_REPORTER_ID}}
     commands:
-      #- ./node_modules/.bin/codecov
+      - ./node_modules/.bin/codecov
       - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
   PublishNPM:
     title: Publish to NPM
