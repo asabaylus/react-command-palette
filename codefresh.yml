@@ -39,7 +39,7 @@ steps:
       - CC_TEST_REPORTER_ID=${{CC_TEST_REPORTER_ID}}
     commands:
       - ./node_modules/.bin/codecov
-      - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
+      # - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
   PublishNPM:
     title: Publish to NPM
     image: ${{BuildingDockerImage}}
