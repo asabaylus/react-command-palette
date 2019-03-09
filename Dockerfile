@@ -27,12 +27,12 @@ EXPOSE 6006
 WORKDIR /app
 
 # Adding production dependencies to image
-COPY --from=builder /tmp/node_modules /app/node_modules
+# COPY --from=builder /tmp/node_modules /app/node_modules
 
 # Copy Apps (Git and CodeCov)
-COPY --from=builder /tmp/ /usr/bin/
+# COPY --from=builder /tmp/ /usr/bin/
 
 # Copying application code
-COPY . /app
+# COPY . /app
 
 CMD npm run build
