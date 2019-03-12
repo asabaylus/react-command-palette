@@ -6,7 +6,7 @@
   "module": "dist/main.es.js",
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
-    "dev": "npm run prebuild:storybook && concurrently --raw --kill-others \"npm run storybook\" \"jest --watch\"",
+    "dev": "npm run prebuild:storybook && concurrently --raw --kill-others \"npm run storybook\" \"NODE_ENV=test jest --config=jest.config.js --watch\"",
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
     "prepare": "npm run build",
@@ -37,8 +37,8 @@
   },
   "homepage": "https://github.com/asabaylus/react-command-palette#readme",
   "peerDependencies": {
-    "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
-    "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -71,14 +71,14 @@
     "@storybook/addon-links": "^5.0.1",
     "@storybook/addon-options": "^5.0.1",
     "@storybook/addons": "^5.0.1",
-    "@storybook/cli": "^4.1.11",
+    "@storybook/cli": "^5.0.1",
     "@storybook/react": "^5.0.1",
     "@storybook/storybook-deployer": "^2.8.1",
     "acorn": "^6.1.1",
     "ajv": "^6.10.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.3.1",
+    "babel-jest": "^24.4.0",
     "babel-loader": "^8.0.5",
     "babelrc-rollup": "^3.0.0",
     "codecov": "^3.2.0",
@@ -95,8 +95,9 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-xss": "^0.1.9",
-    "jest": "^24.3.1",
-    "jest-cli": "^24.3.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.4.0",
+    "jest-cli": "^24.4.0",
     "module-resolver": "^1.0.0",
     "postcss": "^7.0.14",
     "prettier": "^1.16.4",
@@ -118,7 +119,7 @@
   "dependencies": {
     "autosuggest-highlight": "^3.1.1",
     "fast-deep-equal": "^2.0.1",
-    "fuse.js": "^3.4.3",
+    "fuse.js": "^3.4.4",
     "lodash.take": "^4.1.1",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
