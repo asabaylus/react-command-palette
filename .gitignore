@@ -7,9 +7,6 @@ npm-debug.log*
 # Build deps
 .jest-test-results.json
 
-# Website
-out*
-
 # Runtime data
 pids
 *.pid

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 
@@ -43,21 +43,6 @@ const modalStyles = {
   overlay: theme.overlay
 };
 
-// Use your imagination to define how suggestions are rendered.
-//
-// The signature is:
-//
-// function renderSuggestion(suggestion, { query, isHighlighted })
-// where:
-//
-// suggestion - The suggestion to render
-// query - Used to highlight the matching string. As user types in the input,
-// query will be equal to the trimmed value of the input. Then, if user
-// interacts using the Up or Down keys, the input will get the value of the
-// highlighted suggestion, but query will remain to be equal to the trimmed
-// value of the input prior to the Up and Down interactions.
-// isHighlighted - Whether or not the suggestion is highlighted.
-
 class CommandPalette extends React.Component {
   constructor() {
     super();
@@ -97,10 +82,7 @@ class CommandPalette extends React.Component {
       return false;
     });
 
-    if (open) {
-      return this.handleOpenModal();
-    }
-
+    if (open) return this.handleOpenModal();
     return true;
   }
 
@@ -313,12 +295,14 @@ CommandPalette.propTypes = {
     })
   ).isRequired,
 
-  /** maxDisplayed a number between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7 */
+  /** maxDisplayed a number between 1 and 500 that determines the maxium number of
+   * commands that will be rendered on screen. Defaults to 7 */
   maxDisplayed(props, propName, componentName) {
     const { maxDisplayed } = props;
     if (maxDisplayed > 500) {
       return new Error(
-        `Invalid prop ${propName} supplied to ${componentName} Cannot be greater than 500.`
+        `Invalid prop ${propName} supplied to ${componentName}
+         Cannot be greater than 500.`
       );
     }
     return null;
@@ -343,10 +327,16 @@ CommandPalette.propTypes = {
   for assistive technologies. */
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
-  /** spinner a string or a React.ComponentType that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status" attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers. */
+  /** spinner a string or a React.ComponentType that is displayed when the user selects
+  an item. If a custom spinner is not set then the default spinner will be used. If
+  custom component or string is provided then it will automatically be wrapped inside
+  a div with a _role="status" attribute. If a component is provided then it will be be
+  wrapped in a div that also contains a sibling node with a div contain "Loading..."
+  visible only to screen readers. */
   spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
-  /** closeOnSelect a boolean, when true selecting an item will immendiately close the command-palette  */
+  /** closeOnSelect a boolean, when true selecting an item will immendiately close the
+  command-palette  */
   closeOnSelect: PropTypes.bool
 };
 

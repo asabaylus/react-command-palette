@@ -6,7 +6,6 @@ import * as React from "react";
 import Enzyme, { mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import serializer from "enzyme-to-json/serializer";
-import renderer from "react-test-renderer";
 import PaletteTrigger from "./palette-trigger";
 
 // React 16 Enzyme adapter

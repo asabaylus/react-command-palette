@@ -3,12 +3,11 @@
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
   "function-paren-newline":0  */
 
-import * as React from "react";
+import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Mousetrap from "mousetrap";
 import serializer from "enzyme-to-json/serializer";
-import renderer from "react-test-renderer";
 import CommandPalette from "./command-palette";
 import RenderSuggestion from "./render-suggestion";
 import mockCommands from "./__mocks__/commands";
@@ -291,6 +290,8 @@ describe("Command List", () => {
 
   describe("number of commands displayed", () => {
     it("should not be greater than 500", () => {
+      const originalError = console.error;
+      console.error = jest.fn();
       const tooManyCommands = () => {
         const arr = new Array(501);
         return arr.fill({
@@ -312,6 +313,7 @@ describe("Command List", () => {
       expect(error.message).toBe(
         "Display is limited to a maximum of 500 items to prevent performance issues"
       );
+      console.error = originalError;
     });
 
     it("should display the configured number of commands", () => {

@@ -1,0 +1,54 @@
+version: '1.0'
+steps:
+  BuildingDockerImage:
+    title: Build Docker Image
+    type: build
+    image_name: asabaylus/reactcommandpalette
+    working_directory: ./
+    tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
+    dockerfile: Dockerfile
+    build_arguments:
+      - CF_BRANCH=${{CF_BRANCH}}
+      - NPM_TOKEN=${{NPM_TOKEN}}
+  UnitTest:
+    title: Jest
+    image: ${{BuildingDockerImage}}
+    working_directory: /app
+    commands:
+      - npm test
+  Lint:
+    title: ESlint
+    image: ${{BuildingDockerImage}}
+    working_directory: /app
+    commands:
+      - npm run lint
+  VisualRegression:
+    title: Chromatic
+    image: ${{BuildingDockerImage}}
+    working_directory: /app
+    build_arguments:
+      - CHROMATIC_APP_CODE=${{CHROMATIC_APP_CODE}}
+    commands:
+      - npm run prebuild:storybook
+      - npm run chromatic
+  Coverage:
+    title: CodeCov & CodeClimate Coverage
+    image: ${{BuildingDockerImage}}
+    working_directory: /app
+    build_arguments:
+      - CC_TEST_REPORTER_ID=${{CC_TEST_REPORTER_ID}}
+    commands:
+      - ./node_modules/.bin/codecov
+      # - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
+  PublishNPM:
+    title: Publish to NPM
+    image: ${{BuildingDockerImage}}
+    working_directory: /app
+    build_arguments:
+      - NPM_TOKEN=${{NPM_TOKEN}}
+    commands:
+      - npm publish --dry-run
+    when:
+      branch:
+        only:
+          - master
