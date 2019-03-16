@@ -43,21 +43,6 @@ const modalStyles = {
   overlay: theme.overlay
 };
 
-// Use your imagination to define how suggestions are rendered.
-//
-// The signature is:
-//
-// function renderSuggestion(suggestion, { query, isHighlighted })
-// where:
-//
-// suggestion - The suggestion to render
-// query - Used to highlight the matching string. As user types in the input,
-// query will be equal to the trimmed value of the input. Then, if user
-// interacts using the Up or Down keys, the input will get the value of the
-// highlighted suggestion, but query will remain to be equal to the trimmed
-// value of the input prior to the Up and Down interactions.
-// isHighlighted - Whether or not the suggestion is highlighted.
-
 class CommandPalette extends React.Component {
   constructor() {
     super();
