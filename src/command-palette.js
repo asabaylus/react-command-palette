@@ -1,13 +1,14 @@
-import * as React from "react";
+import React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 
 import take from "lodash.take";
+import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
 import theme from "./theme";
-import Spinner from "./spinner";
+import PaletteSpinner from "./palette-spinner";
 
 import RenderSuggestion from "./render-suggestion";
 import PaletteTrigger from "./palette-trigger";
@@ -41,21 +42,6 @@ const modalStyles = {
   content: theme.content,
   overlay: theme.overlay
 };
-
-// Use your imagination to define how suggestions are rendered.
-//
-// The signature is:
-//
-// function renderSuggestion(suggestion, { query, isHighlighted })
-// where:
-//
-// suggestion - The suggestion to render
-// query - Used to highlight the matching string. As user types in the input,
-// query will be equal to the trimmed value of the input. Then, if user
-// interacts using the Up or Down keys, the input will get the value of the
-// highlighted suggestion, but query will remain to be equal to the trimmed
-// value of the input prior to the Up and Down interactions.
-// isHighlighted - Whether or not the suggestion is highlighted.
 
 class CommandPalette extends React.Component {
   constructor() {
@@ -96,11 +82,19 @@ class CommandPalette extends React.Component {
       return false;
     });
 
-    if (open) {
-      return this.handleOpenModal();
-    }
-
+    if (open) return this.handleOpenModal();
     return true;
+  }
+
+  componentDidUpdate(prevProps) {
+    const { commands } = this.props;
+    if (!equal(prevProps.commands, commands)) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({
+        value: "",
+        suggestions: this.fetchData()
+      });
+    }
   }
 
   onChange(event, { newValue }) {
@@ -116,9 +110,14 @@ class CommandPalette extends React.Component {
         suggestion.item,
         "command",
         after(() => {
-          this.setState({ isLoading: true }, () => {
-            // console.log("Show Spinner", that.state.isLoading);
-          });
+          // close the command palette if prop is set
+          const { closeOnSelect } = this.props;
+          if (closeOnSelect) {
+            this.handleCloseModal();
+          } else {
+            // otherwise show the loading spinner
+            this.setState({ isLoading: true });
+          }
         })
       );
       return suggestion.item.command();
@@ -236,7 +235,7 @@ class CommandPalette extends React.Component {
 
   render() {
     const { value, suggestions, showModal, isLoading } = this.state;
-    const { trigger } = this.props;
+    const { trigger, spinner } = this.props;
 
     return (
       <div className="react-command-palette">
@@ -254,7 +253,11 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {isLoading ? <Spinner /> : this.renderAutoSuggest(suggestions, value)}
+          {isLoading ? (
+            <PaletteSpinner spinner={spinner} />
+          ) : (
+            this.renderAutoSuggest(suggestions, value)
+          )}
         </ReactModal>
       </div>
     );
@@ -276,7 +279,8 @@ CommandPalette.defaultProps = {
     maxPatternLength: 32,
     minMatchCharLength: 1,
     keys: ["name", "section"]
-  }
+  },
+  closeOnSelect: false
 };
 
 CommandPalette.propTypes = {
@@ -291,12 +295,14 @@ CommandPalette.propTypes = {
     })
   ).isRequired,
 
-  /** maxDisplayed a number between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7 */
+  /** maxDisplayed a number between 1 and 500 that determines the maxium number of
+   * commands that will be rendered on screen. Defaults to 7 */
   maxDisplayed(props, propName, componentName) {
     const { maxDisplayed } = props;
     if (maxDisplayed > 500) {
       return new Error(
-        `Invalid prop ${propName} supplied to ${componentName} Cannot be greater than 500.`
+        `Invalid prop ${propName} supplied to ${componentName}
+         Cannot be greater than 500.`
       );
     }
     return null;
@@ -314,12 +320,24 @@ CommandPalette.propTypes = {
   Defaults to "false". */
   open: PropTypes.bool,
 
-  /** trigger a string or a React.ComponentType the opens the command palette when
-  clicked. If a custom trigger is not set then by default a button will be used. If a
+  /** trigger a string or a React.ComponentType that opens the command palette when
+  clicked. If a custom trigger is not set, then by default a button will be used. If a
   custom component or string is provided then it will automatically be wrapped inside
-  an accessible div that will allow it be keyboard accessible, clickable and focusable
+  an accessible div which will allow it be keyboard accessible, clickable and focusable
   for assistive technologies. */
-  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+
+  /** spinner a string or a React.ComponentType that is displayed when the user selects
+  an item. If a custom spinner is not set then the default spinner will be used. If
+  custom component or string is provided then it will automatically be wrapped inside
+  a div with a _role="status" attribute. If a component is provided then it will be be
+  wrapped in a div that also contains a sibling node with a div contain "Loading..."
+  visible only to screen readers. */
+  spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+
+  /** closeOnSelect a boolean, when true selecting an item will immendiately close the
+  command-palette  */
+  closeOnSelect: PropTypes.bool
 };
 
 export default CommandPalette;

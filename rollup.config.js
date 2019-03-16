@@ -26,7 +26,6 @@ const plugins = [
         "createRef"
       ],
       "node_modules/react-dom/index.js": ["render"],
-      "node_modules/fuse.js/dist/fuse.js": ["Fuse"],
       "node_modules/autosuggest-highlight/match/index.js": ["match"],
       "node_modules/autosuggest-highlight/parse/index.js": ["parse"]
     }

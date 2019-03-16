@@ -1,11 +1,21 @@
 module.exports = {
   testURL: "http://localhost/",
+  transform: {
+    "^.+\\.js$": "babel-jest"
+  },
   snapshotSerializers: ["./node_modules/enzyme-to-json/serializer"],
+  moduleFileExtensions: ["js", "jsx"],
+  moduleDirectories: ["node_modules"],
   moduleNameMapper: {
-    "\\.(css|less|sass|scss)$": "<rootDir>/src/__mocks__/styleMock.js",
+    "\\.(jpg|jpeg|png|gif)$": "<rootDir>/src/__mocks__/fileMock.js",
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy"
   },
   collectCoverage: true,
   coverageDirectory: "coverage",
-  collectCoverageFrom: ["**/src/*.{js}", "!**/node_modules/**", "!src/main.js"],
-  coverageReporters: ["lcov", "text"]
-}
+  collectCoverageFrom: ["src/*.js"],
+  coveragePathIgnorePatterns: [
+    "<rootDir>/node_modules",
+    "<rootDir>/src/main.js"
+  ],
+  coverageReporters: ["json", "lcov", "text"]
+};

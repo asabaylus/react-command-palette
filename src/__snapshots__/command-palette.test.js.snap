@@ -13,8 +13,37 @@ exports[`Command List renders a command 1`] = `
 </div>
 `;
 
+exports[`Loading indicator should display a custom react component when props.spinner is set 1`] = `
+<b>
+  Waiting
+</b>
+`;
+
+exports[`Loading indicator should display a custom string when props.spinner is set 1`] = `
+<div
+  className="spinner"
+  role="status"
+>
+  Waiting
+</div>
+`;
+
+exports[`Loading indicator should display the spinner by default 1`] = `
+<div
+  className="default-spinner"
+  role="status"
+>
+  <span
+    className="sr-only"
+  >
+    Loading...
+  </span>
+</div>
+`;
+
 exports[`Opening the palette displays the suggestion list 1`] = `
 <CommandPalette
+  closeOnSelect={false}
   commands={
     Array [
       Object {
@@ -105,6 +134,86 @@ exports[`Opening the palette displays the suggestion list 1`] = `
         >
           <div
             class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                tabindex="-1"
+              >
+                <div
+                  class="spinner"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                  <b>
+                    Waiting
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                tabindex="-1"
+              >
+                <div
+                  class="spinner"
+                  role="status"
+                >
+                  Waiting
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
           />
           <div
             class="ReactModalPortal"
@@ -131,7 +240,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     aria-controls="react-autowhatever-1"
                     autocomplete="off"
                     placeholder="Type a command"
-                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171);"
+                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
                     type="text"
                     value=""
                   />
@@ -251,7 +360,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     aria-controls="react-autowhatever-1"
                     autocomplete="off"
                     placeholder="Type a command"
-                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171);"
+                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
                     type="text"
                     value=""
                   />
@@ -417,7 +526,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     aria-controls="react-autowhatever-1"
                     autocomplete="off"
                     placeholder="Type a command"
-                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171);"
+                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
                     type="text"
                     value=""
                   />
@@ -521,6 +630,86 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="default-spinner"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="spinner"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                      <b>
+                        Waiting
+                      </b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px; font-family: helvetica, sans-serif; font-size: 12px;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="spinner"
+                      role="status"
+                    >
+                      Waiting
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
               />
               <div
                 class="ReactModalPortal"
@@ -547,7 +736,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         aria-controls="react-autowhatever-1"
                         autocomplete="off"
                         placeholder="Type a command"
-                        style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171);"
+                        style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
                         type="text"
                         value=""
                       />
@@ -667,7 +856,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         aria-controls="react-autowhatever-1"
                         autocomplete="off"
                         placeholder="Type a command"
-                        style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171);"
+                        style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
                         type="text"
                         value=""
                       />
