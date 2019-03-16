@@ -82,10 +82,7 @@ class CommandPalette extends React.Component {
       return false;
     });
 
-    if (open) {
-      return this.handleOpenModal();
-    }
-
+    if (open) return this.handleOpenModal();
     return true;
   }
 
