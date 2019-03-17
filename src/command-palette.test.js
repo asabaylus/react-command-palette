@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /*  global dom:true */
 /*  eslint
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
