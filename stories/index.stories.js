@@ -9,6 +9,7 @@ import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { checkA11y } from "@storybook/addon-a11y";
 import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
+import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
 
 storiesOf("Command Palette", module)
@@ -75,6 +76,21 @@ storiesOf("Command Palette", module)
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
   ))
+  .add("with a lot of commands", () => {
+    // const lotsOfCommands = () => {
+    //   // assuming a 2.5 GHz Intel Core i7 running OSX 10.14.3
+    //   // adding 159k commands take > 1 sec. This benchmark is reliably
+    //   // reproduceable. The goal of this performance test is render
+    //   // 159k commands on under 1 second in the CI build pipeline
+    //   const arr = new Array(99999);
+    //   return arr.fill({
+    //     name: "foo",
+    //     command: Function.prototype
+    //   });
+    // };
+    // console.dir(lotsOfCommands);
+    return <CommandPalette commands={lotsOfCommands} open />;
+  })
   .add("with a custom spinner", () => (
     <CommandPalette
       commands={commands}

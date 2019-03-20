@@ -338,10 +338,10 @@ describe("Command List", () => {
       expect.assertions(2);
       const commands = () => {
         // assuming a 2.5 GHz Intel Core i7 running OSX 10.14.3
-        // adding 159k commands take > 1 sec. This benchmark is reliably
+        // adding 100,000 commands takes <= 1 sec. This benchmark should be reliably
         // reproduceable. The goal of this performance test is render
-        // 159k commands on under 1 second in the CI build pipeline
-        const arr = new Array(159999);
+        // 100k commands on under 1 second in the CI build pipeline
+        const arr = new Array(100000);
         return arr.fill({
           name: "foo",
           command: Function.prototype
