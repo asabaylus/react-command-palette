@@ -1,4 +1,5 @@
 import fuzzysort from "fuzzysort";
+import once from "lodash.once";
 
 // Teach Autosuggest how to calculate suggestions for any given input value.
 export default function getSuggestions(value = "", allCommands, options) {
@@ -8,10 +9,11 @@ export default function getSuggestions(value = "", allCommands, options) {
   }
 
   // If the user specified an autosuggest term
-  // allCommands.forEach(s => (s.namePrepared = fuzzysort.prepare(s.name)));
+  once(() => {
+    console.log("called!");
+    allCommands.forEach(s => (s.namePrepared = fuzzysort.prepare(s.name)))
+  });
 
-  // TODO: add options as last arg to filteredSuggestions
-  // console.log(value, options);
   const filteredSuggestions = fuzzysort.go(value, allCommands, options);
   const formattedSuggestions = filteredSuggestions.map(suggestion => {
     const { target } = suggestion[0];

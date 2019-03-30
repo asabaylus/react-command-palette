@@ -10,6 +10,7 @@
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
     "prepare": "npm run build",
+    "start": "npm run dev",
     "test:generate-output": "jest --silent --json --outputFile=.jest-test-results.json || true",
     "test": "NODE_ENV=test jest --config=jest.config.js",
     "prebuild:storybook": "npm run test:generate-output",
@@ -121,7 +122,8 @@
     "fast-deep-equal": "^2.0.1",
     "fuse.js": "^3.4.4",
     "fuzzysort": "^1.1.4",
-    "lodash.take": "^4.1.1",
+    "lodash.take": "^4.17.11",
+    "lodash.once": "^4.17.11",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
     "react-modal": "^3.8.1"

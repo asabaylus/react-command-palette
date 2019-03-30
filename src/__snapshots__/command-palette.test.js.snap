@@ -4,12 +4,7 @@ exports[`Command List renders a command 1`] = `
 <div
   className="item"
 >
-  <span
-    key="Foo_0"
-    style={null}
-  >
-    Foo
-  </span>
+  <span />
 </div>
 `;
 
@@ -72,20 +67,17 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   maxDisplayed={7}
   options={
     Object {
-      "distance": 1,
-      "findAllMatches": true,
-      "includeMatches": true,
+      "allowTypo": true,
+      "key": "name",
       "keys": Array [
+        "id",
         "name",
+        "command",
         "section",
       ],
-      "location": 0,
-      "matchAllTokens": true,
-      "maxPatternLength": 32,
-      "minMatchCharLength": 1,
-      "shouldSort": true,
-      "threshold": 0.3,
-      "tokenize": true,
+      "limit": 7,
+      "scoreFn": null,
+      "threshold": -Infinity,
     }
   }
 >
@@ -1090,44 +1082,34 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 suggestions={
                   Array [
                     Object {
-                      "item": Object {
-                        "command": [Function],
-                        "id": undefined,
-                        "name": "Foo",
-                        "section": undefined,
-                      },
+                      "command": [Function],
+                      "id": undefined,
+                      "name": "Foo",
+                      "section": undefined,
                     },
                     Object {
-                      "item": Object {
-                        "command": [Function],
-                        "id": undefined,
-                        "name": "Bar",
-                        "section": undefined,
-                      },
+                      "command": [Function],
+                      "id": undefined,
+                      "name": "Bar",
+                      "section": undefined,
                     },
                     Object {
-                      "item": Object {
-                        "command": [Function],
-                        "id": undefined,
-                        "name": "Baz",
-                        "section": undefined,
-                      },
+                      "command": [Function],
+                      "id": undefined,
+                      "name": "Baz",
+                      "section": undefined,
                     },
                     Object {
-                      "item": Object {
-                        "command": [Function],
-                        "id": undefined,
-                        "name": "Fizz",
-                        "section": undefined,
-                      },
+                      "command": [Function],
+                      "id": undefined,
+                      "name": "Fizz",
+                      "section": undefined,
                     },
                     Object {
-                      "item": Object {
-                        "command": [Function],
-                        "id": undefined,
-                        "name": "Fizz Buzz",
-                        "section": undefined,
-                      },
+                      "command": [Function],
+                      "id": undefined,
+                      "name": "Fizz Buzz",
+                      "section": undefined,
                     },
                   ]
                 }
@@ -1229,44 +1211,34 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   items={
                     Array [
                       Object {
-                        "item": Object {
-                          "command": [Function],
-                          "id": undefined,
-                          "name": "Foo",
-                          "section": undefined,
-                        },
+                        "command": [Function],
+                        "id": undefined,
+                        "name": "Foo",
+                        "section": undefined,
                       },
                       Object {
-                        "item": Object {
-                          "command": [Function],
-                          "id": undefined,
-                          "name": "Bar",
-                          "section": undefined,
-                        },
+                        "command": [Function],
+                        "id": undefined,
+                        "name": "Bar",
+                        "section": undefined,
                       },
                       Object {
-                        "item": Object {
-                          "command": [Function],
-                          "id": undefined,
-                          "name": "Baz",
-                          "section": undefined,
-                        },
+                        "command": [Function],
+                        "id": undefined,
+                        "name": "Baz",
+                        "section": undefined,
                       },
                       Object {
-                        "item": Object {
-                          "command": [Function],
-                          "id": undefined,
-                          "name": "Fizz",
-                          "section": undefined,
-                        },
+                        "command": [Function],
+                        "id": undefined,
+                        "name": "Fizz",
+                        "section": undefined,
                       },
                       Object {
-                        "item": Object {
-                          "command": [Function],
-                          "id": undefined,
-                          "name": "Fizz Buzz",
-                          "section": undefined,
-                        },
+                        "command": [Function],
+                        "id": undefined,
+                        "name": "Fizz Buzz",
+                        "section": undefined,
                       },
                     ]
                   }
@@ -1414,44 +1386,34 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         items={
                           Array [
                             Object {
-                              "item": Object {
-                                "command": [Function],
-                                "id": undefined,
-                                "name": "Foo",
-                                "section": undefined,
-                              },
+                              "command": [Function],
+                              "id": undefined,
+                              "name": "Foo",
+                              "section": undefined,
                             },
                             Object {
-                              "item": Object {
-                                "command": [Function],
-                                "id": undefined,
-                                "name": "Bar",
-                                "section": undefined,
-                              },
+                              "command": [Function],
+                              "id": undefined,
+                              "name": "Bar",
+                              "section": undefined,
                             },
                             Object {
-                              "item": Object {
-                                "command": [Function],
-                                "id": undefined,
-                                "name": "Baz",
-                                "section": undefined,
-                              },
+                              "command": [Function],
+                              "id": undefined,
+                              "name": "Baz",
+                              "section": undefined,
                             },
                             Object {
-                              "item": Object {
-                                "command": [Function],
-                                "id": undefined,
-                                "name": "Fizz",
-                                "section": undefined,
-                              },
+                              "command": [Function],
+                              "id": undefined,
+                              "name": "Fizz",
+                              "section": undefined,
                             },
                             Object {
-                              "item": Object {
-                                "command": [Function],
-                                "id": undefined,
-                                "name": "Fizz Buzz",
-                                "section": undefined,
-                              },
+                              "command": [Function],
+                              "id": undefined,
+                              "name": "Fizz Buzz",
+                              "section": undefined,
                             },
                           ]
                         }
@@ -1486,12 +1448,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             isHighlighted={true}
                             item={
                               Object {
-                                "item": Object {
-                                  "command": [Function],
-                                  "id": undefined,
-                                  "name": "Foo",
-                                  "section": undefined,
-                                },
+                                "command": [Function],
+                                "id": undefined,
+                                "name": "Foo",
+                                "section": undefined,
                               }
                             }
                             itemIndex={0}
@@ -1544,10 +1504,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               <div
                                 className="item"
                               >
-                                <span
-                                  key="Foo_0"
-                                  style={null}
-                                >
+                                <span>
                                   Foo
                                 </span>
                               </div>
@@ -1561,12 +1518,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             isHighlighted={false}
                             item={
                               Object {
-                                "item": Object {
-                                  "command": [Function],
-                                  "id": undefined,
-                                  "name": "Bar",
-                                  "section": undefined,
-                                },
+                                "command": [Function],
+                                "id": undefined,
+                                "name": "Bar",
+                                "section": undefined,
                               }
                             }
                             itemIndex={1}
@@ -1619,10 +1574,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               <div
                                 className="item"
                               >
-                                <span
-                                  key="Bar_0"
-                                  style={null}
-                                >
+                                <span>
                                   Bar
                                 </span>
                               </div>
@@ -1636,12 +1588,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             isHighlighted={false}
                             item={
                               Object {
-                                "item": Object {
-                                  "command": [Function],
-                                  "id": undefined,
-                                  "name": "Baz",
-                                  "section": undefined,
-                                },
+                                "command": [Function],
+                                "id": undefined,
+                                "name": "Baz",
+                                "section": undefined,
                               }
                             }
                             itemIndex={2}
@@ -1694,10 +1644,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               <div
                                 className="item"
                               >
-                                <span
-                                  key="Baz_0"
-                                  style={null}
-                                >
+                                <span>
                                   Baz
                                 </span>
                               </div>
@@ -1711,12 +1658,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             isHighlighted={false}
                             item={
                               Object {
-                                "item": Object {
-                                  "command": [Function],
-                                  "id": undefined,
-                                  "name": "Fizz",
-                                  "section": undefined,
-                                },
+                                "command": [Function],
+                                "id": undefined,
+                                "name": "Fizz",
+                                "section": undefined,
                               }
                             }
                             itemIndex={3}
@@ -1769,10 +1714,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               <div
                                 className="item"
                               >
-                                <span
-                                  key="Fizz_0"
-                                  style={null}
-                                >
+                                <span>
                                   Fizz
                                 </span>
                               </div>
@@ -1786,12 +1728,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             isHighlighted={false}
                             item={
                               Object {
-                                "item": Object {
-                                  "command": [Function],
-                                  "id": undefined,
-                                  "name": "Fizz Buzz",
-                                  "section": undefined,
-                                },
+                                "command": [Function],
+                                "id": undefined,
+                                "name": "Fizz Buzz",
+                                "section": undefined,
                               }
                             }
                             itemIndex={4}
@@ -1844,10 +1784,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               <div
                                 className="item"
                               >
-                                <span
-                                  key="Fizz Buzz_0"
-                                  style={null}
-                                >
+                                <span>
                                   Fizz Buzz
                                 </span>
                               </div>
