@@ -249,22 +249,29 @@ describe("Filtering the commands and pressing enter", () => {
 });
 
 describe("Command List", () => {
-  it.skip("returns a list of commands when given a string to match on", () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    const suggestions = commandPalette.instance().getSuggestions("Fizz");
+  it("returns a list of commands when given a string to match on", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Fizz" });
+    const suggestions = commandPalette.state("suggestions");
+    expect(suggestions).toHaveLength(2);
     expect(suggestions[0].name).toEqual("Fizz");
     expect(suggestions[1].name).toEqual("Fizz Buzz");
   });
 
-  it.skip("initially returns all commands", () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    const suggestions = commandPalette.instance().getSuggestions();
+  it("initially returns all commands", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    const suggestions = commandPalette.state("suggestions");
     expect(suggestions).toHaveLength(mockCommands.length);
   });
 
   it("returns all commands when there is no string to match", () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    commandPalette.find("button").simulate("click");
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
     commandPalette
       .instance()
       .onSuggestionsFetchRequested({ value: "bannanas!" });
