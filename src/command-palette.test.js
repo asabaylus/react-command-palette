@@ -383,12 +383,10 @@ describe("Selecting a command", () => {
     const command = jest.fn();
     const mock = {
       suggestion: {
-        item: {
-          id: "",
-          name: "Manage Tenants",
-          section: "Command",
-          command
-        }
+        id: "",
+        name: "Manage Tenants",
+        section: "Command",
+        command
       },
       suggestionValue: "Manage Tenants",
       suggestionIndex: 0,

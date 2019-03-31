@@ -1,47 +1,41 @@
-/*  eslint
-  no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
-  "function-paren-newline":0  */
-
-import * as React from "react";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-import serializer from "enzyme-to-json/serializer";
 import getSuggestions from "./suggestions";
 import allCommands from "./__mocks__/commands";
 
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
+const fuzzysortOptions = {
+  threshold: -Infinity,
+  limit: 7,
+  allowTypo: true,
+  key: "name",
+  keys: ["name", "section"],
+  scoreFn: null
+};
 
-expect.addSnapshotSerializer(serializer);
-
-describe.only("getSuggestions", () => {
+describe("getSuggestions", () => {
   describe("no value", () => {
     it("should return all commands", () => {
-      const commands = getSuggestions("", allCommands, {});
+      const commands = getSuggestions("", allCommands, fuzzysortOptions);
       expect(commands).toEqual(allCommands);
     });
   });
+
   describe("a value was provided", () => {
     it("should return the matching command", () => {
-      const commands = getSuggestions("Fizz", allCommands, {});   
+      const commands = getSuggestions("zz", allCommands, fuzzysortOptions);
       expect(commands).toContainEqual({
-        item: { name: "Fizz" },
-        matches: [
-          { indices: [[0, 0]], value: "Fizz", key: "name", arrayIndex: 0 }
-        ]
+        id: 1,
+        name: "Fizz",
+        command: Function.prototype,
+        section: "",
+        highlight: "Fi<b>zz</b>"
       });
-      // expect(commands).toContainEqual({
-      //   item: { name: "Fizz Buzz" },
-      //   matches: [
-      //     {
-      //       indices: [[0, 0]],
-      //       value: "Fizz Buzz",
-      //       key: "name",
-      //       arrayIndex: 0
-      //     }
-      //   ]
-      // });
-      // )
+      expect(commands).toContainEqual({
+        id: 1,
+        name: "Fizz Buzz",
+        command: Function.prototype,
+        section: "",
+        highlight: "Fi<b>zz</b> Buzz"
+      });
+      expect(commands.length).toBe(2);
     });
   });
 });
