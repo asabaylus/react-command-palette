@@ -10,7 +10,6 @@ export default function getSuggestions(value = "", allCommands, options) {
 
   // If the user specified an autosuggest term
   once(() => {
-    console.log("called!");
     allCommands.forEach(s => (s.namePrepared = fuzzysort.prepare(s.name)))
   });
 
