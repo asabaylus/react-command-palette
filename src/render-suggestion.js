@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import * as React from "react";
 
 export default suggestion => {
