@@ -6,7 +6,7 @@ import * as React from "react";
 import Enzyme, { mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import serializer from "enzyme-to-json/serializer";
-import { getSuggestions } from "./suggestions";
+import getSuggestions from "./suggestions";
 import allCommands from "./__mocks__/commands";
 
 // React 16 Enzyme adapter

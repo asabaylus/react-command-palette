@@ -69,15 +69,12 @@ describe("Loading indicator", () => {
 describe("Search", () => {
   it("has configureable fusejs options", () => {
     const searchOptions = {
-      tokenize: true,
-      matchAllTokens: true,
-      findAllMatches: true,
-      threshold: 0.4,
-      location: 0,
-      distance: 100,
-      maxPatternLength: 32,
-      minMatchCharLength: 1,
-      keys: ["name", "section"]
+      threshold: -Infinity,
+      limit: 7,
+      allowTypo: true,
+      key: "name",
+      keys: ["name", "section"],
+      scoreFn: null
     };
 
     const commandPalette = mount(

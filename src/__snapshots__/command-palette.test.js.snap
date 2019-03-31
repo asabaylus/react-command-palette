@@ -70,9 +70,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       "allowTypo": true,
       "key": "name",
       "keys": Array [
-        "id",
         "name",
-        "command",
         "section",
       ],
       "limit": 7,
