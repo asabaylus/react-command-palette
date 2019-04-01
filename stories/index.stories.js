@@ -106,12 +106,19 @@ storiesOf("Command Palette", module)
     // Knobs for Search Options Object
     const opts = {
       threshold: -Infinity,
-      limit: 7,
+      limit: 10,
       allowTypo: true,
       key: "name",
       keys: ["name"],
       scoreFn: null
     };
     const searchOptionsInput = object("Search Options", opts);
-    return <CommandPalette commands={commands} options={searchOptionsInput} />;
+    return (
+      <CommandPalette
+        commands={commands}
+        options={searchOptionsInput}
+        maxDisplayed={10}
+        open
+      />
+    );
   });
