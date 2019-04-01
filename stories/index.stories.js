@@ -76,21 +76,9 @@ storiesOf("Command Palette", module)
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
   ))
-  .add("with a lot of commands", () => {
-    // const lotsOfCommands = () => {
-    //   // assuming a 2.5 GHz Intel Core i7 running OSX 10.14.3
-    //   // adding 159k commands take > 1 sec. This benchmark is reliably
-    //   // reproduceable. The goal of this performance test is render
-    //   // 159k commands on under 1 second in the CI build pipeline
-    //   const arr = new Array(99999);
-    //   return arr.fill({
-    //     name: "foo",
-    //     command: Function.prototype
-    //   });
-    // };
-    // console.dir(lotsOfCommands);
-    return <CommandPalette commands={lotsOfCommands} open />;
-  })
+  .add("with lots of commands", () => (
+    <CommandPalette commands={lotsOfCommands} open />
+  ))
   .add("with a custom spinner", () => (
     <CommandPalette
       commands={commands}
