@@ -73,7 +73,7 @@ describe("Search", () => {
       limit: 7,
       allowTypo: true,
       key: "name",
-      keys: ["name", "section"],
+      keys: ["name"],
       scoreFn: null
     };
 
@@ -282,10 +282,8 @@ describe("Command List", () => {
   it("renders a command", () => {
     const mockdata = {
       item: {
-        id: 1,
         name: "Foo",
-        command: () => ({}),
-        section: "Command"
+        command: () => ({})
       }
     };
     const renderSuggestion = RenderSuggestion(mockdata, { query: "F" });
@@ -390,9 +388,7 @@ describe("Selecting a command", () => {
     const command = jest.fn();
     const mock = {
       suggestion: {
-        id: "",
         name: "Manage Tenants",
-        section: "Command",
         command
       },
       suggestionValue: "Manage Tenants",

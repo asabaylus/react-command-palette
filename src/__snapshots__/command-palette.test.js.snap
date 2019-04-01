@@ -71,7 +71,6 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       "key": "name",
       "keys": Array [
         "name",
-        "section",
       ],
       "limit": 7,
       "scoreFn": null,
@@ -1081,33 +1080,23 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Array [
                     Object {
                       "command": [Function],
-                      "id": undefined,
                       "name": "Foo",
-                      "section": undefined,
                     },
                     Object {
                       "command": [Function],
-                      "id": undefined,
                       "name": "Bar",
-                      "section": undefined,
                     },
                     Object {
                       "command": [Function],
-                      "id": undefined,
                       "name": "Baz",
-                      "section": undefined,
                     },
                     Object {
                       "command": [Function],
-                      "id": undefined,
                       "name": "Fizz",
-                      "section": undefined,
                     },
                     Object {
                       "command": [Function],
-                      "id": undefined,
                       "name": "Fizz Buzz",
-                      "section": undefined,
                     },
                   ]
                 }
@@ -1210,33 +1199,23 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Array [
                       Object {
                         "command": [Function],
-                        "id": undefined,
                         "name": "Foo",
-                        "section": undefined,
                       },
                       Object {
                         "command": [Function],
-                        "id": undefined,
                         "name": "Bar",
-                        "section": undefined,
                       },
                       Object {
                         "command": [Function],
-                        "id": undefined,
                         "name": "Baz",
-                        "section": undefined,
                       },
                       Object {
                         "command": [Function],
-                        "id": undefined,
                         "name": "Fizz",
-                        "section": undefined,
                       },
                       Object {
                         "command": [Function],
-                        "id": undefined,
                         "name": "Fizz Buzz",
-                        "section": undefined,
                       },
                     ]
                   }
@@ -1385,33 +1364,23 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Array [
                             Object {
                               "command": [Function],
-                              "id": undefined,
                               "name": "Foo",
-                              "section": undefined,
                             },
                             Object {
                               "command": [Function],
-                              "id": undefined,
                               "name": "Bar",
-                              "section": undefined,
                             },
                             Object {
                               "command": [Function],
-                              "id": undefined,
                               "name": "Baz",
-                              "section": undefined,
                             },
                             Object {
                               "command": [Function],
-                              "id": undefined,
                               "name": "Fizz",
-                              "section": undefined,
                             },
                             Object {
                               "command": [Function],
-                              "id": undefined,
                               "name": "Fizz Buzz",
-                              "section": undefined,
                             },
                           ]
                         }
@@ -1447,9 +1416,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
-                                "id": undefined,
                                 "name": "Foo",
-                                "section": undefined,
                               }
                             }
                             itemIndex={0}
@@ -1517,9 +1484,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
-                                "id": undefined,
                                 "name": "Bar",
-                                "section": undefined,
                               }
                             }
                             itemIndex={1}
@@ -1587,9 +1552,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
-                                "id": undefined,
                                 "name": "Baz",
-                                "section": undefined,
                               }
                             }
                             itemIndex={2}
@@ -1657,9 +1620,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
-                                "id": undefined,
                                 "name": "Fizz",
-                                "section": undefined,
                               }
                             }
                             itemIndex={3}
@@ -1727,9 +1688,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
-                                "id": undefined,
                                 "name": "Fizz Buzz",
-                                "section": undefined,
                               }
                             }
                             itemIndex={4}

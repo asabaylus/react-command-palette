@@ -6,7 +6,7 @@ const fuzzysortOptions = {
   limit: 7,
   allowTypo: true,
   key: "name",
-  keys: ["name", "section"],
+  keys: ["name"],
   scoreFn: null
 };
 
@@ -21,18 +21,12 @@ describe("getSuggestions", () => {
   describe("a value was provided", () => {
     it("should return the matching command", () => {
       const commands = getSuggestions("zz", allCommands, fuzzysortOptions);
-      expect(commands).toContainEqual({
-        id: 1,
+      expect(commands[0]).toMatchObject({
         name: "Fizz",
-        command: Function.prototype,
-        section: "",
         highlight: "Fi<b>zz</b>"
       });
-      expect(commands).toContainEqual({
-        id: 1,
+      expect(commands[1]).toMatchObject({
         name: "Fizz Buzz",
-        command: Function.prototype,
-        section: "",
         highlight: "Fi<b>zz</b> Buzz"
       });
       expect(commands.length).toBe(2);

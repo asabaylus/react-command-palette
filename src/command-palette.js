@@ -147,10 +147,8 @@ class CommandPalette extends React.Component {
     }
 
     this.allCommands = commands.map(obj => ({
-      id: obj.id,
       name: obj.name,
-      command: obj.command,
-      section: obj.section
+      command: obj.command
     }));
     return this.allCommands;
   }
@@ -252,7 +250,7 @@ CommandPalette.defaultProps = {
     limit: 7, // Don't return more results than this (lower is faster)
     allowTypo: true, // Allwos a snigle transpoes (false is faster)
     key: "name", // For when targets are objects (see its example usage)
-    keys: ["name", "section"], // For when targets are objects (see its example usage)
+    keys: ["name"], // For when targets are objects (see its example usage)
     scoreFn: null // For use with `keys` (see its example usage)
   },
   closeOnSelect: false

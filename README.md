@@ -109,7 +109,7 @@ $ npm run chromatic
 $ npm test
 
 # start the dev environment
-$ npm run dev
+$ npm start
 
 # update the docs
 $ npm run build-storybook

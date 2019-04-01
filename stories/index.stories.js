@@ -117,17 +117,12 @@ storiesOf("Command Palette", module)
   .add("with search options", () => {
     // Knobs for Search Options Object
     const opts = {
-      shouldSort: true,
-      tokenize: true,
-      matchAllTokens: true,
-      findAllMatches: true,
-      includeMatches: true,
-      threshold: 0.3,
-      location: 0,
-      distance: 1,
-      maxPatternLength: 32,
-      minMatchCharLength: 3,
-      keys: ["name", "section"]
+      threshold: -Infinity,
+      limit: 7,
+      allowTypo: true,
+      key: "name",
+      keys: ["name"],
+      scoreFn: null
     };
     const searchOptionsInput = object("Search Options", opts);
     return <CommandPalette commands={commands} options={searchOptionsInput} />;
