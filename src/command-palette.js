@@ -9,6 +9,7 @@ import Mousetrap from "mousetrap";
 import theme from "./theme";
 import PaletteSpinner from "./palette-spinner";
 
+import fuzzysortOptions from "./fuzzysort-options";
 import RenderSuggestion from "./render-suggestion";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
@@ -245,14 +246,7 @@ class CommandPalette extends React.Component {
 CommandPalette.defaultProps = {
   hotKeys: "command+shift+p",
   maxDisplayed: 7,
-  options: {
-    threshold: -Infinity, // Don't return matches worse than this (higher is faster)
-    limit: 7, // Don't return more results than this (lower is faster)
-    allowTypo: true, // Allwos a snigle transpoes (false is faster)
-    key: "name", // For when targets are objects (see its example usage)
-    keys: ["name"], // For when targets are objects (see its example usage)
-    scoreFn: null // For use with `keys` (see its example usage)
-  },
+  options: fuzzysortOptions,
   closeOnSelect: false
 };
 

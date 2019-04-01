@@ -1,14 +1,6 @@
 import getSuggestions from "./suggestions";
 import allCommands from "./__mocks__/commands";
-
-const fuzzysortOptions = {
-  threshold: -Infinity,
-  limit: 7,
-  allowTypo: true,
-  key: "name",
-  keys: ["name"],
-  scoreFn: null
-};
+import fuzzysortOptions from "./fuzzysort-options";
 
 describe("getSuggestions", () => {
   describe("no value", () => {
