@@ -60,7 +60,7 @@ const commands = [{
 
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
 
-* ```options``` controls how fuzzy search is configured see [fusejs options](http://fusejs.io/)
+* ```options``` options controls how fuzzy search is configured see [fuzzysort options](https://github.com/farzher/fuzzysort#options)
 
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key.
 

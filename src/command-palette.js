@@ -276,8 +276,8 @@ CommandPalette.propTypes = {
   Defaults to "_cmd */
   hotKeys: PropTypes.string,
 
-  /** options controls how fuzzy search is configured see [fusejs options]
-  (http://fusejs.io/) */
+  /** options controls how fuzzy search is configured see [fuzzysort options]
+  (https://github.com/farzher/fuzzysort#options) */
   options: PropTypes.object,
 
   /** open a boolean, when set to true it forces the command palette to be displayed.

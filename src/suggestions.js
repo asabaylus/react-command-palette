@@ -19,11 +19,10 @@ export default function getSuggestions(value = "", allCommands, options) {
   // If the user specified an autosuggest term
   // search for close matches
   const filteredSuggestions = fuzzysort.go(value, allCommands, options);
-
   // format the output to include a code higlight for innerHTML
   // and the command to invoke
   const formattedSuggestions = filteredSuggestions.map(suggestion => ({
-    name: suggestion[0].target,
+    name: suggestion.obj.name,
     command: suggestion.obj.command,
     highlight: fuzzysort.highlight(suggestion[0])
   }));
