@@ -2,11 +2,15 @@ import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf, addDecorator } from "@storybook/react";
 import "../src/styles.css";
+
+// storybook addons
 import { withInfo } from "@storybook/addon-info";
+import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
-import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { checkA11y } from "@storybook/addon-a11y";
+
+// command palette scripts
 import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
@@ -116,7 +120,7 @@ storiesOf("Command Palette", module)
     // Knobs for Search Options Object
     const opts = {
       threshold: -Infinity,
-      limit: 10,
+      limit: 100,
       allowTypo: true,
       key: "name",
       keys: ["name"],
@@ -125,9 +129,9 @@ storiesOf("Command Palette", module)
     const searchOptionsInput = object("Search Options", opts);
     return (
       <CommandPalette
-        commands={commands}
+        commands={proccessedCommands}
         options={searchOptionsInput}
-        maxDisplayed={10}
+        maxDisplayed={100}
         open
       />
     );
