@@ -12,6 +12,16 @@ import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
 
+// add noop command to this big list of command names
+function addCommandToArray(c) {
+  return c.map(item => ({
+    name: item.name,
+    command: Function.prototype
+  }));
+}
+
+const proccessedCommands = addCommandToArray(lotsOfCommands);
+
 storiesOf("Command Palette", module)
   .addDecorator(
     withOptions({
@@ -77,7 +87,7 @@ storiesOf("Command Palette", module)
     <CommandPalette commands={commands} closeOnSelect open />
   ))
   .add("with lots of commands", () => (
-    <CommandPalette commands={lotsOfCommands} open />
+    <CommandPalette commands={proccessedCommands} open />
   ))
   .add("with a custom spinner", () => (
     <CommandPalette

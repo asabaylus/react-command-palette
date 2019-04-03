@@ -147,10 +147,7 @@ class CommandPalette extends React.Component {
       );
     }
 
-    this.allCommands = commands.map(obj => ({
-      name: obj.name,
-      command: obj.command
-    }));
+    this.allCommands = commands;
     return this.allCommands;
   }
 
