@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /*  global dom:true */
 /*  eslint
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
@@ -8,6 +9,7 @@ import Enzyme, { shallow, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Mousetrap from "mousetrap";
 import serializer from "enzyme-to-json/serializer";
+import fuzzysortOptions from "./fuzzysort-options";
 import CommandPalette from "./command-palette";
 import RenderSuggestion from "./render-suggestion";
 import mockCommands from "./__mocks__/commands";
@@ -67,25 +69,13 @@ describe("Loading indicator", () => {
 
 describe("Search", () => {
   it("has configureable fusejs options", () => {
-    const searchOptions = {
-      tokenize: true,
-      matchAllTokens: true,
-      findAllMatches: true,
-      threshold: 0.4,
-      location: 0,
-      distance: 100,
-      maxPatternLength: 32,
-      minMatchCharLength: 1,
-      keys: ["name", "section"]
-    };
-
     const commandPalette = mount(
-      <CommandPalette options={searchOptions} commands={mockCommands} />
+      <CommandPalette options={fuzzysortOptions} commands={mockCommands} />
     );
 
     commandPalette.instance().onSuggestionsFetchRequested({ value: "zz" });
     expect(commandPalette.state("suggestions")).toHaveLength(2);
-    expect(commandPalette.props().options).toBe(searchOptions);
+    expect(commandPalette.props().options).toBe(fuzzysortOptions);
   });
 });
 
@@ -252,21 +242,28 @@ describe("Filtering the commands and pressing enter", () => {
 
 describe("Command List", () => {
   it("returns a list of commands when given a string to match on", () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    const suggestions = commandPalette.instance().getSuggestions("Fizz");
-    expect(suggestions[0].item.name).toEqual("Fizz");
-    expect(suggestions[1].item.name).toEqual("Fizz Buzz");
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Fizz" });
+    const suggestions = commandPalette.state("suggestions");
+    expect(suggestions).toHaveLength(2);
+    expect(suggestions[0].name).toEqual("Fizz");
+    expect(suggestions[1].name).toEqual("Fizz Buzz");
   });
 
   it("initially returns all commands", () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    const suggestions = commandPalette.instance().getSuggestions();
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    const suggestions = commandPalette.state("suggestions");
     expect(suggestions).toHaveLength(mockCommands.length);
   });
 
   it("returns all commands when there is no string to match", () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    commandPalette.find("button").simulate("click");
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
     commandPalette
       .instance()
       .onSuggestionsFetchRequested({ value: "bannanas!" });
@@ -277,10 +274,8 @@ describe("Command List", () => {
   it("renders a command", () => {
     const mockdata = {
       item: {
-        id: 1,
         name: "Foo",
-        command: () => ({}),
-        section: "Command"
+        command: () => ({})
       }
     };
     const renderSuggestion = RenderSuggestion(mockdata, { query: "F" });
@@ -301,6 +296,7 @@ describe("Command List", () => {
       };
 
       let error;
+      console.error = jest.fn();
       try {
         shallow(
           <CommandPalette commands={tooManyCommands()} maxDisplayed={501} />
@@ -308,7 +304,6 @@ describe("Command List", () => {
       } catch (e) {
         error = e;
       }
-
       expect(error).toBeInstanceOf(Error);
       expect(error.message).toBe(
         "Display is limited to a maximum of 500 items to prevent performance issues"
@@ -331,6 +326,29 @@ describe("Command List", () => {
       commandPalette.find("button").simulate("click");
       const commandsElements = commandPalette.find("Item");
       expect(commandsElements).toHaveLength(maxDisplayed);
+    });
+
+    it("should load in < 1 second", async () => {
+      expect.assertions(2);
+      const commands = () => {
+        // assuming a 2.5 GHz Intel Core i7 running OSX 10.14.3
+        // adding 25,000 commands takes <= 1 sec. This benchmark should be reliably
+        // reproduceable. The goal of this performance test is render
+        // 25k commands on under 1 second in the CI build pipeline
+        const arr = new Array(25000);
+        return arr.fill({
+          name: "foo",
+          command: Function.prototype
+        });
+      };
+      // before mounting note the time
+      const before = performance.now();
+      const commandPalette = mount(<CommandPalette commands={commands()} />);
+      commandPalette.find("button").simulate("click");
+      const commandsElements = commandPalette.find("Item");
+      const after = performance.now();
+      expect(commandsElements).toBeDefined();
+      expect(after - before).toBeLessThanOrEqual(1000);
     });
 
     it("should display 7 commands by default", () => {
@@ -362,12 +380,8 @@ describe("Selecting a command", () => {
     const command = jest.fn();
     const mock = {
       suggestion: {
-        item: {
-          id: "",
-          name: "Manage Tenants",
-          section: "Command",
-          command
-        }
+        name: "Manage Tenants",
+        command
       },
       suggestionValue: "Manage Tenants",
       suggestionIndex: 0,
@@ -436,6 +450,6 @@ describe("Fetching commands", () => {
 
     // check that the state as just the new command
     expect(wrapper.state("suggestions")).toHaveLength(1);
-    expect(wrapper.state().suggestions[0].item.name).toEqual("Omega");
+    expect(wrapper.state().suggestions[0].name).toEqual("Omega");
   });
 });

@@ -2,14 +2,29 @@ import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf, addDecorator } from "@storybook/react";
 import "../src/styles.css";
+
+// storybook addons
 import { withInfo } from "@storybook/addon-info";
+import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
-import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { checkA11y } from "@storybook/addon-a11y";
+
+// command palette scripts
 import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
+import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
+
+// add noop command to this big list of command names
+function addCommandToArray(c) {
+  return c.map(item => ({
+    name: item.name,
+    command: Function.prototype
+  }));
+}
+
+const proccessedCommands = addCommandToArray(lotsOfCommands);
 
 storiesOf("Command Palette", module)
   .addDecorator(
@@ -75,6 +90,9 @@ storiesOf("Command Palette", module)
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
   ))
+  .add("with lots of commands", () => (
+    <CommandPalette commands={proccessedCommands} open />
+  ))
   .add("with a custom spinner", () => (
     <CommandPalette
       commands={commands}
@@ -101,18 +119,20 @@ storiesOf("Command Palette", module)
   .add("with search options", () => {
     // Knobs for Search Options Object
     const opts = {
-      shouldSort: true,
-      tokenize: true,
-      matchAllTokens: true,
-      findAllMatches: true,
-      includeMatches: true,
-      threshold: 0.3,
-      location: 0,
-      distance: 1,
-      maxPatternLength: 32,
-      minMatchCharLength: 3,
-      keys: ["name", "section"]
+      threshold: -Infinity,
+      limit: 100,
+      allowTypo: true,
+      key: "name",
+      keys: ["name"],
+      scoreFn: null
     };
     const searchOptionsInput = object("Search Options", opts);
-    return <CommandPalette commands={commands} options={searchOptionsInput} />;
+    return (
+      <CommandPalette
+        commands={proccessedCommands}
+        options={searchOptionsInput}
+        maxDisplayed={100}
+        open
+      />
+    );
   });

@@ -5,13 +5,14 @@ import PropTypes from "prop-types";
 import take from "lodash.take";
 import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
-import Fuse from "fuse.js";
 import Mousetrap from "mousetrap";
 import theme from "./theme";
 import PaletteSpinner from "./palette-spinner";
 
+import fuzzysortOptions from "./fuzzysort-options";
 import RenderSuggestion from "./render-suggestion";
 import PaletteTrigger from "./palette-trigger";
+import getSuggestions from "./suggestions";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -36,7 +37,7 @@ const allSuggestions = [];
 // When suggestion is clicked, Autosuggest needs to populate the input element
 // based on the clicked suggestion. Teach Autosuggest how to calculate the
 // input value for every given suggestion.
-const getSuggestionValue = suggestion => suggestion.item.name;
+const getSuggestionValue = suggestion => suggestion.name;
 
 const modalStyles = {
   content: theme.content,
@@ -104,10 +105,10 @@ class CommandPalette extends React.Component {
   }
 
   onSuggestionSelected(event, { suggestion }) {
-    if (typeof suggestion.item.command === "function") {
+    if (typeof suggestion.command === "function") {
       // after the command executes display a spinner
       override(
-        suggestion.item,
+        suggestion,
         "command",
         after(() => {
           // close the command palette if prop is set
@@ -120,7 +121,7 @@ class CommandPalette extends React.Component {
           }
         })
       );
-      return suggestion.item.command();
+      return suggestion.command();
     }
     throw new Error("command must be a function");
   }
@@ -128,28 +129,10 @@ class CommandPalette extends React.Component {
   // Autosuggest will call this function every time you need to update suggestions.
   // You already implemented this logic above, so just use it.
   onSuggestionsFetchRequested({ value }) {
-    this.setState({
-      suggestions: this.getSuggestions(value)
-    });
-  }
-
-  // Teach Autosuggest how to calculate suggestions for any given input value.
-  getSuggestions(value = "") {
     const { options } = this.props;
-
-    // return all commands when user didnt suggest a specific term
-    if (!value) {
-      return this.allCommands;
-    }
-
-    // If the user specified an autosuggest term
-    const suggestions = this.allCommands.map(suggestion => suggestion.item);
-    const fuse = new Fuse(suggestions, options);
-    const filteredSuggestions = fuse.search(value);
-    if (!filteredSuggestions.length) {
-      return this.allCommands;
-    }
-    return filteredSuggestions;
+    this.setState({
+      suggestions: getSuggestions(value, this.allCommands, options)
+    });
   }
 
   afterOpenModal() {
@@ -164,14 +147,7 @@ class CommandPalette extends React.Component {
       );
     }
 
-    this.allCommands = commands.map(obj => ({
-      item: {
-        id: obj.id,
-        name: obj.name,
-        command: obj.command,
-        section: obj.section
-      }
-    }));
+    this.allCommands = commands;
     return this.allCommands;
   }
 
@@ -267,19 +243,7 @@ class CommandPalette extends React.Component {
 CommandPalette.defaultProps = {
   hotKeys: "command+shift+p",
   maxDisplayed: 7,
-  options: {
-    shouldSort: true,
-    tokenize: true,
-    matchAllTokens: true,
-    findAllMatches: true,
-    includeMatches: true,
-    threshold: 0.3,
-    location: 0,
-    distance: 1,
-    maxPatternLength: 32,
-    minMatchCharLength: 1,
-    keys: ["name", "section"]
-  },
+  options: fuzzysortOptions,
   closeOnSelect: false
 };
 
@@ -312,8 +276,8 @@ CommandPalette.propTypes = {
   Defaults to "_cmd */
   hotKeys: PropTypes.string,
 
-  /** options controls how fuzzy search is configured see [fusejs options]
-  (http://fusejs.io/) */
+  /** options controls how fuzzy search is configured see [fuzzysort options]
+  (https://github.com/farzher/fuzzysort#options) */
   options: PropTypes.object,
 
   /** open a boolean, when set to true it forces the command palette to be displayed.

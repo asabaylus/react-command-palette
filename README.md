@@ -60,7 +60,18 @@ const commands = [{
 
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_cmd+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
 
-* ```options``` controls how fuzzy search is configured see [fusejs options](http://fusejs.io/)
+* ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likley to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
+
+```
+  key: "name", // must be "name"
+  keys: ["name"], // must include "name"
+
+  // other options may be freely configured
+  threshold: -Infinity, 
+  limit: 7,
+  allowTypo: true, 
+  scoreFn: null 
+```
 
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key.
 
@@ -109,7 +120,7 @@ $ npm run chromatic
 $ npm test
 
 # start the dev environment
-$ npm run dev
+$ npm start
 
 # update the docs
 $ npm run build-storybook
