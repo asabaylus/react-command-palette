@@ -22,11 +22,14 @@ export default function getSuggestions(value = "", allCommands, options) {
 
   // format the output to include a code higlight for innerHTML
   // and the command to invoke
-  const formattedSuggestions = filteredSuggestions.map(suggestion => ({
-    name: suggestion.obj.name,
-    command: suggestion.obj.command,
-    highlight: fuzzysort.highlight(suggestion[0])
-  }));
+  const formattedSuggestions = filteredSuggestions.map(suggestion => {
+    const opts = {
+      name: suggestion.obj.name,
+      command: suggestion.obj.command,
+      highlight: fuzzysort.highlight(suggestion[0])
+    };
+    return { ...opts, ...suggestion.obj };
+  });
 
   // When the user specified a search term but there we no matches found
   // return all the commands

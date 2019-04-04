@@ -43,22 +43,27 @@ exports[`Opening the palette displays the suggestion list 1`] = `
     Array [
       Object {
         "command": [Function],
+        "id": 1,
         "name": "Foo",
       },
       Object {
         "command": [Function],
+        "id": 2,
         "name": "Bar",
       },
       Object {
         "command": [Function],
+        "id": 3,
         "name": "Baz",
       },
       Object {
         "command": [Function],
+        "id": 4,
         "name": "Fizz",
       },
       Object {
         "command": [Function],
+        "id": 5,
         "name": "Fizz Buzz",
       },
     ]
@@ -1080,22 +1085,27 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   Array [
                     Object {
                       "command": [Function],
+                      "id": 1,
                       "name": "Foo",
                     },
                     Object {
                       "command": [Function],
+                      "id": 2,
                       "name": "Bar",
                     },
                     Object {
                       "command": [Function],
+                      "id": 3,
                       "name": "Baz",
                     },
                     Object {
                       "command": [Function],
+                      "id": 4,
                       "name": "Fizz",
                     },
                     Object {
                       "command": [Function],
+                      "id": 5,
                       "name": "Fizz Buzz",
                     },
                   ]
@@ -1199,22 +1209,27 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     Array [
                       Object {
                         "command": [Function],
+                        "id": 1,
                         "name": "Foo",
                       },
                       Object {
                         "command": [Function],
+                        "id": 2,
                         "name": "Bar",
                       },
                       Object {
                         "command": [Function],
+                        "id": 3,
                         "name": "Baz",
                       },
                       Object {
                         "command": [Function],
+                        "id": 4,
                         "name": "Fizz",
                       },
                       Object {
                         "command": [Function],
+                        "id": 5,
                         "name": "Fizz Buzz",
                       },
                     ]
@@ -1364,22 +1379,27 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           Array [
                             Object {
                               "command": [Function],
+                              "id": 1,
                               "name": "Foo",
                             },
                             Object {
                               "command": [Function],
+                              "id": 2,
                               "name": "Bar",
                             },
                             Object {
                               "command": [Function],
+                              "id": 3,
                               "name": "Baz",
                             },
                             Object {
                               "command": [Function],
+                              "id": 4,
                               "name": "Fizz",
                             },
                             Object {
                               "command": [Function],
+                              "id": 5,
                               "name": "Fizz Buzz",
                             },
                           ]
@@ -1416,6 +1436,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
+                                "id": 1,
                                 "name": "Foo",
                               }
                             }
@@ -1484,6 +1505,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
+                                "id": 2,
                                 "name": "Bar",
                               }
                             }
@@ -1552,6 +1574,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
+                                "id": 3,
                                 "name": "Baz",
                               }
                             }
@@ -1620,6 +1643,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
+                                "id": 4,
                                 "name": "Fizz",
                               }
                             }
@@ -1688,6 +1712,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             item={
                               Object {
                                 "command": [Function],
+                                "id": 5,
                                 "name": "Fizz Buzz",
                               }
                             }
