@@ -73,7 +73,19 @@ const commands = [{
   scoreFn: null 
 ```
 
-* ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key.
+* ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command, for example:
+
+```
+  {
+    id: 1,
+    color: 'pink',
+    name: "Foo",
+    command() {
+      document.location.href = `somepage.html?id=${this.id}&color=${this.color}`;
+    }
+  },
+  ...
+```
 
 * ```maxDisplayed``` a _number_ between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7
 

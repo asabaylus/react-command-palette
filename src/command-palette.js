@@ -251,7 +251,7 @@ CommandPalette.propTypes = {
   /** commands appears in the command palette. For each command in the array the object
   must have a _name_ and a _command_. The _name_ is a user friendly string that will
   be display to the user. The command is a function that will be executed when the
-  user clicks or presses the enter key. */
+  user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command */
   commands: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
