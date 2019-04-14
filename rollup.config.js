@@ -25,9 +25,7 @@ const plugins = [
         "cloneElement",
         "createRef"
       ],
-      "node_modules/react-dom/index.js": ["render"],
-      "node_modules/autosuggest-highlight/match/index.js": ["match"],
-      "node_modules/autosuggest-highlight/parse/index.js": ["parse"]
+      "node_modules/react-dom/index.js": ["render"]
     }
   }),
   babel({

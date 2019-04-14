@@ -135,7 +135,7 @@ $ npm test
 $ npm start
 
 # update the docs
-$ npm run build-storybook
+$ npm run docs
 ```
 
 ## Building with Docker
