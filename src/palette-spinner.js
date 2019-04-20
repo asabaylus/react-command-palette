@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./spinner.css";
+import "./palette-spinner.css";
 
 const DefaultSpinnerComponent = () => (
   <div className="default-spinner" role="status">

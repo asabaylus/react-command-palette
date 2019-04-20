@@ -79,6 +79,28 @@ describe("Search", () => {
   });
 });
 
+describe("props.display", () => {
+  it("should be enabled by default", () => {
+    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
+    expect(commandPalette.find("Modal")).toBeDefined();
+  });
+
+  it("should display the command palette in a react-modal component when true", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} display="modal" />
+    );
+    expect(commandPalette.find("Modal")).toBeDefined();
+  });
+
+  it("should not display the command palette in a react-modal component when false", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} display="inline" />
+    );
+    expect(commandPalette.find("Modal")).toHaveLength(0);
+    expect(commandPalette).toMatchSnapshot();
+  });
+});
+
 describe("Opening the palette", () => {
   it("auto-focuses the input", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
@@ -183,44 +205,6 @@ describe("Closing the palette", () => {
     expect(spyHandleCloseModal).toHaveBeenCalled();
     expect(spyHandleCloseModal.mock.calls).toHaveLength(1);
     expect(commandPalette.state("showModal")).toEqual(false);
-  });
-
-  it.skip("pressing hot key(s) again toggles the commandPalette closed", () => {
-    expect.assertions(3);
-    const spyHandleCloseModal = jest.spyOn(
-      CommandPalette.prototype,
-      "handleCloseModal"
-    );
-
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-
-    expect(spyHandleCloseModal.mock.calls).toHaveLength(0);
-    commandPalette.find("button").simulate("click");
-    expect(commandPalette.state("showModal")).toEqual(true);
-    Mousetrap.trigger("command+shift+p");
-    expect(commandPalette.state("showModal")).toEqual(false);
-    // Mousetrap(commandPalette.find('input').instance()).trigger("command+shift+p");
-    // Mousetrap.trigger("command+shift+p");
-    // wrapper.find("input").simulate("change", { target: { which: "91" } });
-    // wrapper.find("input").simulate("change", { target: { which: "16" } });
-    // wrapper.find("input").simulate("change", { target: { which: "80" } });
-    // expect(spyHandleCloseModal.mock.calls.length).toHaveLength(1);
-    // const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    // const wrapper = mount(<CommandPalette commands={mockCommands} />);
-    // // verify modal is hidden before we try to open it
-    // expect(commandPalette.state("showModal")).toBe(false);
-    // Mousetrap.trigger("command+shift+p");
-    // const { input } = commandPalette.instance().commandPaletteInput;
-    // expect(commandPalette.state("showModal")).toEqual(true);
-    // // close it
-    // commandPalette.find("input").simulate("change", { target: { which: "91" } });
-    // commandPalette.find("input").simulate("change", { target: { which: "16" } });
-    // commandPalette.find("input").simulate("change", { target: { which: "80" } });
-    // // Mousetrap(input).trigger("command+shift+p");
-    // expect(commandPalette.state("showModal")).toEqual(false);
-    // expect(spyHandleCloseModal).toHaveBeenCalled();
-    // expect(spyHandleCloseModal.mock.calls).toHaveLength(1);
-    // expect(commandPalette.state("showModal")).toEqual(false);
   });
 });
 

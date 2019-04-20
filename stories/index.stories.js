@@ -1,7 +1,7 @@
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf, addDecorator } from "@storybook/react";
-import "../src/styles.css";
+import "./index.stories.css";
 
 // storybook addons
 import { withInfo } from "@storybook/addon-info";
@@ -56,6 +56,9 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
+  .add("without a modal", () => (
+    <CommandPalette commands={commands} display="inline" />
+  ))
   .add("is toggled open", () => <CommandPalette commands={commands} open />, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 

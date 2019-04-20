@@ -74,7 +74,7 @@ class CommandPalette extends React.Component {
   }
 
   componentDidMount() {
-    const { hotKeys, open } = this.props;
+    const { hotKeys, open, display } = this.props;
     this.fetchData();
     // Use hot key to open command palette
     Mousetrap.bind(hotKeys, () => {
@@ -84,6 +84,9 @@ class CommandPalette extends React.Component {
     });
 
     if (open) return this.handleOpenModal();
+
+    // because there's no modal when using inline the input should be focused
+    if (display === "inline") return this.focusInput();
     return true;
   }
 
@@ -211,7 +214,19 @@ class CommandPalette extends React.Component {
 
   render() {
     const { value, suggestions, showModal, isLoading } = this.state;
-    const { trigger, spinner } = this.props;
+    const { display, trigger, spinner } = this.props;
+
+    if (display === "inline") {
+      return (
+        <div className="react-command-palette">
+          {isLoading ? (
+            <PaletteSpinner spinner={spinner} />
+          ) : (
+            this.renderAutoSuggest(suggestions, value)
+          )}
+        </div>
+      );
+    }
 
     return (
       <div className="react-command-palette">
@@ -244,7 +259,8 @@ CommandPalette.defaultProps = {
   hotKeys: "command+shift+p",
   maxDisplayed: 7,
   options: fuzzysortOptions,
-  closeOnSelect: false
+  closeOnSelect: false,
+  display: "modal"
 };
 
 CommandPalette.propTypes = {
@@ -283,6 +299,9 @@ CommandPalette.propTypes = {
   /** open a boolean, when set to true it forces the command palette to be displayed.
   Defaults to "false". */
   open: PropTypes.bool,
+
+  /** modal a one of "modal" or "inline" , when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it simulates the display of a combobox. Defaults to "modal". */
+  display: PropTypes.oneOf(["modal", "inline"]),
 
   /** trigger a string or a React.ComponentType that opens the command palette when
   clicked. If a custom trigger is not set, then by default a button will be used. If a
