@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaletteSpinner props.display should display a black spinner when set to inline 1`] = `
+<PaletteSpinner
+  display="inline"
+>
+  <DefaultSpinnerComponent
+    display="inline"
+  >
+    <div
+      className="default-spinner inline"
+      role="status"
+    >
+      <span
+        className="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </DefaultSpinnerComponent>
+</PaletteSpinner>
+`;
+
+exports[`PaletteSpinner props.display should display a white spinner when set to modal 1`] = `
+<PaletteSpinner
+  display="modal"
+>
+  <DefaultSpinnerComponent
+    display="modal"
+  >
+    <div
+      className="default-spinner"
+      role="status"
+    >
+      <span
+        className="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </DefaultSpinnerComponent>
+</PaletteSpinner>
+`;

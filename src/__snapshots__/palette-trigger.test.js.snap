@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Trigger prop should accept a custom child component 1`] = `
+exports[`PaletteTrigger props.trigger should accept a custom child component 1`] = `
 <PaletteTrigger
   trigger={<MyButton />}
 >
@@ -21,7 +21,7 @@ exports[`Trigger prop should accept a custom child component 1`] = `
 </PaletteTrigger>
 `;
 
-exports[`Trigger prop should accept a custom text string 1`] = `
+exports[`PaletteTrigger props.trigger should accept a custom text string 1`] = `
 <PaletteTrigger
   trigger="foo"
 >
