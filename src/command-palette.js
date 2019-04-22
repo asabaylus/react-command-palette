@@ -191,8 +191,9 @@ class CommandPalette extends React.Component {
   }
 
   // eslint-disable-next-line react/sort-comp
-  renderAutoSuggest(suggestions, value) {
-    const { maxDisplayed } = this.props;
+  renderAutoSuggest(suggestions, value, isLoading) {
+    const { maxDisplayed, spinner } = this.props;
+    if (isLoading) return <PaletteSpinner spinner={spinner} />;
     return (
       <Autosuggest
         ref={input => {
@@ -214,16 +215,12 @@ class CommandPalette extends React.Component {
 
   render() {
     const { value, suggestions, showModal, isLoading } = this.state;
-    const { display, trigger, spinner } = this.props;
+    const { display, trigger } = this.props;
 
     if (display === "inline") {
       return (
         <div className="react-command-palette">
-          {isLoading ? (
-            <PaletteSpinner spinner={spinner} />
-          ) : (
-            this.renderAutoSuggest(suggestions, value)
-          )}
+          {this.renderAutoSuggest(suggestions, value, isLoading)}
         </div>
       );
     }
@@ -244,11 +241,7 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {isLoading ? (
-            <PaletteSpinner spinner={spinner} />
-          ) : (
-            this.renderAutoSuggest(suggestions, value)
-          )}
+          {this.renderAutoSuggest(suggestions, value, isLoading)}
         </ReactModal>
       </div>
     );
