@@ -261,7 +261,8 @@ CommandPalette.propTypes = {
   /** commands appears in the command palette. For each command in the array the object
   must have a _name_ and a _command_. The _name_ is a user friendly string that will
   be display to the user. The command is a function that will be executed when the
-  user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command */
+  user clicks or presses the enter key. Commands may also include custom properties where
+  "this" will be bound to the command */
   commands: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -294,7 +295,9 @@ CommandPalette.propTypes = {
   Defaults to "false". */
   open: PropTypes.bool,
 
-  /** modal a one of "modal" or "inline" , when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it simulates the display of a combobox. Defaults to "modal". */
+  /** modal a one of "modal" or "inline" , when set to "modal" the command palette is
+  rendered centered inside a modal. When set to "inline", it simulates the display of
+  a combobox. Defaults to "modal". */
   display: PropTypes.oneOf(["modal", "inline"]),
 
   /** trigger a string or a React.ComponentType that opens the command palette when

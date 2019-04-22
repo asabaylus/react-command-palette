@@ -92,7 +92,7 @@ describe("props.display", () => {
     expect(commandPalette.find("Modal")).toBeDefined();
   });
 
-  it("should not display the command palette in a react-modal component when false", () => {
+  it("should not display the command palette in react-modal when false", () => {
     const commandPalette = mount(
       <CommandPalette commands={mockCommands} display="inline" />
     );
