@@ -115,8 +115,8 @@ class CommandPalette extends React.Component {
         "command",
         after(() => {
           // close the command palette if prop is set
-          const { closeOnSelect } = this.props;
-          if (closeOnSelect) {
+          const { closeOnSelect, display } = this.props;
+          if (closeOnSelect && display === "modal") {
             this.handleCloseModal();
           } else {
             // otherwise show the loading spinner
