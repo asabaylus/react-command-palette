@@ -74,7 +74,7 @@ class CommandPalette extends React.Component {
   }
 
   componentDidMount() {
-    const { hotKeys, open } = this.props;
+    const { hotKeys, open, display } = this.props;
     this.fetchData();
     // Use hot key to open command palette
     Mousetrap.bind(hotKeys, () => {
@@ -84,6 +84,9 @@ class CommandPalette extends React.Component {
     });
 
     if (open) return this.handleOpenModal();
+
+    // because there's no modal when using inline the input should be focused
+    if (display === "inline") return this.focusInput();
     return true;
   }
 
@@ -112,8 +115,8 @@ class CommandPalette extends React.Component {
         "command",
         after(() => {
           // close the command palette if prop is set
-          const { closeOnSelect } = this.props;
-          if (closeOnSelect) {
+          const { closeOnSelect, display } = this.props;
+          if (closeOnSelect && display === "modal") {
             this.handleCloseModal();
           } else {
             // otherwise show the loading spinner
@@ -188,8 +191,12 @@ class CommandPalette extends React.Component {
   }
 
   // eslint-disable-next-line react/sort-comp
-  renderAutoSuggest(suggestions, value) {
-    const { maxDisplayed } = this.props;
+  renderAutoSuggest() {
+    const { suggestions, value, isLoading } = this.state;
+    const { maxDisplayed, spinner, display } = this.props;
+    if (isLoading) {
+      return <PaletteSpinner spinner={spinner} display={display} />;
+    }
     return (
       <Autosuggest
         ref={input => {
@@ -210,8 +217,14 @@ class CommandPalette extends React.Component {
   }
 
   render() {
-    const { value, suggestions, showModal, isLoading } = this.state;
-    const { trigger, spinner } = this.props;
+    const { showModal } = this.state;
+    const { display, trigger } = this.props;
+
+    if (display === "inline") {
+      return (
+        <div className="react-command-palette">{this.renderAutoSuggest()}</div>
+      );
+    }
 
     return (
       <div className="react-command-palette">
@@ -229,11 +242,7 @@ class CommandPalette extends React.Component {
             suggestion is selected by pressing Enter */
           }
         >
-          {isLoading ? (
-            <PaletteSpinner spinner={spinner} />
-          ) : (
-            this.renderAutoSuggest(suggestions, value)
-          )}
+          {this.renderAutoSuggest()}
         </ReactModal>
       </div>
     );
@@ -244,14 +253,16 @@ CommandPalette.defaultProps = {
   hotKeys: "command+shift+p",
   maxDisplayed: 7,
   options: fuzzysortOptions,
-  closeOnSelect: false
+  closeOnSelect: false,
+  display: "modal"
 };
 
 CommandPalette.propTypes = {
   /** commands appears in the command palette. For each command in the array the object
   must have a _name_ and a _command_. The _name_ is a user friendly string that will
   be display to the user. The command is a function that will be executed when the
-  user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command */
+  user clicks or presses the enter key. Commands may also include custom properties where
+  "this" will be bound to the command */
   commands: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -283,6 +294,11 @@ CommandPalette.propTypes = {
   /** open a boolean, when set to true it forces the command palette to be displayed.
   Defaults to "false". */
   open: PropTypes.bool,
+
+  /** modal a one of "modal" or "inline" , when set to "modal" the command palette is
+  rendered centered inside a modal. When set to "inline", it simulates the display of
+  a combobox. Defaults to "modal". */
+  display: PropTypes.oneOf(["modal", "inline"]),
 
   /** trigger a string or a React.ComponentType that opens the command palette when
   clicked. If a custom trigger is not set, then by default a button will be used. If a

@@ -21,11 +21,13 @@ const theme = {
     borderRadius: "4px",
     outline: "none",
     padding: "10px",
-    minWidth: "600px",
-    fontFamily: "helvetica, sans-serif",
-    fontSize: "12px"
+    minWidth: "600px"
   },
-  container: {},
+  container: {
+    fontFamily: "helvetica, sans-serif",
+    fontSize: "12px",
+    width: "605px"
+  },
   containerOpen: {},
   input: {
     fontSize: "14px",

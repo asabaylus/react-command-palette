@@ -1,0 +1,12 @@
+version: "2"
+checks:
+  similar-code:
+    config:
+      threshold: 90
+exclude_patterns:
+- "docs/"
+- "src/__mocks__"
+- "dist/"
+- "**/node_modules/"
+- "**/*.test.js"
+- "**/*.stories.js"
