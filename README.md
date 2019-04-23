@@ -56,7 +56,7 @@ const commands = [{
 
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 
-* ```modal``` a one of "modal" or "inline" , when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it simulates the display of a combobox. Defaults to "modal".
+* ```display``` one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal".
 
 * ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediateley when the user makes a selection. Defaults to "false".
 

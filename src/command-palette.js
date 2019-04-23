@@ -295,9 +295,7 @@ CommandPalette.propTypes = {
   Defaults to "false". */
   open: PropTypes.bool,
 
-  /** modal a one of "modal" or "inline" , when set to "modal" the command palette is
-  rendered centered inside a modal. When set to "inline", it simulates the display of
-  a combobox. Defaults to "modal". */
+  /** display one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal". */
   display: PropTypes.oneOf(["modal", "inline"]),
 
   /** trigger a string or a React.ComponentType that opens the command palette when
