@@ -29,7 +29,60 @@ exports[`PaletteSpinner props.display should display a white spinner when set to
     display="modal"
   >
     <div
-      className="default-spinner"
+      className="default-spinner modal"
+      role="status"
+    >
+      <span
+        className="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </DefaultSpinnerComponent>
+</PaletteSpinner>
+`;
+
+exports[`PaletteSpinner props.spinner should display a custom string when props.spinner is set 1`] = `
+<PaletteSpinner
+  spinner="Waiting"
+>
+  <CustomSpinnerComponent
+    spinner="Waiting"
+  >
+    <div
+      className="spinner modal"
+      role="status"
+    >
+      Waiting
+    </div>
+  </CustomSpinnerComponent>
+</PaletteSpinner>
+`;
+
+exports[`PaletteSpinner props.spinner should display an "inline" custom string when props.spinner is set 1`] = `
+<PaletteSpinner
+  display="inline"
+  spinner="Waiting"
+>
+  <CustomSpinnerComponent
+    display="inline"
+    spinner="Waiting"
+  >
+    <div
+      className="spinner inline"
+      role="status"
+    >
+      Waiting
+    </div>
+  </CustomSpinnerComponent>
+</PaletteSpinner>
+`;
+
+exports[`PaletteSpinner props.spinner should render the DefaultSpinnerComponent by default 1`] = `
+<PaletteSpinner>
+  <DefaultSpinnerComponent>
+    <div
+      className="default-spinner modal"
       role="status"
     >
       <span

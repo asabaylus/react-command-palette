@@ -5,9 +5,11 @@ import "./palette-spinner.css";
 
 const DefaultSpinnerComponent = props => {
   const { display } = props;
-  let cssClass = "default-spinner";
+  let cssClass;
   if (display === "inline") {
     cssClass = "default-spinner inline";
+  } else {
+    cssClass = "default-spinner modal";
   }
   return (
     <div className={cssClass} role="status">
@@ -24,6 +26,8 @@ const CustomSpinnerComponent = props => {
   let cssClass = "spinner";
   if (display === "inline") {
     cssClass = "spinner inline";
+  } else {
+    cssClass = "spinner modal";
   }
   return (
     <div className={cssClass} role="status">
