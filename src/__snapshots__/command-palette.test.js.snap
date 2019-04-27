@@ -83,6 +83,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       "threshold": -Infinity,
     }
   }
+  placeholder="Type a command"
 >
   <div
     className="react-command-palette"
@@ -210,6 +211,246 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           <div
             class="ReactModalPortal"
           />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                tabindex="-1"
+              >
+                <div
+                  aria-expanded="true"
+                  aria-haspopup="listbox"
+                  aria-owns="react-autowhatever-1"
+                  role="combobox"
+                  style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-controls="react-autowhatever-1"
+                    autocomplete="off"
+                    placeholder="Type a command"
+                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    id="react-autowhatever-1"
+                    role="listbox"
+                    style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                  >
+                    <ul
+                      role="listbox"
+                      style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                    >
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="0"
+                        id="react-autowhatever-1--item-0"
+                        role="option"
+                        style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Foo
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="1"
+                        id="react-autowhatever-1--item-1"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Bar
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="2"
+                        id="react-autowhatever-1--item-2"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Baz
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="3"
+                        id="react-autowhatever-1--item-3"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Fizz
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="4"
+                        id="react-autowhatever-1--item-4"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Fizz Buzz
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                tabindex="-1"
+              >
+                <div
+                  aria-expanded="true"
+                  aria-haspopup="listbox"
+                  aria-owns="react-autowhatever-1"
+                  role="combobox"
+                  style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-controls="react-autowhatever-1"
+                    autocomplete="off"
+                    placeholder="What do you want to do?"
+                    style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    id="react-autowhatever-1"
+                    role="listbox"
+                    style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                  >
+                    <ul
+                      role="listbox"
+                      style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                    >
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="0"
+                        id="react-autowhatever-1--item-0"
+                        role="option"
+                        style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Foo
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="1"
+                        id="react-autowhatever-1--item-1"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Bar
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="2"
+                        id="react-autowhatever-1--item-2"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Baz
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="3"
+                        id="react-autowhatever-1--item-3"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Fizz
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        aria-selected="false"
+                        data-suggestion-index="4"
+                        id="react-autowhatever-1--item-4"
+                        role="option"
+                        style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                      >
+                        <div
+                          class="item"
+                        >
+                          <span>
+                            Fizz Buzz
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             class="ReactModalPortal"
           />
@@ -713,6 +954,246 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               <div
                 class="ReactModalPortal"
               />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-expanded="true"
+                      aria-haspopup="listbox"
+                      aria-owns="react-autowhatever-1"
+                      role="combobox"
+                      style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        aria-controls="react-autowhatever-1"
+                        autocomplete="off"
+                        placeholder="Type a command"
+                        style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        id="react-autowhatever-1"
+                        role="listbox"
+                        style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                      >
+                        <ul
+                          role="listbox"
+                          style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                        >
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="0"
+                            id="react-autowhatever-1--item-0"
+                            role="option"
+                            style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Foo
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="1"
+                            id="react-autowhatever-1--item-1"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Bar
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="2"
+                            id="react-autowhatever-1--item-2"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Baz
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="3"
+                            id="react-autowhatever-1--item-3"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Fizz
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="4"
+                            id="react-autowhatever-1--item-4"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Fizz Buzz
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-expanded="true"
+                      aria-haspopup="listbox"
+                      aria-owns="react-autowhatever-1"
+                      role="combobox"
+                      style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        aria-controls="react-autowhatever-1"
+                        autocomplete="off"
+                        placeholder="What do you want to do?"
+                        style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        id="react-autowhatever-1"
+                        role="listbox"
+                        style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                      >
+                        <ul
+                          role="listbox"
+                          style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                        >
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="0"
+                            id="react-autowhatever-1--item-0"
+                            role="option"
+                            style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Foo
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="1"
+                            id="react-autowhatever-1--item-1"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Bar
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="2"
+                            id="react-autowhatever-1--item-2"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Baz
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="3"
+                            id="react-autowhatever-1--item-3"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Fizz
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            aria-selected="false"
+                            data-suggestion-index="4"
+                            id="react-autowhatever-1--item-4"
+                            role="option"
+                            style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                          >
+                            <div
+                              class="item"
+                            >
+                              <span>
+                                Fizz Buzz
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 class="ReactModalPortal"
               />
@@ -1856,6 +2337,7 @@ exports[`props.display should not display the command palette in react-modal whe
       "threshold": -Infinity,
     }
   }
+  placeholder="Type a command"
 >
   <div
     className="react-command-palette"
