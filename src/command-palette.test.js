@@ -79,6 +79,32 @@ describe("Search", () => {
   });
 });
 
+describe("props.placeholder", () => {
+  it('should display a "Type a command" by default', () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    const { input } = commandPalette.instance().commandPaletteInput;
+
+    expect(commandPalette.props().placeholder).toBe("Type a command");
+    expect(input.placeholder).toBe("Type a command");
+  });
+
+  it("should render a custom string", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        placeholder="What do you want to do?"
+        open
+      />
+    );
+    const { input } = commandPalette.instance().commandPaletteInput;
+
+    expect(commandPalette.props().placeholder).toBe("What do you want to do?");
+    expect(input.placeholder).toBe("What do you want to do?");
+  });
+});
+
 describe("props.display", () => {
   it("should be enabled by default", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);

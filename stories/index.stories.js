@@ -4,8 +4,8 @@ import { storiesOf, addDecorator } from "@storybook/react";
 import "./index.stories.css";
 
 // storybook addons
+import { withKnobs, object, number, text } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, object, number } from "@storybook/addon-knobs";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
 import { checkA11y } from "@storybook/addon-a11y";
@@ -56,9 +56,6 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
-  .add("without a modal", () => (
-    <CommandPalette commands={commands} display="inline" />
-  ))
   .add("is toggled open", () => <CommandPalette commands={commands} open />, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 
@@ -71,6 +68,9 @@ storiesOf("Command Palette", module)
     const commandsInput = object("Commands", commands);
     return <CommandPalette commands={commandsInput} />;
   })
+  .add("without a modal", () => (
+    <CommandPalette commands={commands} display="inline" />
+  ))
   .add(
     "with a custom trigger",
     () => <CommandPalette commands={commands} trigger="Click Me!" />,
@@ -92,6 +92,13 @@ storiesOf("Command Palette", module)
   ))
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
+  ))
+  .add("with custom placeholder", () => (
+    <CommandPalette
+      commands={commands}
+      placeholder={text("placeholder", "What do you want?")}
+      open
+    />
   ))
   .add("with lots of commands", () => (
     <CommandPalette commands={proccessedCommands} open />

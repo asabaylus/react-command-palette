@@ -182,8 +182,9 @@ class CommandPalette extends React.Component {
 
   // Autosuggest will pass through all these props to the input element.
   defaultInputProps(value) {
+    const { placeholder } = this.props;
     return {
-      placeholder: "Type a command",
+      placeholder,
       value,
       onChange: this.onChange,
       onKeyDown: this.onKeyDown
@@ -250,6 +251,7 @@ class CommandPalette extends React.Component {
 }
 
 CommandPalette.defaultProps = {
+  placeholder: "Type a command",
   hotKeys: "command+shift+p",
   maxDisplayed: 7,
   options: fuzzysortOptions,
@@ -283,8 +285,12 @@ CommandPalette.propTypes = {
     return null;
   },
 
+  /** placeholder a string that contains a short text description which is displayed inside the the input field until the user provides input.
+  Defaults to "Type a command" */
+  placeholder: PropTypes.string,
+
   /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
-  Defaults to "_cmd */
+  Defaults to "command+shift+p" */
   hotKeys: PropTypes.string,
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
