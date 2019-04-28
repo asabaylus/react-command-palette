@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf, addDecorator } from "@storybook/react";
@@ -9,6 +10,9 @@ import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
 import { checkA11y } from "@storybook/addon-a11y";
+
+// sample component
+import sampleHeader from "../examples/sampleHeader";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -89,6 +93,9 @@ storiesOf("Command Palette", module)
   )
   .add("with custom hotkeys", () => (
     <CommandPalette commands={commands} hotKeys="/" />
+  ))
+  .add("with custom header", () => (
+    <CommandPalette commands={commands} header={sampleHeader()} open />
   ))
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
