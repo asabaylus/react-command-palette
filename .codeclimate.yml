@@ -5,6 +5,7 @@ checks:
       threshold: 90
 exclude_patterns:
 - "docs/"
+- "examples/"
 - "src/__mocks__"
 - "dist/"
 - "**/node_modules/"
