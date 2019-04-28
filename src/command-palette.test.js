@@ -13,6 +13,7 @@ import fuzzysortOptions from "./fuzzysort-options";
 import CommandPalette from "./command-palette";
 import RenderSuggestion from "./render-suggestion";
 import mockCommands from "./__mocks__/commands";
+import sampleHeader from "../examples/sampleHeader";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -76,6 +77,38 @@ describe("Search", () => {
     commandPalette.instance().onSuggestionsFetchRequested({ value: "zz" });
     expect(commandPalette.state("suggestions")).toHaveLength(2);
     expect(commandPalette.props().options).toBe(fuzzysortOptions);
+  });
+});
+
+describe("props.header", () => {
+  it("should not display by default", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    expect(commandPalette.props().header).toBe(null);
+  });
+
+  it("should render a custom string", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        header="this is a command palette"
+        open
+      />
+    );
+    const header = commandPalette.find(".header");
+    expect(
+      header.contains(<div className="header">this is a command palette</div>)
+    ).toBeTruthy();
+  });
+
+  it("should render the header", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} header={sampleHeader()} open />
+    );
+    const header = commandPalette.find(".header");
+    expect(header.contains(sampleHeader())).toBeTruthy();
+    expect(header).toMatchSnapshot();
   });
 });
 

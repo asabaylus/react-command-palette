@@ -194,26 +194,29 @@ class CommandPalette extends React.Component {
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
-    const { maxDisplayed, spinner, display } = this.props;
+    const { maxDisplayed, spinner, display, header } = this.props;
     if (isLoading) {
       return <PaletteSpinner spinner={spinner} display={display} />;
     }
     return (
-      <Autosuggest
-        ref={input => {
-          this.commandPaletteInput = input;
-        }}
-        suggestions={take(suggestions, maxDisplayed)}
-        highlightFirstSuggestion
-        onSuggestionSelected={this.onSuggestionSelected}
-        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={RenderSuggestion}
-        inputProps={this.defaultInputProps(value)}
-        alwaysRenderSuggestions
-        theme={theme}
-      />
+      <div>
+        <div className="header">{header}</div>
+        <Autosuggest
+          ref={input => {
+            this.commandPaletteInput = input;
+          }}
+          suggestions={take(suggestions, maxDisplayed)}
+          highlightFirstSuggestion
+          onSuggestionSelected={this.onSuggestionSelected}
+          onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+          onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+          getSuggestionValue={getSuggestionValue}
+          renderSuggestion={RenderSuggestion}
+          inputProps={this.defaultInputProps(value)}
+          alwaysRenderSuggestions
+          theme={theme}
+        />
+      </div>
     );
   }
 
@@ -253,6 +256,7 @@ class CommandPalette extends React.Component {
 CommandPalette.defaultProps = {
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
+  header: null,
   maxDisplayed: 7,
   options: fuzzysortOptions,
   closeOnSelect: false,
@@ -303,6 +307,9 @@ CommandPalette.propTypes = {
 
   /** display one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal". */
   display: PropTypes.oneOf(["modal", "inline"]),
+
+  /** header a string or a React.ComponentType which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. header are not displayed by default. see: examples/sampleInstruction.js for reference */
+  header: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** trigger a string or a React.ComponentType that opens the command palette when
   clicked. If a custom trigger is not set, then by default a button will be used. If a
