@@ -6,13 +6,14 @@ import PropTypes from "prop-types";
 import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Mousetrap from "mousetrap";
-import theme from "./theme";
 import PaletteSpinner from "./palette-spinner";
 
 import fuzzysortOptions from "./fuzzysort-options";
 import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
+
+import theme from "./themes/chrome";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
