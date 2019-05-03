@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderCommand should render a custom child command 1`] = `
+<RenderCommand
+  renderCommand={[Function]}
+  suggestion={
+    Object {
+      "category": "Command",
+      "command": [Function],
+      "id": 1,
+      "name": "Start All Data Imports",
+    }
+  }
+>
+  <div>
+    <div
+      className="item"
+    >
+      <span
+        className="category Command"
+      >
+        Command
+      </span>
+      <span>
+        Start All Data Imports
+      </span>
+    </div>
+  </div>
+</RenderCommand>
+`;
+
+exports[`RenderCommand should render the default child command 1`] = `
+<RenderCommand
+  suggestion={
+    Object {
+      "category": "Command",
+      "command": [Function],
+      "id": 1,
+      "name": "Start All Data Imports",
+    }
+  }
+>
+  <DefaultCommand
+    suggestion={
+      Object {
+        "category": "Command",
+        "command": [Function],
+        "id": 1,
+        "name": "Start All Data Imports",
+      }
+    }
+  >
+    <div
+      className="item"
+    >
+      <span>
+        Start All Data Imports
+      </span>
+    </div>
+  </DefaultCommand>
+</RenderCommand>
+`;

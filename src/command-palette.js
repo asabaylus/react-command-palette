@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
@@ -10,7 +11,7 @@ import theme from "./theme";
 import PaletteSpinner from "./palette-spinner";
 
 import fuzzysortOptions from "./fuzzysort-options";
-import RenderSuggestion from "./render-suggestion";
+import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
 
@@ -67,6 +68,7 @@ class CommandPalette extends React.Component {
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.commandTemplate = this.commandTemplate.bind(this);
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
@@ -191,6 +193,10 @@ class CommandPalette extends React.Component {
     };
   }
 
+  commandTemplate(suggestion) {
+    return <RenderCommand {...this.props} suggestion={suggestion} />;
+  }
+
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
@@ -198,6 +204,7 @@ class CommandPalette extends React.Component {
     if (isLoading) {
       return <PaletteSpinner spinner={spinner} display={display} />;
     }
+
     return (
       <div>
         <div className="header">{header}</div>
@@ -211,7 +218,7 @@ class CommandPalette extends React.Component {
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           getSuggestionValue={getSuggestionValue}
-          renderSuggestion={RenderSuggestion}
+          renderSuggestion={this.commandTemplate}
           inputProps={this.defaultInputProps(value)}
           alwaysRenderSuggestions
           theme={theme}
@@ -260,7 +267,8 @@ CommandPalette.defaultProps = {
   maxDisplayed: 7,
   options: fuzzysortOptions,
   closeOnSelect: false,
-  display: "modal"
+  display: "modal",
+  renderCommand: null
 };
 
 CommandPalette.propTypes = {
@@ -328,7 +336,10 @@ CommandPalette.propTypes = {
 
   /** closeOnSelect a boolean, when true selecting an item will immendiately close the
   command-palette  */
-  closeOnSelect: PropTypes.bool
+  closeOnSelect: PropTypes.bool,
+
+  /** trigger a string or a React.ComponentType that customises the layout and content of the commands in the command list. For complete documentation see the storybook notes. */
+  renderCommand: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 
 export default CommandPalette;

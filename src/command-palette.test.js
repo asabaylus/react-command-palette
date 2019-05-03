@@ -11,9 +11,9 @@ import Mousetrap from "mousetrap";
 import serializer from "enzyme-to-json/serializer";
 import fuzzysortOptions from "./fuzzysort-options";
 import CommandPalette from "./command-palette";
-import RenderSuggestion from "./render-suggestion";
 import mockCommands from "./__mocks__/commands";
 import sampleHeader from "../examples/sampleHeader";
+import SampleCustomCommand from "../examples/sampleCustomCommand";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -74,7 +74,7 @@ describe("Search", () => {
       <CommandPalette options={fuzzysortOptions} commands={mockCommands} />
     );
 
-    commandPalette.instance().onSuggestionsFetchRequested({ value: "zz" });
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Imports" });
     expect(commandPalette.state("suggestions")).toHaveLength(2);
     expect(commandPalette.props().options).toBe(fuzzysortOptions);
   });
@@ -109,6 +109,21 @@ describe("props.header", () => {
     const header = commandPalette.find(".header");
     expect(header.contains(sampleHeader())).toBeTruthy();
     expect(header).toMatchSnapshot();
+  });
+});
+
+// TODO: Add custom renderCommand prop
+describe("props.renderCommand", () => {
+  it("should render a custom command component", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        RenderCommand={SampleCustomCommand}
+        open
+      />
+    );
+    expect(commandPalette.find(".category")).toBeTruthy();
+    expect(commandPalette).toMatchSnapshot();
   });
 });
 
@@ -288,11 +303,11 @@ describe("Command List", () => {
     const commandPalette = mount(
       <CommandPalette commands={mockCommands} open />
     );
-    commandPalette.instance().onSuggestionsFetchRequested({ value: "Fizz" });
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Im" });
     const suggestions = commandPalette.state("suggestions");
     expect(suggestions).toHaveLength(2);
-    expect(suggestions[0].name).toEqual("Fizz");
-    expect(suggestions[1].name).toEqual("Fizz Buzz");
+    expect(suggestions[0].name).toEqual("Stop All Data Imports");
+    expect(suggestions[1].name).toEqual("Start All Data Imports");
   });
 
   it("initially returns all commands", () => {
@@ -315,15 +330,13 @@ describe("Command List", () => {
   });
 
   it("renders a command", () => {
-    const mockdata = {
-      item: {
-        name: "Foo",
-        command: () => ({})
-      }
-    };
-    const renderSuggestion = RenderSuggestion(mockdata, { query: "F" });
-    const wrapper = shallow(renderSuggestion);
-    expect(wrapper).toMatchSnapshot();
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    commandPalette
+      .find("input")
+      .simulate("change", { target: { value: "Logs" } });
+    expect(commandPalette).toMatchSnapshot();
   });
 
   describe("number of commands displayed", () => {
@@ -465,7 +478,7 @@ describe("Selecting a command", () => {
 describe("Fetching commands", () => {
   it("should update the state with a filtered list of commands", () => {
     const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
-    commandPalette.instance().onSuggestionsFetchRequested({ value: "Foo" });
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Logs" });
     expect(commandPalette.state("suggestions")).toHaveLength(1);
   });
 

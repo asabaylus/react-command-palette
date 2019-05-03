@@ -13,6 +13,7 @@ import { checkA11y } from "@storybook/addon-a11y";
 
 // sample component
 import sampleHeader from "../examples/sampleHeader";
+import sampleCustomCommand from "../examples/sampleCustomCommand";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -60,6 +61,13 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
+  .add("with a custom command", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleCustomCommand}
+      open
+    />
+  ))
   .add("is toggled open", () => <CommandPalette commands={commands} open />, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 
