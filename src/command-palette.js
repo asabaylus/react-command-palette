@@ -297,48 +297,56 @@ CommandPalette.propTypes = {
     return null;
   },
 
-  /** placeholder a string that contains a short text description which is displayed inside the the input field until the user provides input.
-  Defaults to "Type a command" */
+  /** placeholder a string that contains a short text description which is displaye
+   * inside the the input field until the user provides input. Defaults to "Type a
+   * command" */
   placeholder: PropTypes.string,
 
   /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
-  Defaults to "command+shift+p" */
+   * Defaults to "command+shift+p" */
   hotKeys: PropTypes.string,
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
-  (https://github.com/farzher/fuzzysort#options) */
+   * (https://github.com/farzher/fuzzysort#options) */
   options: PropTypes.object,
 
   /** open a boolean, when set to true it forces the command palette to be displayed.
-  Defaults to "false". */
+   * Defaults to "false". */
   open: PropTypes.bool,
 
-  /** display one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal". */
+  /** display one of "modal" or "inline", when set to "modal" the command palette is
+   * rendered centered inside a modal. When set to "inline", it is render inline with
+   * other page content. Defaults to "modal". */
   display: PropTypes.oneOf(["modal", "inline"]),
 
-  /** header a string or a React.ComponentType which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. header are not displayed by default. see: examples/sampleInstruction.js for reference */
+  /** header a string or a React.ComponentType which provides a helpful description for
+   * the usage of the command palette. The component is displayed at the top of the
+   * command palette. header are not displayed by default. see: examples
+   * sampleInstruction.js for reference */
   header: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** trigger a string or a React.ComponentType that opens the command palette when
-  clicked. If a custom trigger is not set, then by default a button will be used. If a
-  custom component or string is provided then it will automatically be wrapped inside
-  an accessible div which will allow it be keyboard accessible, clickable and focusable
-  for assistive technologies. */
+   * clicked. If a custom trigger is not set, then by default a button will be used. If a
+   * custom component or string is provided then it will automatically be wrapped inside
+   * an accessible div which will allow it be keyboard accessible, clickable and focusable
+   * for assistive technologies. */
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** spinner a string or a React.ComponentType that is displayed when the user selects
-  an item. If a custom spinner is not set then the default spinner will be used. If
-  custom component or string is provided then it will automatically be wrapped inside
-  a div with a _role="status" attribute. If a component is provided then it will be be
-  wrapped in a div that also contains a sibling node with a div contain "Loading..."
-  visible only to screen readers. */
+   * an item. If a custom spinner is not set then the default spinner will be used. If
+   * custom component or string is provided then it will automatically be wrapped inside
+   * a div with a _role="status" attribute. If a component is provided then it will be be
+   * wrapped in a div that also contains a sibling node with a div contain "Loading..."
+   * visible only to screen readers. */
   spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** closeOnSelect a boolean, when true selecting an item will immendiately close the
-  command-palette  */
+   * command-palette  */
   closeOnSelect: PropTypes.bool,
 
-  /** trigger a string or a React.ComponentType that customises the layout and content of the commands in the command list. For complete documentation see the storybook notes. */
+  /** trigger a string or a React.ComponentType that customises the layout and content of
+   * the commands in the command list. For complete documentation see the storybook
+   * notes. */
   renderCommand: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 

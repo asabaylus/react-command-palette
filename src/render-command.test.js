@@ -6,7 +6,6 @@ import serializer from "enzyme-to-json/serializer";
 import allCommands from "./__mocks__/commands";
 import RenderCommand from "./render-command";
 import SampleCustomCommand from "../examples/sampleCustomCommand";
-import DefaultCommand from "./default-command";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });

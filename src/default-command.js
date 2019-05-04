@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
+import PropTypes from "prop-types";
 
 // the highlight comes from input enterd by the user however, dangerouslySetInnerHTML
 // should be safe because the raw markup originates from fuzzsort
@@ -21,6 +20,18 @@ const DefaultCommand = function(props) {
 
 DefaultCommand.defaultProps = {
   suggestion: { highlight: null }
+};
+
+DefaultCommand.propTypes = {
+  /** a single suggestion that appears in the command palette. It must have a _name_ and
+   * a _command_. The _name_ is a user friendly string that will be display to the user.
+   * The command is a function that will be executed when the user clicks or presses the
+   * enter key. */
+  suggestion: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    highlight: PropTypes.string,
+    command: PropTypes.func.isRequired
+  })
 };
 
 export default DefaultCommand;
