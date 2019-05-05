@@ -127,6 +127,8 @@ const commands = [{
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
 
+  Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
+
   See [a full example](examples/sampleCustomCommand.js)`
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
