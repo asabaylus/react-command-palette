@@ -69,69 +69,69 @@ const commands = [{
 
 * ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likley to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
 
-```js
-  key: "name", // must be "name"
-  keys: ["name"], // must include "name"
+  ```js
+    key: "name", // must be "name"
+    keys: ["name"], // must include "name"
 
-  // other options may be freely configured
-  threshold: -Infinity, 
-  limit: 7,
-  allowTypo: true, 
-  scoreFn: null 
-```
+    // other options may be freely configured
+    threshold: -Infinity, 
+    limit: 7,
+    allowTypo: true, 
+    scoreFn: null 
+  ```
 
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command, for example:
 
-```js
-  {
-    id: 1,
-    color: 'pink',
-    name: "Foo",
-    command() {
-      document.location.href = `somepage.html?id=${this.id}&color=${this.color}`;
-    }
-  },
-  ...
-```
+  ```js
+    {
+      id: 1,
+      color: 'pink',
+      name: "Foo",
+      command() {
+        document.location.href = `somepage.html?id=${this.id}&color=${this.color}`;
+      }
+    },
+    ...
+  ```
 
 * ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
   
-```js
-import "./commandStyles.css"; // or use inline styles
+  ```js
+  import "./commandStyles.css"; // or use inline styles
 
-function RenderCommand(suggestion) {
-  // A suggestion object will be passed to your custom component for each command
-  const { id, color, name } = suggestion;
-  return (
-    <div>
-      <span>{id}</span>
-      <span>{color}</span>
-      <span>{name}</span>
-    </div>
-  );
-}
+  function RenderCommand(suggestion) {
+    // A suggestion object will be passed to your custom component for each command
+    const { id, color, name } = suggestion;
+    return (
+      <div>
+        <span>{id}</span>
+        <span>{color}</span>
+        <span>{name}</span>
+      </div>
+    );
+  }
 
-const commands = [{
-    id: 1,
-    color: 'pink',
-    name: "Foo",
-    command() {
-      document.location.href = `somepage.html?id=${this.id}&color=${this.color}`;
-    }
-  } ...];
+  const commands = [{
+      id: 1,
+      color: 'pink',
+      name: "Foo",
+      command() {
+        document.location.href = `somepage.html?id=${this.id}&color=${this.color}`;
+      }
+    } ...];
 
-<CommandPalette
-  commands={commands}
-  renderCommand={RenderCommand}
-/>
-```
-see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
+  <CommandPalette
+    commands={commands}
+    renderCommand={RenderCommand}
+  />
+  ```
+  see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
 
-Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
+  Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
 
-See [a full example](examples/sampleCustomCommand.js)
+  See [a full example](examples/sampleCustomCommand.js)
 
-*Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
+  *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
 * ```maxDisplayed``` a _number_ between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7
 
