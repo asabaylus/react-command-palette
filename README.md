@@ -35,7 +35,7 @@ $ npm i --save react-command-palette
 
 Import into your react app and pass commands
 
-```
+```js
 import CommandPalette from 'react-command-palette';
 
 const commands = [{
@@ -69,7 +69,7 @@ const commands = [{
 
 * ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likley to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
 
-```
+```js
   key: "name", // must be "name"
   keys: ["name"], // must include "name"
 
@@ -82,7 +82,7 @@ const commands = [{
 
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command, for example:
 
-```
+```js
   {
     id: 1,
     color: 'pink',
@@ -129,7 +129,7 @@ const commands = [{
 
   Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
 
-  See [a full example](examples/sampleCustomCommand.js)`
+  See [a full example](examples/sampleCustomCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
