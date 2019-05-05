@@ -344,10 +344,9 @@ CommandPalette.propTypes = {
    * command-palette  */
   closeOnSelect: PropTypes.bool,
 
-  /** trigger a string or a React.ComponentType that customises the layout and content of
-   * the commands in the command list. For complete documentation see the storybook
-   * notes. */
-  renderCommand: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  /** a React.func that defines the layout and contents of the commands in the
+   * command list. For complete documentation see the storybook notes. */
+  renderCommand: PropTypes.func
 };
 
 export default CommandPalette;

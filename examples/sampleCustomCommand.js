@@ -4,8 +4,8 @@
 import React from "react";
 import "./sampleCustomCommand.css";
 
-const sampleCustomCommand = function(props) {
-  const { name, highlight, category } = props;
+export default function sampleCustomCommand(suggestion) {
+  const { name, highlight, category } = suggestion;
   return (
     <div className="item">
       <span className={`category ${category}`}>{category}</span>
@@ -16,6 +16,4 @@ const sampleCustomCommand = function(props) {
       )}
     </div>
   );
-};
-
-export default sampleCustomCommand;
+}

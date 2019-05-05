@@ -61,13 +61,27 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
-  .add("with a custom command", () => (
-    <CommandPalette
-      commands={commands}
-      renderCommand={sampleCustomCommand}
-      open
-    />
-  ))
+  .add(
+    "with a custom command",
+    () => (
+      <CommandPalette
+        commands={commands}
+        renderCommand={sampleCustomCommand}
+        open
+      />
+    ),
+    {
+      info: {
+        text: `By default, react-command-palette will render the suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property, see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
+
+All props passed to the _CommandPalette_ will also be passed to the renderCommand component. Additionaly a _sugesstion_ prop will be passed to your custom component and it will contain any custom object properties, ex: _suggestion.foo_.
+  
+*Important:* _renderCommand_ must be a pure function (we optimize rendering performance based on this assumption).
+  
+For example, see: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleCustomCommand.js`
+      }
+    }
+  )
   .add("is toggled open", () => <CommandPalette commands={commands} open />, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 
