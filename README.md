@@ -94,41 +94,42 @@ const commands = [{
   ...
 ```
 
-* ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
+* ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
   
   ```js
   import "./commandStyles.css"; // or use inline styles
 
-  function renderCommand(suggestion) {
-    const { id, name } = suggestion;
+  function RenderCommand(suggestion) {
+    // A suggestion object will be passed to your custom component for each command
+    const { id, color, name } = suggestion;
     return (
       <div>
         <span>{id}</span>
+        <span>{color}</span>
         <span>{name}</span>
       </div>
     );
   }
+
+  const commands = [{
+      id: 1,
+      color: 'pink',
+      name: "Foo",
+      command() {
+        document.location.href = `somepage.html?id=${this.id}&color=${this.color}`;
+      }
+    } ...];
+
+  <CommandPalette
+    commands={commands}
+    renderCommand={RenderCommand}
+  />
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
 
-  A _suggestion_ object will be passed to your custom component for each command, ex: 
-  
-  ```js
-  { suggestion: 
-    {
-      name: "Friendly command name",
-      myPropery: "anything you like",
-      command: function() {
-        // do something
-      }
-    } 
-  }
-
-  ```
   See [a full example](examples/sampleCustomCommand.js)`
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
-
 
 * ```maxDisplayed``` a _number_ between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7
 
