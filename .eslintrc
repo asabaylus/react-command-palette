@@ -39,6 +39,8 @@
     "jsx-a11y/no-static-element-interactions": [0],
     "react/no-find-dom-node": [0],
     "react/jsx-closing-bracket-location": [0],
+    "react/no-danger": "off",
+    "react/jsx-one-expression-per-line": "off",
     "react/jsx-filename-extension": ["error", {"extensions": [".js"]}],
     "react/prefer-stateless-function": [true, { "ignorePureComponents": true }],
     "object-curly-newline": [0],

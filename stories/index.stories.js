@@ -13,6 +13,7 @@ import { checkA11y } from "@storybook/addon-a11y";
 
 // sample component
 import sampleHeader from "../examples/sampleHeader";
+import sampleCustomCommand from "../examples/sampleCustomCommand";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -26,6 +27,14 @@ function addCommandToArray(c) {
     name: item.name,
     command: Function.prototype
   }));
+}
+
+function Trigger() {
+  return (
+    <button type="button">
+      Press &ldquo;<kbd>shft+/</kbd>&rdquo; to run a command
+    </button>
+  );
 }
 
 const proccessedCommands = addCommandToArray(lotsOfCommands);
@@ -60,6 +69,32 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
+  .add("with everything", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleCustomCommand}
+      header={sampleHeader()}
+      maxDisplayed={6}
+      trigger={Trigger()}
+      hotKeys="shift+/"
+      open
+    />
+  ))
+  .add(
+    "with a custom command",
+    () => (
+      <CommandPalette
+        commands={commands}
+        renderCommand={sampleCustomCommand}
+        open
+      />
+    ),
+    {
+      info: {
+        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleCustomCommand.js`
+      }
+    }
+  )
   .add("is toggled open", () => <CommandPalette commands={commands} open />, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 

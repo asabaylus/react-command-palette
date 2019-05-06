@@ -1,0 +1,18 @@
+.category {
+    color: #fff;
+    margin-right: 6px;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+.Command {
+    background: rgb(37, 105, 189);
+}
+.Navigate {
+    background: rgb(165, 22, 134);
+}
+.Network {
+    background: rgb(46, 41, 194);
+}
+.System {
+    background: rgb(27, 114, 48);
+}
