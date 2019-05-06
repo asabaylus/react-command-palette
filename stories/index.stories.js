@@ -29,6 +29,14 @@ function addCommandToArray(c) {
   }));
 }
 
+function Trigger() {
+  return (
+    <button type="button">
+      Press &ldquo;<kbd>shft+/</kbd>&rdquo; to run a command
+    </button>
+  );
+}
+
 const proccessedCommands = addCommandToArray(lotsOfCommands);
 
 storiesOf("Command Palette", module)
@@ -61,6 +69,17 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
+  .add("with everything", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleCustomCommand}
+      header={sampleHeader()}
+      maxDisplayed={6}
+      trigger={Trigger()}
+      hotKeys="shift+/"
+      open
+    />
+  ))
   .add(
     "with a custom command",
     () => (
@@ -72,13 +91,7 @@ storiesOf("Command Palette", module)
     ),
     {
       info: {
-        text: `By default, react-command-palette will render the suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property, see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
-
-All props passed to the _CommandPalette_ will also be passed to the renderCommand component. Additionaly a _sugesstion_ prop will be passed to your custom component and it will contain any custom object properties, ex: _suggestion.foo_.
-  
-*Important:* _renderCommand_ must be a pure function (we optimize rendering performance based on this assumption).
-  
-For example, see: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleCustomCommand.js`
+        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleCustomCommand.js`
       }
     }
   )
