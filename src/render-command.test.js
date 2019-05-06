@@ -15,6 +15,8 @@ expect.addSnapshotSerializer(serializer);
 describe("RenderCommand", () => {
   it("should render the default child command", () => {
     const wrapper = mount(<RenderCommand suggestion={allCommands[0]} />);
+    expect(wrapper.props().suggestion).toEqual(allCommands[0]);
+    expect(wrapper.childAt(0).name()).toBe("DefaultCommand");
     expect(wrapper).toMatchSnapshot();
   });
   it("should render a custom child command", () => {
@@ -24,6 +26,8 @@ describe("RenderCommand", () => {
         renderCommand={SampleCustomCommand}
       />
     );
+    expect(wrapper.props().suggestion).toEqual(allCommands[0]);
+    expect(wrapper.childAt(0).name()).not.toBe("DefaultCommand");
     expect(wrapper).toMatchSnapshot();
   });
 });
