@@ -21,6 +21,9 @@ import { checkA11y } from "@storybook/addon-a11y";
 import sampleHeader from "../examples/sampleHeader";
 import sampleCustomCommand from "../examples/sampleCustomCommand";
 
+// sample styles
+import chrome from "../src/themes/chrome";
+
 // command palette scripts
 import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
@@ -115,6 +118,14 @@ storiesOf("Command Palette", module)
   })
   .add("without a modal", () => (
     <CommandPalette commands={commands} display="inline" />
+  ))
+  .add("with custom styles", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleCustomCommand}
+      theme={chrome}
+      open
+    />
   ))
   .add(
     "with a custom trigger",

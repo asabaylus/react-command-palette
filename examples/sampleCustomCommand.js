@@ -5,7 +5,8 @@ import React from "react";
 import "./sampleCustomCommand.css";
 
 export default function sampleCustomCommand(suggestion) {
-  const { name, highlight, category } = suggestion;
+  const { name, highlight, category, shortcut } = suggestion;
+  console.log(highlight);
   return (
     <div className="item">
       <span className={`category ${category}`}>{category}</span>
@@ -14,6 +15,7 @@ export default function sampleCustomCommand(suggestion) {
       ) : (
         <span>{name}</span>
       )}
+      <span className="shortcut">{shortcut}</span>
     </div>
   );
 }

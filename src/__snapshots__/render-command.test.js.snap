@@ -24,6 +24,9 @@ exports[`RenderCommand should render a custom child command 1`] = `
       <span>
         Start All Data Imports
       </span>
+      <span
+        className="shortcut"
+      />
     </div>
   </div>
 </RenderCommand>
