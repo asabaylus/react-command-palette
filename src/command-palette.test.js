@@ -187,7 +187,6 @@ describe("props.alwaysRenderCommands", () => {
     );
     commandPalette.find("input").simulate("blur");
     expect(commandPalette.props().alwaysRenderCommands).toBeTruthy();
-    console.log(commandPalette.find("ItemsList").debug());
     expect(commandPalette.find("ItemsList")).toHaveLength(1);
   });
 
