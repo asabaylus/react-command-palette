@@ -120,7 +120,6 @@
   "dependencies": {
     "fast-deep-equal": "^2.0.1",
     "fuzzysort": "^1.1.4",
-    "lodash.take": "^4.1.1",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
     "react-modal": "^3.8.1"
