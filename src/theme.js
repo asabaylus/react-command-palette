@@ -42,14 +42,14 @@ const theme = {
   },
   inputOpen: {},
   inputFocused: {},
-  suggestionsContainer: {
+  suggestionsContainer: {},
+  suggestionsContainerOpen: {
     overflow: "hidden",
     borderTop: "1px solid #111",
     borderBottom: "1px solid #111",
     maxHeight: "315px",
     marginTop: "10px"
   },
-  suggestionsContainerOpen: {},
   suggestionsList: {
     listStyle: "none",
     padding: "0",

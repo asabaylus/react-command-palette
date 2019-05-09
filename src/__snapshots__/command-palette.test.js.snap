@@ -2,6 +2,7 @@
 
 exports[`Command List renders a command 1`] = `
 <CommandPalette
+  alwaysRenderCommands={true}
   closeOnSelect={false}
   commands={
     Array [
@@ -1197,6 +1198,207 @@ exports[`Command List renders a command 1`] = `
           <div
             class="ReactModalPortal"
           />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    role="combobox"
+                    style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      placeholder="Type a command"
+                      style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      id="react-autowhatever-1"
+                      role="listbox"
+                      style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                    >
+                      <ul
+                        role="listbox"
+                        style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                      >
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                          style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Show Memory
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Show CPU
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    role="combobox"
+                    style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      placeholder="Type a command"
+                      style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             class="ReactModalPortal"
           >
@@ -4317,6 +4519,207 @@ exports[`Command List renders a command 1`] = `
               />
               <div
                 class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        role="combobox"
+                        style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          placeholder="Type a command"
+                          style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          id="react-autowhatever-1"
+                          role="listbox"
+                          style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                        >
+                          <ul
+                            role="listbox"
+                            style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                          >
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                              style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Show Memory
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Show CPU
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        role="combobox"
+                        style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          placeholder="Type a command"
+                          style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay ReactModal__Overlay--after-open"
@@ -6383,6 +6786,7 @@ exports[`Command List renders a command 1`] = `
                   }
                   multiSection={false}
                   onSuggestionSelected={[Function]}
+                  onSuggestionsClearRequested={[Function]}
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
@@ -6461,14 +6865,14 @@ exports[`Command List renders a command 1`] = `
                         "backgroundColor": "#3a3f4b",
                         "color": "#ffffff",
                       },
-                      "suggestionsContainer": Object {
+                      "suggestionsContainer": Object {},
+                      "suggestionsContainerOpen": Object {
                         "borderBottom": "1px solid #111",
                         "borderTop": "1px solid #111",
                         "marginTop": "10px",
                         "maxHeight": "315px",
                         "overflow": "hidden",
                       },
-                      "suggestionsContainerOpen": Object {},
                       "suggestionsList": Object {
                         "listStyle": "none",
                         "marginBottom": "0",
@@ -6573,14 +6977,14 @@ exports[`Command List renders a command 1`] = `
                           "backgroundColor": "#3a3f4b",
                           "color": "#ffffff",
                         },
-                        "itemsContainer": Object {
+                        "itemsContainer": Object {},
+                        "itemsContainerOpen": Object {
                           "borderBottom": "1px solid #111",
                           "borderTop": "1px solid #111",
                           "marginTop": "10px",
                           "maxHeight": "315px",
                           "overflow": "hidden",
                         },
-                        "itemsContainerOpen": Object {},
                         "itemsList": Object {
                           "listStyle": "none",
                           "marginBottom": "0",
@@ -6752,6 +7156,7 @@ exports[`Command List renders a command 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -6924,6 +7329,7 @@ exports[`Loading indicator should display the spinner by default 1`] = `
 
 exports[`Opening the palette displays the suggestion list 1`] = `
 <CommandPalette
+  alwaysRenderCommands={true}
   closeOnSelect={false}
   commands={
     Array [
@@ -8118,6 +8524,207 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           <div
             class="ReactModalPortal"
           />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    role="combobox"
+                    style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      placeholder="Type a command"
+                      style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      id="react-autowhatever-1"
+                      role="listbox"
+                      style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                    >
+                      <ul
+                        role="listbox"
+                        style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                      >
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                          style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Show Memory
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                          style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Show CPU
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    role="combobox"
+                    style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      placeholder="Type a command"
+                      style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             class="ReactModalPortal"
           >
@@ -9700,6 +10307,207 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               />
               <div
                 class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        role="combobox"
+                        style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          placeholder="Type a command"
+                          style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          id="react-autowhatever-1"
+                          role="listbox"
+                          style="overflow: hidden; border-top: 1px solid #111; border-bottom: 1px solid #111; max-height: 315px; margin-top: 10px;"
+                        >
+                          <ul
+                            role="listbox"
+                            style="list-style: none; padding: 0px; margin-bottom: 0px; margin-top: 0px;"
+                          >
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                              style="color: rgb(255, 255, 255); border: 1px solid #111; background-color: rgb(58, 63, 75); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Show Memory
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                              style="color: rgb(171, 171, 171); border: 1px solid #111; background-color: rgb(44, 49, 58); padding: 14px 12px;"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Show CPU
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                  style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.75);"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open"
+                    role="dialog"
+                    style="position: absolute; top: 80px; left: 50%; border: 0px none; background: rgb(48, 51, 56); overflow: hidden; border-radius: 4px; outline: none; padding: 10px; box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px; margin-right: -50%; transform: translate(-50%, 0); min-width: 600px;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        role="combobox"
+                        style="font-family: helvetica, sans-serif; font-size: 12px; width: 605px;"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          placeholder="Type a command"
+                          style="font-size: 14px; border: 2px solid #2196f3; border-radius: 4px; width: 590px; padding: 6px; outline: none; background-color: rgb(31, 32, 33); color: rgb(171, 171, 171); caret-color: #2196F3;"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay ReactModal__Overlay--after-open"
@@ -10142,6 +10950,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   }
                   multiSection={false}
                   onSuggestionSelected={[Function]}
+                  onSuggestionsClearRequested={[Function]}
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
@@ -10255,14 +11064,14 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "backgroundColor": "#3a3f4b",
                         "color": "#ffffff",
                       },
-                      "suggestionsContainer": Object {
+                      "suggestionsContainer": Object {},
+                      "suggestionsContainerOpen": Object {
                         "borderBottom": "1px solid #111",
                         "borderTop": "1px solid #111",
                         "marginTop": "10px",
                         "maxHeight": "315px",
                         "overflow": "hidden",
                       },
-                      "suggestionsContainerOpen": Object {},
                       "suggestionsList": Object {
                         "listStyle": "none",
                         "marginBottom": "0",
@@ -10402,14 +11211,14 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           "backgroundColor": "#3a3f4b",
                           "color": "#ffffff",
                         },
-                        "itemsContainer": Object {
+                        "itemsContainer": Object {},
+                        "itemsContainerOpen": Object {
                           "borderBottom": "1px solid #111",
                           "borderTop": "1px solid #111",
                           "marginTop": "10px",
                           "maxHeight": "315px",
                           "overflow": "hidden",
                         },
-                        "itemsContainerOpen": Object {},
                         "itemsList": Object {
                           "listStyle": "none",
                           "marginBottom": "0",
@@ -10615,6 +11424,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -10796,6 +11606,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -10977,6 +11788,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -11158,6 +11970,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -11339,6 +12152,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -11520,6 +12334,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -11701,6 +12516,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 }
                               >
                                 <RenderCommand
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -11838,6 +12654,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
 
 exports[`props.display should not display the command palette in react-modal when false 1`] = `
 <CommandPalette
+  alwaysRenderCommands={true}
   closeOnSelect={false}
   commands={
     Array [
@@ -11951,11 +12768,57 @@ exports[`props.display should not display the command palette in react-modal whe
         }
         multiSection={false}
         onSuggestionSelected={[Function]}
+        onSuggestionsClearRequested={[Function]}
         onSuggestionsFetchRequested={[Function]}
         renderSuggestion={[Function]}
         renderSuggestionsContainer={[Function]}
         shouldRenderSuggestions={[Function]}
-        suggestions={Array []}
+        suggestions={
+          Array [
+            Object {
+              "category": "Command",
+              "command": [Function],
+              "id": 1,
+              "name": "Start All Data Imports",
+            },
+            Object {
+              "category": "Command",
+              "command": [Function],
+              "id": 2,
+              "name": "Stop All Data Imports",
+            },
+            Object {
+              "category": "Command",
+              "command": [Function],
+              "id": 3,
+              "name": "Delete All Tenant",
+            },
+            Object {
+              "category": "Navigate",
+              "command": [Function],
+              "id": 4,
+              "name": "Jump to Tenant",
+            },
+            Object {
+              "category": "Navigate",
+              "command": [Function],
+              "id": 5,
+              "name": "View Logs ",
+            },
+            Object {
+              "category": "System",
+              "command": [Function],
+              "id": 6,
+              "name": "Show Memory",
+            },
+            Object {
+              "category": "System",
+              "command": [Function],
+              "id": 7,
+              "name": "Show CPU",
+            },
+          ]
+        }
         theme={
           Object {
             "container": Object {
@@ -12019,14 +12882,14 @@ exports[`props.display should not display the command palette in react-modal whe
               "backgroundColor": "#3a3f4b",
               "color": "#ffffff",
             },
-            "suggestionsContainer": Object {
+            "suggestionsContainer": Object {},
+            "suggestionsContainerOpen": Object {
               "borderBottom": "1px solid #111",
               "borderTop": "1px solid #111",
               "marginTop": "10px",
               "maxHeight": "315px",
               "overflow": "hidden",
             },
-            "suggestionsContainerOpen": Object {},
             "suggestionsList": Object {
               "listStyle": "none",
               "marginBottom": "0",
@@ -12039,7 +12902,7 @@ exports[`props.display should not display the command palette in react-modal whe
         <Autowhatever
           containerProps={Object {}}
           getSectionItems={[Function]}
-          highlightedItemIndex={null}
+          highlightedItemIndex={0}
           highlightedSectionIndex={null}
           id="1"
           inputProps={
@@ -12053,7 +12916,52 @@ exports[`props.display should not display the command palette in react-modal whe
             }
           }
           itemProps={[Function]}
-          items={Array []}
+          items={
+            Array [
+              Object {
+                "category": "Command",
+                "command": [Function],
+                "id": 1,
+                "name": "Start All Data Imports",
+              },
+              Object {
+                "category": "Command",
+                "command": [Function],
+                "id": 2,
+                "name": "Stop All Data Imports",
+              },
+              Object {
+                "category": "Command",
+                "command": [Function],
+                "id": 3,
+                "name": "Delete All Tenant",
+              },
+              Object {
+                "category": "Navigate",
+                "command": [Function],
+                "id": 4,
+                "name": "Jump to Tenant",
+              },
+              Object {
+                "category": "Navigate",
+                "command": [Function],
+                "id": 5,
+                "name": "View Logs ",
+              },
+              Object {
+                "category": "System",
+                "command": [Function],
+                "id": 6,
+                "name": "Show Memory",
+              },
+              Object {
+                "category": "System",
+                "command": [Function],
+                "id": 7,
+                "name": "Show CPU",
+              },
+            ]
+          }
           multiSection={false}
           renderInputComponent={[Function]}
           renderItem={[Function]}
@@ -12121,14 +13029,14 @@ exports[`props.display should not display the command palette in react-modal whe
                 "backgroundColor": "#3a3f4b",
                 "color": "#ffffff",
               },
-              "itemsContainer": Object {
+              "itemsContainer": Object {},
+              "itemsContainerOpen": Object {
                 "borderBottom": "1px solid #111",
                 "borderTop": "1px solid #111",
                 "marginTop": "10px",
                 "maxHeight": "315px",
                 "overflow": "hidden",
               },
-              "itemsContainerOpen": Object {},
               "itemsList": Object {
                 "listStyle": "none",
                 "marginBottom": "0",
@@ -12145,7 +13053,7 @@ exports[`props.display should not display the command palette in react-modal whe
           }
         >
           <div
-            aria-expanded={false}
+            aria-expanded={true}
             aria-haspopup="listbox"
             aria-owns="react-autowhatever-1"
             key="react-autowhatever-1-container"
@@ -12159,7 +13067,7 @@ exports[`props.display should not display the command palette in react-modal whe
             }
           >
             <input
-              aria-activedescendant={null}
+              aria-activedescendant="react-autowhatever-1--item-0"
               aria-autocomplete="list"
               aria-controls="react-autowhatever-1"
               autoComplete="off"
@@ -12198,7 +13106,1357 @@ exports[`props.display should not display the command palette in react-modal whe
                   "overflow": "hidden",
                 }
               }
-            />
+            >
+              <ItemsList
+                getItemId={[Function]}
+                highlightedItemIndex={0}
+                itemProps={[Function]}
+                items={
+                  Array [
+                    Object {
+                      "category": "Command",
+                      "command": [Function],
+                      "id": 1,
+                      "name": "Start All Data Imports",
+                    },
+                    Object {
+                      "category": "Command",
+                      "command": [Function],
+                      "id": 2,
+                      "name": "Stop All Data Imports",
+                    },
+                    Object {
+                      "category": "Command",
+                      "command": [Function],
+                      "id": 3,
+                      "name": "Delete All Tenant",
+                    },
+                    Object {
+                      "category": "Navigate",
+                      "command": [Function],
+                      "id": 4,
+                      "name": "Jump to Tenant",
+                    },
+                    Object {
+                      "category": "Navigate",
+                      "command": [Function],
+                      "id": 5,
+                      "name": "View Logs ",
+                    },
+                    Object {
+                      "category": "System",
+                      "command": [Function],
+                      "id": 6,
+                      "name": "Show Memory",
+                    },
+                    Object {
+                      "category": "System",
+                      "command": [Function],
+                      "id": 7,
+                      "name": "Show CPU",
+                    },
+                  ]
+                }
+                keyPrefix="react-autowhatever-1-"
+                onHighlightedItemChange={[Function]}
+                renderItem={[Function]}
+                renderItemData={
+                  Object {
+                    "query": "",
+                  }
+                }
+                sectionIndex={null}
+                theme={[Function]}
+              >
+                <ul
+                  key="react-autowhatever-1-items-list"
+                  role="listbox"
+                  style={
+                    Object {
+                      "listStyle": "none",
+                      "marginBottom": "0",
+                      "marginTop": "0",
+                      "padding": "0",
+                    }
+                  }
+                >
+                  <Item
+                    aria-selected={true}
+                    data-section-index={null}
+                    data-suggestion-index={0}
+                    id="react-autowhatever-1--item-0"
+                    isHighlighted={true}
+                    item={
+                      Object {
+                        "category": "Command",
+                        "command": [Function],
+                        "id": 1,
+                        "name": "Start All Data Imports",
+                      }
+                    }
+                    itemIndex={0}
+                    key="react-autowhatever-1-item-0"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#3a3f4b",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ffffff",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={true}
+                      data-section-index={null}
+                      data-suggestion-index={0}
+                      id="react-autowhatever-1--item-0"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#3a3f4b",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ffffff",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "Command",
+                            "command": [Function],
+                            "id": 1,
+                            "name": "Start All Data Imports",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    data-section-index={null}
+                    data-suggestion-index={1}
+                    id="react-autowhatever-1--item-1"
+                    isHighlighted={false}
+                    item={
+                      Object {
+                        "category": "Command",
+                        "command": [Function],
+                        "id": 2,
+                        "name": "Stop All Data Imports",
+                      }
+                    }
+                    itemIndex={1}
+                    key="react-autowhatever-1-item-1"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#2c313a",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ababab",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={false}
+                      data-section-index={null}
+                      data-suggestion-index={1}
+                      id="react-autowhatever-1--item-1"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#2c313a",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ababab",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "Command",
+                            "command": [Function],
+                            "id": 2,
+                            "name": "Stop All Data Imports",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    data-section-index={null}
+                    data-suggestion-index={2}
+                    id="react-autowhatever-1--item-2"
+                    isHighlighted={false}
+                    item={
+                      Object {
+                        "category": "Command",
+                        "command": [Function],
+                        "id": 3,
+                        "name": "Delete All Tenant",
+                      }
+                    }
+                    itemIndex={2}
+                    key="react-autowhatever-1-item-2"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#2c313a",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ababab",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={false}
+                      data-section-index={null}
+                      data-suggestion-index={2}
+                      id="react-autowhatever-1--item-2"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#2c313a",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ababab",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "Command",
+                            "command": [Function],
+                            "id": 3,
+                            "name": "Delete All Tenant",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    data-section-index={null}
+                    data-suggestion-index={3}
+                    id="react-autowhatever-1--item-3"
+                    isHighlighted={false}
+                    item={
+                      Object {
+                        "category": "Navigate",
+                        "command": [Function],
+                        "id": 4,
+                        "name": "Jump to Tenant",
+                      }
+                    }
+                    itemIndex={3}
+                    key="react-autowhatever-1-item-3"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#2c313a",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ababab",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={false}
+                      data-section-index={null}
+                      data-suggestion-index={3}
+                      id="react-autowhatever-1--item-3"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#2c313a",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ababab",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "Navigate",
+                            "command": [Function],
+                            "id": 4,
+                            "name": "Jump to Tenant",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    data-section-index={null}
+                    data-suggestion-index={4}
+                    id="react-autowhatever-1--item-4"
+                    isHighlighted={false}
+                    item={
+                      Object {
+                        "category": "Navigate",
+                        "command": [Function],
+                        "id": 5,
+                        "name": "View Logs ",
+                      }
+                    }
+                    itemIndex={4}
+                    key="react-autowhatever-1-item-4"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#2c313a",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ababab",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={false}
+                      data-section-index={null}
+                      data-suggestion-index={4}
+                      id="react-autowhatever-1--item-4"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#2c313a",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ababab",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "Navigate",
+                            "command": [Function],
+                            "id": 5,
+                            "name": "View Logs ",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    data-section-index={null}
+                    data-suggestion-index={5}
+                    id="react-autowhatever-1--item-5"
+                    isHighlighted={false}
+                    item={
+                      Object {
+                        "category": "System",
+                        "command": [Function],
+                        "id": 6,
+                        "name": "Show Memory",
+                      }
+                    }
+                    itemIndex={5}
+                    key="react-autowhatever-1-item-5"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#2c313a",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ababab",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={false}
+                      data-section-index={null}
+                      data-suggestion-index={5}
+                      id="react-autowhatever-1--item-5"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#2c313a",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ababab",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "System",
+                            "command": [Function],
+                            "id": 6,
+                            "name": "Show Memory",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              Show Memory
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    data-section-index={null}
+                    data-suggestion-index={6}
+                    id="react-autowhatever-1--item-6"
+                    isHighlighted={false}
+                    item={
+                      Object {
+                        "category": "System",
+                        "command": [Function],
+                        "id": 7,
+                        "name": "Show CPU",
+                      }
+                    }
+                    itemIndex={6}
+                    key="react-autowhatever-1-item-6"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    sectionIndex={null}
+                    style={
+                      Object {
+                        "backgroundColor": "#2c313a",
+                        "border": "1px solid #111",
+                        "borderTop": "0px none",
+                        "color": "#ababab",
+                        "padding": "14px 12px",
+                      }
+                    }
+                  >
+                    <li
+                      aria-selected={false}
+                      data-section-index={null}
+                      data-suggestion-index={6}
+                      id="react-autowhatever-1--item-6"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "backgroundColor": "#2c313a",
+                          "border": "1px solid #111",
+                          "borderTop": "0px none",
+                          "color": "#ababab",
+                          "padding": "14px 12px",
+                        }
+                      }
+                    >
+                      <RenderCommand
+                        alwaysRenderCommands={true}
+                        closeOnSelect={false}
+                        commands={
+                          Array [
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 1,
+                              "name": "Start All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 2,
+                              "name": "Stop All Data Imports",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 3,
+                              "name": "Delete All Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 4,
+                              "name": "Jump to Tenant",
+                            },
+                            Object {
+                              "category": "Navigate",
+                              "command": [Function],
+                              "id": 5,
+                              "name": "View Logs ",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 6,
+                              "name": "Show Memory",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            },
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 8,
+                              "name": "Show Disk Usage",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 9,
+                              "name": "Go offline",
+                            },
+                            Object {
+                              "category": "Command",
+                              "command": [Function],
+                              "id": 10,
+                              "name": "Go online",
+                            },
+                            Object {
+                              "category": "Network",
+                              "command": [Function],
+                              "id": 11,
+                              "name": "Export Tenant",
+                            },
+                          ]
+                        }
+                        display="inline"
+                        header={null}
+                        hotKeys="command+shift+p"
+                        maxDisplayed={7}
+                        options={
+                          Object {
+                            "allowTypo": true,
+                            "key": "name",
+                            "keys": Array [
+                              "name",
+                            ],
+                            "limit": 7,
+                            "scoreFn": null,
+                            "threshold": -Infinity,
+                          }
+                        }
+                        placeholder="Type a command"
+                        renderCommand={null}
+                        suggestion={
+                          Object {
+                            "category": "System",
+                            "command": [Function],
+                            "id": 7,
+                            "name": "Show CPU",
+                          }
+                        }
+                      >
+                        <DefaultCommand
+                          suggestion={
+                            Object {
+                              "category": "System",
+                              "command": [Function],
+                              "id": 7,
+                              "name": "Show CPU",
+                            }
+                          }
+                        >
+                          <div
+                            className="item"
+                          >
+                            <span>
+                              Show CPU
+                            </span>
+                          </div>
+                        </DefaultCommand>
+                      </RenderCommand>
+                    </li>
+                  </Item>
+                </ul>
+              </ItemsList>
+            </div>
           </div>
         </Autowhatever>
       </Autosuggest>
@@ -12307,6 +14565,7 @@ exports[`props.header should render the header 1`] = `
 exports[`props.renderCommand should render a custom command component 1`] = `
 <CommandPalette
   RenderCommand={[Function]}
+  alwaysRenderCommands={true}
   closeOnSelect={false}
   commands={
     Array [
@@ -14274,6 +16533,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                   }
                   multiSection={false}
                   onSuggestionSelected={[Function]}
+                  onSuggestionsClearRequested={[Function]}
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
@@ -14387,14 +16647,14 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         "backgroundColor": "#3a3f4b",
                         "color": "#ffffff",
                       },
-                      "suggestionsContainer": Object {
+                      "suggestionsContainer": Object {},
+                      "suggestionsContainerOpen": Object {
                         "borderBottom": "1px solid #111",
                         "borderTop": "1px solid #111",
                         "marginTop": "10px",
                         "maxHeight": "315px",
                         "overflow": "hidden",
                       },
-                      "suggestionsContainerOpen": Object {},
                       "suggestionsList": Object {
                         "listStyle": "none",
                         "marginBottom": "0",
@@ -14534,14 +16794,14 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           "backgroundColor": "#3a3f4b",
                           "color": "#ffffff",
                         },
-                        "itemsContainer": Object {
+                        "itemsContainer": Object {},
+                        "itemsContainerOpen": Object {
                           "borderBottom": "1px solid #111",
                           "borderTop": "1px solid #111",
                           "marginTop": "10px",
                           "maxHeight": "315px",
                           "overflow": "hidden",
                         },
-                        "itemsContainerOpen": Object {},
                         "itemsList": Object {
                           "listStyle": "none",
                           "marginBottom": "0",
@@ -14748,6 +17008,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -14931,6 +17192,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -15114,6 +17376,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -15297,6 +17560,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -15480,6 +17744,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -15663,6 +17928,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [
@@ -15846,6 +18112,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               >
                                 <RenderCommand
                                   RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
                                   closeOnSelect={false}
                                   commands={
                                     Array [

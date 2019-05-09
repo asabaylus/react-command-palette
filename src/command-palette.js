@@ -63,6 +63,9 @@ class CommandPalette extends React.Component {
     this.onChange = this.onChange.bind(this);
     // eslint-disable-next-line prettier/prettier
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
+      this
+    );
     this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -76,7 +79,12 @@ class CommandPalette extends React.Component {
 
   componentDidMount() {
     const { hotKeys, open, display } = this.props;
-    this.fetchData();
+
+    this.setState({
+      value: "",
+      suggestions: this.fetchData()
+    });
+
     // Use hot key to open command palette
     Mousetrap.bind(hotKeys, () => {
       this.handleOpenModal();
@@ -139,6 +147,17 @@ class CommandPalette extends React.Component {
     });
   }
 
+  onSuggestionsClearRequested() {
+    // when using the onSuggestionsClearRequested property, it overrides
+    // alwaysRenderSuggestions which I think is counter intuitive, as always should mean
+    // always, see: https://github.com/moroshko/react-autosuggest/issues/521
+    // once this issue is resolved the suggestions should return an empty array, ex:
+    // this.setState({
+    //   suggestions: []
+    // });
+    return true;
+  }
+
   afterOpenModal() {
     this.focusInput();
   }
@@ -199,7 +218,13 @@ class CommandPalette extends React.Component {
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
-    const { maxDisplayed, spinner, display, header } = this.props;
+    const {
+      maxDisplayed,
+      spinner,
+      display,
+      header,
+      alwaysRenderCommands
+    } = this.props;
     if (isLoading) {
       return <PaletteSpinner spinner={spinner} display={display} />;
     }
@@ -211,6 +236,7 @@ class CommandPalette extends React.Component {
           ref={input => {
             this.commandPaletteInput = input;
           }}
+          alwaysRenderSuggestions={alwaysRenderCommands}
           suggestions={suggestions.slice(0, maxDisplayed)}
           highlightFirstSuggestion
           onSuggestionSelected={this.onSuggestionSelected}
@@ -219,7 +245,6 @@ class CommandPalette extends React.Component {
           getSuggestionValue={getSuggestionValue}
           renderSuggestion={this.commandTemplate}
           inputProps={this.defaultInputProps(value)}
-          alwaysRenderSuggestions
           theme={theme}
         />
       </div>
@@ -260,6 +285,7 @@ class CommandPalette extends React.Component {
 }
 
 CommandPalette.defaultProps = {
+  alwaysRenderCommands: true,
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
   header: null,
@@ -271,11 +297,15 @@ CommandPalette.defaultProps = {
 };
 
 CommandPalette.propTypes = {
+  /** alwaysRenderCommands a boolean, Set it to true if you'd like to render suggestions
+   * even when the input is not focused. */
+  alwaysRenderCommands: PropTypes.bool,
+
   /** commands appears in the command palette. For each command in the array the object
-  must have a _name_ and a _command_. The _name_ is a user friendly string that will
-  be display to the user. The command is a function that will be executed when the
-  user clicks or presses the enter key. Commands may also include custom properties where
-  "this" will be bound to the command */
+   * must have a _name_ and a _command_. The _name_ is a user friendly string that will
+   * be display to the user. The command is a function that will be executed when the
+   * user clicks or presses the enter key. Commands may also include custom properties
+   * this" will be bound to the command */
   commands: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -289,8 +319,8 @@ CommandPalette.propTypes = {
     const { maxDisplayed } = props;
     if (maxDisplayed > 500) {
       return new Error(
-        `Invalid prop ${propName} supplied to ${componentName}
-         Cannot be greater than 500.`
+        `Invalid prop ${propName} supplied to ${componentName} Cannot be greater than
+         500.`
       );
     }
     return null;

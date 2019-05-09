@@ -5,7 +5,13 @@ import { storiesOf, addDecorator } from "@storybook/react";
 import "./index.stories.css";
 
 // storybook addons
-import { withKnobs, object, number, text } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  object,
+  number,
+  text,
+  boolean
+} from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
@@ -126,6 +132,13 @@ storiesOf("Command Palette", module)
       }
     }
   )
+  .add("alwaysRenderCommands false", () => (
+    <CommandPalette
+      commands={commands}
+      open
+      alwaysRenderCommands={boolean("alwaysRenderCommands", false)}
+    />
+  ))
   .add("with custom hotkeys", () => (
     <CommandPalette commands={commands} hotKeys="/" />
   ))

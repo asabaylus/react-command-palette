@@ -57,6 +57,8 @@ const commands = [{
 
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 
+* ```alwaysRenderCommands``` a boolean, Set it to true if you'd like to render suggestions even when the input is not focused.
+
 * ```display``` one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal".
 
 * ```header``` a _string_ or a _React.ComponentType_ which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. The header is not displayed by default. see: examples/sampleInstruction.js for reference
