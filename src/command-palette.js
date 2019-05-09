@@ -3,7 +3,6 @@ import React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 
-import take from "lodash.take";
 import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Mousetrap from "mousetrap";
@@ -238,7 +237,7 @@ class CommandPalette extends React.Component {
             this.commandPaletteInput = input;
           }}
           alwaysRenderSuggestions={alwaysRenderCommands}
-          suggestions={take(suggestions, maxDisplayed)}
+          suggestions={suggestions.slice(0, maxDisplayed)}
           highlightFirstSuggestion
           onSuggestionSelected={this.onSuggestionSelected}
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
