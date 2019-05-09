@@ -175,6 +175,36 @@ describe("props.display", () => {
   });
 });
 
+describe("props.alwaysRenderCommands", () => {
+  it("should be enabled by default", () => {
+    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
+    expect(commandPalette.props().alwaysRenderCommands).toBeTruthy();
+  });
+
+  it("should render commands when true and input is not focused.", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} alwaysRenderCommands open />
+    );
+    commandPalette.find("input").simulate("blur");
+    expect(commandPalette.props().alwaysRenderCommands).toBeTruthy();
+    console.log(commandPalette.find("ItemsList").debug());
+    expect(commandPalette.find("ItemsList")).toHaveLength(1);
+  });
+
+  it("should not render commands when false and input is not focused.", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        alwaysRenderCommands={false}
+        open
+      />
+    );
+    commandPalette.find("input").simulate("blur");
+    expect(commandPalette.props().alwaysRenderCommands).toBeFalsy();
+    expect(commandPalette.find("ItemsList")).toHaveLength(0);
+  });
+});
+
 describe("Opening the palette", () => {
   it("auto-focuses the input", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
