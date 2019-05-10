@@ -65,12 +65,12 @@ const theme = {
     padding: "6px 4px"
   },
   suggestionFirst: {
-    color: "#3a3f4b",
-    backgroundColor: "rgb(240, 240, 240)"
-  },
-  suggestionHighlighted: {
     color: "rgb(0, 0, 0)",
     backgroundColor: "rgb(255, 255, 255)"
+  },
+  suggestionHighlighted: {
+    color: "#3a3f4b",
+    backgroundColor: "rgb(240, 240, 240)"
   },
   sectionContainer: {},
   sectionContainerFirst: {},

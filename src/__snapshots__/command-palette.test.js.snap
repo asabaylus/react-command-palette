@@ -276,7 +276,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -433,7 +433,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -628,7 +628,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -783,7 +783,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -938,7 +938,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -1093,7 +1093,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -1257,7 +1257,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -1456,7 +1456,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -1611,7 +1611,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -1769,7 +1769,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -1924,7 +1924,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2079,7 +2079,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2234,7 +2234,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2389,7 +2389,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2544,7 +2544,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2699,7 +2699,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2854,7 +2854,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -2923,7 +2923,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -3011,7 +3011,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -3166,7 +3166,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -3322,7 +3322,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -3436,7 +3436,7 @@ exports[`Command List renders a command 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -3596,7 +3596,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -3753,7 +3753,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -3948,7 +3948,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -4103,7 +4103,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -4258,7 +4258,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -4413,7 +4413,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -4577,7 +4577,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -4776,7 +4776,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -4931,7 +4931,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -5089,7 +5089,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -5244,7 +5244,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -5399,7 +5399,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -5554,7 +5554,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -5709,7 +5709,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -5864,7 +5864,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6019,7 +6019,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6174,7 +6174,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6243,7 +6243,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6331,7 +6331,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6486,7 +6486,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6642,7 +6642,7 @@ exports[`Command List renders a command 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -6869,12 +6869,12 @@ exports[`Command List renders a command 1`] = `
                         "padding": "6px 4px",
                       },
                       "suggestionFirst": Object {
-                        "backgroundColor": "rgb(240, 240, 240)",
-                        "color": "#3a3f4b",
-                      },
-                      "suggestionHighlighted": Object {
                         "backgroundColor": "rgb(255, 255, 255)",
                         "color": "rgb(0, 0, 0)",
+                      },
+                      "suggestionHighlighted": Object {
+                        "backgroundColor": "rgb(240, 240, 240)",
+                        "color": "#3a3f4b",
                       },
                       "suggestionsContainer": Object {
                         "borderBottom": "0px none",
@@ -6982,12 +6982,12 @@ exports[`Command List renders a command 1`] = `
                           "padding": "6px 4px",
                         },
                         "itemFirst": Object {
-                          "backgroundColor": "rgb(240, 240, 240)",
-                          "color": "#3a3f4b",
-                        },
-                        "itemHighlighted": Object {
                           "backgroundColor": "rgb(255, 255, 255)",
                           "color": "rgb(0, 0, 0)",
+                        },
+                        "itemHighlighted": Object {
+                          "backgroundColor": "rgb(240, 240, 240)",
+                          "color": "#3a3f4b",
                         },
                         "itemsContainer": Object {
                           "borderBottom": "0px none",
@@ -7138,10 +7138,10 @@ exports[`Command List renders a command 1`] = `
                               sectionIndex={null}
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(255, 255, 255)",
+                                  "backgroundColor": "rgb(240, 240, 240)",
                                   "border": "0 none",
                                   "borderTop": "0px none",
-                                  "color": "rgb(0, 0, 0)",
+                                  "color": "#3a3f4b",
                                   "padding": "6px 4px",
                                 }
                               }
@@ -7160,10 +7160,10 @@ exports[`Command List renders a command 1`] = `
                                 role="option"
                                 style={
                                   Object {
-                                    "backgroundColor": "rgb(255, 255, 255)",
+                                    "backgroundColor": "rgb(240, 240, 240)",
                                     "border": "0 none",
                                     "borderTop": "0px none",
-                                    "color": "rgb(0, 0, 0)",
+                                    "color": "#3a3f4b",
                                     "padding": "6px 4px",
                                   }
                                 }
@@ -7623,7 +7623,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -7780,7 +7780,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -7975,7 +7975,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -8130,7 +8130,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -8285,7 +8285,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -8440,7 +8440,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -8604,7 +8604,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -8803,7 +8803,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -8959,7 +8959,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -9159,7 +9159,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -9405,7 +9405,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -9562,7 +9562,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -9757,7 +9757,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -9912,7 +9912,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -10067,7 +10067,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -10222,7 +10222,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -10386,7 +10386,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -10585,7 +10585,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -10741,7 +10741,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -11090,12 +11090,12 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "padding": "6px 4px",
                       },
                       "suggestionFirst": Object {
-                        "backgroundColor": "rgb(240, 240, 240)",
-                        "color": "#3a3f4b",
-                      },
-                      "suggestionHighlighted": Object {
                         "backgroundColor": "rgb(255, 255, 255)",
                         "color": "rgb(0, 0, 0)",
+                      },
+                      "suggestionHighlighted": Object {
+                        "backgroundColor": "rgb(240, 240, 240)",
+                        "color": "#3a3f4b",
                       },
                       "suggestionsContainer": Object {
                         "borderBottom": "0px none",
@@ -11239,12 +11239,12 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           "padding": "6px 4px",
                         },
                         "itemFirst": Object {
-                          "backgroundColor": "rgb(240, 240, 240)",
-                          "color": "#3a3f4b",
-                        },
-                        "itemHighlighted": Object {
                           "backgroundColor": "rgb(255, 255, 255)",
                           "color": "rgb(0, 0, 0)",
+                        },
+                        "itemHighlighted": Object {
+                          "backgroundColor": "rgb(240, 240, 240)",
+                          "color": "#3a3f4b",
                         },
                         "itemsContainer": Object {
                           "borderBottom": "0px none",
@@ -11430,10 +11430,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               sectionIndex={null}
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(255, 255, 255)",
+                                  "backgroundColor": "rgb(240, 240, 240)",
                                   "border": "0 none",
                                   "borderTop": "0px none",
-                                  "color": "rgb(0, 0, 0)",
+                                  "color": "#3a3f4b",
                                   "padding": "6px 4px",
                                 }
                               }
@@ -11452,10 +11452,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 role="option"
                                 style={
                                   Object {
-                                    "backgroundColor": "rgb(255, 255, 255)",
+                                    "backgroundColor": "rgb(240, 240, 240)",
                                     "border": "0 none",
                                     "borderTop": "0px none",
-                                    "color": "rgb(0, 0, 0)",
+                                    "color": "#3a3f4b",
                                     "padding": "6px 4px",
                                   }
                                 }
@@ -12981,12 +12981,12 @@ exports[`props.display should not display the command palette in react-modal whe
               "padding": "6px 4px",
             },
             "suggestionFirst": Object {
-              "backgroundColor": "rgb(240, 240, 240)",
-              "color": "#3a3f4b",
-            },
-            "suggestionHighlighted": Object {
               "backgroundColor": "rgb(255, 255, 255)",
               "color": "rgb(0, 0, 0)",
+            },
+            "suggestionHighlighted": Object {
+              "backgroundColor": "rgb(240, 240, 240)",
+              "color": "#3a3f4b",
             },
             "suggestionsContainer": Object {
               "borderBottom": "0px none",
@@ -13130,12 +13130,12 @@ exports[`props.display should not display the command palette in react-modal whe
                 "padding": "6px 4px",
               },
               "itemFirst": Object {
-                "backgroundColor": "rgb(240, 240, 240)",
-                "color": "#3a3f4b",
-              },
-              "itemHighlighted": Object {
                 "backgroundColor": "rgb(255, 255, 255)",
                 "color": "rgb(0, 0, 0)",
+              },
+              "itemHighlighted": Object {
+                "backgroundColor": "rgb(240, 240, 240)",
+                "color": "#3a3f4b",
               },
               "itemsContainer": Object {
                 "borderBottom": "0px none",
@@ -13321,10 +13321,10 @@ exports[`props.display should not display the command palette in react-modal whe
                     sectionIndex={null}
                     style={
                       Object {
-                        "backgroundColor": "rgb(255, 255, 255)",
+                        "backgroundColor": "rgb(240, 240, 240)",
                         "border": "0 none",
                         "borderTop": "0px none",
-                        "color": "rgb(0, 0, 0)",
+                        "color": "#3a3f4b",
                         "padding": "6px 4px",
                       }
                     }
@@ -13343,10 +13343,10 @@ exports[`props.display should not display the command palette in react-modal whe
                       role="option"
                       style={
                         Object {
-                          "backgroundColor": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgb(240, 240, 240)",
                           "border": "0 none",
                           "borderTop": "0px none",
-                          "color": "rgb(0, 0, 0)",
+                          "color": "#3a3f4b",
                           "padding": "6px 4px",
                         }
                       }
@@ -15008,7 +15008,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -15165,7 +15165,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -15360,7 +15360,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -15516,7 +15516,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -15716,7 +15716,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           data-suggestion-index="0"
                           id="react-autowhatever-1--item-0"
                           role="option"
-                          style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                          style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                         >
                           <div
                             class="item"
@@ -15962,7 +15962,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -16119,7 +16119,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -16314,7 +16314,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
+                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -16470,7 +16470,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               data-suggestion-index="0"
                               id="react-autowhatever-1--item-0"
                               role="option"
-                              style="color: rgb(0, 0, 0); border: 0px none; background-color: rgb(255, 255, 255); padding: 6px 4px;"
+                              style="color: rgb(58, 63, 75); border: 0px none; background-color: rgb(240, 240, 240); padding: 6px 4px;"
                             >
                               <div
                                 class="item"
@@ -16819,12 +16819,12 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         "padding": "6px 4px",
                       },
                       "suggestionFirst": Object {
-                        "backgroundColor": "rgb(240, 240, 240)",
-                        "color": "#3a3f4b",
-                      },
-                      "suggestionHighlighted": Object {
                         "backgroundColor": "rgb(255, 255, 255)",
                         "color": "rgb(0, 0, 0)",
+                      },
+                      "suggestionHighlighted": Object {
+                        "backgroundColor": "rgb(240, 240, 240)",
+                        "color": "#3a3f4b",
                       },
                       "suggestionsContainer": Object {
                         "borderBottom": "0px none",
@@ -16968,12 +16968,12 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           "padding": "6px 4px",
                         },
                         "itemFirst": Object {
-                          "backgroundColor": "rgb(240, 240, 240)",
-                          "color": "#3a3f4b",
-                        },
-                        "itemHighlighted": Object {
                           "backgroundColor": "rgb(255, 255, 255)",
                           "color": "rgb(0, 0, 0)",
+                        },
+                        "itemHighlighted": Object {
+                          "backgroundColor": "rgb(240, 240, 240)",
+                          "color": "#3a3f4b",
                         },
                         "itemsContainer": Object {
                           "borderBottom": "0px none",
@@ -17159,10 +17159,10 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               sectionIndex={null}
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(255, 255, 255)",
+                                  "backgroundColor": "rgb(240, 240, 240)",
                                   "border": "0 none",
                                   "borderTop": "0px none",
-                                  "color": "rgb(0, 0, 0)",
+                                  "color": "#3a3f4b",
                                   "padding": "6px 4px",
                                 }
                               }
@@ -17181,10 +17181,10 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                 role="option"
                                 style={
                                   Object {
-                                    "backgroundColor": "rgb(255, 255, 255)",
+                                    "backgroundColor": "rgb(240, 240, 240)",
                                     "border": "0 none",
                                     "borderTop": "0px none",
-                                    "color": "rgb(0, 0, 0)",
+                                    "color": "#3a3f4b",
                                     "padding": "6px 4px",
                                   }
                                 }
