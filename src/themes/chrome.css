@@ -1,0 +1,99 @@
+.modal {
+  box-shadow: 
+    rgba(0, 0, 0, 0.2) 0px 1px 8px 0px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 3px 3px -2px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  border: 0px none;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0px;
+  outline: none;
+  padding: 0px;
+  min-width: 600px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.content {}
+
+.container {
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  width: 605px;
+}
+
+.containerOpen {}
+
+.input {
+  font-size: 12px;
+  border: 0 none;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  border-radius: 0px;
+  width: 600px;
+  padding: 10px 4px;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(100, 100, 100);
+  caret-color: rgb(60, 60, 60);
+}
+
+.inputOpen {}
+
+.inputFocused {}
+
+.suggestionsContainer {
+  overflow: hidden;
+  border-top: 0px none;
+  border-bottom: 0px none;
+  max-height: 315px;
+  margin-top: 0px;
+}
+
+.suggestionsContainerOpen {}
+
+.suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.suggestion, .item {
+  color: rgb(60, 60, 60);
+  border: 0 none;
+  border-top: 0px none;
+  padding: 3px 3px;
+}
+
+.suggestionFirst {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.suggestionHighlighted {
+  color: #3a3f4b;
+  background-color: rgb(240, 240, 240);
+}
+
+.sectionContainer {}
+
+.sectionContainerFirst {}
+
+.sectionTitle {}

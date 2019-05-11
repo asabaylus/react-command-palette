@@ -13,7 +13,7 @@ import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
 
-import theme from "./themes/chrome";
+import theme from "./themes/theme";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -271,6 +271,8 @@ class CommandPalette extends React.Component {
           isOpen={showModal}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
+          className="modal"
+          overlayClassName="overlay"
           contentLabel="Command Palette"
           closeTimeoutMS={
             1

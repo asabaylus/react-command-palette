@@ -1,0 +1,112 @@
+.modal {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 0px none;
+  background: rgb(48, 51, 56);
+  overflow: hidden;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
+  margin-right: -50%;
+  transform: translate(-50%, 0px);
+  min-width: 600px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.content {
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  border: 0px none;
+  background: rgb(48, 51, 56);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  min-width: 600px;
+}
+
+.container {
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  width: 605px"
+}
+
+.containerOpen {}
+
+.input {
+  font-size: 14px;
+  border: 2px solid #2196F3;
+  border-radius: 4px;
+  width: 590px;
+  padding: 6px;
+  outline: none;
+  background-color: #1f2021;
+  color: #ababab;
+  caret-color: #2196F3"
+}
+
+.inputOpen {}
+
+.inputFocused {}
+
+.suggestionsContainer {}
+
+.suggestionsContainerOpen {
+  overflow: hidden;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  max-height: 315px;
+  margin-top: 10px
+}
+
+.suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+.suggestion {
+  color: #ababab;
+  border: 1px solid #111;
+  border-top: 0px none;
+  background-color: #2c313a;
+  padding: 14px 12px
+}
+
+.suggestionFirst {
+}
+
+.suggestionHighlighted {
+  color: #ffffff;
+  background-color: #3a3f4b
+}
+
+.sectionContainer {}
+
+.sectionContainerFirst {}
+
+.sectionTitle {}

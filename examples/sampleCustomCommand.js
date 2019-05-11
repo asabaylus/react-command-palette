@@ -6,7 +6,6 @@ import "./sampleCustomCommand.css";
 
 export default function sampleCustomCommand(suggestion) {
   const { name, highlight, category, shortcut } = suggestion;
-  console.log(highlight);
   return (
     <div className="item">
       <span className={`category ${category}`}>{category}</span>

@@ -22,7 +22,7 @@ import sampleHeader from "../examples/sampleHeader";
 import sampleCustomCommand from "../examples/sampleCustomCommand";
 
 // sample styles
-import chrome from "../src/themes/chrome";
+import chrome from "../src/themes/atom.css";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
