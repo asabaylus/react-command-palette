@@ -15,7 +15,6 @@
   border-radius: 0px;
   outline: none;
   padding: 0px;
-  min-width: 600px;
 }
 
 .overlay {
@@ -36,7 +35,7 @@
 .container {
   font-family: helvetica, sans-serif;
   font-size: 12px;
-  width: 605px;
+  width:505px;
 }
 
 .containerOpen {}
@@ -46,7 +45,7 @@
   border: 0 none;
   border-bottom: 2px solid rgb(200, 200, 200);
   border-radius: 0px;
-  width: 600px;
+  width: 500px;
   padding: 10px 4px;
   outline: none;
   background-color: rgb(255, 255, 255);
