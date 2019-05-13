@@ -22,7 +22,7 @@ import sampleHeader from "../examples/sampleHeader";
 import sampleCustomCommand from "../examples/sampleCustomCommand";
 
 // sample styles
-import chrome from "../src/themes/chrome.css";
+import chrome from "../src/themes/atom.css";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -78,6 +78,14 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
+  .add("with a theme", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleCustomCommand}
+      theme={chrome}
+      open
+    />
+  ))
   .add("with everything", () => (
     <CommandPalette
       commands={commands}
@@ -118,14 +126,6 @@ storiesOf("Command Palette", module)
   })
   .add("without a modal", () => (
     <CommandPalette commands={commands} display="inline" />
-  ))
-  .add("with custom styles", () => (
-    <CommandPalette
-      commands={commands}
-      renderCommand={sampleCustomCommand}
-      theme={chrome}
-      open
-    />
   ))
   .add(
     "with a custom trigger",
