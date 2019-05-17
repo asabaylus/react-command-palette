@@ -99,6 +99,9 @@
   padding: 14px 12px
 }
 
+.atom-suggestion b {
+ color: #2196f3;
+}
 .atom-suggestionFirst {
 }
 
