@@ -9,7 +9,7 @@ const DefaultSpinnerComponent = props => {
   if (display === "inline") {
     cssClass = "default-spinner inline";
   } else {
-    cssClass = "default-spinner";
+    cssClass = "default-spinner modal";
   }
   return (
     <div className={cssClass} role="status">
@@ -25,9 +25,9 @@ const CustomSpinnerComponent = props => {
   const { spinner, display } = props;
   let cssClass = "spinner";
   if (display === "inline") {
-    cssClass = "spinner-inline";
+    cssClass = "spinner inline";
   } else {
-    cssClass = "spinner";
+    cssClass = "spinner modal";
   }
   return (
     <div className={cssClass} role="status">

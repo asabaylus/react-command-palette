@@ -1,4 +1,4 @@
-.modal {
+.atom-modal {
   width: 605px;
   position: absolute;
   top: 80px;
@@ -16,7 +16,7 @@
   transform: translate(-50%, 0px);
 }
 
-.overlay {
+.atom-overlay {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -25,11 +25,11 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.highlight {
+.atom-highlight {
   background-color: yellow;
 }
 
-.content {
+.atom-content {
   box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
   position: absolute;
   top: 80px;
@@ -48,14 +48,14 @@
   min-width: 600px;
 }
 
-.container {
+.atom-container {
   font-family: "system-ui";
   font-size: 12px;
 }
 
-.containerOpen {}
+.atom-containerOpen {}
 
-.input {
+.atom-input {
   font-size: 14px;
   border-radius: 4px;
   border: 2px solid #181a1f;
@@ -67,16 +67,16 @@
   caret-color: #2196f3;
 }
 
-.inputOpen {}
+.atom-inputOpen {}
 
-.inputFocused {
+.atom-inputFocused {
   border: 2px solid #2196f3;
   background-color: #1b1d23;
 }
 
-.suggestionsContainer {}
+.atom-suggestionsContainer {}
 
-.suggestionsContainerOpen {
+.atom-suggestionsContainerOpen {
   overflow: hidden;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
@@ -84,14 +84,14 @@
   margin-top: 10px
 }
 
-.suggestionsList {
+.atom-suggestionsList {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
   margin-top: 0
 }
 
-.suggestion {
+.atom-suggestion {
   color: #9da5b4;
   border: 1px solid #111;
   border-top: 0px none;
@@ -99,16 +99,16 @@
   padding: 14px 12px
 }
 
-.suggestionFirst {
+.atom-suggestionFirst {
 }
 
-.suggestionHighlighted {
+.atom-suggestionHighlighted {
   color: #ffffff;
   background-color: #3a3f4b
 }
 
-.sectionContainer {}
+.atom-sectionContainer {}
 
-.sectionContainerFirst {}
+.atom-sectionContainerFirst {}
 
-.sectionTitle {}
+.atom-sectionTitle {}

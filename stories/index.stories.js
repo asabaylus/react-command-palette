@@ -22,7 +22,10 @@ import sampleHeader from "../examples/sampleHeader";
 import sampleCustomCommand from "../examples/sampleCustomCommand";
 
 // sample styles
-import chrome from "../src/themes/atom.css";
+import "../src/themes/chrome.css";
+import "../src/themes/atom.css";
+import chrome from "../src/themes/chrome-theme";
+import atom from "../src/themes/atom-theme";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -78,13 +81,16 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
-  .add("with a theme", () => (
+  .add("with chrome theme", () => (
     <CommandPalette
       commands={commands}
       renderCommand={sampleCustomCommand}
       theme={chrome}
       open
     />
+  ))
+  .add("with atom theme", () => (
+    <CommandPalette commands={commands} theme={atom} open />
   ))
   .add("with everything", () => (
     <CommandPalette

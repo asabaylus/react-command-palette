@@ -1,19 +1,6 @@
 // rename react-autosuggest classes, see:
 // https://github.com/moroshko/react-autosuggest#theme-prop
+import atomTheme from "./atom-theme";
 
-export default {
-  container: "container",
-  containerOpen: "containerOpen",
-  input: "input",
-  inputOpen: "inputOpen",
-  inputFocused: "inputFocused",
-  suggestionsContainer: "suggestionsContainer",
-  suggestionsContainerOpen: "suggestionsContainerOpen",
-  suggestionsList: "suggestionsList",
-  suggestion: "suggestion",
-  suggestionFirst: "suggestionFirst",
-  suggestionHighlighted: "suggestionHighlighted",
-  sectionContainer: "sectionContainer",
-  sectionContainerFirst: "sectionContainerFirst",
-  sectionTitle: "sectionTitle"
-};
+// make atom theme the default theme
+export default atomTheme;

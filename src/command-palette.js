@@ -3,17 +3,19 @@ import React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 
+// third party libs
 import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Mousetrap from "mousetrap";
-import PaletteSpinner from "./palette-spinner";
+import themeable from "react-themeable";
 
+// command palette modules
 import fuzzysortOptions from "./fuzzysort-options";
+import PaletteSpinner from "./palette-spinner";
 import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
-
-import theme from "./themes/theme";
+import defaultTheme from "./themes/theme";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -40,13 +42,8 @@ const allSuggestions = [];
 // input value for every given suggestion.
 const getSuggestionValue = suggestion => suggestion.name;
 
-const modalStyles = {
-  content: theme.content,
-  overlay: theme.overlay
-};
-
 class CommandPalette extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
 
     // Autosuggest is a controlled component.
@@ -76,6 +73,8 @@ class CommandPalette extends React.Component {
 
     this.commandPaletteInput = React.createRef();
     this.focusInput = this.focusInput.bind(this);
+    this.setTheme(props);
+    this.setModalStyles(props);
   }
 
   componentDidMount() {
@@ -101,13 +100,19 @@ class CommandPalette extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { commands } = this.props;
+    const { commands, theme } = this.props;
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
         value: "",
         suggestions: this.fetchData()
       });
+    }
+
+    // TODO: add unit tests
+    if (prevProps.theme !== theme) {
+      this.setTheme(theme);
+      this.setModalStyles(theme);
     }
   }
 
@@ -157,6 +162,17 @@ class CommandPalette extends React.Component {
     //   suggestions: []
     // });
     return true;
+  }
+
+  setModalStyles(props) {
+    return {
+      content: props.theme.content,
+      overlay: props.theme.overlay
+    };
+  }
+
+  setTheme(props) {
+    this.theme = themeable(props.theme);
   }
 
   afterOpenModal() {
@@ -219,6 +235,7 @@ class CommandPalette extends React.Component {
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
+    const { theme } = this.props;
     const {
       maxDisplayed,
       spinner,
@@ -254,7 +271,7 @@ class CommandPalette extends React.Component {
 
   render() {
     const { showModal } = this.state;
-    const { display, trigger } = this.props;
+    const { display, trigger, theme } = this.props;
 
     if (display === "inline") {
       return (
@@ -267,12 +284,12 @@ class CommandPalette extends React.Component {
         <PaletteTrigger onClick={this.handleOpenModal} trigger={trigger} />
         <ReactModal
           appElement={document.body}
-          style={modalStyles}
+          style={this.modalStyles}
           isOpen={showModal}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
-          className="modal"
-          overlayClassName="overlay"
+          className={theme.modal}
+          overlayClassName={theme.overlay}
           contentLabel="Command Palette"
           closeTimeoutMS={
             1
@@ -296,7 +313,8 @@ CommandPalette.defaultProps = {
   options: fuzzysortOptions,
   closeOnSelect: false,
   display: "modal",
-  renderCommand: null
+  renderCommand: null,
+  theme: defaultTheme
 };
 
 CommandPalette.propTypes = {
@@ -378,7 +396,10 @@ CommandPalette.propTypes = {
 
   /** a React.func that defines the layout and contents of the commands in the
    * command list. For complete documentation see the storybook notes. */
-  renderCommand: PropTypes.func
+  renderCommand: PropTypes.func,
+
+  /** Styles. See: https://github.com/markdalgleish/react-themeable */
+  theme: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
 };
 
 export default CommandPalette;

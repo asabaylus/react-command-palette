@@ -122,7 +122,8 @@
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
-    "react-modal": "^3.8.1"
+    "react-modal": "^3.8.1",
+    "react-themeable": "^1.1.0"
   },
   "files": [
     "dist"

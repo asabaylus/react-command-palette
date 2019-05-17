@@ -1,4 +1,4 @@
-.modal {
+.chrome-modal {
   box-shadow: 
     rgba(0, 0, 0, 0.2) 0px 1px 8px 0px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 3px 3px -2px;
   position: absolute;
@@ -17,7 +17,7 @@
   padding: 0px;
 }
 
-.overlay {
+.chrome-overlay {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -26,21 +26,21 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.highlight {
+.chrome-highlight {
   background-color: yellow;
 }
 
-.content {}
+.chrome-content {}
 
-.container {
+.chrome-container {
   font-family: helvetica, sans-serif;
   font-size: 12px;
   width:505px;
 }
 
-.containerOpen {}
+.chrome-containerOpen {}
 
-.input {
+.chrome-input {
   font-size: 12px;
   border: 0 none;
   border-bottom: 2px solid rgb(200, 200, 200);
@@ -53,11 +53,11 @@
   caret-color: rgb(60, 60, 60);
 }
 
-.inputOpen {}
+.chrome-inputOpen {}
 
-.inputFocused {}
+.chrome-inputFocused {}
 
-.suggestionsContainer {
+.chrome-suggestionsContainer {
   overflow: hidden;
   border-top: 0px none;
   border-bottom: 0px none;
@@ -65,34 +65,34 @@
   margin-top: 0px;
 }
 
-.suggestionsContainerOpen {}
+.chrome-suggestionsContainerOpen {}
 
-.suggestionsList {
+.chrome-suggestionsList {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.suggestion, .item {
+.chrome-suggestion {
   color: rgb(60, 60, 60);
   border: 0 none;
   border-top: 0px none;
-  padding: 3px 3px;
+  padding: 6px 6px;
 }
 
-.suggestionFirst {
+.chrome-suggestionFirst {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
 
-.suggestionHighlighted {
+.chrome-suggestionHighlighted {
   color: #3a3f4b;
   background-color: rgb(240, 240, 240);
 }
 
-.sectionContainer {}
+.chrome-sectionContainer {}
 
-.sectionContainerFirst {}
+.chrome-sectionContainerFirst {}
 
-.sectionTitle {}
+.chrome-sectionTitle {}
