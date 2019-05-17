@@ -2,7 +2,6 @@
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf, addDecorator } from "@storybook/react";
-import "./index.stories.css";
 
 // storybook addons
 import {
@@ -19,7 +18,8 @@ import { checkA11y } from "@storybook/addon-a11y";
 
 // sample component
 import sampleHeader from "../examples/sampleHeader";
-import sampleCustomCommand from "../examples/sampleCustomCommand";
+import sampleAtomCommand from "../examples/sampleAtomCommand";
+import sampleChromeCommand from "../examples/sampleChromeCommand";
 
 // sample styles
 import "../src/themes/chrome.css";
@@ -84,18 +84,23 @@ storiesOf("Command Palette", module)
   .add("with chrome theme", () => (
     <CommandPalette
       commands={commands}
-      renderCommand={sampleCustomCommand}
+      renderCommand={sampleChromeCommand}
       theme={chrome}
       open
     />
   ))
   .add("with atom theme", () => (
-    <CommandPalette commands={commands} theme={atom} open />
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleAtomCommand}
+      theme={atom}
+      open
+    />
   ))
   .add("with everything", () => (
     <CommandPalette
       commands={commands}
-      renderCommand={sampleCustomCommand}
+      renderCommand={sampleAtomCommand}
       header={sampleHeader()}
       maxDisplayed={6}
       trigger={Trigger()}
@@ -108,13 +113,13 @@ storiesOf("Command Palette", module)
     () => (
       <CommandPalette
         commands={commands}
-        renderCommand={sampleCustomCommand}
+        renderCommand={sampleAtomCommand}
         open
       />
     ),
     {
       info: {
-        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleCustomCommand.js`
+        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
       }
     }
   )

@@ -2,9 +2,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
-import "./sampleCustomCommand.css";
+import "./sampleChromeCommand.css";
 
-export default function sampleCustomCommand(suggestion) {
+export default function sampleChromeCommand(suggestion) {
   const { name, highlight, category, shortcut } = suggestion;
   return (
     <div className="item">
@@ -14,7 +14,7 @@ export default function sampleCustomCommand(suggestion) {
       ) : (
         <span>{name}</span>
       )}
-      <span className="shortcut">{shortcut}</span>
+      <kbd className="shortcut">{shortcut}</kbd>
     </div>
   );
 }

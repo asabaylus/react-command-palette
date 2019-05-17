@@ -4,11 +4,14 @@
     border-radius: 2px;
     padding: 1.2px 3px;
 }
+
 .shortcut {
     float: right;
     margin-right: 2px;
     color: rgb(150, 150, 150);
+    display: inline-block;
 }
+
 .Command {
     background: rgb(67, 130, 207);
 }
