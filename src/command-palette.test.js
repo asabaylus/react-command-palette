@@ -13,7 +13,7 @@ import fuzzysortOptions from "./fuzzysort-options";
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
 import sampleHeader from "../examples/sampleHeader";
-import SampleCustomCommand from "../examples/sampleCustomCommand";
+import sampleAtomCommand from "../examples/sampleAtomCommand";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -118,7 +118,7 @@ describe("props.renderCommand", () => {
     const commandPalette = mount(
       <CommandPalette
         commands={mockCommands}
-        RenderCommand={SampleCustomCommand}
+        RenderCommand={sampleAtomCommand}
         open
       />
     );

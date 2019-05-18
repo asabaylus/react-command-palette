@@ -16,16 +16,11 @@ exports[`RenderCommand should render a custom child command 1`] = `
     <div
       className="item"
     >
-      <span
-        className="category Command"
-      >
-        Command
-      </span>
       <span>
         Start All Data Imports
       </span>
-      <span
-        className="shortcut"
+      <kbd
+        className="atom-shortcut"
       />
     </div>
   </div>
