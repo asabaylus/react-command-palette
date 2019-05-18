@@ -79,6 +79,7 @@
   border: 0 none;
   border-top: 0px none;
   padding: 6px 6px;
+  cursor: pointer;
 }
 
 .chrome-suggestionFirst {
