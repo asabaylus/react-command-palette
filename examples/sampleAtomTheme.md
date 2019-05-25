@@ -43,10 +43,11 @@ const atom = {
 import atom from "./node_modules/react-command-palette/src/themes/atom-theme";
 ```
 
-The layout for the commands that appear in the commands list can also be customized. For instance Atom commands display botha command and an associated keyboard shortcut when applicable. 
+The layout for the commands that appear in the commands list can also be customized. For instance Atom commands display both a command and an associated keyboard shortcut when applicable. The CSS for this custom command renderer needs CSS styles that are not included with the base theme, therefore we'll import them here. Of coure you can use you're imagination to create any layout you can imagine for each command. Note the the highlight will contain the raw HTML of the matching value.
 
 ```js
 import React from "react";
+import "./sampleAtomCommand.css";
 
 function sampleAtomCommand(suggestion) {
   const { name, highlight, shortcut } = suggestion;
