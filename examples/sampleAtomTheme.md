@@ -6,6 +6,8 @@ CommandPalette comes with the Atom theme by default. There are three base compon
 
 React-command-palette depends on [react-themeable](https://github.com/markdalgleish/react-themeable) for styling your CommandPalette component using [CSS Modules](https://github.com/css-modules/css-modules), [Radium](https://github.com/FormidableLabs/radium), [Aphrodite](https://github.com/Khan/aphrodite), [JSS](https://github.com/cssinjs/jss), [Inline styles](https://facebook.github.io/react/docs/dom-elements.html#style), and global CSS.
 
+Try it on [CodeSandbox](https://codesandbox.io/embed/reactcommandpalette-t1lyh)
+
 For example, to style the CommandPalette using CSS Modules, do:
 
 ```js
