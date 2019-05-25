@@ -1,3 +1,4 @@
+
 .atom-category {
     color: #fff;
     margin-right: 6px;
@@ -20,18 +21,18 @@
     background-color: #4d78cc;
 }
 
-.Command {
+.atom-category.Command {
     background: rgb(67, 130, 207);
 }
-.Navigate {
+.atom-category.Navigate {
     background: rgb(165, 22, 134);
 }
-.Network {
+.atom-category.Network {
     background: rgb(46, 41, 194);
 }
-.System {
+.atom-category.System {
     background: rgb(49, 177, 79);
 }
-.Drawer {
+.atom-category.Drawer {
     background: rgb(206, 64, 206);
 }
