@@ -13,6 +13,5 @@ export default {
   suggestionsList: "chrome-suggestionsList",
   suggestion: "chrome-suggestion",
   suggestionFirst: "chrome-suggestionFirst",
-  suggestionHighlighted: "chrome-suggestionHighlighted",
-  sectionTitle: "chrome-sectionTitle"
+  suggestionHighlighted: "chrome-suggestionHighlighted"
 };

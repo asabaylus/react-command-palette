@@ -33,8 +33,7 @@ const atom = {
   suggestionsList:            "atom-suggestionsList",
   suggestion:                 "atom-suggestion",
   suggestionFirst:            "atom-suggestionFirst",
-  suggestionHighlighted:      "atom-suggestionHighlighted",
-  sectionTitle:               "atom-sectionTitle"
+  suggestionHighlighted:      "atom-suggestionHighlighted"
 }
 
 // or...
