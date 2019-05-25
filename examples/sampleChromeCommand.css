@@ -1,11 +1,11 @@
-.category {
+.chrome-category {
     color: #fff;
     margin-right: 6px;
     border-radius: 2px;
     padding: 1.2px 3px;
 }
 
-.shortcut {
+.chrome-shortcut {
     float: right;
     margin-right: 2px;
     color: rgb(150, 150, 150);

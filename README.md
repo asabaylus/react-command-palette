@@ -99,8 +99,6 @@ const commands = [{
 * ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
   
   ```js
-  import "./commandStyles.css"; // or use inline styles
-
   function RenderCommand(suggestion) {
     // A suggestion object will be passed to your custom component for each command
     const { id, color, name } = suggestion;

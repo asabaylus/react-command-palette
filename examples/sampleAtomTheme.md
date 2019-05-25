@@ -1,10 +1,10 @@
 #### Building an Atom inspired Command Palette
 
-To build the component well need to customise the CSS and add a _custom command_ renderer that include a _keyboard_shortcut_ for some commands.
+The Atom theme is the default theme. However you may wish to tweak the theme to better meet your projects needs.
 
 CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
 
-It uses [react-themeable](https://github.com/markdalgleish/react-themeable) which allows you to style your CommandPalette component using [CSS Modules](https://github.com/css-modules/css-modules), [Radium](https://github.com/FormidableLabs/radium), [Aphrodite](https://github.com/Khan/aphrodite), [JSS](https://github.com/cssinjs/jss), [Inline styles](https://facebook.github.io/react/docs/dom-elements.html#style), and global CSS.
+React-command-palette depends on [react-themeable](https://github.com/markdalgleish/react-themeable) for styling your CommandPalette component using [CSS Modules](https://github.com/css-modules/css-modules), [Radium](https://github.com/FormidableLabs/radium), [Aphrodite](https://github.com/Khan/aphrodite), [JSS](https://github.com/cssinjs/jss), [Inline styles](https://facebook.github.io/react/docs/dom-elements.html#style), and global CSS.
 
 For example, to style the CommandPalette using CSS Modules, do:
 
@@ -40,8 +40,10 @@ const atom = {
 }
 
 // or...
-// import atom from "./node_modules/react-command-palette/src/themes/atom-theme";
+import atom from "./node_modules/react-command-palette/src/themes/atom-theme";
 ```
+
+The layout for the commands that appear in the commands list can also be customized. For instance Atom commands display botha command and an associated keyboard shortcut when applicable. 
 
 ```js
 import React from "react";
@@ -49,7 +51,7 @@ import React from "react";
 function sampleAtomCommand(suggestion) {
   const { name, highlight, shortcut } = suggestion;
   return (
-    <div className="item">
+    <div className="atom-suggestion">
       {highlight ? (
         <span dangerouslySetInnerHTML={{ __html: highlight }} />
       ) : (

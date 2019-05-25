@@ -1,16 +1,17 @@
 import React from "react";
+import "./sampleChromeCommand.css";
 
 export default function sampleChromeCommand(suggestion) {
   const { name, highlight, category, shortcut } = suggestion;
   return (
-    <div className="item">
-      <span className={`category ${category}`}>{category}</span>
+    <div className="chrome-suggestion">
+      <span className={`chrome-category ${category}`}>{category}</span>
       {highlight ? (
         <span dangerouslySetInnerHTML={{ __html: highlight }} />
       ) : (
         <span>{name}</span>
       )}
-      <kbd className="shortcut">{shortcut}</kbd>
+      <kbd className="chrome-shortcut">{shortcut}</kbd>
     </div>
   );
 }

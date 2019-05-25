@@ -15,7 +15,7 @@ import PaletteSpinner from "./palette-spinner";
 import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
-import defaultTheme from "./themes/theme";
+import defaultTheme from "../themes/theme";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -73,7 +73,7 @@ class CommandPalette extends React.Component {
 
     this.commandPaletteInput = React.createRef();
     this.focusInput = this.focusInput.bind(this);
-    this.setTheme(props);
+    this.setAutoSuggestTheme(props);
     this.setModalStyles(props);
   }
 
@@ -111,7 +111,7 @@ class CommandPalette extends React.Component {
 
     // TODO: add unit tests
     if (prevProps.theme !== theme) {
-      this.setTheme(theme);
+      this.setAutoSuggestTheme(theme);
       this.setModalStyles(theme);
     }
   }
@@ -164,6 +164,7 @@ class CommandPalette extends React.Component {
     return true;
   }
 
+  // format CSS for react-modal
   setModalStyles(props) {
     return {
       content: props.theme.content,
@@ -171,7 +172,8 @@ class CommandPalette extends React.Component {
     };
   }
 
-  setTheme(props) {
+  // format CSS for react-autosuggest which uses react-themeable
+  setAutoSuggestTheme(props) {
     this.theme = themeable(props.theme);
   }
 

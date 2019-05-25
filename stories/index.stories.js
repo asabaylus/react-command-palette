@@ -22,10 +22,10 @@ import sampleAtomCommand from "../examples/sampleAtomCommand";
 import sampleChromeCommand from "../examples/sampleChromeCommand";
 
 // sample styles
-import "../src/themes/chrome.css";
-import "../src/themes/atom.css";
-import chrome from "../src/themes/chrome-theme";
-import atom from "../src/themes/atom-theme";
+import "../themes/chrome.css";
+import "../themes/atom.css";
+import chrome from "../themes/chrome-theme";
+import atom from "../themes/atom-theme";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";

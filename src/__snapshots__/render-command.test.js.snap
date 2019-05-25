@@ -14,7 +14,7 @@ exports[`RenderCommand should render a custom child command 1`] = `
 >
   <div>
     <div
-      className="item"
+      className="atom-item"
     >
       <span>
         Start All Data Imports
