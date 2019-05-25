@@ -172,7 +172,6 @@ When not specified, `theme` defaults to:
   modal:                      "atom-modal",
   overlay:                    "atom-overlay",
   container:                  "atom-container",
-  highlight:                  "atom-highlight",
   content:                    "atom-content",
   containerOpen:              "atom-containerOpen",
   input:                      "atom-input",
