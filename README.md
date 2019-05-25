@@ -35,7 +35,7 @@ $ npm i --save react-command-palette
 
 Import into your react app and pass commands
 
-```js
+```jsx
 import CommandPalette from 'react-command-palette';
 
 const commands = [{
@@ -98,7 +98,7 @@ const commands = [{
 
 * ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
   
-  ```js
+  ```jsx
   function RenderCommand(suggestion) {
     // A suggestion object will be passed to your custom component for each command
     const { id, color, name } = suggestion;
@@ -184,8 +184,6 @@ When not specified, `theme` defaults to:
   suggestion:                 "atom-suggestion",
   suggestionFirst:            "atom-suggestionFirst",
   suggestionHighlighted:      "atom-suggestionHighlighted",
-  sectionContainer:           "atom-sectionContainer",
-  sectionContainerFirst:      "atom-sectionContainerFirst",
   sectionTitle:               "atom-sectionTitle"
 }
 ```
@@ -196,28 +194,28 @@ The following picture illustrates how `theme` keys correspond to CommandPalette 
 
 ![DOM structure](dom-structure.png)
 
-* ```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
+```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
 
-  Example with a component:
-  ```
-  // jsx trigger prop
-  <CommandPalette commands={data} trigger={<b>Click Me!</b>}>
-  
-  // html generated trigger
-  <div role="button" tabindex="0"><b>Click Me!</b></div>
-  ```
+Example with a component:
+```
+// jsx trigger prop
+<CommandPalette commands={data} trigger={<b>Click Me!</b>}>
 
-  Example with a string:
-  ```
-  // jsx trigger prop
-  <CommandPalette commands={data} trigger="Click Me!">
+// html generated trigger
+<div role="button" tabindex="0"><b>Click Me!</b></div>
+```
 
-  // html generated trigger
-  <div role="button" tabindex="0">Click Me!</div>
-  ```
-  
+Example with a string:
+```
+// jsx trigger prop
+<CommandPalette commands={data} trigger="Click Me!">
 
-  When the trigger is clicked it will open the command palette, no custom handlers or events are required.
+// html generated trigger
+<div role="button" tabindex="0">Click Me!</div>
+```
+
+
+When the trigger is clicked it will open the command palette, no custom handlers or events are required.
 
 ## Developer Setup
 ```

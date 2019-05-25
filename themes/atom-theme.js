@@ -14,7 +14,5 @@ export default {
   suggestion: "atom-suggestion",
   suggestionFirst: "atom-suggestionFirst",
   suggestionHighlighted: "atom-suggestionHighlighted",
-  sectionContainer: "atom-sectionContainer",
-  sectionContainerFirst: "atom-sectionContainerFirst",
   sectionTitle: "atom-sectionTitle"
 };

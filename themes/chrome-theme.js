@@ -14,7 +14,5 @@ export default {
   suggestion: "chrome-suggestion",
   suggestionFirst: "chrome-suggestionFirst",
   suggestionHighlighted: "chrome-suggestionHighlighted",
-  sectionContainer: "chrome-sectionContainer",
-  sectionContainerFirst: "chrome-sectionContainerFirst",
   sectionTitle: "chrome-sectionTitle"
 };
