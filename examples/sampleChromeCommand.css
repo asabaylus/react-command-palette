@@ -13,17 +13,21 @@
 }
 
 .Command {
-    background: rgb(67, 130, 207);
+    background: rgb(0, 188, 212);
 }
-.Navigate {
-    background: rgb(165, 22, 134);
-}
-.Network {
-    background: rgb(46, 41, 194);
-}
+
 .System {
-    background: rgb(49, 177, 79);
+    background: rgb(76, 174, 80);
 }
+
+.Network {
+    background: rgb(63, 81, 181);
+}
+
+.Navigate {
+    background: rgb(255, 182, 0);
+}
+
 .Drawer {
-    background: rgb(206, 64, 206);
+    background: rgb(0, 149, 136);
 }

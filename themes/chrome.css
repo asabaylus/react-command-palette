@@ -45,7 +45,7 @@
   padding: 10px 4px;
   outline: none;
   background-color: rgb(255, 255, 255);
-  color: rgb(100, 100, 100);
+  color: rgb(30, 30, 30);
   caret-color: rgb(60, 60, 60);
 }
 
@@ -71,15 +71,19 @@
 }
 
 .chrome-suggestion {
-  color: rgb(60, 60, 60);
+  color:  rgb(95, 95, 95);
   border: 0 none;
   border-top: 0px none;
-  padding: 3px 6px;
+  padding: 3px;
   cursor: pointer;
 }
 
+.chrome-suggestion b {
+  color: rgb(30, 30, 30);
+}
+
 .chrome-suggestionFirst {
-  color: rgb(0, 0, 0);
+  color: rgb(95, 95, 95);
   background-color: rgb(255, 255, 255);
 }
 
