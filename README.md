@@ -191,7 +191,7 @@ Sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md) and [At
 
 The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
 
-![DOM structure](dom-structure.png)
+![DOM structure](./docs/images/dom-structure.png)
 
 ```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
 
