@@ -1,11 +1,7 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
-import "./sampleAtomCommand.css";
 
 export default function sampleAtomCommand(suggestion) {
-  const { name, highlight, category, shortcut } = suggestion;
+  const { name, highlight, shortcut } = suggestion;
   return (
     <div className="item">
       {highlight ? (

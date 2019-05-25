@@ -131,13 +131,72 @@ const commands = [{
 
   Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
 
-  See [a full example](examples/sampleCustomCommand.js)
+  See [a full example](examples/sampleAtomCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
 * ```maxDisplayed``` a _number_ between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7
 
 * ```spinner``` a _string_ or a _React.ComponentType_ that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status"_ attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers.
+
+#### theme (optional)
+
+CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
+
+It uses [react-themeable](https://github.com/markdalgleish/react-themeable) which allows you to style your CommandPalette component using [CSS Modules](https://github.com/css-modules/css-modules), [Radium](https://github.com/FormidableLabs/radium), [Aphrodite](https://github.com/Khan/aphrodite), [JSS](https://github.com/cssinjs/jss), [Inline styles](https://facebook.github.io/react/docs/dom-elements.html#style), and global CSS.
+
+For example, to style the CommandPalette using CSS Modules, do:
+
+```css
+/* theme.css */
+
+.modal { ... }
+.overlay { ... }
+.container { ... }
+.input { ... }
+.suggestionsContainer { ... }
+.suggestion { ... }
+.suggestionHighlighted { ... }
+...
+```
+
+```js
+import theme from 'theme.css';
+```
+```xml
+<CommandPalette theme={theme} ... />
+```
+
+When not specified, `theme` defaults to:
+
+```js
+{
+  modal:                      "atom-modal",
+  overlay:                    "atom-overlay",
+  container:                  "atom-container",
+  highlight:                  "atom-highlight",
+  content:                    "atom-content",
+  containerOpen:              "atom-containerOpen",
+  input:                      "atom-input",
+  inputOpen:                  "atom-inputOpen",
+  inputFocused:               "atom-inputFocused",
+  suggestionsContainer:       "atom-suggestionsContainer",
+  suggestionsContainerOpen:   "atom-suggestionsContainerOpen",
+  suggestionsList:            "atom-suggestionsList",
+  suggestion:                 "atom-suggestion",
+  suggestionFirst:            "atom-suggestionFirst",
+  suggestionHighlighted:      "atom-suggestionHighlighted",
+  sectionContainer:           "atom-sectionContainer",
+  sectionContainerFirst:      "atom-sectionContainerFirst",
+  sectionTitle:               "atom-sectionTitle"
+}
+```
+
+Sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md) and [Atom](examples/sampleAtomTheme.md)
+
+The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
+
+![DOM structure](dom-structure.png)
 
 * ```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
 

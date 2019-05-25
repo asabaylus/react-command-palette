@@ -1,8 +1,4 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
-import "./sampleChromeCommand.css";
 
 export default function sampleChromeCommand(suggestion) {
   const { name, highlight, category, shortcut } = suggestion;
