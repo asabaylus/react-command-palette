@@ -6,6 +6,7 @@ import { storiesOf, addDecorator } from "@storybook/react";
 // storybook addons
 import {
   withKnobs,
+  select,
   object,
   number,
   text,
@@ -81,22 +82,6 @@ storiesOf("Command Palette", module)
       header: false
     }
   })
-  .add("with chrome theme", () => (
-    <CommandPalette
-      commands={commands}
-      renderCommand={sampleChromeCommand}
-      theme={chrome}
-      open
-    />
-  ))
-  .add("with atom theme", () => (
-    <CommandPalette
-      commands={commands}
-      renderCommand={sampleAtomCommand}
-      theme={atom}
-      open
-    />
-  ))
   .add("with everything", () => (
     <CommandPalette
       commands={commands}
@@ -105,6 +90,32 @@ storiesOf("Command Palette", module)
       maxDisplayed={6}
       trigger={Trigger()}
       hotKeys="shift+/"
+      open
+    />
+  ))
+  .add("with a theme", () => {
+    const label = "theme";
+    const options = {
+      Chrome: chrome,
+      Atom: atom
+    };
+    const defaultValue = chrome;
+    const theme = select(label, options, defaultValue);
+    return <CommandPalette commands={commands} theme={theme} open />;
+  })
+  .add("atom", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleAtomCommand}
+      theme={atom}
+      open
+    />
+  ))
+  .add("chrome", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleChromeCommand}
+      theme={chrome}
       open
     />
   ))

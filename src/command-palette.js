@@ -43,7 +43,7 @@ const allSuggestions = [];
 const getSuggestionValue = suggestion => suggestion.name;
 
 class CommandPalette extends React.Component {
-  constructor(props) {
+  constructor() {
     super();
 
     // Autosuggest is a controlled component.
@@ -69,12 +69,12 @@ class CommandPalette extends React.Component {
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
+    this.setAutoSuggestTheme = this.setAutoSuggestTheme.bind(this);
+    this.setModalStyles = this.setModalStyles.bind(this);
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
     this.focusInput = this.focusInput.bind(this);
-    this.setAutoSuggestTheme(props);
-    this.setModalStyles(props);
   }
 
   componentDidMount() {
@@ -109,10 +109,9 @@ class CommandPalette extends React.Component {
       });
     }
 
-    // TODO: add unit tests
     if (prevProps.theme !== theme) {
-      this.setAutoSuggestTheme(theme);
-      this.setModalStyles(theme);
+      this.setAutoSuggestTheme();
+      this.setModalStyles();
     }
   }
 
@@ -165,16 +164,18 @@ class CommandPalette extends React.Component {
   }
 
   // format CSS for react-modal
-  setModalStyles(props) {
+  setModalStyles() {
+    const { theme } = this.props;
     return {
-      content: props.theme.content,
-      overlay: props.theme.overlay
+      content: theme.content,
+      overlay: theme.overlay
     };
   }
 
   // format CSS for react-autosuggest which uses react-themeable
-  setAutoSuggestTheme(props) {
-    this.theme = themeable(props.theme);
+  setAutoSuggestTheme() {
+    const { theme } = this.props;
+    this.theme = themeable(theme);
   }
 
   afterOpenModal() {
