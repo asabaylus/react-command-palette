@@ -126,11 +126,7 @@ exports[`Command List renders a command 1`] = `
   >
     <PaletteTrigger
       onClick={[Function]}
-      theme={
-        Object {
-          "trigger": "atom-trigger",
-        }
-      }
+      theme="atom-trigger"
     >
       <DefaultTriggerComponent
         onClick={[Function]}
@@ -7175,11 +7171,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   >
     <PaletteTrigger
       onClick={[Function]}
-      theme={
-        Object {
-          "trigger": "atom-trigger",
-        }
-      }
+      theme="atom-trigger"
     >
       <DefaultTriggerComponent
         onClick={[Function]}
@@ -14212,11 +14204,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   >
     <PaletteTrigger
       onClick={[Function]}
-      theme={
-        Object {
-          "trigger": "atom-trigger",
-        }
-      }
+      theme="atom-trigger"
     >
       <DefaultTriggerComponent
         onClick={[Function]}

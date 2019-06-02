@@ -2,11 +2,7 @@
 
 exports[`PaletteTrigger props.trigger should accept a custom child component 1`] = `
 <PaletteTrigger
-  theme={
-    Object {
-      "trigger": "ui button",
-    }
-  }
+  theme="ui button"
   trigger={<MyButton />}
 >
   <CustomTriggerComponent
@@ -30,11 +26,7 @@ exports[`PaletteTrigger props.trigger should accept a custom child component 1`]
 
 exports[`PaletteTrigger props.trigger should accept a custom text string 1`] = `
 <PaletteTrigger
-  theme={
-    Object {
-      "trigger": "ui button",
-    }
-  }
+  theme="ui button"
   trigger="foo"
 >
   <CustomTriggerComponent

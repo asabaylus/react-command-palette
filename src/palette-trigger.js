@@ -46,25 +46,25 @@ function PaletteTrigger(props) {
       <CustomTriggerComponent
         onClick={onClick}
         trigger={trigger}
-        theme={theme.trigger}
+        theme={theme}
       />
     );
   }
-  return <DefaultTriggerComponent onClick={onClick} theme={theme.trigger} />;
+  return <DefaultTriggerComponent onClick={onClick} theme={theme} />;
 }
 
 PaletteTrigger.defaultProps = {
-  theme: { trigger: "ui button" }
+  theme: "ui button"
 };
 
 DefaultTriggerComponent.propTypes = {
   onClick: PropTypes.func,
-  theme: PropTypes.object
+  theme: PropTypes.string
 };
 
 CustomTriggerComponent.propTypes = {
   onClick: PropTypes.func,
-  theme: PropTypes.object,
+  theme: PropTypes.string,
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 
