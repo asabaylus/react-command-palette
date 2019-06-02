@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Mousetrap from "mousetrap";
-import themeable from "react-themeable";
 
 // command palette modules
 import fuzzysortOptions from "./fuzzysort-options";
@@ -175,7 +174,7 @@ class CommandPalette extends React.Component {
   // format CSS for react-autosuggest which uses react-themeable
   setAutoSuggestTheme() {
     const { theme } = this.props;
-    this.theme = themeable(theme);
+    this.theme = theme;
   }
 
   afterOpenModal() {
