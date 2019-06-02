@@ -68,8 +68,6 @@ class CommandPalette extends React.Component {
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
-    this.setAutoSuggestTheme = this.setAutoSuggestTheme.bind(this);
-    this.getModalTheme = this.getModalTheme.bind(this);
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
@@ -109,9 +107,7 @@ class CommandPalette extends React.Component {
     }
 
     if (prevProps.theme !== theme) {
-      this.setAutoSuggestTheme();
-      this.getModalTheme();
-      this.setTriggerTheme();
+      this.setTheme();
     }
   }
 
@@ -163,17 +159,8 @@ class CommandPalette extends React.Component {
     return true;
   }
 
-  // format CSS for react-modal
-  getModalTheme() {
-    const { theme } = this.props;
-    return {
-      content: theme.content,
-      overlay: theme.overlay
-    };
-  }
-
   // format CSS for react-autosuggest which uses react-themeable
-  setAutoSuggestTheme() {
+  setTheme() {
     const { theme } = this.props;
     this.theme = theme;
   }
