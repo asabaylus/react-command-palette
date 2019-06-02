@@ -159,7 +159,6 @@ class CommandPalette extends React.Component {
     return true;
   }
 
-  // format CSS for react-autosuggest which uses react-themeable
   setTheme() {
     const { theme } = this.props;
     this.theme = theme;
