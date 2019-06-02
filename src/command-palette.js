@@ -97,17 +97,13 @@ class CommandPalette extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { commands, theme } = this.props;
+    const { commands } = this.props;
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
         value: "",
         suggestions: this.fetchData()
       });
-    }
-
-    if (prevProps.theme !== theme) {
-      this.setTheme();
     }
   }
 
@@ -157,11 +153,6 @@ class CommandPalette extends React.Component {
     //   suggestions: []
     // });
     return true;
-  }
-
-  setTheme() {
-    const { theme } = this.props;
-    this.theme = theme;
   }
 
   afterOpenModal() {
