@@ -69,7 +69,8 @@ class CommandPalette extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
     this.setAutoSuggestTheme = this.setAutoSuggestTheme.bind(this);
-    this.setModalStyles = this.setModalStyles.bind(this);
+    this.getModalTheme = this.getModalTheme.bind(this);
+    this.getTriggerTheme = this.getTriggerTheme.bind(this);
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
@@ -110,7 +111,8 @@ class CommandPalette extends React.Component {
 
     if (prevProps.theme !== theme) {
       this.setAutoSuggestTheme();
-      this.setModalStyles();
+      this.getModalTheme();
+      this.setTriggerTheme();
     }
   }
 
@@ -163,7 +165,7 @@ class CommandPalette extends React.Component {
   }
 
   // format CSS for react-modal
-  setModalStyles() {
+  getModalTheme() {
     const { theme } = this.props;
     return {
       content: theme.content,
@@ -175,6 +177,14 @@ class CommandPalette extends React.Component {
   setAutoSuggestTheme() {
     const { theme } = this.props;
     this.theme = theme;
+  }
+
+  // format CSS for the palette-trigger button
+  getTriggerTheme() {
+    const { theme } = this.props;
+    return {
+      trigger: theme.trigger
+    };
   }
 
   afterOpenModal() {
@@ -283,7 +293,11 @@ class CommandPalette extends React.Component {
 
     return (
       <div className="react-command-palette">
-        <PaletteTrigger onClick={this.handleOpenModal} trigger={trigger} />
+        <PaletteTrigger
+          onClick={this.handleOpenModal}
+          trigger={trigger}
+          theme={this.getTriggerTheme()}
+        />
         <ReactModal
           appElement={document.body}
           style={this.modalStyles}

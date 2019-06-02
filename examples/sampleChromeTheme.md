@@ -35,7 +35,8 @@ const chrome = {
   suggestionsList:            "chrome-suggestionsList",
   suggestion:                 "chrome-suggestion",
   suggestionFirst:            "chrome-suggestionFirst",
-  suggestionHighlighted:      "chrome-suggestionHighlighted"
+  suggestionHighlighted:      "chrome-suggestionHighlighted",
+  trigger:                    "chrome-trigger"
 }
 ```
 

@@ -13,9 +13,9 @@ const visualyHidden = {
 };
 
 const DefaultTriggerComponent = props => {
-  const { onClick } = props;
+  const { onClick, theme } = props;
   return (
-    <button className="ui button" onClick={onClick} type="button">
+    <button className={theme} onClick={onClick} type="button">
       Command Palette &nbsp;
       <kbd className="ui mini horizontal grey label">
         <span style={visualyHidden}> Keyboard Shortcut </span>⇧⌘P
@@ -25,29 +25,49 @@ const DefaultTriggerComponent = props => {
 };
 
 const CustomTriggerComponent = props => {
-  const { onClick, trigger } = props;
+  const { onClick, trigger, theme } = props;
   return (
-    <div onClick={onClick} onKeyPress={onClick} role="button" tabIndex={0}>
+    <div
+      onClick={onClick}
+      className={theme}
+      onKeyPress={onClick}
+      role="button"
+      tabIndex={0}
+    >
       {trigger}
     </div>
   );
 };
 
-export default function PaletteTrigger(props) {
-  const { onClick, trigger } = props;
+function PaletteTrigger(props) {
+  const { onClick, trigger, theme } = props;
   if (trigger) {
-    return <CustomTriggerComponent onClick={onClick} trigger={trigger} />;
+    return (
+      <CustomTriggerComponent
+        onClick={onClick}
+        trigger={trigger}
+        theme={theme.trigger}
+      />
+    );
   }
-  return <DefaultTriggerComponent onClick={onClick} />;
+  return <DefaultTriggerComponent onClick={onClick} theme={theme.trigger} />;
 }
 
+PaletteTrigger.defaultProps = {
+  theme: { trigger: "ui button" }
+};
+
 DefaultTriggerComponent.propTypes = {
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  theme: PropTypes.object
 };
 
 CustomTriggerComponent.propTypes = {
   onClick: PropTypes.func,
+  theme: PropTypes.object,
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 
 PaletteTrigger.propTypes = CustomTriggerComponent.propTypes;
+
+export default PaletteTrigger;

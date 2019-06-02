@@ -12,5 +12,6 @@ export default {
   suggestionsList: "atom-suggestionsList",
   suggestion: "atom-suggestion",
   suggestionFirst: "atom-suggestionFirst",
-  suggestionHighlighted: "atom-suggestionHighlighted"
+  suggestionHighlighted: "atom-suggestionHighlighted",
+  trigger: "atom-trigger"
 };

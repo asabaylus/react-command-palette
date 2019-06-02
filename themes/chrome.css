@@ -91,3 +91,26 @@
   color: #3a3f4b;
   background-color: rgb(240, 240, 240);
 }
+
+.chrome-trigger {
+  background-color: rgb(224, 224, 224);
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.87);
+  border-style: none;
+  border-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  font-stretch: 100%;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: 0.39998px;
+  line-height: 24.5px;
+  margin: 8px;
+  min-width: 64px;
+  outline-color: rgba(0, 0, 0, 0.87);
+  outline: 0px none;
+  padding: 6px 16px;
+  text-transform: uppercase;
+}

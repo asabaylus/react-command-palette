@@ -117,6 +117,7 @@ exports[`Command List renders a command 1`] = `
       "suggestionsContainer": "atom-suggestionsContainer",
       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
       "suggestionsList": "atom-suggestionsList",
+      "trigger": "atom-trigger",
     }
   }
 >
@@ -125,12 +126,18 @@ exports[`Command List renders a command 1`] = `
   >
     <PaletteTrigger
       onClick={[Function]}
+      theme={
+        Object {
+          "trigger": "atom-trigger",
+        }
+      }
     >
       <DefaultTriggerComponent
         onClick={[Function]}
+        theme="atom-trigger"
       >
         <button
-          className="ui button"
+          className="atom-trigger"
           onClick={[Function]}
           type="button"
         >
@@ -6676,6 +6683,7 @@ exports[`Command List renders a command 1`] = `
                       "suggestionsContainer": "atom-suggestionsContainer",
                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                       "suggestionsList": "atom-suggestionsList",
+                      "trigger": "atom-trigger",
                     }
                   }
                 >
@@ -6733,6 +6741,7 @@ exports[`Command List renders a command 1`] = `
                         "itemsList": "atom-suggestionsList",
                         "modal": "atom-modal",
                         "overlay": "atom-overlay",
+                        "trigger": "atom-trigger",
                       }
                     }
                   >
@@ -6967,6 +6976,7 @@ exports[`Command List renders a command 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -7156,6 +7166,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       "suggestionsContainer": "atom-suggestionsContainer",
       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
       "suggestionsList": "atom-suggestionsList",
+      "trigger": "atom-trigger",
     }
   }
 >
@@ -7164,12 +7175,18 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   >
     <PaletteTrigger
       onClick={[Function]}
+      theme={
+        Object {
+          "trigger": "atom-trigger",
+        }
+      }
     >
       <DefaultTriggerComponent
         onClick={[Function]}
+        theme="atom-trigger"
       >
         <button
-          className="ui button"
+          className="atom-trigger"
           onClick={[Function]}
           type="button"
         >
@@ -10637,6 +10654,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       "suggestionsContainer": "atom-suggestionsContainer",
                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                       "suggestionsList": "atom-suggestionsList",
+                      "trigger": "atom-trigger",
                     }
                   }
                 >
@@ -10730,6 +10748,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "itemsList": "atom-suggestionsList",
                         "modal": "atom-modal",
                         "overlay": "atom-overlay",
+                        "trigger": "atom-trigger",
                       }
                     }
                   >
@@ -10997,6 +11016,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -11189,6 +11209,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -11381,6 +11402,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -11575,6 +11597,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -11768,6 +11791,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -11960,6 +11984,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -12152,6 +12177,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -12308,6 +12334,7 @@ exports[`props.display should not display the command palette in react-modal whe
       "suggestionsContainer": "atom-suggestionsContainer",
       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
       "suggestionsList": "atom-suggestionsList",
+      "trigger": "atom-trigger",
     }
   }
 >
@@ -12402,6 +12429,7 @@ exports[`props.display should not display the command palette in react-modal whe
             "suggestionsContainer": "atom-suggestionsContainer",
             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
             "suggestionsList": "atom-suggestionsList",
+            "trigger": "atom-trigger",
           }
         }
       >
@@ -12495,6 +12523,7 @@ exports[`props.display should not display the command palette in react-modal whe
               "itemsList": "atom-suggestionsList",
               "modal": "atom-modal",
               "overlay": "atom-overlay",
+              "trigger": "atom-trigger",
             }
           }
         >
@@ -12762,6 +12791,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -12954,6 +12984,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -13146,6 +13177,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -13340,6 +13372,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -13533,6 +13566,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -13725,6 +13759,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -13917,6 +13952,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "suggestionsContainer": "atom-suggestionsContainer",
                             "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                             "suggestionsList": "atom-suggestionsList",
+                            "trigger": "atom-trigger",
                           }
                         }
                       >
@@ -14167,6 +14203,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
       "suggestionsContainer": "atom-suggestionsContainer",
       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
       "suggestionsList": "atom-suggestionsList",
+      "trigger": "atom-trigger",
     }
   }
 >
@@ -14175,12 +14212,18 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   >
     <PaletteTrigger
       onClick={[Function]}
+      theme={
+        Object {
+          "trigger": "atom-trigger",
+        }
+      }
     >
       <DefaultTriggerComponent
         onClick={[Function]}
+        theme="atom-trigger"
       >
         <button
-          className="ui button"
+          className="atom-trigger"
           onClick={[Function]}
           type="button"
         >
@@ -16016,6 +16059,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       "suggestionsContainer": "atom-suggestionsContainer",
                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                       "suggestionsList": "atom-suggestionsList",
+                      "trigger": "atom-trigger",
                     }
                   }
                 >
@@ -16109,6 +16153,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         "itemsList": "atom-suggestionsList",
                         "modal": "atom-modal",
                         "overlay": "atom-overlay",
+                        "trigger": "atom-trigger",
                       }
                     }
                   >
@@ -16378,6 +16423,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -16572,6 +16618,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -16766,6 +16813,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -16962,6 +17010,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -17157,6 +17206,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -17351,6 +17401,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
@@ -17545,6 +17596,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainer": "atom-suggestionsContainer",
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
+                                      "trigger": "atom-trigger",
                                     }
                                   }
                                 >
