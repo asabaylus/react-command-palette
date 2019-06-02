@@ -4,7 +4,7 @@ A Chrome theme is available in the the _themes_ directory. There are three base 
 
 For a complete example see: [CodeSandbox](https://codesandbox.io/s/gfx7l)
 
-For example, to style the CommandPalette create a CSS _className_ that map your theme's names with their counterpart's key:
+For example, to style the CommandPalette create a CSS _className_ that maps your theme's names with their counterpart's key:
 
 ```js
 import React from "react";

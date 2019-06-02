@@ -6,7 +6,7 @@ CommandPalette comes with the Atom theme by default. There are three base compon
 
 Try it on [CodeSandbox](https://codesandbox.io/s/hfqjn)
 
-For example, to style the CommandPalette using CSS Modules, do:
+For example, to style the CommandPalette create a CSS _className_ that maps your theme's names with their counterpart's key:
 
 ```js
 import React from "react";
