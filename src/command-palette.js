@@ -277,7 +277,6 @@ class CommandPalette extends React.Component {
         />
         <ReactModal
           appElement={document.body}
-          style={this.modalStyles}
           isOpen={showModal}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
