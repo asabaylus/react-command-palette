@@ -4,8 +4,6 @@ Atom is the default theme. However you may wish to tweak the theme to better mee
 
 CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
 
-React-command-palette depends on [react-themeable](https://github.com/markdalgleish/react-themeable) for styling your CommandPalette component using [CSS Modules](https://github.com/css-modules/css-modules), [Radium](https://github.com/FormidableLabs/radium), [Aphrodite](https://github.com/Khan/aphrodite), [JSS](https://github.com/cssinjs/jss), [Inline styles](https://facebook.github.io/react/docs/dom-elements.html#style), and global CSS.
-
 Try it on [CodeSandbox](https://codesandbox.io/s/hfqjn)
 
 For example, to style the CommandPalette using CSS Modules, do:

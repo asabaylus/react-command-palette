@@ -400,8 +400,9 @@ CommandPalette.propTypes = {
    * command list. For complete documentation see the storybook notes. */
   renderCommand: PropTypes.func,
 
-  /** Styles. See: https://github.com/markdalgleish/react-themeable */
-  theme: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
+  /** Styles and object that contains a list of key value pairs where the keys map the
+   * command palette components to their CSS class names. */
+  theme: PropTypes.object
 };
 
 export default CommandPalette;
