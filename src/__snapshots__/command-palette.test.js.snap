@@ -901,6 +901,159 @@ exports[`Command List renders a command 1`] = `
             class="ReactModalPortal"
           >
             <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="chrome-container chrome-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="chrome-input chrome-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="chrome-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion chrome-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
             >
               <div
@@ -4123,6 +4276,159 @@ exports[`Command List renders a command 1`] = `
                             <li
                               aria-selected="false"
                               class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="chrome-container chrome-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="chrome-input chrome-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="chrome-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion chrome-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
                               data-suggestion-index="6"
                               id="react-autowhatever-1--item-6"
                               role="option"
@@ -7946,6 +8252,159 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             class="ReactModalPortal"
           >
             <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="chrome-container chrome-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="chrome-input chrome-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="chrome-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion chrome-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
             >
               <div
@@ -9654,6 +10113,159 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             <li
                               aria-selected="false"
                               class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="chrome-container chrome-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="chrome-input chrome-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="chrome-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion chrome-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
                               data-suggestion-index="6"
                               id="react-autowhatever-1--item-6"
                               role="option"
@@ -17585,6 +18197,3860 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
                                       "suggestionsList": "atom-suggestionsList",
                                       "trigger": "atom-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        View Logs 
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                          </ul>
+                        </ItemsList>
+                      </div>
+                    </div>
+                  </Autowhatever>
+                </Autosuggest>
+              </div>
+            </div>
+          </div>
+        </ModalPortal>
+      </Portal>
+    </Modal>
+  </div>
+</CommandPalette>
+`;
+
+exports[`props.theme should render a custom theme 1`] = `
+<CommandPalette
+  RenderCommand={[Function]}
+  alwaysRenderCommands={true}
+  closeOnSelect={false}
+  commands={
+    Array [
+      Object {
+        "category": "Command",
+        "command": [Function],
+        "id": 1,
+        "name": "Start All Data Imports",
+      },
+      Object {
+        "category": "Command",
+        "command": [Function],
+        "id": 2,
+        "name": "Stop All Data Imports",
+      },
+      Object {
+        "category": "Command",
+        "command": [Function],
+        "id": 3,
+        "name": "Delete All Tenant",
+      },
+      Object {
+        "category": "Network",
+        "command": [Function],
+        "id": 4,
+        "name": "Go offline",
+        "shortcut": "⌘ Esc",
+      },
+      Object {
+        "category": "Network",
+        "command": [Function],
+        "id": 5,
+        "name": "Go online",
+      },
+      Object {
+        "category": "Navigate",
+        "command": [Function],
+        "id": 6,
+        "name": "Jump to Tenant",
+      },
+      Object {
+        "category": "Navigate",
+        "command": [Function],
+        "id": 7,
+        "name": "View Logs ",
+      },
+      Object {
+        "category": "System",
+        "command": [Function],
+        "id": 8,
+        "name": "Show Memory",
+      },
+      Object {
+        "category": "System",
+        "command": [Function],
+        "id": 9,
+        "name": "Show CPU",
+      },
+      Object {
+        "category": "System",
+        "command": [Function],
+        "id": 10,
+        "name": "Show Disk Usage",
+      },
+      Object {
+        "category": "Command",
+        "command": [Function],
+        "id": 11,
+        "name": "Export Tenant",
+      },
+      Object {
+        "category": "Drawer",
+        "command": [Function],
+        "id": 12,
+        "name": "Toggle drawer",
+        "shortcut": "Esc",
+      },
+    ]
+  }
+  display="modal"
+  header={null}
+  hotKeys="command+shift+p"
+  maxDisplayed={7}
+  open={true}
+  options={
+    Object {
+      "allowTypo": true,
+      "key": "name",
+      "keys": Array [
+        "name",
+      ],
+      "limit": 7,
+      "scoreFn": null,
+      "threshold": -Infinity,
+    }
+  }
+  placeholder="Type a command"
+  renderCommand={null}
+  theme={
+    Object {
+      "container": "chrome-container",
+      "containerOpen": "chrome-containerOpen",
+      "content": "chrome-content",
+      "input": "chrome-input",
+      "inputFocused": "chrome-inputFocused",
+      "inputOpen": "chrome-inputOpen",
+      "modal": "chrome-modal",
+      "overlay": "chrome-overlay",
+      "suggestion": "chrome-suggestion",
+      "suggestionFirst": "chrome-suggestionFirst",
+      "suggestionHighlighted": "chrome-suggestionHighlighted",
+      "suggestionsContainer": "chrome-suggestionsContainer",
+      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+      "suggestionsList": "chrome-suggestionsList",
+      "trigger": "chrome-trigger",
+    }
+  }
+>
+  <div
+    className="react-command-palette"
+  >
+    <PaletteTrigger
+      onClick={[Function]}
+      theme="chrome-trigger"
+    >
+      <DefaultTriggerComponent
+        onClick={[Function]}
+        theme="chrome-trigger"
+      >
+        <button
+          className="chrome-trigger"
+          onClick={[Function]}
+          type="button"
+        >
+          Command Palette  
+          <kbd
+            className="ui mini horizontal grey label"
+          >
+            <span
+              style={
+                Object {
+                  "clip": "rect(1px, 1px, 1px, 1px)",
+                  "display": "inline-block",
+                  "height": "1px",
+                  "overflow": "hidden",
+                  "position": "absolute !important",
+                  "width": "1px",
+                }
+              }
+            >
+               Keyboard Shortcut 
+            </span>
+            ⇧⌘P
+          </kbd>
+        </button>
+      </DefaultTriggerComponent>
+    </PaletteTrigger>
+    <Modal
+      appElement={
+        <body
+          aria-hidden="true"
+          class="ReactModal__Body--open"
+        >
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                  <b>
+                    Waiting
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="spinner modal"
+                  role="status"
+                >
+                  Waiting
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  >
+                    this is a command palette
+                  </div>
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  >
+                    <div
+                      style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
+                    >
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        Search for a command
+                      </span>
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        <kbd
+                          style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                        >
+                          ↑↓
+                        </kbd>
+                         to navigate
+                      </span>
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        <kbd
+                          style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                        >
+                          enter
+                        </kbd>
+                         to select
+                      </span>
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        <kbd
+                          style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                        >
+                          esc
+                        </kbd>
+                         to dismiss
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="chrome-container chrome-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-activedescendant="react-autowhatever-1--item-0"
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="chrome-input chrome-inputOpen chrome-inputFocused"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="chrome-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="true"
+                          class="chrome-suggestion chrome-suggestionFirst chrome-suggestionHighlighted"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+      }
+      ariaHideApp={true}
+      bodyOpenClassName="ReactModal__Body--open"
+      className="chrome-modal"
+      closeTimeoutMS={1}
+      contentLabel="Command Palette"
+      isOpen={true}
+      onAfterOpen={[Function]}
+      onRequestClose={[Function]}
+      overlayClassName="chrome-overlay"
+      parentSelector={[Function]}
+      portalClassName="ReactModalPortal"
+      role="dialog"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+    >
+      <Portal
+        containerInfo={
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="chrome-container chrome-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-activedescendant="react-autowhatever-1--item-0"
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="chrome-input chrome-inputOpen chrome-inputFocused"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="chrome-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="true"
+                          class="chrome-suggestion chrome-suggestionFirst chrome-suggestionHighlighted"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="chrome-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      >
+        <ModalPortal
+          appElement={
+            <body
+              aria-hidden="true"
+              class="ReactModal__Body--open"
+            >
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="default-spinner modal"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="spinner modal"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                      <b>
+                        Waiting
+                      </b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="spinner modal"
+                      role="status"
+                    >
+                      Waiting
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      >
+                        this is a command palette
+                      </div>
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      >
+                        <div
+                          style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
+                        >
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            Search for a command
+                          </span>
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            <kbd
+                              style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                            >
+                              ↑↓
+                            </kbd>
+                             to navigate
+                          </span>
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            <kbd
+                              style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                            >
+                              enter
+                            </kbd>
+                             to select
+                          </span>
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            <kbd
+                              style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                            >
+                              esc
+                            </kbd>
+                             to dismiss
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="chrome-container chrome-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-activedescendant="react-autowhatever-1--item-0"
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="chrome-input chrome-inputOpen chrome-inputFocused"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="chrome-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="true"
+                              class="chrome-suggestion chrome-suggestionFirst chrome-suggestionHighlighted"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="chrome-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+          }
+          ariaHideApp={true}
+          bodyOpenClassName="ReactModal__Body--open"
+          className="chrome-modal"
+          closeTimeoutMS={1}
+          contentLabel="Command Palette"
+          defaultStyles={
+            Object {
+              "content": Object {
+                "WebkitOverflowScrolling": "touch",
+                "background": "#fff",
+                "border": "1px solid #ccc",
+                "borderRadius": "4px",
+                "bottom": "40px",
+                "left": "40px",
+                "outline": "none",
+                "overflow": "auto",
+                "padding": "20px",
+                "position": "absolute",
+                "right": "40px",
+                "top": "40px",
+              },
+              "overlay": Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                "bottom": 0,
+                "left": 0,
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+              },
+            }
+          }
+          isOpen={true}
+          onAfterOpen={[Function]}
+          onRequestClose={[Function]}
+          overlayClassName="chrome-overlay"
+          parentSelector={[Function]}
+          portalClassName="ReactModalPortal"
+          role="dialog"
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          shouldFocusAfterRender={true}
+          shouldReturnFocusAfterClose={true}
+          style={
+            Object {
+              "content": Object {},
+              "overlay": Object {},
+            }
+          }
+        >
+          <div
+            className="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            style={Object {}}
+          >
+            <div
+              aria-label="Command Palette"
+              className="ReactModal__Content ReactModal__Content--after-open chrome-modal"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              onMouseUp={[Function]}
+              role="dialog"
+              style={Object {}}
+              tabIndex="-1"
+            >
+              <div>
+                <div
+                  className="header"
+                />
+                <Autosuggest
+                  alwaysRenderSuggestions={true}
+                  focusInputOnSuggestionClick={true}
+                  getSuggestionValue={[Function]}
+                  highlightFirstSuggestion={true}
+                  id="1"
+                  inputProps={
+                    Object {
+                      "onChange": [Function],
+                      "onKeyDown": undefined,
+                      "placeholder": "Type a command",
+                      "value": "",
+                    }
+                  }
+                  multiSection={false}
+                  onSuggestionSelected={[Function]}
+                  onSuggestionsClearRequested={[Function]}
+                  onSuggestionsFetchRequested={[Function]}
+                  renderSuggestion={[Function]}
+                  renderSuggestionsContainer={[Function]}
+                  shouldRenderSuggestions={[Function]}
+                  suggestions={
+                    Array [
+                      Object {
+                        "category": "Command",
+                        "command": [Function],
+                        "id": 1,
+                        "name": "Start All Data Imports",
+                      },
+                      Object {
+                        "category": "Command",
+                        "command": [Function],
+                        "id": 2,
+                        "name": "Stop All Data Imports",
+                      },
+                      Object {
+                        "category": "Command",
+                        "command": [Function],
+                        "id": 3,
+                        "name": "Delete All Tenant",
+                      },
+                      Object {
+                        "category": "Network",
+                        "command": [Function],
+                        "id": 4,
+                        "name": "Go offline",
+                        "shortcut": "⌘ Esc",
+                      },
+                      Object {
+                        "category": "Network",
+                        "command": [Function],
+                        "id": 5,
+                        "name": "Go online",
+                      },
+                      Object {
+                        "category": "Navigate",
+                        "command": [Function],
+                        "id": 6,
+                        "name": "Jump to Tenant",
+                      },
+                      Object {
+                        "category": "Navigate",
+                        "command": [Function],
+                        "id": 7,
+                        "name": "View Logs ",
+                      },
+                    ]
+                  }
+                  theme={
+                    Object {
+                      "container": "chrome-container",
+                      "containerOpen": "chrome-containerOpen",
+                      "content": "chrome-content",
+                      "input": "chrome-input",
+                      "inputFocused": "chrome-inputFocused",
+                      "inputOpen": "chrome-inputOpen",
+                      "modal": "chrome-modal",
+                      "overlay": "chrome-overlay",
+                      "suggestion": "chrome-suggestion",
+                      "suggestionFirst": "chrome-suggestionFirst",
+                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                      "suggestionsContainer": "chrome-suggestionsContainer",
+                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                      "suggestionsList": "chrome-suggestionsList",
+                      "trigger": "chrome-trigger",
+                    }
+                  }
+                >
+                  <Autowhatever
+                    containerProps={Object {}}
+                    getSectionItems={[Function]}
+                    highlightedItemIndex={0}
+                    highlightedSectionIndex={null}
+                    id="1"
+                    inputProps={
+                      Object {
+                        "onBlur": [Function],
+                        "onChange": [Function],
+                        "onFocus": [Function],
+                        "onKeyDown": [Function],
+                        "placeholder": "Type a command",
+                        "value": "",
+                      }
+                    }
+                    itemProps={[Function]}
+                    items={
+                      Array [
+                        Object {
+                          "category": "Command",
+                          "command": [Function],
+                          "id": 1,
+                          "name": "Start All Data Imports",
+                        },
+                        Object {
+                          "category": "Command",
+                          "command": [Function],
+                          "id": 2,
+                          "name": "Stop All Data Imports",
+                        },
+                        Object {
+                          "category": "Command",
+                          "command": [Function],
+                          "id": 3,
+                          "name": "Delete All Tenant",
+                        },
+                        Object {
+                          "category": "Network",
+                          "command": [Function],
+                          "id": 4,
+                          "name": "Go offline",
+                          "shortcut": "⌘ Esc",
+                        },
+                        Object {
+                          "category": "Network",
+                          "command": [Function],
+                          "id": 5,
+                          "name": "Go online",
+                        },
+                        Object {
+                          "category": "Navigate",
+                          "command": [Function],
+                          "id": 6,
+                          "name": "Jump to Tenant",
+                        },
+                        Object {
+                          "category": "Navigate",
+                          "command": [Function],
+                          "id": 7,
+                          "name": "View Logs ",
+                        },
+                      ]
+                    }
+                    multiSection={false}
+                    renderInputComponent={[Function]}
+                    renderItem={[Function]}
+                    renderItemData={
+                      Object {
+                        "query": "",
+                      }
+                    }
+                    renderItemsContainer={[Function]}
+                    renderSectionTitle={[Function]}
+                    theme={
+                      Object {
+                        "container": "chrome-container",
+                        "containerOpen": "chrome-containerOpen",
+                        "content": "chrome-content",
+                        "input": "chrome-input",
+                        "inputFocused": "chrome-inputFocused",
+                        "inputOpen": "chrome-inputOpen",
+                        "item": "chrome-suggestion",
+                        "itemFirst": "chrome-suggestionFirst",
+                        "itemHighlighted": "chrome-suggestionHighlighted",
+                        "itemsContainer": "chrome-suggestionsContainer",
+                        "itemsContainerOpen": "chrome-suggestionsContainerOpen",
+                        "itemsList": "chrome-suggestionsList",
+                        "modal": "chrome-modal",
+                        "overlay": "chrome-overlay",
+                        "trigger": "chrome-trigger",
+                      }
+                    }
+                  >
+                    <div
+                      aria-expanded={true}
+                      aria-haspopup="listbox"
+                      aria-owns="react-autowhatever-1"
+                      className="chrome-container chrome-containerOpen"
+                      key="react-autowhatever-1-container"
+                      role="combobox"
+                    >
+                      <input
+                        aria-activedescendant="react-autowhatever-1--item-0"
+                        aria-autocomplete="list"
+                        aria-controls="react-autowhatever-1"
+                        autoComplete="off"
+                        className="chrome-input chrome-inputOpen chrome-inputFocused"
+                        key="react-autowhatever-1-input"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Type a command"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        className="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
+                        id="react-autowhatever-1"
+                        key="react-autowhatever-1-items-container"
+                        role="listbox"
+                      >
+                        <ItemsList
+                          getItemId={[Function]}
+                          highlightedItemIndex={0}
+                          itemProps={[Function]}
+                          items={
+                            Array [
+                              Object {
+                                "category": "Command",
+                                "command": [Function],
+                                "id": 1,
+                                "name": "Start All Data Imports",
+                              },
+                              Object {
+                                "category": "Command",
+                                "command": [Function],
+                                "id": 2,
+                                "name": "Stop All Data Imports",
+                              },
+                              Object {
+                                "category": "Command",
+                                "command": [Function],
+                                "id": 3,
+                                "name": "Delete All Tenant",
+                              },
+                              Object {
+                                "category": "Network",
+                                "command": [Function],
+                                "id": 4,
+                                "name": "Go offline",
+                                "shortcut": "⌘ Esc",
+                              },
+                              Object {
+                                "category": "Network",
+                                "command": [Function],
+                                "id": 5,
+                                "name": "Go online",
+                              },
+                              Object {
+                                "category": "Navigate",
+                                "command": [Function],
+                                "id": 6,
+                                "name": "Jump to Tenant",
+                              },
+                              Object {
+                                "category": "Navigate",
+                                "command": [Function],
+                                "id": 7,
+                                "name": "View Logs ",
+                              },
+                            ]
+                          }
+                          keyPrefix="react-autowhatever-1-"
+                          onHighlightedItemChange={[Function]}
+                          renderItem={[Function]}
+                          renderItemData={
+                            Object {
+                              "query": "",
+                            }
+                          }
+                          sectionIndex={null}
+                          theme={[Function]}
+                        >
+                          <ul
+                            className="chrome-suggestionsList"
+                            key="react-autowhatever-1-items-list"
+                            role="listbox"
+                          >
+                            <Item
+                              aria-selected={true}
+                              className="chrome-suggestion chrome-suggestionFirst chrome-suggestionHighlighted"
+                              data-section-index={null}
+                              data-suggestion-index={0}
+                              id="react-autowhatever-1--item-0"
+                              isHighlighted={true}
+                              item={
+                                Object {
+                                  "category": "Command",
+                                  "command": [Function],
+                                  "id": 1,
+                                  "name": "Start All Data Imports",
+                                }
+                              }
+                              itemIndex={0}
+                              key="react-autowhatever-1-item-0"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={true}
+                                className="chrome-suggestion chrome-suggestionFirst chrome-suggestionHighlighted"
+                                data-section-index={null}
+                                data-suggestion-index={0}
+                                id="react-autowhatever-1--item-0"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Command",
+                                      "command": [Function],
+                                      "id": 1,
+                                      "name": "Start All Data Imports",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        Start All Data Imports
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                            <Item
+                              aria-selected={false}
+                              className="chrome-suggestion"
+                              data-section-index={null}
+                              data-suggestion-index={1}
+                              id="react-autowhatever-1--item-1"
+                              isHighlighted={false}
+                              item={
+                                Object {
+                                  "category": "Command",
+                                  "command": [Function],
+                                  "id": 2,
+                                  "name": "Stop All Data Imports",
+                                }
+                              }
+                              itemIndex={1}
+                              key="react-autowhatever-1-item-1"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={false}
+                                className="chrome-suggestion"
+                                data-section-index={null}
+                                data-suggestion-index={1}
+                                id="react-autowhatever-1--item-1"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Command",
+                                      "command": [Function],
+                                      "id": 2,
+                                      "name": "Stop All Data Imports",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        Stop All Data Imports
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                            <Item
+                              aria-selected={false}
+                              className="chrome-suggestion"
+                              data-section-index={null}
+                              data-suggestion-index={2}
+                              id="react-autowhatever-1--item-2"
+                              isHighlighted={false}
+                              item={
+                                Object {
+                                  "category": "Command",
+                                  "command": [Function],
+                                  "id": 3,
+                                  "name": "Delete All Tenant",
+                                }
+                              }
+                              itemIndex={2}
+                              key="react-autowhatever-1-item-2"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={false}
+                                className="chrome-suggestion"
+                                data-section-index={null}
+                                data-suggestion-index={2}
+                                id="react-autowhatever-1--item-2"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Command",
+                                      "command": [Function],
+                                      "id": 3,
+                                      "name": "Delete All Tenant",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        Delete All Tenant
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                            <Item
+                              aria-selected={false}
+                              className="chrome-suggestion"
+                              data-section-index={null}
+                              data-suggestion-index={3}
+                              id="react-autowhatever-1--item-3"
+                              isHighlighted={false}
+                              item={
+                                Object {
+                                  "category": "Network",
+                                  "command": [Function],
+                                  "id": 4,
+                                  "name": "Go offline",
+                                  "shortcut": "⌘ Esc",
+                                }
+                              }
+                              itemIndex={3}
+                              key="react-autowhatever-1-item-3"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={false}
+                                className="chrome-suggestion"
+                                data-section-index={null}
+                                data-suggestion-index={3}
+                                id="react-autowhatever-1--item-3"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Network",
+                                      "command": [Function],
+                                      "id": 4,
+                                      "name": "Go offline",
+                                      "shortcut": "⌘ Esc",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        Go offline
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                            <Item
+                              aria-selected={false}
+                              className="chrome-suggestion"
+                              data-section-index={null}
+                              data-suggestion-index={4}
+                              id="react-autowhatever-1--item-4"
+                              isHighlighted={false}
+                              item={
+                                Object {
+                                  "category": "Network",
+                                  "command": [Function],
+                                  "id": 5,
+                                  "name": "Go online",
+                                }
+                              }
+                              itemIndex={4}
+                              key="react-autowhatever-1-item-4"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={false}
+                                className="chrome-suggestion"
+                                data-section-index={null}
+                                data-suggestion-index={4}
+                                id="react-autowhatever-1--item-4"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Network",
+                                      "command": [Function],
+                                      "id": 5,
+                                      "name": "Go online",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        Go online
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                            <Item
+                              aria-selected={false}
+                              className="chrome-suggestion"
+                              data-section-index={null}
+                              data-suggestion-index={5}
+                              id="react-autowhatever-1--item-5"
+                              isHighlighted={false}
+                              item={
+                                Object {
+                                  "category": "Navigate",
+                                  "command": [Function],
+                                  "id": 6,
+                                  "name": "Jump to Tenant",
+                                }
+                              }
+                              itemIndex={5}
+                              key="react-autowhatever-1-item-5"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={false}
+                                className="chrome-suggestion"
+                                data-section-index={null}
+                                data-suggestion-index={5}
+                                id="react-autowhatever-1--item-5"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Navigate",
+                                      "command": [Function],
+                                      "id": 6,
+                                      "name": "Jump to Tenant",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
+                                    }
+                                  }
+                                >
+                                  <DefaultCommand
+                                    suggestion={
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="item"
+                                    >
+                                      <span>
+                                        Jump to Tenant
+                                      </span>
+                                    </div>
+                                  </DefaultCommand>
+                                </RenderCommand>
+                              </li>
+                            </Item>
+                            <Item
+                              aria-selected={false}
+                              className="chrome-suggestion"
+                              data-section-index={null}
+                              data-suggestion-index={6}
+                              id="react-autowhatever-1--item-6"
+                              isHighlighted={false}
+                              item={
+                                Object {
+                                  "category": "Navigate",
+                                  "command": [Function],
+                                  "id": 7,
+                                  "name": "View Logs ",
+                                }
+                              }
+                              itemIndex={6}
+                              key="react-autowhatever-1-item-6"
+                              onClick={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              renderItem={[Function]}
+                              renderItemData={
+                                Object {
+                                  "query": "",
+                                }
+                              }
+                              sectionIndex={null}
+                            >
+                              <li
+                                aria-selected={false}
+                                className="chrome-suggestion"
+                                data-section-index={null}
+                                data-suggestion-index={6}
+                                id="react-autowhatever-1--item-6"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                role="option"
+                              >
+                                <RenderCommand
+                                  RenderCommand={[Function]}
+                                  alwaysRenderCommands={true}
+                                  closeOnSelect={false}
+                                  commands={
+                                    Array [
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 1,
+                                        "name": "Start All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 2,
+                                        "name": "Stop All Data Imports",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 3,
+                                        "name": "Delete All Tenant",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 4,
+                                        "name": "Go offline",
+                                        "shortcut": "⌘ Esc",
+                                      },
+                                      Object {
+                                        "category": "Network",
+                                        "command": [Function],
+                                        "id": 5,
+                                        "name": "Go online",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 6,
+                                        "name": "Jump to Tenant",
+                                      },
+                                      Object {
+                                        "category": "Navigate",
+                                        "command": [Function],
+                                        "id": 7,
+                                        "name": "View Logs ",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 8,
+                                        "name": "Show Memory",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 9,
+                                        "name": "Show CPU",
+                                      },
+                                      Object {
+                                        "category": "System",
+                                        "command": [Function],
+                                        "id": 10,
+                                        "name": "Show Disk Usage",
+                                      },
+                                      Object {
+                                        "category": "Command",
+                                        "command": [Function],
+                                        "id": 11,
+                                        "name": "Export Tenant",
+                                      },
+                                      Object {
+                                        "category": "Drawer",
+                                        "command": [Function],
+                                        "id": 12,
+                                        "name": "Toggle drawer",
+                                        "shortcut": "Esc",
+                                      },
+                                    ]
+                                  }
+                                  display="modal"
+                                  header={null}
+                                  hotKeys="command+shift+p"
+                                  maxDisplayed={7}
+                                  open={true}
+                                  options={
+                                    Object {
+                                      "allowTypo": true,
+                                      "key": "name",
+                                      "keys": Array [
+                                        "name",
+                                      ],
+                                      "limit": 7,
+                                      "scoreFn": null,
+                                      "threshold": -Infinity,
+                                    }
+                                  }
+                                  placeholder="Type a command"
+                                  renderCommand={null}
+                                  suggestion={
+                                    Object {
+                                      "category": "Navigate",
+                                      "command": [Function],
+                                      "id": 7,
+                                      "name": "View Logs ",
+                                    }
+                                  }
+                                  theme={
+                                    Object {
+                                      "container": "chrome-container",
+                                      "containerOpen": "chrome-containerOpen",
+                                      "content": "chrome-content",
+                                      "input": "chrome-input",
+                                      "inputFocused": "chrome-inputFocused",
+                                      "inputOpen": "chrome-inputOpen",
+                                      "modal": "chrome-modal",
+                                      "overlay": "chrome-overlay",
+                                      "suggestion": "chrome-suggestion",
+                                      "suggestionFirst": "chrome-suggestionFirst",
+                                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                                      "suggestionsContainer": "chrome-suggestionsContainer",
+                                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                                      "suggestionsList": "chrome-suggestionsList",
+                                      "trigger": "chrome-trigger",
                                     }
                                   }
                                 >
