@@ -42,13 +42,7 @@ const CustomSpinnerComponent = props => {
 export default function PaletteSpinner(props) {
   const { spinner, display, theme } = props;
   if (spinner) {
-    return (
-      <CustomSpinnerComponent
-        spinner={spinner}
-        display={display}
-        theme={theme}
-      />
-    );
+    return <CustomSpinnerComponent {...props} />;
   }
   return <DefaultSpinnerComponent display={display} theme={theme} />;
 }
