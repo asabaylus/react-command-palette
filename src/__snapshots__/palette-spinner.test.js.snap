@@ -50,7 +50,7 @@ exports[`PaletteSpinner props.spinner should display a custom string when props.
     spinner="Waiting"
   >
     <div
-      className="spinner undefined modal"
+      className="spinner atom-spinner modal"
       role="status"
     >
       Waiting
@@ -69,7 +69,7 @@ exports[`PaletteSpinner props.spinner should display an "inline" custom string w
     spinner="Waiting"
   >
     <div
-      className="spinner undefined inline"
+      className="spinner atom-spinner inline"
       role="status"
     >
       Waiting
