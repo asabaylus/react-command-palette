@@ -22,7 +22,7 @@ const DefaultSpinnerComponent = props => {
 // then assume the text is accessible. If it's a component then instert
 // a "Loading..." string that visible only to screen readers
 const CustomSpinnerComponent = props => {
-  const { spinner, display, theme } = props;
+  const { spinner, display, theme = "atom-spinner" } = props;
   let cssClass = "spinner";
   if (display === "inline") {
     cssClass = `spinner ${theme} inline`;
