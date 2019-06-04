@@ -18,7 +18,7 @@ const DefaultSpinnerComponent = props => {
   );
 };
 
-// When user adds custom spinner wrap it so that if its a string
+// When a developer adds custom spinner wrap it so that if its a string
 // then assume the text is accessible. If it's a component then instert
 // a "Loading..." string that visible only to screen readers
 const CustomSpinnerComponent = props => {
