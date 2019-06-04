@@ -224,7 +224,13 @@ class CommandPalette extends React.Component {
       alwaysRenderCommands
     } = this.props;
     if (isLoading) {
-      return <PaletteSpinner spinner={spinner} display={display} />;
+      return (
+        <PaletteSpinner
+          spinner={spinner}
+          display={display}
+          theme={theme.spinner}
+        />
+      );
     }
 
     return (

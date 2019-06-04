@@ -7,6 +7,7 @@ export default {
   input: "atom-input",
   inputOpen: "atom-inputOpen",
   inputFocused: "atom-inputFocused",
+  spinner: "atom-spinner",
   suggestionsContainer: "atom-suggestionsContainer",
   suggestionsContainerOpen: "atom-suggestionsContainerOpen",
   suggestionsList: "atom-suggestionsList",

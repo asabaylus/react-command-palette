@@ -7,6 +7,7 @@ export default {
   input: "chrome-input",
   inputOpen: "chrome-inputOpen",
   inputFocused: "chrome-inputFocused",
+  spinner: "chrome-spinner",
   suggestionsContainer: "chrome-suggestionsContainer",
   suggestionsContainerOpen: "chrome-suggestionsContainerOpen",
   suggestionsList: "chrome-suggestionsList",

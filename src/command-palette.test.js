@@ -139,13 +139,20 @@ describe("props.theme", () => {
       />
     );
 
-    // verify the 3 primary compentents inheritted the correct classNames
-    expect(commandPalette.find("Modal").hasClass("chrome-modal")).toBeTruthy();
+    // verify the four primary components have the correct classNames
     expect(
       commandPalette.find("button").hasClass("chrome-trigger")
     ).toBeTruthy();
+    expect(commandPalette.find("Modal").hasClass("chrome-modal")).toBeTruthy();
     expect(commandPalette.find("input").hasClass("chrome-input")).toBeTruthy();
     expect(commandPalette).toMatchSnapshot();
+    commandPalette
+      .find(".item")
+      .first()
+      .simulate("click");
+    expect(
+      commandPalette.find(".default-spinner").hasClass("chrome-spinner")
+    ).toBeTruthy();
   });
 });
 

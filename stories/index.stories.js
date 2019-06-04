@@ -103,7 +103,7 @@ storiesOf("Command Palette", module)
     const theme = select(label, options, defaultValue);
     return <CommandPalette commands={commands} theme={theme} open />;
   })
-  .add("atom", () => (
+  .add("atom theme", () => (
     <CommandPalette
       commands={commands}
       renderCommand={sampleAtomCommand}
@@ -111,7 +111,7 @@ storiesOf("Command Palette", module)
       open
     />
   ))
-  .add("chrome", () => (
+  .add("chrome theme", () => (
     <CommandPalette
       commands={commands}
       renderCommand={sampleChromeCommand}

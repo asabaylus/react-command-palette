@@ -139,15 +139,16 @@ const commands = [{
 
 #### theme (optional)
 
-CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
+Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
 
-It uses [react-themeable](https://github.com/markdalgleish/react-themeable) which allows you to style your CommandPalette component using [CSS Modules](https://github.com/css-modules/css-modules), [Radium](https://github.com/FormidableLabs/radium), [Aphrodite](https://github.com/Khan/aphrodite), [JSS](https://github.com/cssinjs/jss), [Inline styles](https://facebook.github.io/react/docs/dom-elements.html#style), and global CSS.
+Creating a new theme is also possible. There are four base components that should be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All four can be styled at once via the `theme` prop.
+
+There are two steps to styling. First create a theme object to map your custom class names to their associated components. Then add styles that based upon the rules applied with for each class that was mapped to its component.
 
 For example, to style the CommandPalette using CSS Modules, do:
 
 ```css
 /* theme.css */
-
 .modal { ... }
 .overlay { ... }
 .container { ... }
@@ -158,17 +159,17 @@ For example, to style the CommandPalette using CSS Modules, do:
 ...
 ```
 
-```js
+```jsx
+/* your-component.js */
 import theme from 'theme.css';
-```
-```xml
+
 <CommandPalette theme={theme} ... />
 ```
 
 When not specified, `theme` defaults to:
 
 ```js
-{
+const theme = {
   modal:                      "atom-modal",
   overlay:                    "atom-overlay",
   container:                  "atom-container",

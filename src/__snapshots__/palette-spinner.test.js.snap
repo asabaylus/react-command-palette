@@ -8,7 +8,7 @@ exports[`PaletteSpinner props.display should display a black spinner when set to
     display="inline"
   >
     <div
-      className="default-spinner inline"
+      className="default-spinner undefined inline"
       role="status"
     >
       <span
@@ -29,7 +29,7 @@ exports[`PaletteSpinner props.display should display a white spinner when set to
     display="modal"
   >
     <div
-      className="default-spinner modal"
+      className="default-spinner undefined modal"
       role="status"
     >
       <span
@@ -50,7 +50,7 @@ exports[`PaletteSpinner props.spinner should display a custom string when props.
     spinner="Waiting"
   >
     <div
-      className="spinner modal"
+      className="spinner undefined modal"
       role="status"
     >
       Waiting
@@ -69,7 +69,7 @@ exports[`PaletteSpinner props.spinner should display an "inline" custom string w
     spinner="Waiting"
   >
     <div
-      className="spinner inline"
+      className="spinner undefined inline"
       role="status"
     >
       Waiting
@@ -82,7 +82,7 @@ exports[`PaletteSpinner props.spinner should render the DefaultSpinnerComponent 
 <PaletteSpinner>
   <DefaultSpinnerComponent>
     <div
-      className="default-spinner modal"
+      className="default-spinner undefined modal"
       role="status"
     >
       <span

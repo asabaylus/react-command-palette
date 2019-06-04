@@ -2,7 +2,7 @@
 
 Atom is the default theme. However you may wish to tweak the theme to better meet your projects needs.
 
-CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
+CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
 
 Try it on [CodeSandbox](https://codesandbox.io/s/hfqjn)
 
@@ -24,6 +24,7 @@ import CommandPalette from "react-command-palette";
 //   input:                      "atom-input",
 //   inputOpen:                  "atom-inputOpen",
 //   inputFocused:               "atom-inputFocused",
+//   spinner:                    "atom-spinner",
 //   suggestionsContainer:       "atom-suggestionsContainer",
 //   suggestionsContainerOpen:   "atom-suggestionsContainerOpen",
 //   suggestionsList:            "atom-suggestionsList",

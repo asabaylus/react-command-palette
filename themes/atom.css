@@ -107,3 +107,10 @@
   color: #ffffff;
   background-color: #3a3f4b
 }
+
+.atom-spinner {
+  border-top: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-right: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-left: 0.4em solid rgb(255, 255, 255);
+} 

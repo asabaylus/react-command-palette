@@ -12,22 +12,22 @@
     display: inline-block;
 }
 
-.Command {
+.chrome-category.Command {
     background: rgb(0, 188, 212);
 }
 
-.System {
+.chrome-category.System {
     background: rgb(76, 174, 80);
 }
 
-.Network {
+.chrome-category.Network {
     background: rgb(63, 81, 181);
 }
 
-.Navigate {
+.chrome-category.Navigate {
     background: rgb(255, 182, 0);
 }
 
-.Drawer {
+.chrome-category.Drawer {
     background: rgb(0, 149, 136);
 }

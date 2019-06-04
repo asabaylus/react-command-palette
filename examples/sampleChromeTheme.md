@@ -1,4 +1,4 @@
-#### Building an Chrome inspired Command Palette
+#### Building a Chrome inspired Command Palette
 
 A Chrome theme is available in the the _themes_ directory. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
 
@@ -30,6 +30,7 @@ const chrome = {
   input:                      "chrome-input",
   inputOpen:                  "chrome-inputOpen",
   inputFocused:               "chrome-inputFocused",
+  spinner:                    "chrome-spinner",
   suggestionsContainer:       "chrome-suggestionsContainer",
   suggestionsContainerOpen:   "chrome-suggestionsContainerOpen",
   suggestionsList:            "chrome-suggestionsList",
