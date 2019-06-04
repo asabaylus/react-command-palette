@@ -69,7 +69,9 @@ class CommandPalette extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
     this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
-    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(this);
+    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(
+      this
+    );
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
