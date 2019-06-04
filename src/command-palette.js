@@ -68,6 +68,8 @@ class CommandPalette extends React.Component {
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
+    this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
+    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(this);
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
@@ -255,16 +257,9 @@ class CommandPalette extends React.Component {
     );
   }
 
-  render() {
+  renderModalCommandPalette() {
     const { showModal } = this.state;
-    const { display, trigger, theme } = this.props;
-
-    if (display === "inline") {
-      return (
-        <div className="react-command-palette">{this.renderAutoSuggest()}</div>
-      );
-    }
-
+    const { trigger, theme } = this.props;
     return (
       <div className="react-command-palette">
         <PaletteTrigger
@@ -283,13 +278,30 @@ class CommandPalette extends React.Component {
           closeTimeoutMS={
             1
             /* otherwise the modal is not closed when
-            suggestion is selected by pressing Enter */
+          suggestion is selected by pressing Enter */
           }
         >
           {this.renderAutoSuggest()}
         </ReactModal>
       </div>
     );
+  }
+
+  renderInlineCommandPalette() {
+    return (
+      <div className="react-command-palette">{this.renderAutoSuggest()}</div>
+    );
+  }
+
+  render() {
+    const { display } = this.props;
+    let commandPalette;
+    if (display === "inline") {
+      commandPalette = this.renderInlineCommandPalette();
+    } else {
+      commandPalette = this.renderModalCommandPalette();
+    }
+    return commandPalette;
   }
 }
 
