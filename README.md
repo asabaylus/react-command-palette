@@ -137,61 +137,46 @@ const commands = [{
 
 * ```spinner``` a _string_ or a _React.ComponentType_ that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status"_ attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers.
 
-#### theme (optional)
+* ```theme``` enables you to apply a sample or custom look-n-feel.
+  Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
 
-Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
+  Creating a new theme is also possible. There are four base components that should be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All four can be styled at once via the `theme` prop.
 
-Creating a new theme is also possible. There are four base components that should be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All four can be styled at once via the `theme` prop.
+  There are two steps to styling. First create a theme object to map your custom class names to their associated components. Then add styles that use the rules mapped in the `theme` prop.
 
-There are two steps to styling. First create a theme object to map your custom class names to their associated components. Then add styles that based upon the rules applied with for each class that was mapped to its component.
+  For example, to style the CommandPalette using CSS Modules, do:
 
-For example, to style the CommandPalette using CSS Modules, do:
+  ```css
+  /* theme.css */
+  .my-modal { ... }
+  .my-overlay { ... }
+  .my-container { ... }
+  .my-input { ... }
+  ...
+  ```
 
-```css
-/* theme.css */
-.modal { ... }
-.overlay { ... }
-.container { ... }
-.input { ... }
-.suggestionsContainer { ... }
-.suggestion { ... }
-.suggestionHighlighted { ... }
-...
-```
+  ```jsx
+  /* my-component.js */
+  const theme = {
+    modal:         "my-modal",
+    overlay:       "my-overlay",
+    container:     "my-container",
+    content:       "my-content",
+    containerOpen: "my-containerOpen",
+    input:         "my-input",
+    ...
+  }
 
-```jsx
-/* your-component.js */
-import theme from 'theme.css';
+  import theme from 'theme.css';
 
-<CommandPalette theme={theme} ... />
-```
+  <CommandPalette theme={theme} ... />
+  ```
 
-When not specified, `theme` defaults to:
+  When not specified, `theme` defaults to the included _Atom_ theme. Complete sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md) and [Atom](examples/sampleAtomTheme.md)
 
-```js
-const theme = {
-  modal:                      "atom-modal",
-  overlay:                    "atom-overlay",
-  container:                  "atom-container",
-  content:                    "atom-content",
-  containerOpen:              "atom-containerOpen",
-  input:                      "atom-input",
-  inputOpen:                  "atom-inputOpen",
-  inputFocused:               "atom-inputFocused",
-  suggestionsContainer:       "atom-suggestionsContainer",
-  suggestionsContainerOpen:   "atom-suggestionsContainerOpen",
-  suggestionsList:            "atom-suggestionsList",
-  suggestion:                 "atom-suggestion",
-  suggestionFirst:            "atom-suggestionFirst",
-  suggestionHighlighted:      "atom-suggestionHighlighted"
-}
-```
+  The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
 
-Sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md) and [Atom](examples/sampleAtomTheme.md)
-
-The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
-
-![DOM structure](./docs/images/dom-structure.png)
+  ![DOM structure](./docs/images/dom-structure.png)
 
 ```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
 
