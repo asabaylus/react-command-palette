@@ -4,7 +4,7 @@ A Chrome theme is available in the the _themes_ directory. There are four base c
 
 For a complete example see this [CodeSandbox](https://codesandbox.io/s/gfx7l)
 
-The simplest way to get started is to import the Chrome theme and CSS from the examples directory as follows:
+The simplest way to get started is to _import_ the Chrome [theme](../themes/chrome-theme.js) and [CSS](../themes/chrome.css) from the examples directory as follows:
 
 ```js
 import React from "react";
@@ -41,7 +41,9 @@ const chrome = {
 }
 ```
 
-The layout for each of the commands that appears in the command list can also be customized. For instance the Chrome dev tools command palette's list of commands includes a category, command and an associated keyboard shortcut when applicable. The CSS for this custom _renderCommand_ is inlcuded with [_sampleChromeCommands.css_](../examples/sampleAtomCommand.css), therefore we'll need to import style rules for our [_sampleChromeCommand.js_](../examples/sampleAtomCommand.js). Of coure you can use your imagination to create any layout you like for each command. Note that `suggestion.highlight` will contain the raw HTML of the matching value.
+The layout for each of the commands that appears in the command list can also be customized. For instance, _Chrome dev tools_ command palette has a list of commands that  includes a category, command and associated keyboard shortcut when applicable. Because the default command is limited to just displaying the command's _name_ you'll need to make your own _renderCommand_ like the component included in [_sampleChromeCommand.js_](../examples/sampleChromeCommand.js). 
+
+The [_sampleChromeCommands.css_](../examples/sampleChromeCommand.css) file must be imported into the _renderCommand_ component. Of coure you can use your imagination to create any layout you like for each command. Note that `suggestion.highlight` will contain the raw HTML of the matching value.
 
 ```jsx
 import React from "react";
