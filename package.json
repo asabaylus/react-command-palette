@@ -125,6 +125,8 @@
     "react-modal": "^3.8.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "examples",
+    "themes"
   ]
 }
