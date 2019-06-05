@@ -16,6 +16,8 @@ import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
 import defaultTheme from "../themes/theme";
 
+import "../themes/atom.css";
+
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
 // http://me.dt.in.th/page/JavaScript-override/
