@@ -162,7 +162,6 @@ const commands = [{
     overlay:       "my-overlay",
     container:     "my-container",
     content:       "my-content",
-    containerOpen: "my-containerOpen",
     input:         "my-input",
     ...
   }
