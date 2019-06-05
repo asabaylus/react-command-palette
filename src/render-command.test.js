@@ -5,7 +5,7 @@ import serializer from "enzyme-to-json/serializer";
 
 import allCommands from "./__mocks__/commands";
 import RenderCommand from "./render-command";
-import SampleCustomCommand from "../examples/sampleCustomCommand";
+import sampleAtomCommand from "../examples/sampleAtomCommand";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -23,7 +23,7 @@ describe("RenderCommand", () => {
     const wrapper = mount(
       <RenderCommand
         suggestion={allCommands[0]}
-        renderCommand={SampleCustomCommand}
+        renderCommand={sampleAtomCommand}
       />
     );
     expect(wrapper.props().suggestion).toEqual(allCommands[0]);

@@ -1,0 +1,116 @@
+.atom-modal {
+  width: 605px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 0px none;
+  background: rgb(48, 51, 56);
+  overflow: hidden;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
+  margin-right: -50%;
+  transform: translate(-50%, 0px);
+}
+
+.atom-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.atom-content {
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  border: 0px none;
+  background: rgb(48, 51, 56);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  min-width: 600px;
+}
+
+.atom-container {
+  font-family: "system-ui";
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.atom-containerOpen {}
+
+.atom-input {
+  font-size: 14px;
+  border-radius: 4px;
+  border: 2px solid #181a1f;
+  width: 590px;
+  padding: 6px;
+  outline: none;
+  background-color: #202634;
+  color: #d7dae0;
+  caret-color: #568af2;
+}
+
+.atom-inputOpen {}
+
+.atom-inputFocused {
+  border: 2px solid #568af2;
+  background-color: #1b1d23;
+}
+
+.atom-suggestionsContainer {}
+
+.atom-suggestionsContainerOpen {
+  overflow: hidden;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  max-height: 315px;
+  margin-top: 10px
+}
+
+.atom-suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+.atom-suggestion {
+  color: #9da5b4;
+  border: 1px solid #181a1f;
+  border-top: 0px none;
+  background-color: #2c313a;
+  padding: 14px 12px;
+  cursor: pointer;
+}
+
+.atom-suggestion b {
+ color: #4d78cc;
+}
+.atom-suggestionFirst {
+}
+
+.atom-suggestionHighlighted {
+  color: #ffffff;
+  background-color: #3a3f4b
+}
+
+.atom-spinner {
+  border-top: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-right: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-left: 0.4em solid rgb(255, 255, 255);
+}

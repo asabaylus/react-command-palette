@@ -3,16 +3,18 @@ import React from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 
+// third party libs
 import equal from "fast-deep-equal";
 import Autosuggest from "react-autosuggest";
 import Mousetrap from "mousetrap";
-import theme from "./theme";
-import PaletteSpinner from "./palette-spinner";
 
+// command palette modules
 import fuzzysortOptions from "./fuzzysort-options";
+import PaletteSpinner from "./palette-spinner";
 import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
+import defaultTheme from "../themes/theme";
 
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
@@ -38,11 +40,6 @@ const allSuggestions = [];
 // based on the clicked suggestion. Teach Autosuggest how to calculate the
 // input value for every given suggestion.
 const getSuggestionValue = suggestion => suggestion.name;
-
-const modalStyles = {
-  content: theme.content,
-  overlay: theme.overlay
-};
 
 class CommandPalette extends React.Component {
   constructor() {
@@ -71,6 +68,10 @@ class CommandPalette extends React.Component {
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
+    this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
+    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(
+      this
+    );
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
@@ -218,6 +219,7 @@ class CommandPalette extends React.Component {
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
+    const { theme } = this.props;
     const {
       maxDisplayed,
       spinner,
@@ -226,7 +228,13 @@ class CommandPalette extends React.Component {
       alwaysRenderCommands
     } = this.props;
     if (isLoading) {
-      return <PaletteSpinner spinner={spinner} display={display} />;
+      return (
+        <PaletteSpinner
+          spinner={spinner}
+          display={display}
+          theme={theme.spinner}
+        />
+      );
     }
 
     return (
@@ -251,36 +259,51 @@ class CommandPalette extends React.Component {
     );
   }
 
-  render() {
+  renderModalCommandPalette() {
     const { showModal } = this.state;
-    const { display, trigger } = this.props;
-
-    if (display === "inline") {
-      return (
-        <div className="react-command-palette">{this.renderAutoSuggest()}</div>
-      );
-    }
-
+    const { trigger, theme } = this.props;
     return (
       <div className="react-command-palette">
-        <PaletteTrigger onClick={this.handleOpenModal} trigger={trigger} />
+        <PaletteTrigger
+          onClick={this.handleOpenModal}
+          trigger={trigger}
+          theme={theme.trigger}
+        />
         <ReactModal
           appElement={document.body}
-          style={modalStyles}
           isOpen={showModal}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
+          className={theme.modal}
+          overlayClassName={theme.overlay}
           contentLabel="Command Palette"
           closeTimeoutMS={
             1
             /* otherwise the modal is not closed when
-            suggestion is selected by pressing Enter */
+          suggestion is selected by pressing Enter */
           }
         >
           {this.renderAutoSuggest()}
         </ReactModal>
       </div>
     );
+  }
+
+  renderInlineCommandPalette() {
+    return (
+      <div className="react-command-palette">{this.renderAutoSuggest()}</div>
+    );
+  }
+
+  render() {
+    const { display } = this.props;
+    let commandPalette;
+    if (display === "inline") {
+      commandPalette = this.renderInlineCommandPalette();
+    } else {
+      commandPalette = this.renderModalCommandPalette();
+    }
+    return commandPalette;
   }
 }
 
@@ -293,7 +316,8 @@ CommandPalette.defaultProps = {
   options: fuzzysortOptions,
   closeOnSelect: false,
   display: "modal",
-  renderCommand: null
+  renderCommand: null,
+  theme: defaultTheme
 };
 
 CommandPalette.propTypes = {
@@ -375,7 +399,11 @@ CommandPalette.propTypes = {
 
   /** a React.func that defines the layout and contents of the commands in the
    * command list. For complete documentation see the storybook notes. */
-  renderCommand: PropTypes.func
+  renderCommand: PropTypes.func,
+
+  /** Styles and object that contains a list of key value pairs where the keys map the
+   * command palette components to their CSS class names. */
+  theme: PropTypes.object
 };
 
 export default CommandPalette;

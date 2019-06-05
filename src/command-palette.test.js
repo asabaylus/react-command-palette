@@ -13,7 +13,9 @@ import fuzzysortOptions from "./fuzzysort-options";
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
 import sampleHeader from "../examples/sampleHeader";
-import SampleCustomCommand from "../examples/sampleCustomCommand";
+import sampleAtomCommand from "../examples/sampleAtomCommand";
+import sampleChromeCommand from "../examples/sampleChromeCommand";
+import chromeTheme from "../themes/chrome-theme";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -112,18 +114,45 @@ describe("props.header", () => {
   });
 });
 
-// TODO: Add custom renderCommand prop
 describe("props.renderCommand", () => {
   it("should render a custom command component", () => {
     const commandPalette = mount(
       <CommandPalette
         commands={mockCommands}
-        RenderCommand={SampleCustomCommand}
+        RenderCommand={sampleAtomCommand}
         open
       />
     );
     expect(commandPalette.find(".category")).toBeTruthy();
     expect(commandPalette).toMatchSnapshot();
+  });
+});
+
+describe("props.theme", () => {
+  it("should render a custom theme", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        RenderCommand={sampleChromeCommand}
+        theme={chromeTheme}
+        open
+      />
+    );
+
+    // verify the four primary components have the correct classNames
+    expect(
+      commandPalette.find("button").hasClass("chrome-trigger")
+    ).toBeTruthy();
+    expect(commandPalette.find("Modal").hasClass("chrome-modal")).toBeTruthy();
+    expect(commandPalette.find("input").hasClass("chrome-input")).toBeTruthy();
+    expect(commandPalette).toMatchSnapshot();
+    commandPalette
+      .find(".item")
+      .first()
+      .simulate("click");
+    expect(
+      commandPalette.find(".default-spinner").hasClass("chrome-spinner")
+    ).toBeTruthy();
   });
 });
 
@@ -187,7 +216,6 @@ describe("props.alwaysRenderCommands", () => {
     );
     commandPalette.find("input").simulate("blur");
     expect(commandPalette.props().alwaysRenderCommands).toBeTruthy();
-    console.log(commandPalette.find("ItemsList").debug());
     expect(commandPalette.find("ItemsList")).toHaveLength(1);
   });
 

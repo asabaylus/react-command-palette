@@ -35,7 +35,7 @@ $ npm i --save react-command-palette
 
 Import into your react app and pass commands
 
-```js
+```jsx
 import CommandPalette from 'react-command-palette';
 
 const commands = [{
@@ -98,9 +98,7 @@ const commands = [{
 
 * ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
   
-  ```js
-  import "./commandStyles.css"; // or use inline styles
-
+  ```jsx
   function RenderCommand(suggestion) {
     // A suggestion object will be passed to your custom component for each command
     const { id, color, name } = suggestion;
@@ -131,7 +129,7 @@ const commands = [{
 
   Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
 
-  See [a full example](examples/sampleCustomCommand.js)
+  See [a full example](examples/sampleAtomCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
@@ -139,28 +137,68 @@ const commands = [{
 
 * ```spinner``` a _string_ or a _React.ComponentType_ that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status"_ attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers.
 
-* ```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
+* ```theme``` enables you to apply a sample or custom look-n-feel.
+  Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
 
-  Example with a component:
-  ```
-  // jsx trigger prop
-  <CommandPalette commands={data} trigger={<b>Click Me!</b>}>
-  
-  // html generated trigger
-  <div role="button" tabindex="0"><b>Click Me!</b></div>
+  Creating a new theme is also possible. There are four base components that should be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All four can be styled at once via the `theme` prop.
+
+  There are two steps to styling. First create a theme object to map your custom class names to their associated components. Then add styles that use the rules mapped in the `theme` prop.
+
+  For example, to style the CommandPalette using CSS Modules, do:
+
+  ```css
+  /* theme.css */
+  .my-modal { ... }
+  .my-overlay { ... }
+  .my-container { ... }
+  .my-input { ... }
+  ...
   ```
 
-  Example with a string:
-  ```
-  // jsx trigger prop
-  <CommandPalette commands={data} trigger="Click Me!">
+  ```jsx
+  /* my-component.js */
+  const theme = {
+    modal:         "my-modal",
+    overlay:       "my-overlay",
+    container:     "my-container",
+    content:       "my-content",
+    input:         "my-input",
+    ...
+  }
 
-  // html generated trigger
-  <div role="button" tabindex="0">Click Me!</div>
-  ```
-  
+  import theme from 'theme.css';
 
-  When the trigger is clicked it will open the command palette, no custom handlers or events are required.
+  <CommandPalette theme={theme} ... />
+  ```
+
+  When not specified, `theme` defaults to the included _Atom_ theme. Complete sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md) and [Atom](examples/sampleAtomTheme.md)
+
+  The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
+
+  ![DOM structure](./docs/images/dom-structure.png)
+
+```trigger``` a _string_ or a _React.ComponentType_ the opens the command palette when clicked. If a custom trigger is not set then by default a button will be used. If a custom component or string is provided then it will automatically be wrapped inside an accessible div that will allow it be keyboard accessible, clickable and focusable for assistive technologies.
+
+Example with a component:
+```
+// jsx trigger prop
+<CommandPalette commands={data} trigger={<b>Click Me!</b>}>
+
+// html generated trigger
+<div role="button" tabindex="0"><b>Click Me!</b></div>
+```
+
+Example with a string:
+```
+// jsx trigger prop
+<CommandPalette commands={data} trigger="Click Me!">
+
+// html generated trigger
+<div role="button" tabindex="0">Click Me!</div>
+```
+
+
+When the trigger is clicked it will open the command palette, no custom handlers or events are required.
 
 ## Developer Setup
 ```

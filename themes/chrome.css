@@ -1,0 +1,124 @@
+.chrome-modal {
+  box-shadow: 
+    rgba(0, 0, 0, 0.2) 0px 1px 8px 0px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 3px 3px -2px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  min-width: 505px;
+  transform: translate(-50%, 0);
+  border: 0px none;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0px;
+  outline: none;
+  padding: 0px;
+}
+
+.chrome-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.chrome-content {}
+
+.chrome-container {
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  width:505px;
+}
+
+.chrome-containerOpen {}
+
+.chrome-input {
+  font-size: 12px;
+  border: 0 none;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  border-radius: 0px;
+  width: 500px;
+  padding: 10px 4px;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(30, 30, 30);
+  caret-color: rgb(60, 60, 60);
+}
+
+.chrome-inputOpen {}
+
+.chrome-inputFocused {}
+
+.chrome-suggestionsContainer {
+  overflow: hidden;
+  border-top: 0px none;
+  border-bottom: 0px none;
+  max-height: 315px;
+  margin-top: 0px;
+}
+
+.chrome-suggestionsContainerOpen {}
+
+.chrome-suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.chrome-suggestion {
+  color:  rgb(95, 95, 95);
+  border: 0 none;
+  border-top: 0px none;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.chrome-suggestion b {
+  color: rgb(30, 30, 30);
+}
+
+.chrome-suggestionFirst {
+  color: rgb(95, 95, 95);
+  background-color: rgb(255, 255, 255);
+}
+
+.chrome-suggestionHighlighted {
+  color: #3a3f4b;
+  background-color: rgb(240, 240, 240);
+}
+
+.chrome-trigger {
+  background-color: rgb(224, 224, 224);
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.87);
+  border-style: none;
+  border-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  font-stretch: 100%;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: 0.39998px;
+  line-height: 24.5px;
+  margin: 8px;
+  min-width: 64px;
+  outline-color: rgba(0, 0, 0, 0.87);
+  outline: 0px none;
+  padding: 6px 16px;
+  text-transform: uppercase;
+}
+
+.chrome-spinner {
+    border-top: 0.4em solid rgba(111, 111, 111, 0.2);
+    border-right: 0.4em solid rgba(111, 111, 111, 0.2);
+    border-bottom: 0.4em solid rgba(111, 111, 111, 0.2);
+    border-left: 0.4em solid rgb(152, 152, 152);
+}

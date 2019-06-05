@@ -1,0 +1,33 @@
+.chrome-category {
+    color: #fff;
+    margin-right: 6px;
+    border-radius: 2px;
+    padding: 1.2px 3px;
+}
+
+.chrome-shortcut {
+    float: right;
+    margin-right: 2px;
+    color: rgb(150, 150, 150);
+    display: inline-block;
+}
+
+.chrome-category.Command {
+    background: rgb(0, 188, 212);
+}
+
+.chrome-category.System {
+    background: rgb(76, 174, 80);
+}
+
+.chrome-category.Network {
+    background: rgb(63, 81, 181);
+}
+
+.chrome-category.Navigate {
+    background: rgb(255, 182, 0);
+}
+
+.chrome-category.Drawer {
+    background: rgb(0, 149, 136);
+}

@@ -16,7 +16,7 @@ describe("getSuggestions", () => {
       // the command palette does not natively support an "id" property
       // however a developer may easily add any set of obj properties to each command
       // the following assertion tests that custom command properties are supported
-      expect(commands[0]).toHaveProperty("id", 4);
+      expect(commands[0]).toHaveProperty("id", 6);
     });
   });
 

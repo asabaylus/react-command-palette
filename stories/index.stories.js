@@ -2,11 +2,11 @@
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf, addDecorator } from "@storybook/react";
-import "./index.stories.css";
 
 // storybook addons
 import {
   withKnobs,
+  select,
   object,
   number,
   text,
@@ -19,7 +19,14 @@ import { checkA11y } from "@storybook/addon-a11y";
 
 // sample component
 import sampleHeader from "../examples/sampleHeader";
-import sampleCustomCommand from "../examples/sampleCustomCommand";
+import sampleAtomCommand from "../examples/sampleAtomCommand";
+import sampleChromeCommand from "../examples/sampleChromeCommand";
+
+// sample styles
+import "../themes/chrome.css";
+import "../themes/atom.css";
+import chrome from "../themes/chrome-theme";
+import atom from "../themes/atom-theme";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -78,11 +85,37 @@ storiesOf("Command Palette", module)
   .add("with everything", () => (
     <CommandPalette
       commands={commands}
-      renderCommand={sampleCustomCommand}
+      renderCommand={sampleAtomCommand}
       header={sampleHeader()}
       maxDisplayed={6}
       trigger={Trigger()}
       hotKeys="shift+/"
+      open
+    />
+  ))
+  .add("with a theme", () => {
+    const label = "theme";
+    const options = {
+      Chrome: chrome,
+      Atom: atom
+    };
+    const defaultValue = chrome;
+    const theme = select(label, options, defaultValue);
+    return <CommandPalette commands={commands} theme={theme} open />;
+  })
+  .add("atom theme", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleAtomCommand}
+      theme={atom}
+      open
+    />
+  ))
+  .add("chrome theme", () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleChromeCommand}
+      theme={chrome}
       open
     />
   ))
@@ -91,13 +124,13 @@ storiesOf("Command Palette", module)
     () => (
       <CommandPalette
         commands={commands}
-        renderCommand={sampleCustomCommand}
+        renderCommand={sampleAtomCommand}
         open
       />
     ),
     {
       info: {
-        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleCustomCommand.js`
+        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
       }
     }
   )
