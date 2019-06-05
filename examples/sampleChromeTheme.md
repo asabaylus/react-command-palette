@@ -1,10 +1,10 @@
 #### Building a Chrome inspired Command Palette
 
-A Chrome theme is available in the the _themes_ directory. There are three base components that need to be styled, the _trigger_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
+A Chrome theme is available in the the _themes_ directory. There are four base components that need to be styled, _trigger_, _spinner_,  _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
 
-For a complete example see: [CodeSandbox](https://codesandbox.io/s/gfx7l)
+For a complete example see this [CodeSandbox](https://codesandbox.io/s/gfx7l)
 
-For example, to style the CommandPalette create a CSS _className_ that maps your theme's names with their counterpart's key:
+The simplest way to get started is to import the Chrome theme and CSS from the examples directory as follows:
 
 ```js
 import React from "react";
@@ -17,7 +17,7 @@ import chrome from "./node_modules/react-command-palette/themes/chrome-theme";
 import "./node_modules/react-command-palette/themes/chrome.css";
 ```
 
-It's should be noted that the chrome-theme exists to permit the custom class names such as:
+Alternatively to custom style the CommandPalette you'll need a CSS file with rules that map to your _theme_ props' key/value pairs, ex:
 
 ```js
 // map CSS class names to CommandPalette components
@@ -41,7 +41,7 @@ const chrome = {
 }
 ```
 
-The layout for each of the commands that appears in the command list can also be customized. For instance the Chrome themed commands should display both a command and an associated keyboard shortcut when applicable. The CSS for this custom command renderer are the inlcuded with the basic CSS theme styles, therefore we'll import style rules for the commands here. Of coure you can use your imagination to create any layout you like for each command. Note that `suggestion.highlight` will contain the raw HTML of the matching value.
+The layout for each of the commands that appears in the command list can also be customized. For instance the Chrome dev tools command palette's list of commands includes a category, command and an associated keyboard shortcut when applicable. The CSS for this custom _renderCommand_ is inlcuded with [_sampleChromeCommands.css_](../examples/sampleAtomCommand.css), therefore we'll need to import style rules for our [_sampleChromeCommand.js_](../examples/sampleAtomCommand.js). Of coure you can use your imagination to create any layout you like for each command. Note that `suggestion.highlight` will contain the raw HTML of the matching value.
 
 ```jsx
 import React from "react";

@@ -1,8 +1,8 @@
 #### Building an Atom inspired Command Palette
 
-Atom is the default theme. However you may wish to tweak the theme to better meet your projects needs.
+The easiest way to use setup this up is to do nothing, Atom is the default theme. However you may wish to tweak the theme to better meet your projects needs.
 
-CommandPalette comes with the Atom theme by default. There are three base components that need to be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
+CommandPalette comes with the Atom theme by default. There are four base components that need to be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All three can be styled at once via the `theme` prop.
 
 Try it on [CodeSandbox](https://codesandbox.io/s/hfqjn)
 
