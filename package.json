@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "module": "dist/main.es.js",
   "scripts": {
-    "build": "NODE_ENV=production rollup -c",
+    "build": "rollup -c",
     "dev": "npm run prebuild:storybook && concurrently --raw --kill-others \"npm run storybook\" \"NODE_ENV=test jest --config=jest.config.js --watch\"",
     "prettier": "eslint --fix src/",
     "lint": "eslint src/",
