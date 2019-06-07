@@ -1,5 +1,3 @@
 [build]
   publish = "docs"
   command = "bash scripts/netlify-build.sh"
-[build.environment]
-  NODE_VERSION = "10"
