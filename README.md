@@ -15,7 +15,7 @@ WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
 For examples of the command palette in action, go to the 
 
-[![Storybook](https://github.com/storybooks/brand/raw/master/badge/badge-storybook.svg?sanitize=true)](https://baylus.com/react-command-palette/)
+[![Storybook](https://github.com/storybooks/brand/raw/master/badge/badge-storybook.svg?sanitize=true)](https://zealous-goodall-a49b95.netlify.com)
 
 OR
 
