@@ -7,6 +7,9 @@ npm-debug.log*
 # Build deps
 .jest-test-results.json
 
+# Docs (moved to Netlify)
+docs/
+
 # Runtime data
 pids
 *.pid

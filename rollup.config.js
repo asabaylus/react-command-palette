@@ -9,7 +9,7 @@ import pkg from "./package.json";
 
 const plugins = [
   replace({
-    "process.env.NODE_ENV": JSON.stringify("development")
+    "process.env.NODE_ENV": JSON.stringify("production")
   }),
   postcss(),
   commonjs({
