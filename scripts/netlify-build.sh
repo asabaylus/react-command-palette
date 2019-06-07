@@ -2,5 +2,5 @@
 
 echo "Building for Netlify."
 npm install
-ls -al
+ls -al node_modules/.bin
 ./node_modules/.bin/build-storybook -c .storybook -o docs
