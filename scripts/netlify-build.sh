@@ -2,4 +2,4 @@
 
 echo "Building for Netlify."
 npm install
-npm run docs
+./node_modules/.bin/build-storybook -c .storybook -o docs
