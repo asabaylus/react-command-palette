@@ -1,7 +1,5 @@
 [build]
-  publish = "netlify-build"
+  publish = "docs"
   command = "bash scripts/netlify-build.sh"
 [build.environment]
-  NODE_VERSION = "8"
-  YARN_VERSION = "1.3.2"
-  YARN_FLAGS = "--version"
+  NODE_VERSION = "10"
