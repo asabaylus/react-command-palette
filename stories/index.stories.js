@@ -21,6 +21,7 @@ import { checkA11y } from "@storybook/addon-a11y";
 import sampleHeader from "../examples/sampleHeader";
 import sampleAtomCommand from "../examples/sampleAtomCommand";
 import sampleChromeCommand from "../examples/sampleChromeCommand";
+import sampleSublimeCommand from "../examples/sampleSublimeCommand";
 
 // sample styles
 import "../themes/chrome.css";
@@ -127,7 +128,7 @@ storiesOf("Command Palette", module)
     () => (
       <CommandPalette
         commands={commands}
-        renderCommand={sampleAtomCommand}
+        renderCommand={sampleSublimeCommand}
         theme={sublime}
         placeholder=""
         maxDisplayed={12}
