@@ -1,0 +1,105 @@
+.sublime-modal {
+  width: 605px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 0px none;
+  background: rgb(235, 237, 239);
+  overflow: hidden;
+  border-radius: 0;
+  outline: none;
+  padding: 4px;
+  margin-right: -50%;
+  transform: translate(-50%, 0px);
+}
+
+.sublime-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: transparent;
+}
+
+.sublime-content {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  border: 0px none;
+  background: rgb(48, 51, 56);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  padding: 10px;
+  min-width: 600px;
+}
+
+.sublime-container {
+  font-family: "system-ui";
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.sublime-containerOpen {}
+
+.sublime-input {
+  font-size: 14px;
+  border: 0px none;
+  width: 593px;
+  padding: 4px 6px;
+  outline: none;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  color: #202634;
+}
+
+.sublime-inputOpen {}
+
+.sublime-inputFocused {}
+
+.sublime-suggestionsContainer {}
+
+.sublime-suggestionsContainerOpen {
+  overflow: hidden;
+  max-height: 500px;
+  margin-top: 4px
+}
+
+.sublime-suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+.sublime-suggestion {
+  color: #181a1f;  
+  border-top: 0px none;
+  background-color: rgb(235, 237, 239);
+  padding: 6.3px 6px;
+  cursor: pointer;
+}
+
+.sublime-suggestion b {
+ color: #111
+}
+.sublime-suggestionFirst {}
+
+.sublime-suggestionHighlighted {
+  color: #181a1f;
+  background-color: rgb(199, 203, 209)
+}
+
+.sublime-spinner {
+  border-top: 0.4em solid rgba(111, 111, 111, 0.4);
+  border-right: 0.4em solid rgba(111, 111, 111, 0.4);
+  border-bottom: 0.4em solid rgba(111, 111, 111, 0.4);
+  border-left: 0.4em solid rgb(130, 130, 130);
+}
