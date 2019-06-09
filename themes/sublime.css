@@ -42,6 +42,7 @@
 }
 
 .sublime-container {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-weight: lighter;
   font-size: 14px;
 }
@@ -87,7 +88,8 @@
 }
 
 .sublime-suggestion b {
- color: #111
+  font-weight: bold;
+  color: #111;
 }
 .sublime-suggestionFirst {}
 

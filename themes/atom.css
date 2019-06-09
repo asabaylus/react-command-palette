@@ -45,7 +45,7 @@
 }
 
 .atom-container {
-  font-family: "system-ui";
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-weight: lighter;
   font-size: 12px;
 }
@@ -98,7 +98,8 @@
 }
 
 .atom-suggestion b {
- color: #4d78cc;
+  color: #4d78cc;
+  font-weight: bold;
 }
 .atom-suggestionFirst {
 }
