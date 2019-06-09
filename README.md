@@ -171,7 +171,7 @@ const commands = [{
   <CommandPalette theme={theme} ... />
   ```
 
-  When not specified, `theme` defaults to the included _Atom_ theme. Complete sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md) and [Atom](examples/sampleAtomTheme.md)
+  When not specified, `theme` defaults to the included _Atom_ theme. Complete sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md),[Sublime](examples/sampleSublimeTheme.md) and [Atom](examples/sampleAtomTheme.md)
 
   The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
 

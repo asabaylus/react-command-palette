@@ -21,12 +21,15 @@ import { checkA11y } from "@storybook/addon-a11y";
 import sampleHeader from "../examples/sampleHeader";
 import sampleAtomCommand from "../examples/sampleAtomCommand";
 import sampleChromeCommand from "../examples/sampleChromeCommand";
+import sampleSublimeCommand from "../examples/sampleSublimeCommand";
 
 // sample styles
 import "../themes/chrome.css";
 import "../themes/atom.css";
+import "../themes/sublime.css";
 import chrome from "../themes/chrome-theme";
 import atom from "../themes/atom-theme";
+import sublime from "../themes/sublime-theme";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
@@ -97,7 +100,8 @@ storiesOf("Command Palette", module)
     const label = "theme";
     const options = {
       Chrome: chrome,
-      Atom: atom
+      Atom: atom,
+      Sublime: sublime
     };
     const defaultValue = chrome;
     const theme = select(label, options, defaultValue);
@@ -119,6 +123,28 @@ storiesOf("Command Palette", module)
       open
     />
   ))
+  .add(
+    "sublime theme",
+    () => (
+      <CommandPalette
+        commands={commands}
+        renderCommand={sampleSublimeCommand}
+        theme={sublime}
+        placeholder=""
+        maxDisplayed={12}
+        open
+      />
+    ),
+    {
+      backgrounds: [
+        {
+          name: "dark",
+          value: "rgba(39, 40, 34)",
+          default: true
+        }
+      ]
+    }
+  )
   .add(
     "with a custom command",
     () => (
