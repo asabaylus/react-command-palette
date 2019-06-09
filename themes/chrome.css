@@ -30,7 +30,7 @@
 .chrome-content {}
 
 .chrome-container {
-  font-family: helvetica, sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size: 12px;
   width:505px;
 }
@@ -81,6 +81,7 @@
 
 .chrome-suggestion b {
   color: rgb(30, 30, 30);
+  font-weight: bold;
 }
 
 .chrome-suggestionFirst {
