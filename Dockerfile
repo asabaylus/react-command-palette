@@ -10,6 +10,9 @@ RUN apk --no-cache add git
 # Create the .npmrc file
 RUN echo ${NPMRC} | base64 -d > .npmrc
 
+# install npm
+RUN apk add --update nodejs nodejs-npm
+
 # Creating tar of productions dependencies
 RUN npm i && cp -rp ./node_modules /tmp/node_modules
 
