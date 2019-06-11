@@ -13,7 +13,7 @@ RUN echo ${NPMRC} | base64 -d > .npmrc
 # install npm
 RUN apk add --update nodejs nodejs-npm
 
-# Creating tar of productions dependencies
+# Creating tar of production dependencies
 RUN npm i && cp -rp ./node_modules /tmp/node_modules
 
 # Copying application code
