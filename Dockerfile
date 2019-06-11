@@ -13,11 +13,11 @@ RUN echo ${NPMRC} | base64 -d > .npmrc
 # install npm
 RUN apk add --update nodejs nodejs-npm
 
-# Creating tar of production dependencies
-RUN npm i && cp -rp ./node_modules /tmp/node_modules
-
 # Copying application code
 COPY . /app
+
+# Install dependencies
+RUN npm ci
 
 # Install CodeClimate Test Coverage Reporter
 RUN apk --no-cache add curl  
