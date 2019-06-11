@@ -233,17 +233,17 @@ $ docker build -t  react-command-palette .
 Then, spin up the container once the build is done:
 ```
 $ docker run -it \
-  -v ${PWD}:/usr/src/app \
-  -v /usr/src/app/node_modules \
-  -p 6006:6006 \
+  -v ${PWD}:/app \
+  -p 6006:6006 \     
+  react-command-palette \
   npm i && npm run dev
 ```
 You only need to run "npm i" the when the container is first created. The devDependencies need to be installed to compile and test the build during development. On subsequent builds run:
 ```
 $ docker run -it \
-  -v ${PWD}:/usr/src/app \
-  -v /usr/src/app/node_modules \
-  -p 6006:6006 \
+  -v ${PWD}:/app \
+  -p 6006:6006 \     
+  react-command-palette \
   npm run dev
 ```
 
