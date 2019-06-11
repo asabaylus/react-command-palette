@@ -244,7 +244,7 @@ $ docker run -it \
   -v ${PWD}:/app \
   -p 6006:6006 \     
   react-command-palette \
-  npm run dev
+  npm start
 ```
 
 Open your browser to http://localhost:6006/ and you should see the app. Try making a change to the command-palette component within your code editor. You should see the app hot-reload. Kill the server once done.
