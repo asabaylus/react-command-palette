@@ -232,19 +232,11 @@ $ docker build -t  react-command-palette .
 
 Then, spin up the container once the build is done:
 ```
-$ docker run -it \
-  -v ${PWD}:/usr/src/app \
-  -v /usr/src/app/node_modules \
-  -p 6006:6006 \
-  npm i && npm run dev
+$ docker run -it -v ${PWD}:/app -p 6006:6006 react-command-palette npm i && npm run dev
 ```
 You only need to run "npm i" the when the container is first created. The devDependencies need to be installed to compile and test the build during development. On subsequent builds run:
 ```
-$ docker run -it \
-  -v ${PWD}:/usr/src/app \
-  -v /usr/src/app/node_modules \
-  -p 6006:6006 \
-  npm run dev
+$ docker run -it -v ${PWD}:/app -p 6006:6006 react-command-palette npm start
 ```
 
 Open your browser to http://localhost:6006/ and you should see the app. Try making a change to the command-palette component within your code editor. You should see the app hot-reload. Kill the server once done.

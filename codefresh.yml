@@ -1,9 +1,14 @@
 version: '1.0'
 steps:
+  GitClone:
+    title: Cloning main repository...
+    type: git-clone
+    repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
+    revision: '${{CF_REVISION}}'
   BuildingDockerImage:
     title: Build Docker Image
     type: build
-    image_name: asabaylus/reactcommandpalette
+    image_name: asabaylus/react-command-palette
     working_directory: ./
     tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
     dockerfile: Dockerfile

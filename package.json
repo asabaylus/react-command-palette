@@ -85,6 +85,7 @@
     "babelrc-rollup": "^3.0.0",
     "codecov": "^3.5.0",
     "concurrently": "^4.1.0",
+    "core-js": "^3.1.3",
     "cross-env": "^5.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -108,6 +109,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
+    "regenerator-runtime": "^0.13.2",
     "rollup": "^1.14.4",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",
@@ -120,13 +122,11 @@
     "storybook-readme": "^5.0.3"
   },
   "dependencies": {
-    "core-js": "^3.1.3",
     "fast-deep-equal": "^2.0.1",
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
-    "react-modal": "^3.8.1",
-    "regenerator-runtime": "^0.13.2"
+    "react-modal": "^3.8.1"
   },
   "files": [
     "dist",
