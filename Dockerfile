@@ -15,15 +15,11 @@ RUN apk add --update nodejs nodejs-npm
 RUN apk --no-cache add curl  
 RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > "/usr/bin/cc-test-reporter" && chmod +x "/usr/bin/cc-test-reporter" && cp -p /usr/bin/cc-test-reporter /tmp/cc-test-reporter
 
-# Install app dependencies
-COPY package.json /app
-COPY package-lock.json /app
+# Copying application code
+COPY . /app
 
 # Install dependencies
 RUN npm ci
-
-# Copying application code
-COPY . /app
 
 #FROM node:10.15.0-alpine AS runner
 
