@@ -2,7 +2,6 @@
 # React Command Palette
 WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/asabaylus/asabaylus%2Freact-command-palette%2Freact_command_palette?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWMzNjdiYTlhODU5MTAxOWFjOTdkNDEz.qLcoo1kugnvaRfNdM5ujH-bELwuU6KGPe65RB-tdlVk&type=cf-1)]( https://g.codefresh.io/pipelines/react_command_palette/builds?repoOwner=asabaylus&repoName=react-command-palette&serviceName=asabaylus%2Freact-command-palette&filter=trigger:build~Build;branch:master;pipeline:5c3e788ab131c1ebb82e699d~react_command_palette)
 [![Codeship Status for asabaylus/react-command-palette](https://app.codeship.com/projects/f7cc0a30-3533-0135-cd98-56b308955afb/status?branch=master)](https://app.codeship.com/projects/227053)
 [![codecov](https://codecov.io/gh/asabaylus/react-command-palette/branch/master/graph/badge.svg)](https://codecov.io/gh/asabaylus/react-command-palette)
 [![Maintainability](https://api.codeclimate.com/v1/badges/761754992fe0cd293c40/maintainability)](https://codeclimate.com/github/asabaylus/react-command-palette/maintainability)
