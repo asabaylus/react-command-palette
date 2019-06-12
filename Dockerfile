@@ -16,7 +16,7 @@ RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest
 COPY . /app
 
 # Install dependencies
-RUN npm ci
+RUN npm -q ci
 
 # Expose Storybook port
 EXPOSE 6006
