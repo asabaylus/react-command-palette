@@ -26,7 +26,16 @@ export default function getSuggestions(value = "", allCommands, options) {
     const opts = {
       name: suggestion.obj.name,
       command: suggestion.obj.command,
-      highlight: fuzzysort.highlight(suggestion[0])
+      highlight: (() => {
+        // if there's more than one suggestion, retun an array of
+        // highlighted results. ex: ["first *result*", "second *result*"]
+        if (Array.isArray(suggestion) && suggestion.length >= 2) {
+          return suggestion.map(result => fuzzysort.highlight(result));
+        }
+        // otherwise return the single suggestion as a string. ex:
+        // "only *result*"
+        return fuzzysort.highlight(suggestion[0]);
+      })()
     };
     return { ...opts, ...suggestion.obj };
   });
@@ -34,6 +43,8 @@ export default function getSuggestions(value = "", allCommands, options) {
   // When the user specified a search term but there we no matches found
   // return all the commands
   if (!formattedSuggestions.length) return allCommands;
+
+  // console.log(formattedSuggestions);
 
   // Otherwise return the search results
   return formattedSuggestions;

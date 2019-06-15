@@ -1,8 +1,13 @@
 .chrome-category {
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-right: 6px;
     border-radius: 2px;
     padding: 1.2px 3px;
+}
+
+.chrome-category b {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bolder;
 }
 
 .chrome-shortcut {
