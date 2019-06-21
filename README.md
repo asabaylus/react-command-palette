@@ -71,8 +71,8 @@ const commands = [{
 * ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likley to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
 
   ```js
-    key: "name", // must be "name"
-    keys: ["name"], // must include "name"
+    key: "name", // default is "name"
+    keys: ["name"], // default is "name"
 
     // other options may be freely configured
     threshold: -Infinity, 
@@ -126,7 +126,7 @@ const commands = [{
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
 
-  Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from (fuzzysort)[farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb], see the ```options``` prop.
+  Note: the _suggestion.hightlight_ will be passed and contains the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then an highlights will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](examples/sampleChromeCommand.js)
 
   See [a full example](examples/sampleAtomCommand.js)
 

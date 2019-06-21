@@ -1,7 +1,7 @@
 import fuzzysort from "fuzzysort";
 
 // Teach Autosuggest how to calculate suggestions for any given input value.
-export default function getSuggestions(value = "", allCommands, options) {
+const getSuggestions = function(value, allCommands, options) {
   // return all commands when user didnt suggest a specific term
   if (!value) {
     return allCommands;
@@ -46,4 +46,6 @@ export default function getSuggestions(value = "", allCommands, options) {
 
   // Otherwise return the search results
   return formattedSuggestions;
-}
+};
+
+export default getSuggestions;
