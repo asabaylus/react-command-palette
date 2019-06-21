@@ -5,6 +5,7 @@ checks:
       threshold: 90
 exclude_patterns:
 - "docs/"
+- "scripts/"
 - "examples/"
 - "src/__mocks__"
 - "dist/"

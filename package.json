@@ -16,6 +16,7 @@
     "prebuild:storybook": "npm run test:generate-output",
     "storybook": "cross-env NODE_ENV=development start-storybook -p 6006",
     "docs": "build-storybook -c .storybook -o docs",
+    "chromatic:ci": "chromatic test --auto-accept-changes",
     "chromatic": "chromatic test"
   },
   "repository": {
