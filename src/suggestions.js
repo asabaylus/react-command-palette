@@ -44,8 +44,6 @@ export default function getSuggestions(value = "", allCommands, options) {
   // return all the commands
   if (!formattedSuggestions.length) return allCommands;
 
-  // console.log(formattedSuggestions);
-
   // Otherwise return the search results
   return formattedSuggestions;
 }

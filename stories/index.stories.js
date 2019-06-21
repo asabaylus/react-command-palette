@@ -261,7 +261,6 @@ storiesOf("Command Palette", module)
     );
   })
   .add("with multiple highlights", () => {
-    // Knobs for Search Options Object
     const opts = {
       keys: ["name", "category"]
     };
