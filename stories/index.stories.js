@@ -259,4 +259,19 @@ storiesOf("Command Palette", module)
         open
       />
     );
+  })
+  .add("with multiple highlights", () => {
+    const opts = {
+      keys: ["name", "category"]
+    };
+    return (
+      <CommandPalette
+        commands={commands}
+        options={opts}
+        maxDisplayed={10}
+        renderCommand={sampleChromeCommand}
+        theme={chrome}
+        open
+      />
+    );
   });

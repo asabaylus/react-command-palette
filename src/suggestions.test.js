@@ -35,4 +35,31 @@ describe("getSuggestions", () => {
       expect(commands.length).toBe(2);
     });
   });
+
+  describe("a value was provide with mutiple keys to search", () => {
+    it("should return the matching command with multple highlights", () => {
+      fuzzysortOptions.keys = ["name", "category"];
+      const matchName = getSuggestions(
+        "Imports",
+        allCommands,
+        fuzzysortOptions
+      );
+      expect(matchName[0]).toMatchObject({
+        name: "Stop All Data Imports",
+        category: "Command",
+        highlight: ["Stop All Data <b>Imports</b>", null]
+      });
+
+      const matchCategory = getSuggestions(
+        "Com",
+        allCommands,
+        fuzzysortOptions
+      );
+      expect(matchCategory[0]).toMatchObject({
+        name: "Stop All Data Imports",
+        category: "Command",
+        highlight: [null, "<b>Com</b>mand"]
+      });
+    });
+  });
 });
