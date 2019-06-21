@@ -79,7 +79,7 @@
   cursor: pointer;
 }
 
-.chrome-suggestion b {
+.chrome-suggestion > b {
   color: rgb(30, 30, 30);
   font-weight: bold;
 }
