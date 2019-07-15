@@ -243,6 +243,24 @@ describe("Opening the palette", () => {
     }, 0);
   });
 
+  it("fires the onAfterOpen event", () => {
+    const spyOnAfterOpen = jest.fn();
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} onAfterOpen={spyOnAfterOpen} />
+    );
+    commandPalette.find("button").simulate("click");
+    expect(spyOnAfterOpen).toHaveBeenCalled();
+  });
+
+  it("fires the onRequestClose event", done => {
+    const spyOnClose = jest.fn(() => expect(spyOnClose).toHaveBeenCalled());
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} />
+    );
+    commandPalette.find("button").simulate("click");
+    done();
+  });
+
   it("displays the suggestion list", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
     commandPalette.find("button").simulate("click");
