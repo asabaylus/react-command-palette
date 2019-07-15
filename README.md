@@ -81,6 +81,30 @@ const commands = [{
     scoreFn: null 
   ```
 
+
+* ```onAfterOpen``` a function that fires after the command palette modal is opened.
+
+  ```js
+    <CommandPalette
+      commands={commands}
+      onAfterOpen={() => {
+        alert("The palette was opened.");
+      }}
+    />
+  ```
+
+* ```onRequestClose``` a function that will be run when the modal is requested to be closed (either by clicking on overlay or pressing ESC)
+Note: It is not called if _open_ is changed by other means. Passes through to the [react-modal prop](http://reactcommunity.org/react-modal/examples/on_request_close.html).
+
+  ```js
+    <CommandPalette
+      commands={commands}
+      onRequestClose={() => {
+        alert("The palette was closed.");
+      }}
+    />
+  ```
+
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command, for example:
 
   ```js

@@ -18,6 +18,8 @@ import defaultTheme from "../themes/theme";
 
 import "../themes/atom.css";
 
+const noop = () => undefined;
+
 // Apply a functions that'll run after the command's function runs
 // Monkey patching for the commands
 // http://me.dt.in.th/page/JavaScript-override/
@@ -162,7 +164,9 @@ class CommandPalette extends React.Component {
   }
 
   afterOpenModal() {
+    const { onAfterOpen } = this.props;
     this.focusInput();
+    return onAfterOpen();
   }
 
   fetchData() {
@@ -189,10 +193,12 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
+    const { onRequestClose } = this.props;
     this.setState({
       showModal: false,
       isLoading: false
     });
+    return onRequestClose();
   }
 
   handleOpenModal() {
@@ -316,6 +322,8 @@ CommandPalette.defaultProps = {
   header: null,
   maxDisplayed: 7,
   options: fuzzysortOptions,
+  onAfterOpen: noop,
+  onRequestClose: noop,
   closeOnSelect: false,
   display: "modal",
   renderCommand: null,
@@ -368,6 +376,12 @@ CommandPalette.propTypes = {
   /** open a boolean, when set to true it forces the command palette to be displayed.
    * Defaults to "false". */
   open: PropTypes.bool,
+
+  /** onAfterOpen a function that fires after the command palette modal is opened */
+  onAfterOpen: PropTypes.func,
+
+  /** onRequestClose a function that fires after the command palette modal is closed */
+  onRequestClose: PropTypes.func,
 
   /** display one of "modal" or "inline", when set to "modal" the command palette is
    * rendered centered inside a modal. When set to "inline", it is render inline with

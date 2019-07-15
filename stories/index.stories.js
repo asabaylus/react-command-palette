@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable react/jsx-one-expression-per-line */
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
@@ -174,6 +175,22 @@ storiesOf("Command Palette", module)
   })
   .add("without a modal", () => (
     <CommandPalette commands={commands} display="inline" />
+  ))
+  .add("onAfterOpen", () => (
+    <CommandPalette
+      commands={commands}
+      onAfterOpen={() => {
+        alert("The palette was opened.");
+      }}
+    />
+  ))
+  .add("onRequestClose", () => (
+    <CommandPalette
+      commands={commands}
+      onRequestClose={() => {
+        alert("The palette will close.");
+      }}
+    />
   ))
   .add(
     "with a custom trigger",
