@@ -18,7 +18,8 @@ RenderCommand.propTypes = {
   /** a single suggestion that appears in the command palette. It must have a _name_ and
    * a _command_. The _name_ is a user friendly string that will be display to the user.
    * The command is a function that will be executed when the user clicks or presses the
-   * enter key. For single match a _highlight_ string will be passed, for mutliple mathes the _highlight_ should be an array */
+   * enter key. For single match a _highlight_ string will be passed, for mutliple mathes
+   * the _highlight_ should be an array */
   suggestion: PropTypes.shape({
     name: PropTypes.string.isRequired,
     highlight: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
