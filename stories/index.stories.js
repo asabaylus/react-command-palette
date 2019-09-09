@@ -13,7 +13,6 @@ import {
   text,
   boolean
 } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
 import { checkA11y } from "@storybook/addon-a11y";
@@ -63,7 +62,6 @@ storiesOf("Command Palette", module)
       addonPanelInRight: false
     })
   )
-  .addDecorator(withInfo)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
   .addDecorator(story => (
@@ -79,13 +77,6 @@ storiesOf("Command Palette", module)
   ))
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
-  .addParameters({
-    info: {
-      disabled: false,
-      inline: false,
-      header: false
-    }
-  })
   .add("with everything", () => (
     <CommandPalette
       commands={commands}
@@ -156,17 +147,13 @@ storiesOf("Command Palette", module)
       />
     ),
     {
-      info: {
-        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
-      }
+      notes: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
     }
   )
   .add("is toggled open", () => <CommandPalette commands={commands} open />, {
-    info: {
-      text: `Adding an _open_ prop will force the command palette to be displayed 
+    notes: `Adding an _open_ prop will force the command palette to be displayed 
       when it mounts. By default command palette will be hidden until the _trigger_
       is cliked.`
-    }
   })
   .add("with defaults", () => {
     // Knobs Addon for Commands object
@@ -196,16 +183,13 @@ storiesOf("Command Palette", module)
     "with a custom trigger",
     () => <CommandPalette commands={commands} trigger="Click Me!" />,
     {
-      info: {
-        text: `Use the _trigger_ prop to customize the component that the user 
+      notes: `Use the _trigger_ prop to customize the component that the user 
         will click to open the command palette. The property accepts either a
         string or a React component. Note that component will be wrapped with a 
         _div_ that behaves like a button. So there is no need to add any events.
         This component will also be focusable and may be activated via keyboard
         to maintain accessibility. If a trigger is not specified then the a 
-        default command palette will be used.
-        `
-      }
+        default command palette will be used.`
     }
   )
   .add("alwaysRenderCommands false", () => (
