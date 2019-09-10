@@ -1,0 +1,8 @@
+/* auto generated docs story containers should have a height the fits their contents  */
+#docs-root .storyContainer {
+    position: "relative";
+}
+
+.ReactModal__Overlay {
+    z-index: 1;
+}

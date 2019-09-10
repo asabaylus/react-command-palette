@@ -4,6 +4,11 @@ import * as React from "react";
 // eslint-disable-next-line no-unused-vars
 import { storiesOf } from "@storybook/react";
 
+// TODO:
+// 1. render modal portals inside each documentation container
+// see: reactcommunity.org/react-modal/#custom-parent
+// http: // 2. Add position: absolute to #docs-root > .css-1gk97hb
+
 // storybook addons
 import {
   withKnobs,
@@ -24,6 +29,7 @@ import sampleChromeCommand from "../examples/sampleChromeCommand";
 import sampleSublimeCommand from "../examples/sampleSublimeCommand";
 
 // sample styles
+import "../.storybook/styles.css";
 import "../themes/chrome.css";
 import "../themes/atom.css";
 import "../themes/sublime.css";
@@ -62,19 +68,10 @@ storiesOf("Command Palette", module)
       addonPanelInRight: false
     })
   )
+  .addParameters({ component: CommandPalette })
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
-  .addDecorator(story => (
-    <div
-      style={{
-        position: "relative",
-        minHeight: "764px",
-        minWidth: "428px"
-      }}
-    >
-      {story()}
-    </div>
-  ))
+  .addDecorator(story => <div className="storyContainer">{story()}</div>)
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
   .add("with everything", () => (
@@ -199,9 +196,7 @@ storiesOf("Command Palette", module)
       alwaysRenderCommands={boolean("alwaysRenderCommands", false)}
     />
   ))
-  .add("with custom hotkeys", () => (
-    <CommandPalette commands={commands} hotKeys="/" />
-  ))
+  .add("with custom hotkeys", () => <CommandPalette commands={commands} hotKeys="/" />)
   .add("with custom header", () => (
     <CommandPalette commands={commands} header={sampleHeader()} open />
   ))
