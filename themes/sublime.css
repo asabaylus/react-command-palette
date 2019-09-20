@@ -24,6 +24,8 @@
   background-color: transparent;
 }
 
+.sublime-header {}
+
 .sublime-content {
   position: absolute;
   top: 80px;

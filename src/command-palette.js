@@ -45,6 +45,19 @@ const allSuggestions = [];
 // input value for every given suggestion.
 const getSuggestionValue = suggestion => suggestion.name;
 
+const Header = props => {
+  const { theme, children } = props;
+  return <div className={theme.header}>{children}</div>;
+};
+
+Header.propTypes = {
+  theme: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
+};
+
 class CommandPalette extends React.Component {
   constructor() {
     super();
@@ -247,7 +260,7 @@ class CommandPalette extends React.Component {
 
     return (
       <div>
-        <div className="header">{header}</div>
+        <Header theme={theme}>{header}</Header>
         <Autosuggest
           ref={input => {
             this.commandPaletteInput = input;

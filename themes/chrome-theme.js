@@ -1,6 +1,7 @@
 export default {
   modal: "chrome-modal",
   overlay: "chrome-overlay",
+  header: "chrome-header",
   container: "chrome-container",
   content: "chrome-content",
   containerOpen: "chrome-containerOpen",

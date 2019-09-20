@@ -25,6 +25,10 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.atom-header {
+  color: #d7dae0;
+}
+
 .atom-content {
   box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
   position: absolute;

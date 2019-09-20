@@ -173,6 +173,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
   .my-modal { ... }
   .my-overlay { ... }
   .my-container { ... }
+  .my-header { ... }
   .my-input { ... }
   ...
   ```
@@ -183,6 +184,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
     modal:         "my-modal",
     overlay:       "my-overlay",
     container:     "my-container",
+    header:        "my-header",
     content:       "my-content",
     input:         "my-input",
     ...

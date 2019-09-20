@@ -2,6 +2,7 @@ export default {
   modal: "sublime-modal",
   overlay: "sublime-overlay",
   container: "sublime-container",
+  header: "sublime-header",
   content: "sublime-content",
   containerOpen: "sublime-containerOpen",
   input: "sublime-input",

@@ -1,6 +1,7 @@
 export default {
   modal: "atom-modal",
   overlay: "atom-overlay",
+  header: "atom-header",
   container: "atom-container",
   content: "atom-content",
   containerOpen: "atom-containerOpen",
