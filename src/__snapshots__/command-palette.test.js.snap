@@ -108,6 +108,7 @@ exports[`Command List renders a command 1`] = `
       "container": "atom-container",
       "containerOpen": "atom-containerOpen",
       "content": "atom-content",
+      "header": "atom-header",
       "input": "atom-input",
       "inputFocused": "atom-inputFocused",
       "inputOpen": "atom-inputOpen",
@@ -260,7 +261,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -413,7 +414,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     this is a command palette
                   </div>
@@ -568,7 +569,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     <div
                       style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -761,7 +762,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -939,7 +940,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -1092,7 +1093,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -1254,7 +1255,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -1407,7 +1408,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="false"
@@ -1449,7 +1450,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -1602,7 +1603,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -1755,7 +1756,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -1908,7 +1909,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2064,7 +2065,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2217,7 +2218,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2370,7 +2371,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2523,7 +2524,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2676,7 +2677,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2829,7 +2830,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -2982,7 +2983,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3135,7 +3136,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3202,7 +3203,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3288,7 +3289,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3441,7 +3442,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3594,7 +3595,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3683,7 +3684,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -3836,7 +3837,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -3989,7 +3990,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         this is a command palette
                       </div>
@@ -4144,7 +4145,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         <div
                           style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -4337,7 +4338,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -4515,7 +4516,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -4668,7 +4669,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -4830,7 +4831,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -4983,7 +4984,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="false"
@@ -5025,7 +5026,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -5178,7 +5179,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -5331,7 +5332,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -5484,7 +5485,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -5640,7 +5641,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -5793,7 +5794,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -5946,7 +5947,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6099,7 +6100,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6252,7 +6253,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6405,7 +6406,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6558,7 +6559,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6711,7 +6712,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6778,7 +6779,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -6864,7 +6865,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -7017,7 +7018,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -7170,7 +7171,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -7293,9 +7294,33 @@ exports[`Command List renders a command 1`] = `
               tabIndex="-1"
             >
               <div>
-                <div
-                  className="header"
-                />
+                <Header
+                  theme={
+                    Object {
+                      "container": "atom-container",
+                      "containerOpen": "atom-containerOpen",
+                      "content": "atom-content",
+                      "header": "atom-header",
+                      "input": "atom-input",
+                      "inputFocused": "atom-inputFocused",
+                      "inputOpen": "atom-inputOpen",
+                      "modal": "atom-modal",
+                      "overlay": "atom-overlay",
+                      "spinner": "atom-spinner",
+                      "suggestion": "atom-suggestion",
+                      "suggestionFirst": "atom-suggestionFirst",
+                      "suggestionHighlighted": "atom-suggestionHighlighted",
+                      "suggestionsContainer": "atom-suggestionsContainer",
+                      "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
+                      "suggestionsList": "atom-suggestionsList",
+                      "trigger": "atom-trigger",
+                    }
+                  }
+                >
+                  <div
+                    className="atom-header"
+                  />
+                </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
                   focusInputOnSuggestionClick={true}
@@ -7333,6 +7358,7 @@ exports[`Command List renders a command 1`] = `
                       "container": "atom-container",
                       "containerOpen": "atom-containerOpen",
                       "content": "atom-content",
+                      "header": "atom-header",
                       "input": "atom-input",
                       "inputFocused": "atom-inputFocused",
                       "inputOpen": "atom-inputOpen",
@@ -7392,6 +7418,7 @@ exports[`Command List renders a command 1`] = `
                         "container": "atom-container",
                         "containerOpen": "atom-containerOpen",
                         "content": "atom-content",
+                        "header": "atom-header",
                         "input": "atom-input",
                         "inputFocused": "atom-inputFocused",
                         "inputOpen": "atom-inputOpen",
@@ -7630,6 +7657,7 @@ exports[`Command List renders a command 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -7823,6 +7851,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       "container": "atom-container",
       "containerOpen": "atom-containerOpen",
       "content": "atom-content",
+      "header": "atom-header",
       "input": "atom-input",
       "inputFocused": "atom-inputFocused",
       "inputOpen": "atom-inputOpen",
@@ -7975,7 +8004,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -8128,7 +8157,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     this is a command palette
                   </div>
@@ -8283,7 +8312,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     <div
                       style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -8476,7 +8505,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -8654,7 +8683,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -8807,7 +8836,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -8969,7 +8998,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -9122,7 +9151,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="false"
@@ -9164,7 +9193,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -9317,7 +9346,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -9470,7 +9499,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -9623,7 +9652,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -9798,7 +9827,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -10037,7 +10066,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -10190,7 +10219,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         this is a command palette
                       </div>
@@ -10345,7 +10374,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         <div
                           style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -10538,7 +10567,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -10716,7 +10745,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -10869,7 +10898,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -11031,7 +11060,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -11184,7 +11213,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="false"
@@ -11226,7 +11255,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -11379,7 +11408,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -11532,7 +11561,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -11685,7 +11714,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -11894,9 +11923,33 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               tabIndex="-1"
             >
               <div>
-                <div
-                  className="header"
-                />
+                <Header
+                  theme={
+                    Object {
+                      "container": "atom-container",
+                      "containerOpen": "atom-containerOpen",
+                      "content": "atom-content",
+                      "header": "atom-header",
+                      "input": "atom-input",
+                      "inputFocused": "atom-inputFocused",
+                      "inputOpen": "atom-inputOpen",
+                      "modal": "atom-modal",
+                      "overlay": "atom-overlay",
+                      "spinner": "atom-spinner",
+                      "suggestion": "atom-suggestion",
+                      "suggestionFirst": "atom-suggestionFirst",
+                      "suggestionHighlighted": "atom-suggestionHighlighted",
+                      "suggestionsContainer": "atom-suggestionsContainer",
+                      "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
+                      "suggestionsList": "atom-suggestionsList",
+                      "trigger": "atom-trigger",
+                    }
+                  }
+                >
+                  <div
+                    className="atom-header"
+                  />
+                </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
                   focusInputOnSuggestionClick={true}
@@ -11970,6 +12023,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       "container": "atom-container",
                       "containerOpen": "atom-containerOpen",
                       "content": "atom-content",
+                      "header": "atom-header",
                       "input": "atom-input",
                       "inputFocused": "atom-inputFocused",
                       "inputOpen": "atom-inputOpen",
@@ -12065,6 +12119,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "container": "atom-container",
                         "containerOpen": "atom-containerOpen",
                         "content": "atom-content",
+                        "header": "atom-header",
                         "input": "atom-input",
                         "inputFocused": "atom-inputFocused",
                         "inputOpen": "atom-inputOpen",
@@ -12336,6 +12391,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -12532,6 +12588,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -12728,6 +12785,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -12926,6 +12984,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -13123,6 +13182,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -13319,6 +13379,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -13515,6 +13576,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -13675,6 +13737,7 @@ exports[`props.display should not display the command palette in react-modal whe
       "container": "atom-container",
       "containerOpen": "atom-containerOpen",
       "content": "atom-content",
+      "header": "atom-header",
       "input": "atom-input",
       "inputFocused": "atom-inputFocused",
       "inputOpen": "atom-inputOpen",
@@ -13695,9 +13758,33 @@ exports[`props.display should not display the command palette in react-modal whe
     className="react-command-palette"
   >
     <div>
-      <div
-        className="header"
-      />
+      <Header
+        theme={
+          Object {
+            "container": "atom-container",
+            "containerOpen": "atom-containerOpen",
+            "content": "atom-content",
+            "header": "atom-header",
+            "input": "atom-input",
+            "inputFocused": "atom-inputFocused",
+            "inputOpen": "atom-inputOpen",
+            "modal": "atom-modal",
+            "overlay": "atom-overlay",
+            "spinner": "atom-spinner",
+            "suggestion": "atom-suggestion",
+            "suggestionFirst": "atom-suggestionFirst",
+            "suggestionHighlighted": "atom-suggestionHighlighted",
+            "suggestionsContainer": "atom-suggestionsContainer",
+            "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
+            "suggestionsList": "atom-suggestionsList",
+            "trigger": "atom-trigger",
+          }
+        }
+      >
+        <div
+          className="atom-header"
+        />
+      </Header>
       <Autosuggest
         alwaysRenderSuggestions={true}
         focusInputOnSuggestionClick={true}
@@ -13771,6 +13858,7 @@ exports[`props.display should not display the command palette in react-modal whe
             "container": "atom-container",
             "containerOpen": "atom-containerOpen",
             "content": "atom-content",
+            "header": "atom-header",
             "input": "atom-input",
             "inputFocused": "atom-inputFocused",
             "inputOpen": "atom-inputOpen",
@@ -13866,6 +13954,7 @@ exports[`props.display should not display the command palette in react-modal whe
               "container": "atom-container",
               "containerOpen": "atom-containerOpen",
               "content": "atom-content",
+              "header": "atom-header",
               "input": "atom-input",
               "inputFocused": "atom-inputFocused",
               "inputOpen": "atom-inputOpen",
@@ -14137,6 +14226,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -14333,6 +14423,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -14529,6 +14620,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -14727,6 +14819,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -14924,6 +15017,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -15120,6 +15214,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -15316,6 +15411,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             "container": "atom-container",
                             "containerOpen": "atom-containerOpen",
                             "content": "atom-content",
+                            "header": "atom-header",
                             "input": "atom-input",
                             "inputFocused": "atom-inputFocused",
                             "inputOpen": "atom-inputOpen",
@@ -15366,7 +15462,7 @@ exports[`props.display should not display the command palette in react-modal whe
 
 exports[`props.header should render the header 1`] = `
 <div
-  className="header"
+  className="atom-header"
 >
   <div
     style={
@@ -15570,6 +15666,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
       "container": "atom-container",
       "containerOpen": "atom-containerOpen",
       "content": "atom-content",
+      "header": "atom-header",
       "input": "atom-input",
       "inputFocused": "atom-inputFocused",
       "inputOpen": "atom-inputOpen",
@@ -15722,7 +15819,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -15875,7 +15972,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     this is a command palette
                   </div>
@@ -16030,7 +16127,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     <div
                       style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -16223,7 +16320,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -16398,7 +16495,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -16637,7 +16734,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -16790,7 +16887,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         this is a command palette
                       </div>
@@ -16945,7 +17042,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         <div
                           style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -17138,7 +17235,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -17347,9 +17444,33 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               tabIndex="-1"
             >
               <div>
-                <div
-                  className="header"
-                />
+                <Header
+                  theme={
+                    Object {
+                      "container": "atom-container",
+                      "containerOpen": "atom-containerOpen",
+                      "content": "atom-content",
+                      "header": "atom-header",
+                      "input": "atom-input",
+                      "inputFocused": "atom-inputFocused",
+                      "inputOpen": "atom-inputOpen",
+                      "modal": "atom-modal",
+                      "overlay": "atom-overlay",
+                      "spinner": "atom-spinner",
+                      "suggestion": "atom-suggestion",
+                      "suggestionFirst": "atom-suggestionFirst",
+                      "suggestionHighlighted": "atom-suggestionHighlighted",
+                      "suggestionsContainer": "atom-suggestionsContainer",
+                      "suggestionsContainerOpen": "atom-suggestionsContainerOpen",
+                      "suggestionsList": "atom-suggestionsList",
+                      "trigger": "atom-trigger",
+                    }
+                  }
+                >
+                  <div
+                    className="atom-header"
+                  />
+                </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
                   focusInputOnSuggestionClick={true}
@@ -17423,6 +17544,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       "container": "atom-container",
                       "containerOpen": "atom-containerOpen",
                       "content": "atom-content",
+                      "header": "atom-header",
                       "input": "atom-input",
                       "inputFocused": "atom-inputFocused",
                       "inputOpen": "atom-inputOpen",
@@ -17518,6 +17640,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         "container": "atom-container",
                         "containerOpen": "atom-containerOpen",
                         "content": "atom-content",
+                        "header": "atom-header",
                         "input": "atom-input",
                         "inputFocused": "atom-inputFocused",
                         "inputOpen": "atom-inputOpen",
@@ -17791,6 +17914,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -17989,6 +18113,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -18187,6 +18312,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -18387,6 +18513,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -18586,6 +18713,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -18784,6 +18912,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -18982,6 +19111,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       "container": "atom-container",
                                       "containerOpen": "atom-containerOpen",
                                       "content": "atom-content",
+                                      "header": "atom-header",
                                       "input": "atom-input",
                                       "inputFocused": "atom-inputFocused",
                                       "inputOpen": "atom-inputOpen",
@@ -19119,7 +19249,7 @@ exports[`props.theme should render a custom theme 1`] = `
     ]
   }
   display="modal"
-  header={null}
+  header="this is a command palette"
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
@@ -19144,6 +19274,7 @@ exports[`props.theme should render a custom theme 1`] = `
       "container": "chrome-container",
       "containerOpen": "chrome-containerOpen",
       "content": "chrome-content",
+      "header": "chrome-header",
       "input": "chrome-input",
       "inputFocused": "chrome-inputFocused",
       "inputOpen": "chrome-inputOpen",
@@ -19296,7 +19427,7 @@ exports[`props.theme should render a custom theme 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -19449,7 +19580,7 @@ exports[`props.theme should render a custom theme 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     this is a command palette
                   </div>
@@ -19604,7 +19735,7 @@ exports[`props.theme should render a custom theme 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   >
                     <div
                       style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -19797,7 +19928,7 @@ exports[`props.theme should render a custom theme 1`] = `
               >
                 <div>
                   <div
-                    class="header"
+                    class="atom-header"
                   />
                   <div
                     aria-expanded="true"
@@ -19950,8 +20081,10 @@ exports[`props.theme should render a custom theme 1`] = `
               >
                 <div>
                   <div
-                    class="header"
-                  />
+                    class="chrome-header"
+                  >
+                    this is a command palette
+                  </div>
                   <div
                     aria-expanded="true"
                     aria-haspopup="listbox"
@@ -20125,8 +20258,10 @@ exports[`props.theme should render a custom theme 1`] = `
               >
                 <div>
                   <div
-                    class="header"
-                  />
+                    class="chrome-header"
+                  >
+                    this is a command palette
+                  </div>
                   <div
                     aria-expanded="true"
                     aria-haspopup="listbox"
@@ -20364,7 +20499,7 @@ exports[`props.theme should render a custom theme 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -20517,7 +20652,7 @@ exports[`props.theme should render a custom theme 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         this is a command palette
                       </div>
@@ -20672,7 +20807,7 @@ exports[`props.theme should render a custom theme 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       >
                         <div
                           style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
@@ -20865,7 +21000,7 @@ exports[`props.theme should render a custom theme 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
+                        class="atom-header"
                       />
                       <div
                         aria-expanded="true"
@@ -21018,8 +21153,10 @@ exports[`props.theme should render a custom theme 1`] = `
                   >
                     <div>
                       <div
-                        class="header"
-                      />
+                        class="chrome-header"
+                      >
+                        this is a command palette
+                      </div>
                       <div
                         aria-expanded="true"
                         aria-haspopup="listbox"
@@ -21227,9 +21364,35 @@ exports[`props.theme should render a custom theme 1`] = `
               tabIndex="-1"
             >
               <div>
-                <div
-                  className="header"
-                />
+                <Header
+                  theme={
+                    Object {
+                      "container": "chrome-container",
+                      "containerOpen": "chrome-containerOpen",
+                      "content": "chrome-content",
+                      "header": "chrome-header",
+                      "input": "chrome-input",
+                      "inputFocused": "chrome-inputFocused",
+                      "inputOpen": "chrome-inputOpen",
+                      "modal": "chrome-modal",
+                      "overlay": "chrome-overlay",
+                      "spinner": "chrome-spinner",
+                      "suggestion": "chrome-suggestion",
+                      "suggestionFirst": "chrome-suggestionFirst",
+                      "suggestionHighlighted": "chrome-suggestionHighlighted",
+                      "suggestionsContainer": "chrome-suggestionsContainer",
+                      "suggestionsContainerOpen": "chrome-suggestionsContainerOpen",
+                      "suggestionsList": "chrome-suggestionsList",
+                      "trigger": "chrome-trigger",
+                    }
+                  }
+                >
+                  <div
+                    className="chrome-header"
+                  >
+                    this is a command palette
+                  </div>
+                </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
                   focusInputOnSuggestionClick={true}
@@ -21303,6 +21466,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       "container": "chrome-container",
                       "containerOpen": "chrome-containerOpen",
                       "content": "chrome-content",
+                      "header": "chrome-header",
                       "input": "chrome-input",
                       "inputFocused": "chrome-inputFocused",
                       "inputOpen": "chrome-inputOpen",
@@ -21398,6 +21562,7 @@ exports[`props.theme should render a custom theme 1`] = `
                         "container": "chrome-container",
                         "containerOpen": "chrome-containerOpen",
                         "content": "chrome-content",
+                        "header": "chrome-header",
                         "input": "chrome-input",
                         "inputFocused": "chrome-inputFocused",
                         "inputOpen": "chrome-inputOpen",
@@ -21638,7 +21803,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -21671,6 +21836,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",
@@ -21836,7 +22002,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -21869,6 +22035,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",
@@ -22034,7 +22201,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -22067,6 +22234,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",
@@ -22233,7 +22401,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -22267,6 +22435,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",
@@ -22433,7 +22602,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -22466,6 +22635,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",
@@ -22631,7 +22801,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -22664,6 +22834,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",
@@ -22829,7 +23000,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                     ]
                                   }
                                   display="modal"
-                                  header={null}
+                                  header="this is a command palette"
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
@@ -22862,6 +23033,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       "container": "chrome-container",
                                       "containerOpen": "chrome-containerOpen",
                                       "content": "chrome-content",
+                                      "header": "chrome-header",
                                       "input": "chrome-input",
                                       "inputFocused": "chrome-inputFocused",
                                       "inputOpen": "chrome-inputOpen",

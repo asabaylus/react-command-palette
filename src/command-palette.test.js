@@ -98,9 +98,11 @@ describe("props.header", () => {
         open
       />
     );
-    const header = commandPalette.find(".header");
+    const header = commandPalette.find("Header");
     expect(
-      header.contains(<div className="header">this is a command palette</div>)
+      header.contains(
+        <div className="atom-header">this is a command palette</div>
+      )
     ).toBeTruthy();
   });
 
@@ -108,7 +110,7 @@ describe("props.header", () => {
     const commandPalette = mount(
       <CommandPalette commands={mockCommands} header={sampleHeader()} open />
     );
-    const header = commandPalette.find(".header");
+    const header = commandPalette.find(".atom-header");
     expect(header.contains(sampleHeader())).toBeTruthy();
     expect(header).toMatchSnapshot();
   });
@@ -134,6 +136,7 @@ describe("props.theme", () => {
       <CommandPalette
         commands={mockCommands}
         RenderCommand={sampleChromeCommand}
+        header="this is a command palette"
         theme={chromeTheme}
         open
       />
@@ -142,6 +145,9 @@ describe("props.theme", () => {
     // verify the four primary components have the correct classNames
     expect(
       commandPalette.find("button").hasClass("chrome-trigger")
+    ).toBeTruthy();
+    expect(
+      commandPalette.find("Header > div").hasClass("chrome-header")
     ).toBeTruthy();
     expect(commandPalette.find("Modal").hasClass("chrome-modal")).toBeTruthy();
     expect(commandPalette.find("input").hasClass("chrome-input")).toBeTruthy();
