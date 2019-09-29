@@ -42,7 +42,8 @@
     "react/no-danger": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-filename-extension": ["error", {"extensions": [".js"]}],
-    "react/prefer-stateless-function": [true, { "ignorePureComponents": true }],
+    "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
+    "react/jsx-props-no-spreading": [0],
     "object-curly-newline": [0],
     "react/require-default-props": 0,
     "class-methods-use-this": [0]
