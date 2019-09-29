@@ -85,6 +85,7 @@ class CommandPalette extends React.Component {
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
+    this.getReactModalParent = this.getReactModalParent.bind(this);
     this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
     this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(
       this
@@ -174,6 +175,11 @@ class CommandPalette extends React.Component {
     //   suggestions: []
     // });
     return true;
+  }
+
+  getReactModalParent() {
+    const { reactModalParentSelector } = this.props;
+    return document.querySelector(reactModalParentSelector);
   }
 
   afterOpenModal() {
@@ -293,6 +299,7 @@ class CommandPalette extends React.Component {
         <ReactModal
           appElement={document.body}
           isOpen={showModal}
+          parentSelector={this.getReactModalParent}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
           className={theme.modal}
@@ -339,6 +346,7 @@ CommandPalette.defaultProps = {
   onRequestClose: noop,
   closeOnSelect: false,
   display: "modal",
+  reactModalParentSelector: "body",
   renderCommand: null,
   theme: defaultTheme
 };
@@ -425,6 +433,13 @@ CommandPalette.propTypes = {
   /** closeOnSelect a boolean, when true selecting an item will immendiately close the
    * command-palette  */
   closeOnSelect: PropTypes.bool,
+
+  /** a selector compatible with querySelector. By default, the modal portal will be
+   * appended to the document's body. You can choose a different parent element by
+   * selector. If you do this, please ensure that your app element is set correctly. The
+   * app element should not be a parent of the modal, to prevent modal content from being
+   * hidden to screenreaders while it is open. */
+  reactModalParentSelector: PropTypes.string,
 
   /** a React.func that defines the layout and contents of the commands in the
    * command list. For complete documentation see the storybook notes. */

@@ -239,6 +239,28 @@ describe("props.alwaysRenderCommands", () => {
   });
 });
 
+describe("props.reactModalParentSelector", () => {
+  it("should render render reat-modal in the target element.", () => {
+    // add a div with #main id to the global body
+    const modalRoot = global.document.createElement("div");
+    modalRoot.setAttribute("id", "main");
+    const body = global.document.querySelector("body");
+    body.appendChild(modalRoot);
+
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        reactModalParentSelector="#main"
+        open
+      />
+    );
+
+    expect(commandPalette).toBeTruthy();
+    expect(global.document.querySelector("#main").hasChildNodes()).toBeTruthy();
+    expect(commandPalette).toMatchSnapshot();
+  });
+});
+
 describe("Opening the palette", () => {
   it("auto-focuses the input", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
