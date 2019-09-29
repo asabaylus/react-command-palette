@@ -131,7 +131,9 @@
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
-    "react-modal": "^3.11.1"
+    "react-frame": "^2.2.21",
+    "react-frame-component": "^4.1.1",
+    "react-modal": "^3.10.1"
   },
   "files": [
     "dist",

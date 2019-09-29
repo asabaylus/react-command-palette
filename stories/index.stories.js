@@ -43,6 +43,8 @@ import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
 
+import Frame from "react-frame-component";
+
 // add noop command to this big list of command names
 function addCommandToArray(c) {
   return c.map(item => ({
@@ -58,6 +60,14 @@ function Trigger() {
     </button>
   );
 }
+
+const styleSheet = (
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://raw.githubusercontent.com/asabaylus/react-command-palette/master/themes/atom.css"
+  />
+);
 
 const proccessedCommands = addCommandToArray(lotsOfCommands);
 
@@ -75,15 +85,20 @@ storiesOf("Command Palette", module)
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
   .add("with everything", () => (
-    <CommandPalette
-      commands={commands}
-      renderCommand={sampleAtomCommand}
-      header={sampleHeader()}
-      maxDisplayed={6}
-      trigger={Trigger()}
-      hotKeys="shift+/"
-      open
-    />
+    <div>
+      frame
+      <Frame head={styleSheet}>
+        <CommandPalette
+          commands={commands}
+          renderCommand={sampleAtomCommand}
+          header={sampleHeader()}
+          maxDisplayed={6}
+          trigger={Trigger()}
+          hotKeys="shift+/"
+          open
+        />
+      </Frame>
+    </div>
   ))
   .add("with a theme", () => {
     const label = "theme";
@@ -196,7 +211,9 @@ storiesOf("Command Palette", module)
       alwaysRenderCommands={boolean("alwaysRenderCommands", false)}
     />
   ))
-  .add("with custom hotkeys", () => <CommandPalette commands={commands} hotKeys="/" />)
+  .add("with custom hotkeys", () => (
+    <CommandPalette commands={commands} hotKeys="/" />
+  ))
   .add("with custom header", () => (
     <CommandPalette commands={commands} header={sampleHeader()} open />
   ))
