@@ -291,4 +291,13 @@ storiesOf("Command Palette", module)
         open
       />
     );
-  });
+  })
+  .add("with reactModalParentSelector", () => (
+    <div id="main">
+      <CommandPalette
+        commands={commands}
+        reactModalParentSelector="#main"
+        open
+      />
+    </div>
+  ));

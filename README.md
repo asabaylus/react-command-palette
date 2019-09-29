@@ -120,6 +120,8 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
     ...
   ```
 
+* ```reactModalParentSelector``` a selector compatible with querySelector. By default, the modal portal will be appended to the document's body. You can choose a different parent element by selector. If you do this, please ensure that your app element is set correctly. The app element should not be a parent of the modal, to prevent modal content from being hidden to screenreaders while it is open. 
+
 * ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
   
   ```jsx
