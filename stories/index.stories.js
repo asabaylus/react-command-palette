@@ -85,20 +85,18 @@ storiesOf("Command Palette", module)
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
   .add("with everything", () => (
-    <div>
-      frame
-      <Frame head={styleSheet}>
-        <CommandPalette
-          commands={commands}
-          renderCommand={sampleAtomCommand}
-          header={sampleHeader()}
-          maxDisplayed={6}
-          trigger={Trigger()}
-          hotKeys="shift+/"
-          open
-        />
-      </Frame>
-    </div>
+    <Frame head={styleSheet} id="target">
+      <CommandPalette
+        commands={commands}
+        renderCommand={sampleAtomCommand}
+        reactModalParentSelector="iframe"
+        header={sampleHeader()}
+        maxDisplayed={6}
+        trigger={Trigger()}
+        hotKeys="shift+/"
+        open
+      />
+    </Frame>
   ))
   .add("with a theme", () => {
     const label = "theme";
