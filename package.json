@@ -122,7 +122,7 @@
     "rollup-plugin-postcss": "2.0.3",
     "rollup-plugin-postcss-modules": "^2.0.1",
     "rollup-plugin-replace": "^2.2.0",
-    "storybook-chromatic": "^2.2.2",
+    "storybook-chromatic": "^3.0.0",
     "storybook-readme": "^5.0.8",
     "typescript": "^3.6.3"
   },
