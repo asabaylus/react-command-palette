@@ -43,7 +43,11 @@ import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
 
-import Frame from "react-frame-component";
+for (const a of document.querySelectorAll("button")) {
+
+    console.log(a.textContent);
+
+}
 
 // add noop command to this big list of command names
 function addCommandToArray(c) {
@@ -85,18 +89,15 @@ storiesOf("Command Palette", module)
   .addDecorator(withTests({ results }))
   .addParameters({ jest: ["command-palette.test.js"] })
   .add("with everything", () => (
-    <Frame head={styleSheet} id="target">
-      <CommandPalette
-        commands={commands}
-        renderCommand={sampleAtomCommand}
-        reactModalParentSelector="iframe"
-        header={sampleHeader()}
-        maxDisplayed={6}
-        trigger={Trigger()}
-        hotKeys="shift+/"
-        open
-      />
-    </Frame>
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleAtomCommand}
+      header={sampleHeader()}
+      maxDisplayed={6}
+      trigger={Trigger()}
+      hotKeys="shift+/"
+      open
+    />
   ))
   .add("with a theme", () => {
     const label = "theme";
