@@ -2,7 +2,7 @@ import React from "react";
 import "./sampleSublimeCommand.css";
 
 export default function sampleChromeCommand(suggestion) {
-  const { name, highlight, category, shortcut } = suggestion;
+  const { name, highlight, shortcut } = suggestion;
   return (
     <div>
       {highlight ? (
