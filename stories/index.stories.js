@@ -206,7 +206,7 @@ storiesOf("Command Palette", module)
         default command palette will be used.
         `
       }
-∏    }
+    }
   )
   .add("alwaysRenderCommands false", () => (
     <CommandPalette
