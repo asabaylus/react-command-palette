@@ -23,7 +23,7 @@ const DefaultSpinnerComponent = props => {
 // a "Loading..." string that visible only to screen readers
 const CustomSpinnerComponent = props => {
   const { spinner, display, theme = "atom-spinner" } = props;
-  let cssClass = "spinner";
+  let cssClass;
   if (display === "inline") {
     cssClass = `spinner ${theme} inline`;
   } else {
