@@ -8,6 +8,7 @@ WAI-ARIA compliant React command palette like the one in Atom and Sublime
 [![Test Coverage](https://api.codeclimate.com/v1/badges/761754992fe0cd293c40/test_coverage)](https://codeclimate.com/github/asabaylus/react-command-palette/test_coverage)
 ![npm](https://img.shields.io/npm/v/react-command-palette.svg)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=asabaylus/react-command-palette)](https://dependabot.com)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/asabaylus/react-command-palette.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/asabaylus/react-command-palette/context:javascript)
 
 [![Screenshot](https://www.dropbox.com/s/7dogg4v7vfkzvgs/react-command-palette.gif?raw=1)](https://www.dropbox.com/s/7dogg4v7vfkzvgs/react-command-palette.gif?raw=1)
 
