@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
-import { storiesOf, addDecorator } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 
 // storybook addons
 import {
@@ -206,7 +206,7 @@ storiesOf("Command Palette", module)
         default command palette will be used.
         `
       }
-    }
+∏    }
   )
   .add("alwaysRenderCommands false", () => (
     <CommandPalette
