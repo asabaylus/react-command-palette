@@ -2,7 +2,8 @@
 /*  global dom:true */
 /*  eslint
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
-  "function-paren-newline":0  */
+  "function-paren-newline":0,
+  no-new:0 */
 
 import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
@@ -280,13 +281,15 @@ describe("Opening the palette", () => {
     expect(spyOnAfterOpen).toHaveBeenCalled();
   });
 
-  it("fires the onRequestClose event", done => {
-    const spyOnClose = jest.fn(() => expect(spyOnClose).toHaveBeenCalled());
-    const commandPalette = mount(
-      <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} />
-    );
-    commandPalette.find("button").simulate("click");
-    done();
+  it("fires the onRequestClose event", () => {
+    new Promise(done => {
+      const spyOnClose = jest.fn(() => expect(spyOnClose).toHaveBeenCalled());
+      const commandPalette = mount(
+        <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} />
+      );
+      commandPalette.find("button").simulate("click");
+      done();
+    });
   });
 
   it("displays the suggestion list", () => {
@@ -397,9 +400,6 @@ describe("Filtering the commands and pressing enter", () => {
     expect(spyOnChange.mock.calls).toHaveLength(1);
     expect(wrapper.state("value")).toEqual("F");
   });
-
-  // TODO:
-  it("should execute the command when enter is pressed", () => {});
 });
 
 describe("Command List", () => {

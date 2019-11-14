@@ -24,6 +24,7 @@
   },
   "parser": "babel-eslint",
   "rules": {
+    "jest/no-mocks-import": [0],
     "prettier/prettier": "error",
     "react/forbid-prop-types": "off",
     "quotes": [0],
