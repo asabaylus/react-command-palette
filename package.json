@@ -87,6 +87,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babelrc-rollup": "^3.0.0",
+    "canvas": "^2.6.0",
     "codecov": "^3.6.1",
     "concurrently": "^5.0.0",
     "core-js": "^3.4.1",
@@ -102,7 +103,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-xss": "^0.1.9",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
@@ -131,7 +132,7 @@
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
-    "react-modal": "^3.10.1"
+    "react-modal": "^3.11.1"
   },
   "files": [
     "dist",
