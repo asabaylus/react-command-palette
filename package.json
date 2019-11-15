@@ -39,8 +39,8 @@
   },
   "homepage": "https://github.com/asabaylus/react-command-palette#readme",
   "peerDependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -98,11 +98,11 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.0.3",
+    "eslint-plugin-jest": "^23.0.4",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.2.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-xss": "^0.1.9",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
@@ -111,8 +111,8 @@
     "postcss": "^7.0.21",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "regenerator-runtime": "^0.13.3",
     "rollup": "^1.27.0",
     "rollup-plugin-babel": "^4.3.3",
