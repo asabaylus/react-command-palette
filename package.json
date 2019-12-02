@@ -127,7 +127,7 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "fast-deep-equal": "^2.0.1",
+    "fast-deep-equal": "^3.0.1",
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.3",
     "react-autosuggest": "^9.4.3",
