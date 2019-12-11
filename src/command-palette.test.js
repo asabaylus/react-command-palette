@@ -272,6 +272,29 @@ describe("Opening the palette", () => {
     }, 0);
   });
 
+  it("fires the onSelect event and returns the selected suggestion", () => {
+    const spyOnSelect = jest.fn();
+    const command = jest.fn();
+    const mock = {
+      suggestion: {
+        name: "Manage Tenants",
+        command
+      },
+      suggestionValue: "Manage Tenants",
+      suggestionIndex: 0,
+      sectionIndex: null,
+      method: "click"
+    };
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} onSelect={spyOnSelect} />
+    );
+    commandPalette.instance().onSuggestionSelected({}, mock);
+    expect(spyOnSelect).toHaveBeenCalled();
+    // verify the callback contains the selected item
+    expect(spyOnSelect.mock.calls[0][0]).toBe(mock.suggestion);
+    spyOnSelect.mockClear();
+  });
+
   it("fires the onAfterOpen event", () => {
     const spyOnAfterOpen = jest.fn();
     const commandPalette = mount(
