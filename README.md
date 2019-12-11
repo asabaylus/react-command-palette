@@ -83,6 +83,18 @@ const commands = [{
     scoreFn: null 
   ```
 
+* ```onSelect``` a function that's called when the selected suggestion changes, given the user selects an item or the user clear the selection. It's called with the item that was selected or null.
+
+  ```js
+    <CommandPalette
+      commands={commands}
+      onSelect={command => {
+        alert(`A suggested command was selected: \n
+        ${JSON.stringify(command)}
+        `);
+      }}
+    />
+  ```
 
 * ```onAfterOpen``` a function that fires after the command palette modal is opened.
 

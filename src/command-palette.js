@@ -75,6 +75,7 @@ class CommandPalette extends React.Component {
     };
 
     this.onChange = this.onChange.bind(this);
+    this.onSelect = this.onSelect.bind(this);
     // eslint-disable-next-line prettier/prettier
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
@@ -135,6 +136,11 @@ class CommandPalette extends React.Component {
     });
   }
 
+  onSelect(suggestion = null) {
+    const { onSelect } = this.props;
+    return onSelect(suggestion);
+  }
+
   onSuggestionSelected(event, { suggestion }) {
     if (typeof suggestion.command === "function") {
       // after the command executes display a spinner
@@ -142,6 +148,8 @@ class CommandPalette extends React.Component {
         suggestion,
         "command",
         after(() => {
+          // fire onSelect event
+          this.onSelect(suggestion);
           // close the command palette if prop is set
           const { closeOnSelect, display } = this.props;
           if (closeOnSelect && display === "modal") {
@@ -342,6 +350,7 @@ CommandPalette.defaultProps = {
   header: null,
   maxDisplayed: 7,
   options: fuzzysortOptions,
+  onSelect: noop,
   onAfterOpen: noop,
   onRequestClose: noop,
   closeOnSelect: false,
@@ -397,6 +406,11 @@ CommandPalette.propTypes = {
   /** open a boolean, when set to true it forces the command palette to be displayed.
    * Defaults to "false". */
   open: PropTypes.bool,
+
+  /** onSelect a function that's called when the selected suggestion changes, given the
+   * user selects an item or the user clear the selection. It's called with the item that
+   * was selected or null */
+  onSelect: PropTypes.func,
 
   /** onAfterOpen a function that fires after the command palette modal is opened */
   onAfterOpen: PropTypes.func,

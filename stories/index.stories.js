@@ -176,6 +176,17 @@ storiesOf("Command Palette", module)
   .add("without a modal", () => (
     <CommandPalette commands={commands} display="inline" />
   ))
+  .add("onSelect", () => (
+    <CommandPalette
+      open
+      commands={commands}
+      onSelect={command => {
+        alert(`A suggested command was selected: \n
+        ${JSON.stringify(command)}
+        `);
+      }}
+    />
+  ))
   .add("onAfterOpen", () => (
     <CommandPalette
       commands={commands}
