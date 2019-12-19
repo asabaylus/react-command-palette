@@ -166,7 +166,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
 
-  Note: the _suggestion.hightlight_ will contain the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then then _suggestion.hightlight_ will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](examples/sampleChromeCommand.js)
+  Note: the _suggestion.highlight_ will contain the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then then _suggestion.highlight_ will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](examples/sampleChromeCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
