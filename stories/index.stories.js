@@ -27,13 +27,16 @@ import sampleSublimeCommand from "../examples/sampleSublimeCommand";
 // sample styles
 import "../themes/chrome.css";
 import "../themes/atom.css";
+import "../themes/vscode.css";
 import "../themes/sublime.css";
+import vscode from "../themes/vscode-theme";
 import chrome from "../themes/chrome-theme";
 import atom from "../themes/atom-theme";
 import sublime from "../themes/sublime-theme";
 
 // command palette scripts
 import CommandPalette from "../src/command-palette";
+import VSCodeCommandPalette from "../examples/sampleVSCodeCommandPalette";
 import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
@@ -101,6 +104,7 @@ storiesOf("Command Palette", module)
     const label = "theme";
     const options = {
       Chrome: chrome,
+      "VS Code": vscode,
       Atom: atom,
       Sublime: sublime
     };
@@ -108,6 +112,9 @@ storiesOf("Command Palette", module)
     const theme = select(label, options, defaultValue);
     return <CommandPalette commands={commands} theme={theme} open />;
   })
+  .add("vscode theme", () => (
+    <VSCodeCommandPalette />
+  ))
   .add("atom theme", () => (
     <CommandPalette
       commands={commands}

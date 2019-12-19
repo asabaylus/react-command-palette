@@ -1,0 +1,63 @@
+
+.vscode-category {
+    float: left;
+    margin-right: 2px;
+    color: rgb(204, 204, 204);
+    margin-right: 6px;
+    border-radius: 2px;
+    padding: 1.2px 3px;
+    font-weight: 450;
+}
+.vscode-shortcut {
+    float: right;
+    margin-right: 2px;
+}
+
+.vscode-name {
+    color: rgb(153, 153, 153);
+}
+
+.vscode-hidden {
+    display: none;
+}
+
+.vscode-shortcut > kbd {
+}
+
+.vscode-shortcut-part {
+    color: rgb(204, 204, 204) ;
+    background-color: rgb(63, 63, 64);
+    border-radius: 3px;
+    display: inline-block;
+    font-family: inherit;
+    font-size: .85em;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    margin-left: 0.45454545em;
+    padding: 0 0.375em;
+    margin-top: -0.375em;
+    -webkit-box-shadow: inset 0px -2px 2px 0px rgba(163,163,163,0.15);
+    -moz-box-shadow: inset 0px -2px 2px 0px rgba(163,163,163,0.15);
+    box-shadow: inset 0px -2px 2px 0px rgba(163,163,163,0.15);
+}
+
+.vscode-suggestionHighlighted .vscode-shortcut-part,
+.vscode-suggestionFirst .vscode-shortcut-part {
+    background-color: rgb(27, 61, 84);
+}
+
+.vscode-category.Command {
+    background: rgb(67, 130, 207);
+}
+.vscode-category.Navigate {
+    background: rgb(165, 22, 134);
+}
+.vscode-category.Network {
+    background: rgb(46, 41, 194);
+}
+.vscode-category.System {
+    background: rgb(49, 177, 79);
+}
+.vscode-category.Drawer {
+    background: rgb(206, 64, 206);
+}

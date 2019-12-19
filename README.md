@@ -68,7 +68,9 @@ const commands = [{
 
 * ```placeholder``` a _string_ that contains a short text description which is displayed inside the the input field until the user provides input. Defaults to "Type a command".
 
-* ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_command+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
+* ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_command+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice).
+
+* ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
@@ -84,6 +86,7 @@ const commands = [{
     allowTypo: true, 
     scoreFn: null 
   ```
+
 * ```onChange``` a function that's called when the input value changes. It returns the current value of the input field.
 
   ```js
@@ -121,7 +124,7 @@ const commands = [{
     />
   ```
 
-* ```onRequestClose``` a function that will be run when the modal is requested to be closed (either by clicking on overlay or pressing ESC)
+* ```onRequestClose``` a function that will be run when the modal is requested to be closed (either by clicking on overlay or pressing ESC).
 Note: It is not called if _open_ is changed by other means. Passes through to the [react-modal prop](http://reactcommunity.org/react-modal/examples/on_request_close.html).
 
   ```js
@@ -191,7 +194,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
 * ```showSpinnerOnSelect``` a _boolean_ which displays a loading indicator immediatley after a command has been selected. When true the spinner is enabled when false the spinner is disabled. Useful when dynamicaly loading lists of a commands based upon user selections. Setting both _showSpinnerOnSelect_ and  _closeOnSelect_ to false will keep the palette open and allow a new list of commands to be loaded, see the [dynamic lists example](https://codesandbox.io/s/react-command-palette-dynamic-lists-p2xo9?fontsize=14&hidenavigation=1&theme=dark).
 
 * ```theme``` enables you to apply a sample or custom look-n-feel.
-  Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
+  Several themes are included with the command palette, Chrome, VS Code and Atom. The CommandPalette comes with the Atom theme enabled default.
 
   Creating a new theme is also possible. There are four base components that should be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All four can be styled at once via the `theme` prop.
 

@@ -1,0 +1,127 @@
+.vscode-modal {
+  min-width: 405px;
+  max-width: 90%;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 0px none;
+  background: rgb(37, 37, 38);
+  overflow: auto;
+  outline: none;
+  padding: 0px;
+  padding-bottom: 6px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 10px 0px;
+  margin-right: -50%;
+  transform: translate(-50%, 0px);
+}
+
+.vscode-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vscode-header {
+  color: rgb(204, 204, 204);
+}
+
+.vscode-content {
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  border: 0px none;
+  background: rgb(48, 51, 56);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  padding: 10px;
+  min-width: 350px;
+}
+
+.vscode-container {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.vscode-containerOpen {}
+
+.vscode-input {
+  max-width: -webkit-fill-available;
+  max-width: -moz-available;
+  max-width: stretch;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid rgb(28,92,136);
+  padding: 6px;
+  outline: none;
+  background-color:rgb(60, 60, 60);
+  color: rgb(204, 204, 204);
+  margin: 6px 6px 0px 6px;
+  caret-color: rgb(204, 204, 204);
+}
+
+.vscode-input::placeholder { 
+  color: rgb(170, 170, 170);
+}
+
+.vscode-inputOpen {
+}
+
+.vscode-inputFocused {
+}
+
+.vscode-suggestionsContainer {
+}
+
+.vscode-suggestionsContainerOpen {
+  overflow: hidden;
+  max-height: 315px;
+  margin-top: 10px
+}
+
+.vscode-suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+.vscode-suggestion {
+  color: rgb(204, 204, 204);
+  font-size: 1.1em;
+  border-top: 0px none;
+  padding: 6px;
+  padding-left: 13px;
+  cursor: pointer;
+}
+
+.vscode-suggestion b {
+  color:rgb(0, 151, 251);
+  font-weight: bold;
+}
+.vscode-suggestionFirst, .vscode-suggestionHighlighted {
+  color: #ffffff;
+  background-color: rgb(6, 47, 74);
+}
+
+.vscode-suggestionHighlighted:hover {
+  background-color: rgb(42, 45, 46)
+}
+
+.vscode-spinner {
+  border-top: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-right: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.4em solid rgba(255, 255, 255, 0.2);
+  border-left: 0.4em solid rgb(255, 255, 255);
+}
