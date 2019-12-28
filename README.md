@@ -82,6 +82,18 @@ const commands = [{
     allowTypo: true, 
     scoreFn: null 
   ```
+* ```onChange``` a function that's called when the input value changes. It returns the current value of the input field.
+
+  ```js
+    <CommandPalette
+      commands={commands}
+      onChange={value => {
+        alert(`The input value was changed to: \n
+        ${value}
+        `);
+      }}
+    />
+  ```
 
 * ```onSelect``` a function that's called when the selected suggestion changes, given the user selects an item or the user clear the selection. It's called with the item that was selected or null.
 
@@ -165,7 +177,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
   />
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
-
+ 
   Note: the _suggestion.highlight_ will contain the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then then _suggestion.highlight_ will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](examples/sampleChromeCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
