@@ -87,6 +87,7 @@ exports[`Command List renders a command 1`] = `
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
+  onChange={[Function]}
   onRequestClose={[Function]}
   onSelect={[Function]}
   open={true}
@@ -1748,6 +1749,9 @@ exports[`Command List renders a command 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="ReactModalPortal"
+          />
           <div
             class="ReactModalPortal"
           />
@@ -5489,6 +5493,9 @@ exports[`Command List renders a command 1`] = `
               />
               <div
                 class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
@@ -7949,6 +7956,7 @@ exports[`Command List renders a command 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -8155,6 +8163,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
+  onChange={[Function]}
   onRequestClose={[Function]}
   onSelect={[Function]}
   options={
@@ -9815,6 +9824,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="ReactModalPortal"
+          />
           <div
             class="ReactModalPortal"
           />
@@ -12042,6 +12054,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               />
               <div
                 class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
@@ -13009,6 +13024,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -13208,6 +13224,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -13407,6 +13424,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -13607,6 +13625,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -13808,6 +13827,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -14007,6 +14027,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -14206,6 +14227,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   options={
@@ -14377,6 +14399,7 @@ exports[`props.display should not display the command palette in react-modal whe
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
+  onChange={[Function]}
   onRequestClose={[Function]}
   onSelect={[Function]}
   options={
@@ -14860,6 +14883,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -15059,6 +15083,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -15258,6 +15283,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -15458,6 +15484,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -15659,6 +15686,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -15858,6 +15886,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -16057,6 +16086,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         hotKeys="command+shift+p"
                         maxDisplayed={7}
                         onAfterOpen={[Function]}
+                        onChange={[Function]}
                         onRequestClose={[Function]}
                         onSelect={[Function]}
                         options={
@@ -16320,6 +16350,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
+  onChange={[Function]}
   onRequestClose={[Function]}
   onSelect={[Function]}
   open={true}
@@ -19945,6 +19976,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -20145,6 +20177,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -20345,6 +20378,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -20546,6 +20580,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -20748,6 +20783,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -20948,6 +20984,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -21148,6 +21185,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -21321,6 +21359,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
+  onChange={[Function]}
   onRequestClose={[Function]}
   onSelect={[Function]}
   open={true}
@@ -23563,6 +23602,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -23764,6 +23804,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -23965,6 +24006,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -24167,6 +24209,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -24370,6 +24413,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -24571,6 +24615,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -24772,6 +24817,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -24945,6 +24991,7 @@ exports[`props.theme should render a custom theme 1`] = `
   hotKeys="command+shift+p"
   maxDisplayed={7}
   onAfterOpen={[Function]}
+  onChange={[Function]}
   onRequestClose={[Function]}
   onSelect={[Function]}
   open={true}
@@ -27501,6 +27548,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -27702,6 +27750,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -27903,6 +27952,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -28105,6 +28155,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -28308,6 +28359,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -28509,6 +28561,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}
@@ -28710,6 +28763,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   hotKeys="command+shift+p"
                                   maxDisplayed={7}
                                   onAfterOpen={[Function]}
+                                  onChange={[Function]}
                                   onRequestClose={[Function]}
                                   onSelect={[Function]}
                                   open={true}

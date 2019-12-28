@@ -295,6 +295,19 @@ describe("Opening the palette", () => {
     spyOnSelect.mockClear();
   });
 
+  it('fires the onChange event and returns the "newValue"', () => {
+    const spyOnChange = jest.fn();
+    const mock = { newValue: "foo" };
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} onChange={spyOnChange} />
+    );
+    commandPalette.instance().onChange({}, mock);
+    expect(spyOnChange).toHaveBeenCalled();
+    // verify the spyed callback contains returns the input value
+    expect(spyOnChange.mock.calls[0][0]).toBe(mock.newValue);
+    spyOnChange.mockClear();
+  });
+
   it("fires the onAfterOpen event", () => {
     const spyOnAfterOpen = jest.fn();
     const commandPalette = mount(

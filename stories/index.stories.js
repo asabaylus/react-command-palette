@@ -187,6 +187,17 @@ storiesOf("Command Palette", module)
       }}
     />
   ))
+  .add("onChange", () => (
+    <CommandPalette
+      open
+      commands={commands}
+      onChange={value => {
+        alert(`The input value was changed to: \n
+        ${value}
+        `);
+      }}
+    />
+  ))
   .add("onAfterOpen", () => (
     <CommandPalette
       commands={commands}
