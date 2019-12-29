@@ -261,11 +261,12 @@ class CommandPalette extends React.Component {
     const {
       maxDisplayed,
       spinner,
+      showSpinnerOnSelect,
       display,
       header,
       alwaysRenderCommands
     } = this.props;
-    if (isLoading) {
+    if (isLoading && showSpinnerOnSelect) {
       return (
         <PaletteSpinner
           spinner={spinner}
@@ -361,6 +362,7 @@ CommandPalette.defaultProps = {
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
+  showSpinnerOnSelect: true,
   theme: defaultTheme
 };
 
@@ -446,10 +448,15 @@ CommandPalette.propTypes = {
   /** spinner a string or a React.ComponentType that is displayed when the user selects
    * an item. If a custom spinner is not set then the default spinner will be used. If
    * custom component or string is provided then it will automatically be wrapped inside
-   * a div with a _role="status" attribute. If a component is provided then it will be be
+   * a div with a role="status" attribute. If a component is provided then it will be be
    * wrapped in a div that also contains a sibling node with a div contain "Loading..."
    * visible only to screen readers. */
   spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+
+  /** showSpinnerOnSelect a boolean which displays a loading indicator immediatley after
+   * a command has been selected. When true the spinner is enabled when false the spinner
+   * is disabled. */
+  showSpinnerOnSelect: PropTypes.bool,
 
   /** closeOnSelect a boolean, when true selecting an item will immendiately close the
    * command-palette  */
