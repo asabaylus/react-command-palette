@@ -59,8 +59,8 @@ Header.propTypes = {
 };
 
 class CommandPalette extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     // Autosuggest is a controlled component.
     // This means that you need to provide an input value
@@ -70,7 +70,7 @@ class CommandPalette extends React.Component {
     this.state = {
       isLoading: false,
       showModal: false,
-      value: "",
+      value: this.props.defaultInputValue,
       suggestions: allSuggestions
     };
 
@@ -99,10 +99,10 @@ class CommandPalette extends React.Component {
   }
 
   componentDidMount() {
-    const { hotKeys, open, display } = this.props;
+    const { hotKeys, open, display, defaultInputValue } = this.props;
 
     this.setState({
-      value: "",
+      value: defaultInputValue,
       suggestions: this.fetchData()
     });
 
@@ -121,11 +121,11 @@ class CommandPalette extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { commands } = this.props;
+    const { commands, defaultInputValue } = this.props;
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
-        value: "",
+        value: defaultInputValue,
         suggestions: this.fetchData()
       });
     }
@@ -232,9 +232,10 @@ class CommandPalette extends React.Component {
   }
 
   handleOpenModal() {
+    const { defaultInputValue } = this.props;
     this.setState({
       showModal: true,
-      value: "",
+      value: defaultInputValue,
       suggestions: allSuggestions
     });
   }
@@ -351,6 +352,7 @@ CommandPalette.defaultProps = {
   alwaysRenderCommands: true,
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
+  defaultInputValue: ">",
   header: null,
   maxDisplayed: 7,
   options: fuzzysortOptions,
@@ -404,6 +406,9 @@ CommandPalette.propTypes = {
   /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
    * Defaults to "command+shift+p" */
   hotKeys: PropTypes.string,
+
+  /** defaultInputValue a string that determine the value of the text in the input field.  * By default the defaultInputValue is null. */
+  defaultInputValue: PropTypes.string,
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
    * (https://github.com/farzher/fuzzysort#options) */

@@ -82,6 +82,7 @@ exports[`Command List renders a command 1`] = `
       },
     ]
   }
+  defaultInputValue=">"
   display="modal"
   header={null}
   hotKeys="command+shift+p"
@@ -460,7 +461,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -615,7 +616,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -808,7 +809,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -961,7 +962,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -1139,7 +1140,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -1292,7 +1293,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="What do you want to do?"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -1454,7 +1455,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -1607,7 +1608,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer"
@@ -1652,7 +1653,7 @@ exports[`Command List renders a command 1`] = `
                         class="atom-input atom-inputOpen"
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -1806,7 +1807,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -1965,7 +1966,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -2118,7 +2119,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -2271,7 +2272,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -2427,7 +2428,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -2580,7 +2581,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -2733,7 +2734,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -2886,7 +2887,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -3039,7 +3040,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -3192,7 +3193,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -3345,7 +3346,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -3565,7 +3566,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -3651,7 +3652,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -3804,7 +3805,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -4378,7 +4379,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -4533,7 +4534,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -4726,7 +4727,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -4879,7 +4880,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5057,7 +5058,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5210,7 +5211,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="What do you want to do?"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5372,7 +5373,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5525,7 +5526,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer"
@@ -5570,7 +5571,7 @@ exports[`Command List renders a command 1`] = `
                             class="atom-input atom-inputOpen"
                             placeholder="Type a command"
                             type="text"
-                            value=""
+                            value=">"
                           />
                           <div
                             class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5724,7 +5725,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5883,7 +5884,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6036,7 +6037,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6189,7 +6190,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6345,7 +6346,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6498,7 +6499,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6651,7 +6652,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6804,7 +6805,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -6957,7 +6958,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -7110,7 +7111,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -7263,7 +7264,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -7483,7 +7484,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -7569,7 +7570,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -7722,7 +7723,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -8310,6 +8311,7 @@ exports[`Command List renders a command 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -8518,6 +8520,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       },
     ]
   }
+  defaultInputValue=">"
   display="modal"
   header={null}
   hotKeys="command+shift+p"
@@ -8895,7 +8898,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -9050,7 +9053,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -9243,7 +9246,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -9396,7 +9399,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -9574,7 +9577,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -9727,7 +9730,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="What do you want to do?"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -9889,7 +9892,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10042,7 +10045,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer"
@@ -10087,7 +10090,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         class="atom-input atom-inputOpen"
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10241,7 +10244,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10400,7 +10403,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10553,7 +10556,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10707,7 +10710,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen atom-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10882,7 +10885,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen atom-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -11299,7 +11302,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -11454,7 +11457,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -11647,7 +11650,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -11800,7 +11803,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -11978,7 +11981,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12131,7 +12134,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="What do you want to do?"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12293,7 +12296,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12446,7 +12449,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer"
@@ -12491,7 +12494,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             class="atom-input atom-inputOpen"
                             placeholder="Type a command"
                             type="text"
-                            value=""
+                            value=">"
                           />
                           <div
                             class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12645,7 +12648,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12804,7 +12807,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12957,7 +12960,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -13111,7 +13114,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen atom-inputFocused"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -13341,7 +13344,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       "onChange": [Function],
                       "onKeyDown": undefined,
                       "placeholder": "Type a command",
-                      "value": "",
+                      "value": ">",
                     }
                   }
                   multiSection={false}
@@ -13433,7 +13436,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         "onFocus": [Function],
                         "onKeyDown": [Function],
                         "placeholder": "Type a command",
-                        "value": "",
+                        "value": ">",
                       }
                     }
                     itemProps={[Function]}
@@ -13489,7 +13492,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     renderItemsContainer={[Function]}
@@ -13537,7 +13540,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         onKeyDown={[Function]}
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         className="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -13601,7 +13604,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           renderItem={[Function]}
                           renderItemData={
                             Object {
-                              "query": "",
+                              "query": ">",
                             }
                           }
                           sectionIndex={null}
@@ -13638,7 +13641,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -13738,6 +13741,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -13839,7 +13843,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -13939,6 +13943,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -14040,7 +14045,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -14140,6 +14145,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -14242,7 +14248,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -14342,6 +14348,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -14445,7 +14452,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -14545,6 +14552,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -14646,7 +14654,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -14746,6 +14754,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -14847,7 +14856,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -14947,6 +14956,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -15120,6 +15130,7 @@ exports[`props.display should not display the command palette in react-modal whe
       },
     ]
   }
+  defaultInputValue=">"
   display="inline"
   header={null}
   hotKeys="command+shift+p"
@@ -15208,7 +15219,7 @@ exports[`props.display should not display the command palette in react-modal whe
             "onChange": [Function],
             "onKeyDown": undefined,
             "placeholder": "Type a command",
-            "value": "",
+            "value": ">",
           }
         }
         multiSection={false}
@@ -15300,7 +15311,7 @@ exports[`props.display should not display the command palette in react-modal whe
               "onFocus": [Function],
               "onKeyDown": [Function],
               "placeholder": "Type a command",
-              "value": "",
+              "value": ">",
             }
           }
           itemProps={[Function]}
@@ -15356,7 +15367,7 @@ exports[`props.display should not display the command palette in react-modal whe
           renderItem={[Function]}
           renderItemData={
             Object {
-              "query": "",
+              "query": ">",
             }
           }
           renderItemsContainer={[Function]}
@@ -15404,7 +15415,7 @@ exports[`props.display should not display the command palette in react-modal whe
               onKeyDown={[Function]}
               placeholder="Type a command"
               type="text"
-              value=""
+              value=">"
             />
             <div
               className="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -15468,7 +15479,7 @@ exports[`props.display should not display the command palette in react-modal whe
                 renderItem={[Function]}
                 renderItemData={
                   Object {
-                    "query": "",
+                    "query": ">",
                   }
                 }
                 sectionIndex={null}
@@ -15505,7 +15516,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -15605,6 +15616,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -15706,7 +15718,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -15806,6 +15818,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -15907,7 +15920,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -16007,6 +16020,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -16109,7 +16123,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -16209,6 +16223,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -16312,7 +16327,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -16412,6 +16427,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -16513,7 +16529,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -16613,6 +16629,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -16714,7 +16731,7 @@ exports[`props.display should not display the command palette in react-modal whe
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     sectionIndex={null}
@@ -16814,6 +16831,7 @@ exports[`props.display should not display the command palette in react-modal whe
                             },
                           ]
                         }
+                        defaultInputValue=">"
                         display="inline"
                         header={null}
                         hotKeys="command+shift+p"
@@ -17079,6 +17097,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
       },
     ]
   }
+  defaultInputValue=">"
   display="modal"
   header={null}
   hotKeys="command+shift+p"
@@ -17457,7 +17476,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -17612,7 +17631,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -17805,7 +17824,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -17958,7 +17977,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -18136,7 +18155,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -18289,7 +18308,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="What do you want to do?"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -18451,7 +18470,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -18604,7 +18623,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer"
@@ -18650,7 +18669,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                         class="atom-input atom-inputOpen atom-inputFocused"
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -18826,7 +18845,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen atom-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -19243,7 +19262,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -19398,7 +19417,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -19591,7 +19610,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -19744,7 +19763,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -19922,7 +19941,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -20075,7 +20094,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="What do you want to do?"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -20237,7 +20256,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -20390,7 +20409,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer"
@@ -20436,7 +20455,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                             class="atom-input atom-inputOpen atom-inputFocused"
                             placeholder="Type a command"
                             type="text"
-                            value=""
+                            value=">"
                           />
                           <div
                             class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -20667,7 +20686,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       "onChange": [Function],
                       "onKeyDown": undefined,
                       "placeholder": "Type a command",
-                      "value": "",
+                      "value": ">",
                     }
                   }
                   multiSection={false}
@@ -20759,7 +20778,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                         "onFocus": [Function],
                         "onKeyDown": [Function],
                         "placeholder": "Type a command",
-                        "value": "",
+                        "value": ">",
                       }
                     }
                     itemProps={[Function]}
@@ -20815,7 +20834,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     renderItemsContainer={[Function]}
@@ -20863,7 +20882,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                         onKeyDown={[Function]}
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         className="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -20927,7 +20946,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           renderItem={[Function]}
                           renderItemData={
                             Object {
-                              "query": "",
+                              "query": ">",
                             }
                           }
                           sectionIndex={null}
@@ -20964,7 +20983,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -21064,6 +21083,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -21166,7 +21186,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -21266,6 +21286,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -21368,7 +21389,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -21468,6 +21489,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -21571,7 +21593,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -21671,6 +21693,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -21775,7 +21798,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -21875,6 +21898,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -21977,7 +22001,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -22077,6 +22101,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -22179,7 +22204,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -22279,6 +22304,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -22454,6 +22480,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
       },
     ]
   }
+  defaultInputValue=">"
   display="modal"
   header={null}
   hotKeys="command+shift+p"
@@ -22832,7 +22859,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -22987,7 +23014,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -23180,7 +23207,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -23334,7 +23361,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       class="atom-input atom-inputOpen atom-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -23509,7 +23536,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       class="atom-input atom-inputOpen atom-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -23926,7 +23953,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -24081,7 +24108,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -24274,7 +24301,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -24428,7 +24455,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           class="atom-input atom-inputOpen atom-inputFocused"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -24658,7 +24685,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                       "onChange": [Function],
                       "onKeyDown": undefined,
                       "placeholder": "Type a command",
-                      "value": "",
+                      "value": ">",
                     }
                   }
                   multiSection={false}
@@ -24750,7 +24777,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         "onFocus": [Function],
                         "onKeyDown": [Function],
                         "placeholder": "Type a command",
-                        "value": "",
+                        "value": ">",
                       }
                     }
                     itemProps={[Function]}
@@ -24806,7 +24833,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     renderItemsContainer={[Function]}
@@ -24854,7 +24881,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         onKeyDown={[Function]}
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         className="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -24918,7 +24945,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                           renderItem={[Function]}
                           renderItemData={
                             Object {
-                              "query": "",
+                              "query": ">",
                             }
                           }
                           sectionIndex={null}
@@ -24955,7 +24982,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -25056,6 +25083,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -25158,7 +25186,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -25259,6 +25287,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -25361,7 +25390,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -25462,6 +25491,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -25565,7 +25595,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -25666,6 +25696,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -25770,7 +25801,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -25871,6 +25902,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -25973,7 +26005,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -26074,6 +26106,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -26176,7 +26209,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -26277,6 +26310,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header={null}
                                   hotKeys="command+shift+p"
@@ -26452,6 +26486,7 @@ exports[`props.theme should render a custom theme 1`] = `
       },
     ]
   }
+  defaultInputValue=">"
   display="modal"
   header="this is a command palette"
   hotKeys="command+shift+p"
@@ -26830,7 +26865,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -26985,7 +27020,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -27178,7 +27213,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -27331,7 +27366,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -27487,7 +27522,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="chrome-input chrome-inputOpen chrome-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
@@ -27664,7 +27699,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="chrome-input chrome-inputOpen chrome-inputFocused"
                       placeholder="Type a command"
                       type="text"
-                      value=""
+                      value=">"
                     />
                     <div
                       class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
@@ -28081,7 +28116,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -28236,7 +28271,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -28429,7 +28464,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -28582,7 +28617,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -28738,7 +28773,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           class="chrome-input chrome-inputOpen chrome-inputFocused"
                           placeholder="Type a command"
                           type="text"
-                          value=""
+                          value=">"
                         />
                         <div
                           class="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
@@ -28970,7 +29005,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       "onChange": [Function],
                       "onKeyDown": undefined,
                       "placeholder": "Type a command",
-                      "value": "",
+                      "value": ">",
                     }
                   }
                   multiSection={false}
@@ -29062,7 +29097,7 @@ exports[`props.theme should render a custom theme 1`] = `
                         "onFocus": [Function],
                         "onKeyDown": [Function],
                         "placeholder": "Type a command",
-                        "value": "",
+                        "value": ">",
                       }
                     }
                     itemProps={[Function]}
@@ -29118,7 +29153,7 @@ exports[`props.theme should render a custom theme 1`] = `
                     renderItem={[Function]}
                     renderItemData={
                       Object {
-                        "query": "",
+                        "query": ">",
                       }
                     }
                     renderItemsContainer={[Function]}
@@ -29166,7 +29201,7 @@ exports[`props.theme should render a custom theme 1`] = `
                         onKeyDown={[Function]}
                         placeholder="Type a command"
                         type="text"
-                        value=""
+                        value=">"
                       />
                       <div
                         className="chrome-suggestionsContainer chrome-suggestionsContainerOpen"
@@ -29230,7 +29265,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           renderItem={[Function]}
                           renderItemData={
                             Object {
-                              "query": "",
+                              "query": ">",
                             }
                           }
                           sectionIndex={null}
@@ -29267,7 +29302,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -29368,6 +29403,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"
@@ -29470,7 +29506,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -29571,6 +29607,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"
@@ -29673,7 +29710,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -29774,6 +29811,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"
@@ -29877,7 +29915,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -29978,6 +30016,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"
@@ -30082,7 +30121,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -30183,6 +30222,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"
@@ -30285,7 +30325,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -30386,6 +30426,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"
@@ -30488,7 +30529,7 @@ exports[`props.theme should render a custom theme 1`] = `
                               renderItem={[Function]}
                               renderItemData={
                                 Object {
-                                  "query": "",
+                                  "query": ">",
                                 }
                               }
                               sectionIndex={null}
@@ -30589,6 +30630,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                       },
                                     ]
                                   }
+                                  defaultInputValue=">"
                                   display="modal"
                                   header="this is a command palette"
                                   hotKeys="command+shift+p"

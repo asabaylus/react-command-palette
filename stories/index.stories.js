@@ -230,6 +230,13 @@ storiesOf("Command Palette", module)
       }
     }
   )
+  .add("defaultInputValue", () => (
+    <CommandPalette
+      commands={commands}
+      open
+      defaultInputValue=">"
+    />
+  ))
   .add("alwaysRenderCommands", () => (
     <CommandPalette
       commands={commands}
