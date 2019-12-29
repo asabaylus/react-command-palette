@@ -230,11 +230,18 @@ storiesOf("Command Palette", module)
       }
     }
   )
-  .add("alwaysRenderCommands false", () => (
+  .add("alwaysRenderCommands", () => (
     <CommandPalette
       commands={commands}
       open
       alwaysRenderCommands={boolean("alwaysRenderCommands", false)}
+    />
+  ))
+  .add("showSpinnerOnSelect", () => (
+    <CommandPalette
+      commands={commands}
+      open
+      showSpinnerOnSelect={boolean("showSpinnerOnSelect", true)}
     />
   ))
   .add("with custom hotkeys", () => (

@@ -69,6 +69,36 @@ describe("Loading indicator", () => {
     expect(spinner.text()).toEqual("Waiting");
     expect(spinner).toMatchSnapshot();
   });
+
+  it("should hide the spinner when props.showSpinnerOnSelect is false", () => {
+    const wrapper = mount(
+      <CommandPalette
+        commands={mockCommands}
+        showSpinnerOnSelect={false}
+        open
+      />
+    );
+    wrapper
+      .find(".item")
+      .first()
+      .simulate("click");
+    const spinner = wrapper.find(".default-spinner");
+    expect(spinner.exists()).toBeFalsy();
+  });
+
+  it("should show the spinner when props.showSpinnerOnSelect is true", () => {
+    const wrapper = mount(
+      <CommandPalette commands={mockCommands} showSpinnerOnSelect open />
+    );
+    wrapper
+      .find(".item")
+      .first()
+      .simulate("click");
+    const spinner = wrapper.find(".default-spinner");
+    expect(wrapper.state("isLoading")).toBeTruthy();
+    expect(wrapper.props("showSpinnerOnSelect")).toBeTruthy();
+    expect(spinner.exists()).toBeTruthy();
+  });
 });
 
 describe("Search", () => {
