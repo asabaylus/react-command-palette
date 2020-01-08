@@ -1115,7 +1115,7 @@ exports[`Command List renders a command 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=">"
+                      value="?"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -5339,7 +5339,7 @@ exports[`Command List renders a command 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=">"
+                          value="?"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -10164,7 +10164,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=">"
+                      value="?"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -12874,7 +12874,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=">"
+                          value="?"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -19354,7 +19354,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=">"
+                      value="?"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -21446,7 +21446,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=">"
+                          value="?"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -29355,7 +29355,7 @@ exports[`props.theme should render a custom theme 1`] = `
                       class="atom-input atom-inputOpen"
                       placeholder="Type a command"
                       type="text"
-                      value=">"
+                      value="?"
                     />
                     <div
                       class="atom-suggestionsContainer atom-suggestionsContainerOpen"
@@ -30912,7 +30912,7 @@ exports[`props.theme should render a custom theme 1`] = `
                           class="atom-input atom-inputOpen"
                           placeholder="Type a command"
                           type="text"
-                          value=">"
+                          value="?"
                         />
                         <div
                           class="atom-suggestionsContainer atom-suggestionsContainerOpen"

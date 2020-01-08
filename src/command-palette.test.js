@@ -166,8 +166,7 @@ describe("props.defaultInputValue", () => {
     const wrapper = mount(
       <CommandPalette commands={mockCommands} defaultInputValue="?" open />
     );
-    wrapper.find("input").simulate("change", { target: { value: ">" } });
-    expect(wrapper.state("value")).toEqual(">");
+    expect(wrapper.state("value")).toEqual("?");
   });
 
   it(`should not display the defaultInputValue after the user enters a new 
