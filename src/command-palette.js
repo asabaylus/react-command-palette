@@ -59,8 +59,10 @@ Header.propTypes = {
 };
 
 class CommandPalette extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    const { defaultInputValue } = this.props;
 
     // Autosuggest is a controlled component.
     // This means that you need to provide an input value
@@ -70,7 +72,7 @@ class CommandPalette extends React.Component {
     this.state = {
       isLoading: false,
       showModal: false,
-      value: "",
+      value: defaultInputValue,
       suggestions: allSuggestions
     };
 
@@ -78,7 +80,9 @@ class CommandPalette extends React.Component {
     this.onSelect = this.onSelect.bind(this);
 
     // eslint-disable-next-line prettier/prettier
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
+      this
+    );
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
     );
@@ -87,7 +91,6 @@ class CommandPalette extends React.Component {
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
-    this.getReactModalParent = this.getReactModalParent.bind(this);
     this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
     this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(
       this
@@ -102,7 +105,6 @@ class CommandPalette extends React.Component {
     const { hotKeys, open, display } = this.props;
 
     this.setState({
-      value: "",
       suggestions: this.fetchData()
     });
 
@@ -125,7 +127,6 @@ class CommandPalette extends React.Component {
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
-        value: "",
         suggestions: this.fetchData()
       });
     }
@@ -188,11 +189,6 @@ class CommandPalette extends React.Component {
     return true;
   }
 
-  getReactModalParent() {
-    const { reactModalParentSelector } = this.props;
-    return document.querySelector(reactModalParentSelector);
-  }
-
   afterOpenModal() {
     const { onAfterOpen } = this.props;
     this.focusInput();
@@ -234,7 +230,6 @@ class CommandPalette extends React.Component {
   handleOpenModal() {
     this.setState({
       showModal: true,
-      value: "",
       suggestions: allSuggestions
     });
   }
@@ -300,7 +295,7 @@ class CommandPalette extends React.Component {
 
   renderModalCommandPalette() {
     const { showModal } = this.state;
-    const { trigger, theme } = this.props;
+    const { trigger, theme, reactModalParentSelector } = this.props;
     return (
       <div className="react-command-palette">
         <PaletteTrigger
@@ -311,7 +306,9 @@ class CommandPalette extends React.Component {
         <ReactModal
           appElement={document.body}
           isOpen={showModal}
-          parentSelector={this.getReactModalParent}
+          parentSelector={() =>
+            document.querySelector(reactModalParentSelector)
+          }
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
           className={theme.modal}
@@ -351,6 +348,7 @@ CommandPalette.defaultProps = {
   alwaysRenderCommands: true,
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
+  defaultInputValue: "",
   header: null,
   maxDisplayed: 7,
   options: fuzzysortOptions,
@@ -404,6 +402,10 @@ CommandPalette.propTypes = {
   /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
    * Defaults to "command+shift+p" */
   hotKeys: PropTypes.string,
+
+  /** defaultInputValue a string that determines the value of the text in the input field.
+   * By default the defaultInputValue is an empty string. */
+  defaultInputValue: PropTypes.string,
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
    * (https://github.com/farzher/fuzzysort#options) */

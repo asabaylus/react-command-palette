@@ -161,6 +161,25 @@ describe("props.renderCommand", () => {
   });
 });
 
+describe("props.defaultInputValue", () => {
+  it("should display the defaultInputValue prop when the palette is first opened", () => {
+    const wrapper = mount(
+      <CommandPalette commands={mockCommands} defaultInputValue="?" open />
+    );
+    wrapper.find("input").simulate("change", { target: { value: ">" } });
+    expect(wrapper.state("value")).toEqual(">");
+  });
+
+  it(`should not display the defaultInputValue after the user enters a new 
+  value`, () => {
+    const wrapper = mount(
+      <CommandPalette commands={mockCommands} defaultInputValue="?" open />
+    );
+    wrapper.find("input").simulate("change", { target: { value: ">" } });
+    expect(wrapper.state("value")).toEqual(">");
+  });
+});
+
 describe("props.theme", () => {
   it("should render a custom theme", () => {
     const commandPalette = mount(

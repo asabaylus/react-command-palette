@@ -62,13 +62,15 @@ const commands = [{
 
 * ```display``` one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal".
 
-* ```header``` a _string_ or a _React.ComponentType_ which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. The header is not displayed by default. see: examples/sampleInstruction.js for reference
+* ```header``` a _string_ or a _React.ComponentType_ which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. The header is not displayed by default. see: examples/sampleInstruction.js for reference.
 
 * ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediateley when the user makes a selection. Defaults to "false".
 
 * ```placeholder``` a _string_ that contains a short text description which is displayed inside the the input field until the user provides input. Defaults to "Type a command".
 
 * ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_command+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
+
+* ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
 * ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likley to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
 
@@ -186,7 +188,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
 
 * ```spinner``` a _string_ or a _React.ComponentType_ that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status"_ attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers.
 
-* ```showSpinnerOnSelect``` a _boolean_ which displays a loading indicator immediatley after a command has been selected. When true the spinner is enabled when false the spinner is disabled. Useful when dynamicaly loading lists of a commands based upon user selections. Setting both _showSpinnerOnSelect_ and  _closeOnSelect_ to false will keep the palette open and allow a new list of commands to be loaded, see the (dynamic lists example)[https://codesandbox.io/s/react-command-palette-dynamic-lists-p2xo9?fontsize=14&hidenavigation=1&theme=dark].
+* ```showSpinnerOnSelect``` a _boolean_ which displays a loading indicator immediatley after a command has been selected. When true the spinner is enabled when false the spinner is disabled. Useful when dynamicaly loading lists of a commands based upon user selections. Setting both _showSpinnerOnSelect_ and  _closeOnSelect_ to false will keep the palette open and allow a new list of commands to be loaded, see the [dynamic lists example](https://codesandbox.io/s/react-command-palette-dynamic-lists-p2xo9?fontsize=14&hidenavigation=1&theme=dark).
 
 * ```theme``` enables you to apply a sample or custom look-n-feel.
   Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
