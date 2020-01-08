@@ -192,7 +192,7 @@ storiesOf("Command Palette", module)
       open
       commands={commands}
       onChange={value => {
-        alert(`The input value was changed to: \n
+        console.log(`The input value was changed to: \n
         ${value}
         `);
       }}
@@ -230,6 +230,13 @@ storiesOf("Command Palette", module)
       }
     }
   )
+  .add("defaultInputValue", () => (
+    <CommandPalette
+      commands={commands}
+      open
+      defaultInputValue=">"
+    />
+  ))
   .add("alwaysRenderCommands", () => (
     <CommandPalette
       commands={commands}
