@@ -212,7 +212,7 @@ class CommandPalette extends React.Component {
     // FIXME: apply "esc" on the modal instead of input
     // so that pressing esc on loading spinner works too
     const { hotKeys } = this.props;
-    Mousetrap(this.commandPaletteInput.input).bind(["esc", hotKeys], () => {
+    Mousetrap(this.commandPaletteInput.input).bind(["esc"].concat(hotKeys), () => {
       this.handleCloseModal();
       return false;
     });
@@ -394,14 +394,18 @@ CommandPalette.propTypes = {
     return null;
   },
 
-  /** placeholder a string that contains a short text description which is displaye
+  /** placeholder a string that contains a short text description which is displayed
    * inside the the input field until the user provides input. Defaults to "Type a
    * command" */
   placeholder: PropTypes.string,
 
-  /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
+  /** hotKeys a string or array of strings that contain a keyboard shortcut for
+   * opening/closing the palette.
    * Defaults to "command+shift+p" */
-  hotKeys: PropTypes.string,
+  hotKeys: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string
+  ]),
 
   /** defaultInputValue a string that determines the value of the text in the input field.
    * By default the defaultInputValue is an empty string. */
