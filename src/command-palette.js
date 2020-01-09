@@ -212,10 +212,13 @@ class CommandPalette extends React.Component {
     // FIXME: apply "esc" on the modal instead of input
     // so that pressing esc on loading spinner works too
     const { hotKeys } = this.props;
-    Mousetrap(this.commandPaletteInput.input).bind(["esc"].concat(hotKeys), () => {
-      this.handleCloseModal();
-      return false;
-    });
+    Mousetrap(this.commandPaletteInput.input).bind(
+      ["esc"].concat(hotKeys),
+      () => {
+        this.handleCloseModal();
+        return false;
+      }
+    );
   }
 
   handleCloseModal() {
