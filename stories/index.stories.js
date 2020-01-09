@@ -254,6 +254,9 @@ storiesOf("Command Palette", module)
   .add("with custom hotkeys", () => (
     <CommandPalette commands={commands} hotKeys="/" />
   ))
+  .add("with multiple custom hotkeys", () => (
+    <CommandPalette commands={commands} hotKeys={["/", "command+k"]} />
+  ))
   .add("with custom header", () => (
     <CommandPalette commands={commands} header={sampleHeader()} open />
   ))

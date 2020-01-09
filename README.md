@@ -68,7 +68,7 @@ const commands = [{
 
 * ```placeholder``` a _string_ that contains a short text description which is displayed inside the the input field until the user provides input. Defaults to "Type a command".
 
-* ```hotKeys``` a _string_ that contains a keyboard shortcut for opening/closing the palette. Defaults to "_command+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)  
+* ```hotKeys``` a _string_ or _array of strings_ that contain a keyboard shortcut for opening/closing the palette. Defaults to "_command+shift+p_". Uses [mousetrap key combos](https://craig.is/killing/mice)
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
