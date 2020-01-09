@@ -433,6 +433,32 @@ describe("Opening the palette", () => {
       expect(spyHandleOpenModal).toHaveBeenCalled();
       expect(spyHandleOpenModal.mock.calls).toHaveLength(1);
       expect(commandPalette.state("showModal")).toEqual(true);
+      spyHandleOpenModal.mockClear();
+    });
+
+    it('opens the commandPalette when pressing either "ctrl+shift+p" or "ctrl+k" keys', () => {
+      const spyHandleOpenModal = jest.spyOn(
+        CommandPalette.prototype,
+        "handleOpenModal"
+      );
+      const commandPalette = mount(
+        <CommandPalette hotKeys={["ctrl+shift+p", "ctrl+k"]} commands={mockCommands} />
+      );
+      commandPalette.instance().handleCloseModal();
+      // verify modal is hidden before we try to open it
+      expect(commandPalette.state("showModal")).toBe(false);
+
+      Mousetrap.trigger("ctrl+shift+p");
+      expect(commandPalette.state("showModal")).toEqual(true);
+      commandPalette.instance().handleCloseModal();
+
+      Mousetrap.trigger("ctrl+k");
+      expect(commandPalette.state("showModal")).toEqual(true);
+      commandPalette.instance().handleCloseModal();
+
+      expect(spyHandleOpenModal).toHaveBeenCalled();
+      expect(spyHandleOpenModal.mock.calls).toHaveLength(2);
+      spyHandleOpenModal.mockClear();
     });
   });
 });
