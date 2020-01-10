@@ -442,7 +442,10 @@ describe("Opening the palette", () => {
         "handleOpenModal"
       );
       const commandPalette = mount(
-        <CommandPalette hotKeys={["ctrl+shift+p", "ctrl+k"]} commands={mockCommands} />
+        <CommandPalette
+          hotKeys={["ctrl+shift+p", "ctrl+k"]}
+          commands={mockCommands}
+        />
       );
       commandPalette.instance().handleCloseModal();
       // verify modal is hidden before we try to open it
