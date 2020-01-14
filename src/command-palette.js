@@ -132,12 +132,25 @@ class CommandPalette extends React.Component {
     }
   }
 
+
+  // returns user typed queries only
+  // wont return selections or keyboard navigation
+  // just input
+  getInputOnTextTyped(event, newValue) {
+    const { key, type } = event;
+    if (key !== "ArrowUp" && key !== "ArrowDown" && type !== "click") {
+      console.log(event.type, newValue);
+      return newValue;
+    } 
+    return null;
+  }
+
   onChange(event, { newValue }) {
     const { onChange } = this.props;
     this.setState({
       value: newValue
     });
-    return onChange(newValue);
+    return onChange(newValue, this.getInputOnTextTyped(event, newValue));
   }
 
   onSelect(suggestion = null) {
