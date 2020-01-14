@@ -436,7 +436,8 @@ describe("Opening the palette", () => {
       spyHandleOpenModal.mockClear();
     });
 
-    it('opens the commandPalette when pressing either "ctrl+shift+p" or "ctrl+k" keys', () => {
+    it(`opens the commandPalette when pressing 
+    either "ctrl+shift+p" or "ctrl+k" keys`, () => {
       const spyHandleOpenModal = jest.spyOn(
         CommandPalette.prototype,
         "handleOpenModal"
