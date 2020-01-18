@@ -89,12 +89,12 @@ const commands = [{
   ```js
     <CommandPalette
       commands={commands}
-      onChange={(value, query) => {
-        alert(`The input value was changed to:\n
-        ${value}\n
+      onChange={(inputValue, userQuery) => {
+        alert(`The input inputVwas changed to:\n
+        ${inputValue}\n
         \n
         The user typed:\n
-        ${query}
+        ${userQuery}
         `);
       }}
     />

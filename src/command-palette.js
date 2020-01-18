@@ -192,7 +192,12 @@ class CommandPalette extends React.Component {
   // just input
   getInputOnTextTyped(event, newValue) {
     const { key, type } = event;
-    if (key !== "ArrowUp" && key !== "ArrowDown" && type !== "click") {
+    if (
+      key !== "ArrowUp" &&
+      key !== "ArrowDown" &&
+      key !== "Enter" &&
+      type !== "click"
+    ) {
       return newValue;
     }
     return null;
