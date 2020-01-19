@@ -84,14 +84,17 @@ const commands = [{
     allowTypo: true, 
     scoreFn: null 
   ```
-* ```onChange``` a function that's called when the input value changes. It returns the current value of the input field.
+* ```onChange``` a function that's called when the input value changes. It returns two values: the current value of the input field followed by the users typed input. The query ignores keyboard navigation and clicks.
 
   ```js
     <CommandPalette
       commands={commands}
-      onChange={value => {
-        alert(`The input value was changed to: \n
-        ${value}
+      onChange={(inputValue, userQuery) => {
+        alert(`The input inputVwas changed to:\n
+        ${inputValue}\n
+        \n
+        The user typed:\n
+        ${userQuery}
         `);
       }}
     />

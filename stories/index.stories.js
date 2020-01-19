@@ -191,10 +191,14 @@ storiesOf("Command Palette", module)
     <CommandPalette
       open
       commands={commands}
-      onChange={value => {
-        console.log(`The input value was changed to: \n
-        ${value}
-        `);
+      onChange={(inputValue, userQuery) => {
+        console.log(
+          `The input value was changed to: \n
+        ${inputValue}\n
+        The user typed:\n
+        ${userQuery}
+        `
+        );
       }}
     />
   ))

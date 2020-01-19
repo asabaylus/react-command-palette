@@ -80,9 +80,7 @@ class CommandPalette extends React.Component {
     this.onSelect = this.onSelect.bind(this);
 
     // eslint-disable-next-line prettier/prettier
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
-      this
-    );
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
     );
@@ -137,7 +135,7 @@ class CommandPalette extends React.Component {
     this.setState({
       value: newValue
     });
-    return onChange(newValue);
+    return onChange(newValue, this.getInputOnTextTyped(event, newValue));
   }
 
   onSelect(suggestion = null) {
@@ -187,6 +185,22 @@ class CommandPalette extends React.Component {
     //   suggestions: []
     // });
     return true;
+  }
+
+  // returns user typed queries only
+  // wont return selections or keyboard navigation
+  // just input
+  getInputOnTextTyped(event, newValue) {
+    const { key, type } = event;
+    if (
+      key !== "ArrowUp" &&
+      key !== "ArrowDown" &&
+      key !== "Enter" &&
+      type !== "click"
+    ) {
+      return newValue;
+    }
+    return null;
   }
 
   afterOpenModal() {
