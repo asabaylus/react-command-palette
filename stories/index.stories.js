@@ -157,7 +157,7 @@ storiesOf("Command Palette", module)
     ),
     {
       info: {
-        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imageine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
+        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imagine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
       }
     }
   )

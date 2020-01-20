@@ -398,7 +398,7 @@ CommandPalette.propTypes = {
     })
   ).isRequired,
 
-  /** maxDisplayed a number between 1 and 500 that determines the maxium number of
+  /** maxDisplayed a number between 1 and 500 that determines the maximum number of
    * commands that will be rendered on screen. Defaults to 7 */
   maxDisplayed(props, propName, componentName) {
     const { maxDisplayed } = props;
@@ -476,12 +476,12 @@ CommandPalette.propTypes = {
    * visible only to screen readers. */
   spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
-  /** showSpinnerOnSelect a boolean which displays a loading indicator immediatley after
+  /** showSpinnerOnSelect a boolean which displays a loading indicator immediately after
    * a command has been selected. When true the spinner is enabled when false the spinner
    * is disabled. */
   showSpinnerOnSelect: PropTypes.bool,
 
-  /** closeOnSelect a boolean, when true selecting an item will immendiately close the
+  /** closeOnSelect a boolean, when true selecting an item will immediately close the
    * command-palette  */
   closeOnSelect: PropTypes.bool,
 
