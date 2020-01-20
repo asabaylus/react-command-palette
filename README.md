@@ -64,7 +64,9 @@ const commands = [{
 
 * ```header``` a _string_ or a _React.ComponentType_ which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. The header is not displayed by default. see: examples/sampleInstruction.js for reference.
 
-* ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediateley when the user makes a selection. Defaults to "false".
+* ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediately when the user makes a selection. Defaults to "false".
+
+* ```resetInputOnClose``` a _boolean_ which indicates whether to reset the user's query to `defaultInputValue` when the command palette closes. Defaults to "false".
 
 * ```placeholder``` a _string_ that contains a short text description which is displayed inside the the input field until the user provides input. Defaults to "Type a command".
 
@@ -72,7 +74,7 @@ const commands = [{
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
-* ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likley to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
+* ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likely to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
 
   ```js
     key: "name", // default is "name"
@@ -90,7 +92,7 @@ const commands = [{
     <CommandPalette
       commands={commands}
       onChange={(inputValue, userQuery) => {
-        alert(`The input inputVwas changed to:\n
+        alert(`The input was changed to:\n
         ${inputValue}\n
         \n
         The user typed:\n
@@ -150,10 +152,10 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
     ...
   ```
 
-* ```reactModalParentSelector``` a selector compatible with querySelector. By default, the modal portal will be appended to the document's body. You can choose a different parent element by selector. If you do this, please ensure that your app element is set correctly. The app element should not be a parent of the modal, to prevent modal content from being hidden to screenreaders while it is open. 
+* ```reactModalParentSelector``` a selector compatible with querySelector. By default, the modal portal will be appended to the document's body. You can choose a different parent element by selector. If you do this, please ensure that your app element is set correctly. The app element should not be a parent of the modal, to prevent modal content from being hidden to screenreaders while it is open.
 
-* ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imageine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
-  
+* ```renderCommand``` a _React.func_. By default, react-command-palette will render the suggestion.name_ for each command.  However, if passed a custom react component _renderCommand_ will display the command using any template you can imagine. The _renderCommand_ code signature follows the same coding pattern defined by react-autosuggest's  renderSuggestion property.
+
   ```jsx
   function RenderCommand(suggestion) {
     // A suggestion object will be passed to your custom component for each command
@@ -187,11 +189,11 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
-* ```maxDisplayed``` a _number_ between 1 and 500 that determines the maxium number of commands that will be rendered on screen. Defaults to 7
+* ```maxDisplayed``` a _number_ between 1 and 500 that determines the maximum number of commands that will be rendered on screen. Defaults to 7
 
 * ```spinner``` a _string_ or a _React.ComponentType_ that is displayed when the user selects an item. If a custom spinner is not set then the default spinner will be used. If a custom component or string is provided then it will automatically be wrapped inside a div with a _role="status"_ attribute. If a component is provided then it will be be wrapped in a div that also contains a sibling node with a div contain "Loading..." visible only to screen readers.
 
-* ```showSpinnerOnSelect``` a _boolean_ which displays a loading indicator immediatley after a command has been selected. When true the spinner is enabled when false the spinner is disabled. Useful when dynamicaly loading lists of a commands based upon user selections. Setting both _showSpinnerOnSelect_ and  _closeOnSelect_ to false will keep the palette open and allow a new list of commands to be loaded, see the [dynamic lists example](https://codesandbox.io/s/react-command-palette-dynamic-lists-p2xo9?fontsize=14&hidenavigation=1&theme=dark).
+* ```showSpinnerOnSelect``` a _boolean_ which displays a loading indicator immediately after a command has been selected. When true the spinner is enabled when false the spinner is disabled. Useful when dynamically loading lists of a commands based upon user selections. Setting both _showSpinnerOnSelect_ and  _closeOnSelect_ to false will keep the palette open and allow a new list of commands to be loaded, see the [dynamic lists example](https://codesandbox.io/s/react-command-palette-dynamic-lists-p2xo9?fontsize=14&hidenavigation=1&theme=dark).
 
 * ```theme``` enables you to apply a sample or custom look-n-feel.
   Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
@@ -300,7 +302,7 @@ $ docker run -it -v ${PWD}:/app -p 6006:6006 react-command-palette npm start
 Open your browser to http://localhost:6006/ and you should see the app. Try making a change to the command-palette component within your code editor. You should see the app hot-reload. Kill the server once done.
 
 ### Package for production with Docker:
-CodeFresh.io will autmatically run this build to prepare the package 
+CodeFresh.io will automatically run this build to prepare the package
 for publication to npm whenever a pull request is merged to master.
 
 ## Sponsors

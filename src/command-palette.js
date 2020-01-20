@@ -236,11 +236,15 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
-    const { onRequestClose } = this.props;
+    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
+    const { value } = this.state;
+
     this.setState({
       showModal: false,
-      isLoading: false
+      isLoading: false,
+      value: resetInputOnClose ? defaultInputValue : value
     });
+
     return onRequestClose();
   }
 
@@ -374,6 +378,7 @@ CommandPalette.defaultProps = {
   onAfterOpen: noop,
   onRequestClose: noop,
   closeOnSelect: false,
+  resetInputOnClose: false,
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
@@ -398,7 +403,7 @@ CommandPalette.propTypes = {
     })
   ).isRequired,
 
-  /** maxDisplayed a number between 1 and 500 that determines the maxium number of
+  /** maxDisplayed a number between 1 and 500 that determines the maximum number of
    * commands that will be rendered on screen. Defaults to 7 */
   maxDisplayed(props, propName, componentName) {
     const { maxDisplayed } = props;
@@ -476,14 +481,18 @@ CommandPalette.propTypes = {
    * visible only to screen readers. */
   spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
-  /** showSpinnerOnSelect a boolean which displays a loading indicator immediatley after
+  /** showSpinnerOnSelect a boolean which displays a loading indicator immediately after
    * a command has been selected. When true the spinner is enabled when false the spinner
    * is disabled. */
   showSpinnerOnSelect: PropTypes.bool,
 
-  /** closeOnSelect a boolean, when true selecting an item will immendiately close the
+  /** closeOnSelect a boolean, when true selecting an item will immediately close the
    * command-palette  */
   closeOnSelect: PropTypes.bool,
+
+  /** resetInputOnClose a boolean which indicates whether to reset the user's query
+   * to `defaultInputValue` when the command palette closes. */
+  resetInputOnClose: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by

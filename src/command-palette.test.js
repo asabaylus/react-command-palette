@@ -148,6 +148,41 @@ describe("props.header", () => {
   });
 });
 
+describe("props.resetInputOnClose", () => {
+  it("should not reset input by default", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+
+    commandPalette
+      .find("input")
+      .simulate("change", { target: { value: "my query" } });
+
+    commandPalette.instance().handleCloseModal();
+    commandPalette.instance().handleOpenModal();
+    expect(commandPalette.state("value")).toEqual("my query");
+  });
+
+  it("should reset input to defaultInputValue when resetInputOnClose is set", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        defaultInputValue="default"
+        open
+        resetInputOnClose
+      />
+    );
+
+    commandPalette
+      .find("input")
+      .simulate("change", { target: { value: "my query" } });
+
+    commandPalette.instance().handleCloseModal();
+    commandPalette.instance().handleOpenModal();
+    expect(commandPalette.state("value")).toEqual("default");
+  });
+});
+
 describe("props.renderCommand", () => {
   it("should render a custom command component", () => {
     const commandPalette = mount(

@@ -107,6 +107,7 @@ exports[`Command List renders a command 1`] = `
   placeholder="Type a command"
   reactModalParentSelector="body"
   renderCommand={null}
+  resetInputOnClose={false}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -927,6 +928,90 @@ exports[`Command List renders a command 1`] = `
                         </li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="my query"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="default"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
                   </div>
                 </div>
               </div>
@@ -5761,6 +5846,90 @@ exports[`Command List renders a command 1`] = `
                         class="atom-header"
                       />
                       <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="my query"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="default"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
                         aria-expanded="true"
                         aria-haspopup="listbox"
                         aria-owns="react-autowhatever-1"
@@ -10124,6 +10293,7 @@ exports[`Command List renders a command 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -10332,6 +10502,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   placeholder="Type a command"
   reactModalParentSelector="body"
   renderCommand={null}
+  resetInputOnClose={false}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -11152,6 +11323,90 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         </li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="my query"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="default"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
                   </div>
                 </div>
               </div>
@@ -13881,6 +14136,90 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                         class="atom-header"
                       />
                       <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="my query"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="default"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
                         aria-expanded="true"
                         aria-haspopup="listbox"
                         aria-owns="react-autowhatever-1"
@@ -16159,6 +16498,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -16361,6 +16701,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -16563,6 +16904,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -16766,6 +17108,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -16970,6 +17313,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -17172,6 +17516,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -17374,6 +17719,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -17548,6 +17894,7 @@ exports[`props.display should not display the command palette in react-modal whe
   placeholder="Type a command"
   reactModalParentSelector="body"
   renderCommand={null}
+  resetInputOnClose={false}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -18034,6 +18381,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -18236,6 +18584,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -18438,6 +18787,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -18641,6 +18991,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -18845,6 +19196,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -19047,6 +19399,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -19249,6 +19602,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         placeholder="Type a command"
                         reactModalParentSelector="body"
                         renderCommand={null}
+                        resetInputOnClose={false}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -19516,6 +19870,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
   placeholder="Type a command"
   reactModalParentSelector="#main"
   renderCommand={null}
+  resetInputOnClose={false}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -20336,6 +20691,90 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                         </li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="my query"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="default"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
                   </div>
                 </div>
               </div>
@@ -22450,6 +22889,90 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                         class="atom-header"
                       />
                       <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="my query"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="default"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
                         aria-expanded="true"
                         aria-haspopup="listbox"
                         aria-owns="react-autowhatever-1"
@@ -24114,6 +24637,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -24317,6 +24841,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -24520,6 +25045,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -24724,6 +25250,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -24929,6 +25456,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -25132,6 +25660,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -25335,6 +25864,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   placeholder="Type a command"
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -25511,6 +26041,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   placeholder="Type a command"
   reactModalParentSelector="body"
   renderCommand={null}
+  resetInputOnClose={false}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -26331,6 +26862,90 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         </li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="my query"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="default"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
                   </div>
                 </div>
               </div>
@@ -27447,6 +28062,90 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                         class="atom-header"
                       />
                       <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="my query"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="default"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
                         aria-expanded="true"
                         aria-haspopup="listbox"
                         aria-owns="react-autowhatever-1"
@@ -28114,6 +28813,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -28318,6 +29018,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -28522,6 +29223,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -28727,6 +29429,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -28933,6 +29636,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -29137,6 +29841,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -29341,6 +30046,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -29517,6 +30223,7 @@ exports[`props.theme should render a custom theme 1`] = `
   placeholder="Type a command"
   reactModalParentSelector="body"
   renderCommand={null}
+  resetInputOnClose={false}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -30337,6 +31044,90 @@ exports[`props.theme should render a custom theme 1`] = `
                         </li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="my query"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="default"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
                   </div>
                 </div>
               </div>
@@ -31916,6 +32707,90 @@ exports[`props.theme should render a custom theme 1`] = `
                         class="atom-header"
                       />
                       <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="my query"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="default"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
                         aria-expanded="true"
                         aria-haspopup="listbox"
                         aria-owns="react-autowhatever-1"
@@ -33046,6 +33921,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -33250,6 +34126,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -33454,6 +34331,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -33659,6 +34537,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -33865,6 +34744,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -34069,6 +34949,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -34273,6 +35154,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   placeholder="Type a command"
                                   reactModalParentSelector="body"
                                   renderCommand={null}
+                                  resetInputOnClose={false}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
