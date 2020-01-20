@@ -236,11 +236,15 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
-    const { onRequestClose } = this.props;
+    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
+    const { value } = this.state;
+
     this.setState({
       showModal: false,
-      isLoading: false
+      isLoading: false,
+      value: resetInputOnClose ? defaultInputValue : value
     });
+
     return onRequestClose();
   }
 
@@ -374,6 +378,7 @@ CommandPalette.defaultProps = {
   onAfterOpen: noop,
   onRequestClose: noop,
   closeOnSelect: false,
+  resetInputOnClose: false,
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
@@ -484,6 +489,10 @@ CommandPalette.propTypes = {
   /** closeOnSelect a boolean, when true selecting an item will immediately close the
    * command-palette  */
   closeOnSelect: PropTypes.bool,
+
+  /** resetInputOnClose a boolean which indicates whether to reset the user's query
+   * to `defaultInputValue` when the command palette closes. */
+  resetInputOnClose: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by
