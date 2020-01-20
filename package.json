@@ -1,6 +1,6 @@
 {
   "name": "react-command-palette",
-  "version": "0.9.0-0",
+  "version": "0.10.0-0",
   "description": "WAI-ARIA compliant React command palette like the one in Atom",
   "main": "dist/main.js",
   "module": "dist/main.es.js",
