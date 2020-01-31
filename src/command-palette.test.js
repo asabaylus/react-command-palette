@@ -21,6 +21,7 @@ import atomTheme from "../themes/atom-theme";
 import vscodeTheme from "../themes/vscode-theme";
 import chromeTheme from "../themes/chrome-theme";
 import sublimeTheme from "../themes/sublime-theme";
+import { clickDown, clickUp, clickEnter } from "./test-helpers";
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -148,6 +149,41 @@ describe("props.header", () => {
     const header = commandPalette.find(".atom-header");
     expect(header.contains(sampleHeader())).toBeTruthy();
     expect(header).toMatchSnapshot();
+  });
+});
+
+describe("props.resetInputOnClose", () => {
+  it("should not reset input by default", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+
+    commandPalette
+      .find("input")
+      .simulate("change", { target: { value: "my query" } });
+
+    commandPalette.instance().handleCloseModal();
+    commandPalette.instance().handleOpenModal();
+    expect(commandPalette.state("value")).toEqual("my query");
+  });
+
+  it("should reset input to defaultInputValue when resetInputOnClose is set", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        defaultInputValue="default"
+        open
+        resetInputOnClose
+      />
+    );
+
+    commandPalette
+      .find("input")
+      .simulate("change", { target: { value: "my query" } });
+
+    commandPalette.instance().handleCloseModal();
+    commandPalette.instance().handleOpenModal();
+    expect(commandPalette.state("value")).toEqual("default");
   });
 });
 
@@ -434,19 +470,6 @@ describe("Opening the palette", () => {
     spyOnSelect.mockClear();
   });
 
-  it('fires the onChange event and returns the "newValue"', () => {
-    const spyOnChange = jest.fn();
-    const mock = { newValue: "foo" };
-    const commandPalette = mount(
-      <CommandPalette commands={mockCommands} onChange={spyOnChange} />
-    );
-    commandPalette.instance().onChange({}, mock);
-    expect(spyOnChange).toHaveBeenCalled();
-    // verify the spyed callback contains returns the input value
-    expect(spyOnChange.mock.calls[0][0]).toBe(mock.newValue);
-    spyOnChange.mockClear();
-  });
-
   it("fires the onAfterOpen event", () => {
     const spyOnAfterOpen = jest.fn();
     const commandPalette = mount(
@@ -524,6 +547,36 @@ describe("Opening the palette", () => {
       expect(spyHandleOpenModal).toHaveBeenCalled();
       expect(spyHandleOpenModal.mock.calls).toHaveLength(1);
       expect(commandPalette.state("showModal")).toEqual(true);
+      spyHandleOpenModal.mockClear();
+    });
+
+    it(`opens the commandPalette when pressing 
+    either "ctrl+shift+p" or "ctrl+k" keys`, () => {
+      const spyHandleOpenModal = jest.spyOn(
+        CommandPalette.prototype,
+        "handleOpenModal"
+      );
+      const commandPalette = mount(
+        <CommandPalette
+          hotKeys={["ctrl+shift+p", "ctrl+k"]}
+          commands={mockCommands}
+        />
+      );
+      commandPalette.instance().handleCloseModal();
+      // verify modal is hidden before we try to open it
+      expect(commandPalette.state("showModal")).toBe(false);
+
+      Mousetrap.trigger("ctrl+shift+p");
+      expect(commandPalette.state("showModal")).toEqual(true);
+      commandPalette.instance().handleCloseModal();
+
+      Mousetrap.trigger("ctrl+k");
+      expect(commandPalette.state("showModal")).toEqual(true);
+      commandPalette.instance().handleCloseModal();
+
+      expect(spyHandleOpenModal).toHaveBeenCalled();
+      expect(spyHandleOpenModal.mock.calls).toHaveLength(2);
+      spyHandleOpenModal.mockClear();
     });
   });
 });
@@ -561,6 +614,157 @@ describe("Closing the palette", () => {
     expect(spyHandleCloseModal).toHaveBeenCalled();
     expect(spyHandleCloseModal.mock.calls).toHaveLength(1);
     expect(commandPalette.state("showModal")).toEqual(false);
+  });
+});
+
+describe("props.onChange", () => {
+  describe("Opening the Command Palette", () => {
+    it("should fire onChange", () => {
+      const spyOnChange = jest.fn();
+      const mock = { newValue: "foo" };
+      const commandPalette = mount(
+        <CommandPalette commands={mockCommands} onChange={spyOnChange} />
+      );
+      commandPalette.instance().onChange({}, mock);
+      expect(spyOnChange).toHaveBeenCalled();
+      // verify the spyed callback contains returns the input value
+      expect(spyOnChange.mock.calls[0][0]).toBe(mock.newValue);
+      spyOnChange.mockClear();
+    });
+  });
+
+  describe("Typing text into the input field", () => {
+    it("should fire onChange", () => {
+      const spyOnChange = jest.fn();
+      const commandPalette = mount(
+        <CommandPalette commands={mockCommands} onChange={spyOnChange} open />
+      );
+      commandPalette
+        .find("input")
+        .simulate("change", { target: { value: "f" } });
+      expect(spyOnChange).toHaveBeenCalled();
+      spyOnChange.mockClear();
+    });
+
+    it("should return the value of the input field", () => {
+      const spyOnChange = jest.fn();
+      const mock = { newValue: "foo" };
+      const commandPalette = mount(
+        <CommandPalette commands={mockCommands} onChange={spyOnChange} open />
+      );
+      commandPalette
+        .find("input")
+        .simulate("change", { target: { value: mock.newValue } });
+      expect(spyOnChange).toHaveBeenCalled();
+      // verify the spied callback contains returns the input value
+      expect(spyOnChange.mock.calls[0][0]).toBe(mock.newValue);
+      spyOnChange.mockClear();
+    });
+
+    it("should return the query containing user's typed text", () => {
+      const mock = { inputValue: "Start", userQuery: "Start" };
+      const handleOnClick = function() {};
+      const spyOnChange = jest.fn().mockImplementation(handleOnClick);
+      const commandPalette = mount(
+        <CommandPalette commands={mockCommands} onChange={spyOnChange} open />
+      );
+      commandPalette
+        .find("input")
+        .simulate("change", { target: { value: mock.inputValue } });
+      expect(spyOnChange).toHaveBeenCalled();
+      // verify the spied callback contains returns the input value
+      expect(spyOnChange.mock.calls[0][1]).toBe(mock.inputValue);
+      expect(spyOnChange.mock.calls[0][0]).toBe(mock.userQuery);
+      spyOnChange.mockClear();
+    });
+  });
+
+  // userQuery (inputValue, userQuery) { ... }
+  describe("Navigating suggestions", () => {
+    let handleOnClick;
+    let spyOnChange;
+    let commandPalette;
+    let input;
+
+    beforeEach(() => {
+      handleOnClick = function() {};
+      spyOnChange = jest.fn().mockImplementation(handleOnClick);
+      commandPalette = mount(
+        <CommandPalette commands={mockCommands} onChange={spyOnChange} open />
+      );
+      input = commandPalette
+        .find("input")
+        .simulate("change", { target: { value: "Start" } })
+        .instance();
+    });
+
+    afterEach(() => {
+      spyOnChange.mockClear();
+    });
+
+    it("should return null when the user pressed the down arrow key", () => {
+      // simulate user typeing some text
+      expect(spyOnChange).toHaveBeenCalled();
+      expect(spyOnChange.mock.calls[0][0]).toBe("Start");
+      expect(spyOnChange.mock.calls[0][1]).toBe("Start");
+
+      // First suggestion is always highlighted, pressing ArrowDown
+      // highlights the second item in the suggestion list
+      clickDown(input);
+      expect(spyOnChange).toHaveBeenCalledTimes(2);
+      expect(spyOnChange.mock.calls[1][0]).toBe("Stop All Data Imports");
+      expect(spyOnChange.mock.calls[1][1]).toBe(null);
+    });
+
+    it("should return null when the user pressed the up arrow  key", () => {
+      // simulate user typeing some text
+      expect(spyOnChange).toHaveBeenCalled();
+      expect(spyOnChange.mock.calls[0][0]).toBe("Start");
+      expect(spyOnChange.mock.calls[0][1]).toBe("Start");
+
+      // First suggestion is always highlighted, pressing ArrowDown
+      // highlights the second item in the suggestion list
+      clickDown(input);
+      expect(spyOnChange).toHaveBeenCalledTimes(2);
+      expect(spyOnChange.mock.calls[1][0]).toBe("Stop All Data Imports");
+      expect(spyOnChange.mock.calls[1][1]).toBe(null);
+
+      clickUp(input);
+      expect(spyOnChange).toHaveBeenCalledTimes(3);
+      expect(spyOnChange.mock.calls[2][0]).toBe("Start All Data Imports");
+      expect(spyOnChange.mock.calls[2][1]).toBe(null);
+    });
+
+    it("should return null when the user pressed the Enter key", () => {
+      // simulate user typeing some text
+      expect(spyOnChange).toHaveBeenCalled();
+      expect(spyOnChange.mock.calls[0][0]).toBe("Start");
+      expect(spyOnChange.mock.calls[0][1]).toBe("Start");
+
+      // First suggestion is always highlighted, pressing ArrowDown
+      // highlights the second item in the suggestion list
+      clickEnter(input);
+      expect(spyOnChange).toHaveBeenCalledTimes(2);
+      expect(spyOnChange.mock.calls[1][0]).toBe("Start All Data Imports");
+      expect(spyOnChange.mock.calls[1][1]).toBe(null);
+    });
+
+    it("should return null when the user clicks a suggestion with mouse", () => {
+      // simulate user typeing some text
+      expect(spyOnChange).toHaveBeenCalled();
+      expect(spyOnChange.mock.calls[0][0]).toBe("Start");
+      expect(spyOnChange.mock.calls[0][1]).toBe("Start");
+
+      // First suggestion is always highlighted, pressing ArrowDown
+      // highlights the second item in the suggestion list
+      const firstSuggestion = commandPalette
+        .find("#react-autowhatever-1--item-0")
+        .first();
+      firstSuggestion.simulate("click");
+      expect(spyOnChange).toHaveBeenCalledTimes(2);
+      expect(spyOnChange.mock.calls[1][0]).toBe("Start All Data Imports");
+      expect(spyOnChange.mock.calls[1][1]).toBe(null);
+    });
   });
 });
 

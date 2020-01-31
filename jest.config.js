@@ -15,7 +15,8 @@ module.exports = {
   collectCoverageFrom: ["src/*.js"],
   coveragePathIgnorePatterns: [
     "<rootDir>/node_modules",
-    "<rootDir>/src/main.js"
+    "<rootDir>/src/main.js",
+    "<rootDir>/src/test-helpers.js"
   ],
   coverageReporters: ["json", "lcov", "text"]
 };

@@ -80,9 +80,7 @@ class CommandPalette extends React.Component {
     this.onSelect = this.onSelect.bind(this);
 
     // eslint-disable-next-line prettier/prettier
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
-      this
-    );
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
     );
@@ -137,7 +135,7 @@ class CommandPalette extends React.Component {
     this.setState({
       value: newValue
     });
-    return onChange(newValue);
+    return onChange(newValue, this.getInputOnTextTyped(event, newValue));
   }
 
   onSelect(suggestion = null) {
@@ -189,6 +187,22 @@ class CommandPalette extends React.Component {
     return true;
   }
 
+  // returns user typed queries only
+  // wont return selections or keyboard navigation
+  // just input
+  getInputOnTextTyped(event, newValue) {
+    const { key, type } = event;
+    if (
+      key !== "ArrowUp" &&
+      key !== "ArrowDown" &&
+      key !== "Enter" &&
+      type !== "click"
+    ) {
+      return newValue;
+    }
+    return null;
+  }
+
   afterOpenModal() {
     const { onAfterOpen } = this.props;
     this.focusInput();
@@ -212,18 +226,25 @@ class CommandPalette extends React.Component {
     // FIXME: apply "esc" on the modal instead of input
     // so that pressing esc on loading spinner works too
     const { hotKeys } = this.props;
-    Mousetrap(this.commandPaletteInput.input).bind(["esc", hotKeys], () => {
-      this.handleCloseModal();
-      return false;
-    });
+    Mousetrap(this.commandPaletteInput.input).bind(
+      ["esc"].concat(hotKeys),
+      () => {
+        this.handleCloseModal();
+        return false;
+      }
+    );
   }
 
   handleCloseModal() {
-    const { onRequestClose } = this.props;
+    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
+    const { value } = this.state;
+
     this.setState({
       showModal: false,
-      isLoading: false
+      isLoading: false,
+      value: resetInputOnClose ? defaultInputValue : value
     });
+
     return onRequestClose();
   }
 
@@ -357,6 +378,7 @@ CommandPalette.defaultProps = {
   onAfterOpen: noop,
   onRequestClose: noop,
   closeOnSelect: false,
+  resetInputOnClose: false,
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
@@ -381,7 +403,7 @@ CommandPalette.propTypes = {
     })
   ).isRequired,
 
-  /** maxDisplayed a number between 1 and 500 that determines the maxium number of
+  /** maxDisplayed a number between 1 and 500 that determines the maximum number of
    * commands that will be rendered on screen. Defaults to 7 */
   maxDisplayed(props, propName, componentName) {
     const { maxDisplayed } = props;
@@ -394,14 +416,18 @@ CommandPalette.propTypes = {
     return null;
   },
 
-  /** placeholder a string that contains a short text description which is displaye
+  /** placeholder a string that contains a short text description which is displayed
    * inside the the input field until the user provides input. Defaults to "Type a
    * command" */
   placeholder: PropTypes.string,
 
-  /** hotKeys a string that contains a keyboard shortcut for opening/closing the palette.
+  /** hotKeys a string or array of strings that contain a keyboard shortcut for
+   * opening/closing the palette.
    * Defaults to "command+shift+p" */
-  hotKeys: PropTypes.string,
+  hotKeys: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string
+  ]),
 
   /** defaultInputValue a string that determines the value of the text in the input field.
    * By default the defaultInputValue is an empty string. */
@@ -455,14 +481,18 @@ CommandPalette.propTypes = {
    * visible only to screen readers. */
   spinner: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
-  /** showSpinnerOnSelect a boolean which displays a loading indicator immediatley after
+  /** showSpinnerOnSelect a boolean which displays a loading indicator immediately after
    * a command has been selected. When true the spinner is enabled when false the spinner
    * is disabled. */
   showSpinnerOnSelect: PropTypes.bool,
 
-  /** closeOnSelect a boolean, when true selecting an item will immendiately close the
+  /** closeOnSelect a boolean, when true selecting an item will immediately close the
    * command-palette  */
   closeOnSelect: PropTypes.bool,
+
+  /** resetInputOnClose a boolean which indicates whether to reset the user's query
+   * to `defaultInputValue` when the command palette closes. */
+  resetInputOnClose: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by
