@@ -84,6 +84,7 @@ class CommandPalette extends React.Component {
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
     );
+    this.onSuggestionHighlighted = this.onSuggestionHighlighted.bind(this);
     this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -141,6 +142,11 @@ class CommandPalette extends React.Component {
   onSelect(suggestion = null) {
     const { onSelect } = this.props;
     return onSelect(suggestion);
+  }
+
+  onSuggestionHighlighted({ suggestion }) {
+    const { onHighlight } = this.props;
+    onHighlight(suggestion);
   }
 
   onSuggestionSelected(event, { suggestion }) {
@@ -302,6 +308,7 @@ class CommandPalette extends React.Component {
           alwaysRenderSuggestions={alwaysRenderCommands}
           suggestions={suggestions.slice(0, maxDisplayed)}
           highlightFirstSuggestion
+          onSuggestionHighlighted={this.onSuggestionHighlighted}
           onSuggestionSelected={this.onSuggestionSelected}
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
@@ -374,6 +381,7 @@ CommandPalette.defaultProps = {
   maxDisplayed: 7,
   options: fuzzysortOptions,
   onChange: noop,
+  onHighlight: noop,
   onSelect: noop,
   onAfterOpen: noop,
   onRequestClose: noop,
@@ -440,6 +448,9 @@ CommandPalette.propTypes = {
   /** open a boolean, when set to true it forces the command palette to be displayed.
    * Defaults to "false". */
   open: PropTypes.bool,
+
+  /** onHighlight a function that's called when the highlighted suggestion changes. */
+  onHighlight: PropTypes.func,
 
   /** onSelect a function that's called when the selected suggestion changes, given the
    * user selects an item or the user clears the selection. It's called with the item that
