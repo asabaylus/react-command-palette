@@ -148,13 +148,7 @@ storiesOf("Command Palette", module)
   )
   .add(
     "with a custom command",
-    () => (
-      <CommandPalette
-        commands={commands}
-        renderCommand={sampleAtomCommand}
-        open
-      />
-    ),
+    () => <CommandPalette commands={commands} renderCommand={sampleAtomCommand} open />,
     {
       info: {
         text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imagine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
@@ -173,9 +167,7 @@ storiesOf("Command Palette", module)
     const commandsInput = object("Commands", commands);
     return <CommandPalette commands={commandsInput} />;
   })
-  .add("without a modal", () => (
-    <CommandPalette commands={commands} display="inline" />
-  ))
+  .add("without a modal", () => <CommandPalette commands={commands} display="inline" />)
   .add("onSelect", () => (
     <CommandPalette
       open
@@ -200,6 +192,15 @@ storiesOf("Command Palette", module)
         `
         );
       }}
+    />
+  ))
+  .add("onHighlight", () => (
+    <CommandPalette
+      commands={commands}
+      onHighlight={command => {
+        console.log(`A command was highlighted ${JSON.stringify(command)}`);
+      }}
+      open
     />
   ))
   .add("onAfterOpen", () => (
@@ -235,11 +236,7 @@ storiesOf("Command Palette", module)
     }
   )
   .add("defaultInputValue", () => (
-    <CommandPalette
-      commands={commands}
-      open
-      defaultInputValue=">"
-    />
+    <CommandPalette commands={commands} open defaultInputValue=">" />
   ))
   .add("alwaysRenderCommands", () => (
     <CommandPalette
@@ -255,9 +252,7 @@ storiesOf("Command Palette", module)
       showSpinnerOnSelect={boolean("showSpinnerOnSelect", true)}
     />
   ))
-  .add("with custom hotkeys", () => (
-    <CommandPalette commands={commands} hotKeys="/" />
-  ))
+  .add("with custom hotkeys", () => <CommandPalette commands={commands} hotKeys="/" />)
   .add("with multiple custom hotkeys", () => (
     <CommandPalette commands={commands} hotKeys={["/", "command+k"]} />
   ))
@@ -283,9 +278,7 @@ storiesOf("Command Palette", module)
   .add("with a custom spinner", () => (
     <CommandPalette
       commands={commands}
-      spinner={
-        <div style={{ color: "white", textAlign: "center" }}>Waiting...</div>
-      }
+      spinner={<div style={{ color: "white", textAlign: "center" }}>Waiting...</div>}
       open
     />
   ))
@@ -299,9 +292,7 @@ storiesOf("Command Palette", module)
       step: 1
     };
     const maxDisplayed = number(label, defaultValue, options);
-    return (
-      <CommandPalette commands={commands} maxDisplayed={maxDisplayed} open />
-    );
+    return <CommandPalette commands={commands} maxDisplayed={maxDisplayed} open />;
   })
   .add("with search options", () => {
     // Knobs for Search Options Object
@@ -340,10 +331,6 @@ storiesOf("Command Palette", module)
   })
   .add("with reactModalParentSelector", () => (
     <div id="main">
-      <CommandPalette
-        commands={commands}
-        reactModalParentSelector="#main"
-        open
-      />
+      <CommandPalette commands={commands} reactModalParentSelector="#main" open />
     </div>
   ));
