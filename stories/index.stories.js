@@ -201,6 +201,16 @@ storiesOf("Command Palette", module)
       }}
     />
   ))
+  .add("highlightFirstSuggestion", () => {
+    const label = "highlightFirstSuggestion";
+    const defaultValue = true;
+    const highlight = boolean(label, defaultValue);
+    return <CommandPalette
+      commands={commands}
+      highlightFirstSuggestion={highlight}
+      open
+      />
+  })
   .add("onHighlight", () => (
     <CommandPalette
       commands={commands}

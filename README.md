@@ -74,6 +74,8 @@ const commands = [{
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
+* ```highlightFirstSuggestion```  a _boolean_, will automatically highlight the first suggestion. Defaults to "true". */
+
 * ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likely to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
 
   ```js
@@ -103,6 +105,17 @@ const commands = [{
   ```
 
 * ```onHighlight``` a function that's called when the highlighted suggestion changes. 
+
+  ```js
+    <CommandPalette
+      commands={commands}
+      onSelect={suggestion => {
+        console.log(`A suggested command was highlighted: \n
+        ${JSON.stringify(suggestion)}
+        `);
+      }}
+    />
+  ```
 
 * ```onSelect``` a function that's called when the selected suggestion changes, given the user selects an item or the user clear the selection. It's called with the item that was selected or null.
 

@@ -386,6 +386,32 @@ describe("props.display", () => {
   });
 });
 
+describe("props.highlightFirstSuggestion", () => {
+  it("should be 'true' by default", () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />
+    );
+    const firstSuggestion = commandPalette.find(".atom-suggestionFirst");
+    expect(
+      firstSuggestion.first().hasClass("atom-suggestionHighlighted")
+    ).toBeTruthy();
+  });
+
+  it("should not highlight the first command when 'false'", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        highlightFirstSuggestion={false}
+        open
+      />
+    );
+    const firstSuggestion = commandPalette.find(".atom-suggestionFirst");
+    expect(
+      firstSuggestion.first().hasClass("atom-suggestionHighlighted")
+    ).toBeFalsy();
+  });
+});
+
 describe("props.alwaysRenderCommands", () => {
   it("should be enabled by default", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
