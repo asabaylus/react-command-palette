@@ -87,7 +87,7 @@
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "babelrc-rollup": "^3.0.0",
-    "codecov": "^3.6.4",
+    "codecov": "^3.6.5",
     "concurrently": "^5.1.0",
     "core-js": "^3.6.4",
     "cross-env": "^7.0.0",
