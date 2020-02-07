@@ -286,6 +286,7 @@ class CommandPalette extends React.Component {
       showSpinnerOnSelect,
       display,
       header,
+      highlightFirstSuggestion,
       alwaysRenderCommands
     } = this.props;
     if (isLoading && showSpinnerOnSelect) {
@@ -307,7 +308,7 @@ class CommandPalette extends React.Component {
           }}
           alwaysRenderSuggestions={alwaysRenderCommands}
           suggestions={suggestions.slice(0, maxDisplayed)}
-          highlightFirstSuggestion
+          highlightFirstSuggestion={highlightFirstSuggestion}
           onSuggestionHighlighted={this.onSuggestionHighlighted}
           onSuggestionSelected={this.onSuggestionSelected}
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
@@ -378,6 +379,7 @@ CommandPalette.defaultProps = {
   hotKeys: "command+shift+p",
   defaultInputValue: "",
   header: null,
+  highlightFirstSuggestion: true,
   maxDisplayed: 7,
   options: fuzzysortOptions,
   onChange: noop,
@@ -440,6 +442,10 @@ CommandPalette.propTypes = {
   /** defaultInputValue a string that determines the value of the text in the input field.
    * By default the defaultInputValue is an empty string. */
   defaultInputValue: PropTypes.string,
+
+  /** When highlightFirstSuggestion={true}, Autosuggest will automatically highlight the
+   *  first suggestion. Defaults to false. */
+  highlightFirstSuggestion: PropTypes.bool,
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
    * (https://github.com/farzher/fuzzysort#options) */
