@@ -102,6 +102,8 @@ const commands = [{
     />
   ```
 
+* ```onHighlight``` a function that's called when the highlighted suggestion changes. 
+
 * ```onSelect``` a function that's called when the selected suggestion changes, given the user selects an item or the user clear the selection. It's called with the item that was selected or null.
 
   ```js

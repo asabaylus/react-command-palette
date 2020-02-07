@@ -447,6 +447,24 @@ describe("Opening the palette", () => {
     }, 0);
   });
 
+  it("fires the onHighlight event and returns the highlighted suggestion", () => {
+    const spyOnHighlight = jest.fn();
+
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        onHighlight={spyOnHighlight}
+        open
+      />
+    );
+
+    const input = commandPalette.find("input").instance();
+    clickDown(input, 2);
+    expect(spyOnHighlight).toHaveBeenCalled();
+    expect(spyOnHighlight.mock.calls[2][0]).toBe(mockCommands[2]);
+    spyOnHighlight.mockClear();
+  });
+
   it("fires the onSelect event and returns the selected suggestion", () => {
     const spyOnSelect = jest.fn();
     const command = jest.fn();
