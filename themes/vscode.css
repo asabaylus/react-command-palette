@@ -110,7 +110,7 @@
   color:rgb(0, 151, 251);
   font-weight: bold;
 }
-.vscode-suggestionFirst, .vscode-suggestionHighlighted {
+.vscode-suggestionHighlighted {
   color: #ffffff;
   background-color: rgb(6, 47, 74);
 }

@@ -41,8 +41,7 @@
     box-shadow: inset 0px -2px 2px 0px rgba(163,163,163,0.15);
 }
 
-.vscode-suggestionHighlighted .vscode-shortcut-part,
-.vscode-suggestionFirst .vscode-shortcut-part {
+.vscode-suggestionHighlighted .vscode-shortcut-part {
     background-color: rgb(27, 61, 84);
 }
 
