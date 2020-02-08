@@ -2,19 +2,53 @@
 .vscode-category {
     float: left;
     margin-right: 2px;
-    color: rgb(204, 204, 204);
+    color: rgb(230,230, 230);
     margin-right: 6px;
     border-radius: 2px;
     padding: 1.2px 3px;
+    font-size: .95em;
     font-weight: 450;
 }
+
+.vscode-filePath {
+    margin-left: 4px;
+    color:rgb(155, 155, 155);
+    font-size: .9em;
+
+}
+
+.vscode-icon {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    width: 17px;
+    height: 9px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 128%;
+    margin-right: 8px;
+    margin-left: -4px;
+}
+
+.vscode-javascript {
+    background-image: url(../images/seti-icon-javascript.svg), none;
+}
+.vscode-css {
+    background-image: url(../images/seti-icon-css.svg), none;
+}
+.vscode-markdown {
+    background-image: url(../images/seti-icon-markdown.svg), none;
+}
+
 .vscode-shortcut {
     float: right;
     margin-right: 2px;
 }
 
 .vscode-name {
-    color: rgb(153, 153, 153);
+    color: rgb(192, 192, 192);
+    font-size: 0.9em;
+    font-weight: 380;
 }
 
 .vscode-hidden {

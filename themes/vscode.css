@@ -49,6 +49,7 @@
 }
 
 .vscode-container {
+  --monaco-monospace-font: "SF Mono", Monaco, Menlo, Inconsolata, "Courier New", monospace;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-weight: lighter;
   font-size: 12px;
@@ -61,7 +62,7 @@
   max-width: -moz-available;
   max-width: stretch;
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   border: 1px solid rgb(28,92,136);
   padding: 6px;
   outline: none;
@@ -101,7 +102,7 @@
   color: rgb(204, 204, 204);
   font-size: 1.1em;
   border-top: 0px none;
-  padding: 6px;
+  padding: 3px 6px;
   padding-left: 13px;
   cursor: pointer;
 }
