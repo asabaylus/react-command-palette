@@ -15,28 +15,9 @@ import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
 import defaultTheme from "../themes/theme";
+import { noop, override, after } from "./utils";
 
 import "../themes/atom.css";
-
-const noop = () => undefined;
-
-// Apply a functions that'll run after the command's function runs
-// Monkey patching for the commands
-// http://me.dt.in.th/page/JavaScript-override/
-function override(object, methodName, callback) {
-  const dupe = object;
-  dupe[methodName] = callback(object[methodName]);
-}
-
-function after(extraBehavior) {
-  return function(original, ...args) {
-    return function() {
-      const returnValue = original.apply(this, args);
-      extraBehavior.apply(this, args);
-      return returnValue;
-    };
-  };
-}
 
 const allSuggestions = [];
 
