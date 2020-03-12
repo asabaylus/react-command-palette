@@ -82,14 +82,15 @@ class CommandPalette extends React.Component {
   }
 
   componentDidMount() {
-    const { hotKeys, open, display } = this.props;
+    const { hotKeys, globalHotKeys, open, display } = this.props;
 
     this.setState({
       suggestions: this.fetchData()
     });
 
     // Use hot key to open command palette
-    Mousetrap.bind(hotKeys, () => {
+    const mousetrap = globalHotKeys ? Mousetrap.bindGlobal : Mousetrap.bind;
+    mousetrap(hotKeys, () => {
       this.handleOpenModal();
       // prevent default which opens Chrome dev tools command palatte
       return false;
@@ -358,6 +359,7 @@ CommandPalette.defaultProps = {
   alwaysRenderCommands: true,
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
+  globalHotKeys: false,
   defaultInputValue: "",
   header: null,
   highlightFirstSuggestion: true,
@@ -419,6 +421,11 @@ CommandPalette.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.string
   ]),
+
+  /** When globalHotKeys={false}, any hotKeys provided will be ignored when keyboard
+   *  focus is inside of a text input or textarea. When globalHotKeys={true}, hotKeys
+   *  will trigger even inside of these inputs. */
+  globalHotKeys: PropTypes.bool,
 
   /** defaultInputValue a string that determines the value of the text in the input field.
    * By default the defaultInputValue is an empty string. */
