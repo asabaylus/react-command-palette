@@ -84,6 +84,7 @@ exports[`Command List renders a command 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  globalHotKeys={false}
   header={null}
   highlightFirstSuggestion={true}
   hotKeys="command+shift+p"
@@ -11035,6 +11036,7 @@ exports[`Command List renders a command 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -11247,6 +11249,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  globalHotKeys={false}
   header={null}
   highlightFirstSuggestion={true}
   hotKeys="command+shift+p"
@@ -18008,6 +18011,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -18213,6 +18217,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -18418,6 +18423,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -18624,6 +18630,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -18831,6 +18838,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -19036,6 +19044,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -19241,6 +19250,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -19418,6 +19428,7 @@ exports[`props.display should not display the command palette in react-modal whe
   }
   defaultInputValue=""
   display="inline"
+  globalHotKeys={false}
   header={null}
   highlightFirstSuggestion={true}
   hotKeys="command+shift+p"
@@ -19908,6 +19919,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -20113,6 +20125,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -20318,6 +20331,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -20524,6 +20538,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -20731,6 +20746,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -20936,6 +20952,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -21141,6 +21158,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        globalHotKeys={false}
                         header={null}
                         highlightFirstSuggestion={true}
                         hotKeys="command+shift+p"
@@ -21410,6 +21428,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
   }
   defaultInputValue=""
   display="modal"
+  globalHotKeys={false}
   header={null}
   highlightFirstSuggestion={true}
   hotKeys="command+shift+p"
@@ -26636,6 +26655,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -26842,6 +26862,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -27048,6 +27069,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -27255,6 +27277,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -27463,6 +27486,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -27669,6 +27693,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -27875,6 +27900,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -28054,6 +28080,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  globalHotKeys={false}
   header={null}
   highlightFirstSuggestion={true}
   hotKeys="command+shift+p"
@@ -30673,6 +30700,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -30880,6 +30908,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -31087,6 +31116,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -31295,6 +31325,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -31504,6 +31535,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -31711,6 +31743,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -31918,6 +31951,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header={null}
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -32097,6 +32131,7 @@ exports[`props.theme should render a custom theme 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  globalHotKeys={false}
   header="this is a command palette"
   highlightFirstSuggestion={true}
   hotKeys="command+shift+p"
@@ -35642,6 +35677,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -35849,6 +35885,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -36056,6 +36093,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -36264,6 +36302,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -36473,6 +36512,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -36680,6 +36720,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
@@ -36887,6 +36928,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  globalHotKeys={false}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
                                   hotKeys="command+shift+p"
