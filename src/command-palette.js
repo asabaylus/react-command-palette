@@ -89,10 +89,11 @@ class CommandPalette extends React.Component {
     });
 
     // Use hot key to open command palette
+    const mousetrap = new Mousetrap();
     if (globalHotKeys) {
-      Mousetrap.stopCallback = () => false;
+      mousetrap.stopCallback = () => false;
     }
-    Mousetrap.bind(hotKeys, () => {
+    mousetrap.bind(hotKeys, () => {
       this.handleOpenModal();
       // prevent default which opens Chrome dev tools command palatte
       return false;
