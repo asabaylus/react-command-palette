@@ -89,11 +89,10 @@ class CommandPalette extends React.Component {
     });
 
     // Use hot key to open command palette
-    const mousetrap = new Mousetrap();
     if (globalHotKeys) {
-      mousetrap.stopCallback = () => false;
+      Mousetrap.prototype.stopCallback = () => false;
     }
-    mousetrap.bind(hotKeys, () => {
+    Mousetrap.bind(hotKeys, () => {
       this.handleOpenModal();
       // prevent default which opens Chrome dev tools command palatte
       return false;
@@ -362,7 +361,6 @@ CommandPalette.defaultProps = {
   alwaysRenderCommands: true,
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
-  globalHotKeys: false,
   defaultInputValue: "",
   header: null,
   highlightFirstSuggestion: true,
