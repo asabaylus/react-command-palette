@@ -26,11 +26,11 @@ describe("getSuggestions", () => {
 
       expect(commands[0]).toMatchObject({
         name: "Stop All Data Imports",
-        highlight: "Stop All Data <b>Imports</b>"
+        highlight: "Stop All Data <b>Imports</b>",
       });
       expect(commands[1]).toMatchObject({
         name: "Start All Data Imports",
-        highlight: "Start All Data <b>Imports</b>"
+        highlight: "Start All Data <b>Imports</b>",
       });
       expect(commands.length).toBe(2);
     });
@@ -47,7 +47,7 @@ describe("getSuggestions", () => {
       expect(matchName[0]).toMatchObject({
         name: "Stop All Data Imports",
         category: "Command",
-        highlight: ["Stop All Data <b>Imports</b>", null]
+        highlight: ["Stop All Data <b>Imports</b>", null],
       });
 
       const matchCategory = getSuggestions(
@@ -58,7 +58,7 @@ describe("getSuggestions", () => {
       expect(matchCategory[0]).toMatchObject({
         name: "Stop All Data Imports",
         category: "Command",
-        highlight: [null, "<b>Com</b>mand"]
+        highlight: [null, "<b>Com</b>mand"],
       });
     });
   });

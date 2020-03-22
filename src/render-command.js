@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import DefaultCommand from "./default-command";
 
-const RenderCommand = function(props) {
+const RenderCommand = function (props) {
   const { suggestion, renderCommand } = props;
   if (renderCommand) {
     return <div>{renderCommand(suggestion)}</div>;
@@ -11,7 +11,7 @@ const RenderCommand = function(props) {
 };
 
 RenderCommand.defaultProps = {
-  suggestion: { highlight: null }
+  suggestion: { highlight: null },
 };
 
 RenderCommand.propTypes = {
@@ -23,7 +23,7 @@ RenderCommand.propTypes = {
   suggestion: PropTypes.shape({
     name: PropTypes.string.isRequired,
     highlight: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-    command: PropTypes.func.isRequired
+    command: PropTypes.func.isRequired,
   }),
 
   /** trigger a string or a React.ComponentType that customises the layout and content of
@@ -32,8 +32,8 @@ RenderCommand.propTypes = {
   renderCommand: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.func,
-    PropTypes.element
-  ])
+    PropTypes.element,
+  ]),
 };
 
 export default RenderCommand;

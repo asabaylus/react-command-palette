@@ -7,5 +7,5 @@ export default {
   allowTypo: true, // Allwos a snigle transpoes (false is faster)
   key: "name", // For when targets are objects (see its example usage)
   keys: ["name"], // For when targets are objects (see its example usage)
-  scoreFn: null // For use with `keys` (see its example usage)
+  scoreFn: null, // For use with `keys` (see its example usage)
 };

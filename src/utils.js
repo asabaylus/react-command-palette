@@ -10,8 +10,8 @@ export function override(object, methodName, callback) {
 }
 
 export function after(extraBehavior) {
-  return function(original, ...args) {
-    return function() {
+  return function (original, ...args) {
+    return function () {
       const returnValue = original.apply(this, args);
       extraBehavior.apply(this, args);
       return returnValue;
