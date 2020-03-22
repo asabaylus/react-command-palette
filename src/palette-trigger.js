@@ -9,10 +9,10 @@ const visualyHidden = {
   width: "1px",
   overflow: "hidden",
   clip: "rect(1px, 1px, 1px, 1px)",
-  display: "inline-block"
+  display: "inline-block",
 };
 
-const DefaultTriggerComponent = props => {
+const DefaultTriggerComponent = (props) => {
   const { onClick, theme } = props;
   return (
     <button className={theme} onClick={onClick} type="button">
@@ -24,7 +24,7 @@ const DefaultTriggerComponent = props => {
   );
 };
 
-const CustomTriggerComponent = props => {
+const CustomTriggerComponent = (props) => {
   const { onClick, trigger, theme } = props;
   return (
     <div
@@ -54,18 +54,18 @@ function PaletteTrigger(props) {
 }
 
 PaletteTrigger.defaultProps = {
-  theme: "ui button"
+  theme: "ui button",
 };
 
 DefaultTriggerComponent.propTypes = {
   onClick: PropTypes.func,
-  theme: PropTypes.string
+  theme: PropTypes.string,
 };
 
 CustomTriggerComponent.propTypes = {
   onClick: PropTypes.func,
   theme: PropTypes.string,
-  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 };
 
 PaletteTrigger.propTypes = CustomTriggerComponent.propTypes;

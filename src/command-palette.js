@@ -15,37 +15,18 @@ import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
 import defaultTheme from "../themes/theme";
+import { noop, override, after } from "./utils";
 
 import "../themes/atom.css";
-
-const noop = () => undefined;
-
-// Apply a functions that'll run after the command's function runs
-// Monkey patching for the commands
-// http://me.dt.in.th/page/JavaScript-override/
-function override(object, methodName, callback) {
-  const dupe = object;
-  dupe[methodName] = callback(object[methodName]);
-}
-
-function after(extraBehavior) {
-  return function(original, ...args) {
-    return function() {
-      const returnValue = original.apply(this, args);
-      extraBehavior.apply(this, args);
-      return returnValue;
-    };
-  };
-}
 
 const allSuggestions = [];
 
 // When suggestion is clicked, Autosuggest needs to populate the input element
 // based on the clicked suggestion. Teach Autosuggest how to calculate the
 // input value for every given suggestion.
-const getSuggestionValue = suggestion => suggestion.name;
+const getSuggestionValue = (suggestion) => suggestion.name;
 
-const Header = props => {
+const Header = (props) => {
   const { theme, children } = props;
   return <div className={theme.header}>{children}</div>;
 };
@@ -54,8 +35,8 @@ Header.propTypes = {
   theme: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ])
+    PropTypes.node,
+  ]),
 };
 
 class CommandPalette extends React.Component {
@@ -73,7 +54,7 @@ class CommandPalette extends React.Component {
       isLoading: false,
       showModal: false,
       value: defaultInputValue,
-      suggestions: allSuggestions
+      suggestions: allSuggestions,
     };
 
     this.onChange = this.onChange.bind(this);
@@ -104,7 +85,7 @@ class CommandPalette extends React.Component {
     const { hotKeys, open, display } = this.props;
 
     this.setState({
-      suggestions: this.fetchData()
+      suggestions: this.fetchData(),
     });
 
     // Use hot key to open command palette
@@ -126,7 +107,7 @@ class CommandPalette extends React.Component {
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
-        suggestions: this.fetchData()
+        suggestions: this.fetchData(),
       });
     }
   }
@@ -134,7 +115,7 @@ class CommandPalette extends React.Component {
   onChange(event, { newValue }) {
     const { onChange } = this.props;
     this.setState({
-      value: newValue
+      value: newValue,
     });
     return onChange(newValue, this.getInputOnTextTyped(event, newValue));
   }
@@ -178,7 +159,7 @@ class CommandPalette extends React.Component {
   onSuggestionsFetchRequested({ value }) {
     const { options } = this.props;
     this.setState({
-      suggestions: getSuggestions(value, this.allCommands, options)
+      suggestions: getSuggestions(value, this.allCommands, options),
     });
   }
 
@@ -248,7 +229,7 @@ class CommandPalette extends React.Component {
     this.setState({
       showModal: false,
       isLoading: false,
-      value: resetInputOnClose ? defaultInputValue : value
+      value: resetInputOnClose ? defaultInputValue : value,
     });
 
     return onRequestClose();
@@ -257,7 +238,7 @@ class CommandPalette extends React.Component {
   handleOpenModal() {
     this.setState({
       showModal: true,
-      suggestions: allSuggestions
+      suggestions: allSuggestions,
     });
   }
 
@@ -268,7 +249,7 @@ class CommandPalette extends React.Component {
       placeholder,
       value,
       onChange: this.onChange,
-      onKeyDown: this.onKeyDown
+      onKeyDown: this.onKeyDown,
     };
   }
 
@@ -287,7 +268,7 @@ class CommandPalette extends React.Component {
       display,
       header,
       highlightFirstSuggestion,
-      alwaysRenderCommands
+      alwaysRenderCommands,
     } = this.props;
     if (isLoading && showSpinnerOnSelect) {
       return (
@@ -303,7 +284,7 @@ class CommandPalette extends React.Component {
       <div>
         <Header theme={theme}>{header}</Header>
         <Autosuggest
-          ref={input => {
+          ref={(input) => {
             this.commandPaletteInput = input;
           }}
           alwaysRenderSuggestions={alwaysRenderCommands}
@@ -393,7 +374,7 @@ CommandPalette.defaultProps = {
   reactModalParentSelector: "body",
   renderCommand: null,
   showSpinnerOnSelect: true,
-  theme: defaultTheme
+  theme: defaultTheme,
 };
 
 CommandPalette.propTypes = {
@@ -409,7 +390,7 @@ CommandPalette.propTypes = {
   commands: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      command: PropTypes.func.isRequired
+      command: PropTypes.func.isRequired,
     })
   ).isRequired,
 
@@ -436,7 +417,7 @@ CommandPalette.propTypes = {
    * Defaults to "command+shift+p" */
   hotKeys: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
-    PropTypes.string
+    PropTypes.string,
   ]),
 
   /** defaultInputValue a string that determines the value of the text in the input field.
@@ -524,7 +505,7 @@ CommandPalette.propTypes = {
 
   /** Styles and object that contains a list of key value pairs where the keys map the
    * command palette components to their CSS class names. */
-  theme: PropTypes.object
+  theme: PropTypes.object,
 };
 
 export default CommandPalette;

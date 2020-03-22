@@ -14,7 +14,7 @@ export const clickUp = (input, count = 1) => {
   }
 };
 
-export const clickEnter = input => {
+export const clickEnter = (input) => {
   // throws if key is missing
   Simulate.keyDown(input, { key: "Enter", keyCode: 13 });
 };

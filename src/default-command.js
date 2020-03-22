@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // should be safe because the raw markup originates from fuzzsort
 // and is derived from the default, see:
 // https://github.com/farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb
-const DefaultCommand = function(props) {
+const DefaultCommand = function (props) {
   const { suggestion } = props;
   return (
     <div className="item">
@@ -19,7 +19,7 @@ const DefaultCommand = function(props) {
 };
 
 DefaultCommand.defaultProps = {
-  suggestion: { highlight: null }
+  suggestion: { highlight: null },
 };
 
 DefaultCommand.propTypes = {
@@ -30,8 +30,8 @@ DefaultCommand.propTypes = {
   suggestion: PropTypes.shape({
     name: PropTypes.string.isRequired,
     highlight: PropTypes.string,
-    command: PropTypes.func.isRequired
-  })
+    command: PropTypes.func.isRequired,
+  }),
 };
 
 export default DefaultCommand;

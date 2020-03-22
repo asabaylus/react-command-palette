@@ -31,10 +31,7 @@ expect.addSnapshotSerializer(serializer);
 describe("Loading indicator", () => {
   it("should display the spinner by default", () => {
     const wrapper = mount(<CommandPalette commands={mockCommands} open />);
-    wrapper
-      .find(".item")
-      .first()
-      .simulate("click");
+    wrapper.find(".item").first().simulate("click");
     const spinner = wrapper.find(".default-spinner");
     // the palette should remain open
     expect(wrapper.state("showModal")).toBeTruthy();
@@ -47,10 +44,7 @@ describe("Loading indicator", () => {
     const wrapper = mount(
       <CommandPalette commands={mockCommands} spinner={<b>Waiting</b>} open />
     );
-    wrapper
-      .find(".item")
-      .first()
-      .simulate("click");
+    wrapper.find(".item").first().simulate("click");
     const spinner = wrapper.find(".spinner").childAt(1);
     // the palette should remain open
     expect(wrapper.state("showModal")).toBeTruthy();
@@ -63,10 +57,7 @@ describe("Loading indicator", () => {
     const wrapper = mount(
       <CommandPalette commands={mockCommands} spinner="Waiting" open />
     );
-    wrapper
-      .find(".item")
-      .first()
-      .simulate("click");
+    wrapper.find(".item").first().simulate("click");
     const spinner = wrapper.find(".spinner");
     // the palette should remain open
     expect(wrapper.state("showModal")).toBeTruthy();
@@ -83,10 +74,7 @@ describe("Loading indicator", () => {
         open
       />
     );
-    wrapper
-      .find(".item")
-      .first()
-      .simulate("click");
+    wrapper.find(".item").first().simulate("click");
     const spinner = wrapper.find(".default-spinner");
     expect(spinner.exists()).toBeFalsy();
   });
@@ -95,10 +83,7 @@ describe("Loading indicator", () => {
     const wrapper = mount(
       <CommandPalette commands={mockCommands} showSpinnerOnSelect open />
     );
-    wrapper
-      .find(".item")
-      .first()
-      .simulate("click");
+    wrapper.find(".item").first().simulate("click");
     const spinner = wrapper.find(".default-spinner");
     expect(wrapper.state("isLoading")).toBeTruthy();
     expect(wrapper.props("showSpinnerOnSelect")).toBeTruthy();
@@ -241,10 +226,7 @@ describe("props.theme", () => {
     expect(commandPalette.find("Modal").hasClass("chrome-modal")).toBeTruthy();
     expect(commandPalette.find("input").hasClass("chrome-input")).toBeTruthy();
     expect(commandPalette).toMatchSnapshot();
-    commandPalette
-      .find(".item")
-      .first()
-      .simulate("click");
+    commandPalette.find(".item").first().simulate("click");
     expect(
       commandPalette.find(".default-spinner").hasClass("chrome-spinner")
     ).toBeTruthy();
@@ -497,12 +479,12 @@ describe("Opening the palette", () => {
     const mock = {
       suggestion: {
         name: "Manage Tenants",
-        command
+        command,
       },
       suggestionValue: "Manage Tenants",
       suggestionIndex: 0,
       sectionIndex: null,
-      method: "click"
+      method: "click",
     };
     const commandPalette = mount(
       <CommandPalette commands={mockCommands} onSelect={spyOnSelect} />
@@ -524,7 +506,7 @@ describe("Opening the palette", () => {
   });
 
   it("fires the onRequestClose event", () => {
-    new Promise(done => {
+    new Promise((done) => {
       const spyOnClose = jest.fn(() => expect(spyOnClose).toHaveBeenCalled());
       const commandPalette = mount(
         <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} />
@@ -707,7 +689,7 @@ describe("props.onChange", () => {
 
     it("should return the query containing user's typed text", () => {
       const mock = { inputValue: "Start", userQuery: "Start" };
-      const handleOnClick = function() {};
+      const handleOnClick = function () {};
       const spyOnChange = jest.fn().mockImplementation(handleOnClick);
       const commandPalette = mount(
         <CommandPalette commands={mockCommands} onChange={spyOnChange} open />
@@ -731,7 +713,7 @@ describe("props.onChange", () => {
     let input;
 
     beforeEach(() => {
-      handleOnClick = function() {};
+      handleOnClick = function () {};
       spyOnChange = jest.fn().mockImplementation(handleOnClick);
       commandPalette = mount(
         <CommandPalette commands={mockCommands} onChange={spyOnChange} open />
@@ -874,7 +856,7 @@ describe("Command List", () => {
         const arr = new Array(501);
         return arr.fill({
           name: "foo",
-          command: Function.prototype
+          command: Function.prototype,
         });
       };
 
@@ -900,7 +882,7 @@ describe("Command List", () => {
         const arr = new Array(500);
         return arr.fill({
           name: "foo",
-          command: Function.prototype
+          command: Function.prototype,
         });
       };
       const commandPalette = mount(
@@ -921,7 +903,7 @@ describe("Command List", () => {
         const arr = new Array(25000);
         return arr.fill({
           name: "foo",
-          command: Function.prototype
+          command: Function.prototype,
         });
       };
       // before mounting note the time
@@ -940,7 +922,7 @@ describe("Command List", () => {
         const arr = new Array(500);
         return arr.fill({
           name: "foo",
-          command: Function.prototype
+          command: Function.prototype,
         });
       };
       const commandPalette = mount(
@@ -964,12 +946,12 @@ describe("Selecting a command", () => {
     const mock = {
       suggestion: {
         name: "Manage Tenants",
-        command
+        command,
       },
       suggestionValue: "Manage Tenants",
       suggestionIndex: 0,
       sectionIndex: null,
-      method: "click"
+      method: "click",
     };
     commandPalette.instance().onSuggestionSelected({}, mock);
     expect(command).toHaveBeenCalled();
@@ -981,9 +963,9 @@ describe("Selecting a command", () => {
     const mock = {
       suggestion: {
         item: {
-          command: "not a function"
-        }
-      }
+          command: "not a function",
+        },
+      },
     };
     expect(() => {
       onSuggestionSelected(null, mock);
@@ -994,10 +976,7 @@ describe("Selecting a command", () => {
     const wrapper = mount(
       <CommandPalette commands={mockCommands} closeOnSelect open />
     );
-    wrapper
-      .find(".item")
-      .first()
-      .simulate("click");
+    wrapper.find(".item").first().simulate("click");
     expect(wrapper.state("showModal")).toBeFalsy();
   });
 });
@@ -1026,9 +1005,9 @@ describe("Fetching commands", () => {
       commands: [
         {
           name: "Omega",
-          command() {}
-        }
-      ]
+          command() {},
+        },
+      ],
     });
 
     // check that the state as just the new command

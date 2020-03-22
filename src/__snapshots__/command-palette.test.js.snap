@@ -179,6 +179,11 @@ exports[`Command List renders a command 1`] = `
           class="ReactModal__Body--open"
         >
           <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
+          <div
             class="ReactModalPortal"
           >
             <div
@@ -5423,6 +5428,11 @@ exports[`Command List renders a command 1`] = `
               </div>
             </div>
           </div>
+          <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
         </body>
       }
       ariaHideApp={true}
@@ -5520,6 +5530,11 @@ exports[`Command List renders a command 1`] = `
               aria-hidden="true"
               class="ReactModal__Body--open"
             >
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -10765,6 +10780,11 @@ exports[`Command List renders a command 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
             </body>
           }
           ariaHideApp={true}
@@ -11470,6 +11490,11 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           aria-hidden="true"
           class="ReactModal__Body--open"
         >
+          <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
           <div
             class="ReactModalPortal"
           >
@@ -14524,6 +14549,11 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               </div>
             </div>
           </div>
+          <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
         </body>
       }
       ariaHideApp={true}
@@ -14707,6 +14737,11 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               aria-hidden="true"
               class="ReactModal__Body--open"
             >
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -17761,6 +17796,11 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
             </body>
           }
           ariaHideApp={true}
@@ -21765,6 +21805,11 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           class="ReactModal__Body--open"
         >
           <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
+          <div
             class="ReactModalPortal"
           >
             <div
@@ -24050,6 +24095,11 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
               </div>
             </div>
           </div>
+          <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
         </body>
       }
       ariaHideApp={true}
@@ -24233,6 +24283,11 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
               aria-hidden="true"
               class="ReactModal__Body--open"
             >
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -26519,6 +26574,11 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   </div>
                 </div>
               </div>
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
             </body>
           }
           ariaHideApp={true}
@@ -28539,6 +28599,11 @@ exports[`props.renderCommand should render a custom command component 1`] = `
           class="ReactModal__Body--open"
         >
           <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
+          <div
             class="ReactModalPortal"
           >
             <div
@@ -29445,6 +29510,11 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               </div>
             </div>
           </div>
+          <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
         </body>
       }
       ariaHideApp={true}
@@ -29628,6 +29698,11 @@ exports[`props.renderCommand should render a custom command component 1`] = `
               aria-hidden="true"
               class="ReactModal__Body--open"
             >
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -45622,6 +45697,11 @@ exports[`props.theme should render a vscode theme 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
             </body>
           }
           ariaHideApp={true}
@@ -47651,6 +47731,11 @@ exports[`props.theme should render an atom theme 1`] = `
           class="ReactModal__Body--open"
         >
           <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
+          <div
             class="ReactModalPortal"
           >
             <div
@@ -49043,6 +49128,11 @@ exports[`props.theme should render an atom theme 1`] = `
               </div>
             </div>
           </div>
+          <div
+            data-react-modal-body-trap=""
+            style="position: absolute; opacity: 0;"
+            tabindex="0"
+          />
         </body>
       }
       ariaHideApp={true}
@@ -49228,6 +49318,11 @@ exports[`props.theme should render an atom theme 1`] = `
               aria-hidden="true"
               class="ReactModal__Body--open"
             >
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -50621,6 +50716,11 @@ exports[`props.theme should render an atom theme 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                data-react-modal-body-trap=""
+                style="position: absolute; opacity: 0;"
+                tabindex="0"
+              />
             </body>
           }
           ariaHideApp={true}

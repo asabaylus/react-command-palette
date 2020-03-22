@@ -4,7 +4,7 @@ function getSuggestionHighlights(suggestion) {
   // if there's more than one suggestion, retun an array of
   // highlighted results. ex: ["first *result*", "second *result*"]
   if (Array.isArray(suggestion) && suggestion.length >= 2) {
-    return suggestion.map(result => fuzzysort.highlight(result));
+    return suggestion.map((result) => fuzzysort.highlight(result));
   }
   // otherwise return the single suggestion as a string. ex:
   // "only *result*"
@@ -14,18 +14,18 @@ function getSuggestionHighlights(suggestion) {
 // format the output to include a code higlight for innerHTML
 // and the command to invoke
 function formatSuggestions(filteredSuggestions) {
-  return filteredSuggestions.map(suggestion => {
+  return filteredSuggestions.map((suggestion) => {
     const opts = {
       name: suggestion.obj.name,
       command: suggestion.obj.command,
-      highlight: getSuggestionHighlights(suggestion)
+      highlight: getSuggestionHighlights(suggestion),
     };
     return { ...opts, ...suggestion.obj };
   });
 }
 
 // Teach Autosuggest how to calculate suggestions for any given input value.
-const getSuggestions = function(value, allCommands, options) {
+const getSuggestions = function (value, allCommands, options) {
   // TODO: preparing fuzzysort results make them much faster
   // however prepare is expensiveand should only be run when
   // the commands change lodash.once get close to this
