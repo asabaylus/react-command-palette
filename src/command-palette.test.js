@@ -251,10 +251,7 @@ describe("props.theme", () => {
     expect(commandPalette.find("Modal").hasClass("atom-modal")).toBeTruthy();
     expect(commandPalette.find("input").hasClass("atom-input")).toBeTruthy();
     expect(commandPalette).toMatchSnapshot();
-    commandPalette
-      .find(".item")
-      .first()
-      .simulate("click");
+    commandPalette.find(".item").first().simulate("click");
     expect(
       commandPalette.find(".default-spinner").hasClass("atom-spinner")
     ).toBeTruthy();
@@ -280,10 +277,7 @@ describe("props.theme", () => {
     expect(commandPalette.find("Modal").hasClass("sublime-modal")).toBeTruthy();
     expect(commandPalette.find("input").hasClass("sublime-input")).toBeTruthy();
     expect(commandPalette).toMatchSnapshot();
-    commandPalette
-      .find(".item")
-      .first()
-      .simulate("click");
+    commandPalette.find(".item").first().simulate("click");
     expect(
       commandPalette.find(".default-spinner").hasClass("sublime-spinner")
     ).toBeTruthy();
@@ -310,10 +304,7 @@ describe("props.theme", () => {
     expect(commandPalette.find("Modal").hasClass("vscode-modal")).toBeTruthy();
     expect(commandPalette.find("input").hasClass("vscode-input")).toBeTruthy();
     expect(commandPalette).toMatchSnapshot();
-    commandPalette
-      .find(".item")
-      .first()
-      .simulate("click");
+    commandPalette.find(".item").first().simulate("click");
     expect(
       commandPalette.find(".default-spinner").hasClass("vscode-spinner")
     ).toBeTruthy();
