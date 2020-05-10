@@ -305,7 +305,7 @@ class CommandPalette extends React.Component {
 
   renderModalCommandPalette() {
     const { showModal } = this.state;
-    const { trigger, theme, reactModalParentSelector } = this.props;
+    const { trigger, theme, reactModalParentSelector, shouldReturnFocusAfterClose } = this.props;
     return (
       <div className="react-command-palette">
         <PaletteTrigger
@@ -321,6 +321,7 @@ class CommandPalette extends React.Component {
           }
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
+          shouldReturnFocusAfterClose={shouldReturnFocusAfterClose}
           className={theme.modal}
           overlayClassName={theme.overlay}
           contentLabel="Command Palette"

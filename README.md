@@ -14,7 +14,7 @@ WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
 ## Live Playground
 
-For examples of the command palette in action, go to the 
+For examples of the command palette in action, go to the
 
 [![Storybook](https://github.com/storybooks/brand/raw/master/badge/badge-storybook.svg?sanitize=true)](https://react-command-palette.js.org)
 
@@ -46,11 +46,11 @@ const commands = [{
     name: "Bar",
     command() {}
   }
-  ... 
+  ...
  ];
- 
+
  ReactDOM.render(
-  <CommandPalette commands={commands} />, 
+  <CommandPalette commands={commands} />,
   document.getElementById('app'))
 ```
 
@@ -83,10 +83,10 @@ const commands = [{
     keys: ["name"], // default is "name"
 
     // other options may be freely configured
-    threshold: -Infinity, 
+    threshold: -Infinity,
     limit: 7,
-    allowTypo: true, 
-    scoreFn: null 
+    allowTypo: true,
+    scoreFn: null
   ```
 * ```onChange``` a function that's called when the input value changes. It returns two values: the current value of the input field followed by the users typed input. The query ignores keyboard navigation and clicks.
 
@@ -104,7 +104,7 @@ const commands = [{
     />
   ```
 
-* ```onHighlight``` a function that's called when the highlighted suggestion changes. 
+* ```onHighlight``` a function that's called when the highlighted suggestion changes.
 
   ```js
     <CommandPalette
@@ -153,6 +153,8 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
     />
   ```
 
+* ```shouldReturnFocusAfterClose``` a boolean indicate if the modal should restore focus to the element that had focus prior to its display.
+
 * ```commands``` appears in the command palette. For each command in the array the object must have a _name_ and a _command_. The _name_ is a user friendly string that will be display to the user. The command is a function that will be executed when the user clicks or presses the enter key. Commands may also include custom properties where "this" will be bound to the command, for example:
 
   ```js
@@ -199,7 +201,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
   />
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
- 
+
   Note: the _suggestion.highlight_ will contain the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then then _suggestion.highlight_ will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](examples/sampleChromeCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
