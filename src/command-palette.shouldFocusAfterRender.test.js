@@ -26,8 +26,10 @@ describe('props.shouldReturnFocusAfterClose', () => {
   it("should return to focused element after close if true", async () => {
     const focusedElement = global.document.createElement("button");
     focusedElement.setAttribute("id", "button");
+    const focusedElement2 = global.document.createElement("button");
     const body = global.document.querySelector("body");
     body.appendChild(focusedElement);
+    body.appendChild(focusedElement2);
     focusedElement.focus()
     expect(global.document.activeElement).toBe(global.document.querySelector('#button'))
     const commandPalette = mount(<CommandPalette
@@ -36,9 +38,11 @@ describe('props.shouldReturnFocusAfterClose', () => {
     commandPalette.instance().handleOpenModal();
     expect(global.document.activeElement).toBe(global.document.querySelector('input'))
     expect(commandPalette.state("showModal")).toEqual(true);
-    commandPalette.instance().handleCloseModal();
-
     expect(global.document.activeElement).toBe(global.document.querySelector('input'))
+    // Change focus during command palette open
+    focusedElement2.focus()
+    expect(global.document.activeElement).toBe(focusedElement2)
+    commandPalette.instance().handleCloseModal();
     await new Promise((r) => setTimeout(r, 50));
     expect(global.document.activeElement).toBe(global.document.querySelector('#button'));
   });
