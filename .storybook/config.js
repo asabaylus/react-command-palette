@@ -1,5 +1,5 @@
 import { configure } from "@storybook/react";
-import "storybook-chromatic";
+import "chromatic";
 
 // automatically import all files ending in *.stories.js
 const req = require.context("../stories", true, /.stories.js$/);
