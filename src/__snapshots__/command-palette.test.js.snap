@@ -110,6 +110,7 @@ exports[`Command List renders a command 1`] = `
   reactModalParentSelector="body"
   renderCommand={null}
   resetInputOnClose={false}
+  shouldReturnFocusAfterClose={true}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -11061,6 +11062,7 @@ exports[`Command List renders a command 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -11272,6 +11274,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   reactModalParentSelector="body"
   renderCommand={null}
   resetInputOnClose={false}
+  shouldReturnFocusAfterClose={true}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -18033,6 +18036,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -18238,6 +18242,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -18443,6 +18448,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -18649,6 +18655,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -18856,6 +18863,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -19061,6 +19069,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -19266,6 +19275,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -19443,6 +19453,7 @@ exports[`props.display should not display the command palette in react-modal whe
   reactModalParentSelector="body"
   renderCommand={null}
   resetInputOnClose={false}
+  shouldReturnFocusAfterClose={true}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -19933,6 +19944,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -20138,6 +20150,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -20343,6 +20356,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -20549,6 +20563,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -20756,6 +20771,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -20961,6 +20977,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -21166,6 +21183,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         reactModalParentSelector="body"
                         renderCommand={null}
                         resetInputOnClose={false}
+                        shouldReturnFocusAfterClose={true}
                         showSpinnerOnSelect={true}
                         suggestion={
                           Object {
@@ -21436,6 +21454,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
   reactModalParentSelector="#main"
   renderCommand={null}
   resetInputOnClose={false}
+  shouldReturnFocusAfterClose={true}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -26662,6 +26681,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -26868,6 +26888,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -27074,6 +27095,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -27281,6 +27303,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -27489,6 +27512,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -27695,6 +27719,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -27901,6 +27926,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   reactModalParentSelector="#main"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -28080,6 +28106,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   reactModalParentSelector="body"
   renderCommand={null}
   resetInputOnClose={false}
+  shouldReturnFocusAfterClose={true}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -30699,6 +30726,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -30906,6 +30934,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -31113,6 +31142,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -31321,6 +31351,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -31530,6 +31561,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -31737,6 +31769,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -31944,6 +31977,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -32123,6 +32157,7 @@ exports[`props.theme should render a custom theme 1`] = `
   reactModalParentSelector="body"
   renderCommand={null}
   resetInputOnClose={false}
+  shouldReturnFocusAfterClose={true}
   showSpinnerOnSelect={true}
   theme={
     Object {
@@ -35668,6 +35703,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -35875,6 +35911,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -36082,6 +36119,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -36290,6 +36328,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -36499,6 +36538,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -36706,6 +36746,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {
@@ -36913,6 +36954,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   reactModalParentSelector="body"
                                   renderCommand={null}
                                   resetInputOnClose={false}
+                                  shouldReturnFocusAfterClose={true}
                                   showSpinnerOnSelect={true}
                                   suggestion={
                                     Object {

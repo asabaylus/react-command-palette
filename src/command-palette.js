@@ -305,7 +305,12 @@ class CommandPalette extends React.Component {
 
   renderModalCommandPalette() {
     const { showModal } = this.state;
-    const { trigger, theme, reactModalParentSelector } = this.props;
+    const {
+      trigger,
+      theme,
+      reactModalParentSelector,
+      shouldReturnFocusAfterClose,
+    } = this.props;
     return (
       <div className="react-command-palette">
         <PaletteTrigger
@@ -321,6 +326,7 @@ class CommandPalette extends React.Component {
           }
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
+          shouldReturnFocusAfterClose={shouldReturnFocusAfterClose}
           className={theme.modal}
           overlayClassName={theme.overlay}
           contentLabel="Command Palette"
@@ -373,6 +379,7 @@ CommandPalette.defaultProps = {
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
+  shouldReturnFocusAfterClose: true,
   showSpinnerOnSelect: true,
   theme: defaultTheme,
 };
@@ -483,6 +490,11 @@ CommandPalette.propTypes = {
    * a command has been selected. When true the spinner is enabled when false the spinner
    * is disabled. */
   showSpinnerOnSelect: PropTypes.bool,
+
+  /**
+   * shouldReturnFocusAfterClose a boolean indicate if the modal should restore focus to
+   * the element that had focus prior to its display. */
+  shouldReturnFocusAfterClose: PropTypes.bool,
 
   /** closeOnSelect a boolean, when true selecting an item will immediately close the
    * command-palette  */
