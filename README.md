@@ -109,7 +109,7 @@ const commands = [{
   ```js
     <CommandPalette
       commands={commands}
-      onSelect={suggestion => {
+      onHighlight={suggestion => {
         console.log(`A suggested command was highlighted: \n
         ${JSON.stringify(suggestion)}
         `);
