@@ -75,7 +75,7 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addon-notes": "^5.3.18",
     "@storybook/addon-options": "^5.3.19",
-    "@storybook/addons": "^5.3.18",
+    "@storybook/addons": "^5.3.19",
     "@storybook/cli": "^5.3.18",
     "@storybook/core": "^5.3.18",
     "@storybook/react": "^5.3.19",
