@@ -66,7 +66,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.10.4",
     "@storybook/addon-a11y": "^5.3.19",
-    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-backgrounds": "^5.3.18",
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-info": "^5.3.18",
