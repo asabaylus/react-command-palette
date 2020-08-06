@@ -61,7 +61,9 @@ class CommandPalette extends React.Component {
     this.onSelect = this.onSelect.bind(this);
 
     // eslint-disable-next-line prettier/prettier
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
+      this
+    );
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
     );
@@ -267,6 +269,7 @@ class CommandPalette extends React.Component {
       showSpinnerOnSelect,
       display,
       header,
+      renderSuggestionsContainer,
       highlightFirstSuggestion,
       alwaysRenderCommands,
     } = this.props;
@@ -295,6 +298,7 @@ class CommandPalette extends React.Component {
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           getSuggestionValue={getSuggestionValue}
+          renderSuggestionsContainer={renderSuggestionsContainer}
           renderSuggestion={this.commandTemplate}
           inputProps={this.defaultInputProps(value)}
           theme={theme}
