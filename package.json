@@ -81,7 +81,7 @@
     "@storybook/react": "^5.3.19",
     "@storybook/storybook-deployer": "^2.8.6",
     "acorn": "^7.3.1",
-    "ajv": "^6.12.3",
+    "ajv": "^6.12.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
