@@ -89,7 +89,7 @@
     "babelrc-rollup": "^3.0.0",
     "chromatic": "^5.0.0",
     "codecov": "^3.7.2",
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
     "enzyme": "^3.11.0",
