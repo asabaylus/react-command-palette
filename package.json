@@ -76,7 +76,7 @@
     "@storybook/addon-options": "^5.3.21",
     "@storybook/addons": "^6.0.21",
     "@storybook/cli": "^6.0.21",
-    "@storybook/core": "^6.0.21",
+    "@storybook/core": "^6.0.22",
     "@storybook/react": "^6.0.21",
     "@storybook/storybook-deployer": "^2.8.6",
     "acorn": "^8.0.1",
