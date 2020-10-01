@@ -108,7 +108,7 @@
     "jest": "^26.4.2",
     "jest-cli": "^26.4.2",
     "module-resolver": "^1.0.0",
-    "postcss": "^7.0.32",
+    "postcss": "^8.1.1",
     "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
