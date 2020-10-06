@@ -33,5 +33,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - run: npm run prebuild:storybook
-    - run: npm run chromatic
+    # run: npm run chromatic
     - run: ./node_modules/.bin/codecov - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
+
+    
