@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x, 14.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -28,4 +28,10 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - run: npm run prebuild:storybook
+    - run: npm run chromatic
+    - run: ./node_modules/.bin/codecov - cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
+    - env: 
+        - CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+        - CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+        - CHROMATIC_APP_CODE: ${{secrets.CHROMATIC_APP_CODE}}
 
