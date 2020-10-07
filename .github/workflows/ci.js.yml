@@ -47,3 +47,4 @@ jobs:
       with: 
         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         token: ${{secrets.CHROMATIC_APP_CODE}}
+        autoAcceptChanges: true
