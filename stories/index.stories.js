@@ -16,7 +16,6 @@ import {
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withTests } from "@storybook/addon-jest";
-import { checkA11y } from "@storybook/addon-a11y";
 
 // sample component
 import sampleHeader from "../examples/sampleHeader";
@@ -67,7 +66,6 @@ storiesOf("Command Palette", module)
     })
   )
   .addDecorator(withInfo)
-  .addDecorator(checkA11y)
   .addDecorator(withKnobs)
   .addDecorator(story => (
     <div
