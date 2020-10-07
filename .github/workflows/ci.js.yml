@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: CI
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
@@ -29,15 +29,25 @@ jobs:
         CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
         CHROMATIC_APP_CODE: ${{secrets.CHROMATIC_APP_CODE}}
         CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-    - name: CodeCov
-    - uses: actions/checkout@master
-    - uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        fail_ci_if_error: true
+    
+    # - name: CodeCov
+    # - uses: actions/checkout@master
+    # - uses: codecov/codecov-action@v1
+    #   with:
+    #     token: ${{ secrets.CODECOV_TOKEN }}
+    #     fail_ci_if_error: true
+    
+    - name: Install dependencies
     - run: npm ci
+
+    - name: Gulp build
     - run: npm run build --if-present
+
+    - name: Jest tests
     - run: npm test
+
+    - name: Create Storybook
     - run: npm run prebuild:storybook
+    
     # run: npm run chromatic
     # - run: ./node_modules/.bin/codecov cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
