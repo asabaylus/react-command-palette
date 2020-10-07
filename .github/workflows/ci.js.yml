@@ -37,7 +37,6 @@ jobs:
       run: npm run prebuild:storybook
     
     - name: CodeCov
-    - uses: actions/checkout@master
     - uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
