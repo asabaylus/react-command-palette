@@ -36,7 +36,7 @@ jobs:
     # run: npm run chromatic
     # - run: ./node_modules/.bin/codecov cc-test-reporter after-build -t lcov --prefix "/codefresh/volume/react-command-palette" --exit-code $?
 
-    name: CodeCov
+    - name: CodeCov
     - uses: actions/checkout@master
     - uses: codecov/codecov-action@v1
       with:
