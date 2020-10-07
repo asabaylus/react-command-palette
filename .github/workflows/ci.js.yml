@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ release ]
+  pull_request:
+    branches: [ release ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 13.x, 14.x]
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run build
+      run: npm run build --if-present
+
+    - name: Run tests
+      run: npm test
+
+    - name: Create docs
+      run: npm run prebuild-storybook
+    
+    - name: Code coverage
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        fail_ci_if_error: true
+    
+    - name: Visual regression tests
+      uses: chromaui/action@v1
+      with: 
+        projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        token: ${{secrets.CHROMATIC_APP_CODE}}
