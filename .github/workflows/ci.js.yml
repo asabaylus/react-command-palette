@@ -34,7 +34,7 @@ jobs:
       run: npm test
 
     - name: Create docs
-      run: npm run prebuild:storybook
+      run: npm run prebuild-storybook
     
     - name: Code coverage
       uses: codecov/codecov-action@v1
