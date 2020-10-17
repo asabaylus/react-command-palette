@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/asabaylus/react-command-palette#readme",
   "peerDependencies": {
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
@@ -112,7 +112,7 @@
     "postcss": "^8.1.1",
     "prettier": "^2.1.2",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "regenerator-runtime": "^0.13.7",
     "rollup": "^2.28.2",
