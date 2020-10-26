@@ -103,7 +103,10 @@ class CommandPalette extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { commands } = this.props;
+    const { commands, open } = this.props;
+    if(open !== prevProps.open) {
+      this.handleCloseModal();
+    }
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
