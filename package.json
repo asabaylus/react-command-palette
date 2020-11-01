@@ -107,7 +107,7 @@
     "eslint-plugin-xss": "^0.1.10",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.5.3",
-    "jest-cli": "^26.5.3",
+    "jest-cli": "^26.6.1",
     "module-resolver": "^1.0.0",
     "postcss": "^8.1.1",
     "prettier": "^2.1.2",
