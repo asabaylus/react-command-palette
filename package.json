@@ -70,7 +70,7 @@
     "@storybook/addon-docs": "^6.0.26",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-jest": "^6.0.26",
-    "@storybook/addon-knobs": "^6.0.26",
+    "@storybook/addon-knobs": "^6.1.9",
     "@storybook/addon-links": "^6.0.26",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addon-options": "^5.3.21",
