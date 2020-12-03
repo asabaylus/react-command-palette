@@ -2,7 +2,7 @@
 
 echo "Deploying command palette..."
 
-if [ "$CI_BRANCH" != "master" ];
+if [ "$CI_BRANCH" != "release" ];
 then
   echo "Exit: branch is not git master"
   exit

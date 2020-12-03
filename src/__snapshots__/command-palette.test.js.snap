@@ -192,6 +192,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -217,6 +218,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -245,6 +247,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -266,6 +269,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -332,6 +336,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -360,6 +365,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -513,6 +519,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -668,6 +675,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -861,6 +869,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -903,6 +912,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -945,6 +955,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1098,6 +1109,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1251,6 +1263,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1404,6 +1417,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1429,6 +1443,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1582,6 +1597,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1741,6 +1757,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -1894,6 +1911,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -2050,6 +2068,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -2203,6 +2222,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -2248,6 +2268,7 @@ exports[`Command List renders a command 1`] = `
               >
                 <div
                   aria-label="Command Palette"
+                  aria-modal="true"
                   class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                   role="dialog"
                   tabindex="-1"
@@ -2402,6 +2423,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -2555,6 +2577,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -2711,6 +2734,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -2864,6 +2888,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3017,6 +3042,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3173,6 +3199,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3326,6 +3353,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3479,6 +3507,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3632,6 +3661,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3785,6 +3815,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3938,6 +3969,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open ReactModal__Content--before-close atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -3980,6 +4012,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open ReactModal__Content--before-close atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4133,6 +4166,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open ReactModal__Content--before-close atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4289,6 +4323,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4356,6 +4391,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4509,6 +4545,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4601,6 +4638,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4693,6 +4731,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4785,6 +4824,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4810,6 +4850,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4835,6 +4876,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4902,6 +4944,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -4988,6 +5031,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -5141,6 +5185,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -5294,6 +5339,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -5365,13 +5411,16 @@ exports[`Command List renders a command 1`] = `
       bodyOpenClassName="ReactModal__Body--open"
       className="atom-modal"
       closeTimeoutMS={1}
+      contentElement={[Function]}
       contentLabel="Command Palette"
       isOpen={true}
       onAfterOpen={[Function]}
       onRequestClose={[Function]}
       overlayClassName="atom-overlay"
+      overlayElement={[Function]}
       parentSelector={[Function]}
       portalClassName="ReactModalPortal"
+      preventScroll={false}
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -5388,6 +5437,7 @@ exports[`Command List renders a command 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -5469,6 +5519,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5494,6 +5545,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5522,6 +5574,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5543,6 +5596,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5609,6 +5663,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5637,6 +5692,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5790,6 +5846,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -5945,6 +6002,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6138,6 +6196,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6180,6 +6239,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6222,6 +6282,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6375,6 +6436,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6528,6 +6590,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6681,6 +6744,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6706,6 +6770,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -6859,6 +6924,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7018,6 +7084,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7171,6 +7238,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7327,6 +7395,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7480,6 +7549,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7525,6 +7595,7 @@ exports[`Command List renders a command 1`] = `
                   >
                     <div
                       aria-label="Command Palette"
+                      aria-modal="true"
                       class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                       role="dialog"
                       tabindex="-1"
@@ -7679,6 +7750,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7832,6 +7904,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -7988,6 +8061,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -8141,6 +8215,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -8294,6 +8369,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -8450,6 +8526,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -8603,6 +8680,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -8756,6 +8834,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -8909,6 +8988,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9062,6 +9142,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9215,6 +9296,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open ReactModal__Content--before-close atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9257,6 +9339,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open ReactModal__Content--before-close atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9410,6 +9493,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open ReactModal__Content--before-close atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9566,6 +9650,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9633,6 +9718,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9786,6 +9872,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9878,6 +9965,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -9970,6 +10058,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10062,6 +10151,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10087,6 +10177,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10112,6 +10203,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10179,6 +10271,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10265,6 +10358,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10418,6 +10512,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10571,6 +10666,7 @@ exports[`Command List renders a command 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -10642,6 +10738,7 @@ exports[`Command List renders a command 1`] = `
           bodyOpenClassName="ReactModal__Body--open"
           className="atom-modal"
           closeTimeoutMS={1}
+          contentElement={[Function]}
           contentLabel="Command Palette"
           defaultStyles={
             Object {
@@ -10673,8 +10770,10 @@ exports[`Command List renders a command 1`] = `
           onAfterOpen={[Function]}
           onRequestClose={[Function]}
           overlayClassName="atom-overlay"
+          overlayElement={[Function]}
           parentSelector={[Function]}
           portalClassName="ReactModalPortal"
+          preventScroll={false}
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
@@ -10695,6 +10794,7 @@ exports[`Command List renders a command 1`] = `
           >
             <div
               aria-label="Command Palette"
+              aria-modal={true}
               className="ReactModal__Content ReactModal__Content--after-open atom-modal"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -11356,6 +11456,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11381,6 +11482,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11409,6 +11511,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11430,6 +11533,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11496,6 +11600,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11524,6 +11629,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11677,6 +11783,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -11832,6 +11939,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12025,6 +12133,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12067,6 +12176,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12109,6 +12219,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12262,6 +12373,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12415,6 +12527,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12568,6 +12681,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12593,6 +12707,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12746,6 +12861,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -12905,6 +13021,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -13058,6 +13175,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -13214,6 +13332,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -13367,6 +13486,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -13412,6 +13532,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               >
                 <div
                   aria-label="Command Palette"
+                  aria-modal="true"
                   class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                   role="dialog"
                   tabindex="-1"
@@ -13566,6 +13687,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -13719,6 +13841,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -13875,6 +13998,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -14028,6 +14152,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -14181,6 +14306,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -14338,13 +14464,16 @@ exports[`Opening the palette displays the suggestion list 1`] = `
       bodyOpenClassName="ReactModal__Body--open"
       className="atom-modal"
       closeTimeoutMS={1}
+      contentElement={[Function]}
       contentLabel="Command Palette"
       isOpen={true}
       onAfterOpen={[Function]}
       onRequestClose={[Function]}
       overlayClassName="atom-overlay"
+      overlayElement={[Function]}
       parentSelector={[Function]}
       portalClassName="ReactModalPortal"
+      preventScroll={false}
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -14361,6 +14490,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -14528,6 +14658,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -14553,6 +14684,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -14581,6 +14713,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -14602,6 +14735,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -14668,6 +14802,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -14696,6 +14831,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -14849,6 +14985,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15004,6 +15141,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15197,6 +15335,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15239,6 +15378,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15281,6 +15421,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15434,6 +15575,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15587,6 +15729,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15740,6 +15883,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15765,6 +15909,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -15918,6 +16063,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -16077,6 +16223,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -16230,6 +16377,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -16386,6 +16534,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -16539,6 +16688,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -16584,6 +16734,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   >
                     <div
                       aria-label="Command Palette"
+                      aria-modal="true"
                       class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                       role="dialog"
                       tabindex="-1"
@@ -16738,6 +16889,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -16891,6 +17043,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -17047,6 +17200,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -17200,6 +17354,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -17353,6 +17508,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -17510,6 +17666,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           bodyOpenClassName="ReactModal__Body--open"
           className="atom-modal"
           closeTimeoutMS={1}
+          contentElement={[Function]}
           contentLabel="Command Palette"
           defaultStyles={
             Object {
@@ -17541,8 +17698,10 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           onAfterOpen={[Function]}
           onRequestClose={[Function]}
           overlayClassName="atom-overlay"
+          overlayElement={[Function]}
           parentSelector={[Function]}
           portalClassName="ReactModalPortal"
+          preventScroll={false}
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
@@ -17563,6 +17722,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           >
             <div
               aria-label="Command Palette"
+              aria-modal={true}
               className="ReactModal__Content ReactModal__Content--after-open atom-modal"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -21536,6 +21696,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -21561,6 +21722,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -21589,6 +21751,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -21610,6 +21773,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -21676,6 +21840,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -21704,6 +21869,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -21857,6 +22023,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22012,6 +22179,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22205,6 +22373,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22247,6 +22416,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22289,6 +22459,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22442,6 +22613,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22595,6 +22767,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22748,6 +22921,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22773,6 +22947,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -22926,6 +23101,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -23085,6 +23261,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -23238,6 +23415,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -23394,6 +23572,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -23547,6 +23726,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -23592,6 +23772,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
               >
                 <div
                   aria-label="Command Palette"
+                  aria-modal="true"
                   class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                   role="dialog"
                   tabindex="-1"
@@ -23750,13 +23931,16 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
       bodyOpenClassName="ReactModal__Body--open"
       className="atom-modal"
       closeTimeoutMS={1}
+      contentElement={[Function]}
       contentLabel="Command Palette"
       isOpen={true}
       onAfterOpen={[Function]}
       onRequestClose={[Function]}
       overlayClassName="atom-overlay"
+      overlayElement={[Function]}
       parentSelector={[Function]}
       portalClassName="ReactModalPortal"
+      preventScroll={false}
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -23773,6 +23957,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -23940,6 +24125,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -23965,6 +24151,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -23993,6 +24180,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24014,6 +24202,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24080,6 +24269,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24108,6 +24298,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24261,6 +24452,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24416,6 +24608,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24609,6 +24802,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24651,6 +24845,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24693,6 +24888,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24846,6 +25042,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -24999,6 +25196,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25152,6 +25350,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25177,6 +25376,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25330,6 +25530,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25489,6 +25690,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25642,6 +25844,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25798,6 +26001,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25951,6 +26155,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -25996,6 +26201,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   >
                     <div
                       aria-label="Command Palette"
+                      aria-modal="true"
                       class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                       role="dialog"
                       tabindex="-1"
@@ -26154,6 +26360,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           bodyOpenClassName="ReactModal__Body--open"
           className="atom-modal"
           closeTimeoutMS={1}
+          contentElement={[Function]}
           contentLabel="Command Palette"
           defaultStyles={
             Object {
@@ -26185,8 +26392,10 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           onAfterOpen={[Function]}
           onRequestClose={[Function]}
           overlayClassName="atom-overlay"
+          overlayElement={[Function]}
           parentSelector={[Function]}
           portalClassName="ReactModalPortal"
+          preventScroll={false}
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
@@ -26207,6 +26416,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           >
             <div
               aria-label="Command Palette"
+              aria-modal={true}
               className="ReactModal__Content ReactModal__Content--after-open atom-modal"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -28188,6 +28398,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28213,6 +28424,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28241,6 +28453,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28262,6 +28475,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28328,6 +28542,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28356,6 +28571,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28509,6 +28725,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28664,6 +28881,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28857,6 +29075,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28899,6 +29118,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -28941,6 +29161,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -29098,13 +29319,16 @@ exports[`props.renderCommand should render a custom command component 1`] = `
       bodyOpenClassName="ReactModal__Body--open"
       className="atom-modal"
       closeTimeoutMS={1}
+      contentElement={[Function]}
       contentLabel="Command Palette"
       isOpen={true}
       onAfterOpen={[Function]}
       onRequestClose={[Function]}
       overlayClassName="atom-overlay"
+      overlayElement={[Function]}
       parentSelector={[Function]}
       portalClassName="ReactModalPortal"
+      preventScroll={false}
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -29121,6 +29345,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -29288,6 +29513,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29313,6 +29539,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29341,6 +29568,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29362,6 +29590,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29428,6 +29657,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29456,6 +29686,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29609,6 +29840,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29764,6 +29996,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29957,6 +30190,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -29999,6 +30233,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -30041,6 +30276,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -30198,6 +30434,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
           bodyOpenClassName="ReactModal__Body--open"
           className="atom-modal"
           closeTimeoutMS={1}
+          contentElement={[Function]}
           contentLabel="Command Palette"
           defaultStyles={
             Object {
@@ -30229,8 +30466,10 @@ exports[`props.renderCommand should render a custom command component 1`] = `
           onAfterOpen={[Function]}
           onRequestClose={[Function]}
           overlayClassName="atom-overlay"
+          overlayElement={[Function]}
           parentSelector={[Function]}
           portalClassName="ReactModalPortal"
+          preventScroll={false}
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
@@ -30251,6 +30490,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
           >
             <div
               aria-label="Command Palette"
+              aria-modal={true}
               className="ReactModal__Content ReactModal__Content--after-open atom-modal"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -32239,6 +32479,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32264,6 +32505,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32292,6 +32534,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32313,6 +32556,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32379,6 +32623,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32407,6 +32652,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32560,6 +32806,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32715,6 +32962,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32908,6 +33156,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32950,6 +33199,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -32992,6 +33242,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -33145,6 +33396,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -33298,6 +33550,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                 role="dialog"
                 tabindex="-1"
@@ -33451,6 +33704,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                 role="dialog"
                 tabindex="-1"
@@ -33610,13 +33864,16 @@ exports[`props.theme should render a custom theme 1`] = `
       bodyOpenClassName="ReactModal__Body--open"
       className="chrome-modal"
       closeTimeoutMS={1}
+      contentElement={[Function]}
       contentLabel="Command Palette"
       isOpen={true}
       onAfterOpen={[Function]}
       onRequestClose={[Function]}
       overlayClassName="chrome-overlay"
+      overlayElement={[Function]}
       parentSelector={[Function]}
       portalClassName="ReactModalPortal"
+      preventScroll={false}
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -33633,6 +33890,7 @@ exports[`props.theme should render a custom theme 1`] = `
             >
               <div
                 aria-label="Command Palette"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                 role="dialog"
                 tabindex="-1"
@@ -33802,6 +34060,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -33827,6 +34086,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -33855,6 +34115,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -33876,6 +34137,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -33942,6 +34204,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -33970,6 +34233,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34123,6 +34387,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34278,6 +34543,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34471,6 +34737,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34513,6 +34780,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34555,6 +34823,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34708,6 +34977,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -34861,6 +35131,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open atom-modal"
                     role="dialog"
                     tabindex="-1"
@@ -35014,6 +35285,7 @@ exports[`props.theme should render a custom theme 1`] = `
                 >
                   <div
                     aria-label="Command Palette"
+                    aria-modal="true"
                     class="ReactModal__Content ReactModal__Content--after-open chrome-modal"
                     role="dialog"
                     tabindex="-1"
@@ -35173,6 +35445,7 @@ exports[`props.theme should render a custom theme 1`] = `
           bodyOpenClassName="ReactModal__Body--open"
           className="chrome-modal"
           closeTimeoutMS={1}
+          contentElement={[Function]}
           contentLabel="Command Palette"
           defaultStyles={
             Object {
@@ -35204,8 +35477,10 @@ exports[`props.theme should render a custom theme 1`] = `
           onAfterOpen={[Function]}
           onRequestClose={[Function]}
           overlayClassName="chrome-overlay"
+          overlayElement={[Function]}
           parentSelector={[Function]}
           portalClassName="ReactModalPortal"
+          preventScroll={false}
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
@@ -35226,6 +35501,7 @@ exports[`props.theme should render a custom theme 1`] = `
           >
             <div
               aria-label="Command Palette"
+              aria-modal={true}
               className="ReactModal__Content ReactModal__Content--after-open chrome-modal"
               onClick={[Function]}
               onKeyDown={[Function]}

@@ -1,4 +1,4 @@
-if [ "$CI_BRANCH" != "master" ];
+if [ "$CI_BRANCH" != "release" ];
 then
   npm run chromatic
 else

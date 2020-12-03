@@ -7,7 +7,7 @@
 
 import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import Mousetrap from "mousetrap";
 import serializer from "enzyme-to-json/serializer";
 import fuzzysortOptions from "./fuzzysort-options";
