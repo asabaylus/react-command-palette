@@ -134,16 +134,7 @@ storiesOf("Command Palette", module)
         maxDisplayed={12}
         open
       />
-    ),
-    {
-      backgrounds: [
-        {
-          name: "dark",
-          value: "rgba(39, 40, 34)",
-          default: true
-        }
-      ]
-    }
+    )
   )
   .add(
     "with a custom command",
