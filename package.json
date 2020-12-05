@@ -16,7 +16,7 @@
     "prebuild-storybook": "npm run test:generate-output",
     "storybook": "cross-env NODE_ENV=development start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o docs",
-    "chromatic:ci": "chromatic --auto-accept-changes --build-script-name=docs --no-interactive",
+    "chromatic:ci": "chromatic --auto-accept-changes --build-script-name=docs --no-interactive --skip 'dependabot/**'",
     "chromatic": "chromatic --build-script-name=docs"
   },
   "repository": {
