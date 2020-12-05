@@ -43,10 +43,3 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         fail_ci_if_error: true
-    
-    - name: Visual regression tests
-      uses: chromaui/action@v1
-      with: 
-        projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-        token: ${{secrets.CHROMATIC_APP_CODE}}
-        autoAcceptChanges: true
