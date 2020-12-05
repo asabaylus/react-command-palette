@@ -36,6 +36,7 @@ import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
+import { check } from "prettier";
 
 // add noop command to this big list of command names
 function addCommandToArray(c) {
@@ -153,7 +154,11 @@ storiesOf("Command Palette", module)
       }
     }
   )
-  .add("is toggled open", () => <CommandPalette commands={commands} open />, {
+  .add("is toggled open", () => 
+    {
+    const open = boolean("Open", true);
+    return <CommandPalette commands={commands} open={open} />
+    }, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 
       when it mounts. By default command palette will be hidden until the _trigger_

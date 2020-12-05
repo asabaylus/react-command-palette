@@ -87,6 +87,23 @@ describe("Loading indicator", () => {
   });
 });
 
+describe("props.open is set to false", () => {
+  const commandPalette = shallow(
+    <CommandPalette commands={mockCommands} open />
+  );
+
+  it("closes the modal", () => {
+    commandPalette.setProps({ open: false });
+    expect(commandPalette.state("showModal")).toBeFalsy();
+  });
+
+  it("opens the modal", () => {
+    expect(commandPalette.state("showModal")).toBeFalsy();
+    commandPalette.setProps({ open: true });
+    expect(commandPalette.state("showModal")).toBeTruthy();
+  });
+});
+
 describe("Search", () => {
   it("has configureable fusejs options", () => {
     const commandPalette = mount(
