@@ -7,7 +7,7 @@
 
 import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import Mousetrap from "mousetrap";
 import serializer from "enzyme-to-json/serializer";
 import fuzzysortOptions from "./fuzzysort-options";
@@ -88,6 +88,23 @@ describe("Loading indicator", () => {
     expect(wrapper.state("isLoading")).toBeTruthy();
     expect(wrapper.props("showSpinnerOnSelect")).toBeTruthy();
     expect(spinner.exists()).toBeTruthy();
+  });
+});
+
+describe("props.open is set to false", () => {
+  const commandPalette = shallow(
+    <CommandPalette commands={mockCommands} open />
+  );
+
+  it("closes the modal", () => {
+    commandPalette.setProps({ open: false });
+    expect(commandPalette.state("showModal")).toBeFalsy();
+  });
+
+  it("opens the modal", () => {
+    expect(commandPalette.state("showModal")).toBeFalsy();
+    commandPalette.setProps({ open: true });
+    expect(commandPalette.state("showModal")).toBeTruthy();
   });
 });
 

@@ -140,16 +140,7 @@ storiesOf("Command Palette", module)
         maxDisplayed={12}
         open
       />
-    ),
-    {
-      backgrounds: [
-        {
-          name: "dark",
-          value: "rgba(39, 40, 34)",
-          default: true
-        }
-      ]
-    }
+    )
   )
   .add(
     "with a custom command",
@@ -160,7 +151,11 @@ storiesOf("Command Palette", module)
       }
     }
   )
-  .add("is toggled open", () => <CommandPalette commands={commands} open />, {
+  .add("is toggled open", () => 
+    {
+    const open = boolean("Open", true);
+    return <CommandPalette commands={commands} open={open} />
+    }, {
     info: {
       text: `Adding an _open_ prop will force the command palette to be displayed 
       when it mounts. By default command palette will be hidden until the _trigger_

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Enzyme, { mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import serializer from "enzyme-to-json/serializer";
 
 import allCommands from "./__mocks__/commands";

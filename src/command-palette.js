@@ -103,7 +103,15 @@ class CommandPalette extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { commands } = this.props;
+    const { commands, open } = this.props;
+    if (open !== prevProps.open) {
+      if (open) {
+        this.handleOpenModal();
+      } else {
+        this.handleCloseModal();
+      }
+    }
+
     if (!equal(prevProps.commands, commands)) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
@@ -163,6 +171,19 @@ class CommandPalette extends React.Component {
     });
   }
 
+  handleCloseModal() {
+    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
+    const { value } = this.state;
+
+    this.setState({
+      showModal: false,
+      isLoading: false,
+      value: resetInputOnClose ? defaultInputValue : value,
+    });
+
+    return onRequestClose();
+  }
+
   onSuggestionsClearRequested() {
     // when using the onSuggestionsClearRequested property, it overrides
     // alwaysRenderSuggestions which I think is counter intuitive, as always should mean
@@ -220,19 +241,6 @@ class CommandPalette extends React.Component {
         return false;
       }
     );
-  }
-
-  handleCloseModal() {
-    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
-    const { value } = this.state;
-
-    this.setState({
-      showModal: false,
-      isLoading: false,
-      value: resetInputOnClose ? defaultInputValue : value,
-    });
-
-    return onRequestClose();
   }
 
   handleOpenModal() {
