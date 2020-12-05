@@ -36,7 +36,6 @@ import CommandPalette from "../src/command-palette";
 import commands from "../src/__mocks__/commands";
 import lotsOfCommands from "../src/__mocks__/lots_of_commands";
 import results from "../.jest-test-results.json";
-import { check } from "prettier";
 
 // add noop command to this big list of command names
 function addCommandToArray(c) {
