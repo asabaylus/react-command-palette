@@ -31006,6 +31006,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -31025,6 +31026,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
@@ -36019,6 +36021,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -36038,6 +36041,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
@@ -41135,6 +41139,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -41154,6 +41159,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
