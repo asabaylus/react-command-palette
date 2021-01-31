@@ -110,6 +110,7 @@ storiesOf("Command Palette", module)
     <CommandPalette
       commands={commands}
       renderCommand={sampleAtomCommand}
+      resetInputOnClose
       theme={atom}
       open
     />
@@ -117,6 +118,7 @@ storiesOf("Command Palette", module)
   .add("chrome theme", () => (
     <CommandPalette
       commands={commands}
+      resetInputOnClose
       renderCommand={sampleChromeCommand}
       theme={chrome}
       open
@@ -128,6 +130,7 @@ storiesOf("Command Palette", module)
       <CommandPalette
         commands={commands}
         renderCommand={sampleSublimeCommand}
+        resetInputOnClose
         theme={sublime}
         placeholder=""
         maxDisplayed={12}
