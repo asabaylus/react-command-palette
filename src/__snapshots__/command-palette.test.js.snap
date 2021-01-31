@@ -10990,6 +10990,7 @@ exports[`Command List renders a command 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -11009,6 +11010,7 @@ exports[`Command List renders a command 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
@@ -18074,6 +18076,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -18093,6 +18096,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
@@ -19982,6 +19986,7 @@ exports[`props.display should not display the command palette in react-modal whe
       </Header>
       <Autosuggest
         alwaysRenderSuggestions={true}
+        containerProps={Object {}}
         focusInputOnSuggestionClick={true}
         getSuggestionValue={[Function]}
         highlightFirstSuggestion={true}
@@ -20001,6 +20006,7 @@ exports[`props.display should not display the command palette in react-modal whe
         onSuggestionsFetchRequested={[Function]}
         renderSuggestion={[Function]}
         renderSuggestionsContainer={[Function]}
+        shouldKeepSuggestionsOnSelect={[Function]}
         shouldRenderSuggestions={[Function]}
         suggestions={
           Array [
@@ -26924,6 +26930,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -26943,6 +26950,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
@@ -46289,6 +46297,7 @@ exports[`props.theme should render a vscode theme 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -46308,6 +46317,7 @@ exports[`props.theme should render a vscode theme 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
@@ -51354,6 +51364,7 @@ exports[`props.theme should render an atom theme 1`] = `
                 </Header>
                 <Autosuggest
                   alwaysRenderSuggestions={true}
+                  containerProps={Object {}}
                   focusInputOnSuggestionClick={true}
                   getSuggestionValue={[Function]}
                   highlightFirstSuggestion={true}
@@ -51373,6 +51384,7 @@ exports[`props.theme should render an atom theme 1`] = `
                   onSuggestionsFetchRequested={[Function]}
                   renderSuggestion={[Function]}
                   renderSuggestionsContainer={[Function]}
+                  shouldKeepSuggestionsOnSelect={[Function]}
                   shouldRenderSuggestions={[Function]}
                   suggestions={
                     Array [
