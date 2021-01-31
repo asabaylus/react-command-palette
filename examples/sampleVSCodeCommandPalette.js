@@ -23,53 +23,41 @@ export class DynamicListCommandPalette extends Component {
          }
 
          handleChange(value) {
-           // When a user types an "Action" key such as "?, :, >, #" it triggers an
-           // context change in the command palette. "Action" keys do not require the user
-           // to explicity press "enter" on the keyboard or make a selection on the menu
-           // of commands. Simply typing the "action" character will trigger the
-           // associated action command.
-           if (value === "?" || value === ">" || value === "") {
-             this.setState({
-               showSpinnerOnSelect: false,
-               commands: (() => {
-                 if (value === "?") {
-                   return globalCommands;
-                 }
+          console.log('value: ', value)
+          // When a user types an "action" key such as "?, :, >, #" a new list of commands is loaded in the command palette
+          if (value === "?" || value === ">" || value === "") {
+            this.setState({
+              showSpinnerOnSelect: false,
+              commands: (() => {
+                if (value === "?") {
+                  return globalCommands;
+                }
 
-                 if (value === ">") {
-                   return categories;
-                 }
+                if (value === ">") {
+                  return categories;
+                }
 
-                 if (value === "") {
-                   return files;
-                 }
-               })()
-             });
-            }
+                if (value === "") {
+                  return files;
+                }
+              })()
+            });
+          }
          }
 
-         // The action command keys also has a plain language command equivalent ex: ">"
-         // "Show and Run Commands". To trigger these actions the user must select the
-         // command in the UI by clicking it or pressing enter on the keyboard.
-         handleSelect(command) {
-           if (command.name === "Show and Run Commands") {
-             this.setState({
-               showSpinnerOnSelect: false,
-               commands: categories
-             });
-           } 
+         handleSelect(command) { 
            
-           // when selecting a non-action command show the spinner
-           if (
-             command !== "?" ||
-             command !== ">" ||
-             command !== "" ||
-             command.name !== "Show and Run Commands"
-           ) {
-             this.setState({
-               showSpinnerOnSelect: true
-             });
-           }
+          alert("Hi Brian!!!");
+          // when selecting a non-action command show the spinner
+          if (
+            command !== "?" ||
+            command !== ">" ||
+            command !== ""
+            ) {
+              this.setState({
+              showSpinnerOnSelect: true
+            });
+          }
          }
 
          render() {

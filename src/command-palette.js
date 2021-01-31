@@ -20,6 +20,7 @@ import { noop, override, after } from "./utils";
 import "../themes/atom.css";
 
 const allSuggestions = [];
+let initialSuggestions = [];
 
 // When suggestion is clicked, Autosuggest needs to populate the input element
 // based on the clicked suggestion. Teach Autosuggest how to calculate the
@@ -85,7 +86,7 @@ class CommandPalette extends React.Component {
     const { hotKeys, open, display } = this.props;
 
     this.setState({
-      suggestions: this.fetchData(),
+      suggestions: initialSuggestions = this.fetchData(),
     });
 
     // Use hot key to open command palette
@@ -175,10 +176,16 @@ class CommandPalette extends React.Component {
     const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
     const { value } = this.state;
 
+    if(resetInputOnClose){
+      this.setState({
+        suggestions: initialSuggestions,
+        value: defaultInputValue
+      });
+    }
+
     this.setState({
       showModal: false,
-      isLoading: false,
-      value: resetInputOnClose ? defaultInputValue : value,
+      isLoading: false
     });
 
     return onRequestClose();
@@ -225,8 +232,7 @@ class CommandPalette extends React.Component {
       );
     }
 
-    this.allCommands = commands;
-    return this.allCommands;
+    return this.allCommands = commands;
   }
 
   focusInput() {
