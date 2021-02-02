@@ -440,9 +440,9 @@ CommandPalette.propTypes = {
    *  first suggestion. Defaults to false. */
   highlightFirstSuggestion: PropTypes.bool,
 
-  /** When suggestion is clicked, React Autosuggest needs to populate the input element  
-   * based on the clicked suggestion. Teach React Autosuggest how to calculate the
-   * input value for every given suggestion. By default the highlighed suggesting will be 
+  /** When suggestion is clicked, react-autosuggest needs to populate the input element  
+   * based on the clicked suggestion. Teach react-autosuggest how to calculate the
+   * input value for every given suggestion. By default the highlighed suggestion will be 
    * displayed */
   getSuggestionValue: PropTypes.func, 
 

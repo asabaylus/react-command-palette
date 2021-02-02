@@ -73,7 +73,7 @@ const commands = [{
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
-* ```getSuggestionValue``` a _function_, when suggestion is clicked, React Autosuggest needs to populate the input element based on the clicked suggestion. Teach React Autosuggest how to calculate the input value for every given suggestion. By default the highlighed suggesting will be displayed
+* ```getSuggestionValue``` a _function_, when suggestion is clicked, react-autosuggest needs to populate the input element based on the clicked suggestion. Teach react-autosuggest how to calculate the input value for every given suggestion. By default the highlighed suggestion will be displayed
 
 * ```highlightFirstSuggestion```  a _boolean_, will automatically highlight the first suggestion. Defaults to "true". */
 
