@@ -73,6 +73,8 @@ const commands = [{
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
+* ```getSuggestionValue``` a _function_, when suggestion is clicked, React Autosuggest needs to populate the input element based on the clicked suggestion. Teach React Autosuggest how to calculate the input value for every given suggestion. By default the highlighed suggesting will be displayed
+
 * ```highlightFirstSuggestion```  a _boolean_, will automatically highlight the first suggestion. Defaults to "true". */
 
 * ```options``` options controls how fuzzy search is configured. Note: use at your own risk, this is likely to change in the future. The search options are derived from these [fuzzysort options](https://github.com/farzher/fuzzysort#options). However the command palette options prop must have the following values included to function correctly:
@@ -87,7 +89,7 @@ const commands = [{
     allowTypo: true, 
     scoreFn: null 
   ```
-* ```onChange``` a function that's called when the input value changes. It returns two values: the current value of the input field followed by the users typed input. The query ignores keyboard navigation and clicks.
+* ```onChange``` a _function_ that's called when the input value changes. It returns two values: the current value of the input field followed by the users typed input. The query ignores keyboard navigation and clicks.
 
   ```js
     <CommandPalette
