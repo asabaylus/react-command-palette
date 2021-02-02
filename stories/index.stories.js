@@ -217,6 +217,13 @@ storiesOf("Command Palette", module)
       open
     />
   ))
+  .add("getSuggestionValue", () => (
+    <CommandPalette
+      commands={commands}
+      getSuggestionValue={ () => ">" }
+      open
+    />
+  ))
   .add("onAfterOpen", () => (
     <CommandPalette
       commands={commands}

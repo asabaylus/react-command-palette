@@ -22,11 +22,6 @@ import "../themes/atom.css";
 const allSuggestions = [];
 let initialSuggestions = [];
 
-// When suggestion is clicked, Autosuggest needs to populate the input element
-// based on the clicked suggestion. Teach Autosuggest how to calculate the
-// input value for every given suggestion.
-const getSuggestionValue = (suggestion) => suggestion.name;
-
 const Header = (props) => {
   const { theme, children } = props;
   return <div className={theme.header}>{children}</div>;
@@ -274,7 +269,7 @@ class CommandPalette extends React.Component {
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
-    const { theme } = this.props;
+    const { theme, getSuggestionValue } = this.props;
     const {
       maxDisplayed,
       spinner,
@@ -303,6 +298,7 @@ class CommandPalette extends React.Component {
           }}
           alwaysRenderSuggestions={alwaysRenderCommands}
           suggestions={suggestions.slice(0, maxDisplayed)}
+          getSuggestionValue={getSuggestionValue}
           highlightFirstSuggestion={highlightFirstSuggestion}
           onSuggestionHighlighted={this.onSuggestionHighlighted}
           onSuggestionSelected={this.onSuggestionSelected}
@@ -379,6 +375,7 @@ CommandPalette.defaultProps = {
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
   defaultInputValue: "",
+  getSuggestionValue: (suggestion) => suggestion.name,
   header: null,
   highlightFirstSuggestion: true,
   maxDisplayed: 7,
@@ -448,6 +445,12 @@ CommandPalette.propTypes = {
   /** When highlightFirstSuggestion={true}, Autosuggest will automatically highlight the
    *  first suggestion. Defaults to false. */
   highlightFirstSuggestion: PropTypes.bool,
+
+  /** When suggestion is clicked, React Autosuggest needs to populate the input element  
+   * based on the clicked suggestion. Teach React Autosuggest how to calculate the
+   * input value for every given suggestion. By default the highlighed suggesting will be 
+   * displayed */
+  getSuggestionValue: PropTypes.func, 
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
    * (https://github.com/farzher/fuzzysort#options) */
