@@ -320,6 +320,33 @@ describe("props.highlightFirstSuggestion", () => {
   });
 });
 
+describe("props.getSuggestionValue", () => {
+  it("sets the autosuggest input value to the suggestion name by default", () => {
+    const spyGetSuggestionValue = jest.fn();
+
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        getSuggestionValue={ spyGetSuggestionValue.mockReturnValue(">") }
+        open
+      />
+    );
+
+    const input = commandPalette.find("input").instance();
+    
+    // arrow down and check that the input value was correctly set
+    clickDown(input, 1);
+    expect(spyGetSuggestionValue).toHaveBeenCalled();
+    expect(input.value).toBe(">");
+
+    // arrow down and check that the input value was correctly set a second time
+    clickDown(input, 1);
+    expect(spyGetSuggestionValue).toHaveBeenCalledTimes(2);
+    expect(input.value).toBe(">");
+    spyGetSuggestionValue.mockClear();
+  });
+})
+
 describe("props.alwaysRenderCommands", () => {
   it("should be enabled by default", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
