@@ -3,6 +3,8 @@ dist
 
 # Logs
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Build deps
 .jest-test-results.json
@@ -20,13 +22,16 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+/coverage
 
 # Dependency directories
 node_modules/
+/.pnp
+.pnp.js
 
 # OSX
 .DS_Store
+.env
 
 #IDE
 .vscode
