@@ -7,7 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build deps
-.jest-test-results.json
+src/.jest-test-results.json
 
 # Docs (moved to Netlify)
 docs/

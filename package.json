@@ -8,7 +8,8 @@
     "start": "npm run storybook",
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test --env=jsdom",
-    "storybook": "start-storybook -p 6006 -s public",
+    "test:generate-output": "jest --json --outputFile=src/.jest-test-results.json",
+    "storybook": "npm run test:generate-output && start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "release": "auto shipit",
@@ -37,7 +38,8 @@
     "react-dom": "17.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.13",
+    "@babel/core": "^7.12.16",
+    "@storybook/addon-a11y": "^6.1.17",
     "@storybook/addon-actions": "^6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-info": "^5.3.21",
@@ -45,9 +47,11 @@
     "@storybook/addon-knobs": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
     "@storybook/addon-options": "^5.3.21",
+    "@storybook/node-logger": "^6.1.17",
+    "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.17",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
-    "chromatic": "^5.6.1",
+    "chromatic": "^5.6.2",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
     "prettier": "^2.2.1",
@@ -99,17 +103,25 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "snapshotSerializers": ["./node_modules/enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "./node_modules/enzyme-to-json/serializer"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif)$": "<rootDir>/src/__mocks__/fileMock.js",
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     },
-    "collectCoverageFrom": ["src/*.js"],
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/node_modules",
       "<rootDir>/src/main.js",
       "<rootDir>/src/test-helpers.js"
     ],
-    "coverageReporters": ["json", "lcov", "text"]
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text"
+    ]
   }
 }
