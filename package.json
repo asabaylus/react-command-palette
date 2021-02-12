@@ -5,10 +5,14 @@
   "main": "dist/main.js",
   "module": "dist/main.es.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm run storybook",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "test": "react-scripts test --env=jsdom",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "release": "auto shipit",
+    "chromatic": "npx chromatic"
   },
   "repository": {
     "type": "git",
@@ -36,9 +40,16 @@
     "@babel/core": "^7.12.13",
     "@storybook/addon-actions": "^6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-jest": "^6.1.17",
+    "@storybook/addon-knobs": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
+    "@storybook/addon-options": "^5.3.21",
     "@storybook/react": "^6.1.17",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "chromatic": "^5.6.1",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.1",
     "prettier": "^2.2.1",
     "react-scripts": "^4.0.2"
   },
@@ -69,9 +80,36 @@
       "last 1 safari version"
     ]
   },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "files": [
     "dist",
     "examples",
     "themes"
-  ]
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "snapshotSerializers": ["./node_modules/enzyme-to-json/serializer"],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "collectCoverageFrom": ["src/*.js"],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules",
+      "<rootDir>/src/main.js",
+      "<rootDir>/src/test-helpers.js"
+    ],
+    "coverageReporters": ["json", "lcov", "text"]
+  }
 }
