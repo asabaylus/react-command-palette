@@ -51,7 +51,9 @@
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.17",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "babel-cli": "^6.26.0",
     "chromatic": "^5.6.2",
+    "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
     "prettier": "^2.2.1",
@@ -100,9 +102,6 @@
     "themes"
   ],
   "jest": {
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
     "snapshotSerializers": [
       "./node_modules/enzyme-to-json/serializer"
     ],
