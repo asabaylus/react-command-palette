@@ -14,8 +14,6 @@ import {
   boolean
 } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
-import { withOptions } from "@storybook/addon-options";
-import { withTests } from "@storybook/addon-jest";
 
 // sample component
 import sampleHeader from "./examples/sampleHeader";
@@ -35,7 +33,6 @@ import sublime from "./themes/sublime-theme";
 import CommandPalette from "./command-palette";
 import commands from "./__mocks__/commands";
 import lotsOfCommands from "./__mocks__/lots_of_commands";
-import results from "./.jest-test-results.json";
 
 // add noop command to this big list of command names
 function addCommandToArray(c) {
@@ -69,7 +66,6 @@ storiesOf("Command Palette", module)
       {story()}
     </div>
   ))
-  .addDecorator(withTests({ results }))
   .addParameters({
     info: {
       disabled: false,
