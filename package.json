@@ -86,10 +86,6 @@
     ]
   },
   "babel": {
-    "ignore": [
-      "**/__mocks__", 
-      "**/*.test.js"
-    ],
     "presets": [
       [
         "react-app",
