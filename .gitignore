@@ -12,6 +12,7 @@ src/.jest-test-results.json
 
 # Docs (moved to Netlify)
 docs/
+storybook-static/
 
 # Runtime data
 pids

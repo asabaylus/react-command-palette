@@ -1,5 +1,5 @@
 ## name of our action
-name: Release
+name: "NPM Publish"
 
 # the event that will trigger the action
 on:

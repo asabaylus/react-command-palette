@@ -8,6 +8,7 @@
     "start": "npm run storybook",
     "build": "cross-env BABEL_ENV=production babel src -d dist --copy-files",
     "test": "react-scripts test --env=jsdom",
+    "coverage": "yarn test --coverage --watchAll=false",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
@@ -95,5 +96,14 @@
     "dist",
     "examples",
     "themes"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/examples/**",
+      "!<rootDir>/src/themes/**",
+      "!<rootDir>/src/*test*",
+      "!<rootDir>/src/index.*"
+    ]
+  }
 }
