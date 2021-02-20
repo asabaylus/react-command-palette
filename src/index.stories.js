@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import * as React from "react";
 // eslint-disable-next-line no-unused-vars
-import { addParameters, storiesOf } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 
 // storybook addons
 import {
