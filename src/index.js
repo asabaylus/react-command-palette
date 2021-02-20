@@ -1,1 +1,3 @@
-export * from './command-palette';
+import CommandPalette from './command-palette';
+
+export default CommandPalette;

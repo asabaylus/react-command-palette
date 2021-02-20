@@ -4,7 +4,7 @@ name: Release
 # the event that will trigger the action
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 # what the action will do
 jobs:
@@ -36,5 +36,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           yarn install --frozen-lockfile
-          yarn build-package
+          yarn build
           yarn release
