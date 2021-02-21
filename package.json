@@ -103,6 +103,9 @@
     "themes"
   ],
   "jest": {
+    "snapshotSerializers": [
+      "@wojtekmaj/enzyme-adapter-react-17"
+    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/examples/**",
