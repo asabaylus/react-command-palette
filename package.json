@@ -8,7 +8,7 @@
     "start": "npm run storybook",
     "build": "cross-env BABEL_ENV=production babel src -d dist --copy-files",
     "test": "react-scripts test --env=jsdom",
-    "coverage": "yarn test --coverage --watchAll=false",
+    "coverage": "yarn test --coverage --watchAll=false --silent --ci",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
