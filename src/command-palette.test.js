@@ -402,10 +402,8 @@ describe("Opening the palette", () => {
   it("auto-focuses the input", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
     commandPalette.find("button").simulate("click");
-    setTimeout(() => {
-      const { input } = commandPalette.instance().commandPaletteInput;
-      expect(input === dom.activeElement).toEqual(true);
-    }, 0);
+    const { input } = commandPalette.instance().commandPaletteInput;
+    expect(input === document.activeElement).toEqual(true);
   });
 
   it("fires the onHighlight event and returns the highlighted suggestion", () => {
@@ -526,31 +524,26 @@ describe("Opening the palette", () => {
 
     it(`opens the commandPalette when pressing "ctrl+shift+p" keys`, () => {
       const commandPalette = mount(
-        <CommandPalette hotKeys="ctrl+shift+p" commands={mockCommands} />
+        <CommandPalette hotKeys="ctrl+shift+p" commands={mockCommands} open={false} />
       );
       commandPalette.instance().handleCloseModal();
-      // verify modal is hidden before we try to open it
       expect(commandPalette.state("showModal")).toBe(false);
       Mousetrap.trigger("ctrl+shift+p");
       setTimeout(() => {
         expect(commandPalette.state("showModal")).toEqual(true);
         commandPalette.instance().handleCloseModal();
         expect(spyHandleOpenModal).toHaveBeenCalled();
+        commandPalette.unmount();
       }, 0)
     });
     
     it(`opens the commandPalette when pressing "ctrl+k" keys`, () => {
       const commandPalette = mount(
-        <CommandPalette hotKeys="ctrl+k" commands={mockCommands} />
-      );
-      commandPalette.instance().handleCloseModal();
-      expect(commandPalette.state("showModal")).toBe(false);
-      Mousetrap.trigger("ctrl+k");
-      setTimeout(() => {
-        expect(commandPalette.state("showModal")).toEqual(true);
-        commandPalette.instance().handleCloseModal();
+        <CommandPalette hotKeys="ctrl+k" commands={mockCommands} open={false}/>
+        );
+        Mousetrap.trigger("ctrl+k");
         expect(spyHandleOpenModal).toHaveBeenCalled();
-      }, 0)
+        commandPalette.unmount();
     });
   });
 });
@@ -567,8 +560,8 @@ describe("Closing the palette", () => {
     );
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
     commandPalette.instance().handleOpenModal();
-    const { input } = commandPalette.instance().commandPaletteInput;
     setTimeout(() => {
+      const { input } = commandPalette.instance().commandPaletteInput;
       expect(commandPalette.state("showModal")).toEqual(true);
       input.dispatchEvent(new KeyboardEvent("keydown", { which: 27 }));
       expect(commandPalette.state("showModal")).toEqual(false);

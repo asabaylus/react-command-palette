@@ -38,8 +38,8 @@
     "react-dom": "17.x"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.16",
-    "@babel/core": "^7.12.16",
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
     "@storybook/addon-a11y": "^6.1.18",
     "@storybook/addon-actions": "^6.1.18",
     "@storybook/addon-essentials": "^6.1.18",
@@ -49,14 +49,15 @@
     "@storybook/addon-links": "^6.1.18",
     "@storybook/addon-options": "^5.3.21",
     "@storybook/node-logger": "^6.1.18",
-    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/preset-create-react-app": "^3.1.6",
     "@storybook/react": "^6.1.18",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
-    "auto": "^10.16.6",
-    "chromatic": "^5.6.2",
+    "auto": "^10.16.7",
+    "chromatic": "^5.6.3",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
+    "jsdom": "15.2.1",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -104,7 +105,7 @@
   ],
   "jest": {
     "snapshotSerializers": [
-      "@wojtekmaj/enzyme-adapter-react-17"
+      "enzyme-to-json/serializer"
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
