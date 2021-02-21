@@ -54,8 +54,7 @@ class CommandPalette extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     this.onSelect = this.onSelect.bind(this); 
-    
-    // eslint-disable-next-line prettier/prettier
+
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
     this.onSuggestionHighlighted = this.onSuggestionHighlighted.bind(this);
@@ -227,10 +226,7 @@ class CommandPalette extends React.Component {
     const { hotKeys } = this.props;
     Mousetrap(this.commandPaletteInput.input).bind(
       ["esc"].concat(hotKeys),
-      () => {
-        this.handleCloseModal();
-        return false;
-      }
+      this.handleCloseModal
     );
   }
 

@@ -558,17 +558,17 @@ describe("Closing the palette", () => {
       CommandPalette.prototype,
       "handleCloseModal"
     );
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    commandPalette.instance().handleOpenModal();
+    const commandPalette = mount(<CommandPalette commands={mockCommands} open 
+      onRequestClose={() => {
+        alert("The palette will close.");
+      }} 
+      />);
+    const { input } =  commandPalette.instance().commandPaletteInput;
     setTimeout(() => {
-      const { input } = commandPalette.instance().commandPaletteInput;
-      expect(commandPalette.state("showModal")).toEqual(true);
       input.dispatchEvent(new KeyboardEvent("keydown", { which: 27 }));
-      expect(commandPalette.state("showModal")).toEqual(false);
       expect(spyHandleCloseModal).toHaveBeenCalled();
-      expect(spyHandleCloseModal.mock.calls).toHaveLength(1);
       expect(commandPalette.state("showModal")).toEqual(false);
-    }, 0)
+    });
   });
 
   it("should close the wrapper when clicked outside", () => {
