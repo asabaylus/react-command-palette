@@ -1,7 +1,6 @@
 /*  eslint
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
   "function-paren-newline":0  */
-import * as React from "react";
 import { mount } from "enzyme";
 import PaletteTrigger from "./palette-trigger";
 

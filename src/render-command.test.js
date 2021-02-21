@@ -1,6 +1,4 @@
-import * as React from "react";
 import { mount } from "enzyme";
-
 import allCommands from "./__mocks__/commands";
 import RenderCommand from "./render-command";
 import sampleAtomCommand from "./examples/sampleAtomCommand";
