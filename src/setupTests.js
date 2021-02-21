@@ -13,31 +13,31 @@ expect.addSnapshotSerializer(serializer);
 
 Enzyme.configure({ adapter: new Adapter() });
 
-const jsdom = new JSDOM("<!doctype html><html><body></body></html>");
-const { window } = jsdom;
+// const jsdom = new JSDOM("<!doctype html><html><body></body></html>");
+// const { window } = jsdom;
 
-function copyProps(src, target) {
-  Object.defineProperties(target, {
-    ...Object.getOwnPropertyDescriptors(src),
-    ...Object.getOwnPropertyDescriptors(target),
-  });
-}
+// function copyProps(src, target) {
+//   Object.defineProperties(target, {
+//     ...Object.getOwnPropertyDescriptors(src),
+//     ...Object.getOwnPropertyDescriptors(target),
+//   });
+// }
 
-global.window = window;
+// global.window = window;
 
-global.document = window.document;
+// global.document = window.document;
 
-global.navigator = {
-  userAgent: "node.js",
-};
+// global.navigator = {
+//   userAgent: "node.js",
+// };
 
-global.requestAnimationFrame = function (callback) {
-  return setTimeout(callback, 0);
-};
+// global.requestAnimationFrame = function (callback) {
+//   return setTimeout(callback, 0);
+// };
 
-global.cancelAnimationFrame = function (id) {
-  clearTimeout(id);
-};
+// global.cancelAnimationFrame = function (id) {
+//   clearTimeout(id);
+// };
 
-copyProps(window, global);
+// copyProps(window, global);
 

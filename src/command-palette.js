@@ -53,12 +53,11 @@ class CommandPalette extends React.Component {
     };
 
     this.onChange = this.onChange.bind(this);
-    this.onSelect = this.onSelect.bind(this);
-
+    this.onSelect = this.onSelect.bind(this); 
+    
+    // eslint-disable-next-line prettier/prettier
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
-    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
-      this
-    );
+    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
     this.onSuggestionHighlighted = this.onSuggestionHighlighted.bind(this);
     this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
@@ -66,9 +65,7 @@ class CommandPalette extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
     this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
-    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(
-      this
-    );
+    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(this);
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
