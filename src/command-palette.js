@@ -53,10 +53,12 @@ class CommandPalette extends React.Component {
     };
 
     this.onChange = this.onChange.bind(this);
-    this.onSelect = this.onSelect.bind(this); 
+    this.onSelect = this.onSelect.bind(this);
 
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
-    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
+    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
+      this
+    );
     this.onSuggestionHighlighted = this.onSuggestionHighlighted.bind(this);
     this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
@@ -64,7 +66,9 @@ class CommandPalette extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.commandTemplate = this.commandTemplate.bind(this);
     this.renderModalCommandPalette = this.renderModalCommandPalette.bind(this);
-    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(this);
+    this.renderInlineCommandPalette = this.renderInlineCommandPalette.bind(
+      this
+    );
     this.fetchData = this.fetchData.bind(this);
 
     this.commandPaletteInput = React.createRef();
@@ -141,6 +145,7 @@ class CommandPalette extends React.Component {
           const { closeOnSelect, display } = this.props;
           if (closeOnSelect && display === "modal") {
             this.handleCloseModal();
+            return false;
           } else {
             // otherwise show the loading spinner
             this.setState({ isLoading: true });

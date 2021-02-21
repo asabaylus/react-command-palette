@@ -541,9 +541,6 @@ describe("Opening the palette", () => {
 });
 
 describe("Closing the palette", () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
 
   it('should close the commandPalette when pressing the "esc" key', () => {
     const spyHandleCloseModal = jest.spyOn(
@@ -902,6 +899,11 @@ describe("Command List", () => {
 });
 
 describe("Selecting a command", () => {
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   const commandPalette = shallow(<CommandPalette commands={mockCommands} />);
 
   it("should execute the commands function", () => {
@@ -928,7 +930,7 @@ describe("Selecting a command", () => {
         item: {
           command: "not a function",
         },
-      },
+      }
     };
     expect(() => {
       onSuggestionSelected(null, mock);
@@ -936,14 +938,45 @@ describe("Selecting a command", () => {
   });
 
   it("should close the pallete given that props.closeOnSelect is truthy", () => {
-    const wrapper = mount(
-      <CommandPalette commands={mockCommands} closeOnSelect open />
+    const spyOnClose = jest.fn();
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands}  onRequestClose={spyOnClose} closeOnSelect open />
       );
-    setTimeout(() => {
-      wrapper.find(".item").first().simulate("click");
-      expect(wrapper.state("showModal")).toBeFalsy();
-    }, 0);
+    commandPalette.instance().onSuggestionsFetchRequested({ value: "Im" })
+    console.log(commandPalette.debug())
+    commandPalette.find(".item").first().simulate("click");
+    expect(commandPalette.state("showModal")).toBeFalsy();
+    expect(spyOnClose).toHaveBeenCalled();
+    commandPalette.unmount();
+    spyOnClose.mockClear();
+    
   });
+  
+  it("should not close the pallete given that props.closeOnSelect is false", () => {
+    const spyOnClose = jest.fn();
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} closeOnSelect={false} open />
+    );
+    commandPalette.find(".item").first().simulate("click");
+    expect(spyOnClose).not.toHaveBeenCalled();
+    expect(commandPalette.state("showModal")).toBeTruthy();
+    commandPalette.unmount();
+    spyOnClose.mockClear();
+  });
+
+  // it("should not close the pallete given that props.closeOnSelect is not 'modal'", () => {
+  //   const spyOnClose = jest.fn();
+  //   const commandPalette = mount(
+  //     <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} display="inline" open />
+  //   );
+  //   console.log(commandPalette.find("#react-autowhatever-1").debug());
+  //   commandPalette.find(".item").first().simulate("click");
+  //   console.log(spyOnClose.mock)
+  //   expect(spyOnClose).not.toHaveBeenCalled();
+  //   expect(commandPalette.state("showModal")).toBeTruthy();
+  //   commandPalette.unmount();
+  //   spyOnClose.mockClear();
+  // });
 });
 
 describe("Fetching commands", () => {
