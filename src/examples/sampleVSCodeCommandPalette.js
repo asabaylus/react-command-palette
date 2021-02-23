@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import CommandPalette from '../src/command-palette';
+import CommandPalette from '../command-palette';
 import sampleVSCodeCommand from './sampleVSCodeCommand';
 import vscode from "../themes/vscode-theme";
 
 // sample lists of commands, we can use these to demonstrate how to dynamicaly swap out
 // the contents of the command palette as the user navigates from one list to another.
-import categories from "../src/__mocks__/categories";
-import globalCommands from '../src/__mocks__/global_commands';
-import files from '../src/__mocks__/files';
+import categories from '../__mocks__/categories';
+import globalCommands from '../__mocks__/global_commands';
+import files from '../__mocks__/files';
 
 export class DynamicListCommandPalette extends Component {
          constructor(props) {
