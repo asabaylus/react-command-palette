@@ -14,10 +14,10 @@ import PaletteSpinner from "./palette-spinner";
 import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
-import defaultTheme from "../themes/theme";
+import defaultTheme from "./themes/theme";
 import { noop, override, after } from "./utils";
 
-import "../themes/atom.css";
+import "./themes/atom.css";
 
 const allSuggestions = [];
 let initialSuggestions = [];
@@ -56,7 +56,6 @@ class CommandPalette extends React.Component {
     this.onChange = this.onChange.bind(this);
     this.onSelect = this.onSelect.bind(this);
 
-    // eslint-disable-next-line prettier/prettier
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
@@ -237,10 +236,7 @@ class CommandPalette extends React.Component {
     const { hotKeys } = this.props;
     Mousetrap(this.commandPaletteInput.input).bind(
       ["esc"].concat(hotKeys),
-      () => {
-        this.handleCloseModal();
-        return false;
-      }
+      this.handleCloseModal
     );
   }
 
@@ -446,9 +442,9 @@ CommandPalette.propTypes = {
    *  first suggestion. Defaults to false. */
   highlightFirstSuggestion: PropTypes.bool,
 
-  /** When suggestion is clicked, React Autosuggest needs to populate the input element  
-   * based on the clicked suggestion. Teach React Autosuggest how to calculate the
-   * input value for every given suggestion. By default the highlighed suggesting will be 
+  /** When suggestion is clicked, react-autosuggest needs to populate the input element  
+   * based on the clicked suggestion. Teach react-autosuggest how to calculate the
+   * input value for every given suggestion. By default the highlighed suggestion will be 
    * displayed */
   getSuggestionValue: PropTypes.func, 
 

@@ -3,6 +3,5 @@ scripts/
 test/
 src/
 docs/
-rollup.config.*
 .*
 CNAME

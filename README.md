@@ -1,5 +1,5 @@
-
 # React Command Palette
+
 WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
 ![CI](https://github.com/asabaylus/react-command-palette/workflows/CI/badge.svg)
@@ -73,7 +73,7 @@ const commands = [{
 
 * ```defaultInputValue``` a _string_ that determines the value of the text in the input field. By default the defaultInputValue is an empty string.
 
-* ```getSuggestionValue``` a _function_, when suggestion is clicked, React Autosuggest needs to populate the input element based on the clicked suggestion. Teach React Autosuggest how to calculate the input value for every given suggestion. By default the highlighed suggesting will be displayed
+* ```getSuggestionValue``` a _function_, when suggestion is clicked, react-autosuggest needs to populate the input element based on the clicked suggestion. Teach react-autosuggest how to calculate the input value for every given suggestion. By default the highlighed suggestion will be displayed
 
 * ```highlightFirstSuggestion```  a _boolean_, will automatically highlight the first suggestion. Defaults to "true". */
 
@@ -275,53 +275,25 @@ Example with a string:
 <div role="button" tabindex="0">Click Me!</div>
 ```
 
-
 When the trigger is clicked it will open the command palette, no custom handlers or events are required.
 
 ## Developer Setup
 ```
+# start the dev environment
+$ yarn start
+
 # install dependencies
-$ npm install
-
-# run lint
-$ npm run lint
-
-# beautify code
-$ npm run prettier
+$ yarn install
 
 # visual regression tests
-$ npm run chromatic
+$ yarn chromatic
 
 # run unit tests
-$ npm test
-
-# start the dev environment
-$ npm start
+$ yarn test
 
 # update the docs
-$ npm run docs
+$ yarn storybook
 ```
-
-## Building with Docker
-Build and tag the Docker image:
-```
-$ docker build -t  react-command-palette .
-```
-
-Then, spin up the container once the build is done:
-```
-$ docker run -it -v ${PWD}:/app -p 6006:6006 react-command-palette npm i && npm run dev
-```
-You only need to run "npm i" the when the container is first created. The devDependencies need to be installed to compile and test the build during development. On subsequent builds run:
-```
-$ docker run -it -v ${PWD}:/app -p 6006:6006 react-command-palette npm start
-```
-
-Open your browser to http://localhost:6006/ and you should see the app. Try making a change to the command-palette component within your code editor. You should see the app hot-reload. Kill the server once done.
-
-### Package for production with Docker:
-CodeFresh.io will automatically run this build to prepare the package
-for publication to npm whenever a pull request is merged to master.
 
 ## Sponsors
 Visual Regression Tests by [ChromaticQA](https://www.chromaticqa.com/)

@@ -6,27 +6,20 @@
   no-new:0 */
 
 import React from "react";
-import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import { shallow, mount } from "enzyme";
 import Mousetrap from "mousetrap";
-import serializer from "enzyme-to-json/serializer";
 import fuzzysortOptions from "./fuzzysort-options";
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
-import sampleHeader from "../examples/sampleHeader";
-import sampleAtomCommand from "../examples/sampleAtomCommand";
-import sampleChromeCommand from "../examples/sampleChromeCommand";
+import sampleHeader from "./examples/sampleHeader";
+import sampleAtomCommand from "./examples/sampleAtomCommand";
+import sampleChromeCommand from "./examples/sampleChromeCommand";
 import sampleVSCodeCommand from "../examples/sampleVSCodeCommand";
 import atomTheme from "../themes/atom-theme";
 import vscodeTheme from "../themes/vscode-theme";
-import chromeTheme from "../themes/chrome-theme";
+import chromeTheme from "./themes/chrome-theme";
 import sublimeTheme from "../themes/sublime-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
-
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
-
-expect.addSnapshotSerializer(serializer);
 
 describe("Loading indicator", () => {
   it("should display the spinner by default", () => {

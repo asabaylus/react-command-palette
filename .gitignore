@@ -3,12 +3,16 @@ dist
 
 # Logs
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+build-storybook.log*
 
 # Build deps
-.jest-test-results.json
+src/.jest-test-results.json
 
 # Docs (moved to Netlify)
 docs/
+storybook-static/
 
 # Runtime data
 pids
@@ -20,13 +24,16 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+/coverage
 
 # Dependency directories
 node_modules/
+/.pnp
+.pnp.js
 
 # OSX
 .DS_Store
+.env
 
 #IDE
 .vscode
