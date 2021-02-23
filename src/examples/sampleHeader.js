@@ -1,24 +1,24 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
 
+const wrapperStyle = {
+  fontFamily: "arial",
+  fontSize: "12px",
+  color: "rgb(172, 172, 172)",
+  marginBottom: "6px",
+  display: "inline-block"
+};
+
+const kbdStyle = {
+  backgroundColor: "rgb(23, 23, 23)",
+  fontSize: "12px",
+  color: "#b9b9b9",
+  padding: "2px 4px",
+  marginRight: "6px",
+  borderRadius: "4px"
+};
+
 function sampleHeader() {
-  
-  const wrapperStyle = {
-    fontFamily: "arial",
-    fontSize: "12px",
-    color: "rgb(172, 172, 172)",
-    marginBottom: "6px",
-    display: "inline-block"
-  };
-  
-  const kbdStyle = {
-    backgroundColor: "rgb(23, 23, 23)",
-    fontSize: "12px",
-    color: "#b9b9b9",
-    padding: "2px 4px",
-    marginRight: "6px",
-    borderRadius: "4px"
-  };
 
   const itemStyle = { paddingRight: "32px" };
 
