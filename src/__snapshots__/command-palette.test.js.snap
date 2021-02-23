@@ -1449,6 +1449,84 @@ exports[`Command List renders a command 1`] = `
                 role="dialog"
                 tabindex="-1"
               >
+                <div
+                  class="default-spinner atom-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open sublime-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content ReactModal__Content--after-open sublime-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner sublime-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open vscode-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content ReactModal__Content--after-open vscode-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner vscode-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content ReactModal__Content--after-open atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
                 <div>
                   <div
                     class="atom-header"

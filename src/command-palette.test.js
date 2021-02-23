@@ -14,11 +14,11 @@ import mockCommands from "./__mocks__/commands";
 import sampleHeader from "./examples/sampleHeader";
 import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
-import sampleVSCodeCommand from "../examples/sampleVSCodeCommand";
-import atomTheme from "../themes/atom-theme";
-import vscodeTheme from "../themes/vscode-theme";
+import sampleVSCodeCommand from "./examples/sampleVSCodeCommand";
+import atomTheme from "./themes/atom-theme";
+import vscodeTheme from "./themes/vscode-theme";
 import chromeTheme from "./themes/chrome-theme";
-import sublimeTheme from "../themes/sublime-theme";
+import sublimeTheme from "./themes/sublime-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
 
 describe("Loading indicator", () => {
