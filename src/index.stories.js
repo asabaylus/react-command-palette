@@ -24,16 +24,16 @@ import sampleSublimeCommand from "./examples/sampleSublimeCommand";
 // sample styles
 import "./themes/chrome.css";
 import "./themes/atom.css";
-import "../themes/vscode.css";
+import "./themes/vscode.css";
 import "./themes/sublime.css";
-import vscode from "../themes/vscode-theme";
+import vscode from "./themes/vscode-theme";
 import chrome from "./themes/chrome-theme";
 import atom from "./themes/atom-theme";
 import sublime from "./themes/sublime-theme";
 
 // command palette scripts
 import CommandPalette from "./command-palette";
-import VSCodeCommandPalette from "../examples/sampleVSCodeCommandPalette";
+import VSCodeCommandPalette from "./examples/sampleVSCodeCommandPalette";
 import commands from "./__mocks__/commands";
 import lotsOfCommands from "./__mocks__/lots_of_commands";
 
