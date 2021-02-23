@@ -10,8 +10,9 @@ build-storybook.log*
 # Build deps
 src/.jest-test-results.json
 
-# Docs (moved to Netlify)
+# Docs
 docs/
+build/
 storybook-static/
 
 # Runtime data

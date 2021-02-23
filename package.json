@@ -6,6 +6,7 @@
   "module": "dist/index.js",
   "scripts": {
     "start": "npm run storybook",
+    "netlify": "react-scripts build",
     "build": "cross-env BABEL_ENV=production babel src -d dist --copy-files",
     "test": "react-scripts test --env=jsdom",
     "coverage": "yarn test --coverage --watchAll=false --silent --ci",
