@@ -1,16 +1,7 @@
-import * as React from "react";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import serializer from "enzyme-to-json/serializer";
-
+import { mount } from "enzyme";
 import allCommands from "./__mocks__/commands";
 import RenderCommand from "./render-command";
-import sampleAtomCommand from "../examples/sampleAtomCommand";
-
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
-
-expect.addSnapshotSerializer(serializer);
+import sampleAtomCommand from "./examples/sampleAtomCommand";
 
 describe("RenderCommand", () => {
   it("should render the default child command", () => {

@@ -14,28 +14,25 @@ import {
   boolean
 } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
-import { withOptions } from "@storybook/addon-options";
-import { withTests } from "@storybook/addon-jest";
 
 // sample component
-import sampleHeader from "../examples/sampleHeader";
-import sampleAtomCommand from "../examples/sampleAtomCommand";
-import sampleChromeCommand from "../examples/sampleChromeCommand";
-import sampleSublimeCommand from "../examples/sampleSublimeCommand";
+import sampleHeader from "./examples/sampleHeader";
+import sampleAtomCommand from "./examples/sampleAtomCommand";
+import sampleChromeCommand from "./examples/sampleChromeCommand";
+import sampleSublimeCommand from "./examples/sampleSublimeCommand";
 
 // sample styles
-import "../themes/chrome.css";
-import "../themes/atom.css";
-import "../themes/sublime.css";
-import chrome from "../themes/chrome-theme";
-import atom from "../themes/atom-theme";
-import sublime from "../themes/sublime-theme";
+import "./themes/chrome.css";
+import "./themes/atom.css";
+import "./themes/sublime.css";
+import chrome from "./themes/chrome-theme";
+import atom from "./themes/atom-theme";
+import sublime from "./themes/sublime-theme";
 
 // command palette scripts
-import CommandPalette from "../src/command-palette";
-import commands from "../src/__mocks__/commands";
-import lotsOfCommands from "../src/__mocks__/lots_of_commands";
-import results from "../.jest-test-results.json";
+import CommandPalette from "./command-palette";
+import commands from "./__mocks__/commands";
+import lotsOfCommands from "./__mocks__/lots_of_commands";
 
 // add noop command to this big list of command names
 function addCommandToArray(c) {
@@ -56,12 +53,6 @@ function Trigger() {
 const proccessedCommands = addCommandToArray(lotsOfCommands);
 
 storiesOf("Command Palette", module)
-  .addDecorator(
-    withOptions({
-      name: "Command Palette",
-      addonPanelInRight: false
-    })
-  )
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
   .addDecorator(story => (
@@ -75,8 +66,6 @@ storiesOf("Command Palette", module)
       {story()}
     </div>
   ))
-  .addDecorator(withTests({ results }))
-  .addParameters({ jest: ["command-palette.test.js"] })
   .addParameters({
     info: {
       disabled: false,

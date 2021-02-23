@@ -1,17 +1,8 @@
 /*  eslint
   no-unused-vars: ["error", { "varsIgnorePattern": "^renderer$" }],
   "function-paren-newline":0  */
-
-import * as React from "react";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import serializer from "enzyme-to-json/serializer";
+import { mount } from "enzyme";
 import PaletteSpinner from "./palette-spinner";
-
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
-
-expect.addSnapshotSerializer(serializer);
 
 describe("PaletteSpinner", () => {
   describe("props.spinner", () => {

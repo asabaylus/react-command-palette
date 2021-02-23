@@ -1,15 +1,6 @@
-import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import serializer from "enzyme-to-json/serializer";
-
+import { shallow } from "enzyme";
 import mockCommands from "./__mocks__/commands";
 import DefaultCommand from "./default-command";
-
-expect.addSnapshotSerializer(serializer);
-
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
 
 describe("DefaultCommand", () => {
   it("should render", () => {

@@ -1,10 +1,10 @@
 name: "Chromatic"
 
-on: [push, pull_request]
+on: push
 
 jobs:
 
-  chromatic-deployment:
+  test:
     
     runs-on: ubuntu-latest
     
@@ -14,11 +14,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
-        run: npm i
+        run: yarn install
       - name: Deploy to Chromatic
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          autoAcceptChanges: true
-          exitZeroOnChanges: true

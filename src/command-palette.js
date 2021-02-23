@@ -14,10 +14,10 @@ import PaletteSpinner from "./palette-spinner";
 import RenderCommand from "./render-command";
 import PaletteTrigger from "./palette-trigger";
 import getSuggestions from "./suggestions";
-import defaultTheme from "../themes/theme";
+import defaultTheme from "./themes/theme";
 import { noop, override, after } from "./utils";
 
-import "../themes/atom.css";
+import "./themes/atom.css";
 
 const allSuggestions = [];
 
@@ -55,7 +55,6 @@ class CommandPalette extends React.Component {
     this.onChange = this.onChange.bind(this);
     this.onSelect = this.onSelect.bind(this);
 
-    // eslint-disable-next-line prettier/prettier
     this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
@@ -231,10 +230,7 @@ class CommandPalette extends React.Component {
     const { hotKeys } = this.props;
     Mousetrap(this.commandPaletteInput.input).bind(
       ["esc"].concat(hotKeys),
-      () => {
-        this.handleCloseModal();
-        return false;
-      }
+      this.handleCloseModal
     );
   }
 

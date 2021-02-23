@@ -5,13 +5,10 @@
   no-new:0 */
 
 import React from "react";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import { mount } from "enzyme";
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
 
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
 
 // We have to put this in a separate file. Otherwise, the document.activeElement
 // will be reseted by other test suite to null which we can't easily
