@@ -103,6 +103,7 @@
     "themes"
   ],
   "jest": {
+    "restoreMocks": true,
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
