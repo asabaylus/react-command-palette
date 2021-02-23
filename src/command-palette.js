@@ -145,7 +145,6 @@ class CommandPalette extends React.Component {
           const { closeOnSelect, display } = this.props;
           if (closeOnSelect && display === "modal") {
             this.handleCloseModal();
-            return false;
           } else {
             // otherwise show the loading spinner
             this.setState({ isLoading: true });
