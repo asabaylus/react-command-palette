@@ -99,7 +99,6 @@ const commands = [{
       filterInput={ (inputValue) => {
         // strip action keys from input before searching commands, ex:
         // "?something" or ">something" should search "something"
-        // TODO: pass "/>|\?/g" as a prop
         return inputValue.replace(/^(>|\?)/g, '');
       }}
       open

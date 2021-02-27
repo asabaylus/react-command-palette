@@ -446,8 +446,8 @@ CommandPalette.propTypes = {
    * (https://github.com/farzher/fuzzysort#options) */
   options: PropTypes.object,
 
-  /** a function that filters out characters from input that you don't need to search.
-   * if this prop is not used the default behavior will search the input exactly entered */
+  /** a function that filters input before searching it with fuzzysort. If this prop is not 
+   * used the default behavior will search the input exactly entered */
   filterInput: PropTypes.func,
 
   /** open a boolean, when set to true it forces the command palette to be displayed.
