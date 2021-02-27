@@ -5,14 +5,14 @@ import fuzzysortOptions from "./fuzzysort-options";
 describe("getSuggestions", () => {
   describe("no value", () => {
     it("should return all commands", () => {
-      const commands = getSuggestions("", allCommands, fuzzysortOptions);
+      const commands = getSuggestions("", allCommands, fuzzysortOptions, inputValue => inputValue);
       expect(commands).toEqual(allCommands);
     });
   });
 
   describe("commands", () => {
     it("should permit the use custom properties", () => {
-      const commands = getSuggestions("Jump", allCommands, fuzzysortOptions);
+      const commands = getSuggestions("Jump", allCommands, fuzzysortOptions, inputValue => inputValue);
       // the command palette does not natively support an "id" property
       // however a developer may easily add any set of obj properties to each command
       // the following assertion tests that custom command properties are supported
@@ -22,7 +22,7 @@ describe("getSuggestions", () => {
 
   describe("a value was provided", () => {
     it("should return and highlight the matching commands", () => {
-      const commands = getSuggestions("Imports", allCommands, fuzzysortOptions);
+      const commands = getSuggestions("Imports", allCommands, fuzzysortOptions, inputValue => inputValue);
 
       expect(commands[0]).toMatchObject({
         name: "Stop All Data Imports",
@@ -42,7 +42,8 @@ describe("getSuggestions", () => {
       const matchName = getSuggestions(
         "Imports",
         allCommands,
-        fuzzysortOptions
+        fuzzysortOptions,
+        inputValue => inputValue
       );
       expect(matchName[0]).toMatchObject({
         name: "Stop All Data Imports",
@@ -53,7 +54,8 @@ describe("getSuggestions", () => {
       const matchCategory = getSuggestions(
         "Com",
         allCommands,
-        fuzzysortOptions
+        fuzzysortOptions,
+        inputValue => inputValue
       );
       expect(matchCategory[0]).toMatchObject({
         name: "Stop All Data Imports",

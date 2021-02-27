@@ -84,6 +84,7 @@ exports[`Command List renders a command 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterInput={[Function]}
   getSuggestionValue={[Function]}
   header={null}
   highlightFirstSuggestion={true}
@@ -11447,6 +11448,7 @@ exports[`Command List renders a command 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -11661,6 +11663,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterInput={[Function]}
   getSuggestionValue={[Function]}
   header={null}
   highlightFirstSuggestion={true}
@@ -18794,6 +18797,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -19001,6 +19005,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -19208,6 +19213,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -19416,6 +19422,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -19625,6 +19632,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -19832,6 +19840,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -20039,6 +20048,7 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -20218,6 +20228,7 @@ exports[`props.display should not display the command palette in react-modal whe
   }
   defaultInputValue=""
   display="inline"
+  filterInput={[Function]}
   getSuggestionValue={[Function]}
   header={null}
   highlightFirstSuggestion={true}
@@ -20712,6 +20723,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -20919,6 +20931,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -21126,6 +21139,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -21334,6 +21348,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -21543,6 +21558,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -21750,6 +21766,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -21957,6 +21974,7 @@ exports[`props.display should not display the command palette in react-modal whe
                         }
                         defaultInputValue=""
                         display="inline"
+                        filterInput={[Function]}
                         getSuggestionValue={[Function]}
                         header={null}
                         highlightFirstSuggestion={true}
@@ -22228,6 +22246,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
   }
   defaultInputValue=""
   display="modal"
+  filterInput={[Function]}
   getSuggestionValue={[Function]}
   header={null}
   highlightFirstSuggestion={true}
@@ -27816,6 +27835,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -28024,6 +28044,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -28232,6 +28253,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -28441,6 +28463,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -28651,6 +28674,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -28859,6 +28883,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -29067,6 +29092,7 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -29248,6 +29274,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterInput={[Function]}
   getSuggestionValue={[Function]}
   header={null}
   highlightFirstSuggestion={true}
@@ -31901,6 +31928,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32110,6 +32138,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32319,6 +32348,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32529,6 +32559,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32740,6 +32771,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32949,6 +32981,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33158,6 +33191,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33339,6 +33373,7 @@ exports[`props.theme should render a custom theme 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterInput={[Function]}
   getSuggestionValue={[Function]}
   header="this is a command palette"
   highlightFirstSuggestion={true}
@@ -36924,6 +36959,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37133,6 +37169,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37342,6 +37379,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37552,6 +37590,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37763,6 +37802,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37972,6 +38012,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -38181,6 +38222,7 @@ exports[`props.theme should render a custom theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterInput={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
