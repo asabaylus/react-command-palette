@@ -313,12 +313,12 @@ storiesOf("Command Palette", module)
       />
     );
   })
-  .add("filterInput", () => (
+  .add("filterSearchQuery", () => (
     <CommandPalette
       commands={commands}
       placeholder="Try typing '?st', '>st' or 'st'"
       defaultInputValue=">"
-      filterInput={ (inputValue) => {
+      filterSearchQuery={ inputValue => {
         // strip action keys from input before searching commands, ex:
         // "?something" or ">something" should search "something"
         // TODO: pass "/>|\?/g" as a prop

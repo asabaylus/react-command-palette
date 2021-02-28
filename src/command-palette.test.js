@@ -215,7 +215,7 @@ describe("props.inputFilter", () => {
     const commandPalette = mount(
       <CommandPalette
       commands={mockCommands}
-      filterInput={ inputValue => {
+      filterSearchQuery={ inputValue => {
         return inputValue.replace(/^(>|\?)/g, '');
       }}
       open

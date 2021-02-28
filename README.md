@@ -90,15 +90,15 @@ const commands = [{
     scoreFn: null 
   ```
 
-* ```filterInput``` a function that filters searched input. If this prop is not used the default behavior will search the input exactly entered otherwise whatever gets returned for each suggestion is the text that will be searched. You might use this filter out extraneous characters such as ">" or "?" like VS Code does for _action_ keys, ex:
+* ```filterSearchQuery``` a function that filters searched input. If this prop is not used the default behavior will search using the input exactly as it was entered by the user. Otherwise whatever gets returned by your function is the text that will be searched. You might use this filter out extraneous characters such as ">" or "?" like VS Code does for _action_ keys, ex:
   ```js
     <CommandPalette
       commands={commands}
       placeholder="Try typing '?st', '>st' or 'st'"
       defaultInputValue=">"
-      filterInput={ (inputValue) => {
-        // strip action keys from input before searching commands, ex:
-        // "?something" or ">something" should search "something"
+      filterSearchQuery={ inputValue => {
+        // strip action keys "? or >" from input before searching commands, ex:
+        // "?something" or ">something" should search using "something" as the query
         return inputValue.replace(/^(>|\?)/g, '');
       }}
       open
