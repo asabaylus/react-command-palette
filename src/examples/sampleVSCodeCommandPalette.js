@@ -26,31 +26,33 @@ export class DynamicListCommandPalette extends Component {
 
          handleChange(value, userQuery) {
           // When a user types an "action" key such as "?, :, >, #" a new list of commands is loaded in the command palette
-          if (value === "") {
-            this.setState({placeholder: "Search files by name"})
-          }
-
-          if (userQuery === "?" || userQuery === ">" || userQuery === "") {
+          if (userQuery === "") {
             this.setState({
               showSpinnerOnSelect: false,
-              commands: (() => {
-                if (userQuery === "?") {
-                  return globalCommands;
-                }
+              placeholder: "Search files by name",
+              defaultInputValue: value,
+              commands: files
+            })
+          }
 
-                if (userQuery === ">") {
-                  return categories;
-                }
+          if (userQuery === "?") {
+            this.setState({
+              showSpinnerOnSelect: false,
+              placeholder: "",
+              defaultInputValue: "?",
+              commands: globalCommands
+            })
+          }
 
-                if (userQuery === "") {
-                  return files;
-                }
-              })()
-            });
-          } else {
-            this.setState({ defaultInputValue: "" })
+          if (userQuery === ">") {
+            this.setState({
+              showSpinnerOnSelect: false,
+              placeholder: "",
+              defaultInputValue: ">",
+              commands: categories
+            })
+          }
          }
-        }
 
          handleSelect(command) { 
           // when selecting a non-action command show the spinner, 
@@ -74,6 +76,11 @@ export class DynamicListCommandPalette extends Component {
                  renderCommand={sampleVSCodeCommand}
                  theme={vscode}
                  defaultInputValue={this.state.defaultInputValue}
+                 filterSearchQuery={ inputValue => {
+                    // strip action keys "? or >" from input before searching commands, ex:
+                    // "?something" or ">something" should search using "something" as the query
+                    return inputValue.replace(/^(>|\?)/g, '');
+                  }}
                  getSuggestionValue={() => this.state.defaultInputValue}
                  placeholder={this.state.placeholder}
                  maxDisplayed={11}
