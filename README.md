@@ -90,7 +90,7 @@ const commands = [{
     scoreFn: null 
   ```
 
-* ```filterSearchQuery``` a function that filters searched input. If this prop is not used the default behavior will search using the input exactly as it was entered by the user. Otherwise whatever gets returned by your function is the text that will be searched. You might use this filter out extraneous characters such as ">" or "?" like VS Code does for _action_ keys, ex:
+* ```filterSearchQuery``` a _function_ that filters searched input. If this prop is not used the default behavior will search using the input exactly as it was entered by the user. Otherwise whatever gets returned by your function is the text that will be searched. You might use this filter out extraneous characters such as ">" or "?" like VS Code does for _action_ keys, ex:
   ```js
     <CommandPalette
       commands={commands}
