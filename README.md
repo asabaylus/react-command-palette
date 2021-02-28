@@ -61,7 +61,7 @@ const commands = [{
 
 * ```display``` one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal".
 
-* ```header``` a _string_ or a _React.ComponentType_ which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. The header is not displayed by default. see: examples/sampleInstruction.js for reference.
+* ```header``` a _string_ or a _React.ComponentType_ which provides a helpful description for the usage of the command palette. The component is displayed at the top of the command palette. The header is not displayed by default. see: src/examples/sampleInstruction.js for reference.
 
 * ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediately when the user makes a selection. Defaults to "false".
 
@@ -203,7 +203,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
   ```
   see: https://github.com/moroshko/react-autosuggest#rendersuggestion-required.
  
-  Note: the _suggestion.highlight_ will contain the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then then _suggestion.highlight_ will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](examples/sampleChromeCommand.js)
+  Note: the _suggestion.highlight_ will contain the rendered markup from [fuzzysort](farzher/fuzzysort#fuzzysorthighlightresult-openb-closeb), see the ```options``` prop. If the ```options``` prop contains an array of "keys" then then _suggestion.highlight_ will contain an array of matches, see: [fuzzysort advanced usage](https://github.com/farzher/fuzzysort#advanced-usage) or checkout the [sampleChromeCommand.js](src/examples/sampleChromeCommand.js)
 
   *Important:* _renderCommand_ must be a pure function (react-autosuggest, upon which this is based will optimize rendering performance based on this assumption).
 
@@ -249,7 +249,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
   <CommandPalette theme={theme} ... />
   ```
 
-  When not specified, `theme` defaults to the included _Atom_ theme. Complete sample themes are provided, see: [Chrome](examples/sampleChromeTheme.md),[Sublime](examples/sampleSublimeTheme.md) and [Atom](examples/sampleAtomTheme.md)
+  When not specified, `theme` defaults to the included _Atom_ theme. Complete sample themes are provided, see: [Chrome](src/examples/sampleChromeTheme.md),[Sublime](src/examples/sampleSublimeTheme.md) and [Atom](src/examples/sampleAtomTheme.md)
 
   The following picture illustrates how `theme` keys correspond to CommandPalette DOM structure:
 

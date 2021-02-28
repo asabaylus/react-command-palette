@@ -300,7 +300,6 @@ class CommandPalette extends React.Component {
           onSuggestionSelected={this.onSuggestionSelected}
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-          getSuggestionValue={getSuggestionValue}
           renderSuggestion={this.commandTemplate}
           inputProps={this.defaultInputProps(value)}
           theme={theme}
