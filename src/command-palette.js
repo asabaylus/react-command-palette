@@ -159,9 +159,9 @@ class CommandPalette extends React.Component {
   // Autosuggest will call this function every time you need to update suggestions.
   // You already implemented this logic above, so just use it.
   onSuggestionsFetchRequested({ value }) {
-    const { options } = this.props;
+    const { options, filterSearchQuery } = this.props;
     this.setState({
-      suggestions: getSuggestions(value, this.allCommands, options),
+      suggestions: getSuggestions(value, this.allCommands, options, filterSearchQuery),
     });
   }
 
@@ -369,6 +369,7 @@ CommandPalette.defaultProps = {
   highlightFirstSuggestion: true,
   maxDisplayed: 7,
   options: fuzzysortOptions,
+  filterSearchQuery: (inputValue) => inputValue,
   onChange: noop,
   onHighlight: noop,
   onSelect: noop,
@@ -444,6 +445,10 @@ CommandPalette.propTypes = {
   /** options controls how fuzzy search is configured see [fuzzysort options]
    * (https://github.com/farzher/fuzzysort#options) */
   options: PropTypes.object,
+
+  /** a function that filters the search query. If this prop is not used the default 
+   * behavior will search the input exactly entered */
+  filterSearchQuery: PropTypes.func,
 
   /** open a boolean, when set to true it forces the command palette to be displayed.
    * Defaults to "false". */

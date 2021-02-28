@@ -313,6 +313,20 @@ storiesOf("Command Palette", module)
       />
     );
   })
+  .add("filterSearchQuery", () => (
+    <CommandPalette
+      commands={commands}
+      placeholder="Try typing '?st', '>st' or 'st'"
+      defaultInputValue=">"
+      filterSearchQuery={ inputValue => {
+        // strip action keys from input before searching commands, ex:
+        // "?something" or ">something" should search "something"
+        // TODO: pass "/>|\?/g" as a prop
+        return inputValue.replace(/^(>|\?)/g, '');
+      }}
+      open
+    />
+  ))
   .add("with multiple highlights", () => {
     const opts = {
       keys: ["name", "category"]

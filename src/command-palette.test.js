@@ -210,6 +210,33 @@ describe("props.defaultInputValue", () => {
   });
 });
 
+describe("props.inputFilter", () => {
+  it(`should filter input before sending it to fuzzysearch`, () => {
+    const commandPalette = mount(
+      <CommandPalette
+      commands={mockCommands}
+      filterSearchQuery={ inputValue => {
+        return inputValue.replace(/^(>|\?)/g, '');
+      }}
+      open
+    />);
+    commandPalette.find("input").simulate("change", { target: { value: ">st" } });
+    expect(commandPalette.find(".item").length).toEqual(2);
+    expect(commandPalette.find(".item").at(0).text()).toBe("Stop All Data Imports");
+    expect(commandPalette.find(".item").at(1).text()).toBe("Start All Data Imports");
+    commandPalette.unmount();
+  });
+
+  it(`should send the users input exactly as entered to fuzzysort by default`, () => {
+    const commandPalette = mount(
+      <CommandPalette commands={mockCommands} open />);
+    // return all commands because the string '>st' dosn't match the mockCommands
+    commandPalette.find("input").simulate("change", { target: { value: ">s" } });
+    expect(commandPalette.find(".item").length).toEqual(7);
+    commandPalette.unmount();
+  });
+});
+
 describe("props.theme", () => {
   it("should render a custom theme", () => {
     const commandPalette = mount(

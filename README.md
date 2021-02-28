@@ -89,6 +89,22 @@ const commands = [{
     allowTypo: true, 
     scoreFn: null 
   ```
+
+* ```filterSearchQuery``` a _function_ that filters searched input. If this prop is not used the default behavior will search using the input exactly as it was entered by the user. Otherwise whatever gets returned by your function is the text that will be searched. You might use this filter out extraneous characters such as ">" or "?" like VS Code does for _action_ keys, ex:
+  ```js
+    <CommandPalette
+      commands={commands}
+      placeholder="Try typing '?st', '>st' or 'st'"
+      defaultInputValue=">"
+      filterSearchQuery={ inputValue => {
+        // strip action keys "? or >" from input before searching commands, ex:
+        // "?something" or ">something" should search using "something" as the query
+        return inputValue.replace(/^(>|\?)/g, '');
+      }}
+      open
+    />
+  ```
+
 * ```onChange``` a _function_ that's called when the input value changes. It returns two values: the current value of the input field followed by the users typed input. The query ignores keyboard navigation and clicks.
 
   ```js
