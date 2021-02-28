@@ -24,26 +24,25 @@ export class DynamicListCommandPalette extends Component {
            this.handleSelect = this.handleSelect.bind(this);
          }
 
-         handleChange(value) {
-          console.log('value: ', value)
+         handleChange(value, userQuery) {
           // When a user types an "action" key such as "?, :, >, #" a new list of commands is loaded in the command palette
           if (value === "") {
             this.setState({placeholder: "Search files by name"})
           }
-          if (value === "?" || value === ">" || value === "") {
+
+          if (userQuery === "?" || userQuery === ">" || userQuery === "") {
             this.setState({
-              defaultInputValue: value,
               showSpinnerOnSelect: false,
               commands: (() => {
-                if (value === "?") {
+                if (userQuery === "?") {
                   return globalCommands;
                 }
 
-                if (value === ">") {
+                if (userQuery === ">") {
                   return categories;
                 }
 
-                if (value === "") {
+                if (userQuery === "") {
                   return files;
                 }
               })()
@@ -75,6 +74,7 @@ export class DynamicListCommandPalette extends Component {
                  renderCommand={sampleVSCodeCommand}
                  theme={vscode}
                  defaultInputValue={this.state.defaultInputValue}
+                 getSuggestionValue={() => this.state.defaultInputValue}
                  placeholder={this.state.placeholder}
                  maxDisplayed={11}
                  showSpinnerOnSelect={this.state.showSpinnerOnSelect}
