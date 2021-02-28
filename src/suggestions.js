@@ -24,8 +24,18 @@ function formatSuggestions(filteredSuggestions) {
   });
 }
 
+function filterFuzzySortSearch(search, filterSearchQuery) {
+  // use the filterSearchQuery function prop to process the input before it's sent to fuzzysort
+  // ex: strip action keys from input before searching commands, ex:
+  // "?something" or ">something" should search "something"
+  return filterSearchQuery(search);
+}
+
 // Teach Autosuggest how to calculate suggestions for any given input value.
-const getSuggestions = function (value, allCommands, options) {
+const getSuggestions = function (unfilteredSearch, allCommands, options, filterSearchQuery) {
+  
+  const search = filterFuzzySortSearch(unfilteredSearch, filterSearchQuery);
+  
   // TODO: preparing fuzzysort results make them much faster
   // however prepare is expensiveand should only be run when
   // the commands change lodash.once get close to this
@@ -37,11 +47,11 @@ const getSuggestions = function (value, allCommands, options) {
 
   // If the user specified an autosuggest term
   // search for close matches
-  const suggestionResults = fuzzysort.go(value, allCommands, options);
+  const suggestionResults = fuzzysort.go(search, allCommands, options);
 
   // if the user didnt suggest a specific term or there's a search term
   // but no matches were found return all the commands
-  if (!value || !suggestionResults.length) {
+  if (!search || !suggestionResults.length) {
     return allCommands;
   }
 
