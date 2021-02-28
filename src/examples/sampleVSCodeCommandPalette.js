@@ -16,12 +16,22 @@ export class DynamicListCommandPalette extends Component {
            this.state = {
              commands: categories,
              showSpinnerOnSelect: false,
-             defaultInputValue: ">",
+             inputValue: ">",
              placeholder: ""
            };
 
+           this.handleClose = this.handleClose.bind(this);
            this.handleChange = this.handleChange.bind(this);
            this.handleSelect = this.handleSelect.bind(this);
+         }
+
+         handleClose() {
+            this.setState({
+              showSpinnerOnSelect: false,
+              placeholder: "",
+              inputValue: ">",
+              commands: categories
+            });
          }
 
          handleChange(value, userQuery) {
@@ -30,7 +40,7 @@ export class DynamicListCommandPalette extends Component {
             this.setState({
               showSpinnerOnSelect: false,
               placeholder: "Search files by name",
-              defaultInputValue: value,
+              inputValue: value,
               commands: files
             })
           }
@@ -39,7 +49,7 @@ export class DynamicListCommandPalette extends Component {
             this.setState({
               showSpinnerOnSelect: false,
               placeholder: "",
-              defaultInputValue: "?",
+              inputValue: "?",
               commands: globalCommands
             })
           }
@@ -48,7 +58,7 @@ export class DynamicListCommandPalette extends Component {
             this.setState({
               showSpinnerOnSelect: false,
               placeholder: "",
-              defaultInputValue: ">",
+              inputValue: ">",
               commands: categories
             })
           }
@@ -68,6 +78,7 @@ export class DynamicListCommandPalette extends Component {
             }
          }
 
+         
          render() {
            return (
              <div>
@@ -75,20 +86,21 @@ export class DynamicListCommandPalette extends Component {
                  commands={this.state.commands}
                  renderCommand={sampleVSCodeCommand}
                  theme={vscode}
-                 defaultInputValue={this.state.defaultInputValue}
+                 defaultInputValue={this.state.inputValue}
                  filterSearchQuery={ inputValue => {
-                    // strip action keys "? or >" from input before searching commands, ex:
-                    // "?something" or ">something" should search using "something" as the query
-                    return inputValue.replace(/^(>|\?)/g, '');
+                   // strip action keys "? or >" from input before searching commands, ex:
+                   // "?something" or ">something" should search using "something" as the query
+                   return inputValue.replace(/^(>|\?)/g, '');
                   }}
-                 getSuggestionValue={() => this.state.defaultInputValue}
-                 placeholder={this.state.placeholder}
-                 maxDisplayed={11}
-                 showSpinnerOnSelect={this.state.showSpinnerOnSelect}
-                 onChange={this.handleChange}
-                 onSelect={this.handleSelect}
-                 resetInputOnClose
-                 open
+                  getSuggestionValue={() => this.state.inputValue}
+                  placeholder={this.state.placeholder}
+                  maxDisplayed={11}
+                  showSpinnerOnSelect={this.state.showSpinnerOnSelect}
+                  resetInputOnClose
+                  onRequestClose={this.handleClose}
+                  onChange={this.handleChange}
+                  onSelect={this.handleSelect}
+                  open
                />
              </div>
            );
