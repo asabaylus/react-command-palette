@@ -32432,6 +32432,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32641,6 +32642,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -32850,6 +32852,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33060,6 +33063,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33271,6 +33275,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33480,6 +33485,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33689,6 +33695,7 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header={null}
                                   highlightFirstSuggestion={true}
@@ -33870,6 +33877,7 @@ exports[`props.theme should render a chrome theme 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterSearchQuery={[Function]}
   getSuggestionValue={[Function]}
   header="this is a command palette"
   highlightFirstSuggestion={true}
@@ -35196,6 +35204,12 @@ exports[`props.theme should render a chrome theme 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
           <div
             class="ReactModalPortal"
           >
@@ -36779,6 +36793,12 @@ exports[`props.theme should render a chrome theme 1`] = `
               </div>
               <div
                 class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
@@ -37455,6 +37475,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37664,6 +37685,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -37873,6 +37895,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -38083,6 +38106,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -38294,6 +38318,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -38503,6 +38528,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -38712,6 +38738,7 @@ exports[`props.theme should render a chrome theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -38892,6 +38919,7 @@ exports[`props.theme should render a sublime theme 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterSearchQuery={[Function]}
   getSuggestionValue={[Function]}
   header="this is a command palette"
   highlightFirstSuggestion={true}
@@ -40218,6 +40246,12 @@ exports[`props.theme should render a sublime theme 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
           <div
             class="ReactModalPortal"
           >
@@ -41853,6 +41887,12 @@ exports[`props.theme should render a sublime theme 1`] = `
               </div>
               <div
                 class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
@@ -42580,6 +42620,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -42788,6 +42829,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -42996,6 +43038,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -43205,6 +43248,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -43415,6 +43459,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -43623,6 +43668,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -43831,6 +43877,7 @@ exports[`props.theme should render a sublime theme 1`] = `
                                   }
                                   defaultInputValue=""
                                   display="modal"
+                                  filterSearchQuery={[Function]}
                                   getSuggestionValue={[Function]}
                                   header="this is a command palette"
                                   highlightFirstSuggestion={true}
@@ -44012,6 +44059,7 @@ exports[`props.theme should render a vscode theme 1`] = `
   }
   defaultInputValue=""
   display="modal"
+  filterSearchQuery={[Function]}
   getSuggestionValue={[Function]}
   header="this is a command palette"
   highlightFirstSuggestion={true}
@@ -45338,6 +45386,12 @@ exports[`props.theme should render a vscode theme 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
           <div
             class="ReactModalPortal"
           >
@@ -46997,6 +47051,12 @@ exports[`props.theme should render a vscode theme 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
