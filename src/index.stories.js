@@ -313,7 +313,7 @@ storiesOf("Command Palette", module)
       />
     );
   })
-  .add("filterSearch", () => (
+  .add("filterInput", () => (
     <CommandPalette
       commands={commands}
       placeholder="Try typing '?st', '>st' or 'st'"

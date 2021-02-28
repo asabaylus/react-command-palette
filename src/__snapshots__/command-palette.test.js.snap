@@ -1413,6 +1413,12 @@ exports[`Command List renders a command 1`] = `
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
@@ -6892,6 +6898,12 @@ exports[`Command List renders a command 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -12991,6 +13003,12 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
@@ -16345,6 +16363,12 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -23575,6 +23599,12 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
@@ -26156,6 +26186,12 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -34702,6 +34738,12 @@ exports[`props.theme should render a custom theme 1`] = `
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open chrome-overlay"
@@ -36281,6 +36323,12 @@ exports[`props.theme should render a custom theme 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
