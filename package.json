@@ -47,7 +47,7 @@
     "@storybook/addon-essentials": "^6.1.18",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-jest": "^6.1.18",
-    "@storybook/addon-knobs": "^6.1.18",
+    "@storybook/addon-knobs": "^6.1.21",
     "@storybook/addon-links": "^6.1.20",
     "@storybook/addon-options": "^5.3.21",
     "@storybook/node-logger": "^6.1.18",
