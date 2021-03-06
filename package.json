@@ -54,7 +54,7 @@
     "@storybook/preset-create-react-app": "^3.1.6",
     "@storybook/react": "^6.1.20",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
-    "auto": "^10.16.7",
+    "auto": "^10.18.3",
     "chromatic": "^5.6.3",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
