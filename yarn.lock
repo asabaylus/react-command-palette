@@ -3578,10 +3578,10 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@wojtekmaj/enzyme-adapter-react-17@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@wojtekmaj/enzyme-adapter-react-17/-/enzyme-adapter-react-17-0.4.1.tgz#a9d4a2873025c6de19e1142ca076661bac69f587"
-  integrity sha512-WZr8i4C6WVDV7Mb8sbm7GdlEPmk1f+xOMjUKThqrkWgwsfvu90zJyyX54wyAvsS91sjtKZ0JipGj2cJnEDaxPA==
+"@wojtekmaj/enzyme-adapter-react-17@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@wojtekmaj/enzyme-adapter-react-17/-/enzyme-adapter-react-17-0.5.0.tgz#678e9781b16bbec42bb062313f3d8d61a998fe7d"
+  integrity sha512-8wktaU7UZCi8vdH0oModzUt2iim5PsOlYabcJ88fAtzRraJJGjqU+JOshYJw4ug/LW8WKjPk5r/1J1EwcHeckw==
   dependencies:
     enzyme-adapter-utils "^1.14.0"
     enzyme-shallow-equal "^1.0.4"
@@ -3591,7 +3591,6 @@
     prop-types "^15.7.2"
     react-is "^17.0.0"
     react-test-renderer "^17.0.0"
-    semver "^5.7.0"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -14270,7 +14269,7 @@ selfsigned@^1.10.8:
   dependencies:
     node-forge "^0.10.0"
 
-"semver@2 || 3 || 4 || 5", semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0, semver@^5.7.0, semver@^5.7.1:
+"semver@2 || 3 || 4 || 5", semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0, semver@^5.7.1:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
