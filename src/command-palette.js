@@ -20,6 +20,7 @@ import { noop, override, after } from "./utils";
 import "./themes/atom.css";
 
 const allSuggestions = [];
+let initialSuggestions = [];
 
 const Header = (props) => {
   const { theme, children } = props;
@@ -79,7 +80,7 @@ class CommandPalette extends React.Component {
     const { hotKeys, open, display } = this.props;
 
     this.setState({
-      suggestions: this.fetchData(),
+      suggestions: initialSuggestions = this.fetchData(),
     });
 
     // Use hot key to open command palette
@@ -166,13 +167,11 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
-    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
-    const { value } = this.state;
+    const { onRequestClose } = this.props;
 
     this.setState({
       showModal: false,
-      isLoading: false,
-      value: resetInputOnClose ? defaultInputValue : value,
+      isLoading: false
     });
 
     return onRequestClose();
@@ -219,8 +218,7 @@ class CommandPalette extends React.Component {
       );
     }
 
-    this.allCommands = commands;
-    return this.allCommands;
+    return this.allCommands = commands;
   }
 
   focusInput() {
@@ -235,6 +233,15 @@ class CommandPalette extends React.Component {
   }
 
   handleOpenModal() {
+    const {resetInputOnOpen, defaultInputValue} = this.props;
+
+    if(resetInputOnOpen){
+      this.setState({
+        suggestions: initialSuggestions,
+        value: defaultInputValue
+      });
+    }
+
     this.setState({
       showModal: true,
       suggestions: allSuggestions,
@@ -376,7 +383,7 @@ CommandPalette.defaultProps = {
   onAfterOpen: noop,
   onRequestClose: noop,
   closeOnSelect: false,
-  resetInputOnClose: false,
+  resetInputOnOpen: false,
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
@@ -511,9 +518,9 @@ CommandPalette.propTypes = {
    * command-palette  */
   closeOnSelect: PropTypes.bool,
 
-  /** resetInputOnClose a boolean which indicates whether to reset the user's query
-   * to `defaultInputValue` when the command palette closes. */
-  resetInputOnClose: PropTypes.bool,
+  /** resetInputOnOpen a boolean which indicates whether to reset the user's query
+   * to `defaultInputValue` when the command palette opens. */
+  resetInputOnOpen: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by
