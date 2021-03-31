@@ -522,6 +522,10 @@ CommandPalette.propTypes = {
   /** resetInputOnOpen a boolean which indicates whether to reset the user's query
    * to `defaultInputValue` when the command palette opens. */
   resetInputOnOpen: PropTypes.bool,
+ 
+  /** a boolean which resets the components commands to the initial data provided to 
+   * props.commands every time the command palette is opened */
+  resetCommandsOnOpen: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by

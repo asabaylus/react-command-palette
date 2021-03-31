@@ -65,7 +65,9 @@ const commands = [{
 
 * ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediately when the user makes a selection. Defaults to "false".
 
-* ```resetInputOnClose``` a _boolean_ which indicates whether to reset the user's query to `defaultInputValue` when the command palette closes. Defaults to "false".
+* ```resetInputOnOpen``` a _boolean_ which indicates whether to reset the user's query to `defaultInputValue` when the command palette opens. Defaults to "false".
+ 
+* ```resetCommandsOnOpen``` a _boolean_ which resets the components commands to the initial data provided to `props.commands` every time the command palette is opened.
 
 * ```placeholder``` a _string_ that contains a short text description which is displayed inside the the input field until the user provides input. Defaults to "Type a command".
 
