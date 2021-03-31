@@ -261,8 +261,8 @@ storiesOf("Command Palette", module)
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
   ))
-  .add("with resetInputOnClose", () => (
-    <CommandPalette commands={commands} open resetInputOnClose />
+  .add("with resetInputOnOpen", () => (
+    <CommandPalette commands={commands} open resetInputOnOpen />
   ))
   .add("with custom placeholder", () => (
     <CommandPalette

@@ -65,7 +65,9 @@ const commands = [{
 
 * ```closeOnSelect``` a _boolean_, when set to true the command palette will close immediately when the user makes a selection. Defaults to "false".
 
-* ```resetInputOnClose``` a _boolean_ which indicates whether to reset the user's query to `defaultInputValue` when the command palette closes. Defaults to "false".
+* ```resetInputOnOpen``` a _boolean_ which indicates whether to reset the user's query to `defaultInputValue` when the command palette opens. Defaults to "false".
+ 
+* ```resetCommandsOnOpen``` a _boolean_ which resets the components commands to the initial data provided to `props.commands` every time the command palette is opened.
 
 * ```placeholder``` a _string_ that contains a short text description which is displayed inside the the input field until the user provides input. Defaults to "Type a command".
 
@@ -158,7 +160,7 @@ const commands = [{
     />
   ```
 
-* ```onRequestClose``` a function that will be run when the modal is requested to be closed (either by clicking on overlay or pressing ESC)
+* ```onRequestClose``` a function that will be run when the modal is requested to be closed (either by clicking on overlay or pressing ESC).
 Note: It is not called if _open_ is changed by other means. Passes through to the [react-modal prop](http://reactcommunity.org/react-modal/examples/on_request_close.html).
 
   ```js
@@ -230,7 +232,7 @@ Note: It is not called if _open_ is changed by other means. Passes through to th
 * ```showSpinnerOnSelect``` a _boolean_ which displays a loading indicator immediately after a command has been selected. When true the spinner is enabled when false the spinner is disabled. Useful when dynamically loading lists of a commands based upon user selections. Setting both _showSpinnerOnSelect_ and  _closeOnSelect_ to false will keep the palette open and allow a new list of commands to be loaded, see the [dynamic lists example](https://codesandbox.io/s/react-command-palette-dynamic-lists-p2xo9?fontsize=14&hidenavigation=1&theme=dark).
 
 * ```theme``` enables you to apply a sample or custom look-n-feel.
-  Two themes are included with the command palette, Chrome and Atom. The CommandPalette comes with the Atom theme enabled default.
+  Several themes are included with the command palette, Chrome, VS Code and Atom. The CommandPalette comes with the Atom theme enabled default.
 
   Creating a new theme is also possible. There are four base components that should be styled, the _trigger_, _spinner_, _react-modal_ and _react-autosuggest_ components. All four can be styled at once via the `theme` prop.
 
