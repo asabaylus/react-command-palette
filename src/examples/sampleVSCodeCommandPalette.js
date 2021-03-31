@@ -96,7 +96,7 @@ export class DynamicListCommandPalette extends Component {
                   placeholder={this.state.placeholder}
                   maxDisplayed={11}
                   showSpinnerOnSelect={this.state.showSpinnerOnSelect}
-                  resetInputOnClose
+                  resetInputOnOpen
                   onRequestClose={this.handleClose}
                   onChange={this.handleChange}
                   onSelect={this.handleSelect}

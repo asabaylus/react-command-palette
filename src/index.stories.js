@@ -106,7 +106,7 @@ storiesOf("Command Palette", module)
     <CommandPalette
       commands={commands}
       renderCommand={sampleAtomCommand}
-      resetInputOnClose
+      resetInputOnOpen
       theme={atom}
       open
     />
@@ -114,10 +114,10 @@ storiesOf("Command Palette", module)
   .add("chrome theme", () => (
     <CommandPalette
       commands={commands}
-      resetInputOnClose
+      resetInputOnOpen
       renderCommand={sampleChromeCommand}
       theme={chrome}
-      resetInputOnClose={true}
+      resetInputOnOpen={true}
       open
     />
   ))
@@ -127,7 +127,7 @@ storiesOf("Command Palette", module)
       <CommandPalette
         commands={commands}
         renderCommand={sampleSublimeCommand}
-        resetInputOnClose
+        resetInputOnOpen
         theme={sublime}
         placeholder=""
         maxDisplayed={12}
@@ -272,8 +272,8 @@ storiesOf("Command Palette", module)
   .add("with closeOnSelect", () => (
     <CommandPalette commands={commands} closeOnSelect open />
   ))
-  .add("with resetInputOnClose", () => (
-    <CommandPalette commands={commands} open resetInputOnClose />
+  .add("with resetInputOnOpen", () => (
+    <CommandPalette commands={commands} open resetInputOnOpen />
   ))
   .add("with custom placeholder", () => (
     <CommandPalette

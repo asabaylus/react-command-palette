@@ -167,7 +167,7 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
-    const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
+    const { resetInputOnOpen, defaultInputValue, onRequestClose } = this.props;
     const { value } = this.state;
 
     this.setState({
@@ -234,12 +234,12 @@ class CommandPalette extends React.Component {
   }
 
   handleOpenModal() {
-    const {resetInputOnClose, defaultInputValue} = this.props;
+    const {resetInputOnOpen, defaultInputValue} = this.props;
 
-    if(resetInputOnClose){
+    if(resetInputOnOpen){
       this.setState({
         suggestions: initialSuggestions,
-        value: defaultInputValue || 'foo'
+        value: defaultInputValue
       });
     }
 
@@ -384,7 +384,7 @@ CommandPalette.defaultProps = {
   onAfterOpen: noop,
   onRequestClose: noop,
   closeOnSelect: false,
-  resetInputOnClose: false,
+  resetInputOnOpen: false,
   display: "modal",
   reactModalParentSelector: "body",
   renderCommand: null,
@@ -519,9 +519,9 @@ CommandPalette.propTypes = {
    * command-palette  */
   closeOnSelect: PropTypes.bool,
 
-  /** resetInputOnClose a boolean which indicates whether to reset the user's query
-   * to `defaultInputValue` when the command palette closes. */
-  resetInputOnClose: PropTypes.bool,
+  /** resetInputOnOpen a boolean which indicates whether to reset the user's query
+   * to `defaultInputValue` when the command palette opens. */
+  resetInputOnOpen: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by

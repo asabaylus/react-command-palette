@@ -147,7 +147,7 @@ describe("props.header", () => {
   });
 });
 
-describe("props.resetInputOnClose", () => {
+describe("props.resetInputOnOpen", () => {
   it("should not reset input by default", () => {
     const commandPalette = mount(
       <CommandPalette commands={mockCommands} open />
@@ -162,13 +162,13 @@ describe("props.resetInputOnClose", () => {
     expect(commandPalette.state("value")).toEqual("my query");
   });
 
-  it("should reset input to defaultInputValue when resetInputOnClose is set", () => {
+  it("should reset input to defaultInputValue when resetInputOnOpen is set", () => {
     const commandPalette = mount(
       <CommandPalette
         commands={mockCommands}
         defaultInputValue="default"
         open
-        resetInputOnClose
+        resetInputOnOpen
       />
     );
 
