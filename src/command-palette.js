@@ -170,13 +170,6 @@ class CommandPalette extends React.Component {
     const { resetInputOnClose, defaultInputValue, onRequestClose } = this.props;
     const { value } = this.state;
 
-    if(resetInputOnClose){
-      this.setState({
-        suggestions: initialSuggestions,
-        value: defaultInputValue
-      });
-    }
-
     this.setState({
       showModal: false,
       isLoading: false
@@ -241,6 +234,15 @@ class CommandPalette extends React.Component {
   }
 
   handleOpenModal() {
+    const {resetInputOnClose, defaultInputValue} = this.props;
+
+    if(resetInputOnClose){
+      this.setState({
+        suggestions: initialSuggestions,
+        value: defaultInputValue || 'foo'
+      });
+    }
+
     this.setState({
       showModal: true,
       suggestions: allSuggestions,
