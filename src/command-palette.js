@@ -167,8 +167,7 @@ class CommandPalette extends React.Component {
   }
 
   handleCloseModal() {
-    const { resetInputOnOpen, defaultInputValue, onRequestClose } = this.props;
-    const { value } = this.state;
+    const { onRequestClose } = this.props;
 
     this.setState({
       showModal: false,
