@@ -3,12 +3,12 @@
   "version": "0.15.0",
   "description": "WAI-ARIA compliant React command palette like the one in Atom",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "start": "npm run storybook",
     "netlify": "react-scripts build",
     "dev": "yarn storybook",
-    "build": "cross-env BABEL_ENV=production babel src -d dist --copy-files",
+    "build": "cross-env BABEL_ENV=production rollup -c",
     "test": "react-scripts test --env=jsdom",
     "coverage": "yarn test --coverage --watchAll=false --silent --ci",
     "storybook": "start-storybook -p 6006 -s public",
@@ -59,10 +59,16 @@
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
+    "postcss": "8.x",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-replace": "^2.2.0"
   },
   "dependencies": {
     "fast-deep-equal": "^3.1.3",
