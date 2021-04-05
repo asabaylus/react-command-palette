@@ -1,3 +1,25 @@
+# v0.16.0 (Mon Apr 05 2021)
+
+#### 🚀 Enhancement
+
+- copy LICENSE and themes to dist [#650](https://github.com/asabaylus/react-command-palette/pull/650) ([@asabaylus](https://github.com/asabaylus))
+- peg babel-loader to v8.1.0 to prevent cra error [#650](https://github.com/asabaylus/react-command-palette/pull/650) ([@asabaylus](https://github.com/asabaylus))
+- make CSS work with Nextjs, Closes #602 [#650](https://github.com/asabaylus/react-command-palette/pull/650) ([@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Bump @storybook/addon-actions from 6.1.21 to 6.2.2 [#649](https://github.com/asabaylus/react-command-palette/pull/649) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-links from 6.1.21 to 6.2.2 [#646](https://github.com/asabaylus/react-command-palette/pull/646) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/node-logger from 6.1.21 to 6.2.2 [#643](https://github.com/asabaylus/react-command-palette/pull/643) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-jest from 6.1.21 to 6.2.2 [#642](https://github.com/asabaylus/react-command-palette/pull/642) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+
+---
+
 # v0.15.0 (Wed Mar 31 2021)
 
 ### Release Notes
