@@ -53,7 +53,7 @@
     "@storybook/addon-knobs": "^6.2.5",
     "@storybook/addon-links": "^6.2.5",
     "@storybook/addon-options": "^5.3.21",
-    "@storybook/node-logger": "^6.2.4",
+    "@storybook/node-logger": "^6.2.7",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.1.21",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
