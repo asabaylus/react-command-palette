@@ -6,22 +6,7 @@ export default [
   },
   {
     id: 2,
-    name: "Network",
+    name: "Files",
     command() {}
   },
-  {
-    id: 3,
-    name: "Navigate",
-    command() {}
-  },
-  {
-    id: 4,
-    name: "System",
-    command() {}
-  },
-  {
-    id: 5,
-    name: "Drawer",
-    command() {}
-  }
 ];

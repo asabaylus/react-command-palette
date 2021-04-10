@@ -67,15 +67,35 @@ export class DynamicListCommandPalette extends Component {
          handleSelect(command) { 
           // when selecting a non-action command show the spinner, 
           // otherwise update the default input value to an 'action' command
-          if (
+          if (command.name === "Files") {
+              this.setState({
+              showSpinnerOnSelect: false,
+              placeholder: "Search files by name",
+              inputValue: "",
+              commands: files
+            })
+          }
+
+          else if (command.name === "Command") {
+              this.setState({
+              showSpinnerOnSelect: false,
+              placeholder: "",
+              inputValue: "?",
+              commands: globalCommands
+            })
+          }
+
+          else if (
             command !== "?" ||
             command !== ">" ||
             command !== ""
             ) {
               this.setState({
-              showSpinnerOnSelect: true
+                showSpinnerOnSelect: true
               });
-            }
+          }
+          
+          
          }
 
          
