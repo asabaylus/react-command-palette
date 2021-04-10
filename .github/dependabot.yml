@@ -5,5 +5,9 @@ updates:
   schedule:
     interval: daily
     time: "10:00"
+  ignore:
+    # do not bump pre-release software
+    - dependency-name: *
+      versions: ["0.x"]
   open-pull-requests-limit: 10
   versioning-strategy: increase
