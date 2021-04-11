@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    name: "Command",
+    name: "Commands",
     command() {}
   },
   {

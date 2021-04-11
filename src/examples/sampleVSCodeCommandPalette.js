@@ -25,6 +25,39 @@ export class DynamicListCommandPalette extends Component {
            this.handleSelect = this.handleSelect.bind(this);
          }
 
+        getFirstCommandFromUserQuery(userQuery) {
+          return [{
+            userQuery: "",
+            showSpinnerOnSelect: false,
+            placeholder: "Search files by name",
+            commands: files
+          }, {
+            userQuery: "?",
+            showSpinnerOnSelect: false,
+            placeholder: "",
+            inputValue: "?",
+            commands: globalCommands
+          }, {
+            userQuery: ">",
+            showSpinnerOnSelect: false,
+            placeholder: "",
+            inputValue: ">",
+            commands: categories
+          }, {
+            userQuery: "Files",
+            showSpinnerOnSelect: false,
+            placeholder: "Search files by name",
+            inputValue: "",
+            commands: files
+          }, {
+            userQuery: "Commands",
+            showSpinnerOnSelect: false,
+            placeholder: "",
+            inputValue: "?",
+            commands: globalCommands
+          }].filter(command => command.userQuery === userQuery)[0];
+         }
+
          handleClose() {
             this.setState({
               showSpinnerOnSelect: false,
@@ -34,70 +67,27 @@ export class DynamicListCommandPalette extends Component {
             });
          }
 
-         handleChange(value, userQuery) {
-          // When a user types an "action" key such as "?, :, >, #" a new list of commands is loaded in the command palette
-          if (userQuery === "") {
-            this.setState({
-              showSpinnerOnSelect: false,
-              placeholder: "Search files by name",
-              inputValue: value,
-              commands: files
-            })
-          }
-
-          if (userQuery === "?") {
-            this.setState({
-              showSpinnerOnSelect: false,
-              placeholder: "",
-              inputValue: "?",
-              commands: globalCommands
-            })
-          }
-
-          if (userQuery === ">") {
-            this.setState({
-              showSpinnerOnSelect: false,
-              placeholder: "",
-              inputValue: ">",
-              commands: categories
-            })
-          }
+         handleChange(value = null, userQuery) {
+            // When a user types an "action" key like "?, :, >, #" 
+            //  of commands is loaded in the command palette
+            const nextCommands = this.getFirstCommandFromUserQuery(userQuery);
+            this.setState(nextCommands);
          }
 
-         handleSelect(command) { 
-          // when selecting a non-action command show the spinner, 
-          // otherwise update the default input value to an 'action' command
-          if (command.name === "Files") {
-              this.setState({
-              showSpinnerOnSelect: false,
-              placeholder: "Search files by name",
-              inputValue: "",
-              commands: files
-            })
-          }
-
-          else if (command.name === "Command") {
-              this.setState({
-              showSpinnerOnSelect: false,
-              placeholder: "",
-              inputValue: "?",
-              commands: globalCommands
-            })
-          }
-
-          else if (
-            command !== "?" ||
-            command !== ">" ||
-            command !== ""
-            ) {
-              this.setState({
-                showSpinnerOnSelect: true
-              });
-          }
-          
-          
+         handleSelect(userQuery) { 
+            // when selecting a non-action command show the spinner, 
+            // otherwise update the default input value to an 'action' command
+            const { name } = userQuery;
+            if (
+              userQuery !== "?" ||
+              userQuery !== ">" ||
+              userQuery !== ""
+              ) {
+              this.setState({ showSpinnerOnSelect: true });
+            }          
+            const nextCommands = this.getFirstCommandFromUserQuery(name);
+            this.setState(nextCommands);
          }
-
          
          render() {
            return (
