@@ -3,9 +3,13 @@ import CommandPalette from "../command-palette";
 import sampleVSCodeCommand from "./sampleVSCodeCommand";
 import vscode from "../themes/vscode-theme";
 
-// sample lists of commands, we can use these to demonstrate how to 
-// dynamicaly swap out the contents of the command palette as the user
-//  navigates from one list of commands to another.
+// Demonstrates how to dynamicaly swap out the contents of the
+// command palette as the user as the user navigates from one 
+// list of commands to another. Users can either type a 
+// "navigation" command using a hotkey such as "?" or ">". Or 
+// the user can click a special command intended to load a set
+// of child commands such as "Files" or "Categories". These actions
+// will dynamicaly swap out the set of loded commands.
 import categories from "../__mocks__/categories";
 import globalCommands from "../__mocks__/global_commands";
 import files from "../__mocks__/files";
@@ -27,9 +31,7 @@ export class DynamicListCommandPalette extends Component {
   }
 
   nextCommands(keyword) {
-    // accepts user typed input and returns the next state.
-    // This state change loads child commands and updates the
-    // text in the placeholder
+    // filters the list of commands based upon user input (eg: userQuery)
     return (
       [
         {
@@ -63,22 +65,20 @@ export class DynamicListCommandPalette extends Component {
   }
 
   handleChange(value = null, userQuery) {
-    // When a user types an "action" key like "?, :, >, #"
-    // of commands is loaded in the command palette
+    // calculate the next set of commands to load
     this.setState(() => this.nextCommands(userQuery));
   }
 
   handleSelect(userQuery) {
-    // calculate the next state for matched user typed input
     const { name } = userQuery;
     const nextState = this.nextCommands(name);
     
     if (nextState !== null) {
-      // when selecting an action command load the child menu
+      // calculate the next state matching the users input
       this.setState(() => nextState);
     } else {
-      // when selecting a non-action command show the spinner
-      // because there are no child menus
+      // when there are no child menus to load then display
+      // the spinner because the user selected a command to run
       this.setState({ showSpinnerOnSelect: true });
     }
   }
