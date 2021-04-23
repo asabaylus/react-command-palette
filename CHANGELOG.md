@@ -1,3 +1,36 @@
+# v0.16.1 (Fri Apr 23 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Update chromatic in package.json ([@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Bump @storybook/react from 6.2.7 to 6.2.8 [#687](https://github.com/asabaylus/react-command-palette/pull/687) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@asabaylus](https://github.com/asabaylus))
+- Bump react-modal from 3.12.1 to 3.13.1 [#691](https://github.com/asabaylus/react-command-palette/pull/691) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-links from 6.2.7 to 6.2.8 [#688](https://github.com/asabaylus/react-command-palette/pull/688) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-a11y from 6.2.7 to 6.2.8 [#690](https://github.com/asabaylus/react-command-palette/pull/690) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@asabaylus](https://github.com/asabaylus))
+- Bump @storybook/addon-jest from 6.2.7 to 6.2.8 [#689](https://github.com/asabaylus/react-command-palette/pull/689) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@asabaylus](https://github.com/asabaylus))
+- Bump @storybook/addon-actions from 6.2.7 to 6.2.8 [#692](https://github.com/asabaylus/react-command-palette/pull/692) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-knobs from 6.2.7 to 6.2.8 [#693](https://github.com/asabaylus/react-command-palette/pull/693) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump auto from 10.24.3 to 10.25.1 [#696](https://github.com/asabaylus/react-command-palette/pull/696) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/node-logger from 6.2.7 to 6.2.8 [#686](https://github.com/asabaylus/react-command-palette/pull/686) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump postcss from 8.2.9 to 8.2.10 [#685](https://github.com/asabaylus/react-command-palette/pull/685) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-actions from 6.2.2 to 6.2.5 [#668](https://github.com/asabaylus/react-command-palette/pull/668) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-knobs from 6.2.2 to 6.2.5 [#670](https://github.com/asabaylus/react-command-palette/pull/670) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-links from 6.2.2 to 6.2.5 [#671](https://github.com/asabaylus/react-command-palette/pull/671) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-a11y from 6.2.2 to 6.2.5 [#672](https://github.com/asabaylus/react-command-palette/pull/672) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-jest from 6.2.2 to 6.2.5 [#673](https://github.com/asabaylus/react-command-palette/pull/673) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/addon-actions from 6.2.2 to 6.2.4 [#666](https://github.com/asabaylus/react-command-palette/pull/666) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @storybook/node-logger from 6.2.2 to 6.2.4 [#659](https://github.com/asabaylus/react-command-palette/pull/659) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+
+---
+
 # v0.16.0 (Mon Apr 05 2021)
 
 #### 🚀 Enhancement
