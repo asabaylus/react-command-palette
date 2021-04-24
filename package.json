@@ -15,7 +15,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "release": "auto shipit --base-branch=main",
-    "chromatic": "chromatic"
+    "chromatic": "chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
   },
   "resolutions": {
     "@storybook/react/babel-loader": "8.1.0"
