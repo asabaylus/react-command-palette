@@ -43,7 +43,7 @@
     "react-dom": "17.x"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
+    "@babel/cli": "^7.13.16",
     "@babel/core": "^7.13.14",
     "@storybook/addon-a11y": "^6.2.8",
     "@storybook/addon-actions": "^6.2.8",
@@ -51,7 +51,7 @@
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-jest": "^6.2.8",
     "@storybook/addon-knobs": "^6.2.8",
-    "@storybook/addon-links": "^6.2.8",
+    "@storybook/addon-links": "^6.2.9",
     "@storybook/addon-options": "^5.3.21",
     "@storybook/node-logger": "^6.2.8",
     "@storybook/preset-create-react-app": "^3.1.7",
