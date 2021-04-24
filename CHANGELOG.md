@@ -1,3 +1,15 @@
+# v0.16.2 (Sat Apr 24 2021)
+
+#### 🐛 Bug Fix
+
+- chromatic --project-token CHROMATIC_PROJECT_TOKEN - [#709](https://github.com/asabaylus/react-command-palette/pull/709) ([@asabaylus](https://github.com/asabaylus))
+
+#### Authors: 1
+
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+
+---
+
 # v0.16.1 (Fri Apr 23 2021)
 
 #### ⚠️ Pushed to `main`
