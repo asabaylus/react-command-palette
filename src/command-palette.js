@@ -266,7 +266,7 @@ class CommandPalette extends React.Component {
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
     const { suggestions, value, isLoading } = this.state;
-    const { theme, getSuggestionValue } = this.props;
+    const { theme, getSuggestionValue, defaultInputValue } = this.props;
     const {
       maxDisplayed,
       spinner,
@@ -302,7 +302,7 @@ class CommandPalette extends React.Component {
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           renderSuggestion={this.commandTemplate}
-          inputProps={this.defaultInputProps(value)}
+          inputProps={this.defaultInputProps(defaultInputValue)}
           theme={theme}
         />
       </div>

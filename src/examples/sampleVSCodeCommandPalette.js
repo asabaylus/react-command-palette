@@ -72,7 +72,6 @@ export class DynamicListCommandPalette extends Component {
   handleSelect(userQuery) {
     const { name } = userQuery;
     const nextState = this.nextCommands(name);
-    
     if (nextState !== null) {
       // calculate the next state matching the users input
       this.setState(() => nextState);
@@ -84,21 +83,20 @@ export class DynamicListCommandPalette extends Component {
   }
 
   render() {
+    const {inputValue} = this.state;
     return (
       <div>
         <CommandPalette
           commands={this.state.commands}
           renderCommand={sampleVSCodeCommand}
           theme={vscode}
-          defaultInputValue={this.state.inputValue}
+          defaultInputValue={inputValue}
           filterSearchQuery={(inputValue) => {
             // strip action keys "? or >" from input before searching commands, ex:
             // "?something" or ">something" should search using "something" as the query
             return inputValue.replace(/^(>|\?)/g, "");
           }}
-          getSuggestionValue={() => {
-            return this.state.inputValue;
-          }}
+          getSuggestionValue={() => inputValue}
           placeholder={this.state.placeholder}
           maxDisplayed={11}
           showSpinnerOnSelect={this.state.showSpinnerOnSelect}
