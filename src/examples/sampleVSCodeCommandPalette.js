@@ -66,7 +66,7 @@ export class DynamicListCommandPalette extends Component {
 
   handleChange(value = null, userQuery) {
     // calculate the next set of commands to load
-    this.setState(() => this.nextCommands(userQuery));
+    this.setState(this.nextCommands(userQuery));
   }
 
   handleSelect(userQuery) {
@@ -99,6 +99,7 @@ export class DynamicListCommandPalette extends Component {
           getSuggestionValue={() => inputValue}
           placeholder={this.state.placeholder}
           maxDisplayed={11}
+          highlightFirstSuggestion
           showSpinnerOnSelect={this.state.showSpinnerOnSelect}
           resetInputOnOpen
           onRequestClose={this.handleClose}

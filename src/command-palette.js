@@ -131,6 +131,7 @@ class CommandPalette extends React.Component {
   onSuggestionHighlighted({ suggestion }) {
     const { onHighlight } = this.props;
     onHighlight(suggestion);
+    this.forceUpdate();
   }
 
   onSuggestionSelected(event, { suggestion }) {
@@ -265,7 +266,7 @@ class CommandPalette extends React.Component {
 
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
-    const { suggestions, value, isLoading } = this.state;
+    const { suggestions, isLoading, value } = this.state;
     const { theme, getSuggestionValue, defaultInputValue } = this.props;
     const {
       maxDisplayed,

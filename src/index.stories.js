@@ -117,7 +117,6 @@ storiesOf("Command Palette", module)
       resetInputOnOpen
       renderCommand={sampleChromeCommand}
       theme={chrome}
-      resetInputOnOpen={true}
       open
     />
   ))
