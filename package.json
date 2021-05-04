@@ -1,6 +1,6 @@
 {
   "name": "react-command-palette",
-  "version": "0.16.0",
+  "version": "0.16.2",
   "description": "WAI-ARIA compliant React command palette like the one in Atom",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -15,7 +15,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "release": "auto shipit --base-branch=main",
-    "chromatic": "npx chromatic"
+    "chromatic": "chromatic --project-token 5981upe4q43 --exit-zero-on-changes"
   },
   "resolutions": {
     "@storybook/react/babel-loader": "8.1.0"
@@ -43,17 +43,17 @@
     "react-dom": "17.x"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.14",
-    "@storybook/addon-a11y": "^6.2.8",
-    "@storybook/addon-actions": "^6.2.8",
-    "@storybook/addon-essentials": "^6.1.21",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@storybook/addon-a11y": "^6.2.9",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-jest": "^6.2.8",
-    "@storybook/addon-knobs": "^6.2.8",
-    "@storybook/addon-links": "^6.2.8",
+    "@storybook/addon-jest": "^6.2.9",
+    "@storybook/addon-knobs": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
     "@storybook/addon-options": "^5.3.21",
-    "@storybook/node-logger": "^6.2.8",
+    "@storybook/node-logger": "^6.2.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.8",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
