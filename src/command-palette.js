@@ -39,7 +39,7 @@ class CommandPalette extends React.Component {
   constructor(props) {
     super(props);
 
-    const { defaultInputValue } = this.props;
+    const { defaultInputValue, onChange } = this.props;
 
     // Autosuggest is a controlled component.
     // This means that you need to provide an input value
@@ -49,7 +49,9 @@ class CommandPalette extends React.Component {
     this.state = {
       isLoading: false,
       showModal: false,
-      value: defaultInputValue,
+      inputProps: {
+        value: defaultInputValue
+      },
       suggestions: allSuggestions,
     };
 
@@ -118,7 +120,9 @@ class CommandPalette extends React.Component {
   onChange(event, { newValue }) {
     const { onChange } = this.props;
     this.setState({
-      value: newValue,
+      inputProps: {
+        value: newValue
+      }
     });
     return onChange(newValue, this.getInputOnTextTyped(event, newValue));
   }
@@ -239,7 +243,9 @@ class CommandPalette extends React.Component {
     if(resetInputOnOpen){
       this.setState({
         suggestions: initialSuggestions,
-        value: defaultInputValue
+        inputProps: {
+          value: defaultInputValue
+        }
       });
     }
 
@@ -250,11 +256,11 @@ class CommandPalette extends React.Component {
   }
 
   // Autosuggest will pass through all these props to the input element.
-  defaultInputProps(value) {
+  setInputProps(value) {
     const { placeholder } = this.props;
     return {
       placeholder,
-      value,
+      inputProps: { value },
       onChange: this.onChange,
       onKeyDown: this.onKeyDown,
     };
@@ -266,8 +272,8 @@ class CommandPalette extends React.Component {
 
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
-    const { suggestions, isLoading, value } = this.state;
-    const { theme, getSuggestionValue, defaultInputValue } = this.props;
+    const { suggestions, isLoading, inputProps } = this.state;
+    const { theme, getSuggestionValue } = this.props;
     const {
       maxDisplayed,
       spinner,
@@ -303,7 +309,7 @@ class CommandPalette extends React.Component {
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           renderSuggestion={this.commandTemplate}
-          inputProps={this.defaultInputProps(defaultInputValue)}
+          inputProps={inputProps}
           theme={theme}
         />
       </div>
