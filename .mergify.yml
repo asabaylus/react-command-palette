@@ -5,7 +5,7 @@ pull_request_rules:
       - check-success~=build
       - check-success=UI Tests
       - check-success=codeclimate
-      - check-neutral~=LGTM
+      - check-success-or-neutral~=LGTM
     actions:
       merge:
         method: rebase
