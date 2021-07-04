@@ -33,9 +33,8 @@ describe("props.shouldReturnFocusAfterClose", () => {
       global.document.querySelector("#button")
     );
     const commandPalette = mount(
-      <CommandPalette commands={mockCommands} shouldReturnFocusAfterClose />
+      <CommandPalette commands={mockCommands} shouldReturnFocusAfterClose open />
     );
-    commandPalette.instance().handleOpenModal();
     expect(global.document.activeElement).toBe(
       global.document.querySelector("input")
     );
