@@ -9,7 +9,7 @@
     "netlify": "react-scripts build",
     "dev": "yarn storybook",
     "build": "cross-env BABEL_ENV=production rollup -c",
-    "test": "react-scripts test --env=jsdom",
+    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test --env=jsdom",
     "coverage": "yarn test --coverage --watchAll=false --silent --ci",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
