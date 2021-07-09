@@ -2435,16 +2435,16 @@
     react-select "^3.2.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addon-links@^6.3.3":
-  version "6.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.3.tgz#409e66bb12ff893ffe140877b13c4528fe81ba0f"
-  integrity sha512-wBPSVJ/XBJ7UH2T8FdIHMw1GVlF39GaOIdfP1mhsEAYIUTUbUNXstZTPETaO1ggSp8eSRkUO1fVI0vOWPzUT3w==
+"@storybook/addon-links@^6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.4.tgz#2ec5b7532e67303b7ec693ecc22a6c4feac93cb3"
+  integrity sha512-qIey6kNcrg43vsmMmEGXGMbO1Wjqc6hbcMaLstUn3xN29vZnjUcv7PVPFlJsBBYIxW7gXBtRmqjdxN5UD0bvZA==
   dependencies:
-    "@storybook/addons" "6.3.3"
-    "@storybook/client-logger" "6.3.3"
-    "@storybook/core-events" "6.3.3"
+    "@storybook/addons" "6.3.4"
+    "@storybook/client-logger" "6.3.4"
+    "@storybook/core-events" "6.3.4"
     "@storybook/csf" "0.0.1"
-    "@storybook/router" "6.3.3"
+    "@storybook/router" "6.3.4"
     "@types/qs" "^6.9.5"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -3272,14 +3272,14 @@
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.3", "@storybook/core-events@^6.3.0":
+"@storybook/core-events@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.3.tgz#4d073a601f10f928fa27207cc9e7eb313a74fc77"
   integrity sha512-Ym/Xna7GrCF0CbTkbejzuAw7LunZ158AT2AvGYMZujGBzunYG7MlfXVoS6YjUUt8vEmGHi8g6PdD6uij4IBY8A==
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.4":
+"@storybook/core-events@6.3.4", "@storybook/core-events@^6.3.0":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.4.tgz#f841b8659a8729d334acd9a6dcfc470c88a2be8f"
   integrity sha512-6qI5bU5VcAoRfxkvpdRqO16eYrX5M0P2E3TakqUUDcgDo5Rfcwd1wTTcwiXslMIh7oiVGiisA+msKTlfzyKf9Q==
