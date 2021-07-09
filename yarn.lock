@@ -3118,10 +3118,21 @@
     webpack-dev-middleware "^3.7.3"
     webpack-virtual-modules "^0.2.2"
 
-"@storybook/node-logger@6.3.3", "@storybook/node-logger@^6.3.2":
+"@storybook/node-logger@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.3.tgz#e98ea1b545442b078280886878f4943397c806aa"
   integrity sha512-YmH8jZok49HPHuG/fkKgYTrHd1jxwwjhyy/cJvzW+gr3V+4rTLv0EqVe45j2LEB8+9hEw6NyMTNzn9j1eEZvIg==
+  dependencies:
+    "@types/npmlog" "^4.1.2"
+    chalk "^4.1.0"
+    core-js "^3.8.2"
+    npmlog "^4.1.2"
+    pretty-hrtime "^1.0.3"
+
+"@storybook/node-logger@^6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.4.tgz#ab7bd9f78f9ff10c9d20439734de6882233a9a75"
+  integrity sha512-z65CCCQPbZcHKnofley15+dl8UfrJOeCi7M9c7AJQ0aGh7z1ofySNjwrAf3SO1YMn4K4dkRPDFFq0SY3LA1DLw==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
