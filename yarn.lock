@@ -2394,16 +2394,16 @@
     react-lifecycles-compat "^3.0.4"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-jest@^6.3.3":
-  version "6.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.3.3.tgz#de8f4afbeeae3dcca9a0f202bea1e6aae29f2e43"
-  integrity sha512-vUzFdSsbjgOD1sPcB/WgswOvItdHHMZWu/BQlwAyX/kzdRy0CNsxnrxwwWKUyUkpbwvHiq5CaPAx4jkWsKMh1g==
+"@storybook/addon-jest@^6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.3.4.tgz#479848428023d670e98271a41d29d3f665886af5"
+  integrity sha512-O24RL4OvWnk04x866gWcvqYzOx4jNGxZNe+1UCoh9YMcEi/AMQzMAwmyTcpGa+JYfCv4dyDno009p2+mqEmyuQ==
   dependencies:
-    "@storybook/addons" "6.3.3"
-    "@storybook/api" "6.3.3"
-    "@storybook/components" "6.3.3"
-    "@storybook/core-events" "6.3.3"
-    "@storybook/theming" "6.3.3"
+    "@storybook/addons" "6.3.4"
+    "@storybook/api" "6.3.4"
+    "@storybook/components" "6.3.4"
+    "@storybook/core-events" "6.3.4"
+    "@storybook/theming" "6.3.4"
     core-js "^3.8.2"
     global "^4.4.0"
     react-sizeme "^3.0.1"
@@ -3044,7 +3044,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.3", "@storybook/components@^6.3.0":
+"@storybook/components@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.3.tgz#eba4fabf76e84fb70e00a82ebf4ba16c4b2ff984"
   integrity sha512-45XDLRTXdG2bfEILwMkENdknkyVLQrqchcVh7qm+wtZEXhbtIGoTxlXYPUST+xB6MF5AXZ0c8UTm2YMgV3v3FQ==
@@ -3074,7 +3074,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.4":
+"@storybook/components@6.3.4", "@storybook/components@^6.3.0":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.4.tgz#c872ec267edf315eaada505be8595c70eb6db09b"
   integrity sha512-0hBKTkkQbW+daaA6nRedkviPr2bEzy1kwq0H5eaLKI1zYeXN3U5Z8fVhO137PPqH5LmLietrmTPkqiljUBk9ug==
@@ -3272,14 +3272,14 @@
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.3", "@storybook/core-events@^6.3.0":
+"@storybook/core-events@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.3.tgz#4d073a601f10f928fa27207cc9e7eb313a74fc77"
   integrity sha512-Ym/Xna7GrCF0CbTkbejzuAw7LunZ158AT2AvGYMZujGBzunYG7MlfXVoS6YjUUt8vEmGHi8g6PdD6uij4IBY8A==
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.4":
+"@storybook/core-events@6.3.4", "@storybook/core-events@^6.3.0":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.4.tgz#f841b8659a8729d334acd9a6dcfc470c88a2be8f"
   integrity sha512-6qI5bU5VcAoRfxkvpdRqO16eYrX5M0P2E3TakqUUDcgDo5Rfcwd1wTTcwiXslMIh7oiVGiisA+msKTlfzyKf9Q==
