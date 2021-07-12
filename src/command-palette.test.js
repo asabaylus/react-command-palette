@@ -16,6 +16,8 @@ import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
 import chromeTheme from "./themes/chrome-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 
 describe("Loading indicator", () => {
   it("should display the spinner by default", () => {
@@ -498,12 +500,10 @@ describe("Opening the palette", () => {
     spyOnSelect.mockClear();
   });
 
-  it.skip("fires the onAfterOpen event", () => {
+  it.only("fires the onAfterOpen event", () => {
     const spyOnAfterOpen = jest.fn();
-    const commandPalette = mount(
-      <CommandPalette commands={mockCommands} onAfterOpen={spyOnAfterOpen} />
-    );
-    commandPalette.instance().handleOpenModal();
+    render(<CommandPalette commands={mockCommands} onAfterOpen={() => console.log('boom')} spyOnAfterOpen />);
+    userEvent.click(screen.getElement("button"));
     expect(spyOnAfterOpen).toHaveBeenCalled();
   });
 
@@ -513,7 +513,7 @@ describe("Opening the palette", () => {
       const commandPalette = mount(
         <CommandPalette commands={mockCommands} onRequestClose={spyOnClose} />
       );
-      commandPalette.find("button").simulate("click");
+      commandPalette.getElement("button").simulate("click");
       done();
     });
   });
