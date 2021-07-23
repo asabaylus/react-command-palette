@@ -55,7 +55,7 @@
     "@storybook/addon-options": "^5.3.21",
     "@storybook/node-logger": "^6.3.5",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.4",
+    "@storybook/react": "^6.3.5",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
     "auto": "^10.30.0",
     "chromatic": "^5.9.2",
