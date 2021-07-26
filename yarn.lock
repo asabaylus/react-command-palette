@@ -2211,19 +2211,19 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-a11y@^6.3.5":
-  version "6.3.5"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.3.5.tgz#f1819b2c756bef3d69c9978e7ccac908490890fe"
-  integrity sha512-iczDyensBVAUkXEuHcMDe14N797EHc85IQkG894jhCTOorKde4RhTbdExk0wVcCM/psk346CECk8HHMgO9CBGQ==
+"@storybook/addon-a11y@^6.3.6":
+  version "6.3.6"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.3.6.tgz#6d9dbdaa067a8f6ad15cef64f2103568457d2aae"
+  integrity sha512-IYVDFEGgKORdm7NPZPqltOvu29R9LaZwGBvfzbS3GUc3I9XLbT/cxkZN68Zzmjn2GtP/X1v4uLqp57OsPb4Cdg==
   dependencies:
-    "@storybook/addons" "6.3.5"
-    "@storybook/api" "6.3.5"
-    "@storybook/channels" "6.3.5"
-    "@storybook/client-api" "6.3.5"
-    "@storybook/client-logger" "6.3.5"
-    "@storybook/components" "6.3.5"
-    "@storybook/core-events" "6.3.5"
-    "@storybook/theming" "6.3.5"
+    "@storybook/addons" "6.3.6"
+    "@storybook/api" "6.3.6"
+    "@storybook/channels" "6.3.6"
+    "@storybook/client-api" "6.3.6"
+    "@storybook/client-logger" "6.3.6"
+    "@storybook/components" "6.3.6"
+    "@storybook/core-events" "6.3.6"
+    "@storybook/theming" "6.3.6"
     axe-core "^4.2.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -3029,7 +3029,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.5", "@storybook/components@^6.3.0":
+"@storybook/components@6.3.5":
   version "6.3.5"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.5.tgz#7e2f2d15c3552de6507727bfa4a13a20facd81e5"
   integrity sha512-EYyUhxuuted3fmPC8055cxG4kMf8tp/sjI6l2wAQ5myRZ3zBpV0mjOxxgOeiDphtBnyDKmOF+4x8EkSUJmu/5w==
@@ -3059,7 +3059,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.6":
+"@storybook/components@6.3.6", "@storybook/components@^6.3.0":
   version "6.3.6"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.6.tgz#bc2fa1dbe59f42b5b2aeb9f84424072835d4ce8b"
   integrity sha512-aZkmtAY8b+LFXG6dVp6cTS6zGJuxkHRHcesRSWRQPxtgitaz1G58clRHxbKPRokfjPHNgYA3snogyeqxSA7YNQ==
@@ -3257,14 +3257,14 @@
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.5", "@storybook/core-events@^6.3.0":
+"@storybook/core-events@6.3.5":
   version "6.3.5"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.5.tgz#40d51b39e086192dc0af11e22da011e5483ee400"
   integrity sha512-1RUaOwD1STqf1EG727fLuy18dS67Nkdf/8pIGGATxAohfwHkHOhOI9tOP+GPx+aE7UioDmVWvwbUxRQ1b4YitA==
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.6":
+"@storybook/core-events@6.3.6", "@storybook/core-events@^6.3.0":
   version "6.3.6"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.6.tgz#c4a09e2c703170995604d63e46e45adc3c9cd759"
   integrity sha512-Ut1dz96bJ939oSn5t1ckPXd3WcFejK96Sb3+R/z23vEHUWGBFtygGyw8r/SX/WNDVzGmQU8c+mzJJTZwCBJz8A==
