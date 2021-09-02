@@ -86,6 +86,7 @@ class CommandPalette extends React.Component {
     // Use hot key to open command palette
     Mousetrap.bind(hotKeys, () => {
       this.handleOpenModal();
+      this.focusInput();
       // prevent default which opens Chrome dev tools command palatte
       return false;
     });

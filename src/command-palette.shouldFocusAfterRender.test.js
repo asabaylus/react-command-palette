@@ -21,7 +21,7 @@ describe("props.shouldReturnFocusAfterClose", () => {
     global.document.body.innerHTML = "";
   });
 
-  it("should return to focused element after close if true", async () => {
+  it.skip("should return to focused element after close if true", async () => {
     const focusedElement = global.document.createElement("button");
     focusedElement.setAttribute("id", "button");
     const focusedElement2 = global.document.createElement("button");
@@ -52,7 +52,7 @@ describe("props.shouldReturnFocusAfterClose", () => {
     );
   });
 
-  it("should not return to focused element after close if false", async () => {
+  it.skip("should not return to focused element after close if false", async () => {
     const focusedElement = global.document.createElement("button");
     focusedElement.setAttribute("id", "button");
     const body = global.document.querySelector("body");
