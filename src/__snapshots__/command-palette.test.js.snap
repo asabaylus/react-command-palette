@@ -1535,6 +1535,9 @@ exports[`Command List renders a command 1`] = `
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -5133,6 +5136,9 @@ exports[`Command List renders a command 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -9351,6 +9357,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -11229,6 +11238,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -15474,6 +15486,9 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           </div>
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -17148,6 +17163,9 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               >

@@ -397,9 +397,9 @@ describe("props.getSuggestionValue", () => {
 })
 
 describe("props.alwaysRenderCommands", () => {
-  it.skip("should be enabled by default", () => {
+  it("should be enabled by default", () => {
     const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    expect(commandPaalette.props().alwaysRenderCommands).toBeTruthy();
+    expect(commandPalette.props().alwaysRenderCommands).toBeTruthy();
   });
 
   it("should render commands when true and input is not focused.", () => {
