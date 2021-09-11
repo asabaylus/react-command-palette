@@ -1535,9 +1535,6 @@ exports[`Command List renders a command 1`] = `
           </div>
           <div
             class="ReactModalPortal"
-          />
-          <div
-            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -1780,9 +1777,6 @@ exports[`Command List renders a command 1`] = `
               </div>
             </div>
           </div>
-          <div
-            class="ReactModalPortal"
-          />
           <div
             class="ReactModalPortal"
           >
@@ -2540,47 +2534,7 @@ exports[`Command List renders a command 1`] = `
           </div>
           <div
             class="ReactModalPortal"
-          >
-            <div
-              class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
-            >
-              <div
-                aria-label="Command Palette"
-                aria-modal="true"
-                class="ReactModal__Content ReactModal__Content--before-close atom-modal"
-                role="dialog"
-                tabindex="-1"
-              >
-                <div>
-                  <div
-                    class="atom-header"
-                  />
-                  <div
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                    aria-owns="react-autowhatever-1"
-                    class="atom-container"
-                    role="combobox"
-                  >
-                    <input
-                      aria-autocomplete="list"
-                      aria-controls="react-autowhatever-1"
-                      autocomplete="off"
-                      class="atom-input"
-                      placeholder="Type a command"
-                      type="text"
-                      value=""
-                    />
-                    <div
-                      class="atom-suggestionsContainer"
-                      id="react-autowhatever-1"
-                      role="listbox"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
           <div
             class="ReactModalPortal"
           >
@@ -5181,9 +5135,6 @@ exports[`Command List renders a command 1`] = `
               </div>
               <div
                 class="ReactModalPortal"
-              />
-              <div
-                class="ReactModalPortal"
               >
                 <div
                   class="ReactModal__Overlay atom-overlay"
@@ -5426,9 +5377,6 @@ exports[`Command List renders a command 1`] = `
                   </div>
                 </div>
               </div>
-              <div
-                class="ReactModalPortal"
-              />
               <div
                 class="ReactModalPortal"
               >
@@ -6186,47 +6134,7 @@ exports[`Command List renders a command 1`] = `
               </div>
               <div
                 class="ReactModalPortal"
-              >
-                <div
-                  class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
-                >
-                  <div
-                    aria-label="Command Palette"
-                    aria-modal="true"
-                    class="ReactModal__Content ReactModal__Content--before-close atom-modal"
-                    role="dialog"
-                    tabindex="-1"
-                  >
-                    <div>
-                      <div
-                        class="atom-header"
-                      />
-                      <div
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-owns="react-autowhatever-1"
-                        class="atom-container"
-                        role="combobox"
-                      >
-                        <input
-                          aria-autocomplete="list"
-                          aria-controls="react-autowhatever-1"
-                          autocomplete="off"
-                          class="atom-input"
-                          placeholder="Type a command"
-                          type="text"
-                          value=""
-                        />
-                        <div
-                          class="atom-suggestionsContainer"
-                          id="react-autowhatever-1"
-                          role="listbox"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              />
               <div
                 class="ReactModalPortal"
               >
@@ -8096,7 +8004,1595 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           />
           <div
             class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner atom-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="spinner atom-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                  <b>
+                    Waiting
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="spinner atom-spinner modal"
+                  role="status"
+                >
+                  Waiting
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-activedescendant="react-autowhatever-1--item-0"
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value="Start All Data Imports"
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="true"
+                          class="atom-suggestion atom-suggestionFirst atom-suggestionHighlighted"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner atom-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
           />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  >
+                    this is a command palette
+                  </div>
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  >
+                    <div
+                      style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
+                    >
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        Search for a command
+                      </span>
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        <kbd
+                          style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                        >
+                          ↑↓
+                        </kbd>
+                         to navigate
+                      </span>
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        <kbd
+                          style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                        >
+                          enter
+                        </kbd>
+                         to select
+                      </span>
+                      <span
+                        style="padding-right: 32px;"
+                      >
+                        <kbd
+                          style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                        >
+                          esc
+                        </kbd>
+                         to dismiss
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content ReactModal__Content--before-close atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="my query"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content ReactModal__Content--before-close atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="default"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value="?"
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-activedescendant="react-autowhatever-1--item-0"
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=">"
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="true"
+                          class="atom-suggestion atom-suggestionFirst atom-suggestionHighlighted"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay chrome-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content chrome-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="default-spinner chrome-spinner modal"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="What do you want to do?"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-activedescendant="react-autowhatever-1--item-0"
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="true"
+                          class="atom-suggestion atom-suggestionFirst atom-suggestionHighlighted"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-activedescendant="react-autowhatever-1--item-2"
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=">"
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="true"
+                          class="atom-suggestion atom-suggestionHighlighted"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container atom-containerOpen"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input atom-inputOpen"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    >
+                      <ul
+                        class="atom-suggestionsList"
+                        role="listbox"
+                      >
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion atom-suggestionFirst"
+                          data-suggestion-index="0"
+                          id="react-autowhatever-1--item-0"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="2"
+                          id="react-autowhatever-1--item-2"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Delete All Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="3"
+                          id="react-autowhatever-1--item-3"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go offline
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="4"
+                          id="react-autowhatever-1--item-4"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Go online
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="5"
+                          id="react-autowhatever-1--item-5"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Jump to Tenant
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="6"
+                          id="react-autowhatever-1--item-6"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              View Logs 
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay atom-overlay"
+            >
+              <div
+                aria-label="Command Palette"
+                aria-modal="true"
+                class="ReactModal__Content atom-modal"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="atom-header"
+                  />
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="react-autowhatever-1"
+                    class="atom-container"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="react-autowhatever-1"
+                      autocomplete="off"
+                      class="atom-input"
+                      placeholder="Type a command"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="atom-suggestionsContainer"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="main"
+          >
+            <div
+              class="ReactModalPortal"
+            >
+              <div
+                class="ReactModal__Overlay atom-overlay"
+              >
+                <div
+                  aria-label="Command Palette"
+                  aria-modal="true"
+                  class="ReactModal__Content atom-modal"
+                  role="dialog"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="atom-header"
+                    />
+                    <div
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-owns="react-autowhatever-1"
+                      class="atom-container"
+                      role="combobox"
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        aria-controls="react-autowhatever-1"
+                        autocomplete="off"
+                        class="atom-input"
+                        placeholder="Type a command"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="atom-suggestionsContainer"
+                        id="react-autowhatever-1"
+                        role="listbox"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             class="ReactModalPortal"
           >
@@ -8388,7 +9884,1595 @@ exports[`Opening the palette displays the suggestion list 1`] = `
               />
               <div
                 class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="default-spinner atom-spinner modal"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="spinner atom-spinner modal"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                      <b>
+                        Waiting
+                      </b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="spinner atom-spinner modal"
+                      role="status"
+                    >
+                      Waiting
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-activedescendant="react-autowhatever-1--item-0"
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value="Start All Data Imports"
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="true"
+                              class="atom-suggestion atom-suggestionFirst atom-suggestionHighlighted"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="default-spinner atom-spinner modal"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
               />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      >
+                        this is a command palette
+                      </div>
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      >
+                        <div
+                          style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
+                        >
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            Search for a command
+                          </span>
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            <kbd
+                              style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                            >
+                              ↑↓
+                            </kbd>
+                             to navigate
+                          </span>
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            <kbd
+                              style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                            >
+                              enter
+                            </kbd>
+                             to select
+                          </span>
+                          <span
+                            style="padding-right: 32px;"
+                          >
+                            <kbd
+                              style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
+                            >
+                              esc
+                            </kbd>
+                             to dismiss
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content ReactModal__Content--before-close atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="my query"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content ReactModal__Content--before-close atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="default"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value="?"
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-activedescendant="react-autowhatever-1--item-0"
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=">"
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="true"
+                              class="atom-suggestion atom-suggestionFirst atom-suggestionHighlighted"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay chrome-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content chrome-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="default-spinner chrome-spinner modal"
+                      role="status"
+                    >
+                      <span
+                        class="sr-only"
+                      >
+                        Loading...
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="What do you want to do?"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              />
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-activedescendant="react-autowhatever-1--item-0"
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="true"
+                              class="atom-suggestion atom-suggestionFirst atom-suggestionHighlighted"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-activedescendant="react-autowhatever-1--item-2"
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=">"
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="true"
+                              class="atom-suggestion atom-suggestionHighlighted"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container atom-containerOpen"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input atom-inputOpen"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer atom-suggestionsContainerOpen"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        >
+                          <ul
+                            class="atom-suggestionsList"
+                            role="listbox"
+                          >
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion atom-suggestionFirst"
+                              data-suggestion-index="0"
+                              id="react-autowhatever-1--item-0"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="2"
+                              id="react-autowhatever-1--item-2"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Delete All Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="3"
+                              id="react-autowhatever-1--item-3"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go offline
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="4"
+                              id="react-autowhatever-1--item-4"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Go online
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="5"
+                              id="react-autowhatever-1--item-5"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Jump to Tenant
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="6"
+                              id="react-autowhatever-1--item-6"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  View Logs 
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ReactModalPortal"
+              >
+                <div
+                  class="ReactModal__Overlay atom-overlay"
+                >
+                  <div
+                    aria-label="Command Palette"
+                    aria-modal="true"
+                    class="ReactModal__Content atom-modal"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        class="atom-header"
+                      />
+                      <div
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-owns="react-autowhatever-1"
+                        class="atom-container"
+                        role="combobox"
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          aria-controls="react-autowhatever-1"
+                          autocomplete="off"
+                          class="atom-input"
+                          placeholder="Type a command"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="atom-suggestionsContainer"
+                          id="react-autowhatever-1"
+                          role="listbox"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="main"
+              >
+                <div
+                  class="ReactModalPortal"
+                >
+                  <div
+                    class="ReactModal__Overlay atom-overlay"
+                  >
+                    <div
+                      aria-label="Command Palette"
+                      aria-modal="true"
+                      class="ReactModal__Content atom-modal"
+                      role="dialog"
+                      tabindex="-1"
+                    >
+                      <div>
+                        <div
+                          class="atom-header"
+                        />
+                        <div
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          aria-owns="react-autowhatever-1"
+                          class="atom-container"
+                          role="combobox"
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            aria-controls="react-autowhatever-1"
+                            autocomplete="off"
+                            class="atom-input"
+                            placeholder="Type a command"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            class="atom-suggestionsContainer"
+                            id="react-autowhatever-1"
+                            role="listbox"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 class="ReactModalPortal"
               >
@@ -12390,9 +15474,6 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           </div>
           <div
             class="ReactModalPortal"
-          />
-          <div
-            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -14067,9 +17148,6 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   </div>
                 </div>
               </div>
-              <div
-                class="ReactModalPortal"
-              />
               <div
                 class="ReactModalPortal"
               >
