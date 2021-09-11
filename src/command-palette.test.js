@@ -15,7 +15,7 @@ import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
 import chromeTheme from "./themes/chrome-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
-import { cleanup, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import { getByPlaceholderText, prettyDOM } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
@@ -502,13 +502,11 @@ describe("Opening the palette", () => {
     spyOnSelect.mockClear();
   });
 
-  it.skip("fires the onAfterOpen event",  async () => {
+  it("fires the onAfterOpen event", () => {
     const spy = jest.fn();
     const {getByText} = render(<CommandPalette commands={mockCommands} onAfterOpen={spy()}  />);
     const btn = getByText("Command Palette")
     userEvent.click(btn);
-    await screen.findByText("Start All Data Imports")
-    console.log(spy)
     expect(spy).toHaveBeenCalled();
   });
 

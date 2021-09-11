@@ -1943,6 +1943,9 @@ exports[`Command List renders a command 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -5538,6 +5541,9 @@ exports[`Command List renders a command 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               />
@@ -9765,6 +9771,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -11640,6 +11649,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               />
