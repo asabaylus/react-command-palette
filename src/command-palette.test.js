@@ -15,7 +15,7 @@ import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
 import chromeTheme from "./themes/chrome-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
-import { render, screen } from '@testing-library/react'
+import { waitFor, render, screen, fireEvent, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import { getByPlaceholderText, prettyDOM } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
@@ -619,20 +619,19 @@ describe("Closing the palette", () => {
     jest.clearAllMocks();
   });
 
-  it.skip('should close the commandPalette when pressing the "esc" key', () => {
-    const spyHandleCloseModal = jest.spyOn(
-      CommandPalette.prototype,
-      "handleCloseModal"
-    );
-    const commandPalette = mount(<CommandPalette commands={mockCommands} />);
-    commandPalette.instance().handleOpenModal();
-    const { input } = commandPalette.instance().commandPaletteInput;
-    expect(commandPalette.state("showModal")).toEqual(true);
-    input.dispatchEvent(new KeyboardEvent("keydown", { which: 27 }));
-    expect(commandPalette.state("showModal")).toEqual(false);
-    expect(spyHandleCloseModal).toHaveBeenCalled();
-    expect(spyHandleCloseModal.mock.calls).toHaveLength(1);
-    expect(commandPalette.state("showModal")).toEqual(false);
+  afterEach(cleanup);
+
+  it.only('should close the commandPalette when pressing the "esc" key', async () => {
+    const commandPalette = mount(<CommandPalette commands={mockCommands} open />);
+    const input = screen.getAllByPlaceholderText('Type a command')[0];
+    userEvent.click(input);
+    userEvent.keyboard('{esc}');
+    fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
+    const firstSuggestion = screen.queryByText('Start All Data Imports');
+    console.log(firstSuggestion)
+    await waitFor(() => {
+      expect(screen.queryByText('Start All Data Imports')).toBeInTheDocument()
+    })
   });
 
   it("should close the wrapper when clicked outside", () => {
