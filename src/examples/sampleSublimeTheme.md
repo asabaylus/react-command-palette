@@ -11,10 +11,10 @@ import React from "react";
 import CommandPalette from "react-command-palette";
 
 // import the theme from those provided ...
-import sublime from "./node_modules/react-command-palette/themes/sublime-theme";
+import sublime from "./node_modules/react-command-palette/dist/themes/sublime-theme";
 
 // then import the CSS
-import "./node_modules/react-command-palette/themes/sublime.css";
+import "./node_modules/react-command-palette/dist/themes/sublime.css";
 ```
 
 Alternatively to custom style the CommandPalette you'll need a CSS file with rules that map to your _theme_ props' key/value pairs, ex:
