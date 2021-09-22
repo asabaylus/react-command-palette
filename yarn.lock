@@ -5679,10 +5679,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@^5.10.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-5.10.0.tgz#be4b5c2f264e2ff1ceee4a1032cbe52613a78f97"
-  integrity sha512-9D0kbd/+L6hpkXxFazYWIjmNMBnWtYpoD//aTpwS8iH/IbjAV4RxH+oiBkZTYPNXMyvsX7Gt8w5jj39yhTefQg==
+chromatic@^5.10.1:
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-5.10.1.tgz#24df7393ce7373fd65346c979351576cb93e6808"
+  integrity sha512-A+etILovO5wyuYs77K6VPq2vDXVbGUeYP4wNyRs/RFXToayE9EwoaUJKC7SqnE/05JWSjYENt98THYDVK/iEmQ==
   dependencies:
     "@actions/core" "^1.5.0"
     "@actions/github" "^5.0.0"
@@ -5706,7 +5706,7 @@ chromatic@^5.10.0:
     meow "^8.0.0"
     no-proxy "^1.0.3"
     node-ask "^1.0.1"
-    node-fetch "^2.6.0"
+    node-fetch "2.6.0"
     node-loggly-bulk "^2.2.4"
     p-limit "3.1.0"
     picomatch "2.2.2"
@@ -11714,7 +11714,12 @@ node-dir@^0.1.10:
   dependencies:
     minimatch "^3.0.2"
 
-node-fetch@2.6.1, node-fetch@^2.6.0, node-fetch@^2.6.1:
+node-fetch@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
+node-fetch@2.6.1, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
