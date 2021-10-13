@@ -2470,16 +2470,16 @@
     react-lifecycles-compat "^3.0.4"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-jest@^6.3.10":
-  version "6.3.10"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.3.10.tgz#9f634d4528ad4cc1a9c82fd58d9b9f0be883440b"
-  integrity sha512-Shf5NlfOMwOpX4FfRo6/ljXR+yI72knpSAJuYKL4gBgNVAp3OqdyoymCKUfV9+USv204YMYenRDzrHjUKpzQog==
+"@storybook/addon-jest@^6.3.11":
+  version "6.3.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.3.11.tgz#71deace0dbe076f6f25eefd51841044ce0f918cc"
+  integrity sha512-P7vWlVb+5JiaSZ/S/ey6KnYv4D9spux3LPIvecgLS/tQYhxWqFqz/yfJ3bZYTtsNy4bk5v0C3iqoFyRejuhrOg==
   dependencies:
-    "@storybook/addons" "6.3.10"
-    "@storybook/api" "6.3.10"
-    "@storybook/components" "6.3.10"
-    "@storybook/core-events" "6.3.10"
-    "@storybook/theming" "6.3.10"
+    "@storybook/addons" "6.3.11"
+    "@storybook/api" "6.3.11"
+    "@storybook/components" "6.3.11"
+    "@storybook/core-events" "6.3.11"
+    "@storybook/theming" "6.3.11"
     core-js "^3.8.2"
     global "^4.4.0"
     react-sizeme "^3.0.1"
@@ -2683,7 +2683,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/api@6.3.10", "@storybook/api@^6.3.0":
+"@storybook/api@6.3.10":
   version "6.3.10"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.3.10.tgz#d6cd7d32841c9b6a9c2104016649b510190622ac"
   integrity sha512-7fB6q718UWvgFI+ZqEU0QpXr5cHHli85bTq/w7kSz1VUWjV7vVqtxE3RTbIjMbKHkIVNkVUbZDeDi+r2soK9Tw==
@@ -2709,7 +2709,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/api@6.3.11":
+"@storybook/api@6.3.11", "@storybook/api@^6.3.0":
   version "6.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.3.11.tgz#ea3806a0570da65bfb5b39e4edb90289b5ba701e"
   integrity sha512-QmgXM613zy/DPrJLVRJnALT5Rh4VWgvxrHbdLxRWGDrMHNYlm3N1KA+a6ZtIM5Zl94B3y5o0SPCSleSbnA3viA==
@@ -3120,7 +3120,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.10", "@storybook/components@^6.3.0":
+"@storybook/components@6.3.10":
   version "6.3.10"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.10.tgz#27a2bc98280e9fba148a52a405fe2ed27f036099"
   integrity sha512-s9iOq0jT+h51hid4Vckmy84XAMm8aoZwD/QHpzWs4aRqrT5lqsen3jnlvqEEdEVUbMIoLPPNfOxOZsm4M/7zpQ==
@@ -3150,7 +3150,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.11":
+"@storybook/components@6.3.11", "@storybook/components@^6.3.0":
   version "6.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.11.tgz#a7d015fc9808d0200d033d8f694db79277770030"
   integrity sha512-/iajr+kMXQLgXa6hr/nupcHFzdppZ4S/vdDgoyXW/L1jDeKzy5Bxzf4JjjoR/tY6jgiFRja1C1mUGFqceyb9ow==
@@ -3348,14 +3348,14 @@
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.10", "@storybook/core-events@^6.3.0":
+"@storybook/core-events@6.3.10":
   version "6.3.10"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.10.tgz#82b41291b8baf1fae8848c603f0b825b3c42e3b5"
   integrity sha512-bw3HuqKIMDnEebVf2DG+TdX21D7z7LGFvr5rehNDnUTdnM9+pVLlZZfGkUU6LMRbIzr27CI5dXWdPRTA5kQIZg==
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.11":
+"@storybook/core-events@6.3.11", "@storybook/core-events@^6.3.0":
   version "6.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.11.tgz#76c1701c9cb3f50d6a1fe2344d396df2dd76f8a3"
   integrity sha512-wuWZsw2VB2qSuac+40SaeaZ40/4sQhYSnLSN+l944G1kkjZwZcVc1nBTaYBt9H7uH+INkmGblDbGNnme71KCjg==
@@ -3602,18 +3602,7 @@
     npmlog "^4.1.2"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.3.11", "@storybook/node-logger@^6.3.10":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.11.tgz#b17c48b8b8083ed9d06d01266af0736b13101dd4"
-  integrity sha512-c6nsOk/AIux89/AVIydLA2ToqHWq4XoUKFkYJ/eOPJTLv3bdl7fV/5Vlx7EqRHqlXYCGbvTaDrMs+0tVHmp2vg==
-  dependencies:
-    "@types/npmlog" "^4.1.2"
-    chalk "^4.1.0"
-    core-js "^3.8.2"
-    npmlog "^4.1.2"
-    pretty-hrtime "^1.0.3"
-
-"@storybook/node-logger@^6.3.11":
+"@storybook/node-logger@6.3.11", "@storybook/node-logger@^6.3.11":
   version "6.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.11.tgz#b17c48b8b8083ed9d06d01266af0736b13101dd4"
   integrity sha512-c6nsOk/AIux89/AVIydLA2ToqHWq4XoUKFkYJ/eOPJTLv3bdl7fV/5Vlx7EqRHqlXYCGbvTaDrMs+0tVHmp2vg==
