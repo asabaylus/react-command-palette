@@ -2501,21 +2501,6 @@
     global "^4.4.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addons@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.3.11.tgz#4b5e88793bcce7ef823340e9010a96e35e3284cc"
-  integrity sha512-2Y03lOwzWDRB/glISa/4luBMM5uyYhkIBixbZF9miIb2SCWRlNmom5NCnKsR18Wu6g7zI7os3aAMfKr24aSofQ==
-  dependencies:
-    "@storybook/api" "6.3.11"
-    "@storybook/channels" "6.3.11"
-    "@storybook/client-logger" "6.3.11"
-    "@storybook/core-events" "6.3.11"
-    "@storybook/router" "6.3.11"
-    "@storybook/theming" "6.3.11"
-    core-js "^3.8.2"
-    global "^4.4.0"
-    regenerator-runtime "^0.13.7"
-
 "@storybook/addons@6.3.12", "@storybook/addons@^6.3.0":
   version "6.3.12"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.3.12.tgz#8773dcc113c5086dfff722388b7b65580e43b65b"
@@ -2580,32 +2565,6 @@
     regenerator-runtime "^0.13.7"
     store2 "^2.12.0"
     telejson "^5.1.0"
-    ts-dedent "^2.0.0"
-    util-deprecate "^1.0.2"
-
-"@storybook/api@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.3.11.tgz#ea3806a0570da65bfb5b39e4edb90289b5ba701e"
-  integrity sha512-QmgXM613zy/DPrJLVRJnALT5Rh4VWgvxrHbdLxRWGDrMHNYlm3N1KA+a6ZtIM5Zl94B3y5o0SPCSleSbnA3viA==
-  dependencies:
-    "@reach/router" "^1.3.4"
-    "@storybook/channels" "6.3.11"
-    "@storybook/client-logger" "6.3.11"
-    "@storybook/core-events" "6.3.11"
-    "@storybook/csf" "0.0.1"
-    "@storybook/router" "6.3.11"
-    "@storybook/semver" "^7.3.2"
-    "@storybook/theming" "6.3.11"
-    "@types/reach__router" "^1.3.7"
-    core-js "^3.8.2"
-    fast-deep-equal "^3.1.3"
-    global "^4.4.0"
-    lodash "^4.17.20"
-    memoizerific "^1.11.3"
-    qs "^6.10.0"
-    regenerator-runtime "^0.13.7"
-    store2 "^2.12.0"
-    telejson "^5.3.2"
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
@@ -2753,15 +2712,6 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/channels@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-6.3.11.tgz#a14ce233367a9072bd1cffef3825f125c27bb0ae"
-  integrity sha512-slY3B1zRJaABrkFj2r89O0D6axQjeh6oyuJFrRZ7SoTK26ODi839LD+LwSpk40c4FoQAgT3pcJmjiFyUbBdtRg==
-  dependencies:
-    core-js "^3.8.2"
-    ts-dedent "^2.0.0"
-    util-deprecate "^1.0.2"
-
 "@storybook/channels@6.3.12":
   version "6.3.12"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-6.3.12.tgz#aa0d793895a8b211f0ad3459c61c1bcafd0093c7"
@@ -2834,14 +2784,6 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/client-logger@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.3.11.tgz#d2e0e17f35ed4c5ee282d818b6db3a015ce6b833"
-  integrity sha512-U06IuAGZFOJYgtXH02dbNe5lHLcwsSo6JBdFLjcUP3C0WqtskoUGLA2XLUCYasl7OMB0mcLHy4GaZL4wtrW6+Q==
-  dependencies:
-    core-js "^3.8.2"
-    global "^4.4.0"
-
 "@storybook/client-logger@6.3.12":
   version "6.3.12"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.3.12.tgz#6585c98923b49fcb25dbceeeb96ef2a83e28e0f4"
@@ -2900,36 +2842,6 @@
     polished "^4.0.5"
     prop-types "^15.7.2"
     react-colorful "^5.0.1"
-    react-popper-tooltip "^3.1.1"
-    react-syntax-highlighter "^13.5.3"
-    react-textarea-autosize "^8.3.0"
-    regenerator-runtime "^0.13.7"
-    ts-dedent "^2.0.0"
-    util-deprecate "^1.0.2"
-
-"@storybook/components@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.11.tgz#a7d015fc9808d0200d033d8f694db79277770030"
-  integrity sha512-/iajr+kMXQLgXa6hr/nupcHFzdppZ4S/vdDgoyXW/L1jDeKzy5Bxzf4JjjoR/tY6jgiFRja1C1mUGFqceyb9ow==
-  dependencies:
-    "@popperjs/core" "^2.6.0"
-    "@storybook/client-logger" "6.3.11"
-    "@storybook/csf" "0.0.1"
-    "@storybook/theming" "6.3.11"
-    "@types/color-convert" "^2.0.0"
-    "@types/overlayscrollbars" "^1.12.0"
-    "@types/react-syntax-highlighter" "11.0.5"
-    color-convert "^2.0.1"
-    core-js "^3.8.2"
-    fast-deep-equal "^3.1.3"
-    global "^4.4.0"
-    lodash "^4.17.20"
-    markdown-to-jsx "^7.1.3"
-    memoizerific "^1.11.3"
-    overlayscrollbars "^1.13.1"
-    polished "^4.0.5"
-    prop-types "^15.7.2"
-    react-colorful "^5.1.2"
     react-popper-tooltip "^3.1.1"
     react-syntax-highlighter "^13.5.3"
     react-textarea-autosize "^8.3.0"
@@ -3055,13 +2967,6 @@
   version "6.2.9"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.2.9.tgz#4f12947cd15d1eb3c4109923657c012feef521cd"
   integrity sha512-xQmbX/oYQK1QsAGN8hriXX5SUKOoTUe3L4dVaVHxJqy7MReRWJpprJmCpbAPJzWS6WCbDFfCM5kVEexHLOzJlQ==
-  dependencies:
-    core-js "^3.8.2"
-
-"@storybook/core-events@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.11.tgz#76c1701c9cb3f50d6a1fe2344d396df2dd76f8a3"
-  integrity sha512-wuWZsw2VB2qSuac+40SaeaZ40/4sQhYSnLSN+l944G1kkjZwZcVc1nBTaYBt9H7uH+INkmGblDbGNnme71KCjg==
   dependencies:
     core-js "^3.8.2"
 
@@ -3294,22 +3199,6 @@
     qs "^6.10.0"
     ts-dedent "^2.0.0"
 
-"@storybook/router@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/router/-/router-6.3.11.tgz#7b43d4704f2bced12109e16906e100ff9fa3eae9"
-  integrity sha512-R9Den9xCGhU5CLx4wi79uHbJqKqpZO7QDpENZGL7bT/IDid7szqFldztrzvmC5LE1TBpU6VQjEGaITWMrG2tsw==
-  dependencies:
-    "@reach/router" "^1.3.4"
-    "@storybook/client-logger" "6.3.11"
-    "@types/reach__router" "^1.3.7"
-    core-js "^3.8.2"
-    fast-deep-equal "^3.1.3"
-    global "^4.4.0"
-    lodash "^4.17.20"
-    memoizerific "^1.11.3"
-    qs "^6.10.0"
-    ts-dedent "^2.0.0"
-
 "@storybook/router@6.3.12":
   version "6.3.12"
   resolved "https://registry.yarnpkg.com/@storybook/router/-/router-6.3.12.tgz#0d572ec795f588ca886f39cb9b27b94ff3683f84"
@@ -3377,24 +3266,6 @@
     "@emotion/is-prop-valid" "^0.8.6"
     "@emotion/styled" "^10.0.27"
     "@storybook/client-logger" "6.2.9"
-    core-js "^3.8.2"
-    deep-object-diff "^1.1.0"
-    emotion-theming "^10.0.27"
-    global "^4.4.0"
-    memoizerific "^1.11.3"
-    polished "^4.0.5"
-    resolve-from "^5.0.0"
-    ts-dedent "^2.0.0"
-
-"@storybook/theming@6.3.11":
-  version "6.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.3.11.tgz#0fb4e42b43b5937647a3e4f17422c3cf45d046fb"
-  integrity sha512-MbEaGYP9nqu/Sv/FBK/7jRRHGe34TZ7tmZj6ZWE0KZih4Ey39LjPY6XcJ1rMDZclrXmT98p3+KClzdwKD0/Tdw==
-  dependencies:
-    "@emotion/core" "^10.1.1"
-    "@emotion/is-prop-valid" "^0.8.6"
-    "@emotion/styled" "^10.0.27"
-    "@storybook/client-logger" "6.3.11"
     core-js "^3.8.2"
     deep-object-diff "^1.1.0"
     emotion-theming "^10.0.27"
@@ -11271,10 +11142,10 @@ nan@^2.12.1:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
-nanoid@^3.1.28:
-  version "3.1.28"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.28.tgz#3c01bac14cb6c5680569014cc65a2f26424c6bd4"
-  integrity sha512-gSu9VZ2HtmoKYe/lmyPFES5nknFrHa+/DT9muUFWFMi6Jh9E1I7bkvlQ8xxf1Kos9pi9o8lBnIOkatMhKX/YUw==
+nanoid@^3.1.30:
+  version "3.1.30"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.30.tgz#63f93cc548d2a113dc5dfbc63bfa09e2b9b64362"
+  integrity sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -12106,10 +11977,10 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-picocolors@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
-  integrity sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==
+picocolors@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
+  integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.2, picomatch@^2.2.3:
   version "2.2.3"
@@ -13165,12 +13036,12 @@ postcss@7.0.21:
     supports-color "^6.1.0"
 
 postcss@8.x, postcss@^8.1.0:
-  version "8.3.9"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.9.tgz#98754caa06c4ee9eb59cc48bd073bb6bd3437c31"
-  integrity sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw==
+  version "8.3.10"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.10.tgz#4d614e108ccc69c65c2f6dc6cec23dd5c85b73af"
+  integrity sha512-YYfvfUdWx+ECpr5Hgc6XRfsaux8LksL5ey8qTtWiuRXOpOF1YYMwAySdh0nSmwhZAFvvJ6rgiIkKVShu4x2T1Q==
   dependencies:
-    nanoid "^3.1.28"
-    picocolors "^0.2.1"
+    nanoid "^3.1.30"
+    picocolors "^1.0.0"
     source-map-js "^0.6.2"
 
 postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.36, postcss@^7.0.5, postcss@^7.0.6:
