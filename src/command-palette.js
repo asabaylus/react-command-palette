@@ -39,7 +39,7 @@ class CommandPalette extends React.Component {
   constructor(props) {
     super(props);
 
-    const { defaultInputValue } = this.props;
+    const { defaultInputValue, onChange } = this.props;
 
     // Autosuggest is a controlled component.
     // This means that you need to provide an input value
@@ -49,7 +49,9 @@ class CommandPalette extends React.Component {
     this.state = {
       isLoading: false,
       showModal: false,
-      value: defaultInputValue,
+      inputProps: {
+        value: defaultInputValue
+      },
       suggestions: allSuggestions,
     };
 
@@ -118,7 +120,9 @@ class CommandPalette extends React.Component {
   onChange(event, { newValue }) {
     const { onChange } = this.props;
     this.setState({
-      value: newValue,
+      inputProps: {
+        value: newValue
+      }
     });
     return onChange(newValue, this.getInputOnTextTyped(event, newValue));
   }
@@ -131,6 +135,7 @@ class CommandPalette extends React.Component {
   onSuggestionHighlighted({ suggestion }) {
     const { onHighlight } = this.props;
     onHighlight(suggestion);
+    this.forceUpdate();
   }
 
   onSuggestionSelected(event, { suggestion }) {
@@ -238,7 +243,9 @@ class CommandPalette extends React.Component {
     if(resetInputOnOpen){
       this.setState({
         suggestions: initialSuggestions,
-        value: defaultInputValue
+        inputProps: {
+          value: defaultInputValue
+        }
       });
     }
 
@@ -249,11 +256,11 @@ class CommandPalette extends React.Component {
   }
 
   // Autosuggest will pass through all these props to the input element.
-  defaultInputProps(value) {
+  setInputProps(value) {
     const { placeholder } = this.props;
     return {
       placeholder,
-      value,
+      inputProps: { value },
       onChange: this.onChange,
       onKeyDown: this.onKeyDown,
     };
@@ -265,7 +272,7 @@ class CommandPalette extends React.Component {
 
   // eslint-disable-next-line react/sort-comp
   renderAutoSuggest() {
-    const { suggestions, value, isLoading } = this.state;
+    const { suggestions, isLoading, inputProps } = this.state;
     const { theme, getSuggestionValue } = this.props;
     const {
       maxDisplayed,
@@ -302,7 +309,7 @@ class CommandPalette extends React.Component {
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           renderSuggestion={this.commandTemplate}
-          inputProps={this.defaultInputProps(value)}
+          inputProps={inputProps}
           theme={theme}
         />
       </div>
@@ -521,6 +528,10 @@ CommandPalette.propTypes = {
   /** resetInputOnOpen a boolean which indicates whether to reset the user's query
    * to `defaultInputValue` when the command palette opens. */
   resetInputOnOpen: PropTypes.bool,
+ 
+  /** a boolean which resets the components commands to the initial data provided to 
+   * props.commands every time the command palette is opened */
+  resetCommandsOnOpen: PropTypes.bool,
 
   /** a selector compatible with querySelector. By default, the modal portal will be
    * appended to the document's body. You can choose a different parent element by

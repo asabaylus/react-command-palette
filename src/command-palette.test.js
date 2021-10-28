@@ -14,7 +14,11 @@ import mockCommands from "./__mocks__/commands";
 import sampleHeader from "./examples/sampleHeader";
 import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
+import sampleVSCodeCommand from "./examples/sampleVSCodeCommand";
+import atomTheme from "./themes/atom-theme";
+import vscodeTheme from "./themes/vscode-theme";
 import chromeTheme from "./themes/chrome-theme";
+import sublimeTheme from "./themes/sublime-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
 
 describe("Loading indicator", () => {
@@ -238,7 +242,7 @@ describe("props.inputFilter", () => {
 });
 
 describe("props.theme", () => {
-  it("should render a custom theme", () => {
+  it("should render a chrome theme", () => {
     const commandPalette = mount(
       <CommandPalette
         commands={mockCommands}
@@ -262,6 +266,84 @@ describe("props.theme", () => {
     commandPalette.find(".item").first().simulate("click");
     expect(
       commandPalette.find(".default-spinner").hasClass("chrome-spinner")
+    ).toBeTruthy();
+  });
+
+  it("should render an atom theme", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        RenderCommand={sampleChromeCommand}
+        header="this is a command palette"
+        theme={atomTheme}
+        open
+      />
+    );
+
+    // verify the four primary components have the correct classNames
+    expect(commandPalette.find("button").hasClass("atom-trigger")).toBeTruthy();
+    expect(
+      commandPalette.find("Header > div").hasClass("atom-header")
+    ).toBeTruthy();
+    expect(commandPalette.find("Modal").hasClass("atom-modal")).toBeTruthy();
+    expect(commandPalette.find("input").hasClass("atom-input")).toBeTruthy();
+    expect(commandPalette).toMatchSnapshot();
+    commandPalette.find(".item").first().simulate("click");
+    expect(
+      commandPalette.find(".default-spinner").hasClass("atom-spinner")
+    ).toBeTruthy();
+  });
+
+  it("should render a sublime theme", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        header="this is a command palette"
+        theme={sublimeTheme}
+        open
+      />
+    );
+
+    // verify the four primary components have the correct classNames
+    expect(
+      commandPalette.find("button").hasClass("sublime-trigger")
+    ).toBeTruthy();
+    expect(
+      commandPalette.find("Header > div").hasClass("sublime-header")
+    ).toBeTruthy();
+    expect(commandPalette.find("Modal").hasClass("sublime-modal")).toBeTruthy();
+    expect(commandPalette.find("input").hasClass("sublime-input")).toBeTruthy();
+    expect(commandPalette).toMatchSnapshot();
+    commandPalette.find(".item").first().simulate("click");
+    expect(
+      commandPalette.find(".default-spinner").hasClass("sublime-spinner")
+    ).toBeTruthy();
+  });
+
+  it("should render a vscode theme", () => {
+    const commandPalette = mount(
+      <CommandPalette
+        commands={mockCommands}
+        RenderCommand={sampleVSCodeCommand}
+        header="this is a command palette"
+        theme={vscodeTheme}
+        open
+      />
+    );
+
+    // verify the four primary components have the correct classNames
+    expect(
+      commandPalette.find("button").hasClass("vscode-trigger")
+    ).toBeTruthy();
+    expect(
+      commandPalette.find("Header > div").hasClass("vscode-header")
+    ).toBeTruthy();
+    expect(commandPalette.find("Modal").hasClass("vscode-modal")).toBeTruthy();
+    expect(commandPalette.find("input").hasClass("vscode-input")).toBeTruthy();
+    expect(commandPalette).toMatchSnapshot();
+    commandPalette.find(".item").first().simulate("click");
+    expect(
+      commandPalette.find(".default-spinner").hasClass("vscode-spinner")
     ).toBeTruthy();
   });
 });
