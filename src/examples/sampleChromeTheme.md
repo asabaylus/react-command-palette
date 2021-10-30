@@ -11,10 +11,10 @@ import React from "react";
 import CommandPalette from "react-command-palette";
 
 // import the theme from those provided ...
-import chrome from "./node_modules/react-command-palette/themes/chrome-theme";
+import chrome from "./node_modules/react-command-palette/dist/themes/chrome-theme";
 
 // then import the CSS
-import "./node_modules/react-command-palette/themes/chrome.css";
+import "./node_modules/react-command-palette/dist/themes/chrome.css";
 ```
 
 Alternatively to custom style the CommandPalette you'll need a CSS file with rules that map to your _theme_ props' key/value pairs, ex:

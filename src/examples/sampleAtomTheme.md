@@ -35,8 +35,8 @@ import CommandPalette from "react-command-palette";
 // }
 
 // or use a theme from those provided ...
-import atom from "./node_modules/react-command-palette/themes/atom-theme";
-import "./node_modules/react-command-palette/themes/atom.css";
+import atom from "./node_modules/react-command-palette/dist/themes/atom-theme";
+import "./node_modules/react-command-palette/dist/themes/atom.css";
 ```
 
 The layout for each of the commands that appears in the command list can also be customized. For instance, the _Atom_ command palette has a list of commands that  includes a command and associated keyboard shortcut when applicable. Because the default command is limited to just displaying the command's _name_ you'll need to make your own _renderCommand_ like the component included in [_sampleAtomCommand.js_](../examples/sampleAtomCommand.js). 
