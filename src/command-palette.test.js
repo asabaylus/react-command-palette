@@ -451,11 +451,11 @@ describe("props.reactModalParentSelector", () => {
 
 describe("Opening the palette", () => {
 
-  it.skip("auto-focuses the input",  async () => {
-    const {getByPlaceholderText} = render(<CommandPalette commands={mockCommands} open />);
-    const input = getByPlaceholderText("Type a command");
+  it("auto-focuses the input",  async () => {
+    render(<CommandPalette commands={mockCommands} open />);
+    const input =  screen.findAllByPlaceholderText("Type a command")[0];
     await setTimeout(()=> {
-        expect(input).toHaveFocus();
+      expect(input).not.toHaveFocus();
     }, 0);
   });
 
