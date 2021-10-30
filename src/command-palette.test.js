@@ -15,7 +15,7 @@ import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
 import chromeTheme from "./themes/chrome-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
-import { waitFor, render, screen, fireEvent, cleanup } from '@testing-library/react'
+import { waitFor, render, screen, fireEvent, unmount } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import { getByPlaceholderText, prettyDOM } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
@@ -614,21 +614,29 @@ describe("Opening the palette", () => {
   });
 });
 
+describe.only("Umounting the palette", () => {
+  it("should not leave elements in the DOM",  () => {
+    const { commandPalette, unmount } = render(<CommandPalette commands={mockCommands} open />);
+    const input = screen.getByPlaceholderText('Type a command');
+    expect(input).toBeInTheDocument();
+    unmount();
+    expect(input).not.toBeInTheDocument();
+  })
+});
+
 describe("Closing the palette", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  afterEach(cleanup);
-
-  it.only('should close the commandPalette when pressing the "esc" key', async () => {
-    const commandPalette = mount(<CommandPalette commands={mockCommands} open />);
+  it('should close the commandPalette when pressing the "esc" key', async () => {
+    const { commandPalette } = mount(<CommandPalette commands={mockCommands} open />);
     const input = screen.getAllByPlaceholderText('Type a command')[0];
     userEvent.click(input);
     userEvent.keyboard('{esc}');
     fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
     const firstSuggestion = screen.queryByText('Start All Data Imports');
-    console.log(firstSuggestion)
+    // console.log(firstSuggestion)
     await waitFor(() => {
       expect(screen.queryByText('Start All Data Imports')).toBeInTheDocument()
     })
