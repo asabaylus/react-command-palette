@@ -9,7 +9,7 @@
     "netlify": "react-scripts build",
     "dev": "yarn storybook",
     "build": "cross-env BABEL_ENV=production rollup -c",
-    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test --env=jsdom",
+    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
     "coverage": "yarn test --coverage --watchAll=false --silent --ci",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -56,7 +56,11 @@
     "@storybook/node-logger": "^6.3.11",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.12",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.1.9",
+    "@wojtekmaj/enzyme-adapter-react-17": "0.6.3",
     "auto": "^10.32.2",
     "chromatic": "^6.0.5",
     "cross-env": "^7.0.3",
@@ -80,7 +84,7 @@
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.5",
     "react-autosuggest": "^10.1.0",
-    "react-modal": "^3.13.1"
+    "react-modal": "^3.14.3"
   },
   "eslintConfig": {
     "extends": [
