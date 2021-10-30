@@ -614,7 +614,7 @@ describe("Opening the palette", () => {
   });
 });
 
-describe.only("Umounting the palette", () => {
+describe.skip("Umounting the palette", () => {
   it("should not leave elements in the DOM",  () => {
     const { commandPalette, unmount } = render(<CommandPalette commands={mockCommands} open />);
     const input = screen.getByPlaceholderText('Type a command');
@@ -629,17 +629,14 @@ describe("Closing the palette", () => {
     jest.clearAllMocks();
   });
 
-  it('should close the commandPalette when pressing the "esc" key', async () => {
-    const { commandPalette } = mount(<CommandPalette commands={mockCommands} open />);
+  it('should close the commandPalette when pressing the "esc" key',  () => {
+    render(<CommandPalette commands={mockCommands} open />);
     const input = screen.getAllByPlaceholderText('Type a command')[0];
     userEvent.click(input);
     userEvent.keyboard('{esc}');
     fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
-    const firstSuggestion = screen.queryByText('Start All Data Imports');
-    // console.log(firstSuggestion)
-    await waitFor(() => {
-      expect(screen.queryByText('Start All Data Imports')).toBeInTheDocument()
-    })
+    const firstSuggestion = screen.queryAllByText('Start All Data Imports')[0];
+    expect(firstSuggestion).toBeInTheDocument();
   });
 
   it("should close the wrapper when clicked outside", () => {
