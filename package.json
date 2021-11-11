@@ -84,7 +84,7 @@
     "fuzzysort": "^1.1.4",
     "mousetrap": "^1.6.5",
     "react-autosuggest": "^10.1.0",
-    "react-modal": "^3.14.3"
+    "react-modal": "^3.14.4"
   },
   "eslintConfig": {
     "extends": [
