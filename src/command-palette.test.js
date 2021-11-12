@@ -20,6 +20,16 @@ import '@testing-library/jest-dom'
 import { getByPlaceholderText, prettyDOM } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 
+describe("Umounting the palette", () => {
+  it("should not leave elements in the DOM",  () => {
+    const { commandPalette, unmount } = render(<CommandPalette commands={mockCommands} open />);
+    const input = screen.getByPlaceholderText('Type a command');
+    expect(input).toBeInTheDocument();
+    unmount();
+    expect(input).not.toBeInTheDocument();
+  })
+});
+
 describe("Loading indicator", () => {
   it("should display the spinner by default", () => {
     const wrapper = mount(<CommandPalette commands={mockCommands} open />);
@@ -612,16 +622,6 @@ describe("Opening the palette", () => {
       commandPalette.unmount();
     });
   });
-});
-
-describe.skip("Umounting the palette", () => {
-  it("should not leave elements in the DOM",  () => {
-    const { commandPalette, unmount } = render(<CommandPalette commands={mockCommands} open />);
-    const input = screen.getByPlaceholderText('Type a command');
-    expect(input).toBeInTheDocument();
-    unmount();
-    expect(input).not.toBeInTheDocument();
-  })
 });
 
 describe("Closing the palette", () => {
