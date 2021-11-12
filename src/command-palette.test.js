@@ -15,9 +15,8 @@ import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
 import chromeTheme from "./themes/chrome-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
-import { waitFor, render, screen, fireEvent, unmount } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import { getByPlaceholderText, prettyDOM } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 
 describe("Umounting the palette", () => {
