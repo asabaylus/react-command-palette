@@ -636,6 +636,7 @@ describe("Closing the palette", () => {
     fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
     const firstSuggestion = screen.queryAllByText('Start All Data Imports')[0];
     expect(firstSuggestion).toBeInTheDocument();
+    // TODO: assert that the command palette is not visible
   });
 
   it("should close the wrapper when clicked outside", () => {
