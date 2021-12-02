@@ -47,7 +47,7 @@
     "@babel/core": "^7.15.8",
     "@storybook/addon-a11y": "^6.4.3",
     "@storybook/addon-actions": "^6.4.3",
-    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-essentials": "^6.4.4",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-jest": "^6.4.3",
     "@storybook/addon-knobs": "^6.4.0",
