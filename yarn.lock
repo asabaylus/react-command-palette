@@ -2158,19 +2158,19 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-a11y@^6.4.5":
-  version "6.4.5"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.4.5.tgz#080d96e60cee3cf7fe0bdc36cc6efefaa6e6ae12"
-  integrity sha512-Kga7ekF/LkjJkWI3XhXayTsgO99ngN6llCcuMh4HGUxAillvU+l4/D1cvKTYKNb9UL0wLfqcW9hxng0IrtcmGQ==
+"@storybook/addon-a11y@^6.4.8":
+  version "6.4.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.4.8.tgz#1cbd434380dc322eca111b9a6a51336a3ec17db8"
+  integrity sha512-gD1hTLhzfGEIa8/T+WzL8fOfl9w1lFCnGQVbBlcwk5BYLg2qUA5Gg1zIGgr/0G69Uq2G92Hc26YEsomOY1qprg==
   dependencies:
-    "@storybook/addons" "6.4.5"
-    "@storybook/api" "6.4.5"
-    "@storybook/channels" "6.4.5"
-    "@storybook/client-logger" "6.4.5"
-    "@storybook/components" "6.4.5"
-    "@storybook/core-events" "6.4.5"
+    "@storybook/addons" "6.4.8"
+    "@storybook/api" "6.4.8"
+    "@storybook/channels" "6.4.8"
+    "@storybook/client-logger" "6.4.8"
+    "@storybook/components" "6.4.8"
+    "@storybook/core-events" "6.4.8"
     "@storybook/csf" "0.0.2--canary.87bc651.0"
-    "@storybook/theming" "6.4.5"
+    "@storybook/theming" "6.4.8"
     axe-core "^4.2.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -2782,6 +2782,36 @@
     "@storybook/client-logger" "6.4.5"
     "@storybook/csf" "0.0.2--canary.87bc651.0"
     "@storybook/theming" "6.4.5"
+    "@types/color-convert" "^2.0.0"
+    "@types/overlayscrollbars" "^1.12.0"
+    "@types/react-syntax-highlighter" "11.0.5"
+    color-convert "^2.0.1"
+    core-js "^3.8.2"
+    fast-deep-equal "^3.1.3"
+    global "^4.4.0"
+    lodash "^4.17.21"
+    markdown-to-jsx "^7.1.3"
+    memoizerific "^1.11.3"
+    overlayscrollbars "^1.13.1"
+    polished "^4.0.5"
+    prop-types "^15.7.2"
+    react-colorful "^5.1.2"
+    react-popper-tooltip "^3.1.1"
+    react-syntax-highlighter "^13.5.3"
+    react-textarea-autosize "^8.3.0"
+    regenerator-runtime "^0.13.7"
+    ts-dedent "^2.0.0"
+    util-deprecate "^1.0.2"
+
+"@storybook/components@6.4.8":
+  version "6.4.8"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.4.8.tgz#cdcc3d0e8163e6fdc62e37963e5e5d69cb0bd8a8"
+  integrity sha512-nNEv+jNHTiKTYIjzqpOSr6L4eRTHx3BCiFCVnOpRiPVh4GQ5edj9PrJTdlmNS6Czyexoc/52v/NoyGc13tP+mQ==
+  dependencies:
+    "@popperjs/core" "^2.6.0"
+    "@storybook/client-logger" "6.4.8"
+    "@storybook/csf" "0.0.2--canary.87bc651.0"
+    "@storybook/theming" "6.4.8"
     "@types/color-convert" "^2.0.0"
     "@types/overlayscrollbars" "^1.12.0"
     "@types/react-syntax-highlighter" "11.0.5"
