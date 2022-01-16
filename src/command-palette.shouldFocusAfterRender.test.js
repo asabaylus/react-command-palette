@@ -7,12 +7,9 @@
 import React from "react";
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
-import { mount } from "enzyme";
-import { clickDown, clickUp, clickEnter } from "./test-helpers";
 import { render, screen, waitFor, waitForElementToBeRemoved, fireEvent } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
-import { prettyDOM } from '@testing-library/dom'
 
 // We have to put this in a separate file. Otherwise, the document.activeElement
 // will be reseted by other test suite to null which we can't easily
