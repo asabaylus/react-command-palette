@@ -66,7 +66,6 @@
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
-    "install-peers": "^1.0.3",
     "postcss": "8.x",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
