@@ -49,7 +49,7 @@
     "@storybook/addon-actions": "^6.4.12",
     "@storybook/addon-essentials": "^6.4.12",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-jest": "^6.4.12",
+    "@storybook/addon-jest": "^6.4.13",
     "@storybook/addon-knobs": "^6.4.0",
     "@storybook/addon-links": "^6.4.12",
     "@storybook/addon-options": "^5.3.21",
