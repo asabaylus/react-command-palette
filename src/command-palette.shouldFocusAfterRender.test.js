@@ -5,10 +5,11 @@
   no-new:0 */
 
 import React from "react";
-import { mount } from "enzyme";
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
-
+import { render, screen, waitFor, waitForElementToBeRemoved, fireEvent } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import '@testing-library/jest-dom'
 
 // We have to put this in a separate file. Otherwise, the document.activeElement
 // will be reseted by other test suite to null which we can't easily
@@ -17,65 +18,70 @@ describe("props.shouldReturnFocusAfterClose", () => {
   beforeEach(() => {
     global.document.body.innerHTML = "";
   });
-  afterEach(() => {
-    global.document.body.innerHTML = "";
+
+  it("should return to focused element after close if true", async () => {
+    // Given shouldReturnFocusAfterClose = true then focus should return 
+    // to the focused element when the command palette is close. We'll setup
+    // two buttons and force focus to move from the the originally focused button
+    // to the nextfocused button while the palette is open. Upon closing the palette
+    // focus will be returned to the originally focused button
+    
+    const body = global.document.querySelector("body");
+    const originallyFocusedElement = global.document.createElement("button");
+    const nextFocusedElement = global.document.createElement("button");
+    originallyFocusedElement.setAttribute("data-testid", "originallyFocusedButton");
+    body.appendChild(originallyFocusedElement);
+    body.appendChild(nextFocusedElement);
+    
+    originallyFocusedElement.focus();
+    expect(originallyFocusedElement).toHaveFocus();
+    const commandPalette = render(<CommandPalette commands={mockCommands} shouldReturnFocusAfterClose open />);  
+    const input =  screen.getByPlaceholderText("Type a command");
+    await waitFor(() => {expect(input).toHaveFocus()});
+    
+    // Change focus while command palette is open
+    nextFocusedElement.focus();
+    await waitFor(() => {expect(nextFocusedElement).toHaveFocus()});
+    
+    // Close the command palette
+    userEvent.click(input);
+    userEvent.keyboard('{esc}');
+    fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
+    await waitForElementToBeRemoved(() => screen.getByLabelText("Command Palette"));
+
+    await waitFor(() => { expect(originallyFocusedElement).toHaveFocus() });
   });
 
-  it.skip("should return to focused element after close if true", async () => {
-    const focusedElement = global.document.createElement("button");
-    focusedElement.setAttribute("id", "button");
-    const focusedElement2 = global.document.createElement("button");
+  it("should not return to focused element after close if false", async () => {
+    // Given shouldReturnFocusAfterClose = true then focus should return 
+    // to the focused element when the command palette is close. We'll setup
+    // two buttons and force focus to move from the the originally focused button
+    // to the nextfocused button while the palette is open. Upon closing the palette
+    // focus will be returned to the originally focused button
+    
     const body = global.document.querySelector("body");
-    body.appendChild(focusedElement);
-    body.appendChild(focusedElement2);
-    focusedElement.focus();
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("#button")
-    );
-    const commandPalette = mount(
-      <CommandPalette commands={mockCommands} shouldReturnFocusAfterClose open />
-    );
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("input")
-    );
-    expect(commandPalette.state("showModal")).toEqual(true);
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("input")
-    );
-    // Change focus during command palette open
-    focusedElement2.focus();
-    expect(global.document.activeElement).toBe(focusedElement2);
-    commandPalette.instance().handleCloseModal();
-    await new Promise((r) => setTimeout(r, 50));
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("#button")
-    );
-  });
+    const originallyFocusedElement = global.document.createElement("button");
+    const nextFocusedElement = global.document.createElement("button");
+    originallyFocusedElement.setAttribute("data-testid", "originallyFocusedButton");
+    body.appendChild(originallyFocusedElement);
+    body.appendChild(nextFocusedElement);
+    
+    originallyFocusedElement.focus();
+    expect(originallyFocusedElement).toHaveFocus();
+    const commandPalette = render(<CommandPalette commands={mockCommands} shouldReturnFocusAfterClose={false} open />);  
+    const input =  screen.getByPlaceholderText("Type a command");
+    await waitFor(() => {expect(input).toHaveFocus()});
+    
+    // Change focus while command palette is open
+    nextFocusedElement.focus();
+    await waitFor(() => {expect(nextFocusedElement).toHaveFocus()});
+    
+    // Close the command palette
+    userEvent.click(input);
+    userEvent.keyboard('{esc}');
+    fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
+    await waitForElementToBeRemoved(() => screen.getByLabelText("Command Palette"));
 
-  it.skip("should not return to focused element after close if false", async () => {
-    const focusedElement = global.document.createElement("button");
-    focusedElement.setAttribute("id", "button");
-    const body = global.document.querySelector("body");
-    body.appendChild(focusedElement);
-    focusedElement.focus();
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("#button")
-    );
-    const commandPalette = mount(
-      <CommandPalette
-        commands={mockCommands}
-        shouldReturnFocusAfterClose={false}
-      />
-    );
-    commandPalette.instance().handleOpenModal();
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("input")
-    );
-    expect(commandPalette.state("showModal")).toEqual(true);
-    commandPalette.instance().handleCloseModal();
-    await new Promise((r) => setTimeout(r, 50));
-    expect(global.document.activeElement).toBe(
-      global.document.querySelector("body")
-    );
+    await waitFor(() => { expect(global.document.body).toHaveFocus() });
   });
 });

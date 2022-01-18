@@ -188,6 +188,9 @@ exports[`Command List renders a command 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -3797,6 +3800,9 @@ exports[`Command List renders a command 1`] = `
                 data-react-modal-body-trap=""
                 style="position: absolute; opacity: 0;"
                 tabindex="0"
+              />
+              <div
+                class="ReactModalPortal"
               />
               <div
                 class="ReactModalPortal"
@@ -8028,6 +8034,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -9914,6 +9923,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                 data-react-modal-body-trap=""
                 style="position: absolute; opacity: 0;"
                 tabindex="0"
+              />
+              <div
+                class="ReactModalPortal"
               />
               <div
                 class="ReactModalPortal"
@@ -14169,6 +14181,9 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -15845,6 +15860,9 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                 data-react-modal-body-trap=""
                 style="position: absolute; opacity: 0;"
                 tabindex="0"
+              />
+              <div
+                class="ReactModalPortal"
               />
               <div
                 class="ReactModalPortal"
@@ -17873,6 +17891,9 @@ exports[`props.renderCommand should render a custom command component 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -18516,6 +18537,9 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                 data-react-modal-body-trap=""
                 style="position: absolute; opacity: 0;"
                 tabindex="0"
+              />
+              <div
+                class="ReactModalPortal"
               />
               <div
                 class="ReactModalPortal"
@@ -19511,6 +19535,9 @@ exports[`props.theme should render a custom theme 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay atom-overlay"
@@ -20405,6 +20432,9 @@ exports[`props.theme should render a custom theme 1`] = `
                 data-react-modal-body-trap=""
                 style="position: absolute; opacity: 0;"
                 tabindex="0"
+              />
+              <div
+                class="ReactModalPortal"
               />
               <div
                 class="ReactModalPortal"

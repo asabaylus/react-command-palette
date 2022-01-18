@@ -15,10 +15,19 @@ import sampleAtomCommand from "./examples/sampleAtomCommand";
 import sampleChromeCommand from "./examples/sampleChromeCommand";
 import chromeTheme from "./themes/chrome-theme";
 import { clickDown, clickUp, clickEnter } from "./test-helpers";
-import { waitFor, render, screen, fireEvent, unmount } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import { getByPlaceholderText, prettyDOM } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
+
+describe("Umounting the palette", () => {
+  it("should not leave elements in the DOM",  () => {
+    const { commandPalette, unmount } = render(<CommandPalette commands={mockCommands} open />);
+    const input = screen.getByPlaceholderText('Type a command');
+    expect(input).toBeInTheDocument();
+    unmount();
+    expect(input).not.toBeInTheDocument();
+  })
+});
 
 describe("Loading indicator", () => {
   it("should display the spinner by default", () => {
@@ -614,16 +623,6 @@ describe("Opening the palette", () => {
   });
 });
 
-describe.skip("Umounting the palette", () => {
-  it("should not leave elements in the DOM",  () => {
-    const { commandPalette, unmount } = render(<CommandPalette commands={mockCommands} open />);
-    const input = screen.getByPlaceholderText('Type a command');
-    expect(input).toBeInTheDocument();
-    unmount();
-    expect(input).not.toBeInTheDocument();
-  })
-});
-
 describe("Closing the palette", () => {
   beforeEach(() => {
     jest.clearAllMocks();
@@ -637,6 +636,7 @@ describe("Closing the palette", () => {
     fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
     const firstSuggestion = screen.queryAllByText('Start All Data Imports')[0];
     expect(firstSuggestion).toBeInTheDocument();
+    // TODO: assert that the command palette is not visible
   });
 
   it("should close the wrapper when clicked outside", () => {
