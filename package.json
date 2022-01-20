@@ -24,6 +24,9 @@
     "type": "git",
     "url": "git+https://github.com/asabaylus/react-command-palette.git"
   },
+  "engines": {
+    "node": ">=14 <=17"
+  },
   "keywords": [
     "react",
     "command",
