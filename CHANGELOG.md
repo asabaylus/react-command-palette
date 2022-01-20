@@ -1,3 +1,19 @@
+# v0.17.1 (Thu Jan 20 2022)
+
+#### ⚠️ Pushed to `main`
+
+- [skip-release] fix npm auto ([@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- remove codeclimate [#1032](https://github.com/asabaylus/react-command-palette/pull/1032) ([@asabaylus](https://github.com/asabaylus))
+
+#### Authors: 1
+
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+
+---
+
 # v0.16.2 (Sat Apr 24 2021)
 
 #### 🐛 Bug Fix
