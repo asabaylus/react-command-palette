@@ -4,7 +4,7 @@ pull_request_rules:
       - author~=^dependabot(|-preview)\[bot\]$
       - check-success~=build
       - check-success=UI Tests
-      - check-success=codeclimate
+      - check-success=codecov/project
       - check-success-or-neutral~=LGTM
     actions:
       merge:

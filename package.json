@@ -14,7 +14,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
-    "release": "auto shipit --base-branch=main",
+    "release": "auto shipit --base-branch=main --ignore-commit-pattern=",
     "chromatic": "chromatic --project-token 5981upe4q43 --exit-zero-on-changes"
   },
   "resolutions": {
