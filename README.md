@@ -2,10 +2,11 @@
 
 WAI-ARIA compliant React command palette like the one in Atom and Sublime
 
-![CI](https://github.com/asabaylus/react-command-palette/workflows/CI/badge.svg)
+[![CI](https://github.com/asabaylus/react-command-palette/workflows/CI/badge.svg)](https://github.com/asabaylus/react-command-palette/actions)
 [![codecov](https://codecov.io/gh/asabaylus/react-command-palette/branch/master/graph/badge.svg)](https://codecov.io/gh/asabaylus/react-command-palette)
 ![npm](https://img.shields.io/npm/v/react-command-palette.svg)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/asabaylus/react-command-palette.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/asabaylus/react-command-palette/context:javascript)
+[![react-command-palette](https://snyk.io/advisor/npm-package/react-command-palette/badge.svg)](https://snyk.io/advisor/npm-package/react-command-palette)
 
 [![Screenshot](https://www.dropbox.com/s/7dogg4v7vfkzvgs/react-command-palette.gif?raw=1)](https://www.dropbox.com/s/7dogg4v7vfkzvgs/react-command-palette.gif?raw=1)
 
