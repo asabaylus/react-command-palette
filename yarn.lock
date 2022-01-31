@@ -3418,22 +3418,22 @@
     react-docgen-typescript "^2.1.1"
     tslib "^2.0.0"
 
-"@storybook/react@^6.4.15":
-  version "6.4.15"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.4.15.tgz#2475ff67f7967670062559b65b3841c827b06c6e"
-  integrity sha512-SWtZeG+3Mx3PAaKLy/v/GlNN3PLxVacm53RmhayhFVCWvbSazNZn/3xnTUzpVPYMsO7QEqF/NWmC1YUndSoo6Q==
+"@storybook/react@^6.4.17":
+  version "6.4.17"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.4.17.tgz#c12f22c3365d4213c662bf1e26520e72c68b0c33"
+  integrity sha512-hAMEyMcWC5fEdzXOYr0S9/QHclXbbJpl7Vl9dd56wxbHx4FFwcJ7R5hroLntPsHXU+rGTF9/EqehmEa/Jd0l4w==
   dependencies:
     "@babel/preset-flow" "^7.12.1"
     "@babel/preset-react" "^7.12.10"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
-    "@storybook/addons" "6.4.15"
-    "@storybook/core" "6.4.15"
-    "@storybook/core-common" "6.4.15"
+    "@storybook/addons" "6.4.17"
+    "@storybook/core" "6.4.17"
+    "@storybook/core-common" "6.4.17"
     "@storybook/csf" "0.0.2--canary.87bc651.0"
-    "@storybook/node-logger" "6.4.15"
+    "@storybook/node-logger" "6.4.17"
     "@storybook/react-docgen-typescript-plugin" "1.0.2-canary.253f8c1.0"
     "@storybook/semver" "^7.3.2"
-    "@storybook/store" "6.4.15"
+    "@storybook/store" "6.4.17"
     "@types/webpack-env" "^1.16.0"
     babel-plugin-add-react-displayname "^0.0.5"
     babel-plugin-named-asset-import "^0.3.1"
