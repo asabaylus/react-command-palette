@@ -8095,10 +8095,10 @@ fuse.js@^3.6.1:
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.6.1.tgz#7de85fdd6e1b3377c23ce010892656385fd9b10c"
   integrity sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==
 
-fuzzysort@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/fuzzysort/-/fuzzysort-1.1.4.tgz#a0510206ed44532cbb52cf797bf5a3cb12acd4ba"
-  integrity sha512-JzK/lHjVZ6joAg3OnCjylwYXYVjRiwTY6Yb25LvfpJHK8bjisfnZJ5bY8aVWwTwCXgxPNgLAtmHL+Hs5q1ddLQ==
+fuzzysort@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/fuzzysort/-/fuzzysort-1.2.1.tgz#ea23d3c4d7726422888f538044fcea265644d54c"
+  integrity sha512-egTSF3U6H6T9tXtAhEm5P5guSSDjd96/NUWrbmoGlIu3ATMdXra13gwQdEFRY6ehsFe8xec7UnQz+k34CGWCIg==
 
 gauge@^3.0.0:
   version "3.0.2"
