@@ -2942,10 +2942,10 @@
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/preset-create-react-app@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-4.0.1.tgz#b0d9ce94430299f2dbae9578d6a925e980d2257c"
-  integrity sha512-+4wipy3MS6ygDJdCVxJZ5bjWg2Z2mOD3BnPsfZRHzi/MAbi4CexJllymk+B54E1PziXoSg2Yw0S69O/e1v50Fg==
+"@storybook/preset-create-react-app@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-4.1.0.tgz#8f2dc1d5ac07b806b7a3fa4f57654c21150a9821"
+  integrity sha512-xMQlWhT8qHBnfrep4g+f2UFndpAiYnhkilHaf081eA9hsnSlj7Z9WKgHC5n09jBhfZpgL5Zf7Mx3lNwhHoEXBw==
   dependencies:
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
     "@storybook/react-docgen-typescript-plugin" canary
