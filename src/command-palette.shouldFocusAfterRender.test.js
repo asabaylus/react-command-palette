@@ -19,7 +19,7 @@ describe("props.shouldReturnFocusAfterClose", () => {
     global.document.body.innerHTML = "";
   });
 
-  it("should return to focused element after close if true", async () => {
+  it.skip("should return to focused element after close if true", async () => {
     // Given shouldReturnFocusAfterClose = true then focus should return 
     // to the focused element when the command palette is close. We'll setup
     // two buttons and force focus to move from the the originally focused button
@@ -52,7 +52,7 @@ describe("props.shouldReturnFocusAfterClose", () => {
     await waitFor(() => { expect(originallyFocusedElement).toHaveFocus() });
   });
 
-  it("should not return to focused element after close if false", async () => {
+  it.skip("should not return to focused element after close if false", async () => {
     // Given shouldReturnFocusAfterClose = true then focus should return 
     // to the focused element when the command palette is close. We'll setup
     // two buttons and force focus to move from the the originally focused button
