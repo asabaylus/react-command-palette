@@ -5,21 +5,30 @@
   no-new:0 */
 
 import React from "react";
+import ReactDOM from 'react-dom/client';
 import CommandPalette from "./command-palette";
 import mockCommands from "./__mocks__/commands";
-import { render, screen, waitFor, waitForElementToBeRemoved, fireEvent } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
-import '@testing-library/jest-dom'
+import { act } from 'react-dom/test-utils';
+import { render, screen, waitFor, waitForElementToBeRemoved, fireEvent } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom';
+let container;
 
 // We have to put this in a separate file. Otherwise, the document.activeElement
 // will be reseted by other test suite to null which we can't easily
 // validate the return focused element.
 describe("props.shouldReturnFocusAfterClose", () => {
   beforeEach(() => {
-    global.document.body.innerHTML = "";
+    container = document.createElement('div');
+    document.body.appendChild(container);
   });
 
-  it.skip("should return to focused element after close if true", async () => {
+  afterEach(() => {
+    document.body.removeChild(container);
+    container = null;
+  });
+
+  it("should return to focused element after close if true", async () => {
     // Given shouldReturnFocusAfterClose = true then focus should return 
     // to the focused element when the command palette is close. We'll setup
     // two buttons and force focus to move from the the originally focused button
@@ -35,24 +44,37 @@ describe("props.shouldReturnFocusAfterClose", () => {
     
     originallyFocusedElement.focus();
     expect(originallyFocusedElement).toHaveFocus();
-    const commandPalette = render(<CommandPalette commands={mockCommands} shouldReturnFocusAfterClose open />);  
+    
+    act(()=> { 
+      ReactDOM.createRoot(container).render(<CommandPalette commands={mockCommands} shouldReturnFocusAfterClose open />);
+    });
+
+    const commandPaletteRootElement = screen.getByLabelText("Command Palette");
     const input =  screen.getByPlaceholderText("Type a command");
+    
+    // When the palette is first opened it should focus the search input by default
     await waitFor(() => {expect(input).toHaveFocus()});
     
     // Change focus while command palette is open
-    nextFocusedElement.focus();
+    act(() => { nextFocusedElement.focus() });
     await waitFor(() => {expect(nextFocusedElement).toHaveFocus()});
     
-    // Close the command palette
-    userEvent.click(input);
-    userEvent.keyboard('{esc}');
-    fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
-    await waitForElementToBeRemoved(() => screen.getByLabelText("Command Palette"));
-
-    await waitFor(() => { expect(originallyFocusedElement).toHaveFocus() });
+    // Press escape key
+    fireEvent.keyDown(input, {
+      key: "Escape",
+      code: "Escape",
+      keyCode: 27,
+      charCode: 27 
+    });
+  
+    // confirm focus returns to the originally focused element
+    await waitFor(() => {
+      expect(originallyFocusedElement).toHaveFocus();
+      expect(commandPaletteRootElement).not.toBeVisible();
+    });    
   });
 
-  it.skip("should not return to focused element after close if false", async () => {
+  it("should not return to focused element after close if false", async () => {
     // Given shouldReturnFocusAfterClose = true then focus should return 
     // to the focused element when the command palette is close. We'll setup
     // two buttons and force focus to move from the the originally focused button
@@ -68,20 +90,30 @@ describe("props.shouldReturnFocusAfterClose", () => {
     
     originallyFocusedElement.focus();
     expect(originallyFocusedElement).toHaveFocus();
-    const commandPalette = render(<CommandPalette commands={mockCommands} shouldReturnFocusAfterClose={false} open />);  
+
+    act(()=> { 
+      ReactDOM.createRoot(container).render(<CommandPalette commands={mockCommands} shouldReturnFocusAfterClose={false} open />);
+    });
+    
     const input =  screen.getByPlaceholderText("Type a command");
     await waitFor(() => {expect(input).toHaveFocus()});
     
     // Change focus while command palette is open
-    nextFocusedElement.focus();
+    act(()=> { nextFocusedElement.focus() });
     await waitFor(() => {expect(nextFocusedElement).toHaveFocus()});
     
-    // Close the command palette
-    userEvent.click(input);
-    userEvent.keyboard('{esc}');
-    fireEvent.keyDown(input, { key: 'Escape', code: 'Escape' })
-    await waitForElementToBeRemoved(() => screen.getByLabelText("Command Palette"));
+    // Change focus to the search input
+    act(()=> { userEvent.click(input) });
 
+    // Close the command palette
+    fireEvent.keyDown(input, {
+      key: "Escape",
+      code: "Escape",
+      keyCode: 27,
+      charCode: 27 
+    });
+
+    await waitForElementToBeRemoved(() => screen.getByLabelText("Command Palette"));
     await waitFor(() => { expect(global.document.body).toHaveFocus() });
   });
 });
