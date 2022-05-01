@@ -35,6 +35,7 @@ $ npm i --save react-command-palette
 Import into your react app and pass commands
 
 ```jsx
+import { createRoot } from 'react-dom/client';
 import CommandPalette from 'react-command-palette';
 
 const commands = [{
@@ -47,9 +48,10 @@ const commands = [{
   ... 
  ];
  
- ReactDOM.render(
-  <CommandPalette commands={commands} />, 
-  document.getElementById('app'))
+ const container = document.getElementById('app');
+ const root = createRoot(container);
+ root.render(
+  <CommandPalette commands={commands} />)
 ```
 
 ## Props

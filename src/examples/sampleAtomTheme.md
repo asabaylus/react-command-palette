@@ -10,6 +10,7 @@ To custom style the CommandPalette you'll need a CSS file with rules that map to
 
 ```js
 import React from "react";
+import { createRoot } from 'react-dom/client';
 import CommandPalette from "react-command-palette";
 
 // map CSS class names to CommandPalette components
@@ -70,7 +71,9 @@ const commands = [{
     }
 } ...];
 
-React.render(
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(
     <CommandPalette theme={atom} 
         commands={commands} 
         renderCommand={sampleAtomCommand} />, 

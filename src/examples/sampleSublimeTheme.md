@@ -8,6 +8,7 @@ The simplest way to get started is to _import_ the Sublime [theme](../themes/sub
 
 ```js
 import React from "react";
+import { createRoot } from 'react-dom/client';
 import CommandPalette from "react-command-palette";
 
 // import the theme from those provided ...
@@ -73,7 +74,9 @@ const commands = [{
     }
 } ...];
 
-React.render(
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(
     <CommandPalette theme={sublime} 
         commands={commands} 
         renderCommand={sampleSublimeCommand} />, 
