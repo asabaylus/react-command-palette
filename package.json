@@ -63,7 +63,7 @@
     "@storybook/react": "^6.4.22",
     "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
+    "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.1.1",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.7",
     "auto": "^10.36.5",
