@@ -2319,16 +2319,16 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.2.0"
 
-"@storybook/addon-links@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.5.0.tgz#ec1fd4b1b4040dddac09ad1d035f78ed3f5effc8"
-  integrity sha512-kjB11pRJH+Pw0jkZ6whmyEQZEzAfKZk7YeF+HRPPEZ8cIQpcRHj67CFiW2DCjObcrT02r93fWth/Ob1OFlX95A==
+"@storybook/addon-links@^6.5.3":
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.5.3.tgz#5eae9855e19cc03548aa6655756886c26557a175"
+  integrity sha512-FOcrHbEi8Bw6QE3hzO0vtnJVFj2iIiQk0thEdkhq+Pnn5iZ6VmDoctHPwc2wuyM7BIKDlROaK0VRXYLCx6uiBg==
   dependencies:
-    "@storybook/addons" "6.5.0"
-    "@storybook/client-logger" "6.5.0"
-    "@storybook/core-events" "6.5.0"
+    "@storybook/addons" "6.5.3"
+    "@storybook/client-logger" "6.5.3"
+    "@storybook/core-events" "6.5.3"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/router" "6.5.0"
+    "@storybook/router" "6.5.3"
     "@types/qs" "^6.9.5"
     core-js "^3.8.2"
     global "^4.4.0"
