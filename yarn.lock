@@ -3317,10 +3317,21 @@
     npmlog "^5.0.1"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.5.0", "@storybook/node-logger@^6.5.0":
+"@storybook/node-logger@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.5.0.tgz#faf00120d802ff1768957840157dd34a28ffa28d"
   integrity sha512-jDtsyOh3QiBO4Ag+TbF0jBPnqPtWW33BuGyZibfyJp6YUYorubiPFede/BuJkjfT7mzL7PVx/+p0GaRs5M/lMg==
+  dependencies:
+    "@types/npmlog" "^4.1.2"
+    chalk "^4.1.0"
+    core-js "^3.8.2"
+    npmlog "^5.0.1"
+    pretty-hrtime "^1.0.3"
+
+"@storybook/node-logger@^6.5.3":
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.5.3.tgz#6917bbbdaf2bb3b191bafadfe4f19c3ea3cbfa61"
+  integrity sha512-iG4uQJCtuT54p3zg0zJ7+ALPUrt7PTAXmXqN7ak/9YcWbnwtMlHgg8oTlCebwr+E3QPCMauJM2eLzC6F7bI76w==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
