@@ -2095,19 +2095,19 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-a11y@^6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.3.tgz#ea6267476372685e20188cf3be3f5a2f1807534c"
-  integrity sha512-tPZ9aBP1/y7HL8BalKXhs0chyi3D//JUVtXlKIwVS+VYAnFRTMI+f3I2GsgXvulkAEHZLtOwZRn7pWhO51J4ow==
+"@storybook/addon-a11y@^6.5.4":
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.4.tgz#ef7a9fe14f08dff612985056df33ddd3cf64799e"
+  integrity sha512-nRYa+zqUbQm0ePdlAdI92pkvKYFKyD4IHomAOBfMd1oAXFvwOq4Dr+DWGb7HqnCG1cQM6X3s2w+y8jKDrJSr2w==
   dependencies:
-    "@storybook/addons" "6.5.3"
-    "@storybook/api" "6.5.3"
-    "@storybook/channels" "6.5.3"
-    "@storybook/client-logger" "6.5.3"
-    "@storybook/components" "6.5.3"
-    "@storybook/core-events" "6.5.3"
+    "@storybook/addons" "6.5.4"
+    "@storybook/api" "6.5.4"
+    "@storybook/channels" "6.5.4"
+    "@storybook/client-logger" "6.5.4"
+    "@storybook/components" "6.5.4"
+    "@storybook/core-events" "6.5.4"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/theming" "6.5.3"
+    "@storybook/theming" "6.5.4"
     axe-core "^4.2.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -3035,6 +3035,21 @@
     "@storybook/client-logger" "6.5.3"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
     "@storybook/theming" "6.5.3"
+    "@types/react-syntax-highlighter" "11.0.5"
+    core-js "^3.8.2"
+    qs "^6.10.0"
+    react-syntax-highlighter "^15.4.5"
+    regenerator-runtime "^0.13.7"
+    util-deprecate "^1.0.2"
+
+"@storybook/components@6.5.4":
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.5.4.tgz#8afdbba252ab957ba53318b34cb2593da964747b"
+  integrity sha512-FCJJm2r/OzW3QvavTCdHZeTubJkbNJeoiGKeZs9kMYSgDZAr4cDUr1xUl30Hw57Uy3TCY9gnYdtGZgCP1tQiLw==
+  dependencies:
+    "@storybook/client-logger" "6.5.4"
+    "@storybook/csf" "0.0.2--canary.4566f4d.1"
+    "@storybook/theming" "6.5.4"
     "@types/react-syntax-highlighter" "11.0.5"
     core-js "^3.8.2"
     qs "^6.10.0"
