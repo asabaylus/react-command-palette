@@ -54,7 +54,7 @@
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-jest": "^6.5.3",
     "@storybook/addon-knobs": "^6.4.0",
-    "@storybook/addon-links": "^6.5.3",
+    "@storybook/addon-links": "^6.5.4",
     "@storybook/addon-options": "^5.3.21",
     "@storybook/builder-webpack5": "^6.5.0",
     "@storybook/manager-webpack5": "^6.5.3",
