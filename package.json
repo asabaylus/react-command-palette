@@ -49,7 +49,7 @@
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.2",
     "@storybook/addon-a11y": "^6.5.5",
-    "@storybook/addon-actions": "^6.5.4",
+    "@storybook/addon-actions": "^6.5.5",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-jest": "^6.5.5",
