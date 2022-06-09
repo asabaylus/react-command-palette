@@ -3432,7 +3432,7 @@
     npmlog "^5.0.1"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.5.8", "@storybook/node-logger@^6.5.7":
+"@storybook/node-logger@6.5.8", "@storybook/node-logger@^6.5.8":
   version "6.5.8"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.5.8.tgz#d1244c846da5a296a7432444f8682f77853fb81e"
   integrity sha512-BHdkSipgjnfsh4FRYbV2R0npM5gVx9JLRsDQ0KiTolRpN4SU98kT/6885zb9jZg6I0EY+UG9Qdr3fvL9VLpY1g==
