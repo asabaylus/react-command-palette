@@ -62,7 +62,7 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.4.22",
     "@testing-library/dom": "^8.16.1",
-    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.4.2",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.7",
