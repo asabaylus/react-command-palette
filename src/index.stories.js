@@ -133,13 +133,13 @@ storiesOf("Command Palette", module)
       }
     }
   )
-  .add("is toggled open", () => 
+  .add("is toggled open", () =>
     {
     const open = boolean("Open", true);
     return <CommandPalette commands={commands} open={open} />
     }, {
     info: {
-      text: `Adding an _open_ prop will force the command palette to be displayed 
+      text: `Adding an _open_ prop will force the command palette to be displayed
       when it mounts. By default command palette will be hidden until the _trigger_
       is cliked.`
     }
@@ -223,12 +223,12 @@ storiesOf("Command Palette", module)
     () => <CommandPalette commands={commands} trigger="Click Me!" />,
     {
       info: {
-        text: `Use the _trigger_ prop to customize the component that the user 
+        text: `Use the _trigger_ prop to customize the component that the user
         will click to open the command palette. The property accepts either a
-        string or a React component. Note that component will be wrapped with a 
+        string or a React component. Note that component will be wrapped with a
         _div_ that behaves like a button. So there is no need to add any events.
         This component will also be focusable and may be activated via keyboard
-        to maintain accessibility. If a trigger is not specified then the a 
+        to maintain accessibility. If a trigger is not specified then the a
         default command palette will be used.
         `
       }
@@ -345,5 +345,10 @@ storiesOf("Command Palette", module)
   .add("with reactModalParentSelector", () => (
     <div id="main">
       <CommandPalette commands={commands} reactModalParentSelector="#main" open />
+    </div>
+  ))
+  .add("with displayTrigger false", () => (
+    <div id="main">
+      <CommandPalette commands={commands} reactModalParentSelector="#main" displayTrigger={false} />
     </div>
   ));
