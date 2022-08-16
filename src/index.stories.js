@@ -347,8 +347,8 @@ storiesOf("Command Palette", module)
       <CommandPalette commands={commands} reactModalParentSelector="#main" open />
     </div>
   ))
-  .add("with displayTrigger false", () => (
+  .add("with trigger null", () => (
     <div id="main">
-      <CommandPalette commands={commands} reactModalParentSelector="#main" displayTrigger={false} />
+      <CommandPalette commands={commands} reactModalParentSelector="#main" trigger={null} />
     </div>
   ));

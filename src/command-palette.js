@@ -316,7 +316,6 @@ class CommandPalette extends React.Component {
       theme,
       reactModalParentSelector,
       shouldReturnFocusAfterClose,
-      displayTrigger
     } = this.props;
     const modal = <ReactModal
       appElement={document.body}
@@ -338,7 +337,7 @@ class CommandPalette extends React.Component {
     >
       {this.renderAutoSuggest()}
     </ReactModal>
-    if(displayTrigger) {
+    if(trigger) {
       return (
         <div className="react-command-palette">
           <PaletteTrigger
@@ -396,7 +395,6 @@ CommandPalette.defaultProps = {
   shouldReturnFocusAfterClose: true,
   showSpinnerOnSelect: true,
   theme: defaultTheme,
-  displayTrigger: true,
 };
 
 CommandPalette.propTypes = {
@@ -500,7 +498,10 @@ CommandPalette.propTypes = {
    * clicked. If a custom trigger is not set, then by default a button will be used. If a
    * custom component or string is provided then it will automatically be wrapped inside
    * an accessible div which will allow it be keyboard accessible, clickable and focusable
-   * for assistive technologies. */
+   * for assistive technologies.
+   *
+   * Setting this to null prevents the trigger from rendering. Useful when the command palette will be opened externally.
+   * */
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** spinner a string or a React.ComponentType that is displayed when the user selects
@@ -543,9 +544,6 @@ CommandPalette.propTypes = {
   /** Styles and object that contains a list of key value pairs where the keys map the
    * command palette components to their CSS class names. */
   theme: PropTypes.object,
-  
-  /** Determines whether you want the trigger button to display while in modal mode, defaults to true */
-  displayTrigger: PropTypes.bool,
 };
 
 export default CommandPalette;
