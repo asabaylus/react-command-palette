@@ -337,7 +337,7 @@ class CommandPalette extends React.Component {
     >
       {this.renderAutoSuggest()}
     </ReactModal>
-    if(trigger) {
+    if(trigger !== null) {
       return (
         <div className="react-command-palette">
           <PaletteTrigger
