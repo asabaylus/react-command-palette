@@ -264,6 +264,16 @@ describe("props.inputFilter", () => {
   });
 });
 
+describe("props.trigger", () => {
+  it("should not render the trigger when null", () => {
+    const {container} = render(<CommandPalette commands={mockCommands} trigger={null} open />);
+    const commandPalette = container.getElementsByClassName('react-command-palette');
+    const firstSuggestion = screen.queryAllByText('Start All Data Imports')[0];
+    expect(firstSuggestion).toBeInTheDocument();
+    expect(commandPalette.length).toBe(0)
+  });
+});
+
 describe("props.theme", () => {
   it("should render a custom theme", () => {
     const commandPalette = mount(

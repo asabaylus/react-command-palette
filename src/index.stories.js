@@ -349,6 +349,6 @@ storiesOf("Command Palette", module)
   ))
   .add("with trigger null", () => (
     <div id="main">
-      <CommandPalette commands={commands} reactModalParentSelector="#main" trigger={null} />
+      <CommandPalette commands={commands} reactModalParentSelector="#main" trigger={null} open />
     </div>
   ));
