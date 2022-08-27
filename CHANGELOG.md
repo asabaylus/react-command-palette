@@ -1,3 +1,29 @@
+# v0.19.0 (Sat Aug 27 2022)
+
+#### 🚀 Enhancement
+
+- Feat: Add displayTrigger boolean [#1332](https://github.com/asabaylus/react-command-palette/pull/1332) (matt.crowder@veeva.com [@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Build(deps-dev): Bump chromatic from 6.7.4 to 6.8.0 [#1336](https://github.com/asabaylus/react-command-palette/pull/1336) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @babel/core from 7.18.10 to 7.18.13 [#1335](https://github.com/asabaylus/react-command-palette/pull/1335) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump rollup from 2.78.0 to 2.78.1 [#1334](https://github.com/asabaylus/react-command-palette/pull/1334) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump rollup from 2.77.3 to 2.78.0 [#1333](https://github.com/asabaylus/react-command-palette/pull/1333) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.7.3 to 6.7.4 [#1331](https://github.com/asabaylus/react-command-palette/pull/1331) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump rollup from 2.77.2 to 2.77.3 [#1330](https://github.com/asabaylus/react-command-palette/pull/1330) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @testing-library/user-event from 14.4.2 to 14.4.3 [#1329](https://github.com/asabaylus/react-command-palette/pull/1329) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @testing-library/dom from 8.16.1 to 8.17.1 [#1328](https://github.com/asabaylus/react-command-palette/pull/1328) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump postcss from 8.4.14 to 8.4.16 [#1327](https://github.com/asabaylus/react-command-palette/pull/1327) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+- Matt Crowder ([@mcrowder65](https://github.com/mcrowder65))
+
+---
+
 ---
 # v0.18.1 (Fri Aug 8 2022)
 
