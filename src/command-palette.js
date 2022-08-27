@@ -317,35 +317,40 @@ class CommandPalette extends React.Component {
       reactModalParentSelector,
       shouldReturnFocusAfterClose,
     } = this.props;
-    return (
-      <div className="react-command-palette">
-        <PaletteTrigger
-          onClick={this.handleOpenModal}
-          trigger={trigger}
-          theme={theme.trigger}
-        />
-        <ReactModal
-          appElement={document.body}
-          isOpen={showModal}
-          parentSelector={() =>
-            document.querySelector(reactModalParentSelector)
-          }
-          onAfterOpen={this.afterOpenModal}
-          onRequestClose={this.handleCloseModal}
-          shouldReturnFocusAfterClose={shouldReturnFocusAfterClose}
-          className={theme.modal}
-          overlayClassName={theme.overlay}
-          contentLabel="Command Palette"
-          closeTimeoutMS={
-            1
-            /* otherwise the modal is not closed when
-          suggestion is selected by pressing Enter */
-          }
-        >
-          {this.renderAutoSuggest()}
-        </ReactModal>
-      </div>
-    );
+    const modal = <ReactModal
+      appElement={document.body}
+      isOpen={showModal}
+      parentSelector={() =>
+        document.querySelector(reactModalParentSelector)
+      }
+      onAfterOpen={this.afterOpenModal}
+      onRequestClose={this.handleCloseModal}
+      shouldReturnFocusAfterClose={shouldReturnFocusAfterClose}
+      className={theme.modal}
+      overlayClassName={theme.overlay}
+      contentLabel="Command Palette"
+      closeTimeoutMS={
+        1
+        /* otherwise the modal is not closed when
+      suggestion is selected by pressing Enter */
+      }
+    >
+      {this.renderAutoSuggest()}
+    </ReactModal>
+    if(trigger !== null) {
+      return (
+        <div className="react-command-palette">
+          <PaletteTrigger
+            onClick={this.handleOpenModal}
+            trigger={trigger}
+            theme={theme.trigger}
+          />
+          {modal}
+        </div>
+      );
+    }
+    return modal
+    
   }
 
   renderInlineCommandPalette() {
@@ -443,17 +448,17 @@ CommandPalette.propTypes = {
    *  first suggestion. Defaults to false. */
   highlightFirstSuggestion: PropTypes.bool,
 
-  /** When suggestion is clicked, react-autosuggest needs to populate the input element  
+  /** When suggestion is clicked, react-autosuggest needs to populate the input element
    * based on the clicked suggestion. Teach react-autosuggest how to calculate the
-   * input value for every given suggestion. By default the highlighed suggestion will be 
+   * input value for every given suggestion. By default the highlighed suggestion will be
    * displayed */
-  getSuggestionValue: PropTypes.func, 
+  getSuggestionValue: PropTypes.func,
 
   /** options controls how fuzzy search is configured see [fuzzysort options]
    * (https://github.com/farzher/fuzzysort#options) */
   options: PropTypes.object,
 
-  /** a function that filters the search query. If this prop is not used the default 
+  /** a function that filters the search query. If this prop is not used the default
    * behavior will search the input exactly entered */
   filterSearchQuery: PropTypes.func,
 
@@ -493,7 +498,10 @@ CommandPalette.propTypes = {
    * clicked. If a custom trigger is not set, then by default a button will be used. If a
    * custom component or string is provided then it will automatically be wrapped inside
    * an accessible div which will allow it be keyboard accessible, clickable and focusable
-   * for assistive technologies. */
+   * for assistive technologies.
+   *
+   * Setting this to null prevents the trigger from rendering. Useful when the command palette will be opened externally.
+   * */
   trigger: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 
   /** spinner a string or a React.ComponentType that is displayed when the user selects

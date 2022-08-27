@@ -868,6 +868,9 @@ exports[`Command List renders a command 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay chrome-overlay"
@@ -4004,6 +4007,9 @@ exports[`Command List renders a command 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               />
@@ -7772,6 +7778,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay chrome-overlay"
@@ -9407,6 +9416,9 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               />
@@ -13421,6 +13433,9 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay chrome-overlay"
@@ -15007,6 +15022,9 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               />
@@ -18423,6 +18441,9 @@ exports[`props.theme should render a custom theme 1`] = `
           />
           <div
             class="ReactModalPortal"
+          />
+          <div
+            class="ReactModalPortal"
           >
             <div
               class="ReactModal__Overlay chrome-overlay"
@@ -19227,6 +19248,9 @@ exports[`props.theme should render a custom theme 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="ReactModalPortal"
+              />
               <div
                 class="ReactModalPortal"
               />
