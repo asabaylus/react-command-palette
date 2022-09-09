@@ -1,3 +1,24 @@
+# v0.21.1 (Fri Sep 09 2022)
+
+#### ⚠️ Pushed to `main`
+
+- docs: Update README.md ([@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Build(deps-dev): Bump @babel/core from 7.18.13 to 7.19.0 [#1341](https://github.com/asabaylus/react-command-palette/pull/1341) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.8.1 to 6.9.0 [#1340](https://github.com/asabaylus/react-command-palette/pull/1340) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @testing-library/react from 13.3.0 to 13.4.0 [#1339](https://github.com/asabaylus/react-command-palette/pull/1339) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.8.0 to 6.8.1 [#1338](https://github.com/asabaylus/react-command-palette/pull/1338) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump rollup from 2.78.1 to 2.79.0 [#1337](https://github.com/asabaylus/react-command-palette/pull/1337) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+
+---
+
 # v0.19.0 (Sat Aug 27 2022)
 
 #### 🚀 Enhancement
