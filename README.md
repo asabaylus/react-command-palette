@@ -294,7 +294,7 @@ Example with a string:
 <div role="button" tabindex="0">Click Me!</div>
 ```
 
-When the trigger is clicked it will open the command palette, no custom handlers or events are required.
+When the trigger is clicked it will open the command palette, no custom handlers or events are required. Setting to `null` prevents the trigger from rendering. Useful when the command palette will be opened externally.
 
 ## Developer Setup
 ```
