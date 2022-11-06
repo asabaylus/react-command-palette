@@ -50,8 +50,7 @@ const commands = [{
  
  const container = document.getElementById('app');
  const root = createRoot(container);
- root.render(
-  <CommandPalette commands={commands} />)
+ root.render(<CommandPalette commands={commands} />)
 ```
 
 ## Props
