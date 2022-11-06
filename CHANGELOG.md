@@ -1,3 +1,70 @@
+# v0.22.0 (Sun Nov 06 2022)
+
+#### 🚀 Enhancement
+
+- feat: allow node 18 in engines requirements [#1377](https://github.com/asabaylus/react-command-palette/pull/1377) ([@iamstarkov](https://github.com/iamstarkov))
+
+#### 🏠 Internal
+
+- feat: Bump react to LTS v18 [#1392](https://github.com/asabaylus/react-command-palette/pull/1392) ([@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Build(deps-dev): Bump chromatic from 6.11.3 to 6.11.4 [#1391](https://github.com/asabaylus/react-command-palette/pull/1391) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.11.2 to 6.11.3 [#1390](https://github.com/asabaylus/react-command-palette/pull/1390) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.11.1 to 6.11.2 [#1389](https://github.com/asabaylus/react-command-palette/pull/1389) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.11.0 to 6.11.1 [#1388](https://github.com/asabaylus/react-command-palette/pull/1388) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/manager-webpack5 from 6.5.12 to 6.5.13 [#1380](https://github.com/asabaylus/react-command-palette/pull/1380) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.10.5 to 6.11.0 [#1386](https://github.com/asabaylus/react-command-palette/pull/1386) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/react from 6.5.12 to 6.5.13 [#1387](https://github.com/asabaylus/react-command-palette/pull/1387) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/builder-webpack5 from 6.5.12 to 6.5.13 [#1385](https://github.com/asabaylus/react-command-palette/pull/1385) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-essentials from 6.5.12 to 6.5.13 [#1384](https://github.com/asabaylus/react-command-palette/pull/1384) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-jest from 6.5.12 to 6.5.13 [#1381](https://github.com/asabaylus/react-command-palette/pull/1381) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-links from 6.5.12 to 6.5.13 [#1382](https://github.com/asabaylus/react-command-palette/pull/1382) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-a11y from 6.5.12 to 6.5.13 [#1379](https://github.com/asabaylus/react-command-palette/pull/1379) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/node-logger from 6.5.12 to 6.5.13 [#1378](https://github.com/asabaylus/react-command-palette/pull/1378) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.10.4 to 6.10.5 [#1376](https://github.com/asabaylus/react-command-palette/pull/1376) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @babel/core from 7.19.3 to 7.19.6 [#1375](https://github.com/asabaylus/react-command-palette/pull/1375) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.10.2 to 6.10.4 [#1374](https://github.com/asabaylus/react-command-palette/pull/1374) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump postcss from 8.4.17 to 8.4.18 [#1372](https://github.com/asabaylus/react-command-palette/pull/1372) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.10.1 to 6.10.2 [#1371](https://github.com/asabaylus/react-command-palette/pull/1371) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @testing-library/dom from 8.18.1 to 8.19.0 [#1370](https://github.com/asabaylus/react-command-palette/pull/1370) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump postcss from 8.4.16 to 8.4.17 [#1369](https://github.com/asabaylus/react-command-palette/pull/1369) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @babel/cli from 7.18.10 to 7.19.3 [#1368](https://github.com/asabaylus/react-command-palette/pull/1368) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @babel/core from 7.19.1 to 7.19.3 [#1367](https://github.com/asabaylus/react-command-palette/pull/1367) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.10.0 to 6.10.1 [#1366](https://github.com/asabaylus/react-command-palette/pull/1366) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.9.0 to 6.10.0 [#1365](https://github.com/asabaylus/react-command-palette/pull/1365) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump rollup from 2.79.0 to 2.79.1 [#1364](https://github.com/asabaylus/react-command-palette/pull/1364) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @testing-library/dom from 8.18.0 to 8.18.1 [#1363](https://github.com/asabaylus/react-command-palette/pull/1363) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @testing-library/dom from 8.17.1 to 8.18.0 [#1362](https://github.com/asabaylus/react-command-palette/pull/1362) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @babel/core from 7.19.0 to 7.19.1 [#1361](https://github.com/asabaylus/react-command-palette/pull/1361) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-links from 6.5.11 to 6.5.12 [#1360](https://github.com/asabaylus/react-command-palette/pull/1360) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-essentials from 6.5.11 to 6.5.12 [#1359](https://github.com/asabaylus/react-command-palette/pull/1359) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-a11y from 6.5.11 to 6.5.12 [#1356](https://github.com/asabaylus/react-command-palette/pull/1356) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/builder-webpack5 from 6.5.11 to 6.5.12 [#1351](https://github.com/asabaylus/react-command-palette/pull/1351) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/react from 6.5.11 to 6.5.12 [#1357](https://github.com/asabaylus/react-command-palette/pull/1357) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump auto from 10.37.4 to 10.37.6 [#1355](https://github.com/asabaylus/react-command-palette/pull/1355) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-actions from 6.5.11 to 6.5.12 [#1354](https://github.com/asabaylus/react-command-palette/pull/1354) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-jest from 6.5.11 to 6.5.12 [#1353](https://github.com/asabaylus/react-command-palette/pull/1353) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/manager-webpack5 from 6.5.11 to 6.5.12 [#1352](https://github.com/asabaylus/react-command-palette/pull/1352) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-essentials from 6.5.10 to 6.5.11 [#1345](https://github.com/asabaylus/react-command-palette/pull/1345) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/builder-webpack5 from 6.5.10 to 6.5.11 [#1349](https://github.com/asabaylus/react-command-palette/pull/1349) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/react from 6.5.10 to 6.5.11 [#1347](https://github.com/asabaylus/react-command-palette/pull/1347) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-a11y from 6.5.10 to 6.5.11 [#1344](https://github.com/asabaylus/react-command-palette/pull/1344) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/manager-webpack5 from 6.5.10 to 6.5.11 [#1348](https://github.com/asabaylus/react-command-palette/pull/1348) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-links from 6.5.10 to 6.5.11 [#1350](https://github.com/asabaylus/react-command-palette/pull/1350) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-actions from 6.5.10 to 6.5.11 [#1346](https://github.com/asabaylus/react-command-palette/pull/1346) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-jest from 6.5.10 to 6.5.11 [#1343](https://github.com/asabaylus/react-command-palette/pull/1343) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/node-logger from 6.5.10 to 6.5.11 [#1342](https://github.com/asabaylus/react-command-palette/pull/1342) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+- Vladimir Starkov ([@iamstarkov](https://github.com/iamstarkov))
+
+---
+
 # v0.21.1 (Fri Sep 09 2022)
 
 #### ⚠️ Pushed to `main`
