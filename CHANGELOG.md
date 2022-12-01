@@ -1,3 +1,27 @@
+# v0.22.1 (Thu Dec 01 2022)
+
+#### 🐛 Bug Fix
+
+- feat: updates to allow node v19+ [#1400](https://github.com/asabaylus/react-command-palette/pull/1400) ([@ppanthony](https://github.com/ppanthony) [@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Build(deps-dev): Bump @babel/core from 7.20.2 to 7.20.5 [#1401](https://github.com/asabaylus/react-command-palette/pull/1401) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump prettier from 2.7.1 to 2.8.0 [#1399](https://github.com/asabaylus/react-command-palette/pull/1399) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps): Bump deep-object-diff from 1.1.7 to 1.1.9 [#1398](https://github.com/asabaylus/react-command-palette/pull/1398) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump postcss from 8.4.18 to 8.4.19 [#1396](https://github.com/asabaylus/react-command-palette/pull/1396) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump webpack from 5.74.0 to 5.75.0 [#1395](https://github.com/asabaylus/react-command-palette/pull/1395) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps): Bump loader-utils from 1.4.0 to 1.4.1 [#1394](https://github.com/asabaylus/react-command-palette/pull/1394) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @babel/core from 7.19.6 to 7.20.2 [#1393](https://github.com/asabaylus/react-command-palette/pull/1393) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+- Paul Anthony ([@ppanthony](https://github.com/ppanthony))
+
+---
+
 # v0.22.0 (Sun Nov 06 2022)
 
 #### 🚀 Enhancement
