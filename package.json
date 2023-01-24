@@ -67,7 +67,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.7",
     "auto": "^10.37.6",
-    "chromatic": "^6.11.4",
+    "chromatic": "^6.15.0",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
