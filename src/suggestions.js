@@ -32,7 +32,7 @@ function filterFuzzySortSearch(search, filterSearchQuery) {
 }
 
 // Teach Autosuggest how to calculate suggestions for any given input value.
-const getSuggestions = function (unfilteredSearch, allCommands, options, filterSearchQuery) {
+const getSuggestions = function (unfilteredSearch, allCommands, options, filterSearchQuery, showAllCommandsWhenNoneMatches) {
   
   const search = filterFuzzySortSearch(unfilteredSearch, filterSearchQuery);
   
@@ -45,13 +45,17 @@ const getSuggestions = function (unfilteredSearch, allCommands, options, filterS
   //   allCommands.forEach(s => (s.namePrepared = fuzzysort.prepare(s.name)));
   // });
 
+  // if the user didnt suggest a specific term or there's a search term
+  // but no matches were found return all the commands
+  if (!search) {
+    return allCommands;
+  }
+
   // If the user specified an autosuggest term
   // search for close matches
   const suggestionResults = fuzzysort.go(search, allCommands, options);
 
-  // if the user didnt suggest a specific term or there's a search term
-  // but no matches were found return all the commands
-  if (!search || !suggestionResults.length) {
+  if (showAllCommandsWhenNoneMatches && !suggestionResults.length) {
     return allCommands;
   }
 

@@ -57,6 +57,8 @@ const commands = [{
 
 * ```open``` a _boolean_, when set to true it forces the command palette to be displayed. Defaults to "false".
 
+* ```showAllCommandsWhenNoneMatches``` a boolean, Set it to true if you'd like to render all suggestions when the input query matches none. Defaults to "true".
+
 * ```alwaysRenderCommands``` a boolean, Set it to true if you'd like to render suggestions even when the input is not focused.
 
 * ```display``` one of "modal" or "inline", when set to "modal" the command palette is rendered centered inside a modal. When set to "inline", it is render inline with other page content. Defaults to "modal".

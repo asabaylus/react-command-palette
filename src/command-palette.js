@@ -108,10 +108,8 @@ class CommandPalette extends React.Component {
     }
 
     if (!equal(prevProps.commands, commands)) {
-      // eslint-disable-next-line react/no-did-update-set-state
-      this.setState({
-        suggestions: this.fetchData(),
-      });
+      this.fetchData(); // set this.allCommands
+      this.onSuggestionsFetchRequested({ value: this.state.value }); // updates matching suggestions
     }
   }
 
@@ -160,9 +158,9 @@ class CommandPalette extends React.Component {
   // Autosuggest will call this function every time you need to update suggestions.
   // You already implemented this logic above, so just use it.
   onSuggestionsFetchRequested({ value }) {
-    const { options, filterSearchQuery } = this.props;
+    const { options, filterSearchQuery, showAllCommandsWhenNoneMatches } = this.props;
     this.setState({
-      suggestions: getSuggestions(value, this.allCommands, options, filterSearchQuery),
+      suggestions: getSuggestions(value, this.allCommands, options, filterSearchQuery, showAllCommandsWhenNoneMatches),
     });
   }
 
@@ -372,6 +370,7 @@ class CommandPalette extends React.Component {
 }
 
 CommandPalette.defaultProps = {
+  showAllCommandsWhenNoneMatches: true,
   alwaysRenderCommands: true,
   placeholder: "Type a command",
   hotKeys: "command+shift+p",
@@ -398,6 +397,10 @@ CommandPalette.defaultProps = {
 };
 
 CommandPalette.propTypes = {
+  /** showAllCommandsWhenNoneMatches a boolean, Set it to true if you'd like to render all suggestions
+   * the input query matches none. Defaults to "true". */
+   showAllCommandsWhenNoneMatches: PropTypes.bool,
+
   /** alwaysRenderCommands a boolean, Set it to true if you'd like to render suggestions
    * even when the input is not focused. */
   alwaysRenderCommands: PropTypes.bool,
