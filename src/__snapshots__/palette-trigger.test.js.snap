@@ -1,45 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PaletteTrigger props.trigger should accept a custom child component 1`] = `
-<PaletteTrigger
-  theme="ui button"
-  trigger={<MyButton />}
->
-  <CustomTriggerComponent
-    theme="ui button"
-    trigger={<MyButton />}
+<div>
+  <div
+    class="ui button"
+    role="button"
+    tabindex="0"
   >
-    <div
-      className="ui button"
-      role="button"
-      tabIndex={0}
-    >
-      <MyButton>
-        <b>
-          foo
-        </b>
-      </MyButton>
-    </div>
-  </CustomTriggerComponent>
-</PaletteTrigger>
+    <b>
+      foo
+    </b>
+  </div>
+</div>
 `;
 
 exports[`PaletteTrigger props.trigger should accept a custom text string 1`] = `
-<PaletteTrigger
-  theme="ui button"
-  trigger="foo"
->
-  <CustomTriggerComponent
-    theme="ui button"
-    trigger="foo"
+<div>
+  <div
+    class="ui button"
+    role="button"
+    tabindex="0"
   >
-    <div
-      className="ui button"
-      role="button"
-      tabIndex={0}
-    >
-      foo
-    </div>
-  </CustomTriggerComponent>
-</PaletteTrigger>
+    foo
+  </div>
+</div>
 `;

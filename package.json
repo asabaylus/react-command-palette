@@ -63,12 +63,9 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
     "@testing-library/user-event": "^14.6.1",
-    "@wojtekmaj/enzyme-adapter-react-17": "0.8.0",
     "auto": "^11.3.6",
     "chromatic": "^13.3.5",
     "cross-env": "^10.1.0",
-    "enzyme": "^3.11.0",
-    "enzyme-to-json": "^3.6.2",
     "postcss": "8.x",
     "prettier": "^3.7.4",
     "react": "^18.3.1",
@@ -121,9 +118,6 @@
   ],
   "jest": {
     "restoreMocks": true,
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/examples/**",
