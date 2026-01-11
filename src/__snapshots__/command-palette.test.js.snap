@@ -26,14 +26,24 @@ exports[`Command List renders a command 1`] = `
 `;
 
 exports[`Loading indicator should display a custom react component when props.spinner is set 1`] = `
-<b>
-  Waiting
-</b>
+<div
+  class="spinner atom-spinner modal"
+  role="status"
+>
+  <span
+    class="sr-only"
+  >
+    Loading...
+  </span>
+  <b>
+    Waiting
+  </b>
+</div>
 `;
 
 exports[`Loading indicator should display a custom string when props.spinner is set 1`] = `
 <div
-  className="spinner atom-spinner modal"
+  class="spinner atom-spinner modal"
   role="status"
 >
   Waiting
@@ -42,11 +52,11 @@ exports[`Loading indicator should display a custom string when props.spinner is 
 
 exports[`Loading indicator should display the spinner by default 1`] = `
 <div
-  className="default-spinner atom-spinner modal"
+  class="default-spinner atom-spinner modal"
   role="status"
 >
   <span
-    className="sr-only"
+    class="sr-only"
   >
     Loading...
   </span>
