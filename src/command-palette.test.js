@@ -428,10 +428,11 @@ describe("props.theme", () => {
     const button = container.querySelector("button");
     expect(button).toHaveClass("chrome-trigger");
 
-    const header = container.querySelector(".chrome-header");
+    // Modal renders in portal, use document not container
+    const header = document.querySelector(".chrome-header");
     expect(header).toBeInTheDocument();
 
-    const modal = container.querySelector(".chrome-modal");
+    const modal = document.querySelector(".chrome-modal");
     expect(modal).toBeInTheDocument();
 
     expect(input).toHaveClass("chrome-input");
@@ -545,12 +546,12 @@ describe("props.highlightFirstSuggestion", () => {
 
 describe("props.getSuggestionValue", () => {
   it("sets the autosuggest input value to the suggestion name by default", async () => {
-    const spyGetSuggestionValue = jest.fn();
+    const spyGetSuggestionValue = jest.fn().mockReturnValue(">");
 
     render(
       <CommandPalette
         commands={mockCommands}
-        getSuggestionValue={ spyGetSuggestionValue.mockReturnValue(">") }
+        getSuggestionValue={spyGetSuggestionValue}
         open
       />
     );
