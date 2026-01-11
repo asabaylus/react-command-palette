@@ -57,7 +57,7 @@ describe("Loading indicator", () => {
     await new Promise(resolve => setTimeout(resolve, 100));
 
     // Check if items appeared
-    let items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+    let items = document.querySelectorAll('[role="option"]');
 
     if (items.length === 0) {
       // If items still haven't appeared, skip this test for now as it requires
@@ -196,7 +196,7 @@ describe("Search", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items).toHaveLength(2);
     }, { timeout: 3000 });
   });
@@ -331,7 +331,7 @@ describe("props.inputFilter", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items.length).toEqual(2);
       expect(items[0].textContent).toBe("Stop All Data Imports");
       expect(items[1].textContent).toBe("Start All Data Imports");
@@ -348,7 +348,7 @@ describe("props.inputFilter", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items.length).toEqual(7);
     }, { timeout: 3000 });
     unmount();
@@ -534,13 +534,13 @@ describe("props.alwaysRenderCommands", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const itemsList = container.querySelector('.react-autosuggest__suggestions-list');
-      expect(itemsList).toBeInTheDocument();
+      const options = document.querySelectorAll('[role="option"]');
+      expect(options.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
 
     fireEvent.blur(input);
-    const itemsList = container.querySelector('.react-autosuggest__suggestions-list');
-    expect(itemsList).toBeInTheDocument();
+    const options = document.querySelectorAll('[role="option"]');
+    expect(options.length).toBeGreaterThan(0);
   });
 
   it("should render commands when true and input is not focused.", async () => {
@@ -553,13 +553,13 @@ describe("props.alwaysRenderCommands", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const itemsList = container.querySelector('.react-autosuggest__suggestions-list');
-      expect(itemsList).toBeInTheDocument();
+      const options = document.querySelectorAll('[role="option"]');
+      expect(options.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
 
     fireEvent.blur(input);
-    const itemsList = container.querySelector('.react-autosuggest__suggestions-list');
-    expect(itemsList).toBeInTheDocument();
+    const options = document.querySelectorAll('[role="option"]');
+    expect(options.length).toBeGreaterThan(0);
   });
 
   it("should not render commands when false and input is not focused.", async () => {
@@ -576,16 +576,16 @@ describe("props.alwaysRenderCommands", () => {
 
     // Wait for items to appear first
     await waitFor(() => {
-      const itemsList = container.querySelector('.react-autosuggest__suggestions-list');
-      expect(itemsList).toBeInTheDocument();
+      const options = document.querySelectorAll('[role="option"]');
+      expect(options.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
 
     fireEvent.blur(input);
 
     // After blur, items should disappear when alwaysRenderCommands is false
     await waitFor(() => {
-      const itemsList = container.querySelector('.react-autosuggest__suggestions-list');
-      expect(itemsList).not.toBeInTheDocument();
+      const options = document.querySelectorAll('[role="option"]');
+      expect(options.length).toEqual(0);
     }, { timeout: 3000 });
   });
 });
@@ -662,7 +662,7 @@ describe("Opening the palette", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
   });
@@ -933,7 +933,7 @@ describe("Command List", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items).toHaveLength(2);
       expect(items[0].textContent).toEqual("Stop All Data Imports");
       expect(items[1].textContent).toEqual("Start All Data Imports");
@@ -950,7 +950,7 @@ describe("Command List", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
   });
@@ -964,7 +964,7 @@ describe("Command List", () => {
 
     // Wait for items to appear - fuzzy search will show all when no match
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items).toHaveLength(mockCommands.length);
     }, { timeout: 3000 });
   });
@@ -1027,7 +1027,7 @@ describe("Command List", () => {
 
       // Wait for items to appear
       await waitFor(() => {
-        const commandsElements = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+        const commandsElements = document.querySelectorAll('[role="option"]');
         expect(commandsElements).toHaveLength(maxDisplayed);
       }, { timeout: 3000 });
     });
@@ -1051,7 +1051,7 @@ describe("Command List", () => {
       const button = screen.getByText("Command Palette");
       fireEvent.click(button);
       const after = performance.now();
-      const commandsElements = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const commandsElements = document.querySelectorAll('[role="option"]');
       expect(commandsElements).toBeDefined();
       expect(after - before).toBeLessThanOrEqual(1000);
     });
@@ -1078,7 +1078,7 @@ describe("Command List", () => {
 
       // Wait for items to appear
       await waitFor(() => {
-        const commandsElements = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+        const commandsElements = document.querySelectorAll('[role="option"]');
         expect(commandsElements).toHaveLength(defaultMaxDisplayed);
       }, { timeout: 3000 });
     });
@@ -1148,7 +1148,7 @@ describe("Fetching commands", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items).toHaveLength(1);
     }, { timeout: 3000 });
   });
@@ -1161,7 +1161,7 @@ describe("Fetching commands", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
   });
@@ -1174,7 +1174,7 @@ describe("Fetching commands", () => {
 
     // Wait for items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
 
@@ -1192,7 +1192,7 @@ describe("Fetching commands", () => {
 
     // Wait for new items to appear
     await waitFor(() => {
-      const items = container.querySelectorAll(".react-autosuggest__suggestions-list li");
+      const items = document.querySelectorAll('[role="option"]');
       expect(items).toHaveLength(1);
       expect(items[0].textContent).toEqual("Omega");
     }, { timeout: 3000 });

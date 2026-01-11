@@ -233,7 +233,7 @@ class CommandPalette extends React.Component {
   }
 
   handleOpenModal() {
-    const {resetInputOnOpen, defaultInputValue} = this.props;
+    const {resetInputOnOpen, defaultInputValue, alwaysRenderCommands} = this.props;
 
     if(resetInputOnOpen){
       this.setState({
@@ -244,7 +244,9 @@ class CommandPalette extends React.Component {
 
     this.setState({
       showModal: true,
-      suggestions: allSuggestions,
+      // When alwaysRenderCommands is true, show all commands immediately
+      // Otherwise show empty suggestions until user types
+      suggestions: alwaysRenderCommands ? initialSuggestions : allSuggestions,
     });
   }
 
