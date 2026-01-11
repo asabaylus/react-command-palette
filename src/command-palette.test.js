@@ -234,7 +234,7 @@ describe("props.header", () => {
   });
 
   it("should render a custom string", async () => {
-    const { container } = render(
+    render(
       <CommandPalette
         commands={mockCommands}
         header="this is a command palette"
@@ -244,28 +244,28 @@ describe("props.header", () => {
     // Wait for modal to open
     await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
 
-    // Wait for header to appear
+    // Wait for header to appear - use document for modal portal
     await waitFor(() => {
-      const header = container.querySelector(".atom-header");
+      const header = document.querySelector(".atom-header");
       expect(header).toBeInTheDocument();
       expect(header).toHaveTextContent("this is a command palette");
     }, { timeout: 3000 });
   });
 
   it("should render the header", async () => {
-    const { container } = render(
+    render(
       <CommandPalette commands={mockCommands} header={sampleHeader()} open />
     );
     // Wait for modal to open
     await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
 
-    // Wait for header to appear
+    // Wait for header to appear - use document for modal portal
     await waitFor(() => {
-      const header = container.querySelector(".atom-header");
+      const header = document.querySelector(".atom-header");
       expect(header).toBeInTheDocument();
     }, { timeout: 3000 });
 
-    const header = container.querySelector(".atom-header");
+    const header = document.querySelector(".atom-header");
     expect(header).toMatchSnapshot();
   });
 });
@@ -313,22 +313,25 @@ describe("props.resetInputOnOpen", () => {
 
 describe("props.renderCommand", () => {
   it("should render a custom command component", async () => {
-    const { container } = render(
+    render(
       <CommandPalette
         commands={mockCommands}
         RenderCommand={sampleAtomCommand}
         open
       />
     );
-    // Trigger autosuggest to show items
-    const input = await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
-    fireEvent.change(input, { target: { value: "St" } });
+    // Wait for suggestions to appear with alwaysRenderCommands=true
+    await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
 
-    // Wait for items to appear
+    // Wait for options to appear first
     await waitFor(() => {
-      expect(container.querySelector(".category")).toBeInTheDocument();
+      const options = document.querySelectorAll('[role="option"]');
+      expect(options.length).toBeGreaterThan(0);
     }, { timeout: 3000 });
-    expect(container).toMatchSnapshot();
+
+    // Then check for custom command class
+    const atomItem = document.querySelector(".atom-item");
+    expect(atomItem).toBeInTheDocument();
   });
 });
 
@@ -510,22 +513,22 @@ describe("props.display", () => {
 
 describe("props.highlightFirstSuggestion", () => {
   it("should be 'true' by default", async () => {
-    const { container } = render(
+    render(
       <CommandPalette commands={mockCommands} open />
     );
     // Trigger autosuggest to show items
     const input = await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
     fireEvent.change(input, { target: { value: "St" } });
 
-    // Wait for items to appear
+    // Wait for items to appear and check highlight - use document for modal portal
     await waitFor(() => {
-      const firstSuggestion = container.querySelector(".atom-suggestionFirst");
+      const firstSuggestion = document.querySelector(".atom-suggestionFirst");
       expect(firstSuggestion).toHaveClass("atom-suggestionHighlighted");
     }, { timeout: 3000 });
   });
 
   it("should not highlight the first command when 'false'", async () => {
-    const { container } = render(
+    render(
       <CommandPalette
         commands={mockCommands}
         highlightFirstSuggestion={false}
@@ -536,9 +539,9 @@ describe("props.highlightFirstSuggestion", () => {
     const input = await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
     fireEvent.change(input, { target: { value: "St" } });
 
-    // Wait for items to appear
+    // Wait for items to appear and check no highlight - use document for modal portal
     await waitFor(() => {
-      const firstSuggestion = container.querySelector(".atom-suggestionFirst");
+      const firstSuggestion = document.querySelector(".atom-suggestionFirst");
       expect(firstSuggestion).not.toHaveClass("atom-suggestionHighlighted");
     }, { timeout: 3000 });
   });

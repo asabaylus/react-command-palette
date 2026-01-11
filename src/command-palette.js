@@ -222,6 +222,9 @@ class CommandPalette extends React.Component {
   }
 
   focusInput() {
+    if (!this.commandPaletteInput || !this.commandPaletteInput.input) {
+      return;
+    }
     this.commandPaletteInput.input.focus();
     // FIXME: apply "esc" on the modal instead of input
     // so that pressing esc on loading spinner works too

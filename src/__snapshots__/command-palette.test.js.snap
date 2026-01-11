@@ -238,92 +238,41 @@ exports[`props.display should not display the command palette in react-modal whe
 
 exports[`props.header should render the header 1`] = `
 <div
-  className="atom-header"
+  class="atom-header"
 >
   <div
-    style={
-      Object {
-        "color": "rgb(172, 172, 172)",
-        "display": "inline-block",
-        "fontFamily": "arial",
-        "fontSize": "12px",
-        "marginBottom": "6px",
-      }
-    }
+    style="font-family: arial; font-size: 12px; color: rgb(172, 172, 172); margin-bottom: 6px; display: inline-block;"
   >
     <span
-      style={
-        Object {
-          "paddingRight": "32px",
-        }
-      }
+      style="padding-right: 32px;"
     >
       Search for a command
     </span>
     <span
-      style={
-        Object {
-          "paddingRight": "32px",
-        }
-      }
+      style="padding-right: 32px;"
     >
       <kbd
-        style={
-          Object {
-            "backgroundColor": "rgb(23, 23, 23)",
-            "borderRadius": "4px",
-            "color": "#b9b9b9",
-            "fontSize": "12px",
-            "marginRight": "6px",
-            "padding": "2px 4px",
-          }
-        }
+        style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
       >
         ↑↓
       </kbd>
        to navigate
     </span>
     <span
-      style={
-        Object {
-          "paddingRight": "32px",
-        }
-      }
+      style="padding-right: 32px;"
     >
       <kbd
-        style={
-          Object {
-            "backgroundColor": "rgb(23, 23, 23)",
-            "borderRadius": "4px",
-            "color": "#b9b9b9",
-            "fontSize": "12px",
-            "marginRight": "6px",
-            "padding": "2px 4px",
-          }
-        }
+        style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
       >
         enter
       </kbd>
        to select
     </span>
     <span
-      style={
-        Object {
-          "paddingRight": "32px",
-        }
-      }
+      style="padding-right: 32px;"
     >
       <kbd
-        style={
-          Object {
-            "backgroundColor": "rgb(23, 23, 23)",
-            "borderRadius": "4px",
-            "color": "#b9b9b9",
-            "fontSize": "12px",
-            "marginRight": "6px",
-            "padding": "2px 4px",
-          }
-        }
+        style="background-color: rgb(23, 23, 23); font-size: 12px; color: rgb(185, 185, 185); padding: 2px 4px; margin-right: 6px; border-radius: 4px;"
       >
         esc
       </kbd>
