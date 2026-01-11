@@ -4,11 +4,11 @@ function getSuggestionHighlights(suggestion) {
   // if there's more than one suggestion, retun an array of
   // highlighted results. ex: ["first *result*", "second *result*"]
   if (Array.isArray(suggestion) && suggestion.length >= 2) {
-    return suggestion.map((result) => fuzzysort.highlight(result));
+    return suggestion.map((result) => result?.highlight?.('<b>', '</b>') || null);
   }
   // otherwise return the single suggestion as a string. ex:
   // "only *result*"
-  return fuzzysort.highlight(suggestion[0]);
+  return suggestion[0]?.highlight?.('<b>', '</b>') || null;
 }
 
 // format the output to include a code higlight for innerHTML

@@ -270,12 +270,12 @@ exports[`Command List renders a command 1`] = `
             class="ReactModalPortal"
           >
             <div
-              class="ReactModal__Overlay atom-overlay"
+              class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
             >
               <div
                 aria-label="Command Palette"
                 aria-modal="true"
-                class="ReactModal__Content atom-modal"
+                class="ReactModal__Content ReactModal__Content--before-close atom-modal"
                 role="dialog"
                 tabindex="-1"
               >
@@ -320,9 +320,22 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start All Data Imports
-                              </b>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2182,11 +2195,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              Go o
-                              <b>
-                                f
-                              </b>
-                              fline
+                              Go offline
                             </span>
                           </div>
                         </li>
@@ -2406,10 +2415,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start
-                              </b>
-                               All Data Imports
+                              Start All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2424,18 +2430,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                St
-                              </b>
-                              op 
-                              <b>
-                                A
-                              </b>
-                              ll Data Impo
-                              <b>
-                                rt
-                              </b>
-                              s
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2500,10 +2495,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start
-                              </b>
-                               All Data Imports
+                              Start All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2518,18 +2510,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                St
-                              </b>
-                              op 
-                              <b>
-                                A
-                              </b>
-                              ll Data Impo
-                              <b>
-                                rt
-                              </b>
-                              s
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2594,10 +2575,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start
-                              </b>
-                               All Data Imports
+                              Start All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2612,18 +2590,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                St
-                              </b>
-                              op 
-                              <b>
-                                A
-                              </b>
-                              ll Data Impo
-                              <b>
-                                rt
-                              </b>
-                              s
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2740,11 +2707,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              Go o
-                              <b>
-                                f
-                              </b>
-                              fline
+                              Go offline
                             </span>
                           </div>
                         </li>
@@ -2809,11 +2772,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              Stop All Data 
-                              <b>
-                                Im
-                              </b>
-                              ports
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -2828,11 +2787,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              Start All Data 
-                              <b>
-                                Im
-                              </b>
-                              ports
+                              Start All Data Imports
                             </span>
                           </div>
                         </li>
@@ -3207,11 +3162,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              View 
-                              <b>
-                                Logs
-                              </b>
-                               
+                              View Logs 
                             </span>
                           </div>
                         </li>
@@ -3305,11 +3256,7 @@ exports[`Command List renders a command 1`] = `
                             class="item"
                           >
                             <span>
-                              View 
-                              <b>
-                                Logs
-                              </b>
-                               
+                              View Logs 
                             </span>
                           </div>
                         </li>
@@ -3417,12 +3364,12 @@ exports[`Command List renders a command 1`] = `
                 class="ReactModalPortal"
               >
                 <div
-                  class="ReactModal__Overlay atom-overlay"
+                  class="ReactModal__Overlay ReactModal__Overlay--before-close atom-overlay"
                 >
                   <div
                     aria-label="Command Palette"
                     aria-modal="true"
-                    class="ReactModal__Content atom-modal"
+                    class="ReactModal__Content ReactModal__Content--before-close atom-modal"
                     role="dialog"
                     tabindex="-1"
                   >
@@ -3467,9 +3414,22 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start All Data Imports
-                                  </b>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5329,11 +5289,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  Go o
-                                  <b>
-                                    f
-                                  </b>
-                                  fline
+                                  Go offline
                                 </span>
                               </div>
                             </li>
@@ -5553,10 +5509,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start
-                                  </b>
-                                   All Data Imports
+                                  Start All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5571,18 +5524,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    St
-                                  </b>
-                                  op 
-                                  <b>
-                                    A
-                                  </b>
-                                  ll Data Impo
-                                  <b>
-                                    rt
-                                  </b>
-                                  s
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5647,10 +5589,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start
-                                  </b>
-                                   All Data Imports
+                                  Start All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5665,18 +5604,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    St
-                                  </b>
-                                  op 
-                                  <b>
-                                    A
-                                  </b>
-                                  ll Data Impo
-                                  <b>
-                                    rt
-                                  </b>
-                                  s
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5741,10 +5669,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start
-                                  </b>
-                                   All Data Imports
+                                  Start All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5759,18 +5684,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    St
-                                  </b>
-                                  op 
-                                  <b>
-                                    A
-                                  </b>
-                                  ll Data Impo
-                                  <b>
-                                    rt
-                                  </b>
-                                  s
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5887,11 +5801,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  Go o
-                                  <b>
-                                    f
-                                  </b>
-                                  fline
+                                  Go offline
                                 </span>
                               </div>
                             </li>
@@ -5956,11 +5866,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  Stop All Data 
-                                  <b>
-                                    Im
-                                  </b>
-                                  ports
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -5975,11 +5881,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  Start All Data 
-                                  <b>
-                                    Im
-                                  </b>
-                                  ports
+                                  Start All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -6354,11 +6256,7 @@ exports[`Command List renders a command 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  View 
-                                  <b>
-                                    Logs
-                                  </b>
-                                   
+                                  View Logs 
                                 </span>
                               </div>
                             </li>
@@ -6503,7 +6401,7 @@ exports[`Command List renders a command 1`] = `
                       Object {
                         "category": "Navigate",
                         "command": [Function],
-                        "highlight": "View <b>Logs</b> ",
+                        "highlight": null,
                         "id": 7,
                         "name": "View Logs ",
                       },
@@ -6553,7 +6451,7 @@ exports[`Command List renders a command 1`] = `
                         Object {
                           "category": "Navigate",
                           "command": [Function],
-                          "highlight": "View <b>Logs</b> ",
+                          "highlight": null,
                           "id": 7,
                           "name": "View Logs ",
                         },
@@ -6629,7 +6527,7 @@ exports[`Command List renders a command 1`] = `
                               Object {
                                 "category": "Navigate",
                                 "command": [Function],
-                                "highlight": "View <b>Logs</b> ",
+                                "highlight": null,
                                 "id": 7,
                                 "name": "View Logs ",
                               },
@@ -6662,7 +6560,7 @@ exports[`Command List renders a command 1`] = `
                                 Object {
                                   "category": "Navigate",
                                   "command": [Function],
-                                  "highlight": "View <b>Logs</b> ",
+                                  "highlight": null,
                                   "id": 7,
                                   "name": "View Logs ",
                                 }
@@ -6814,7 +6712,7 @@ exports[`Command List renders a command 1`] = `
                                     Object {
                                       "category": "Navigate",
                                       "command": [Function],
-                                      "highlight": "View <b>Logs</b> ",
+                                      "highlight": null,
                                       "id": 7,
                                       "name": "View Logs ",
                                     }
@@ -6846,7 +6744,7 @@ exports[`Command List renders a command 1`] = `
                                       Object {
                                         "category": "Navigate",
                                         "command": [Function],
-                                        "highlight": "View <b>Logs</b> ",
+                                        "highlight": null,
                                         "id": 7,
                                         "name": "View Logs ",
                                       }
@@ -6855,13 +6753,9 @@ exports[`Command List renders a command 1`] = `
                                     <div
                                       className="item"
                                     >
-                                      <span
-                                        dangerouslySetInnerHTML={
-                                          Object {
-                                            "__html": "View <b>Logs</b> ",
-                                          }
-                                        }
-                                      />
+                                      <span>
+                                        View Logs 
+                                      </span>
                                     </div>
                                   </DefaultCommand>
                                 </RenderCommand>
@@ -7230,9 +7124,22 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start All Data Imports
-                              </b>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -8876,9 +8783,22 @@ exports[`Opening the palette displays the suggestion list 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start All Data Imports
-                                  </b>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -12885,9 +12805,22 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start All Data Imports
-                              </b>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -14482,9 +14415,22 @@ exports[`props.reactModalParentSelector should render render reat-modal in the t
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start All Data Imports
-                                  </b>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -16425,9 +16371,22 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start All Data Imports
-                              </b>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -16986,9 +16945,22 @@ exports[`props.renderCommand should render a custom command component 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start All Data Imports
-                                  </b>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
@@ -17893,9 +17865,22 @@ exports[`props.theme should render a custom theme 1`] = `
                             class="item"
                           >
                             <span>
-                              <b>
-                                Start All Data Imports
-                              </b>
+                              Start All Data Imports
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          aria-selected="false"
+                          class="atom-suggestion"
+                          data-suggestion-index="1"
+                          id="react-autowhatever-1--item-1"
+                          role="option"
+                        >
+                          <div
+                            class="item"
+                          >
+                            <span>
+                              Stop All Data Imports
                             </span>
                           </div>
                         </li>
@@ -18708,9 +18693,22 @@ exports[`props.theme should render a custom theme 1`] = `
                                 class="item"
                               >
                                 <span>
-                                  <b>
-                                    Start All Data Imports
-                                  </b>
+                                  Start All Data Imports
+                                </span>
+                              </div>
+                            </li>
+                            <li
+                              aria-selected="false"
+                              class="atom-suggestion"
+                              data-suggestion-index="1"
+                              id="react-autowhatever-1--item-1"
+                              role="option"
+                            >
+                              <div
+                                class="item"
+                              >
+                                <span>
+                                  Stop All Data Imports
                                 </span>
                               </div>
                             </li>
