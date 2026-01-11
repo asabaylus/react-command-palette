@@ -8,14 +8,14 @@ describe("PaletteSpinner", () => {
   describe("props.spinner", () => {
     it("should render the DefaultSpinnerComponent by default", () => {
       const { container } = render(<PaletteSpinner />);
-      const spinner = container.querySelector(".default-spinner-component");
+      const spinner = container.querySelector(".default-spinner");
       expect(spinner).toBeTruthy();
       expect(container).toMatchSnapshot();
     });
 
     it("should display a custom string when props.spinner is set", () => {
       const { container } = render(<PaletteSpinner spinner="Waiting" />);
-      const spinner = container.querySelector(".custom-spinner-component");
+      const spinner = container.querySelector(".spinner");
       expect(spinner).toBeTruthy();
       expect(container).toMatchSnapshot();
     });
