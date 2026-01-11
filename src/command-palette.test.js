@@ -1026,8 +1026,8 @@ describe("Command List", () => {
   });
 
   it("returns all commands when there is no string to match", async () => {
-    const { container } = render(
-      <CommandPalette commands={mockCommands} open />
+    render(
+      <CommandPalette commands={mockCommands} maxDisplayed={mockCommands.length} open />
     );
     const input = await screen.findByPlaceholderText('Type a command', {}, { timeout: 3000 });
     fireEvent.change(input, { target: { value: "bannanas!" } });
@@ -1216,7 +1216,7 @@ describe("Selecting a command", () => {
   });
 
   it("should close the pallete given that props.closeOnSelect is truthy", async () => {
-    const { container } = render(
+    render(
       <CommandPalette commands={mockCommands} closeOnSelect open />
     );
     // Trigger autosuggest to show items
@@ -1233,8 +1233,10 @@ describe("Selecting a command", () => {
     const items = document.querySelectorAll('[role="option"]');
     fireEvent.click(items[0]);
 
-    // Modal should be closed
-    expect(screen.queryByPlaceholderText('Type a command')).not.toBeInTheDocument();
+    // Wait for modal to close
+    await waitFor(() => {
+      expect(screen.queryByPlaceholderText('Type a command')).not.toBeInTheDocument();
+    }, { timeout: 3000 });
   });
 });
 
