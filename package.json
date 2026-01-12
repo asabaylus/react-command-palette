@@ -126,7 +126,8 @@
       "!<rootDir>/src/examples/**",
       "!<rootDir>/src/themes/**",
       "!<rootDir>/src/*test*",
-      "!<rootDir>/src/index.*"
+      "!<rootDir>/src/index.*",
+      "!<rootDir>/src/*-options.js"
     ],
     "coverageThreshold": {
       "global": {
