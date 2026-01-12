@@ -22,9 +22,10 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Build Storybook
-        run: yarn build-storybook
-      - name: Deploy to Chromatic
-        run: yarn chromatic --exit-zero-on-changes
-        env:
-          CHROMATIC_PROJECT_TOKEN: 5981upe4q43
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: 5981upe4q43
+          exitZeroOnChanges: true
+          exitOnceUploaded: true
+          onlyChanged: false
