@@ -67,5 +67,39 @@ describe("getSuggestions", () => {
       );
       expect(hasCommandHighlight).toBe(true);
     });
+
+    it("should handle single key in keys array", () => {
+      // To hit the KeysResult branch with single key, we need keys array WITHOUT key property
+      const optionsWithKeysOnly = {
+        ...fuzzysortOptions,
+        keys: ["name"] // Array with single key
+      };
+      delete optionsWithKeysOnly.key; // Remove key to force use of keys
+
+      const commands = getSuggestions(
+        "Imports",
+        allCommands,
+        optionsWithKeysOnly,
+        inputValue => inputValue
+      );
+      expect(commands[0]).toMatchObject({
+        name: "Stop All Data Imports",
+        highlight: "Stop All Data <b>Imports</b>",
+      });
+      expect(commands.length).toBe(2);
+    });
+  });
+
+  describe("edge cases", () => {
+    it("should handle empty search results gracefully", () => {
+      const commands = getSuggestions(
+        "NonExistentCommandXYZ123",
+        allCommands,
+        fuzzysortOptions,
+        inputValue => inputValue
+      );
+      // Should return all commands when no matches found
+      expect(commands).toEqual(allCommands);
+    });
   });
 });
