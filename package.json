@@ -127,6 +127,26 @@
       "!<rootDir>/src/themes/**",
       "!<rootDir>/src/*test*",
       "!<rootDir>/src/index.*"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 95,
+        "branches": 85,
+        "functions": 100,
+        "lines": 95
+      },
+      "./src/command-palette.js": {
+        "statements": 98,
+        "branches": 90,
+        "functions": 100,
+        "lines": 98
+      },
+      "./src/suggestions.js": {
+        "statements": 85,
+        "branches": 80,
+        "functions": 100,
+        "lines": 90
+      }
+    }
   }
 }
