@@ -20,14 +20,14 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Deploy to Chromatic
-        uses: chromaui/action@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: 5981upe4q43
-          buildScriptName: build-storybook
-          exitZeroOnChanges: true
-          exitOnceUploaded: true
-          # Note: Storybook build may fail due to storiesOf deprecation
-          # This requires migration to Component Story Format (CSF)
+      - name: Build Storybook
+        run: yarn build-storybook
         continue-on-error: true
+      - name: Deploy to Chromatic
+        run: yarn chromatic --exit-zero-on-changes
+        continue-on-error: true
+        env:
+          CHROMATIC_PROJECT_TOKEN: 5981upe4q43
+        # Note: Storybook build may fail due to storiesOf deprecation
+        # This requires migration to Component Story Format (CSF)
+        # Using yarn chromatic directly ensures we use chromatic@13.3.5 from package.json
