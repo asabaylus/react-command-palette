@@ -11,9 +11,9 @@
     "build": "cross-env BABEL_ENV=production rollup -c",
     "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
     "coverage": "yarn test --coverage --watchAll=false --silent --ci",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build-storybook-docs": "storybook build --docs",
     "release": "auto shipit --base-branch=main",
     "chromatic": "chromatic --project-token 5981upe4q43 --exit-zero-on-changes"
   },
