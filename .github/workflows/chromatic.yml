@@ -20,12 +20,9 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      # Chromatic/Storybook disabled until stories are migrated to CSF format
-      # src/index.stories.js uses deprecated storiesOf API which is not supported in Storybook 8
-      # TODO: Migrate stories from storiesOf to Component Story Format (CSF)
-      # - name: Build Storybook
-      #   run: yarn build-storybook
-      # - name: Deploy to Chromatic
-      #   run: yarn chromatic --exit-zero-on-changes
-      #   env:
-      #     CHROMATIC_PROJECT_TOKEN: 5981upe4q43
+      - name: Build Storybook
+        run: yarn build-storybook
+      - name: Deploy to Chromatic
+        run: yarn chromatic --exit-zero-on-changes
+        env:
+          CHROMATIC_PROJECT_TOKEN: 5981upe4q43
