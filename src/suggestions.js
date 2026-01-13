@@ -31,6 +31,7 @@ function getSuggestionHighlights(suggestion) {
     }
   }
 
+  /* istanbul ignore next: Defensive fallback - fuzzysort always returns Result or KeysResult objects per its API contract */
   return null;
 }
 

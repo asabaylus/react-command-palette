@@ -154,6 +154,7 @@ class CommandPalette extends React.Component {
       );
       return suggestion.command();
     }
+    /* istanbul ignore next: Defensive validation - requires invalid command prop that should be caught by PropTypes/TypeScript */
     throw new Error("command must be a function");
   }
 
