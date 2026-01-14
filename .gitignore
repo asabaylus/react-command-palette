@@ -32,6 +32,9 @@ node_modules/
 /.pnp
 .pnp.js
 
+# Lock files (use yarn.lock only)
+package-lock.json
+
 # OSX
 .DS_Store
 .env

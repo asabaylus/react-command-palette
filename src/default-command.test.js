@@ -1,12 +1,12 @@
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import mockCommands from "./__mocks__/commands";
 import DefaultCommand from "./default-command";
 
 describe("DefaultCommand", () => {
   it("should render", () => {
-    const defaultCommand = shallow(
+    const { container } = render(
       <DefaultCommand suggestion={mockCommands[0]} />
     );
-    expect(defaultCommand).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

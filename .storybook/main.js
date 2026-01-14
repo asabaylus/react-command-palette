@@ -6,7 +6,12 @@ module.exports = {
       configureJSX: true
     }
   }, "@storybook/addon-links", "@storybook/addon-essentials", "@storybook/preset-create-react-app"],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
   core: {
-    builder: "webpack5"
-  }
+    builder: "@storybook/builder-webpack5"
+  },
+  staticDirs: ['../public']
 };

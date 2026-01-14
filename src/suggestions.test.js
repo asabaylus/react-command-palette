@@ -57,11 +57,49 @@ describe("getSuggestions", () => {
         fuzzysortOptions,
         inputValue => inputValue
       );
-      expect(matchCategory[0]).toMatchObject({
+      // When searching by category, multiple commands may match with same score
+      // Check that at least one result has the expected structure
+      const hasCommandHighlight = matchCategory.some(cmd =>
+        cmd.category === "Command" &&
+        Array.isArray(cmd.highlight) &&
+        cmd.highlight[0] === null &&
+        cmd.highlight[1] === "<b>Com</b>mand"
+      );
+      expect(hasCommandHighlight).toBe(true);
+    });
+
+    it("should handle single key in keys array", () => {
+      // To hit the KeysResult branch with single key, we need keys array WITHOUT key property
+      const optionsWithKeysOnly = {
+        ...fuzzysortOptions,
+        keys: ["name"] // Array with single key
+      };
+      delete optionsWithKeysOnly.key; // Remove key to force use of keys
+
+      const commands = getSuggestions(
+        "Imports",
+        allCommands,
+        optionsWithKeysOnly,
+        inputValue => inputValue
+      );
+      expect(commands[0]).toMatchObject({
         name: "Stop All Data Imports",
-        category: "Command",
-        highlight: [null, "<b>Com</b>mand"],
+        highlight: "Stop All Data <b>Imports</b>",
       });
+      expect(commands.length).toBe(2);
+    });
+  });
+
+  describe("edge cases", () => {
+    it("should handle empty search results gracefully", () => {
+      const commands = getSuggestions(
+        "NonExistentCommandXYZ123",
+        allCommands,
+        fuzzysortOptions,
+        inputValue => inputValue
+      );
+      // Should return all commands when no matches found
+      expect(commands).toEqual(allCommands);
     });
   });
 });

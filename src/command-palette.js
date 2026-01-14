@@ -154,6 +154,7 @@ class CommandPalette extends React.Component {
       );
       return suggestion.command();
     }
+    /* istanbul ignore next: Defensive validation - requires invalid command prop that should be caught by PropTypes/TypeScript */
     throw new Error("command must be a function");
   }
 
@@ -222,6 +223,9 @@ class CommandPalette extends React.Component {
   }
 
   focusInput() {
+    if (!this.commandPaletteInput || !this.commandPaletteInput.input) {
+      return;
+    }
     this.commandPaletteInput.input.focus();
     // FIXME: apply "esc" on the modal instead of input
     // so that pressing esc on loading spinner works too
@@ -233,7 +237,7 @@ class CommandPalette extends React.Component {
   }
 
   handleOpenModal() {
-    const {resetInputOnOpen, defaultInputValue} = this.props;
+    const {resetInputOnOpen, defaultInputValue, alwaysRenderCommands} = this.props;
 
     if(resetInputOnOpen){
       this.setState({
@@ -244,7 +248,9 @@ class CommandPalette extends React.Component {
 
     this.setState({
       showModal: true,
-      suggestions: allSuggestions,
+      // When alwaysRenderCommands is true, show all commands immediately
+      // Otherwise show empty suggestions until user types
+      suggestions: alwaysRenderCommands ? initialSuggestions : allSuggestions,
     });
   }
 

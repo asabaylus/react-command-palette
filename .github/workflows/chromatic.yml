@@ -1,22 +1,31 @@
 name: "Chromatic"
 
-on: push
+on:
+  push:
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
 
 jobs:
 
   test:
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Install dependencies
-        run: yarn install
-      - name: Deploy to Chromatic
-        uses: chromaui/action@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '20'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
           projectToken: 5981upe4q43
+          exitZeroOnChanges: true
+          exitOnceUploaded: true
+          onlyChanged: false

@@ -1,96 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PaletteSpinner props.display should display a black spinner when set to inline 1`] = `
-<PaletteSpinner
-  display="inline"
->
-  <DefaultSpinnerComponent
-    display="inline"
+<div>
+  <div
+    class="default-spinner undefined inline"
+    role="status"
   >
-    <div
-      className="default-spinner undefined inline"
-      role="status"
+    <span
+      class="sr-only"
     >
-      <span
-        className="sr-only"
-      >
-        Loading...
-      </span>
-    </div>
-  </DefaultSpinnerComponent>
-</PaletteSpinner>
+      Loading...
+    </span>
+  </div>
+</div>
 `;
 
 exports[`PaletteSpinner props.display should display a white spinner when set to modal 1`] = `
-<PaletteSpinner
-  display="modal"
->
-  <DefaultSpinnerComponent
-    display="modal"
+<div>
+  <div
+    class="default-spinner undefined modal"
+    role="status"
   >
-    <div
-      className="default-spinner undefined modal"
-      role="status"
+    <span
+      class="sr-only"
     >
-      <span
-        className="sr-only"
-      >
-        Loading...
-      </span>
-    </div>
-  </DefaultSpinnerComponent>
-</PaletteSpinner>
+      Loading...
+    </span>
+  </div>
+</div>
 `;
 
 exports[`PaletteSpinner props.spinner should display a custom string when props.spinner is set 1`] = `
-<PaletteSpinner
-  spinner="Waiting"
->
-  <CustomSpinnerComponent
-    spinner="Waiting"
+<div>
+  <div
+    class="spinner atom-spinner modal"
+    role="status"
   >
-    <div
-      className="spinner atom-spinner modal"
-      role="status"
-    >
-      Waiting
-    </div>
-  </CustomSpinnerComponent>
-</PaletteSpinner>
+    Waiting
+  </div>
+</div>
 `;
 
 exports[`PaletteSpinner props.spinner should display an "inline" custom string when props.spinner is set 1`] = `
-<PaletteSpinner
-  display="inline"
-  spinner="Waiting"
->
-  <CustomSpinnerComponent
-    display="inline"
-    spinner="Waiting"
+<div>
+  <div
+    class="spinner atom-spinner inline"
+    role="status"
   >
-    <div
-      className="spinner atom-spinner inline"
-      role="status"
-    >
-      Waiting
-    </div>
-  </CustomSpinnerComponent>
-</PaletteSpinner>
+    Waiting
+  </div>
+</div>
 `;
 
 exports[`PaletteSpinner props.spinner should render the DefaultSpinnerComponent by default 1`] = `
-<PaletteSpinner>
-  <DefaultSpinnerComponent>
-    <div
-      className="default-spinner undefined modal"
-      role="status"
+<div>
+  <div
+    class="default-spinner undefined modal"
+    role="status"
+  >
+    <span
+      class="sr-only"
     >
-      <span
-        className="sr-only"
-      >
-        Loading...
-      </span>
-    </div>
-  </DefaultSpinnerComponent>
-</PaletteSpinner>
+      Loading...
+    </span>
+  </div>
+</div>
 `;

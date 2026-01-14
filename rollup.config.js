@@ -1,16 +1,21 @@
 // Rollup plugins
-import babel from "rollup-plugin-babel";
-import commonjs from "rollup-plugin-commonjs";
+import babel from "@rollup/plugin-babel";
+import commonjs from "@rollup/plugin-commonjs";
 import copy from "rollup-plugin-copy";
-import resolve from "rollup-plugin-node-resolve";
+import resolve from "@rollup/plugin-node-resolve";
 import postcss from "rollup-plugin-postcss";
-import replace from "rollup-plugin-replace";
-import pkg from "./package.json";
+import replace from "@rollup/plugin-replace";
+import { readFileSync } from "fs";
+
+const pkg = JSON.parse(readFileSync("./package.json", "utf-8"));
 
 
 const plugins = [
   replace({
-    "process.env.NODE_ENV": JSON.stringify("production"),
+    values: {
+      "process.env.NODE_ENV": JSON.stringify("production"),
+    },
+    preventAssignment: true,
   }),
   copy({
     targets: [
@@ -19,30 +24,15 @@ const plugins = [
     ]
   }),
   postcss(),
+  resolve({
+    browser: true,
+  }),
   commonjs({
     include: ["node_modules/**"],
-    exclude: ["node_modules/process-es6/**"],
-    namedExports: {
-      "node_modules/react/index.js": [
-        "Children",
-        "Component",
-        "PropTypes",
-        "createElement",
-        "isValidElement",
-        "cloneElement",
-        "createRef",
-      ],
-      "node_modules/react-dom/index.js": ["render"],
-    },
   }),
   babel({
     exclude: "node_modules/**",
-    runtimeHelpers: true,
-  }),
-  resolve({
-    jsnext: true,
-    main: true,
-    browser: true,
+    babelHelpers: "runtime",
   }),
 ];
 

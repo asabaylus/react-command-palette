@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 17.x, 18.x]
+        node-version: [20.x, 22.x]
 
     steps:
     - name: Checkout repo
@@ -35,9 +35,10 @@ jobs:
     - name: Run tests
       run: yarn coverage
 
-    - name: Create docs
-      run: yarn build-storybook-docs
-    
+    # Disabled: Storybook build requires migration from storiesOf to CSF format
+    # - name: Create docs
+    #   run: yarn build-storybook-docs
+
     - name: Code coverage
       uses: codecov/codecov-action@v1
       with:

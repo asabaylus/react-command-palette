@@ -1,19 +1,6 @@
 /* eslint-disable no-alert */
 /* eslint-disable react/jsx-one-expression-per-line */
 import * as React from "react";
-// eslint-disable-next-line no-unused-vars
-import { storiesOf } from "@storybook/react";
-
-// storybook addons
-import {
-  withKnobs,
-  select,
-  object,
-  number,
-  text,
-  boolean
-} from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 // sample component
 import sampleHeader from "./examples/sampleHeader";
@@ -50,30 +37,35 @@ function Trigger() {
   );
 }
 
-const proccessedCommands = addCommandToArray(lotsOfCommands);
+const processedCommands = addCommandToArray(lotsOfCommands);
 
-storiesOf("Command Palette", module)
-  .addDecorator(withInfo)
-  .addDecorator(withKnobs)
-  .addDecorator(story => (
-    <div
-      style={{
-        position: "relative",
-        minHeight: "764px",
-        minWidth: "428px"
-      }}
-    >
-      {story()}
-    </div>
-  ))
-  .addParameters({
+export default {
+  title: "Command Palette",
+  component: CommandPalette,
+  decorators: [
+    (Story) => (
+      <div
+        style={{
+          position: "relative",
+          minHeight: "764px",
+          minWidth: "428px"
+        }}
+      >
+        <Story />
+      </div>
+    )
+  ],
+  parameters: {
     info: {
       disabled: false,
       inline: false,
       header: false
     }
-  })
-  .add("with everything", () => (
+  }
+};
+
+export const WithEverything = {
+  render: () => (
     <CommandPalette
       commands={commands}
       renderCommand={sampleAtomCommand}
@@ -83,74 +75,108 @@ storiesOf("Command Palette", module)
       hotKeys="shift+/"
       open
     />
-  ))
-  .add("with a theme", () => {
-    const label = "theme";
-    const options = {
-      Chrome: chrome,
-      Atom: atom,
-      Sublime: sublime
-    };
-    const defaultValue = chrome;
-    const theme = select(label, options, defaultValue);
-    return <CommandPalette commands={commands} theme={theme} open />;
-  })
-  .add("atom theme", () => (
+  )
+};
+
+export const WithATheme = {
+  render: (args) => (
+    <CommandPalette commands={commands} theme={args.theme} open />
+  ),
+  argTypes: {
+    theme: {
+      control: 'select',
+      options: ['chrome', 'atom', 'sublime'],
+      mapping: {
+        chrome: chrome,
+        atom: atom,
+        sublime: sublime
+      }
+    }
+  },
+  args: {
+    theme: 'chrome'
+  }
+};
+
+export const AtomTheme = {
+  render: () => (
     <CommandPalette
       commands={commands}
       renderCommand={sampleAtomCommand}
       theme={atom}
       open
     />
-  ))
-  .add("chrome theme", () => (
+  )
+};
+
+export const ChromeTheme = {
+  render: () => (
     <CommandPalette
       commands={commands}
       renderCommand={sampleChromeCommand}
       theme={chrome}
       open
     />
-  ))
-  .add(
-    "sublime theme",
-    () => (
-      <CommandPalette
-        commands={commands}
-        renderCommand={sampleSublimeCommand}
-        theme={sublime}
-        placeholder=""
-        maxDisplayed={12}
-        open
-      />
-    )
   )
-  .add(
-    "with a custom command",
-    () => <CommandPalette commands={commands} renderCommand={sampleAtomCommand} open />,
-    {
-      info: {
-        text: `By default, react-command-palette will render the _suggestion.name_ for each command.  However, when passed a custom react component _renderCommand_ will display the command using any template you can imagine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js`
+};
+
+export const SublimeTheme = {
+  render: () => (
+    <CommandPalette
+      commands={commands}
+      renderCommand={sampleSublimeCommand}
+      theme={sublime}
+      placeholder=""
+      maxDisplayed={12}
+      open
+    />
+  )
+};
+
+export const WithACustomCommand = {
+  render: () => <CommandPalette commands={commands} renderCommand={sampleAtomCommand} open />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'By default, react-command-palette will render the _suggestion.name_ for each command. However, when passed a custom react component _renderCommand_ will display the command using any template you can imagine. See: https://github.com/asabaylus/react-command-palette/blob/master/examples/sampleAtomCommand.js'
       }
     }
-  )
-  .add("is toggled open", () =>
-    {
-    const open = boolean("Open", true);
-    return <CommandPalette commands={commands} open={open} />
-    }, {
-    info: {
-      text: `Adding an _open_ prop will force the command palette to be displayed
-      when it mounts. By default command palette will be hidden until the _trigger_
-      is cliked.`
+  }
+};
+
+export const IsToggledOpen = {
+  render: (args) => <CommandPalette commands={commands} open={args.open} />,
+  args: {
+    open: true
+  },
+  argTypes: {
+    open: { control: 'boolean' }
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Adding an _open_ prop will force the command palette to be displayed when it mounts. By default command palette will be hidden until the _trigger_ is clicked.'
+      }
     }
-  })
-  .add("with defaults", () => {
-    // Knobs Addon for Commands object
-    const commandsInput = object("Commands", commands);
-    return <CommandPalette commands={commandsInput} />;
-  })
-  .add("without a modal", () => <CommandPalette commands={commands} display="inline" />)
-  .add("onSelect", () => (
+  }
+};
+
+export const WithDefaults = {
+  render: (args) => <CommandPalette commands={args.commands} />,
+  args: {
+    commands: commands
+  },
+  argTypes: {
+    commands: { control: 'object' }
+  }
+};
+
+export const WithoutAModal = {
+  render: () => <CommandPalette commands={commands} display="inline" />
+};
+
+export const OnSelect = {
+  render: () => (
     <CommandPalette
       open
       commands={commands}
@@ -160,8 +186,11 @@ storiesOf("Command Palette", module)
         `);
       }}
     />
-  ))
-  .add("onChange", () => (
+  )
+};
+
+export const OnChange = {
+  render: () => (
     <CommandPalette
       open
       commands={commands}
@@ -175,18 +204,27 @@ storiesOf("Command Palette", module)
         );
       }}
     />
-  ))
-  .add("highlightFirstSuggestion", () => {
-    const label = "highlightFirstSuggestion";
-    const defaultValue = true;
-    const highlight = boolean(label, defaultValue);
-    return <CommandPalette
+  )
+};
+
+export const HighlightFirstSuggestion = {
+  render: (args) => (
+    <CommandPalette
       commands={commands}
-      highlightFirstSuggestion={highlight}
+      highlightFirstSuggestion={args.highlightFirstSuggestion}
       open
-      />
-  })
-  .add("onHighlight", () => (
+    />
+  ),
+  args: {
+    highlightFirstSuggestion: true
+  },
+  argTypes: {
+    highlightFirstSuggestion: { control: 'boolean' }
+  }
+};
+
+export const OnHighlight = {
+  render: () => (
     <CommandPalette
       commands={commands}
       onHighlight={command => {
@@ -194,131 +232,188 @@ storiesOf("Command Palette", module)
       }}
       open
     />
-  ))
-  .add("getSuggestionValue", () => (
+  )
+};
+
+export const GetSuggestionValue = {
+  render: () => (
     <CommandPalette
       commands={commands}
-      getSuggestionValue={ () => ">" }
+      getSuggestionValue={() => ">"}
       open
     />
-  ))
-  .add("onAfterOpen", () => (
+  )
+};
+
+export const OnAfterOpen = {
+  render: () => (
     <CommandPalette
       commands={commands}
       onAfterOpen={() => {
         alert("The palette was opened.");
       }}
     />
-  ))
-  .add("onRequestClose", () => (
+  )
+};
+
+export const OnRequestClose = {
+  render: () => (
     <CommandPalette
       commands={commands}
       onRequestClose={() => {
         alert("The palette will close.");
       }}
     />
-  ))
-  .add(
-    "with a custom trigger",
-    () => <CommandPalette commands={commands} trigger="Click Me!" />,
-    {
-      info: {
-        text: `Use the _trigger_ prop to customize the component that the user
-        will click to open the command palette. The property accepts either a
-        string or a React component. Note that component will be wrapped with a
-        _div_ that behaves like a button. So there is no need to add any events.
-        This component will also be focusable and may be activated via keyboard
-        to maintain accessibility. If a trigger is not specified then the a
-        default command palette will be used.
-        `
+  )
+};
+
+export const WithACustomTrigger = {
+  render: () => <CommandPalette commands={commands} trigger="Click Me!" />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'Use the _trigger_ prop to customize the component that the user will click to open the command palette. The property accepts either a string or a React component. Note that component will be wrapped with a _div_ that behaves like a button. So there is no need to add any events. This component will also be focusable and may be activated via keyboard to maintain accessibility. If a trigger is not specified then a default command palette will be used.'
       }
     }
-  )
-  .add("defaultInputValue", () => (
-    <CommandPalette commands={commands} open defaultInputValue=">" />
-  ))
-  .add("alwaysRenderCommands", () => (
+  }
+};
+
+export const DefaultInputValue = {
+  render: () => <CommandPalette commands={commands} open defaultInputValue=">" />
+};
+
+export const AlwaysRenderCommands = {
+  render: (args) => (
     <CommandPalette
       commands={commands}
       open
-      alwaysRenderCommands={boolean("alwaysRenderCommands", false)}
+      alwaysRenderCommands={args.alwaysRenderCommands}
     />
-  ))
-  .add("showSpinnerOnSelect", () => (
+  ),
+  args: {
+    alwaysRenderCommands: false
+  },
+  argTypes: {
+    alwaysRenderCommands: { control: 'boolean' }
+  }
+};
+
+export const ShowSpinnerOnSelect = {
+  render: (args) => (
     <CommandPalette
       commands={commands}
       open
-      showSpinnerOnSelect={boolean("showSpinnerOnSelect", true)}
+      showSpinnerOnSelect={args.showSpinnerOnSelect}
     />
-  ))
-  .add("with custom hotkeys", () => <CommandPalette commands={commands} hotKeys="/" />)
-  .add("with multiple custom hotkeys", () => (
-    <CommandPalette commands={commands} hotKeys={["/", "command+k"]} />
-  ))
-  .add("with custom header", () => (
-    <CommandPalette commands={commands} header={sampleHeader()} open />
-  ))
-  .add("with closeOnSelect", () => (
-    <CommandPalette commands={commands} closeOnSelect open />
-  ))
-  .add("with resetInputOnOpen", () => (
-    <CommandPalette commands={commands} open resetInputOnOpen />
-  ))
-  .add("with custom placeholder", () => (
+  ),
+  args: {
+    showSpinnerOnSelect: true
+  },
+  argTypes: {
+    showSpinnerOnSelect: { control: 'boolean' }
+  }
+};
+
+export const WithCustomHotkeys = {
+  render: () => <CommandPalette commands={commands} hotKeys="/" />
+};
+
+export const WithMultipleCustomHotkeys = {
+  render: () => <CommandPalette commands={commands} hotKeys={["/", "command+k"]} />
+};
+
+export const WithCustomHeader = {
+  render: () => <CommandPalette commands={commands} header={sampleHeader()} open />
+};
+
+export const WithCloseOnSelect = {
+  render: () => <CommandPalette commands={commands} closeOnSelect open />
+};
+
+export const WithResetInputOnOpen = {
+  render: () => <CommandPalette commands={commands} open resetInputOnOpen />
+};
+
+export const WithCustomPlaceholder = {
+  render: (args) => (
     <CommandPalette
       commands={commands}
-      placeholder={text("placeholder", "What do you want?")}
+      placeholder={args.placeholder}
       open
     />
-  ))
-  .add("with lots of commands", () => (
-    <CommandPalette commands={proccessedCommands} open />
-  ))
-  .add("with a custom spinner", () => (
+  ),
+  args: {
+    placeholder: "What do you want?"
+  },
+  argTypes: {
+    placeholder: { control: 'text' }
+  }
+};
+
+export const WithLotsOfCommands = {
+  render: () => <CommandPalette commands={processedCommands} open />
+};
+
+export const WithACustomSpinner = {
+  render: () => (
     <CommandPalette
       commands={commands}
       spinner={<div style={{ color: "white", textAlign: "center" }}>Waiting...</div>}
       open
     />
-  ))
-  .add("with max displayed", () => {
-    const label = "maxDisplayed";
-    const defaultValue = 3;
-    const options = {
-      range: true,
-      min: 1,
-      max: commands.length,
-      step: 1
-    };
-    const maxDisplayed = number(label, defaultValue, options);
-    return <CommandPalette commands={commands} maxDisplayed={maxDisplayed} open />;
-  })
-  .add("with search options", () => {
-    // Knobs for Search Options Object
-    const opts = {
+  )
+};
+
+export const WithMaxDisplayed = {
+  render: (args) => (
+    <CommandPalette commands={commands} maxDisplayed={args.maxDisplayed} open />
+  ),
+  args: {
+    maxDisplayed: 3
+  },
+  argTypes: {
+    maxDisplayed: {
+      control: {
+        type: 'range',
+        min: 1,
+        max: commands.length,
+        step: 1
+      }
+    }
+  }
+};
+
+export const WithSearchOptions = {
+  render: (args) => (
+    <CommandPalette
+      commands={processedCommands}
+      options={args.options}
+      maxDisplayed={100}
+      open
+    />
+  ),
+  args: {
+    options: {
       threshold: -Infinity,
       limit: 100,
       allowTypo: true,
       key: "name",
       keys: ["name"],
       scoreFn: null
-    };
-    const searchOptionsInput = object("Search Options", opts);
-    return (
-      <CommandPalette
-        commands={proccessedCommands}
-        options={searchOptionsInput}
-        maxDisplayed={100}
-        open
-      />
-    );
-  })
-  .add("filterSearchQuery", () => (
+    }
+  },
+  argTypes: {
+    options: { control: 'object' }
+  }
+};
+
+export const FilterSearchQuery = {
+  render: () => (
     <CommandPalette
       commands={commands}
       placeholder="Try typing '?st', '>st' or 'st'"
       defaultInputValue=">"
-      filterSearchQuery={ inputValue => {
+      filterSearchQuery={inputValue => {
         // strip action keys from input before searching commands, ex:
         // "?something" or ">something" should search "something"
         // TODO: pass "/>|\?/g" as a prop
@@ -326,8 +421,11 @@ storiesOf("Command Palette", module)
       }}
       open
     />
-  ))
-  .add("with multiple highlights", () => {
+  )
+};
+
+export const WithMultipleHighlights = {
+  render: () => {
     const opts = {
       keys: ["name", "category"]
     };
@@ -341,14 +439,21 @@ storiesOf("Command Palette", module)
         open
       />
     );
-  })
-  .add("with reactModalParentSelector", () => (
+  }
+};
+
+export const WithReactModalParentSelector = {
+  render: () => (
     <div id="main">
       <CommandPalette commands={commands} reactModalParentSelector="#main" open />
     </div>
-  ))
-  .add("with trigger null", () => (
+  )
+};
+
+export const WithTriggerNull = {
+  render: () => (
     <div id="main">
       <CommandPalette commands={commands} reactModalParentSelector="#main" trigger={null} open />
     </div>
-  ));
+  )
+};

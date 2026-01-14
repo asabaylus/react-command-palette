@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DefaultCommand should render 1`] = `
-<div
-  className="item"
->
-  <span>
-    Start All Data Imports
-  </span>
+<div>
+  <div
+    class="item"
+  >
+    <span>
+      Start All Data Imports
+    </span>
+  </div>
 </div>
 `;
