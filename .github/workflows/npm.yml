@@ -1,34 +1,36 @@
-## name of our action
 name: "NPM Publish"
 
-# the event that will trigger the action
 on:
   push:
     branches: [main]
 
-# what the action will do
 jobs:
   release:
-    # the operating system it will run on
     runs-on: ubuntu-latest
-    # this check needs to be in place to prevent a publish loop with auto and github actions
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
-    # the list of steps that the action will go through
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Prepare repository
-        run: git fetch --unshallow --tags
+        run: git fetch --unshallow --tags || true
+
       - name: Use Node.js 18.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 18.x
+          cache: 'yarn'
+
       - name: Cache node modules
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
-          path: node_modules
-          key: yarn-deps-${{ hashFiles('yarn.lock') }}
+          path: |
+            node_modules
+            ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            yarn-deps-${{ hashFiles('yarn.lock') }}
+            ${{ runner.os }}-yarn-
 
       - name: Create Release
         env:
