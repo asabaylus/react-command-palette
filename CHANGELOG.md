@@ -1,3 +1,40 @@
+# v0.22.2 (Sat Jan 17 2026)
+
+#### 🐛 Bug Fix
+
+- Fix npm publish to use correct registry [#1614](https://github.com/asabaylus/react-command-palette/pull/1614) ([@claude](https://github.com/claude))
+- Add .npmrc to .gitignore to fix publish workflow [#1613](https://github.com/asabaylus/react-command-palette/pull/1613) ([@claude](https://github.com/claude))
+- Fix npm authentication in publish workflow [#1612](https://github.com/asabaylus/react-command-palette/pull/1612) ([@claude](https://github.com/claude))
+- Fix outdated publish action [#1611](https://github.com/asabaylus/react-command-palette/pull/1611) ([@claude](https://github.com/claude))
+- Update npm.yml to replace deprecated actions and improve cache keys. [#1611](https://github.com/asabaylus/react-command-palette/pull/1611) ([@asabaylus](https://github.com/asabaylus))
+- Update dependencies to latest versions [#1610](https://github.com/asabaylus/react-command-palette/pull/1610) ([@claude](https://github.com/claude) [@asabaylus](https://github.com/asabaylus))
+
+#### 🔩 Dependency Updates
+
+- Build(deps-dev): Bump @storybook/preset-create-react-app from 4.1.2 to 7.0.18 [#1500](https://github.com/asabaylus/react-command-palette/pull/1500) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump chromatic from 6.11.4 to 6.18.0 [#1499](https://github.com/asabaylus/react-command-palette/pull/1499) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump webpack from 5.75.0 to 5.78.0 [#1449](https://github.com/asabaylus/react-command-palette/pull/1449) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump postcss from 8.4.19 to 8.4.21 [#1424](https://github.com/asabaylus/react-command-palette/pull/1424) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps): Bump json5 from 1.0.1 to 1.0.2 [#1423](https://github.com/asabaylus/react-command-palette/pull/1423) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump prettier from 2.8.0 to 2.8.1 [#1411](https://github.com/asabaylus/react-command-palette/pull/1411) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/react from 6.5.13 to 6.5.14 [#1405](https://github.com/asabaylus/react-command-palette/pull/1405) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps): Bump loader-utils from 1.4.1 to 1.4.2 [#1397](https://github.com/asabaylus/react-command-palette/pull/1397) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-a11y from 6.5.13 to 6.5.14 [#1408](https://github.com/asabaylus/react-command-palette/pull/1408) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/manager-webpack5 from 6.5.13 to 6.5.14 [#1406](https://github.com/asabaylus/react-command-palette/pull/1406) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-essentials from 6.5.13 to 6.5.14 [#1407](https://github.com/asabaylus/react-command-palette/pull/1407) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-jest from 6.5.13 to 6.5.14 [#1410](https://github.com/asabaylus/react-command-palette/pull/1410) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-links from 6.5.13 to 6.5.14 [#1404](https://github.com/asabaylus/react-command-palette/pull/1404) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/addon-actions from 6.5.13 to 6.5.14 [#1402](https://github.com/asabaylus/react-command-palette/pull/1402) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Build(deps-dev): Bump @storybook/builder-webpack5 from 6.5.13 to 6.5.14 [#1403](https://github.com/asabaylus/react-command-palette/pull/1403) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Asa Baylus ([@asabaylus](https://github.com/asabaylus))
+- Claude ([@claude](https://github.com/claude))
+
+---
+
 # v0.22.1 (Thu Dec 01 2022)
 
 #### 🐛 Bug Fix
