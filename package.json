@@ -24,6 +24,9 @@
     "type": "git",
     "url": "git+https://github.com/asabaylus/react-command-palette.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "engines": {
     "node": ">=20"
   },
