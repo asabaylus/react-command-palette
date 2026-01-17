@@ -26,7 +26,11 @@ jobs:
         with:
           node-version: 20.x
           cache: 'yarn'
-          registry-url: 'https://registry.npmjs.org'
+
+      - name: Configure npm authentication
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          echo "registry=https://registry.npmjs.org/" >> .npmrc
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
