@@ -35,6 +35,9 @@ node_modules/
 # Lock files (use yarn.lock only)
 package-lock.json
 
+# NPM config (created by CI for authentication)
+.npmrc
+
 # OSX
 .DS_Store
 .env
