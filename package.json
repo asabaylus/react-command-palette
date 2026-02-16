@@ -70,7 +70,7 @@
     "@testing-library/user-event": "^14.6.1",
     "auto": "^11.3.6",
     "chromatic": "^13.3.5",
-    "cross-env": "^7.0.3",
+    "cross-env": "^10.1.0",
     "postcss": "8.x",
     "prettier": "^3.7.4",
     "react": "^18.3.1",
