@@ -79,7 +79,7 @@
     "rollup": "^4.57.1",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "storybook": "^8.6.15",
+    "storybook": "^8.6.17",
     "webpack": "5"
   },
   "dependencies": {
