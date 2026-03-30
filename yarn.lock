@@ -2487,10 +2487,10 @@
   resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.6.15.tgz#a3e619388f58bae3925704a2e4105f6873f88263"
   integrity sha512-ZOFtH821vFcwzECbFYFTKtSVO96Cvwwg45dMh3M/9bZIdN7klsloX7YNKw8OKvwE6XLFLsi2OvsNNcmTW6g88w==
 
-"@storybook/preset-create-react-app@^8.6.14":
-  version "8.6.15"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-8.6.15.tgz#79a24684b05d4c33564092960809881273b6f757"
-  integrity sha512-O+/CHLQfJzEgB6hRJlg+qKuUQEGBOua3mualPhX44p/nryQbF1L40vKQol7vUfObfkeJxBqniFv4fRNxUbGvWw==
+"@storybook/preset-create-react-app@^8.6.17":
+  version "8.6.17"
+  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-8.6.17.tgz#3985d9e28df51830bab5e578dba0c48badeb4a20"
+  integrity sha512-hKj1WaDOb5jLvg+LUhrvxFV7KASzlWCeJzSEapgmcEn+HIwuGvQ+Cy9F8LgGYUjSTmkxQOwSTbqlGWZ9RfIe7Q==
   dependencies:
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
     "@storybook/react-docgen-typescript-plugin" "1.0.6--canary.9.0c3f3b7.0"
