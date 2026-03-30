@@ -2354,10 +2354,10 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/addon-links@^8.6.14":
-  version "8.6.15"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-8.6.15.tgz#d625ac224d20dcabe73de0c79fe2b0e849a8b78a"
-  integrity sha512-abRWnDPBTwnj6sQYfAjUnYCNuUQbrVLLOyuormbDUqOcvZ+OqehNYo4BKXx0/lz61h0A2dOD1IuDo40uWyYVFQ==
+"@storybook/addon-links@^8.6.17":
+  version "8.6.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-8.6.17.tgz#4e65bb09ebd2afa263a1318d84b300388740e837"
+  integrity sha512-ch1GgXILEmekf81nUvmre3xyhlg5zDibRxm8+psPqj7GqzWBI5l4kAiha0XOBWGz6vQEL5xCvN/rr8rfA9kWdQ==
   dependencies:
     "@storybook/global" "^5.0.0"
     ts-dedent "^2.0.0"
