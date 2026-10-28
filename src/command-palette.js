@@ -84,7 +84,8 @@ class CommandPalette extends React.Component {
     });
 
     // Use hot key to open command palette
-    Mousetrap.bind(hotKeys, () => {
+    this.boundHotKeys = hotKeys;
+    Mousetrap.bind(this.boundHotKeys, () => {
       this.handleOpenModal();
       // prevent default which opens Chrome dev tools command palatte
       return false;
@@ -95,6 +96,10 @@ class CommandPalette extends React.Component {
     // because there's no modal when using inline the input should be focused
     if (display === "inline") return this.focusInput();
     return true;
+  }
+
+  componentWillUnmount() {
+    Mousetrap.unbind(this.boundHotKeys);
   }
 
   componentDidUpdate(prevProps) {

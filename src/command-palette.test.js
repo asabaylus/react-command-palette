@@ -26,6 +26,22 @@ describe("Umounting the palette", () => {
     unmount();
     expect(input).not.toBeInTheDocument();
   })
+
+  it("should unbind its global hotkey when unmounted", () => {
+    const hotKey = "ctrl+shift+alt+u";
+    const unbindSpy = jest.spyOn(Mousetrap, "unbind");
+    const { unmount } = render(
+      <CommandPalette commands={mockCommands} hotKeys={hotKey} />
+    );
+
+    unmount();
+    const unboundOnUnmount = unbindSpy.mock.calls.some(([keys]) => keys === hotKey);
+    unbindSpy.mockRestore();
+    // Keep this test isolated from the pre-fix global registration in jsdom.
+    Mousetrap.unbind(hotKey);
+
+    expect(unboundOnUnmount).toBe(true);
+  });
 });
 
 describe("Loading indicator", () => {
